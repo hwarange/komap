@@ -1,0 +1,26 @@
+{
+ "unetpp_bw_e120_r90": {
+  "orig": 79.492,
+  "x1.25": 78.251,
+  "avg": 79.338,
+  "delta_avg_vs_orig": -0.155,
+  "ci95": [
+   -0.31,
+   -0.014
+  ],
+  "improved": "31/90",
+  "delta_low_contrast": -0.233
+ },
+ "cnx_bw": {
+  "orig": 79.188,
+  "x1.25": 78.104,
+  "avg": 79.009,
+  "delta_avg_vs_orig": -0.179,
+  "ci95": [
+   -0.31,
+   -0.059
+  ],
+  "improved": "31/90",
+  "delta_low_contrast": -0.267
+ }
+}

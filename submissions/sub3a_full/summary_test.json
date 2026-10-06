@@ -1,0 +1,159 @@
+{
+ "split": "test",
+ "n_images": 10,
+ "n_models": 140,
+ "models_per_image": [
+  140
+ ],
+ "experiments": [
+  "a_lean",
+  "a_rot90",
+  "bw4_r90",
+  "cnxS_bw_e120",
+  "cnx_bw",
+  "cnx_bw_c768",
+  "cnx_bw_e120",
+  "cnx_bw_e120_r90",
+  "effv2s_unetpp",
+  "full_cnx_bw_e120",
+  "full_unet_mit_bw_r90",
+  "full_unetpp_bw_e120_r90",
+  "full_x2_c1024_bw_r90",
+  "full_x2_unetpp_bw_r90",
+  "hrnet_unet",
+  "m_dinov3_lr",
+  "m_hires",
+  "m_skel_w015",
+  "mn_r34_unetpp",
+  "mn_sxt50_unetpp",
+  "unet_mit",
+  "unet_mit_bw_r90",
+  "unetpp_bw",
+  "unetpp_bw_e120",
+  "unetpp_bw_e120_r90",
+  "unetpp_bw_r90",
+  "upp_r50_bw",
+  "x2_c1024",
+  "x2_c1024_bw_r90",
+  "x2_unetpp_bw_r90"
+ ],
+ "parts": "submissions/sub3_pred/parts/models",
+ "recipe": {
+  "unetpp_bw_e120_r90": 1.0,
+  "x2_c1024_bw_r90": 1.0,
+  "a_rot90": 1.0,
+  "cnx_bw_e120": 1.0,
+  "unetpp_bw_e120": 1.0,
+  "m_hires": 1.0,
+  "bw4_r90": 1.0,
+  "a_lean": 1.0,
+  "unetpp_bw": 1.0,
+  "cnx_bw": 1.0,
+  "cnx_bw_c768": 1.0,
+  "cnx_bw_e120_r90": 1.0,
+  "unet_mit_bw_r90": 1.0,
+  "x2_c1024": 1.0,
+  "unet_mit": 1.0,
+  "upp_r50_bw": 1.0,
+  "x2_unetpp_bw_r90": 1.0,
+  "mn_sxt50_unetpp": 1.0,
+  "cnxS_bw_e120": 1.0,
+  "effv2s_unetpp": 1.0,
+  "hrnet_unet": 1.0,
+  "mn_r34_unetpp": 1.0,
+  "unetpp_bw_r90": 1.0,
+  "m_dinov3_lr": 1.0,
+  "m_skel_w015": 1.0
+ },
+ "full_mix": 0.5,
+ "models_per_exp": {
+  "unetpp_bw_e120_r90": 5,
+  "full_unetpp_bw_e120_r90": 3,
+  "x2_c1024_bw_r90": 5,
+  "full_x2_c1024_bw_r90": 3,
+  "a_rot90": 5,
+  "cnx_bw_e120": 5,
+  "full_cnx_bw_e120": 3,
+  "unetpp_bw_e120": 5,
+  "m_hires": 5,
+  "bw4_r90": 5,
+  "a_lean": 5,
+  "unetpp_bw": 5,
+  "cnx_bw": 5,
+  "cnx_bw_c768": 5,
+  "cnx_bw_e120_r90": 5,
+  "unet_mit_bw_r90": 5,
+  "full_unet_mit_bw_r90": 3,
+  "x2_c1024": 5,
+  "unet_mit": 5,
+  "upp_r50_bw": 5,
+  "x2_unetpp_bw_r90": 5,
+  "full_x2_unetpp_bw_r90": 3,
+  "mn_sxt50_unetpp": 5,
+  "cnxS_bw_e120": 5,
+  "effv2s_unetpp": 5,
+  "hrnet_unet": 5,
+  "mn_r34_unetpp": 5,
+  "unetpp_bw_r90": 5,
+  "m_dinov3_lr": 5,
+  "m_skel_w015": 5
+ },
+ "problems": [],
+ "created": "2026-10-06 11:18",
+ "si_classifier": {
+  "path": "runs/si_clf/sub3a_model.pkl",
+  "thr": 0.8,
+  "per_image": {
+   "A107_step1_sample3": {
+    "components": 1233,
+    "decided": 1218,
+    "pixels_changed_pct": 0.002
+   },
+   "A122_step4_sample1": {
+    "components": 1856,
+    "decided": 1826,
+    "pixels_changed_pct": 0.019
+   },
+   "A124_step4_sample3": {
+    "components": 2112,
+    "decided": 2053,
+    "pixels_changed_pct": 0.116
+   },
+   "A127_step3_sample2": {
+    "components": 1605,
+    "decided": 1603,
+    "pixels_changed_pct": 0.002
+   },
+   "A133_step4_sample1": {
+    "components": 1361,
+    "decided": 1358,
+    "pixels_changed_pct": 0.003
+   },
+   "A167_step3_sample3": {
+    "components": 2057,
+    "decided": 2020,
+    "pixels_changed_pct": 0.015
+   },
+   "A38_step2_sample2": {
+    "components": 1485,
+    "decided": 1470,
+    "pixels_changed_pct": 0.04
+   },
+   "A51_step3_sample3": {
+    "components": 785,
+    "decided": 784,
+    "pixels_changed_pct": 0.151
+   },
+   "A63_step2_sample3": {
+    "components": 1144,
+    "decided": 1141,
+    "pixels_changed_pct": 0.128
+   },
+   "A87_step1_sample4": {
+    "components": 1124,
+    "decided": 1092,
+    "pixels_changed_pct": 0.12
+   }
+  }
+ }
+}

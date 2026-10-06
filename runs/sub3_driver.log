@@ -1,0 +1,19 @@
+10-06 11:14:55 Si 분류기 학습 시작 (CPU, A용·B용)
+10-06 11:14:55 1단계 (GPU 4장): 평가 사진 예측 + 90장 모델 학습 사진 점수
+10-06 11:18:03 1단계 끝: 저장된 모델별 예측 140개 (기대 140)
+Traceback (most recent call last):
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable
+Traceback (most recent call last):
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+10-06 11:18:03 2단계 (GPU 4장, 백그라운드): 제출 코드 검증 (90장, A 구성 fold 모델)
+10-06 11:18:03 Si 분류기: saved runs/si_clf/sub3a_model.pkl / saved runs/si_clf/sub3b_model.pkl
+10-06 11:18:03 조합 4개 + sub2 재현 시험
+10-06 11:19:25 sub3a: problems="problems": []
+10-06 11:19:25 sub3a_full: problems="problems": []
+10-06 11:19:25 sub3b: problems="problems": []
+10-06 11:19:25 sub3b_full: problems="problems": []
+10-06 11:19:25 안전 점검
+10-06 11:19:34 안전 점검 끝 (runs/sub3/checks.txt)
+10-06 11:22:09 2단계 끝: 제출 코드 검증  "mIoU": 79.936, (ensemble.py 79.937과 같아야 함)
+10-06 11:22:09 모두 끝

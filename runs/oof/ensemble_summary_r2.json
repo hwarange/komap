@@ -1,0 +1,198 @@
+{
+ "single": {
+  "unetpp_bw": {
+   "cv": 79.243,
+   "est_test": 80.04
+  },
+  "cnx_bw": {
+   "cv": 79.188,
+   "est_test": 79.997
+  },
+  "cnx_bw_c768": {
+   "cv": 79.172,
+   "est_test": 79.995
+  },
+  "cnx_lovasz_bw": {
+   "cv": 79.147,
+   "est_test": 79.912
+  },
+  "x2_c1024": {
+   "cv": 79.056,
+   "est_test": 79.913
+  },
+  "upp_r50_bw": {
+   "cv": 79.053,
+   "est_test": 79.869
+  },
+  "convnext_t": {
+   "cv": 79.035,
+   "est_test": 79.785
+  },
+  "cnx_c768": {
+   "cv": 79.027,
+   "est_test": 79.916
+  },
+  "cnx_s1": {
+   "cv": 78.944,
+   "est_test": 79.764
+  },
+  "unetpp": {
+   "cv": 78.917,
+   "est_test": 79.775
+  },
+  "unet_mit": {
+   "cv": 78.865,
+   "est_test": 79.76
+  },
+  "effb4": {
+   "cv": 78.801,
+   "est_test": 79.581
+  }
+ },
+ "combos": {
+  "top2 by single score": {
+   "members": [
+    "unetpp_bw",
+    "cnx_bw"
+   ],
+   "cv": 79.551,
+   "est_test": 80.315
+  },
+  "top3 by single score": {
+   "members": [
+    "unetpp_bw",
+    "cnx_bw",
+    "cnx_bw_c768"
+   ],
+   "cv": 79.595,
+   "est_test": 80.364
+  },
+  "top4 by single score": {
+   "members": [
+    "unetpp_bw",
+    "cnx_bw",
+    "cnx_bw_c768",
+    "cnx_lovasz_bw"
+   ],
+   "cv": 79.542,
+   "est_test": 80.292
+  },
+  "top5 by single score": {
+   "members": [
+    "unetpp_bw",
+    "cnx_bw",
+    "cnx_bw_c768",
+    "cnx_lovasz_bw",
+    "x2_c1024"
+   ],
+   "cv": 79.633,
+   "est_test": 80.39
+  },
+  "all": {
+   "members": [
+    "unetpp_bw",
+    "cnx_bw",
+    "cnx_bw_c768",
+    "cnx_lovasz_bw",
+    "x2_c1024",
+    "upp_r50_bw",
+    "convnext_t",
+    "cnx_c768",
+    "cnx_s1",
+    "unetpp",
+    "unet_mit",
+    "effb4"
+   ],
+   "cv": 79.624,
+   "est_test": 80.375
+  }
+ },
+ "greedy": {
+  "in_sample": {
+   "members": [
+    "unetpp_bw",
+    "unet_mit",
+    "cnx_bw_c768",
+    "x2_c1024"
+   ],
+   "cv": 79.756,
+   "note": "같은 90장으로 고르고 채점 -> 낙관적"
+  },
+  "nested": {
+   "cv": 79.692,
+   "est_test": 80.454,
+   "picks_per_fold": [
+    [
+     "unetpp_bw",
+     "cnx_bw",
+     "x2_c1024",
+     "unet_mit"
+    ],
+    [
+     "unetpp_bw",
+     "unet_mit",
+     "cnx_bw_c768",
+     "x2_c1024"
+    ],
+    [
+     "cnx_bw_c768",
+     "x2_c1024",
+     "unet_mit",
+     "unetpp_bw"
+    ],
+    [
+     "unetpp_bw",
+     "unet_mit",
+     "cnx_bw_c768",
+     "x2_c1024"
+    ],
+    [
+     "cnx_bw",
+     "x2_c1024",
+     "unet_mit",
+     "unetpp_bw"
+    ]
+   ]
+  }
+ },
+ "adjacency": {
+  "best single": {
+   "members": [
+    "unetpp_bw"
+   ],
+   "pp": {
+    "cv": 79.243,
+    "est_test": 80.04
+   },
+   "pp+adj": {
+    "cv": 79.247,
+    "est_test": 80.037
+   },
+   "delta": 0.004,
+   "improved_images": 48,
+   "worse_images": 36,
+   "pred_contacts": 12103
+  },
+  "best predefined ensemble": {
+   "members": [
+    "unetpp_bw",
+    "cnx_bw",
+    "cnx_bw_c768",
+    "cnx_lovasz_bw",
+    "x2_c1024"
+   ],
+   "pp": {
+    "cv": 79.633,
+    "est_test": 80.39
+   },
+   "pp+adj": {
+    "cv": 79.637,
+    "est_test": 80.392
+   },
+   "delta": 0.004,
+   "improved_images": 51,
+   "worse_images": 31,
+   "pred_contacts": 7571
+  }
+ }
+}

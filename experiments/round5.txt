@@ -1,0 +1,19 @@
+# 5단계: 4단계 채택 후보(90° 회전만)를 최고 모델에 적용 + 밝기 증강 하나씩 빼기 + EMA + 경계 가중 강화
+# 새 기준: a_rot90 (ConvNeXt-T + 경계 가중 + 90° 회전, CV 79.35). 무거운 실험을 앞에 배치.
+
+# --- ① 최고 모델들에 90° 회전 적용 (앙상블 재료) ---
+unetpp_bw_e120_r90 | --arch UnetPlusPlus --bw 2 --epochs 120 --rot rot90 --save-oof runs/oof/unetpp_bw_e120_r90          # 비교: unetpp_bw_e120
+x2_c1024_bw_r90    | --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --save-oof runs/oof/x2_c1024_bw_r90       # 비교: x2_c1024 (경계 가중도 추가됨)
+cnx_bw_e120_r90    | --encoder tu-convnext_tiny --bw 2 --epochs 120 --rot rot90 --save-oof runs/oof/cnx_bw_e120_r90     # 비교: cnx_bw_e120
+unet_mit_bw_r90    | --encoder mit_b2 --bw 2 --rot rot90 --save-oof runs/oof/unet_mit_bw_r90                          # 비교: unet_mit (경계 가중도 추가됨)
+
+# --- ③ EMA, ④ 경계 가중 강화 (비교: a_rot90) ---
+ema_r90            | --encoder tu-convnext_tiny --bw 2 --rot rot90 --ema 0.999 --save-oof runs/oof/ema_r90
+bw4_r90            | --encoder tu-convnext_tiny --bw 4 --rot rot90 --save-oof runs/oof/bw4_r90                         # 경계 픽셀 가중 3배 → 5배
+
+# --- ② 밝기 증강 하나씩 빼기 (비교: a_rot90) ---
+io_nogamma         | --encoder tu-convnext_tiny --bw 2 --rot rot90 --int-drop gamma --save-oof runs/oof/io_nogamma
+io_nocontrast      | --encoder tu-convnext_tiny --bw 2 --rot rot90 --int-drop contrast --save-oof runs/oof/io_nocontrast
+io_noillum         | --encoder tu-convnext_tiny --bw 2 --rot rot90 --int-drop illum --save-oof runs/oof/io_noillum
+io_noblur          | --encoder tu-convnext_tiny --bw 2 --rot rot90 --int-drop blur --save-oof runs/oof/io_noblur
+io_nonoise         | --encoder tu-convnext_tiny --bw 2 --rot rot90 --int-drop noise --save-oof runs/oof/io_nonoise

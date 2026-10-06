@@ -1,0 +1,16 @@
+# 2단계: 1단계에서 효과가 확인된 변경들을 조합하고, ConvNeXt 학습 설정을 조정한다.
+# 무거운 실험을 앞에 배치 (1단계에서 가벼운 것 먼저 → 마지막에 GPU가 놀았던 문제 수정)
+# 모든 실험은 앙상블 평가에 바로 쓰도록 예측 확률을 runs/oof/<실험>에 저장
+
+# --- 조합 (무거운 것부터) ---
+cnx_bw_c768   | --encoder tu-convnext_tiny --bw 2 --crop 768 --tile 768 --save-oof runs/oof/cnx_bw_c768   # 1위 인코더 + 경계 가중 + 넓은 맥락
+cnx_c768      | --encoder tu-convnext_tiny --crop 768 --tile 768 --save-oof runs/oof/cnx_c768             # 위에서 경계 가중만 뺀 것 (효과 분리)
+upp_r50_bw    | --arch UnetPlusPlus --encoder resnet50 --bw 2 --save-oof runs/oof/upp_r50_bw             # UNet++는 ConvNeXt와 안 붙어서 ResNet50과 조합
+unetpp_bw     | --arch UnetPlusPlus --bw 2 --save-oof runs/oof/unetpp_bw                                  # UNet++(ResNet34) + 경계 가중
+cnx_bw        | --encoder tu-convnext_tiny --bw 2 --save-oof runs/oof/cnx_bw                              # ConvNeXt + 경계 가중
+cnx_lovasz_bw | --encoder tu-convnext_tiny --loss lovasz --bw 2 --save-oof runs/oof/cnx_lovasz_bw        # 두 손실 개선을 함께
+
+# --- ConvNeXt 학습 설정 ---
+cnx_lr1e4     | --encoder tu-convnext_tiny --lr 1e-4 --save-oof runs/oof/cnx_lr1e4    # ConvNeXt에 흔히 맞는 낮은 학습률
+cnx_e40       | --encoder tu-convnext_tiny --epochs 40 --save-oof runs/oof/cnx_e40    # 짧게 학습해도 같은지 (같으면 이후 실험 시간 1/3 절약)
+cnx_s1        | --encoder tu-convnext_tiny --seed 1 --save-oof runs/oof/cnx_s1        # 시드만 바꾼 ConvNeXt: 잡음 측정 + 앙상블 재료

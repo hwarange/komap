@@ -1,0 +1,165 @@
+{
+ "split": "test",
+ "n_images": 10,
+ "n_models": 145,
+ "models_per_image": [
+  145
+ ],
+ "experiments": [
+  "a_lean",
+  "a_rot90",
+  "bw4_r90",
+  "cnxS_bw_e120",
+  "cnx_bw",
+  "cnx_bw_c768",
+  "cnx_bw_e120",
+  "cnx_bw_e120_r90",
+  "effv2s_unetpp",
+  "full_cnx_bw_e120",
+  "full_unet_mit_bw_r90",
+  "full_unetpp_bw_e120_r90",
+  "full_x2_c1024_bw_r90",
+  "full_x2_unetpp_bw_r90",
+  "hrnet_unet",
+  "m_dinov3_lr",
+  "m_hires",
+  "m_skel_w015",
+  "mn_r34_unetpp",
+  "mn_sxt50_unetpp",
+  "sie:sie_x2_unetpp",
+  "unet_mit",
+  "unet_mit_bw_r90",
+  "unetpp_bw",
+  "unetpp_bw_e120",
+  "unetpp_bw_e120_r90",
+  "unetpp_bw_r90",
+  "upp_r50_bw",
+  "x2_c1024",
+  "x2_c1024_bw_r90",
+  "x2_unetpp_bw_r90"
+ ],
+ "parts": "submissions/sub3_pred/parts/models",
+ "recipe": {
+  "unetpp_bw_e120_r90": 1.0,
+  "x2_c1024_bw_r90": 1.0,
+  "a_rot90": 1.0,
+  "cnx_bw_e120": 1.0,
+  "unetpp_bw_e120": 1.0,
+  "m_hires": 1.0,
+  "bw4_r90": 1.0,
+  "a_lean": 1.0,
+  "unetpp_bw": 1.0,
+  "cnx_bw": 1.0,
+  "cnx_bw_c768": 1.0,
+  "cnx_bw_e120_r90": 1.0,
+  "unet_mit_bw_r90": 1.0,
+  "x2_c1024": 1.0,
+  "unet_mit": 1.0,
+  "upp_r50_bw": 1.0,
+  "x2_unetpp_bw_r90": 1.0,
+  "mn_sxt50_unetpp": 1.0,
+  "cnxS_bw_e120": 1.0,
+  "effv2s_unetpp": 1.0,
+  "hrnet_unet": 1.0,
+  "mn_r34_unetpp": 1.0,
+  "unetpp_bw_r90": 1.0,
+  "m_dinov3_lr": 1.0,
+  "m_skel_w015": 1.0
+ },
+ "full_mix": 0.5,
+ "models_per_exp": {
+  "unetpp_bw_e120_r90": 5,
+  "full_unetpp_bw_e120_r90": 3,
+  "x2_c1024_bw_r90": 5,
+  "full_x2_c1024_bw_r90": 3,
+  "a_rot90": 5,
+  "cnx_bw_e120": 5,
+  "full_cnx_bw_e120": 3,
+  "unetpp_bw_e120": 5,
+  "m_hires": 5,
+  "bw4_r90": 5,
+  "a_lean": 5,
+  "unetpp_bw": 5,
+  "cnx_bw": 5,
+  "cnx_bw_c768": 5,
+  "cnx_bw_e120_r90": 5,
+  "unet_mit_bw_r90": 5,
+  "full_unet_mit_bw_r90": 3,
+  "x2_c1024": 5,
+  "unet_mit": 5,
+  "upp_r50_bw": 5,
+  "x2_unetpp_bw_r90": 5,
+  "full_x2_unetpp_bw_r90": 3,
+  "mn_sxt50_unetpp": 5,
+  "cnxS_bw_e120": 5,
+  "effv2s_unetpp": 5,
+  "hrnet_unet": 5,
+  "mn_r34_unetpp": 5,
+  "unetpp_bw_r90": 5,
+  "m_dinov3_lr": 5,
+  "m_skel_w015": 5,
+  "sie:sie_x2_unetpp": 5
+ },
+ "sie_spec": [
+  "sie_x2_unetpp"
+ ],
+ "sie_alpha": 0.3,
+ "problems": [],
+ "created": "2026-10-06 14:35",
+ "si_classifier": {
+  "path": "runs/si_clf/sub4_model.pkl",
+  "thr": 0.8,
+  "per_image": {
+   "A107_step1_sample3": {
+    "components": 1306,
+    "decided": 1292,
+    "pixels_changed_pct": 0.001
+   },
+   "A122_step4_sample1": {
+    "components": 1879,
+    "decided": 1857,
+    "pixels_changed_pct": 0.02
+   },
+   "A124_step4_sample3": {
+    "components": 2089,
+    "decided": 2030,
+    "pixels_changed_pct": 0.012
+   },
+   "A127_step3_sample2": {
+    "components": 1577,
+    "decided": 1574,
+    "pixels_changed_pct": 0.002
+   },
+   "A133_step4_sample1": {
+    "components": 1295,
+    "decided": 1290,
+    "pixels_changed_pct": 0.002
+   },
+   "A167_step3_sample3": {
+    "components": 2062,
+    "decided": 2023,
+    "pixels_changed_pct": 0.013
+   },
+   "A38_step2_sample2": {
+    "components": 1513,
+    "decided": 1495,
+    "pixels_changed_pct": 0.046
+   },
+   "A51_step3_sample3": {
+    "components": 767,
+    "decided": 758,
+    "pixels_changed_pct": 0.142
+   },
+   "A63_step2_sample3": {
+    "components": 1162,
+    "decided": 1159,
+    "pixels_changed_pct": 0.115
+   },
+   "A87_step1_sample4": {
+    "components": 1129,
+    "decided": 1099,
+    "pixels_changed_pct": 0.128
+   }
+  }
+ }
+}

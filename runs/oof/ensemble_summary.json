@@ -1,0 +1,201 @@
+{
+ "single": {
+  "baseline": {
+   "cv": 78.134,
+   "est_test": 78.715
+  },
+  "baseline_s1": {
+   "cv": 78.485,
+   "est_test": 79.349
+  },
+  "convnext_t": {
+   "cv": 79.035,
+   "est_test": 79.785
+  },
+  "unetpp": {
+   "cv": 78.917,
+   "est_test": 79.775
+  },
+  "unet_mit": {
+   "cv": 78.865,
+   "est_test": 79.76
+  },
+  "effb4": {
+   "cv": 78.801,
+   "est_test": 79.581
+  },
+  "x2_c1024": {
+   "cv": 79.056,
+   "est_test": 79.913
+  },
+  "c768": {
+   "cv": 78.786,
+   "est_test": 79.65
+  },
+  "c1024": {
+   "cv": 78.743,
+   "est_test": 79.561
+  },
+  "boundary": {
+   "cv": 78.721,
+   "est_test": 79.598
+  },
+  "r50": {
+   "cv": 78.717,
+   "est_test": 79.538
+  },
+  "lovasz": {
+   "cv": 78.687,
+   "est_test": 79.497
+  }
+ },
+ "combos": {
+  "seed pair (baseline + baseline_s1)": {
+   "members": [
+    "baseline",
+    "baseline_s1"
+   ],
+   "cv": 78.672,
+   "est_test": 79.492
+  },
+  "top2 by single score": {
+   "members": [
+    "x2_c1024",
+    "convnext_t"
+   ],
+   "cv": 79.452,
+   "est_test": 80.191
+  },
+  "top3 by single score": {
+   "members": [
+    "x2_c1024",
+    "convnext_t",
+    "unetpp"
+   ],
+   "cv": 79.441,
+   "est_test": 80.187
+  },
+  "top4 by single score": {
+   "members": [
+    "x2_c1024",
+    "convnext_t",
+    "unetpp",
+    "unet_mit"
+   ],
+   "cv": 79.615,
+   "est_test": 80.361
+  },
+  "top5 by single score": {
+   "members": [
+    "x2_c1024",
+    "convnext_t",
+    "unetpp",
+    "unet_mit",
+    "effb4"
+   ],
+   "cv": 79.609,
+   "est_test": 80.365
+  },
+  "all": {
+   "members": [
+    "baseline",
+    "baseline_s1",
+    "convnext_t",
+    "unetpp",
+    "unet_mit",
+    "effb4",
+    "x2_c1024",
+    "c768",
+    "c1024",
+    "boundary",
+    "r50",
+    "lovasz"
+   ],
+   "cv": 79.316,
+   "est_test": 80.094
+  }
+ },
+ "greedy": {
+  "in_sample": {
+   "members": [
+    "x2_c1024",
+    "unet_mit"
+   ],
+   "cv": 79.64,
+   "note": "같은 90장으로 고르고 채점 -> 낙관적"
+  },
+  "nested": {
+   "cv": 79.623,
+   "est_test": 80.404,
+   "picks_per_fold": [
+    [
+     "x2_c1024",
+     "unet_mit"
+    ],
+    [
+     "x2_c1024",
+     "unet_mit"
+    ],
+    [
+     "convnext_t",
+     "x2_c1024",
+     "unet_mit",
+     "effb4",
+     "x2_c1024",
+     "unet_mit"
+    ],
+    [
+     "x2_c1024",
+     "unet_mit"
+    ],
+    [
+     "convnext_t",
+     "x2_c1024",
+     "unet_mit",
+     "unetpp",
+     "unet_mit",
+     "x2_c1024"
+    ]
+   ]
+  }
+ },
+ "adjacency": {
+  "best single": {
+   "members": [
+    "x2_c1024"
+   ],
+   "pp": {
+    "cv": 79.056,
+    "est_test": 79.913
+   },
+   "pp+adj": {
+    "cv": 79.063,
+    "est_test": 79.917
+   },
+   "delta": 0.008,
+   "improved_images": 50,
+   "worse_images": 33,
+   "pred_contacts": 10097
+  },
+  "best predefined ensemble": {
+   "members": [
+    "x2_c1024",
+    "convnext_t",
+    "unetpp",
+    "unet_mit"
+   ],
+   "pp": {
+    "cv": 79.615,
+    "est_test": 80.361
+   },
+   "pp+adj": {
+    "cv": 79.62,
+    "est_test": 80.362
+   },
+   "delta": 0.004,
+   "improved_images": 53,
+   "worse_images": 31,
+   "pred_contacts": 9033
+  }
+ }
+}

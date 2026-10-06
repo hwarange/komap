@@ -1,0 +1,40 @@
+{
+ "split": "cv",
+ "n_images": 90,
+ "n_models": 125,
+ "models_per_image": [
+  25
+ ],
+ "experiments": [
+  "a_lean",
+  "a_rot90",
+  "bw4_r90",
+  "cnxS_bw_e120",
+  "cnx_bw",
+  "cnx_bw_c768",
+  "cnx_bw_e120",
+  "cnx_bw_e120_r90",
+  "effv2s_unetpp",
+  "hrnet_unet",
+  "m_dinov3_lr",
+  "m_hires",
+  "m_skel_w015",
+  "mn_r34_unetpp",
+  "mn_sxt50_unetpp",
+  "unet_mit",
+  "unet_mit_bw_r90",
+  "unetpp_bw",
+  "unetpp_bw_e120",
+  "unetpp_bw_e120_r90",
+  "unetpp_bw_r90",
+  "upp_r50_bw",
+  "x2_c1024",
+  "x2_c1024_bw_r90",
+  "x2_unetpp_bw_r90"
+ ],
+ "problems": [],
+ "created": "2026-10-06 11:22",
+ "si_classifier": null,
+ "mIoU": 79.936,
+ "est_test": 80.696
+}

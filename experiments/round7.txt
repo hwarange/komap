@@ -1,0 +1,8 @@
+# 7단계 ②: Eutectic Si 전용 모델 (Eutectic Si인가 아닌가만 구분). 5-fold, 예측 확률 저장.
+# 합치기는 src/decision_rules.py 에서 중첩 검증으로 (가) 섞기 / (나) 먼저 구분하기 비교.
+
+# 2배 해상도 + UNet++ (B1과 같은 설정, 가는 구조에 가장 유리했음. Eutectic Si +0.76)
+sie_x2_unetpp | --binary-class 3 --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --save-oof runs/oof/sie_x2_unetpp
+
+# 원래 해상도 UNet++ (빠름, 결과 일관성 확인용)
+sie_unetpp    | --binary-class 3 --arch UnetPlusPlus --bw 2 --rot rot90 --save-oof runs/oof/sie_unetpp

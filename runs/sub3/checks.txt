@@ -1,0 +1,121 @@
+##### sub2 재현 시험 (새 코드 vs 기존 sub2, 0에 가까워야 함)
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.0,
+  "A122_step4_sample1": 0.0,
+  "A124_step4_sample3": 0.0,
+  "A127_step3_sample2": 0.0,
+  "A133_step4_sample1": 0.0,
+  "A167_step3_sample3": 0.0,
+  "A38_step2_sample2": 0.0,
+  "A51_step3_sample3": 0.0,
+  "A63_step2_sample3": 0.0,
+  "A87_step1_sample4": 0.0
+ },
+ "mean": 0.0,
+ "max": 0.0,
+ "images_over_2pct": 0
+}
+##### sub2 vs sub3a
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.2695,
+  "A122_step4_sample1": 0.2458,
+  "A124_step4_sample3": 0.3464,
+  "A127_step3_sample2": 0.1697,
+  "A133_step4_sample1": 0.2633,
+  "A167_step3_sample3": 0.2792,
+  "A38_step2_sample2": 0.2466,
+  "A51_step3_sample3": 0.2457,
+  "A63_step2_sample3": 0.2454,
+  "A87_step1_sample4": 0.3586
+ },
+ "mean": 0.267,
+ "max": 0.3586,
+ "images_over_2pct": 0
+}
+##### sub2 vs sub3a_full
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.2874,
+  "A122_step4_sample1": 0.2541,
+  "A124_step4_sample3": 0.3297,
+  "A127_step3_sample2": 0.1741,
+  "A133_step4_sample1": 0.2784,
+  "A167_step3_sample3": 0.2922,
+  "A38_step2_sample2": 0.266,
+  "A51_step3_sample3": 0.2525,
+  "A63_step2_sample3": 0.2528,
+  "A87_step1_sample4": 0.375
+ },
+ "mean": 0.2762,
+ "max": 0.375,
+ "images_over_2pct": 0
+}
+##### sub2 vs sub3b
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.8053,
+  "A122_step4_sample1": 0.8049,
+  "A124_step4_sample3": 1.0794,
+  "A127_step3_sample2": 0.5456,
+  "A133_step4_sample1": 0.8054,
+  "A167_step3_sample3": 0.9466,
+  "A38_step2_sample2": 0.7627,
+  "A51_step3_sample3": 0.8744,
+  "A63_step2_sample3": 0.8191,
+  "A87_step1_sample4": 0.8201
+ },
+ "mean": 0.8264,
+ "max": 1.0794,
+ "images_over_2pct": 0
+}
+##### sub2 vs sub3b_full
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.8353,
+  "A122_step4_sample1": 0.8252,
+  "A124_step4_sample3": 1.0787,
+  "A127_step3_sample2": 0.5825,
+  "A133_step4_sample1": 0.8324,
+  "A167_step3_sample3": 0.9783,
+  "A38_step2_sample2": 0.8358,
+  "A51_step3_sample3": 0.8752,
+  "A63_step2_sample3": 0.8691,
+  "A87_step1_sample4": 0.8759
+ },
+ "mean": 0.8588,
+ "max": 1.0787,
+ "images_over_2pct": 0
+}
+##### sub3a vs sub3a_full (90장 모델을 섞은 효과)
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.0478,
+  "A122_step4_sample1": 0.0384,
+  "A124_step4_sample3": 0.0699,
+  "A127_step3_sample2": 0.0239,
+  "A133_step4_sample1": 0.0409,
+  "A167_step3_sample3": 0.0416,
+  "A38_step2_sample2": 0.0528,
+  "A51_step3_sample3": 0.0438,
+  "A63_step2_sample3": 0.058,
+  "A87_step1_sample4": 0.0386
+ },
+ "mean": 0.0456,
+ "max": 0.0699,
+ "images_over_2pct": 0
+}
+##### 모델끼리 불일치 (90장 모델 시드 3개 vs 같은 구성 fold 모델 5개)
+full_unetpp_bw_e120_r90 {"n_models": 3, "pairwise_disagree_pct_mean": 1.154, "max_image": 1.654}
+full_x2_c1024_bw_r90 {"n_models": 3, "pairwise_disagree_pct_mean": 1.13, "max_image": 1.502}
+full_cnx_bw_e120 {"n_models": 3, "pairwise_disagree_pct_mean": 1.351, "max_image": 1.804}
+full_unet_mit_bw_r90 {"n_models": 3, "pairwise_disagree_pct_mean": 1.338, "max_image": 1.883}
+full_x2_unetpp_bw_r90 {"n_models": 3, "pairwise_disagree_pct_mean": 1.188, "max_image": 1.658}
+unetpp_bw_e120_r90 {"n_models": 5, "pairwise_disagree_pct_mean": 1.369, "max_image": 1.865}
+x2_c1024_bw_r90 {"n_models": 5, "pairwise_disagree_pct_mean": 1.515, "max_image": 2.336}
+cnx_bw_e120 {"n_models": 5, "pairwise_disagree_pct_mean": 1.829, "max_image": 2.989}
+unet_mit_bw_r90 {"n_models": 5, "pairwise_disagree_pct_mean": 1.604, "max_image": 2.199}
+x2_unetpp_bw_r90 {"n_models": 5, "pairwise_disagree_pct_mean": 1.375, "max_image": 2.061}
+##### 학습 사진 점수 (OOF보다 높아야 정상)
+cat: 'runs/sub3/check_train_gpu*.json': No such file or directory

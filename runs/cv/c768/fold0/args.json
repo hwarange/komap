@@ -1,0 +1,30 @@
+{
+  "data": "data",
+  "out": "runs/cv/c768/fold0",
+  "train_splits": [
+    "train"
+  ],
+  "val_split": "valid",
+  "fold": 0,
+  "folds_file": "splits/folds5.json",
+  "arch": "Unet",
+  "encoder": "resnet34",
+  "attention": null,
+  "loss": "dice",
+  "bw": 0.0,
+  "class_weights": "",
+  "epochs": 60,
+  "bs": 4,
+  "crop": 768,
+  "spi": 8,
+  "lr": 0.0003,
+  "wd": 0.0001,
+  "width": 1280,
+  "tile": 768,
+  "overlap": 128,
+  "val_every": 5,
+  "workers": 6,
+  "seed": 0,
+  "max_iters": 0,
+  "amp": true
+}

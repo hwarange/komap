@@ -1,0 +1,16 @@
+# 가상환경·캐시
+Komap/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 대회 데이터: 외부 공개 금지 (원격 저장소에 올리지 않음)
+data/
+
+# 큰 산출물 (모델 가중치·예측 확률·분류기는 서버에만 둔다)
+*.pt
+*.pth
+*.npy
+*.pkl
+submissions/*/parts/

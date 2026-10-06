@@ -1,0 +1,34 @@
+{
+ "images": [
+  "A101_step3_sample3",
+  "A123_step4_sample2",
+  "A147_step4_sample4",
+  "A15_step1_sample1",
+  "A187_step4_sample4",
+  "A222_step2_sample2",
+  "A57_step1_sample3",
+  "A87_step2_sample2",
+  "A11_step2_sample4",
+  "A44_step4_sample3"
+ ],
+ "results": {
+  "full_cnx_bw_e120": {
+   "train_imgs_score_per_seed": {
+    "fold0": 82.44,
+    "fold1": 82.33,
+    "fold2": 82.27
+   },
+   "oof_score_same_imgs": 79.6,
+   "ok": true
+  },
+  "full_unet_mit_bw_r90": {
+   "train_imgs_score_per_seed": {
+    "fold0": 81.55,
+    "fold1": 81.66,
+    "fold2": 81.64
+   },
+   "oof_score_same_imgs": 78.15,
+   "ok": true
+  }
+ }
+}

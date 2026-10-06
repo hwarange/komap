@@ -1,0 +1,76 @@
+##### sub2 vs sub4
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.7004,
+  "A122_step4_sample1": 0.5612,
+  "A124_step4_sample3": 0.7316,
+  "A127_step3_sample2": 0.3873,
+  "A133_step4_sample1": 0.5226,
+  "A167_step3_sample3": 0.5915,
+  "A38_step2_sample2": 0.7472,
+  "A51_step3_sample3": 0.5675,
+  "A63_step2_sample3": 0.7219,
+  "A87_step1_sample4": 0.7685
+ },
+ "mean": 0.63,
+ "max": 0.7685,
+ "images_over_2pct": 0
+}
+##### sub3a vs sub4
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.4908,
+  "A122_step4_sample1": 0.377,
+  "A124_step4_sample3": 0.4543,
+  "A127_step3_sample2": 0.2774,
+  "A133_step4_sample1": 0.3667,
+  "A167_step3_sample3": 0.3707,
+  "A38_step2_sample2": 0.5923,
+  "A51_step3_sample3": 0.4258,
+  "A63_step2_sample3": 0.5611,
+  "A87_step1_sample4": 0.4824
+ },
+ "mean": 0.4399,
+ "max": 0.5923,
+ "images_over_2pct": 0
+}
+##### sub3a_full vs sub4
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.5004,
+  "A122_step4_sample1": 0.3884,
+  "A124_step4_sample3": 0.5027,
+  "A127_step3_sample2": 0.2826,
+  "A133_step4_sample1": 0.3912,
+  "A167_step3_sample3": 0.3915,
+  "A38_step2_sample2": 0.5966,
+  "A51_step3_sample3": 0.44,
+  "A63_step2_sample3": 0.5694,
+  "A87_step1_sample4": 0.4855
+ },
+ "mean": 0.4548,
+ "max": 0.5966,
+ "images_over_2pct": 0
+}
+##### sub4 vs sub4_full (90장 모델을 섞은 효과)
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.0405,
+  "A122_step4_sample1": 0.0321,
+  "A124_step4_sample3": 0.056,
+  "A127_step3_sample2": 0.0191,
+  "A133_step4_sample1": 0.0355,
+  "A167_step3_sample3": 0.0367,
+  "A38_step2_sample2": 0.0349,
+  "A51_step3_sample3": 0.0348,
+  "A63_step2_sample3": 0.0417,
+  "A87_step1_sample4": 0.0241
+ },
+ "mean": 0.0355,
+ "max": 0.056,
+ "images_over_2pct": 0
+}
+##### Si 분류기가 바꾼 픽셀 비율
+sub3a n_models 125 mean 0.0583 max 0.1510 None None
+sub4 n_models 130 mean 0.0489 max 0.1420 ['sie_x2_unetpp'] 0.3
+sub4_full n_models 145 mean 0.0481 max 0.1420 ['sie_x2_unetpp'] 0.3

@@ -1,0 +1,31 @@
+{
+  "data": "data",
+  "out": "runs/cv/cnx_bw_e120/fold4",
+  "train_splits": [
+    "train"
+  ],
+  "val_split": "valid",
+  "fold": 4,
+  "folds_file": "splits/folds5.json",
+  "arch": "Unet",
+  "encoder": "tu-convnext_tiny",
+  "attention": null,
+  "loss": "dice",
+  "bw": 2.0,
+  "class_weights": "",
+  "epochs": 120,
+  "bs": 4,
+  "crop": 512,
+  "spi": 8,
+  "lr": 0.0003,
+  "wd": 0.0001,
+  "width": 1280,
+  "tile": 512,
+  "overlap": 128,
+  "val_every": 5,
+  "workers": 6,
+  "seed": 0,
+  "max_iters": 0,
+  "amp": true,
+  "save_oof": "runs/oof/cnx_bw_e120"
+}

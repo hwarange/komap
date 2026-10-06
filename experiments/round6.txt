@@ -1,0 +1,27 @@
+# 6단계 (reports/plan_round6.md): A1 학습 곡선 + B 새 앙상블 재료 + B4 두 번째 기회. 무거운 실험을 앞에 배치.
+
+# --- B1. 2배 해상도 + UNet++ (최고 단일 모델 후보). 비교: x2_c1024_bw_r90, unetpp_bw_e120_r90
+x2_unetpp_bw_r90 | --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --save-oof runs/oof/x2_unetpp_bw_r90
+
+# --- B2. MicroNet (현미경 사전학습) 인코더 + ImageNet 대조군. 비교: unetpp_bw_r90
+mn_sxt50_unetpp  | --arch UnetPlusPlus --encoder micronet:se_resnext50_32x4d --bw 2 --rot rot90 --save-oof runs/oof/mn_sxt50_unetpp
+
+# --- B4. 두 번째 기회 (설정 문제로 실패했을 가능성이 있는 아이디어)
+cnxS_bw_e120     | --encoder tu-convnext_small --bw 2 --epochs 120 --save-oof runs/oof/cnxS_bw_e120                 # 비교: cnxS_bw (60에폭)
+
+# --- B3. 앙상블 다양성. 비교: unetpp_bw_r90
+effv2s_unetpp    | --arch UnetPlusPlus --encoder tu-tf_efficientnetv2_s --bw 2 --rot rot90 --save-oof runs/oof/effv2s_unetpp
+hrnet_unet       | --encoder tu-hrnet_w18 --bw 2 --rot rot90 --save-oof runs/oof/hrnet_unet
+
+mn_r34_unetpp    | --arch UnetPlusPlus --encoder micronet:resnet34 --bw 2 --rot rot90 --save-oof runs/oof/mn_r34_unetpp
+unetpp_bw_r90    | --arch UnetPlusPlus --bw 2 --rot rot90 --save-oof runs/oof/unetpp_bw_r90                           # B2 대조군 (ImageNet ResNet34)
+
+# --- A1. 학습 곡선 (합금 단위로 학습 사진 75% / 50%만). 비교: unetpp_bw, cnx_bw (72장)
+unetpp_bw_f75    | --arch UnetPlusPlus --bw 2 --train-frac 0.75
+unetpp_bw_f50    | --arch UnetPlusPlus --bw 2 --train-frac 0.5
+
+m_dinov3_lr      | --encoder tu-convnext_tiny.dinov3_lvd1689m --bw 2 --enc-lr-mult 0.1 --save-oof runs/oof/m_dinov3_lr    # B4. 비교: m_dinov3
+m_skel_w015      | --encoder tu-convnext_tiny --bw 2 --skel 0.15 --save-oof runs/oof/m_skel_w015                     # B4. 비교: m_skel, cnx_bw
+
+cnx_bw_f75       | --encoder tu-convnext_tiny --bw 2 --train-frac 0.75
+cnx_bw_f50       | --encoder tu-convnext_tiny --bw 2 --train-frac 0.5

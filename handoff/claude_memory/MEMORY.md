@@ -1,0 +1,3 @@
+- [KoMaP competition](komap-competition.md) — task, mIoU metric, judging weights, EDA quirks, old GPU driver
+- [Plain Korean explanations](user-prefers-plain-korean.md) — user wants a simple plan in Korean before coding
+- [Explain + self-review](feedback-explain-and-self-review.md) — always explain why each choice was made and self-check for mistakes

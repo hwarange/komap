@@ -1,0 +1,58 @@
+experiments with complete OOF: ['unetpp_bw_e120_r90', 'x2_c1024_bw_r90', 'a_rot90', 'cnx_bw_e120', 'unetpp_bw_e120', 'm_hires', 'bw4_r90', 'a_lean', 'unetpp_bw', 'cnx_bw', 'cnx_bw_c768', 'cnx_bw_e120_r90', 'unet_mit_bw_r90', 'x2_c1024', 'unet_mit', 'upp_r50_bw', 'x2_unetpp_bw_r90', 'mn_sxt50_unetpp', 'cnxS_bw_e120', 'effv2s_unetpp', 'hrnet_unet', 'mn_r34_unetpp', 'unetpp_bw_r90', 'm_dinov3_lr', 'm_skel_w015', 'upp_elastic', 'upp_cutout', 'upp_mixup', 'upp_cutmix', 'cnx_elastic', 'cnx_cutout', 'cnx_mixup', 'cnx_cutmix']
+
+== single models (TTA + pp)
+  unetpp_bw_e120_r90 {'cv': 79.491, 'est_test': 80.228}
+  x2_c1024_bw_r90 {'cv': 79.373, 'est_test': 80.221}
+  a_rot90      {'cv': 79.349, 'est_test': 80.058}
+  cnx_bw_e120  {'cv': 79.331, 'est_test': 80.088}
+  unetpp_bw_e120 {'cv': 79.316, 'est_test': 80.132}
+  m_hires      {'cv': 79.28, 'est_test': 80.126}
+  bw4_r90      {'cv': 79.284, 'est_test': 80.042}
+  a_lean       {'cv': 79.24, 'est_test': 80.113}
+  unetpp_bw    {'cv': 79.243, 'est_test': 80.04}
+  cnx_bw       {'cv': 79.188, 'est_test': 79.997}
+  cnx_bw_c768  {'cv': 79.172, 'est_test': 79.995}
+  cnx_bw_e120_r90 {'cv': 79.214, 'est_test': 79.971}
+  unet_mit_bw_r90 {'cv': 79.147, 'est_test': 80.0}
+  x2_c1024     {'cv': 79.056, 'est_test': 79.913}
+  unet_mit     {'cv': 78.865, 'est_test': 79.76}
+  upp_r50_bw   {'cv': 79.053, 'est_test': 79.869}
+  x2_unetpp_bw_r90 {'cv': 79.706, 'est_test': 80.528}
+  mn_sxt50_unetpp {'cv': 79.198, 'est_test': 80.012}
+  cnxS_bw_e120 {'cv': 79.272, 'est_test': 80.051}
+  effv2s_unetpp {'cv': 79.3, 'est_test': 80.156}
+  hrnet_unet   {'cv': 78.972, 'est_test': 79.841}
+  mn_r34_unetpp {'cv': 79.302, 'est_test': 80.094}
+  unetpp_bw_r90 {'cv': 79.412, 'est_test': 80.105}
+  m_dinov3_lr  {'cv': 79.018, 'est_test': 79.877}
+  m_skel_w015  {'cv': 79.055, 'est_test': 79.829}
+  upp_elastic  {'cv': 79.214, 'est_test': 80.022}
+  upp_cutout   {'cv': 79.356, 'est_test': 80.178}
+  upp_mixup    {'cv': 79.239, 'est_test': 80.036}
+  upp_cutmix   {'cv': 79.328, 'est_test': 80.089}
+  cnx_elastic  {'cv': 79.086, 'est_test': 79.887}
+  cnx_cutout   {'cv': 79.126, 'est_test': 79.955}
+  cnx_mixup    {'cv': 79.104, 'est_test': 79.966}
+  cnx_cutmix   {'cv': 79.127, 'est_test': 79.838}
+
+== predefined ensembles (probability average, TTA + pp)
+  top2 by single score                   {'cv': 79.912, 'est_test': 80.681}  ['x2_unetpp_bw_r90', 'unetpp_bw_e120_r90']
+  top3 by single score                   {'cv': 79.859, 'est_test': 80.604}  ['x2_unetpp_bw_r90', 'unetpp_bw_e120_r90', 'unetpp_bw_r90']
+  top4 by single score                   {'cv': 79.852, 'est_test': 80.617}  ['x2_unetpp_bw_r90', 'unetpp_bw_e120_r90', 'unetpp_bw_r90', 'x2_c1024_bw_r90']
+  top5 by single score                   {'cv': 79.807, 'est_test': 80.571}  ['x2_unetpp_bw_r90', 'unetpp_bw_e120_r90', 'unetpp_bw_r90', 'x2_c1024_bw_r90', 'upp_cutout']
+  all                                    {'cv': 79.881, 'est_test': 80.643}  ['unetpp_bw_e120_r90', 'x2_c1024_bw_r90', 'a_rot90', 'cnx_bw_e120', 'unetpp_bw_e120', 'm_hires', 'bw4_r90', 'a_lean', 'unetpp_bw', 'cnx_bw', 'cnx_bw_c768', 'cnx_bw_e120_r90', 'unet_mit_bw_r90', 'x2_c1024', 'unet_mit', 'upp_r50_bw', 'x2_unetpp_bw_r90', 'mn_sxt50_unetpp', 'cnxS_bw_e120', 'effv2s_unetpp', 'hrnet_unet', 'mn_r34_unetpp', 'unetpp_bw_r90', 'm_dinov3_lr', 'm_skel_w015', 'upp_elastic', 'upp_cutout', 'upp_mixup', 'upp_cutmix', 'cnx_elastic', 'cnx_cutout', 'cnx_mixup', 'cnx_cutmix']
+
+== greedy forward selection
+  in-sample (optimistic): 80.190  ['x2_unetpp_bw_r90', 'unet_mit', 'effv2s_unetpp', 'x2_unetpp_bw_r90', 'cnxS_bw_e120', 'm_hires']
+  nested (honest): {'cv': 80.005, 'est_test': 80.785}
+    picked: ['x2_unetpp_bw_r90', 'cnx_bw_e120']
+    picked: ['x2_unetpp_bw_r90', 'unet_mit', 'effv2s_unetpp', 'x2_unetpp_bw_r90', 'cnxS_bw_e120', 'm_hires']
+    picked: ['x2_unetpp_bw_r90', 'unet_mit', 'effv2s_unetpp', 'x2_unetpp_bw_r90', 'cnxS_bw_e120', 'mn_sxt50_unetpp']
+    picked: ['x2_unetpp_bw_r90', 'unet_mit', 'effv2s_unetpp', 'x2_unetpp_bw_r90', 'cnxS_bw_e120', 'unetpp_bw_e120']
+    picked: ['x2_unetpp_bw_r90', 'unet_mit', 'cnxS_bw_e120', 'x2_unetpp_bw_r90', 'effv2s_unetpp', 'm_hires']
+
+== Primary Si - Eutectic Si adjacency rule (on best predefined ensemble and best single)
+  best single                pp {'cv': 79.706, 'est_test': 80.528} -> +adj {'cv': 79.703, 'est_test': 80.524}  delta -0.003  better 50 / worse 32  predicted SiP-SiE contacts 10708 (GT 462)
+  best predefined ensemble   pp {'cv': 79.912, 'est_test': 80.681} -> +adj {'cv': 79.914, 'est_test': 80.679}  delta +0.002  better 58 / worse 24  predicted SiP-SiE contacts 9068 (GT 462)
+
+saved -> runs/oof/ensemble_summary_r7aug.json

@@ -1,0 +1,132 @@
+10-06 06:13:28 65 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-06 06:13:28 start x2_unetpp_bw_r90/fold0 on GPU 0
+10-06 06:13:28 start x2_unetpp_bw_r90/fold1 on GPU 0
+10-06 06:13:28 start x2_unetpp_bw_r90/fold2 on GPU 1
+10-06 06:13:28 start x2_unetpp_bw_r90/fold3 on GPU 1
+10-06 06:13:28 start x2_unetpp_bw_r90/fold4 on GPU 2
+10-06 06:13:28 start mn_sxt50_unetpp/fold0 on GPU 2
+10-06 06:13:28 start mn_sxt50_unetpp/fold1 on GPU 3
+10-06 06:13:28 start mn_sxt50_unetpp/fold2 on GPU 3
+10-06 06:51:58 done mn_sxt50_unetpp/fold0 (38.5 min)
+10-06 06:51:58 start mn_sxt50_unetpp/fold3 on GPU 2
+10-06 06:52:58 done mn_sxt50_unetpp/fold2 (39.5 min)
+10-06 06:52:58 start mn_sxt50_unetpp/fold4 on GPU 3
+10-06 06:53:08 done mn_sxt50_unetpp/fold1 (39.7 min)
+10-06 06:53:08 start cnxS_bw_e120/fold0 on GPU 3
+10-06 07:23:03 done cnxS_bw_e120/fold0 (29.9 min)
+10-06 07:23:03 start cnxS_bw_e120/fold1 on GPU 3
+10-06 07:28:58 done mn_sxt50_unetpp/fold4 (36.0 min)
+10-06 07:28:58 start cnxS_bw_e120/fold2 on GPU 3
+10-06 07:29:48 done x2_unetpp_bw_r90/fold4 (76.3 min)
+10-06 07:29:48 start cnxS_bw_e120/fold3 on GPU 2
+10-06 07:30:13 done mn_sxt50_unetpp/fold3 (38.3 min)
+10-06 07:30:13 start cnxS_bw_e120/fold4 on GPU 2
+10-06 07:31:23 done x2_unetpp_bw_r90/fold0 (77.9 min)
+10-06 07:31:23 start effv2s_unetpp/fold0 on GPU 0
+10-06 07:31:28 done x2_unetpp_bw_r90/fold2 (78.0 min)
+10-06 07:31:28 start effv2s_unetpp/fold1 on GPU 1
+10-06 07:31:43 done x2_unetpp_bw_r90/fold3 (78.3 min)
+10-06 07:31:43 start effv2s_unetpp/fold2 on GPU 1
+10-06 07:31:48 done x2_unetpp_bw_r90/fold1 (78.3 min)
+10-06 07:31:48 start effv2s_unetpp/fold3 on GPU 0
+10-06 07:48:28 done effv2s_unetpp/fold0 (17.1 min)
+10-06 07:48:28 start effv2s_unetpp/fold4 on GPU 0
+10-06 07:48:38 done effv2s_unetpp/fold1 (17.2 min)
+10-06 07:48:38 start hrnet_unet/fold0 on GPU 1
+10-06 07:48:48 done effv2s_unetpp/fold2 (17.1 min)
+10-06 07:48:48 done effv2s_unetpp/fold3 (17.0 min)
+10-06 07:48:48 start hrnet_unet/fold1 on GPU 0
+10-06 07:48:48 start hrnet_unet/fold2 on GPU 1
+10-06 07:52:28 done cnxS_bw_e120/fold1 (29.4 min)
+10-06 07:52:28 start hrnet_unet/fold3 on GPU 3
+10-06 07:57:48 done cnxS_bw_e120/fold2 (28.8 min)
+10-06 07:57:48 start hrnet_unet/fold4 on GPU 3
+10-06 07:59:08 done cnxS_bw_e120/fold3 (29.3 min)
+10-06 07:59:08 start mn_r34_unetpp/fold0 on GPU 2
+10-06 07:59:28 done cnxS_bw_e120/fold4 (29.3 min)
+10-06 07:59:28 start mn_r34_unetpp/fold1 on GPU 2
+10-06 08:05:43 done effv2s_unetpp/fold4 (17.3 min)
+10-06 08:05:43 start mn_r34_unetpp/fold2 on GPU 0
+10-06 08:10:18 done hrnet_unet/fold0 (21.7 min)
+10-06 08:10:18 start mn_r34_unetpp/fold3 on GPU 1
+10-06 08:10:33 done hrnet_unet/fold2 (21.8 min)
+10-06 08:10:33 start mn_r34_unetpp/fold4 on GPU 1
+10-06 08:10:38 done hrnet_unet/fold1 (21.8 min)
+10-06 08:10:38 start unetpp_bw_r90/fold0 on GPU 0
+10-06 08:14:03 done hrnet_unet/fold3 (21.6 min)
+10-06 08:14:03 start unetpp_bw_r90/fold1 on GPU 3
+10-06 08:16:33 done mn_r34_unetpp/fold0 (17.4 min)
+10-06 08:16:33 start unetpp_bw_r90/fold2 on GPU 2
+10-06 08:16:58 done mn_r34_unetpp/fold1 (17.5 min)
+10-06 08:16:58 start unetpp_bw_r90/fold3 on GPU 2
+10-06 08:19:28 done hrnet_unet/fold4 (21.7 min)
+10-06 08:19:28 start unetpp_bw_r90/fold4 on GPU 3
+10-06 08:22:33 done mn_r34_unetpp/fold2 (16.8 min)
+10-06 08:22:33 start unetpp_bw_f75/fold0 on GPU 0
+10-06 08:27:38 done unetpp_bw_r90/fold0 (17.0 min)
+10-06 08:27:38 start unetpp_bw_f75/fold1 on GPU 0
+10-06 08:28:03 done mn_r34_unetpp/fold3 (17.8 min)
+10-06 08:28:03 start unetpp_bw_f75/fold2 on GPU 1
+10-06 08:28:13 done mn_r34_unetpp/fold4 (17.7 min)
+10-06 08:28:13 start unetpp_bw_f75/fold3 on GPU 1
+10-06 08:31:03 done unetpp_bw_r90/fold1 (17.0 min)
+10-06 08:31:03 start unetpp_bw_f75/fold4 on GPU 3
+10-06 08:33:58 done unetpp_bw_r90/fold2 (17.4 min)
+10-06 08:33:58 start unetpp_bw_f50/fold0 on GPU 2
+10-06 08:34:28 done unetpp_bw_r90/fold3 (17.5 min)
+10-06 08:34:28 start unetpp_bw_f50/fold1 on GPU 2
+10-06 08:35:43 done unetpp_bw_f75/fold0 (13.2 min)
+10-06 08:35:43 start unetpp_bw_f50/fold2 on GPU 0
+10-06 08:36:38 done unetpp_bw_r90/fold4 (17.2 min)
+10-06 08:36:38 start unetpp_bw_f50/fold3 on GPU 3
+10-06 08:40:38 done unetpp_bw_f75/fold1 (13.0 min)
+10-06 08:40:38 start unetpp_bw_f50/fold4 on GPU 0
+10-06 08:41:33 done unetpp_bw_f75/fold2 (13.5 min)
+10-06 08:41:33 start m_dinov3_lr/fold0 on GPU 1
+10-06 08:41:43 done unetpp_bw_f75/fold3 (13.5 min)
+10-06 08:41:43 start m_dinov3_lr/fold1 on GPU 1
+10-06 08:42:58 done unetpp_bw_f50/fold0 (9.0 min)
+10-06 08:42:58 start m_dinov3_lr/fold2 on GPU 2
+10-06 08:43:38 done unetpp_bw_f50/fold1 (9.2 min)
+10-06 08:43:38 start m_dinov3_lr/fold3 on GPU 2
+10-06 08:44:03 done unetpp_bw_f75/fold4 (13.0 min)
+10-06 08:44:03 start m_dinov3_lr/fold4 on GPU 3
+10-06 08:44:38 done unetpp_bw_f50/fold2 (8.9 min)
+10-06 08:44:38 start m_skel_w015/fold0 on GPU 0
+10-06 08:45:43 done unetpp_bw_f50/fold3 (9.1 min)
+10-06 08:45:43 start m_skel_w015/fold1 on GPU 3
+10-06 08:49:18 done unetpp_bw_f50/fold4 (8.7 min)
+10-06 08:49:18 start m_skel_w015/fold2 on GPU 0
+10-06 08:52:48 done m_dinov3_lr/fold0 (11.3 min)
+10-06 08:52:48 start m_skel_w015/fold3 on GPU 1
+10-06 08:52:58 done m_dinov3_lr/fold1 (11.3 min)
+10-06 08:52:58 start m_skel_w015/fold4 on GPU 1
+10-06 08:54:03 done m_dinov3_lr/fold2 (11.1 min)
+10-06 08:54:03 start cnx_bw_f75/fold0 on GPU 2
+10-06 08:54:48 done m_dinov3_lr/fold3 (11.2 min)
+10-06 08:54:48 start cnx_bw_f75/fold1 on GPU 2
+10-06 08:54:58 done m_dinov3_lr/fold4 (10.9 min)
+10-06 08:54:58 start cnx_bw_f75/fold2 on GPU 3
+10-06 08:56:08 done m_skel_w015/fold0 (11.5 min)
+10-06 08:56:08 start cnx_bw_f75/fold3 on GPU 0
+10-06 08:57:13 done m_skel_w015/fold1 (11.5 min)
+10-06 08:57:13 start cnx_bw_f75/fold4 on GPU 3
+10-06 09:00:33 done m_skel_w015/fold2 (11.3 min)
+10-06 09:00:33 start cnx_bw_f50/fold0 on GPU 0
+10-06 09:02:48 done cnx_bw_f75/fold0 (8.8 min)
+10-06 09:02:48 start cnx_bw_f50/fold1 on GPU 2
+10-06 09:03:28 done cnx_bw_f75/fold1 (8.7 min)
+10-06 09:03:28 done cnx_bw_f75/fold2 (8.5 min)
+10-06 09:03:28 start cnx_bw_f50/fold2 on GPU 2
+10-06 09:03:28 start cnx_bw_f50/fold3 on GPU 3
+10-06 09:04:13 done m_skel_w015/fold3 (11.4 min)
+10-06 09:04:13 start cnx_bw_f50/fold4 on GPU 1
+10-06 09:04:23 done m_skel_w015/fold4 (11.4 min)
+10-06 09:04:28 done cnx_bw_f75/fold3 (8.3 min)
+10-06 09:05:48 done cnx_bw_f75/fold4 (8.6 min)
+10-06 09:06:28 done cnx_bw_f50/fold0 (5.9 min)
+10-06 09:09:08 done cnx_bw_f50/fold1 (6.3 min)
+10-06 09:09:33 done cnx_bw_f50/fold3 (6.1 min)
+10-06 09:09:53 done cnx_bw_f50/fold2 (6.4 min)
+10-06 09:09:53 done cnx_bw_f50/fold4 (5.7 min)
+10-06 09:09:53 all finished. failed: none

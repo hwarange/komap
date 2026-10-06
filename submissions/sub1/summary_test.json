@@ -1,0 +1,24 @@
+{
+ "split": "test",
+ "n_images": 10,
+ "n_models": 60,
+ "models_per_image": [
+  60
+ ],
+ "experiments": [
+  "cnxB_bw",
+  "cnxS_bw",
+  "cnx_bw",
+  "cnx_bw_c768",
+  "cnx_bw_e120",
+  "cnx_s1",
+  "unet_mit",
+  "unet_mitb4_bw",
+  "unetpp_bw",
+  "unetpp_bw_e120",
+  "upp_r50_bw",
+  "x2_c1024"
+ ],
+ "problems": [],
+ "created": "2026-10-05 23:32"
+}

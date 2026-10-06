@@ -1,0 +1,92 @@
+10-05 10:06:29 45 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-05 10:06:29 start cnx_bw_c768/fold0 on GPU 0
+10-05 10:06:29 start cnx_bw_c768/fold1 on GPU 0
+10-05 10:06:29 start cnx_bw_c768/fold2 on GPU 1
+10-05 10:06:29 start cnx_bw_c768/fold3 on GPU 1
+10-05 10:06:29 start cnx_bw_c768/fold4 on GPU 2
+10-05 10:06:29 start cnx_c768/fold0 on GPU 2
+10-05 10:06:29 start cnx_c768/fold1 on GPU 3
+10-05 10:06:29 start cnx_c768/fold2 on GPU 3
+10-05 10:31:34 done cnx_bw_c768/fold0 (25.1 min)
+10-05 10:31:34 start cnx_c768/fold3 on GPU 0
+10-05 10:31:39 done cnx_bw_c768/fold1 (25.2 min)
+10-05 10:31:39 done cnx_bw_c768/fold2 (25.2 min)
+10-05 10:31:39 done cnx_c768/fold0 (25.2 min)
+10-05 10:31:39 start cnx_c768/fold4 on GPU 0
+10-05 10:31:39 start upp_r50_bw/fold0 on GPU 1
+10-05 10:31:39 start upp_r50_bw/fold1 on GPU 2
+10-05 10:31:44 done cnx_bw_c768/fold3 (25.3 min)
+10-05 10:31:44 start upp_r50_bw/fold2 on GPU 1
+10-05 10:31:49 done cnx_bw_c768/fold4 (25.3 min)
+10-05 10:31:49 start upp_r50_bw/fold3 on GPU 2
+10-05 10:31:59 done cnx_c768/fold1 (25.5 min)
+10-05 10:31:59 done cnx_c768/fold2 (25.5 min)
+10-05 10:31:59 start upp_r50_bw/fold4 on GPU 3
+10-05 10:31:59 start unetpp_bw/fold0 on GPU 3
+10-05 10:49:44 done unetpp_bw/fold0 (17.8 min)
+10-05 10:49:44 start unetpp_bw/fold1 on GPU 3
+10-05 10:56:09 done cnx_c768/fold3 (24.6 min)
+10-05 10:56:09 start unetpp_bw/fold2 on GPU 0
+10-05 10:56:14 done cnx_c768/fold4 (24.6 min)
+10-05 10:56:14 start unetpp_bw/fold3 on GPU 0
+10-05 11:06:49 done upp_r50_bw/fold4 (34.8 min)
+10-05 11:06:49 start unetpp_bw/fold4 on GPU 3
+10-05 11:07:34 done unetpp_bw/fold1 (17.8 min)
+10-05 11:07:34 start cnx_bw/fold0 on GPU 3
+10-05 11:07:39 done upp_r50_bw/fold0 (36.0 min)
+10-05 11:07:39 done upp_r50_bw/fold2 (35.9 min)
+10-05 11:07:39 start cnx_bw/fold1 on GPU 1
+10-05 11:07:39 start cnx_bw/fold2 on GPU 1
+10-05 11:07:44 done upp_r50_bw/fold1 (36.1 min)
+10-05 11:07:44 start cnx_bw/fold3 on GPU 2
+10-05 11:07:49 done upp_r50_bw/fold3 (36.0 min)
+10-05 11:07:49 start cnx_bw/fold4 on GPU 2
+10-05 11:13:54 done unetpp_bw/fold2 (17.8 min)
+10-05 11:13:54 start cnx_lovasz_bw/fold0 on GPU 0
+10-05 11:14:04 done unetpp_bw/fold3 (17.8 min)
+10-05 11:14:04 start cnx_lovasz_bw/fold1 on GPU 0
+10-05 11:19:09 done cnx_bw/fold3 (11.4 min)
+10-05 11:19:09 start cnx_lovasz_bw/fold2 on GPU 2
+10-05 11:19:14 done cnx_bw/fold1 (11.6 min)
+10-05 11:19:14 done cnx_bw/fold2 (11.6 min)
+10-05 11:19:14 done cnx_bw/fold4 (11.4 min)
+10-05 11:19:14 start cnx_lovasz_bw/fold3 on GPU 1
+10-05 11:19:14 start cnx_lovasz_bw/fold4 on GPU 1
+10-05 11:19:14 start cnx_lr1e4/fold0 on GPU 2
+10-05 11:19:19 done cnx_bw/fold0 (11.8 min)
+10-05 11:19:19 start cnx_lr1e4/fold1 on GPU 3
+10-05 11:22:54 done unetpp_bw/fold4 (16.1 min)
+10-05 11:22:54 start cnx_lr1e4/fold2 on GPU 3
+10-05 11:25:54 done cnx_lovasz_bw/fold0 (12.0 min)
+10-05 11:25:54 start cnx_lr1e4/fold3 on GPU 0
+10-05 11:26:04 done cnx_lovasz_bw/fold1 (12.0 min)
+10-05 11:26:04 start cnx_lr1e4/fold4 on GPU 0
+10-05 11:29:49 done cnx_lr1e4/fold0 (10.6 min)
+10-05 11:29:49 start cnx_e40/fold0 on GPU 2
+10-05 11:30:39 done cnx_lr1e4/fold1 (11.3 min)
+10-05 11:30:39 start cnx_e40/fold1 on GPU 3
+10-05 11:31:19 done cnx_lovasz_bw/fold3 (12.1 min)
+10-05 11:31:19 done cnx_lovasz_bw/fold4 (12.1 min)
+10-05 11:31:19 start cnx_e40/fold2 on GPU 1
+10-05 11:31:19 start cnx_e40/fold3 on GPU 1
+10-05 11:31:44 done cnx_lovasz_bw/fold2 (12.6 min)
+10-05 11:31:44 start cnx_e40/fold4 on GPU 2
+10-05 11:33:59 done cnx_lr1e4/fold2 (11.1 min)
+10-05 11:33:59 start cnx_s1/fold0 on GPU 3
+10-05 11:37:19 done cnx_lr1e4/fold3 (11.4 min)
+10-05 11:37:19 start cnx_s1/fold1 on GPU 0
+10-05 11:37:24 done cnx_lr1e4/fold4 (11.3 min)
+10-05 11:37:24 done cnx_e40/fold0 (7.6 min)
+10-05 11:37:24 start cnx_s1/fold2 on GPU 0
+10-05 11:37:24 start cnx_s1/fold3 on GPU 2
+10-05 11:38:19 done cnx_e40/fold1 (7.7 min)
+10-05 11:38:19 start cnx_s1/fold4 on GPU 3
+10-05 11:39:19 done cnx_e40/fold2 (8.0 min)
+10-05 11:39:19 done cnx_e40/fold3 (8.0 min)
+10-05 11:39:29 done cnx_e40/fold4 (7.8 min)
+10-05 11:45:14 done cnx_s1/fold0 (11.3 min)
+10-05 11:48:04 done cnx_s1/fold3 (10.7 min)
+10-05 11:48:59 done cnx_s1/fold1 (11.7 min)
+10-05 11:49:04 done cnx_s1/fold2 (11.7 min)
+10-05 11:49:39 done cnx_s1/fold4 (11.3 min)
+10-05 11:49:39 all finished. failed: none

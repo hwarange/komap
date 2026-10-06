@@ -1,0 +1,7 @@
+# 6단계 C: 90장 전체 학습 (A1 학습 곡선 판단 기준을 통과할 때만 run_round6.sh가 자동 실행)
+# launch.py의 fold 번호 0,1,2 = 시드 번호 (--folds 3). 결과는 runs/full/<실험>/fold<시드>/last.pt (검증 없음)
+# 앙상블에서 자주 뽑힌 서로 다른 구성 4개. 무거운 것부터.
+full_unetpp_bw_e120_r90 | --full --arch UnetPlusPlus --bw 2 --epochs 120 --rot rot90
+full_x2_c1024_bw_r90    | --full --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90
+full_cnx_bw_e120        | --full --encoder tu-convnext_tiny --bw 2 --epochs 120
+full_unet_mit_bw_r90    | --full --encoder mit_b2 --bw 2 --rot rot90

@@ -1,0 +1,26 @@
+10-06 09:09:53 12 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-06 09:09:53 start full_unetpp_bw_e120_r90/fold0 on GPU 0
+10-06 09:09:53 start full_unetpp_bw_e120_r90/fold1 on GPU 0
+10-06 09:09:53 start full_unetpp_bw_e120_r90/fold2 on GPU 1
+10-06 09:09:53 start full_x2_c1024_bw_r90/fold0 on GPU 1
+10-06 09:09:53 start full_x2_c1024_bw_r90/fold1 on GPU 2
+10-06 09:09:53 start full_x2_c1024_bw_r90/fold2 on GPU 2
+10-06 09:09:53 start full_cnx_bw_e120/fold0 on GPU 3
+10-06 09:09:53 start full_cnx_bw_e120/fold1 on GPU 3
+10-06 09:35:43 done full_cnx_bw_e120/fold0 (25.8 min)
+10-06 09:35:43 done full_cnx_bw_e120/fold1 (25.8 min)
+10-06 09:35:43 start full_cnx_bw_e120/fold2 on GPU 3
+10-06 09:35:43 start full_unet_mit_bw_r90/fold0 on GPU 3
+10-06 09:51:23 done full_x2_c1024_bw_r90/fold1 (41.5 min)
+10-06 09:51:23 done full_x2_c1024_bw_r90/fold2 (41.5 min)
+10-06 09:51:23 start full_unet_mit_bw_r90/fold1 on GPU 2
+10-06 09:51:23 start full_unet_mit_bw_r90/fold2 on GPU 2
+10-06 09:51:28 done full_x2_c1024_bw_r90/fold0 (41.6 min)
+10-06 09:51:38 done full_unetpp_bw_e120_r90/fold2 (41.8 min)
+10-06 09:52:13 done full_unetpp_bw_e120_r90/fold0 (42.3 min)
+10-06 09:52:13 done full_unetpp_bw_e120_r90/fold1 (42.3 min)
+10-06 09:53:38 done full_unet_mit_bw_r90/fold0 (17.9 min)
+10-06 10:00:33 done full_cnx_bw_e120/fold2 (24.8 min)
+10-06 10:09:18 done full_unet_mit_bw_r90/fold1 (17.9 min)
+10-06 10:09:28 done full_unet_mit_bw_r90/fold2 (18.1 min)
+10-06 10:09:28 all finished. failed: none

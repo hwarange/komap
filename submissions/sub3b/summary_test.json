@@ -1,0 +1,89 @@
+{
+ "split": "test",
+ "n_images": 10,
+ "n_models": 25,
+ "models_per_image": [
+  25
+ ],
+ "experiments": [
+  "cnxS_bw_e120",
+  "effv2s_unetpp",
+  "m_hires",
+  "unet_mit",
+  "x2_unetpp_bw_r90"
+ ],
+ "parts": "submissions/sub3_pred/parts/models",
+ "recipe": {
+  "x2_unetpp_bw_r90": 2.0,
+  "unet_mit": 1.0,
+  "effv2s_unetpp": 1.0,
+  "cnxS_bw_e120": 1.0,
+  "m_hires": 1.0
+ },
+ "full_mix": 0.0,
+ "models_per_exp": {
+  "x2_unetpp_bw_r90": 5,
+  "unet_mit": 5,
+  "effv2s_unetpp": 5,
+  "cnxS_bw_e120": 5,
+  "m_hires": 5
+ },
+ "problems": [],
+ "created": "2026-10-06 11:18",
+ "si_classifier": {
+  "path": "runs/si_clf/sub3b_model.pkl",
+  "thr": 0.8,
+  "per_image": {
+   "A107_step1_sample3": {
+    "components": 1169,
+    "decided": 1157,
+    "pixels_changed_pct": 0.001
+   },
+   "A122_step4_sample1": {
+    "components": 1800,
+    "decided": 1742,
+    "pixels_changed_pct": 0.029
+   },
+   "A124_step4_sample3": {
+    "components": 2079,
+    "decided": 2022,
+    "pixels_changed_pct": 0.031
+   },
+   "A127_step3_sample2": {
+    "components": 1567,
+    "decided": 1565,
+    "pixels_changed_pct": 0.006
+   },
+   "A133_step4_sample1": {
+    "components": 1318,
+    "decided": 1311,
+    "pixels_changed_pct": 0.003
+   },
+   "A167_step3_sample3": {
+    "components": 2005,
+    "decided": 1970,
+    "pixels_changed_pct": 0.012
+   },
+   "A38_step2_sample2": {
+    "components": 1477,
+    "decided": 1464,
+    "pixels_changed_pct": 0.04
+   },
+   "A51_step3_sample3": {
+    "components": 777,
+    "decided": 770,
+    "pixels_changed_pct": 0.147
+   },
+   "A63_step2_sample3": {
+    "components": 1128,
+    "decided": 1124,
+    "pixels_changed_pct": 0.148
+   },
+   "A87_step1_sample4": {
+    "components": 1117,
+    "decided": 1095,
+    "pixels_changed_pct": 0.122
+   }
+  }
+ }
+}

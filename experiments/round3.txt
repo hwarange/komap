@@ -1,0 +1,10 @@
+# 3단계: 노트북(GTX 1060) 제약으로 정했던 설정(배치 4, 60에폭, 학습률 3e-4, 작은 모델)을 L40S 기준으로 다시 잡는다.
+# 비교 기준: cnx_bw (ConvNeXt-Tiny + 경계 가중, 2단계 79.19). 모든 실험에 경계 가중(--bw 2) 기본 적용.
+# 무거운 실험을 앞에 배치. 예측 확률은 앙상블용으로 runs/oof/<실험>에 저장.
+
+unetpp_bw_e120 | --arch UnetPlusPlus --bw 2 --epochs 120 --save-oof runs/oof/unetpp_bw_e120                 # 최고 단일 모델 + 2배 긴 학습
+cnx_bw_b16     | --encoder tu-convnext_tiny --bw 2 --bs 16 --spi 32 --lr 6e-4 --save-oof runs/oof/cnx_bw_b16   # 배치 16 (에폭당 반복 수는 그대로, crop 4배), 학습률 √4배
+unet_mitb4_bw  | --encoder mit_b4 --bw 2 --save-oof runs/oof/unet_mitb4_bw                                  # Transformer 인코더 키우기
+cnxB_bw        | --encoder tu-convnext_base --bw 2 --save-oof runs/oof/cnxB_bw                              # ConvNeXt-Base (89M)
+cnx_bw_e120    | --encoder tu-convnext_tiny --bw 2 --epochs 120 --save-oof runs/oof/cnx_bw_e120             # 2배 긴 학습
+cnxS_bw        | --encoder tu-convnext_small --bw 2 --save-oof runs/oof/cnxS_bw                             # ConvNeXt-Small (50M)

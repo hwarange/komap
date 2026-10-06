@@ -1,0 +1,22 @@
+10-06 11:35:37 10 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-06 11:35:37 start sie_x2_unetpp/fold0 on GPU 0
+10-06 11:35:37 start sie_x2_unetpp/fold1 on GPU 0
+10-06 11:35:37 start sie_x2_unetpp/fold2 on GPU 1
+10-06 11:35:37 start sie_x2_unetpp/fold3 on GPU 1
+10-06 11:35:37 start sie_x2_unetpp/fold4 on GPU 2
+10-06 11:35:37 start sie_unetpp/fold0 on GPU 2
+10-06 11:35:37 start sie_unetpp/fold1 on GPU 3
+10-06 11:35:37 start sie_unetpp/fold2 on GPU 3
+10-06 11:53:12 done sie_unetpp/fold2 (17.6 min)
+10-06 11:53:12 start sie_unetpp/fold3 on GPU 3
+10-06 11:53:17 done sie_unetpp/fold1 (17.7 min)
+10-06 11:53:17 start sie_unetpp/fold4 on GPU 3
+10-06 11:53:32 done sie_unetpp/fold0 (17.9 min)
+10-06 12:10:47 done sie_unetpp/fold3 (17.6 min)
+10-06 12:10:57 done sie_unetpp/fold4 (17.7 min)
+10-06 12:20:37 done sie_x2_unetpp/fold4 (45.0 min)
+10-06 12:52:32 done sie_x2_unetpp/fold0 (76.9 min)
+10-06 12:52:42 done sie_x2_unetpp/fold1 (77.1 min)
+10-06 12:52:57 done sie_x2_unetpp/fold2 (77.3 min)
+10-06 12:53:02 done sie_x2_unetpp/fold3 (77.4 min)
+10-06 12:53:02 all finished. failed: none

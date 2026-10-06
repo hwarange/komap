@@ -1,0 +1,128 @@
+{
+ "base": {
+  "mIoU": 79.937,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.09,
+   "SiP": 89.1,
+   "SiE": 59.09
+  },
+  "upper_bound_gain": 0.0
+ },
+ "al3ni_sie_sep": {
+  "mIoU": 82.605,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 81.55,
+   "SiP": 89.1,
+   "SiE": 67.04
+  },
+  "upper_bound_gain": 2.668,
+  "components_per_image": 1318.1,
+  "largest_component_share_mean": 0.044
+ },
+ "al3ni_sie_union": {
+  "mIoU": 72.358,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 72.67,
+   "SiP": 89.1,
+   "SiE": 35.13
+  },
+  "upper_bound_gain": -7.579,
+  "components_per_image": 1497.0,
+  "largest_component_share_mean": 0.094
+ },
+ "si_union": {
+  "mIoU": 82.575,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.09,
+   "SiP": 93.7,
+   "SiE": 65.14
+  },
+  "upper_bound_gain": 2.638,
+  "components_per_image": 1078.5,
+  "largest_component_share_mean": 0.103
+ },
+ "al3ni_sie_sep_min20": {
+  "mIoU": 81.956,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 80.91,
+   "SiP": 89.1,
+   "SiE": 65.1
+  },
+  "upper_bound_gain": 2.019
+ },
+ "al3ni_sie_sep_min100": {
+  "mIoU": 80.608,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.39,
+   "SiP": 89.1,
+   "SiE": 61.37
+  },
+  "upper_bound_gain": 0.671
+ },
+ "al3ni_sie_sep_min500": {
+  "mIoU": 80.073,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 78.93,
+   "SiP": 89.1,
+   "SiE": 59.78
+  },
+  "upper_bound_gain": 0.135
+ },
+ "al3ni_sie_sep_min2000": {
+  "mIoU": 79.946,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.07,
+   "SiP": 89.1,
+   "SiE": 59.15
+  },
+  "upper_bound_gain": 0.009
+ },
+ "si_union_min20": {
+  "mIoU": 82.561,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.09,
+   "SiP": 93.67,
+   "SiE": 65.12
+  },
+  "upper_bound_gain": 2.624
+ },
+ "si_union_min100": {
+  "mIoU": 82.462,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.09,
+   "SiP": 93.46,
+   "SiE": 64.92
+  },
+  "upper_bound_gain": 2.525
+ },
+ "si_union_min500": {
+  "mIoU": 81.651,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.09,
+   "SiP": 92.05,
+   "SiE": 63.06
+  },
+  "upper_bound_gain": 1.714
+ },
+ "si_union_min2000": {
+  "mIoU": 80.496,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.09,
+   "SiP": 89.94,
+   "SiE": 60.5
+  },
+  "upper_bound_gain": 0.558
+ }
+}

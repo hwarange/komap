@@ -1,0 +1,15 @@
+# 7단계 증강 실험: 아직 안 써 본 증강 4가지를 두 구조에서 (한 구조만 재면 거짓 음성 위험)
+# 비교 기준: UNet++ → unetpp_bw_r90 (79.41), ConvNeXt → cnx_bw (79.19, 시드 잡음 0.09). 증강 하나만 켜고 나머지는 같음.
+# 판단: 단일 +0.1 이상 & 95% 구간 > 0 이면 채택. 낮아도 앙상블 기여가 있으면 앙상블 재료로.
+
+# --- UNet++ (90° 회전) 기준
+upp_elastic | --arch UnetPlusPlus --bw 2 --rot rot90 --elastic 0.3 --save-oof runs/oof/upp_elastic
+upp_cutout  | --arch UnetPlusPlus --bw 2 --rot rot90 --cutout 0.5  --save-oof runs/oof/upp_cutout
+upp_mixup   | --arch UnetPlusPlus --bw 2 --rot rot90 --mixup 0.5   --save-oof runs/oof/upp_mixup
+upp_cutmix  | --arch UnetPlusPlus --bw 2 --rot rot90 --cutmix 0.5  --save-oof runs/oof/upp_cutmix
+
+# --- ConvNeXt-Tiny (임의 각도 회전) 기준
+cnx_elastic | --encoder tu-convnext_tiny --bw 2 --elastic 0.3 --save-oof runs/oof/cnx_elastic
+cnx_cutout  | --encoder tu-convnext_tiny --bw 2 --cutout 0.5  --save-oof runs/oof/cnx_cutout
+cnx_mixup   | --encoder tu-convnext_tiny --bw 2 --mixup 0.5   --save-oof runs/oof/cnx_mixup
+cnx_cutmix  | --encoder tu-convnext_tiny --bw 2 --cutmix 0.5  --save-oof runs/oof/cnx_cutmix

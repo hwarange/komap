@@ -1,0 +1,112 @@
+10-06 01:32:32 55 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-06 01:32:32 start unetpp_bw_e120_r90/fold0 on GPU 0
+10-06 01:32:32 start unetpp_bw_e120_r90/fold1 on GPU 0
+10-06 01:32:32 start unetpp_bw_e120_r90/fold2 on GPU 1
+10-06 01:32:32 start unetpp_bw_e120_r90/fold3 on GPU 1
+10-06 01:32:32 start unetpp_bw_e120_r90/fold4 on GPU 2
+10-06 01:32:32 start x2_c1024_bw_r90/fold0 on GPU 2
+10-06 01:32:32 start x2_c1024_bw_r90/fold1 on GPU 3
+10-06 01:32:32 start x2_c1024_bw_r90/fold2 on GPU 3
+10-06 02:06:37 done x2_c1024_bw_r90/fold0 (34.1 min)
+10-06 02:06:37 start x2_c1024_bw_r90/fold3 on GPU 2
+10-06 02:06:42 done x2_c1024_bw_r90/fold1 (34.2 min)
+10-06 02:06:42 done x2_c1024_bw_r90/fold2 (34.2 min)
+10-06 02:06:42 start x2_c1024_bw_r90/fold4 on GPU 3
+10-06 02:06:42 start cnx_bw_e120_r90/fold0 on GPU 3
+10-06 02:07:02 done unetpp_bw_e120_r90/fold4 (34.5 min)
+10-06 02:07:02 start cnx_bw_e120_r90/fold1 on GPU 2
+10-06 02:07:32 done unetpp_bw_e120_r90/fold0 (35.0 min)
+10-06 02:07:32 start cnx_bw_e120_r90/fold2 on GPU 0
+10-06 02:07:37 done unetpp_bw_e120_r90/fold1 (35.1 min)
+10-06 02:07:37 start cnx_bw_e120_r90/fold3 on GPU 0
+10-06 02:07:42 done unetpp_bw_e120_r90/fold2 (35.2 min)
+10-06 02:07:42 done unetpp_bw_e120_r90/fold3 (35.2 min)
+10-06 02:07:42 start cnx_bw_e120_r90/fold4 on GPU 1
+10-06 02:07:42 start unet_mit_bw_r90/fold0 on GPU 1
+10-06 02:22:57 done unet_mit_bw_r90/fold0 (15.3 min)
+10-06 02:22:57 start unet_mit_bw_r90/fold1 on GPU 1
+10-06 02:28:57 done cnx_bw_e120_r90/fold4 (21.3 min)
+10-06 02:28:57 start unet_mit_bw_r90/fold2 on GPU 1
+10-06 02:29:22 done cnx_bw_e120_r90/fold2 (21.8 min)
+10-06 02:29:22 start unet_mit_bw_r90/fold3 on GPU 0
+10-06 02:29:27 done cnx_bw_e120_r90/fold1 (22.4 min)
+10-06 02:29:27 start unet_mit_bw_r90/fold4 on GPU 2
+10-06 02:29:37 done cnx_bw_e120_r90/fold3 (22.0 min)
+10-06 02:29:37 start ema_r90/fold0 on GPU 0
+10-06 02:31:02 done cnx_bw_e120_r90/fold0 (24.3 min)
+10-06 02:31:02 start ema_r90/fold1 on GPU 3
+10-06 02:38:07 done unet_mit_bw_r90/fold1 (15.2 min)
+10-06 02:38:07 start ema_r90/fold2 on GPU 1
+10-06 02:38:12 done x2_c1024_bw_r90/fold3 (31.6 min)
+10-06 02:38:12 start ema_r90/fold3 on GPU 2
+10-06 02:40:52 done x2_c1024_bw_r90/fold4 (34.2 min)
+10-06 02:40:52 start ema_r90/fold4 on GPU 3
+10-06 02:41:32 done ema_r90/fold0 (11.9 min)
+10-06 02:41:32 start bw4_r90/fold0 on GPU 0
+10-06 02:43:12 done ema_r90/fold1 (12.2 min)
+10-06 02:43:12 start bw4_r90/fold1 on GPU 3
+10-06 02:43:57 done unet_mit_bw_r90/fold2 (15.0 min)
+10-06 02:43:57 start bw4_r90/fold2 on GPU 1
+10-06 02:44:17 done unet_mit_bw_r90/fold3 (14.9 min)
+10-06 02:44:17 start bw4_r90/fold3 on GPU 0
+10-06 02:44:37 done unet_mit_bw_r90/fold4 (15.2 min)
+10-06 02:44:37 start bw4_r90/fold4 on GPU 2
+10-06 02:49:47 done ema_r90/fold2 (11.7 min)
+10-06 02:49:47 start io_nogamma/fold0 on GPU 1
+10-06 02:49:57 done ema_r90/fold3 (11.8 min)
+10-06 02:49:57 start io_nogamma/fold1 on GPU 2
+10-06 02:52:32 done ema_r90/fold4 (11.7 min)
+10-06 02:52:32 start io_nogamma/fold2 on GPU 3
+10-06 02:52:47 done bw4_r90/fold0 (11.3 min)
+10-06 02:52:47 start io_nogamma/fold3 on GPU 0
+10-06 02:54:27 done bw4_r90/fold1 (11.3 min)
+10-06 02:54:27 start io_nogamma/fold4 on GPU 3
+10-06 02:55:12 done bw4_r90/fold2 (11.3 min)
+10-06 02:55:12 start io_nocontrast/fold0 on GPU 1
+10-06 02:55:32 done bw4_r90/fold3 (11.3 min)
+10-06 02:55:32 start io_nocontrast/fold1 on GPU 0
+10-06 02:55:52 done bw4_r90/fold4 (11.3 min)
+10-06 02:55:52 start io_nocontrast/fold2 on GPU 2
+10-06 03:01:03 done io_nogamma/fold0 (11.3 min)
+10-06 03:01:03 start io_nocontrast/fold3 on GPU 1
+10-06 03:01:13 done io_nogamma/fold1 (11.3 min)
+10-06 03:01:13 start io_nocontrast/fold4 on GPU 2
+10-06 03:03:48 done io_nogamma/fold2 (11.3 min)
+10-06 03:03:48 start io_noillum/fold0 on GPU 3
+10-06 03:04:03 done io_nogamma/fold3 (11.3 min)
+10-06 03:04:03 start io_noillum/fold1 on GPU 0
+10-06 03:05:48 done io_nogamma/fold4 (11.3 min)
+10-06 03:05:48 start io_noillum/fold2 on GPU 3
+10-06 03:06:38 done io_nocontrast/fold0 (11.4 min)
+10-06 03:06:38 start io_noillum/fold3 on GPU 1
+10-06 03:07:03 done io_nocontrast/fold1 (11.5 min)
+10-06 03:07:03 start io_noillum/fold4 on GPU 0
+10-06 03:07:23 done io_nocontrast/fold2 (11.5 min)
+10-06 03:07:23 start io_noblur/fold0 on GPU 2
+10-06 03:12:18 done io_nocontrast/fold3 (11.3 min)
+10-06 03:12:18 start io_noblur/fold1 on GPU 1
+10-06 03:12:28 done io_nocontrast/fold4 (11.3 min)
+10-06 03:12:28 start io_noblur/fold2 on GPU 2
+10-06 03:15:08 done io_noillum/fold0 (11.3 min)
+10-06 03:15:08 start io_noblur/fold3 on GPU 3
+10-06 03:15:18 done io_noillum/fold1 (11.3 min)
+10-06 03:15:18 start io_noblur/fold4 on GPU 0
+10-06 03:17:08 done io_noillum/fold2 (11.3 min)
+10-06 03:17:08 start io_nonoise/fold0 on GPU 3
+10-06 03:18:03 done io_noillum/fold3 (11.4 min)
+10-06 03:18:03 start io_nonoise/fold1 on GPU 1
+10-06 03:18:28 done io_noillum/fold4 (11.4 min)
+10-06 03:18:28 start io_nonoise/fold2 on GPU 0
+10-06 03:18:43 done io_noblur/fold0 (11.3 min)
+10-06 03:18:43 start io_nonoise/fold3 on GPU 2
+10-06 03:23:33 done io_noblur/fold1 (11.3 min)
+10-06 03:23:33 start io_nonoise/fold4 on GPU 1
+10-06 03:23:53 done io_noblur/fold2 (11.4 min)
+10-06 03:26:33 done io_noblur/fold3 (11.4 min)
+10-06 03:26:33 done io_noblur/fold4 (11.3 min)
+10-06 03:28:28 done io_nonoise/fold0 (11.3 min)
+10-06 03:29:23 done io_nonoise/fold3 (10.7 min)
+10-06 03:29:38 done io_nonoise/fold1 (11.6 min)
+10-06 03:29:48 done io_nonoise/fold2 (11.3 min)
+10-06 03:34:43 done io_nonoise/fold4 (11.2 min)
+10-06 03:34:43 all finished. failed: none

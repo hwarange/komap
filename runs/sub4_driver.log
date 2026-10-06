@@ -1,0 +1,7 @@
+10-06 14:33:41 Si 분류기 학습 시작 (CPU, 섞은 OOF 확률 runs/oof/_ens_A_sie03 로)
+10-06 14:33:41 전용 모델 평가 사진 예측 (GPU 4장, fold 5개)
+10-06 14:34:08 예측 끝: 전용 모델 5개 (기대 5)
+10-06 14:34:22 Si 분류기: saved runs/si_clf/sub4_model.pkl
+10-06 14:35:01 sub4: problems="problems": []
+10-06 14:35:01 sub4_full: problems="problems": []
+10-06 14:35:03 모두 끝 (runs/sub4/checks.txt)

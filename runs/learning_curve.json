@@ -1,0 +1,25 @@
+{
+ "cnx_bw": {
+  "scores_36_54_72": [
+   77.516,
+   78.813,
+   79.188
+  ],
+  "gain_54_to_72": 0.375,
+  "extrapolated_90": 79.86,
+  "expected_gain_72_to_90": 0.673
+ },
+ "unetpp_bw": {
+  "scores_36_54_72": [
+   77.938,
+   78.74,
+   79.243
+  ],
+  "gain_54_to_72": 0.503,
+  "extrapolated_90": 79.679,
+  "expected_gain_72_to_90": 0.437
+ },
+ "mean_gain_54_to_72": 0.439,
+ "decision_full90": true,
+ "rule": "54→72장 평균 개선 >= 0.3 이면 90장 전체 학습(C 단계) 진행"
+}

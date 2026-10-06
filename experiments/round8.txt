@@ -1,0 +1,15 @@
+# 8단계 (2026-10-06 저녁): 7단계에서 통한 방식 확장 + 경계 애매함을 직접 겨냥. 무거운 실험을 앞에 배치.
+# 판단: 전용 모델은 decision_rules.py 섞기(중첩 검증)로 앙상블 기여를, 4상 모델은 review.py + 앙상블 기여로.
+
+# ④ 최고 단일 모델(2배 해상도 UNet++, 60에폭 79.71)을 120에폭으로. 비교: x2_unetpp_bw_r90
+x2_unetpp_bw_e120_r90 | --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120 --save-oof runs/oof/x2_unetpp_bw_e120_r90
+
+# ① Al3Ni 전용 모델 (Eutectic Si 전용 모델과 같은 방식, 두 번째로 약한 상 79.1)
+al3ni_x2_unetpp | --binary-class 1 --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --save-oof runs/oof/al3ni_x2_unetpp
+
+# ② Eutectic Si 전용 모델 하나 더, 인코더를 ConvNeXt로 바꿔 '다르게 틀리게' (앙상블 다양성)
+sie_x2_cnx | --binary-class 3 --encoder tu-convnext_tiny --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --save-oof runs/oof/sie_x2_cnx
+
+# ③ 경계 부드러운 정답 (경계 1px 띠의 정답 = 0.5·원래 상 + 0.5·주변 3×3 상 비율). 두 구조에서. 비교: unetpp_bw_r90, cnx_bw
+upp_softedge | --arch UnetPlusPlus --bw 2 --rot rot90 --soft-edge 0.5 --save-oof runs/oof/upp_softedge
+cnx_softedge | --encoder tu-convnext_tiny --bw 2 --soft-edge 0.5 --save-oof runs/oof/cnx_softedge

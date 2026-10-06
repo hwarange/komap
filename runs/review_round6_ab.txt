@@ -1,0 +1,733 @@
+##### A1 학습 곡선 판단
+{
+ "cnx_bw": {
+  "scores_36_54_72": [
+   77.516,
+   78.813,
+   79.188
+  ],
+  "gain_54_to_72": 0.375,
+  "extrapolated_90": 79.86,
+  "expected_gain_72_to_90": 0.673
+ },
+ "unetpp_bw": {
+  "scores_36_54_72": [
+   77.938,
+   78.74,
+   79.243
+  ],
+  "gain_54_to_72": 0.503,
+  "extrapolated_90": 79.679,
+  "expected_gain_72_to_90": 0.437
+ },
+ "mean_gain_54_to_72": 0.439,
+ "decision_full90": true,
+ "rule": "54→72장 평균 개선 >= 0.3 이면 90장 전체 학습(C 단계) 진행"
+}##### A2 크기 키운 TTA
+{
+ "unetpp_bw_e120_r90": {
+  "orig": 79.492,
+  "x1.25": 78.251,
+  "avg": 79.338,
+  "delta_avg_vs_orig": -0.155,
+  "ci95": [
+   -0.31,
+   -0.014
+  ],
+  "improved": "31/90",
+  "delta_low_contrast": -0.233
+ },
+ "cnx_bw": {
+  "orig": 79.188,
+  "x1.25": 78.104,
+  "avg": 79.009,
+  "delta_avg_vs_orig": -0.179,
+  "ci95": [
+   -0.31,
+   -0.059
+  ],
+  "improved": "31/90",
+  "delta_low_contrast": -0.267
+ }
+}===== x2_unetpp_bw_r90  vs  x2_c1024_bw_r90  (B1: 2배 해상도 + UNet++ vs 2배 해상도 U-Net)
+{
+ "exp": "x2_unetpp_bw_r90",
+ "base": "x2_c1024_bw_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4073,
+ "base_final_loss": 0.4308,
+ "train_min_per_fold": 75.6,
+ "gpu_mem_gb": 15.21,
+ "log_issues": "none",
+ "cv_mIoU": 79.71,
+ "base_cv_mIoU": 79.37,
+ "delta": 0.33,
+ "ci95": [
+  0.12,
+  0.56
+ ],
+ "improved_images": "65/90",
+ "delta_plain(no TTA/pp)": 0.14,
+ "delta_per_class": {
+  "Al": 0.24,
+  "Al3Ni": 0.34,
+  "SiP": -0.03,
+  "SiE": 0.76
+ },
+ "class_IoU": {
+  "Al": 93.18,
+  "Al3Ni": 78.66,
+  "SiP": 88.68,
+  "SiE": 58.85
+ },
+ "delta_low_contrast": 0.27,
+ "delta_high_contrast": 0.36,
+ "delta_675px": 0.27,
+ "delta_large": 0.36,
+ "est_test": 80.53,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 70.4,
+   "base": 68.0,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 56.8,
+   "base": 56.9,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.022,
+  "Al3Ni": 0.971,
+  "SiP": 0.973,
+  "SiE": 0.958
+ },
+ "base_area_ratio": {
+  "Al": 1.025,
+  "Al3Ni": 0.966,
+  "SiP": 0.977,
+  "SiE": 0.95
+ }
+}
+===== x2_unetpp_bw_r90  vs  unetpp_bw_e120_r90  (B1: vs 최고 단일 모델)
+{
+ "exp": "x2_unetpp_bw_r90",
+ "base": "unetpp_bw_e120_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4073,
+ "base_final_loss": 0.4184,
+ "train_min_per_fold": 75.6,
+ "gpu_mem_gb": 15.21,
+ "log_issues": "none",
+ "cv_mIoU": 79.71,
+ "base_cv_mIoU": 79.49,
+ "delta": 0.21,
+ "ci95": [
+  -0.11,
+  0.52
+ ],
+ "improved_images": "60/90",
+ "delta_plain(no TTA/pp)": 0.13,
+ "delta_per_class": {
+  "Al": 0.3,
+  "Al3Ni": 0.01,
+  "SiP": 0.18,
+  "SiE": 0.39
+ },
+ "class_IoU": {
+  "Al": 93.18,
+  "Al3Ni": 78.66,
+  "SiP": 88.68,
+  "SiE": 58.85
+ },
+ "delta_low_contrast": 0.42,
+ "delta_high_contrast": 0.12,
+ "delta_675px": -0.64,
+ "delta_large": 0.56,
+ "est_test": 80.53,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 70.4,
+   "base": 70.3,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 56.8,
+   "base": 59.2,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.022,
+  "Al3Ni": 0.971,
+  "SiP": 0.973,
+  "SiE": 0.958
+ },
+ "base_area_ratio": {
+  "Al": 1.022,
+  "Al3Ni": 0.964,
+  "SiP": 0.972,
+  "SiE": 0.987
+ }
+}
+===== mn_r34_unetpp  vs  unetpp_bw_r90  (B2: MicroNet ResNet34 vs ImageNet 대조군 (사전학습만 다름))
+{
+ "exp": "mn_r34_unetpp",
+ "base": "unetpp_bw_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4567,
+ "base_final_loss": 0.4525,
+ "train_min_per_fold": 16.4,
+ "gpu_mem_gb": 5.49,
+ "log_issues": "none",
+ "cv_mIoU": 79.3,
+ "base_cv_mIoU": 79.41,
+ "delta": -0.11,
+ "ci95": [
+  -0.31,
+  0.08
+ ],
+ "improved_images": "45/90",
+ "delta_plain(no TTA/pp)": -0.11,
+ "delta_per_class": {
+  "Al": -0.05,
+  "Al3Ni": -0.16,
+  "SiP": -0.16,
+  "SiE": -0.05
+ },
+ "class_IoU": {
+  "Al": 92.77,
+  "Al3Ni": 78.33,
+  "SiP": 88.44,
+  "SiE": 58.18
+ },
+ "delta_low_contrast": 0.13,
+ "delta_high_contrast": -0.22,
+ "delta_675px": -0.2,
+ "delta_large": -0.07,
+ "est_test": 80.09,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 71.2,
+   "base": 73.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 60.1,
+   "base": 60.5,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.024,
+  "Al3Ni": 0.958,
+  "SiP": 0.963,
+  "SiE": 1.005
+ },
+ "base_area_ratio": {
+  "Al": 1.024,
+  "Al3Ni": 0.959,
+  "SiP": 0.97,
+  "SiE": 0.995
+ }
+}
+===== mn_sxt50_unetpp  vs  unetpp_bw_r90  (B2: MicroNet SE-ResNeXt50 vs 대조군)
+{
+ "exp": "mn_sxt50_unetpp",
+ "base": "unetpp_bw_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4105,
+ "base_final_loss": 0.4525,
+ "train_min_per_fold": 36.7,
+ "gpu_mem_gb": 8.72,
+ "log_issues": "none",
+ "cv_mIoU": 79.2,
+ "base_cv_mIoU": 79.41,
+ "delta": -0.21,
+ "ci95": [
+  -0.74,
+  0.23
+ ],
+ "improved_images": "47/90",
+ "delta_plain(no TTA/pp)": -0.0,
+ "delta_per_class": {
+  "Al": 0.12,
+  "Al3Ni": -0.16,
+  "SiP": 0.04,
+  "SiE": -0.63
+ },
+ "class_IoU": {
+  "Al": 92.94,
+  "Al3Ni": 78.33,
+  "SiP": 88.64,
+  "SiE": 57.59
+ },
+ "delta_low_contrast": 0.07,
+ "delta_high_contrast": -0.34,
+ "delta_675px": -1.19,
+ "delta_large": 0.18,
+ "est_test": 80.01,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 58.5,
+   "base": 73.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 54.7,
+   "base": 60.5,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.017,
+  "Al3Ni": 0.977,
+  "SiP": 0.985,
+  "SiE": 0.964
+ },
+ "base_area_ratio": {
+  "Al": 1.024,
+  "Al3Ni": 0.959,
+  "SiP": 0.97,
+  "SiE": 0.995
+ }
+}
+===== unetpp_bw_r90  vs  unetpp_bw  (B2 대조군: 90도 회전 효과 (UNet++ 60에폭))
+{
+ "exp": "unetpp_bw_r90",
+ "base": "unetpp_bw",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4525,
+ "base_final_loss": 0.466,
+ "train_min_per_fold": 16.1,
+ "gpu_mem_gb": 5.49,
+ "log_issues": "none",
+ "cv_mIoU": 79.41,
+ "base_cv_mIoU": 79.24,
+ "delta": 0.17,
+ "ci95": [
+  -0.03,
+  0.38
+ ],
+ "improved_images": "56/90",
+ "delta_plain(no TTA/pp)": 0.17,
+ "delta_per_class": {
+  "Al": 0.11,
+  "Al3Ni": 0.27,
+  "SiP": -0.05,
+  "SiE": 0.33
+ },
+ "class_IoU": {
+  "Al": 92.82,
+  "Al3Ni": 78.48,
+  "SiP": 88.6,
+  "SiE": 58.23
+ },
+ "delta_low_contrast": -0.08,
+ "delta_high_contrast": 0.28,
+ "delta_675px": 0.57,
+ "delta_large": 0.01,
+ "est_test": 80.11,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 73.1,
+   "base": 73.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 60.5,
+   "base": 59.7,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.024,
+  "Al3Ni": 0.959,
+  "SiP": 0.97,
+  "SiE": 0.995
+ },
+ "base_area_ratio": {
+  "Al": 1.021,
+  "Al3Ni": 0.961,
+  "SiP": 0.975,
+  "SiE": 0.998
+ }
+}
+===== effv2s_unetpp  vs  unetpp_bw_r90  (B3: EfficientNetV2-S (다양성용, 앙상블 기여로 판단))
+{
+ "exp": "effv2s_unetpp",
+ "base": "unetpp_bw_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4275,
+ "base_final_loss": 0.4525,
+ "train_min_per_fold": 16.1,
+ "gpu_mem_gb": 4.4,
+ "log_issues": "none",
+ "cv_mIoU": 79.3,
+ "base_cv_mIoU": 79.41,
+ "delta": -0.11,
+ "ci95": [
+  -0.51,
+  0.22
+ ],
+ "improved_images": "42/90",
+ "delta_plain(no TTA/pp)": -0.13,
+ "delta_per_class": {
+  "Al": 0.03,
+  "Al3Ni": 0.01,
+  "SiP": 0.15,
+  "SiE": -0.48
+ },
+ "class_IoU": {
+  "Al": 92.85,
+  "Al3Ni": 78.49,
+  "SiP": 88.74,
+  "SiE": 57.75
+ },
+ "delta_low_contrast": 0.28,
+ "delta_high_contrast": -0.29,
+ "delta_675px": -0.6,
+ "delta_large": 0.09,
+ "est_test": 80.16,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 60.1,
+   "base": 73.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 60.3,
+   "base": 60.5,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.015,
+  "Al3Ni": 0.98,
+  "SiP": 0.972,
+  "SiE": 0.984
+ },
+ "base_area_ratio": {
+  "Al": 1.024,
+  "Al3Ni": 0.959,
+  "SiP": 0.97,
+  "SiE": 0.995
+ }
+}
+===== hrnet_unet  vs  unetpp_bw_r90  (B3: HRNet-W18 (다양성용))
+{
+ "exp": "hrnet_unet",
+ "base": "unetpp_bw_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4579,
+ "base_final_loss": 0.4525,
+ "train_min_per_fold": 20.6,
+ "gpu_mem_gb": 3.71,
+ "log_issues": "none",
+ "cv_mIoU": 78.97,
+ "base_cv_mIoU": 79.41,
+ "delta": -0.44,
+ "ci95": [
+  -0.82,
+  -0.11
+ ],
+ "improved_images": "34/90",
+ "delta_plain(no TTA/pp)": -0.6,
+ "delta_per_class": {
+  "Al": -0.17,
+  "Al3Ni": -0.48,
+  "SiP": -0.47,
+  "SiE": -0.61
+ },
+ "class_IoU": {
+  "Al": 92.65,
+  "Al3Ni": 78.01,
+  "SiP": 88.12,
+  "SiE": 57.62
+ },
+ "delta_low_contrast": -0.02,
+ "delta_high_contrast": -0.63,
+ "delta_675px": -0.62,
+ "delta_large": -0.37,
+ "est_test": 79.84,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 69.2,
+   "base": 73.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 60.3,
+   "base": 60.5,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.021,
+  "Al3Ni": 0.97,
+  "SiP": 0.965,
+  "SiE": 0.986
+ },
+ "base_area_ratio": {
+  "Al": 1.024,
+  "Al3Ni": 0.959,
+  "SiP": 0.97,
+  "SiE": 0.995
+ }
+}
+===== cnxS_bw_e120  vs  cnxS_bw  (B4: ConvNeXt-Small 120에폭 vs 60에폭)
+{
+ "exp": "cnxS_bw_e120",
+ "base": "cnxS_bw",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.417,
+ "base_final_loss": 0.4597,
+ "train_min_per_fold": 27.8,
+ "gpu_mem_gb": 4.58,
+ "log_issues": "none",
+ "cv_mIoU": 79.27,
+ "base_cv_mIoU": 79.12,
+ "delta": 0.15,
+ "ci95": [
+  -0.06,
+  0.39
+ ],
+ "improved_images": "51/90",
+ "delta_plain(no TTA/pp)": 0.15,
+ "delta_per_class": {
+  "Al": 0.17,
+  "Al3Ni": 0.28,
+  "SiP": -0.07,
+  "SiE": 0.16
+ },
+ "class_IoU": {
+  "Al": 92.87,
+  "Al3Ni": 78.65,
+  "SiP": 88.47,
+  "SiE": 57.66
+ },
+ "delta_low_contrast": 0.08,
+ "delta_high_contrast": 0.19,
+ "delta_675px": 0.42,
+ "delta_large": 0.05,
+ "est_test": 80.05,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 67.2,
+   "base": 61.0,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 59.7,
+   "base": 59.0,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.014,
+  "Al3Ni": 0.978,
+  "SiP": 0.968,
+  "SiE": 1.009
+ },
+ "base_area_ratio": {
+  "Al": 1.021,
+  "Al3Ni": 0.966,
+  "SiP": 0.973,
+  "SiE": 0.988
+ }
+}
+===== m_dinov3_lr  vs  m_dinov3  (B4: DINOv3 인코더 학습률 1/10 vs 3e-4)
+{
+ "exp": "m_dinov3_lr",
+ "base": "m_dinov3",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4499,
+ "base_final_loss": 0.4828,
+ "train_min_per_fold": 10.1,
+ "gpu_mem_gb": 3.69,
+ "log_issues": "none",
+ "cv_mIoU": 79.02,
+ "base_cv_mIoU": 78.99,
+ "delta": 0.03,
+ "ci95": [
+  -0.32,
+  0.37
+ ],
+ "improved_images": "48/90",
+ "delta_plain(no TTA/pp)": 0.22,
+ "delta_per_class": {
+  "Al": -0.04,
+  "Al3Ni": -0.34,
+  "SiP": 0.41,
+  "SiE": 0.23
+ },
+ "class_IoU": {
+  "Al": 92.61,
+  "Al3Ni": 78.08,
+  "SiP": 88.64,
+  "SiE": 57.37
+ },
+ "delta_low_contrast": 0.06,
+ "delta_high_contrast": 0.01,
+ "delta_675px": -0.12,
+ "delta_large": 0.09,
+ "est_test": 79.88,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 62.2,
+   "base": 67.0,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 57.9,
+   "base": 64.6,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.016,
+  "Al3Ni": 0.975,
+  "SiP": 0.977,
+  "SiE": 0.991
+ },
+ "base_area_ratio": {
+  "Al": 1.021,
+  "Al3Ni": 0.963,
+  "SiP": 0.97,
+  "SiE": 1.003
+ }
+}
+===== m_dinov3_lr  vs  cnx_bw  (B4: DINOv3(낮은 학습률) vs ImageNet ConvNeXt)
+{
+ "exp": "m_dinov3_lr",
+ "base": "cnx_bw",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4499,
+ "base_final_loss": 0.4629,
+ "train_min_per_fold": 10.1,
+ "gpu_mem_gb": 3.69,
+ "log_issues": "none",
+ "cv_mIoU": 79.02,
+ "base_cv_mIoU": 79.19,
+ "delta": -0.17,
+ "ci95": [
+  -0.42,
+  0.07
+ ],
+ "improved_images": "32/90",
+ "delta_plain(no TTA/pp)": -0.17,
+ "delta_per_class": {
+  "Al": -0.08,
+  "Al3Ni": -0.24,
+  "SiP": 0.15,
+  "SiE": -0.43
+ },
+ "class_IoU": {
+  "Al": 92.61,
+  "Al3Ni": 78.08,
+  "SiP": 88.64,
+  "SiE": 57.37
+ },
+ "delta_low_contrast": -0.05,
+ "delta_high_contrast": -0.22,
+ "delta_675px": -0.3,
+ "delta_large": -0.12,
+ "est_test": 79.88,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 62.2,
+   "base": 68.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 57.9,
+   "base": 58.8,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.016,
+  "Al3Ni": 0.975,
+  "SiP": 0.977,
+  "SiE": 0.991
+ },
+ "base_area_ratio": {
+  "Al": 1.019,
+  "Al3Ni": 0.966,
+  "SiP": 0.974,
+  "SiE": 1.002
+ }
+}
+===== m_skel_w015  vs  cnx_bw  (B4: Skeleton 손실 0.15 vs 없음)
+{
+ "exp": "m_skel_w015",
+ "base": "cnx_bw",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.5132,
+ "base_final_loss": 0.4629,
+ "train_min_per_fold": 10.4,
+ "gpu_mem_gb": 3.69,
+ "log_issues": "none",
+ "cv_mIoU": 79.05,
+ "base_cv_mIoU": 79.19,
+ "delta": -0.13,
+ "ci95": [
+  -0.3,
+  0.04
+ ],
+ "improved_images": "33/90",
+ "delta_plain(no TTA/pp)": -0.14,
+ "delta_per_class": {
+  "Al": -0.02,
+  "Al3Ni": -0.19,
+  "SiP": -0.07,
+  "SiE": -0.23
+ },
+ "class_IoU": {
+  "Al": 92.67,
+  "Al3Ni": 78.13,
+  "SiP": 88.42,
+  "SiE": 57.58
+ },
+ "delta_low_contrast": -0.22,
+ "delta_high_contrast": -0.09,
+ "delta_675px": -0.31,
+ "delta_large": -0.06,
+ "est_test": 79.83,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 66.8,
+   "base": 68.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 58.3,
+   "base": 58.8,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.013,
+  "Al3Ni": 0.951,
+  "SiP": 0.975,
+  "SiE": 1.105
+ },
+ "base_area_ratio": {
+  "Al": 1.019,
+  "Al3Ni": 0.966,
+  "SiP": 0.974,
+  "SiE": 1.002
+ }
+}

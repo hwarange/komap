@@ -1,0 +1,82 @@
+10-06 12:54:04 40 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-06 12:54:04 start upp_elastic/fold0 on GPU 0
+10-06 12:54:04 start upp_elastic/fold1 on GPU 0
+10-06 12:54:04 start upp_elastic/fold2 on GPU 1
+10-06 12:54:04 start upp_elastic/fold3 on GPU 1
+10-06 12:54:04 start upp_elastic/fold4 on GPU 2
+10-06 12:54:04 start upp_cutout/fold0 on GPU 2
+10-06 12:54:04 start upp_cutout/fold1 on GPU 3
+10-06 12:54:04 start upp_cutout/fold2 on GPU 3
+10-06 13:12:09 done upp_elastic/fold2 (18.1 min)
+10-06 13:12:09 start upp_cutout/fold3 on GPU 1
+10-06 13:12:14 done upp_elastic/fold3 (18.2 min)
+10-06 13:12:14 done upp_elastic/fold4 (18.2 min)
+10-06 13:12:14 done upp_cutout/fold0 (18.2 min)
+10-06 13:12:14 done upp_cutout/fold2 (18.2 min)
+10-06 13:12:14 start upp_cutout/fold4 on GPU 1
+10-06 13:12:14 start upp_mixup/fold0 on GPU 2
+10-06 13:12:14 start upp_mixup/fold1 on GPU 2
+10-06 13:12:14 start upp_mixup/fold2 on GPU 3
+10-06 13:12:19 done upp_elastic/fold0 (18.3 min)
+10-06 13:12:19 done upp_elastic/fold1 (18.3 min)
+10-06 13:12:19 done upp_cutout/fold1 (18.3 min)
+10-06 13:12:19 start upp_mixup/fold3 on GPU 0
+10-06 13:12:19 start upp_mixup/fold4 on GPU 0
+10-06 13:12:19 start upp_cutmix/fold0 on GPU 3
+10-06 13:30:04 done upp_cutout/fold3 (17.9 min)
+10-06 13:30:04 done upp_cutmix/fold0 (17.8 min)
+10-06 13:30:04 start upp_cutmix/fold1 on GPU 1
+10-06 13:30:04 start upp_cutmix/fold2 on GPU 3
+10-06 13:30:14 done upp_cutout/fold4 (18.0 min)
+10-06 13:30:14 start upp_cutmix/fold3 on GPU 1
+10-06 13:30:19 done upp_mixup/fold2 (18.1 min)
+10-06 13:30:19 start upp_cutmix/fold4 on GPU 3
+10-06 13:30:39 done upp_mixup/fold0 (18.4 min)
+10-06 13:30:39 done upp_mixup/fold1 (18.4 min)
+10-06 13:30:39 start cnx_elastic/fold0 on GPU 2
+10-06 13:30:39 start cnx_elastic/fold1 on GPU 2
+10-06 13:30:44 done upp_mixup/fold3 (18.4 min)
+10-06 13:30:44 done upp_mixup/fold4 (18.4 min)
+10-06 13:30:44 start cnx_elastic/fold2 on GPU 0
+10-06 13:30:44 start cnx_elastic/fold3 on GPU 0
+10-06 13:42:24 done cnx_elastic/fold0 (11.8 min)
+10-06 13:42:24 start cnx_elastic/fold4 on GPU 2
+10-06 13:42:29 done cnx_elastic/fold1 (11.8 min)
+10-06 13:42:29 done cnx_elastic/fold2 (11.8 min)
+10-06 13:42:29 done cnx_elastic/fold3 (11.8 min)
+10-06 13:42:29 start cnx_cutout/fold0 on GPU 0
+10-06 13:42:29 start cnx_cutout/fold1 on GPU 0
+10-06 13:42:29 start cnx_cutout/fold2 on GPU 2
+10-06 13:47:54 done upp_cutmix/fold2 (17.8 min)
+10-06 13:47:54 start cnx_cutout/fold3 on GPU 3
+10-06 13:47:59 done upp_cutmix/fold1 (17.9 min)
+10-06 13:47:59 start cnx_cutout/fold4 on GPU 1
+10-06 13:48:09 done upp_cutmix/fold3 (17.9 min)
+10-06 13:48:09 done upp_cutmix/fold4 (17.8 min)
+10-06 13:48:09 start cnx_mixup/fold0 on GPU 1
+10-06 13:48:09 start cnx_mixup/fold1 on GPU 3
+10-06 13:54:04 done cnx_elastic/fold4 (11.7 min)
+10-06 13:54:04 start cnx_mixup/fold2 on GPU 2
+10-06 13:54:09 done cnx_cutout/fold1 (11.7 min)
+10-06 13:54:09 done cnx_cutout/fold2 (11.7 min)
+10-06 13:54:09 start cnx_mixup/fold3 on GPU 0
+10-06 13:54:09 start cnx_mixup/fold4 on GPU 2
+10-06 13:54:14 done cnx_cutout/fold0 (11.8 min)
+10-06 13:54:14 start cnx_cutmix/fold0 on GPU 0
+10-06 13:59:24 done cnx_cutout/fold3 (11.5 min)
+10-06 13:59:24 done cnx_cutout/fold4 (11.4 min)
+10-06 13:59:24 start cnx_cutmix/fold1 on GPU 1
+10-06 13:59:24 start cnx_cutmix/fold2 on GPU 3
+10-06 13:59:59 done cnx_mixup/fold0 (11.8 min)
+10-06 13:59:59 start cnx_cutmix/fold3 on GPU 1
+10-06 14:00:04 done cnx_mixup/fold1 (11.9 min)
+10-06 14:00:04 start cnx_cutmix/fold4 on GPU 3
+10-06 14:05:54 done cnx_cutmix/fold0 (11.7 min)
+10-06 14:05:59 done cnx_mixup/fold2 (11.9 min)
+10-06 14:06:04 done cnx_mixup/fold3 (11.9 min)
+10-06 14:06:04 done cnx_mixup/fold4 (11.9 min)
+10-06 14:10:59 done cnx_cutmix/fold2 (11.6 min)
+10-06 14:11:04 done cnx_cutmix/fold1 (11.7 min)
+10-06 14:11:59 done cnx_cutmix/fold3 (12.0 min)
+10-06 14:11:59 done cnx_cutmix/fold4 (11.9 min)
+10-06 14:11:59 all finished. failed: none

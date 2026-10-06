@@ -1,0 +1,40 @@
+{"epoch": 1, "loss": 1.3013, "lr": 0.0003, "train_sec": 40.1, "gpu_mem_gb": 3.69}
+{"epoch": 2, "loss": 0.6197, "lr": 0.0002995135962201315, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 3, "loss": 0.5433, "lr": 0.00029805753939568687, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 4, "loss": 0.4921, "lr": 0.00029564127261390776, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 5, "loss": 0.4819, "lr": 0.00029228046629207175, "train_sec": 10.2, "gpu_mem_gb": 3.69, "val": {"mIoU": 71.72, "Al": 90.11, "Al3Ni": 72.47, "Primary Si": 74.43, "Eutectic Si": 49.87, "low_contrast": 76.68, "high_contrast": 69.81, "step1": 75.42, "step2": 67.39, "step3": 76.3, "step4": 67.72}, "val_pp": {"mIoU": 72.04, "Al": 90.11, "Al3Ni": 72.46, "Primary Si": 75.17, "Eutectic Si": 50.44, "low_contrast": 76.9, "high_contrast": 70.18, "step1": 75.89, "step2": 67.65, "step3": 76.61, "step4": 67.99}, "val_sec": 10.6, "saved": true}
+{"epoch": 6, "loss": 0.4625, "lr": 0.0002879969165488236, "train_sec": 9.5, "gpu_mem_gb": 3.69}
+{"epoch": 7, "loss": 0.4682, "lr": 0.0002828184038479814, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 8, "loss": 0.4426, "lr": 0.0002767785128315692, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 9, "loss": 0.445, "lr": 0.00026991641451052517, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 10, "loss": 0.4207, "lr": 0.00026227661222566516, "train_sec": 10.1, "gpu_mem_gb": 3.69, "val": {"mIoU": 73.81, "Al": 91.12, "Al3Ni": 74.19, "Primary Si": 77.91, "Eutectic Si": 52.04, "low_contrast": 77.96, "high_contrast": 72.22, "step1": 78.33, "step2": 69.71, "step3": 78.5, "step4": 68.57}, "val_pp": {"mIoU": 74.75, "Al": 91.11, "Al3Ni": 74.18, "Primary Si": 82.64, "Eutectic Si": 52.36, "low_contrast": 78.03, "high_contrast": 73.49, "step1": 78.44, "step2": 72.82, "step3": 78.65, "step4": 68.61}, "val_sec": 2.0, "saved": true}
+{"epoch": 11, "loss": 0.4244, "lr": 0.0002539086530264399, "train_sec": 9.8, "gpu_mem_gb": 3.69}
+{"epoch": 12, "loss": 0.4035, "lr": 0.0002448668063393066, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 13, "loss": 0.4002, "lr": 0.00023520971200967337, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 14, "loss": 0.4087, "lr": 0.000225, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 15, "loss": 0.4018, "lr": 0.0002143038842104581, "train_sec": 10.1, "gpu_mem_gb": 3.69, "val": {"mIoU": 74.0, "Al": 91.08, "Al3Ni": 73.94, "Primary Si": 77.65, "Eutectic Si": 53.33, "low_contrast": 78.45, "high_contrast": 72.29, "step1": 78.33, "step2": 70.25, "step3": 78.3, "step4": 68.98}, "val_pp": {"mIoU": 74.95, "Al": 91.07, "Al3Ni": 73.92, "Primary Si": 82.4, "Eutectic Si": 53.7, "low_contrast": 78.52, "high_contrast": 73.57, "step1": 78.42, "step2": 73.3, "step3": 78.49, "step4": 69.1}, "val_sec": 1.9, "saved": true}
+{"epoch": 16, "loss": 0.4053, "lr": 0.00020319073305638034, "train_sec": 9.2, "gpu_mem_gb": 3.69}
+{"epoch": 17, "loss": 0.3878, "lr": 0.0001917326195874679, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 18, "loss": 0.3835, "lr": 0.00018000385406640666, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 19, "loss": 0.3782, "lr": 0.00016808050203829847, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 20, "loss": 0.375, "lr": 0.00015603989101641228, "train_sec": 10.1, "gpu_mem_gb": 3.69, "val": {"mIoU": 76.39, "Al": 91.63, "Al3Ni": 75.27, "Primary Si": 84.01, "Eutectic Si": 56.12, "low_contrast": 80.18, "high_contrast": 74.93, "step1": 79.59, "step2": 74.6, "step3": 79.93, "step4": 71.0}, "val_pp": {"mIoU": 76.41, "Al": 91.62, "Al3Ni": 75.26, "Primary Si": 84.04, "Eutectic Si": 56.23, "low_contrast": 80.22, "high_contrast": 74.95, "step1": 79.58, "step2": 74.67, "step3": 79.96, "step4": 70.99}, "val_sec": 1.9, "saved": true}
+{"epoch": 21, "loss": 0.3701, "lr": 0.00014396010898358772, "train_sec": 9.5, "gpu_mem_gb": 3.69}
+{"epoch": 22, "loss": 0.3743, "lr": 0.0001319194979617015, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 23, "loss": 0.369, "lr": 0.00011999614593359332, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 24, "loss": 0.3668, "lr": 0.00010826738041253213, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 25, "loss": 0.36, "lr": 9.680926694361968e-05, "train_sec": 10.2, "gpu_mem_gb": 3.69, "val": {"mIoU": 75.73, "Al": 91.84, "Al3Ni": 75.68, "Primary Si": 79.76, "Eutectic Si": 55.64, "low_contrast": 79.25, "high_contrast": 74.37, "step1": 79.36, "step2": 71.44, "step3": 80.31, "step4": 71.73}, "val_pp": {"mIoU": 76.61, "Al": 91.83, "Al3Ni": 75.66, "Primary Si": 84.54, "Eutectic Si": 55.78, "low_contrast": 79.26, "high_contrast": 75.58, "step1": 79.42, "step2": 74.42, "step3": 80.37, "step4": 71.82}, "val_sec": 1.9}
+{"epoch": 26, "loss": 0.3567, "lr": 8.569611578954191e-05, "train_sec": 9.8, "gpu_mem_gb": 3.69}
+{"epoch": 27, "loss": 0.3622, "lr": 7.500000000000002e-05, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 28, "loss": 0.3536, "lr": 6.479028799032664e-05, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 29, "loss": 0.3521, "lr": 5.513319366069342e-05, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 30, "loss": 0.3481, "lr": 4.6091346973560136e-05, "train_sec": 10.2, "gpu_mem_gb": 3.69, "val": {"mIoU": 76.71, "Al": 91.72, "Al3Ni": 75.51, "Primary Si": 84.57, "Eutectic Si": 56.33, "low_contrast": 79.52, "high_contrast": 75.64, "step1": 79.67, "step2": 75.16, "step3": 80.81, "step4": 70.58}, "val_pp": {"mIoU": 76.79, "Al": 91.71, "Al3Ni": 75.49, "Primary Si": 84.67, "Eutectic Si": 56.55, "low_contrast": 79.57, "high_contrast": 75.71, "step1": 79.76, "step2": 75.24, "step3": 80.92, "step4": 70.58}, "val_sec": 1.8, "saved": true}
+{"epoch": 31, "loss": 0.3499, "lr": 3.772338777433487e-05, "train_sec": 9.7, "gpu_mem_gb": 3.69}
+{"epoch": 32, "loss": 0.3482, "lr": 3.0083585489474855e-05, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 33, "loss": 0.3451, "lr": 2.3221487168430806e-05, "train_sec": 10.0, "gpu_mem_gb": 3.69}
+{"epoch": 34, "loss": 0.3414, "lr": 1.718159615201853e-05, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 35, "loss": 0.3426, "lr": 1.2003083451176366e-05, "train_sec": 10.1, "gpu_mem_gb": 3.69, "val": {"mIoU": 77.24, "Al": 91.91, "Al3Ni": 76.06, "Primary Si": 84.84, "Eutectic Si": 57.51, "low_contrast": 80.39, "high_contrast": 76.03, "step1": 79.76, "step2": 75.66, "step3": 80.95, "step4": 72.04}, "val_pp": {"mIoU": 77.28, "Al": 91.9, "Al3Ni": 76.05, "Primary Si": 84.9, "Eutectic Si": 57.63, "low_contrast": 80.4, "high_contrast": 76.08, "step1": 79.82, "step2": 75.69, "step3": 80.98, "step4": 72.1}, "val_sec": 1.9, "saved": true}
+{"epoch": 36, "loss": 0.341, "lr": 7.719533707928177e-06, "train_sec": 9.5, "gpu_mem_gb": 3.69}
+{"epoch": 37, "loss": 0.3398, "lr": 4.358727386092214e-06, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 38, "loss": 0.3393, "lr": 1.942460604313073e-06, "train_sec": 10.2, "gpu_mem_gb": 3.69}
+{"epoch": 39, "loss": 0.3435, "lr": 4.864037798685105e-07, "train_sec": 10.1, "gpu_mem_gb": 3.69}
+{"epoch": 40, "loss": 0.3407, "lr": 0.0, "train_sec": 10.1, "gpu_mem_gb": 3.69, "val": {"mIoU": 77.08, "Al": 91.93, "Al3Ni": 75.94, "Primary Si": 84.74, "Eutectic Si": 57.14, "low_contrast": 80.17, "high_contrast": 75.89, "step1": 79.52, "step2": 75.29, "step3": 80.94, "step4": 72.05}, "val_pp": {"mIoU": 77.15, "Al": 91.92, "Al3Ni": 75.92, "Primary Si": 84.86, "Eutectic Si": 57.32, "low_contrast": 80.2, "high_contrast": 75.97, "step1": 79.59, "step2": 75.33, "step3": 81.02, "step4": 72.14}, "val_sec": 2.0}

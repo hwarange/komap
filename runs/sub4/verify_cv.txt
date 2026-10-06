@@ -1,0 +1,11 @@
+{
+ "models_per_image (ensemble, specialist)": [
+  [
+   25,
+   1
+  ]
+ ],
+ "ensemble_only": 79.936,
+ "blend_alpha0.3": 80.068,
+ "blend + Si clf (in-sample, optimistic)": 80.296
+}

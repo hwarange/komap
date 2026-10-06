@@ -1,0 +1,84 @@
+{
+ "split": "test",
+ "n_images": 10,
+ "n_models": 80,
+ "models_per_image": [
+  80
+ ],
+ "experiments": [
+  "a_lean",
+  "a_rot90",
+  "bw4_r90",
+  "cnx_bw",
+  "cnx_bw_c768",
+  "cnx_bw_e120",
+  "cnx_bw_e120_r90",
+  "m_hires",
+  "unet_mit",
+  "unet_mit_bw_r90",
+  "unetpp_bw",
+  "unetpp_bw_e120",
+  "unetpp_bw_e120_r90",
+  "upp_r50_bw",
+  "x2_c1024",
+  "x2_c1024_bw_r90"
+ ],
+ "problems": [],
+ "created": "2026-10-06 04:00",
+ "si_classifier": {
+  "path": "runs/si_clf/sub2_model.pkl",
+  "thr": 0.8,
+  "per_image": {
+   "A107_step1_sample3": {
+    "components": 1223,
+    "decided": 1211,
+    "pixels_changed_pct": 0.002
+   },
+   "A122_step4_sample1": {
+    "components": 1855,
+    "decided": 1801,
+    "pixels_changed_pct": 0.016
+   },
+   "A124_step4_sample3": {
+    "components": 2093,
+    "decided": 2022,
+    "pixels_changed_pct": 0.089
+   },
+   "A127_step3_sample2": {
+    "components": 1597,
+    "decided": 1595,
+    "pixels_changed_pct": 0.002
+   },
+   "A133_step4_sample1": {
+    "components": 1352,
+    "decided": 1348,
+    "pixels_changed_pct": 0.003
+   },
+   "A167_step3_sample3": {
+    "components": 2063,
+    "decided": 2022,
+    "pixels_changed_pct": 0.014
+   },
+   "A38_step2_sample2": {
+    "components": 1479,
+    "decided": 1466,
+    "pixels_changed_pct": 0.039
+   },
+   "A51_step3_sample3": {
+    "components": 789,
+    "decided": 787,
+    "pixels_changed_pct": 0.151
+   },
+   "A63_step2_sample3": {
+    "components": 1140,
+    "decided": 1137,
+    "pixels_changed_pct": 0.13
+   },
+   "A87_step1_sample4": {
+    "components": 1126,
+    "decided": 1092,
+    "pixels_changed_pct": 0.019
+   }
+  }
+ }
+}

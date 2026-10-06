@@ -1,0 +1,33 @@
+# 1단계: 한 번에 하나만 바꾸는 비교. 모든 실험은 90장 합금 단위 5-fold, 마지막 에폭 모델로 채점.
+# 공통: U-Net + ResNet34, CE+Dice, 512 crop, 배치 4, 60에폭, lr 3e-4, 675px만 2배 확대, BF16
+
+# --- 기준점과 잡음 측정 ---
+baseline     |
+baseline_s1  | --seed 1                       # 시드만 바꾼 기준 모델: 우연에 의한 점수 차이(잡음)의 크기를 잰다
+
+# --- A. 손실함수 (오답의 79%가 경계 1px 이내) ---
+lovasz       | --loss lovasz                  # IoU를 직접 최적화하는 손실
+boundary     | --bw 2                         # 경계 1px 이내 픽셀의 CE 가중치 3배
+classw       | --class-weights 1,1.5,1,2      # 약한 상(Al3Ni, Eutectic Si) 가중
+
+# --- D. Attention (논문 3 MAM-UNet) ---
+scse         | --attention scse
+
+# --- E. 인코더 (Al3Ni와 Eutectic Si 혼동) ---
+r50          | --encoder resnet50
+effb4        | --encoder efficientnet-b4
+convnext_t   | --encoder tu-convnext_tiny
+
+# --- F. 구조 (논문 2 SegFormer, 1/4 해상도 문제 확인) ---
+unetpp       | --arch UnetPlusPlus
+segformer    | --arch Segformer --encoder mit_b2
+unet_mit     | --encoder mit_b2
+
+# --- B. 해상도 ---
+noscale      | --width 0                      # 675px도 원본 그대로: 지금의 '675px 2배' 규칙이 실제로 도움이 되는지 검증
+x2           | --width 2560                   # 모든 사진 2배 (675px은 4배). crop 512 그대로라 crop 하나가 보는 실제 영역은 1/4
+x2_c1024     | --width 2560 --crop 1024 --tile 1024   # 2배 + crop 1024: 기준 모델과 같은 실제 영역을 보게 해서 '해상도' 효과만 분리
+
+# --- C. 패치 크기 (가장 큰 Primary Si 약 520px) ---
+c768         | --crop 768 --tile 768
+c1024        | --crop 1024 --tile 1024

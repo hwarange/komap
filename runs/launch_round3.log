@@ -1,0 +1,62 @@
+10-05 11:53:30 30 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-05 11:53:30 start unetpp_bw_e120/fold0 on GPU 0
+10-05 11:53:30 start unetpp_bw_e120/fold1 on GPU 0
+10-05 11:53:30 start unetpp_bw_e120/fold2 on GPU 1
+10-05 11:53:30 start unetpp_bw_e120/fold3 on GPU 1
+10-05 11:53:30 start unetpp_bw_e120/fold4 on GPU 2
+10-05 11:53:30 start cnx_bw_b16/fold0 on GPU 2
+10-05 11:53:30 start cnx_bw_b16/fold1 on GPU 3
+10-05 11:53:30 start cnx_bw_b16/fold2 on GPU 3
+10-05 12:28:25 done unetpp_bw_e120/fold4 (34.9 min)
+10-05 12:28:25 start cnx_bw_b16/fold3 on GPU 2
+10-05 12:28:35 done unetpp_bw_e120/fold2 (35.1 min)
+10-05 12:28:35 done unetpp_bw_e120/fold3 (35.1 min)
+10-05 12:28:35 start cnx_bw_b16/fold4 on GPU 1
+10-05 12:28:35 start unet_mitb4_bw/fold0 on GPU 1
+10-05 12:28:40 done unetpp_bw_e120/fold0 (35.2 min)
+10-05 12:28:40 start unet_mitb4_bw/fold1 on GPU 0
+10-05 12:28:45 done unetpp_bw_e120/fold1 (35.3 min)
+10-05 12:28:45 start unet_mitb4_bw/fold2 on GPU 0
+10-05 12:37:10 done cnx_bw_b16/fold0 (43.7 min)
+10-05 12:37:10 start unet_mitb4_bw/fold3 on GPU 2
+10-05 12:38:55 done cnx_bw_b16/fold1 (45.4 min)
+10-05 12:38:55 done cnx_bw_b16/fold2 (45.4 min)
+10-05 12:38:55 start unet_mitb4_bw/fold4 on GPU 3
+10-05 12:38:55 start cnxB_bw/fold0 on GPU 3
+10-05 12:53:55 done unet_mitb4_bw/fold2 (25.2 min)
+10-05 12:53:55 start cnxB_bw/fold1 on GPU 0
+10-05 12:54:10 done unet_mitb4_bw/fold1 (25.5 min)
+10-05 12:54:10 start cnxB_bw/fold2 on GPU 0
+10-05 12:54:15 done unet_mitb4_bw/fold0 (25.7 min)
+10-05 12:54:15 start cnxB_bw/fold3 on GPU 1
+10-05 12:58:35 done cnxB_bw/fold0 (19.7 min)
+10-05 12:58:35 start cnxB_bw/fold4 on GPU 3
+10-05 13:03:10 done unet_mitb4_bw/fold3 (26.0 min)
+10-05 13:03:10 start cnx_bw_e120/fold0 on GPU 2
+10-05 13:04:00 done unet_mitb4_bw/fold4 (25.1 min)
+10-05 13:04:00 start cnx_bw_e120/fold1 on GPU 3
+10-05 13:10:45 done cnx_bw_b16/fold3 (42.3 min)
+10-05 13:10:45 start cnx_bw_e120/fold2 on GPU 2
+10-05 13:11:35 done cnx_bw_b16/fold4 (43.0 min)
+10-05 13:11:35 start cnx_bw_e120/fold3 on GPU 1
+10-05 13:13:25 done cnxB_bw/fold1 (19.5 min)
+10-05 13:13:25 start cnx_bw_e120/fold4 on GPU 0
+10-05 13:13:35 done cnxB_bw/fold3 (19.3 min)
+10-05 13:13:35 start cnxS_bw/fold0 on GPU 1
+10-05 13:13:40 done cnxB_bw/fold2 (19.5 min)
+10-05 13:13:40 start cnxS_bw/fold1 on GPU 0
+10-05 13:17:30 done cnxB_bw/fold4 (18.9 min)
+10-05 13:17:30 start cnxS_bw/fold2 on GPU 3
+10-05 13:25:00 done cnx_bw_e120/fold0 (21.8 min)
+10-05 13:25:00 start cnxS_bw/fold3 on GPU 2
+10-05 13:25:50 done cnx_bw_e120/fold1 (21.8 min)
+10-05 13:25:50 start cnxS_bw/fold4 on GPU 3
+10-05 13:28:55 done cnxS_bw/fold0 (15.3 min)
+10-05 13:29:05 done cnxS_bw/fold1 (15.4 min)
+10-05 13:32:35 done cnx_bw_e120/fold2 (21.8 min)
+10-05 13:32:35 done cnx_bw_e120/fold3 (21.0 min)
+10-05 13:32:40 done cnxS_bw/fold2 (15.2 min)
+10-05 13:34:20 done cnx_bw_e120/fold4 (20.9 min)
+10-05 13:39:25 done cnxS_bw/fold3 (14.4 min)
+10-05 13:40:10 done cnxS_bw/fold4 (14.3 min)
+10-05 13:40:10 all finished. failed: none

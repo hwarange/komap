@@ -1,0 +1,8 @@
+10-06 10:26:18 3 jobs queued on GPUs ['1', '2', '3'] x 1
+10-06 10:26:18 start full_x2_unetpp_bw_r90/fold0 on GPU 1
+10-06 10:26:18 start full_x2_unetpp_bw_r90/fold1 on GPU 2
+10-06 10:26:18 start full_x2_unetpp_bw_r90/fold2 on GPU 3
+10-06 11:10:14 done full_x2_unetpp_bw_r90/fold0 (43.9 min)
+10-06 11:10:14 done full_x2_unetpp_bw_r90/fold1 (43.9 min)
+10-06 11:10:19 done full_x2_unetpp_bw_r90/fold2 (44.0 min)
+10-06 11:10:19 all finished. failed: none

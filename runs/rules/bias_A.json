@@ -1,0 +1,110 @@
+{
+ "n_candidates": 343,
+ "base": {
+  "cand": [
+   "bias",
+   [
+    0.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "mIoU": 79.937,
+  "class_IoU": {
+   "Al": 93.03,
+   "Al3Ni": 79.09,
+   "SiP": 89.1,
+   "SiE": 59.09
+  }
+ },
+ "in_sample_best (optimistic)": {
+  "cand": [
+   "bias",
+   [
+    -0.1,
+    -0.2,
+    0.0
+   ]
+  ],
+  "mIoU": 79.962
+ },
+ "nested (honest)": {
+  "mIoU": 79.908,
+  "delta": -0.029,
+  "ci95": [
+   -0.075,
+   0.018
+  ],
+  "better/worse": "43/47",
+  "est_test": 80.668,
+  "class_IoU": {
+   "Al": 93.02,
+   "Al3Ni": 78.96,
+   "SiP": 89.1,
+   "SiE": 59.12
+  },
+  "picks_per_fold": [
+   [
+    "bias",
+    [
+     -0.1,
+     -0.2,
+     0.0
+    ]
+   ],
+   [
+    "bias",
+    [
+     -0.1,
+     -0.2,
+     0.0
+    ]
+   ],
+   [
+    "bias",
+    [
+     0.0,
+     -0.3,
+     -0.1
+    ]
+   ],
+   [
+    "bias",
+    [
+     -0.1,
+     -0.2,
+     0.0
+    ]
+   ],
+   [
+    "bias",
+    [
+     0.0,
+     -0.1,
+     0.0
+    ]
+   ]
+  ]
+ },
+ "by_candidate": {
+  "('bias', (np.float64(-0.3), np.float64(0.0), np.float64(0.0)))": 79.835,
+  "('bias', (np.float64(-0.2), np.float64(0.0), np.float64(0.0)))": 79.901,
+  "('bias', (np.float64(-0.1), np.float64(0.0), np.float64(0.0)))": 79.935,
+  "('bias', (np.float64(0.0), np.float64(-0.3), np.float64(0.0)))": 79.948,
+  "('bias', (np.float64(0.0), np.float64(-0.2), np.float64(0.0)))": 79.957,
+  "('bias', (np.float64(0.0), np.float64(-0.1), np.float64(0.0)))": 79.955,
+  "('bias', (np.float64(0.0), np.float64(0.0), np.float64(-0.3)))": 79.785,
+  "('bias', (np.float64(0.0), np.float64(0.0), np.float64(-0.2)))": 79.858,
+  "('bias', (np.float64(0.0), np.float64(0.0), np.float64(-0.1)))": 79.911,
+  "('bias', (np.float64(0.0), np.float64(0.0), np.float64(0.0)))": 79.937,
+  "('bias', (np.float64(0.0), np.float64(0.0), np.float64(0.1)))": 79.935,
+  "('bias', (np.float64(0.0), np.float64(0.0), np.float64(0.2)))": 79.901,
+  "('bias', (np.float64(0.0), np.float64(0.0), np.float64(0.3)))": 79.842,
+  "('bias', (np.float64(0.0), np.float64(0.1), np.float64(0.0)))": 79.91,
+  "('bias', (np.float64(0.0), np.float64(0.2), np.float64(0.0)))": 79.876,
+  "('bias', (np.float64(0.0), np.float64(0.3), np.float64(0.0)))": 79.842,
+  "('bias', (np.float64(0.1), np.float64(0.0), np.float64(0.0)))": 79.91,
+  "('bias', (np.float64(0.2), np.float64(0.0), np.float64(0.0)))": 79.846,
+  "('bias', (np.float64(0.3), np.float64(0.0), np.float64(0.0)))": 79.751
+ }
+}

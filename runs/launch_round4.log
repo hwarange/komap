@@ -1,0 +1,92 @@
+10-06 00:12:42 45 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-06 00:12:42 start a_copypaste/fold0 on GPU 0
+10-06 00:12:42 start a_copypaste/fold1 on GPU 0
+10-06 00:12:42 start a_copypaste/fold2 on GPU 1
+10-06 00:12:42 start a_copypaste/fold3 on GPU 1
+10-06 00:12:42 start a_copypaste/fold4 on GPU 2
+10-06 00:12:42 start m_hires/fold0 on GPU 2
+10-06 00:12:42 start m_hires/fold1 on GPU 3
+10-06 00:12:42 start m_hires/fold2 on GPU 3
+10-06 00:24:02 done a_copypaste/fold4 (11.3 min)
+10-06 00:24:02 start m_hires/fold3 on GPU 2
+10-06 00:24:12 done a_copypaste/fold0 (11.5 min)
+10-06 00:24:12 done a_copypaste/fold1 (11.5 min)
+10-06 00:24:12 done a_copypaste/fold2 (11.5 min)
+10-06 00:24:12 done a_copypaste/fold3 (11.5 min)
+10-06 00:24:12 start m_hires/fold4 on GPU 0
+10-06 00:24:12 start m_skel/fold0 on GPU 0
+10-06 00:24:12 start m_skel/fold1 on GPU 1
+10-06 00:24:12 start m_skel/fold2 on GPU 1
+10-06 00:30:47 done m_hires/fold0 (18.1 min)
+10-06 00:30:47 start m_skel/fold3 on GPU 2
+10-06 00:32:07 done m_hires/fold2 (19.4 min)
+10-06 00:32:07 start m_skel/fold4 on GPU 3
+10-06 00:32:12 done m_hires/fold1 (19.5 min)
+10-06 00:32:12 start m_dinov3/fold0 on GPU 3
+10-06 00:35:52 done m_skel/fold1 (11.7 min)
+10-06 00:35:52 done m_skel/fold2 (11.7 min)
+10-06 00:35:52 start m_dinov3/fold1 on GPU 1
+10-06 00:35:52 start m_dinov3/fold2 on GPU 1
+10-06 00:36:22 done m_skel/fold0 (12.2 min)
+10-06 00:36:22 start m_dinov3/fold3 on GPU 0
+10-06 00:41:32 done m_hires/fold4 (17.3 min)
+10-06 00:41:32 start m_dinov3/fold4 on GPU 0
+10-06 00:41:47 done m_hires/fold3 (17.8 min)
+10-06 00:41:47 start a_hm/fold0 on GPU 2
+10-06 00:42:37 done m_skel/fold3 (11.8 min)
+10-06 00:42:37 start a_hm/fold1 on GPU 2
+10-06 00:43:17 done m_dinov3/fold0 (11.1 min)
+10-06 00:43:17 start a_hm/fold2 on GPU 3
+10-06 00:43:52 done m_skel/fold4 (11.8 min)
+10-06 00:43:52 start a_hm/fold3 on GPU 3
+10-06 00:47:22 done m_dinov3/fold1 (11.5 min)
+10-06 00:47:22 start a_hm/fold4 on GPU 1
+10-06 00:47:27 done m_dinov3/fold2 (11.6 min)
+10-06 00:47:27 start a_lowres/fold0 on GPU 1
+10-06 00:47:37 done m_dinov3/fold3 (11.3 min)
+10-06 00:47:37 start a_lowres/fold1 on GPU 0
+10-06 00:52:42 done m_dinov3/fold4 (11.2 min)
+10-06 00:52:42 start a_lowres/fold2 on GPU 0
+10-06 00:52:57 done a_hm/fold0 (11.2 min)
+10-06 00:52:57 start a_lowres/fold3 on GPU 2
+10-06 00:53:47 done a_hm/fold1 (11.2 min)
+10-06 00:53:47 start a_lowres/fold4 on GPU 2
+10-06 00:54:27 done a_hm/fold2 (11.2 min)
+10-06 00:54:27 start a_lean/fold0 on GPU 3
+10-06 00:55:07 done a_hm/fold3 (11.3 min)
+10-06 00:55:07 start a_lean/fold1 on GPU 3
+10-06 00:58:47 done a_hm/fold4 (11.4 min)
+10-06 00:58:47 start a_lean/fold2 on GPU 1
+10-06 00:58:52 done a_lowres/fold0 (11.4 min)
+10-06 00:58:52 done a_lowres/fold1 (11.3 min)
+10-06 00:58:52 start a_lean/fold3 on GPU 0
+10-06 00:58:52 start a_lean/fold4 on GPU 1
+10-06 01:03:57 done a_lowres/fold2 (11.3 min)
+10-06 01:03:57 start a_rot90/fold0 on GPU 0
+10-06 01:04:07 done a_lowres/fold3 (11.2 min)
+10-06 01:04:07 start a_rot90/fold1 on GPU 2
+10-06 01:05:12 done a_lowres/fold4 (11.4 min)
+10-06 01:05:12 start a_rot90/fold2 on GPU 2
+10-06 01:05:47 done a_lean/fold0 (11.3 min)
+10-06 01:05:47 start a_rot90/fold3 on GPU 3
+10-06 01:06:27 done a_lean/fold1 (11.3 min)
+10-06 01:06:27 start a_rot90/fold4 on GPU 3
+10-06 01:10:07 done a_lean/fold3 (11.3 min)
+10-06 01:10:07 start a_noint/fold0 on GPU 0
+10-06 01:10:17 done a_lean/fold2 (11.5 min)
+10-06 01:10:17 start a_noint/fold1 on GPU 1
+10-06 01:10:22 done a_lean/fold4 (11.5 min)
+10-06 01:10:22 start a_noint/fold2 on GPU 1
+10-06 01:15:07 done a_rot90/fold0 (11.2 min)
+10-06 01:15:07 start a_noint/fold3 on GPU 0
+10-06 01:15:27 done a_rot90/fold1 (11.3 min)
+10-06 01:15:27 start a_noint/fold4 on GPU 2
+10-06 01:16:32 done a_rot90/fold2 (11.3 min)
+10-06 01:17:12 done a_rot90/fold3 (11.4 min)
+10-06 01:17:52 done a_rot90/fold4 (11.4 min)
+10-06 01:21:32 done a_noint/fold0 (11.4 min)
+10-06 01:21:47 done a_noint/fold1 (11.5 min)
+10-06 01:21:57 done a_noint/fold2 (11.6 min)
+10-06 01:25:52 done a_noint/fold4 (10.4 min)
+10-06 01:26:22 done a_noint/fold3 (11.3 min)
+10-06 01:26:22 all finished. failed: none

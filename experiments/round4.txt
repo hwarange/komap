@@ -1,0 +1,13 @@
+# 4단계: 조사(reports/research_notes.md)와 진단에서 나온 증강·모델 아이디어를 한 번에 하나씩 시험한다.
+# 비교 기준: cnx_bw (ConvNeXt-Tiny + 경계 가중, 60에폭, CV 79.19, 시드 잡음 0.09)
+# 모든 실험은 기준과 같은 설정(--encoder tu-convnext_tiny --bw 2)에 변경 하나만 더한다. 무거운 실험을 앞에 배치.
+
+a_copypaste | --encoder tu-convnext_tiny --bw 2 --copypaste 0.3 --save-oof runs/oof/a_copypaste   # Primary Si·Al3Ni 복사-붙여넣기 (할로 2px 포함)
+m_hires     | --encoder tu-convnext_tiny --bw 2 --hires --save-oof runs/oof/m_hires              # 원래·1/2 해상도 보조 경로
+m_skel      | --encoder tu-convnext_tiny --bw 2 --skel 1.0 --save-oof runs/oof/m_skel            # Eutectic Si Skeleton Recall 손실
+m_dinov3    | --encoder tu-convnext_tiny.dinov3_lvd1689m --bw 2 --save-oof runs/oof/m_dinov3     # 같은 크기, DINOv3 사전학습
+a_hm        | --encoder tu-convnext_tiny --bw 2 --hm 0.5 --save-oof runs/oof/a_hm                # 상 기준점 단조 매핑 (저대비 대응)
+a_lowres    | --encoder tu-convnext_tiny --bw 2 --lowres 0.25 --save-oof runs/oof/a_lowres       # 저해상도 흉내 (이미지만)
+a_lean      | --encoder tu-convnext_tiny --bw 2 --aug-policy lean --save-oof runs/oof/a_lean     # nnU-Net식 약한·가끔 증강
+a_rot90     | --encoder tu-convnext_tiny --bw 2 --rot rot90 --save-oof runs/oof/a_rot90          # 90도 회전·반전만
+a_noint     | --encoder tu-convnext_tiny --bw 2 --no-int --save-oof runs/oof/a_noint             # 밝기 증강 끄기 (지금 증강의 가치 측정)
