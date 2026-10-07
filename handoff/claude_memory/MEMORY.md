@@ -1,6 +1,7 @@
 - [KoMaP competition](komap-competition.md) — task, mIoU metric, judging weights, EDA quirks, old GPU driver
 - [Plain Korean explanations](user-prefers-plain-korean.md) — user wants a simple plan in Korean before coding
 - [Explain + self-review](feedback-explain-and-self-review.md) — always explain why each choice was made and self-check for mistakes
-- [Local env: CPU only](local-env-cpu-only.md) — laptop venv `Komap` (uv, py3.13, CPU torch); GPU work only on server `ssh komap`
+- [Local env: CPU only](local-env-cpu-only.md) — GPU work only on server `ssh komap`; laptop `hwarang` has no venv yet
 - [Wait/notify on server jobs](feedback-wait-notify.md) — wait on done-files, never `pgrep -f` loops (self-match hang)
-- [Project status](komap-status-r7.md) — sub4 best (~80.10), sub5 recipe ~80.19; rounds 8–10 results; pending decisions
+- [Project status](komap-status.md) — 10/8 01:40: sub5 80.233 best; round 13 running overnight; sub6 decision in the morning
+- [Parallel + record](feedback-parallel-and-record.md) — use idle server resources in parallel (limit threads); record idea Q&A in idea_journey.md

@@ -1,0 +1,11 @@
+# 13단계 (10/8 밤샘): "해상도 × 다른 구조" + 3배 120에폭 + Al3Ni 전용 2번째 (reports/idea_journey.md 10절 후보 2~5)
+# 무거운 작업(약 27GB)은 GPU 한 장을 통째로, 가벼운 작업(약 14GB)은 GPU당 2개:
+#   launch.py experiments/round13.txt --per-gpu 2 --heavy x3_unetpp_bw_e120_r90 x2_mit_bw_r90
+# 3배 해상도 120에폭 (27GB). 비교: 3배 60에폭 x3_unetpp_bw_r90 (79.93), 2배 120에폭 x2_unetpp_bw_e120_r90 (80.03)
+x3_unetpp_bw_e120_r90 | --arch UnetPlusPlus --width 3840 --crop 1536 --tile 1536 --bw 2 --rot rot90 --epochs 120 --save-oof runs/oof/x3_unetpp_bw_e120_r90
+# 2배 해상도 MiT-B2 (26.6GB, 시험 실행으로 확인). 비교: 원래 해상도 unet_mit_bw_r90 (해상도만 다름)
+x2_mit_bw_r90 | --encoder mit_b2 --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --save-oof runs/oof/x2_mit_bw_r90
+# 2배 해상도 ConvNeXt-T 4상 120에폭 (14GB). 비교: 원래 해상도 cnx_bw_e120 (해상도만 다름, 79.33). ConvNeXt 120에폭은 90° 회전만이 손해(−0.12)라 기본 회전
+x2_cnx_bw_e120 | --encoder tu-convnext_tiny --width 2560 --crop 1024 --tile 1024 --bw 2 --epochs 120 --save-oof runs/oof/x2_cnx_bw_e120
+# Al3Ni 전용 모델 2번째 (ConvNeXt, 120에폭, 14GB). 비교: al3ni_x2_unetpp 하나만 섞기 (A27_sie4 위에서 +0.029)
+al3ni_x2_cnx_e120 | --binary-class 1 --encoder tu-convnext_tiny --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120 --save-oof runs/oof/al3ni_x2_cnx_e120

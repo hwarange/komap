@@ -7,6 +7,9 @@
 
 예) nohup .venv/bin/python src/launch.py experiments/round1.txt --gpus 0 1 2 3 --per-gpu 2 > runs/launch_round1.log 2>&1 &
 이미 result.json이 있는 fold는 건너뛰므로, 중간에 멈춰도 같은 명령으로 이어서 돌릴 수 있다.
+--heavy <이름들>: 메모리가 커서 GPU 한 장을 통째로 써야 하는 실험 (예: 3배 해상도 27GB).
+  그 GPU의 다른 칸이 모두 비었을 때만 시작하고, 도는 동안 그 GPU에 다른 작업을 넣지 않는다.
+  앞 작업이 들어갈 자리가 없으면 뒤의 가벼운 작업이 먼저 빈 칸에 들어간다. 옵션을 안 주면 이전과 같다.
 """
 import argparse
 import os
@@ -29,6 +32,7 @@ def main():
     p.add_argument('--folds', type=int, default=5)
     p.add_argument('--root', default='runs/cv')
     p.add_argument('--common', default='--amp --workers 6', help='모든 작업에 붙는 옵션')
+    p.add_argument('--heavy', nargs='*', default=[], help='GPU 한 장을 통째로 쓰는 실험 이름')
     args = p.parse_args()
 
     jobs = []
@@ -43,25 +47,32 @@ def main():
                 continue
             cmd = [sys.executable, 'src/train.py', '--fold', str(k), '--out', str(out),
                    *shlex.split(args.common), *shlex.split(extra)]
-            jobs.append((f'{name}/fold{k}', out, cmd))
-    log(f'{len(jobs)} jobs queued on GPUs {args.gpus} x {args.per_gpu}')
+            jobs.append((f'{name}/fold{k}', out, cmd, name in args.heavy))
+    log(f'{len(jobs)} jobs queued on GPUs {args.gpus} x {args.per_gpu}'
+        + (f' (heavy: {args.heavy})' if args.heavy else ''))
 
     slots = [g for g in args.gpus for _ in range(args.per_gpu)]
-    running = {}  # slot index -> (tag, proc, start)
+    running = {}  # slot index -> (tag, proc, start, heavy)
     failed = []
     while jobs or running:
         for i, g in enumerate(slots):
-            if i not in running and jobs:
-                tag, out, cmd = jobs.pop(0)
+            if i in running or not jobs:
+                continue
+            busy = [j for j in running if slots[j] == g]   # 같은 GPU에서 도는 작업
+            if any(running[j][3] for j in busy):
+                continue                                    # 무거운 작업이 GPU를 통째로 쓰는 중
+            pick = next((n for n, jb in enumerate(jobs) if not jb[3] or not busy), None)
+            if pick is not None:
+                tag, out, cmd, heavy = jobs.pop(pick)
                 out.mkdir(parents=True, exist_ok=True)
                 f = open(out / 'stdout.txt', 'w')
                 proc = subprocess.Popen(cmd, stdout=f, stderr=subprocess.STDOUT,
                                         env={**os.environ, 'CUDA_VISIBLE_DEVICES': g})
-                running[i] = (tag, proc, time.time())
+                running[i] = (tag, proc, time.time(), heavy)
                 log(f'start {tag} on GPU {g}')
         time.sleep(5)
         for i in list(running):
-            tag, proc, t0 = running[i]
+            tag, proc, t0, _ = running[i]
             if proc.poll() is not None:
                 ok = proc.returncode == 0
                 log(f"{'done' if ok else 'FAIL'} {tag} ({(time.time() - t0) / 60:.1f} min)")
