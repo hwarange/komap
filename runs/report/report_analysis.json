@@ -1,0 +1,212 @@
+{
+ "1_phase_fraction": {
+  "Al": {
+   "gt_mean_vol%": 58.69,
+   "pred_mean_vol%": 59.81,
+   "abs_err_mean_%p": 1.46,
+   "abs_err_max_%p": 10.3,
+   "bias_mean_%p": 1.12,
+   "rel_err_mean_%": 2.6,
+   "rel_err_median_%": 1.7,
+   "images_within_10%RA": "87/90",
+   "mean_IoU": 93.23
+  },
+  "Al3Ni": {
+   "gt_mean_vol%": 24.0,
+   "pred_mean_vol%": 23.36,
+   "abs_err_mean_%p": 1.39,
+   "abs_err_max_%p": 6.65,
+   "bias_mean_%p": -0.65,
+   "rel_err_mean_%": 6.9,
+   "rel_err_median_%": 3.7,
+   "images_within_10%RA": "72/90",
+   "mean_IoU": 79.42
+  },
+  "SiP": {
+   "gt_mean_vol%": 9.89,
+   "pred_mean_vol%": 9.69,
+   "abs_err_mean_%p": 0.47,
+   "abs_err_max_%p": 5.94,
+   "bias_mean_%p": -0.19,
+   "rel_err_mean_%": 4.5,
+   "rel_err_median_%": 1.9,
+   "images_within_10%RA": "77/88",
+   "mean_IoU": 89.09
+  },
+  "SiE": {
+   "gt_mean_vol%": 7.42,
+   "pred_mean_vol%": 7.14,
+   "abs_err_mean_%p": 1.25,
+   "abs_err_max_%p": 7.49,
+   "bias_mean_%p": -0.28,
+   "rel_err_mean_%": 20.6,
+   "rel_err_median_%": 10.6,
+   "images_within_10%RA": "44/90",
+   "mean_IoU": 59.53
+  },
+  "Si": {
+   "gt_mean_vol%": 17.31,
+   "pred_mean_vol%": 16.83,
+   "abs_err_mean_%p": 1.18,
+   "abs_err_max_%p": 8.26,
+   "bias_mean_%p": -0.47,
+   "rel_err_mean_%": 7.9,
+   "rel_err_median_%": 4.2,
+   "images_within_10%RA": "72/90",
+   "mean_IoU": null
+  }
+ },
+ "2_modulus_HS": {
+  "E_Al3Ni=140": {
+   "gt_HS_mean_range_GPa": [
+    95.0,
+    97.9
+   ],
+   "gt_mid_mean_GPa": 96.4,
+   "gt_mid_sd_between_images": 4.7,
+   "pred_minus_gt_mean_GPa": -0.82,
+   "pred_minus_gt_abs_mean_GPa": 1.06,
+   "pred_minus_gt_abs_max_GPa": 8.43
+  },
+  "E_Al3Ni=160": {
+   "gt_HS_mean_range_GPa": [
+    97.8,
+    101.4
+   ],
+   "gt_mid_mean_GPa": 99.6,
+   "gt_mid_sd_between_images": 5.48,
+   "pred_minus_gt_mean_GPa": -0.92,
+   "pred_minus_gt_abs_mean_GPa": 1.19,
+   "pred_minus_gt_abs_max_GPa": 8.98
+  },
+  "E_Al3Ni=185": {
+   "gt_HS_mean_range_GPa": [
+    100.8,
+    105.7
+   ],
+   "gt_mid_mean_GPa": 103.3,
+   "gt_mid_sd_between_images": 6.47,
+   "pred_minus_gt_mean_GPa": -1.05,
+   "pred_minus_gt_abs_mean_GPa": 1.36,
+   "pred_minus_gt_abs_max_GPa": 9.61
+  }
+ },
+ "3_steps": {
+  "gt": {
+   "frac_Al3Ni": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "11/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "frac_SiE": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "2/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "frac_SiP": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "5/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "SiE_thick": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "4/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "Al3Ni_thick": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "1/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "SiE_fineness": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "8/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "SiP_eqdiam": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "6/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   }
+  },
+  "pred": {
+   "frac_Al3Ni": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "13/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "frac_SiE": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "2/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "frac_SiP": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "6/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "SiE_thick": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "5/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "Al3Ni_thick": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "3/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "SiE_fineness": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "9/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   },
+   "SiP_eqdiam": {
+    "alloys_with_2+steps": 14,
+    "up_from_first_to_last_step": "9/14",
+    "spearman_mean(alloys with 3+ steps)": null
+   }
+  },
+  "gt_mean_by_step": {
+   "step1": {
+    "n": 19,
+    "frac_Al3Ni": 0.212,
+    "frac_SiE": 0.0901,
+    "frac_SiP": 0.103,
+    "SiE_thick": 3.7215,
+    "Al3Ni_thick": 6.734,
+    "SiE_fineness": 0.4572,
+    "SiP_eqdiam": 64.2691
+   },
+   "step2": {
+    "n": 23,
+    "frac_Al3Ni": 0.2078,
+    "frac_SiE": 0.0843,
+    "frac_SiP": 0.11,
+    "SiE_thick": 4.1903,
+    "Al3Ni_thick": 8.1333,
+    "SiE_fineness": 0.4382,
+    "SiP_eqdiam": 68.3149
+   },
+   "step3": {
+    "n": 16,
+    "frac_Al3Ni": 0.2616,
+    "frac_SiE": 0.0612,
+    "frac_SiP": 0.0972,
+    "SiE_thick": 3.3105,
+    "Al3Ni_thick": 5.8873,
+    "SiE_fineness": 0.5311,
+    "SiP_eqdiam": 87.01
+   },
+   "step4": {
+    "n": 32,
+    "frac_Al3Ni": 0.2691,
+    "frac_SiE": 0.064,
+    "frac_SiP": 0.0892,
+    "SiE_thick": 3.6976,
+    "Al3Ni_thick": 6.5583,
+    "SiE_fineness": 0.4951,
+    "SiP_eqdiam": 78.1869
+   }
+  }
+ }
+}
