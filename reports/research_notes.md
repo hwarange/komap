@@ -439,3 +439,27 @@ EDA에서 같은 합금이라도 step 3·4로 가면 Al3Ni가 늘고(+4.7%p) Eut
 | **MicroAl** (github.com/neulmc/MicroAl-Dataset) | ASAD/PSCL을 포함하는 큰 묶음. 5xxx·6xxx Al 합금(일부 주조 상태), OM(1px = 0.1 µm)·SEM·TEM, 열처리 전 1,584 + 후 1,400 + TEM 330장. 픽셀 라벨: Si 입자, Fe 함유상, Al 결정립. **"academic research purposes only, commercial use strictly prohibited"**. 지금은 샘플만 공개 | 조직(입자 vs 공정 판), 배율, 라이선스 모두 걸림. 대회 사용 여부는 주최 측 확인 필요 |
 | **SemiRCF** (github.com/CHENDL-SHEN/SemiRCF) | **Al–12.7Si–0.7Mg 반연속 주조재**, OM 144장. 라벨은 **α-Al 결정립 경계만** (Si 입자는 방해 물체로 취급). **라이선스 명시 없음**. Baidu 다운로드 | 상 라벨과 무관. 라이선스가 없어 사용 근거가 없음 |
 | UCM 금속조직 아틀라스 + Figshare (315장 → 합성 2,835장, 21개 분류) | 교육용 아틀라스, A356·A361·14% Si 과공정 OM 사진과 조직 설명 | 학습용으로는 약함. 보고서의 조직 설명 근거로 쓸 수 있음 (원문·라이선스는 아직 미확인) |
+
+---
+
+## 12. 공정 Si(Eutectic Si) 관련 데이터셋 조사 (2026-10-07)
+**결론: "OM + 공정 Si 픽셀 라벨 + 쓸 수 있는 라이선스"를 다 갖춘 공개 데이터는 없어요. Al3Ni 라벨 데이터도 없어요.**
+
+| 데이터 | 내용 | 판단 |
+|---|---|---|
+| Kalkan AlSi9-Sr (IMMI 2025, doi 10.1007/s40192-025-00422-5) | AlSi9 + Sr, OM, 공정 Si 이진 마스크 | 가장 가깝지만 사진은 요청 시 제공, 학술 전용 → 마감 전 확보 불가 |
+| Figshare 30442820 | A356·개량 356·A361·Al-14Si 등 21종 OM 315장(+합성), CC BY 4.0 | 분류 라벨만 (UCM 아틀라스 파생) |
+| Zenodo 10008435 (Data in Brief 2024) | AlSi10Mg LPBF SEM 셀 사진, CC BY 4.0 | 라벨 없음, SEM·나노 스케일 |
+| BAM GNN-for-segmentation-of-XCT | AlSi12CuMgNi CT, 공정 Si 라벨 | 매우 작고 라이선스 없음 |
+| Zenodo 18444799 등 (AlSi7/10/12Mg LPBF) | OM·SEM 몇 장 | 라벨 없음 |
+| Kalkan JMEP 2024 | Al-Si OM, 공정·판상 Si 라벨 | 데이터 미공개 |
+| Zenodo 14065642 (FAU, AlSi9Cu3Fe) | 접근 막힘(403) | 사용 불가 |
+| Roboflow solid-fraction-eutectic (Jönköping) | 공정 "영역" 인스턴스로 추정 | 내용 미확인 |
+| MDF 10.18126/M2Z592 (Shahani 2016) | Al-Si-Cu 4D CT, 초정 Si | 공정 Si 아님 |
+| Zenodo 22039777 | 강·코팅 등 7종 통합 3,625장 | Al-Si 없음 |
+
+- 조사 쪽 1순위 추천("MICAST 공정 Si 조각을 우리 사진의 Al 영역에 붙이기")은 **채택하지 않음.** 이유는 세 가지예요.
+  - 우리가 시험한 복사-붙여넣기(−0.08)·CutMix와 같은 방식이에요.
+  - MICAST의 공정 Si는 뭉툭한 덩어리라 1~4px 판으로 줄이면 모양이 더 달라져요.
+  - 실제 공정 Si는 Al3Ni와 얽힌 공정 영역 안에 있어서, Al 영역에 붙이면 실제로 없는 배치가 돼요.
+- 외부 데이터 검토 누계는 약 25종이에요. 보고서 03장 3.5절에 "검토 → 직접 시험 → 제외" 과정으로 정리해요.
