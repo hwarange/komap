@@ -1,0 +1,1 @@
+alpha_sie=0.4 alpha_al3ni=0.3

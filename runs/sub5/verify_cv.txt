@@ -1,0 +1,15 @@
+{
+ "models_per_image (ensemble, specialists)": [
+  [
+   27,
+   [
+    1,
+    1
+   ]
+  ]
+ ],
+ "ensemble_only": 80.016,
+ "+ sie blend 0.4": 80.128,
+ "+ al3ni blend 0.3": 80.175,
+ "+ Si clf (in-sample, optimistic)": 80.845
+}

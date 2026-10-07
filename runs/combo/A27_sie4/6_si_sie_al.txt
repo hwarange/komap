@@ -1,0 +1,4 @@
+ensemble        mIoU 80.224 | SiP 89.09 SiE 59.67
+(threshold 0.8)
++ Si classifier mIoU 80.312 | SiP 89.25 SiE 59.87 | delta +0.088 [+0.029, +0.150] better 60/90 worse 21/90
+components: 92499 | class balance (area-weighted SiP share): 0.624

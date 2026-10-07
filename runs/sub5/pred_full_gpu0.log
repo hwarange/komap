@@ -1,0 +1,3 @@
+full_x2_unetpp_bw_e120_r90/fold0: 11s
+full_x2_unetpp_bw_e120_r90/fold2: 11s
+shard 0: 2 models saved per model under submissions/sub3_pred/parts/models

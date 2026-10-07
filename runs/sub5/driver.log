@@ -1,0 +1,11 @@
+10-07 13:25:36 Si 분류기 학습 (CPU, 섞은 OOF 확률 _ens_A27_sie_al)
+10-07 13:25:36 평가 사진 예측: 새 모델 4개 실험 × 5-fold (GPU 0·1, 2·3번은 90장 학습 중)
+10-07 13:27:19 평가 사진 예측 끝: x2_unetpp_bw_e120_r90=5 x2_unetpp_bw_e120_r90_s1=5 sie_x2_cnx=5 al3ni_x2_unetpp=5 
+10-07 13:27:19 제출 코드 검증용 90장 예측 (각 사진은 학습하지 않은 fold 모델만)
+10-07 13:31:04 Si 분류기: saved runs/si_clf/sub5_model.pkl
+10-07 13:31:22 sub5: problems="problems": []
+10-07 13:31:22 제출 코드 검증 (기대: 앙상블만 80.016, Eutectic Si 섞기 후 80.128, Al3Ni 섞기 후 약 80.175)
+10-07 13:32:07 sub5 끝 (runs/sub5/verify_cv.txt, checks.txt)
+10-07 13:32:07 sub5_full: 90장 학습(최고 모델, 시드 3개)이 끝나기를 기다림
+10-07 14:06:54 sub5_full: problems="problems": []
+10-07 14:06:54 모두 끝

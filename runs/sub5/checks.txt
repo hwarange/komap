@@ -1,0 +1,94 @@
+##### sub2 vs sub5
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 1.0144,
+  "A122_step4_sample1": 0.998,
+  "A124_step4_sample3": 1.2702,
+  "A127_step3_sample2": 0.7052,
+  "A133_step4_sample1": 1.0859,
+  "A167_step3_sample3": 1.1318,
+  "A38_step2_sample2": 1.1191,
+  "A51_step3_sample3": 1.0433,
+  "A63_step2_sample3": 1.0948,
+  "A87_step1_sample4": 1.1417
+ },
+ "mean": 1.0604,
+ "max": 1.2702,
+ "images_over_2pct": 0
+}
+##### sub4 vs sub5
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.7079,
+  "A122_step4_sample1": 0.6785,
+  "A124_step4_sample3": 0.7996,
+  "A127_step3_sample2": 0.4802,
+  "A133_step4_sample1": 0.7572,
+  "A167_step3_sample3": 0.7783,
+  "A38_step2_sample2": 0.6444,
+  "A51_step3_sample3": 0.7104,
+  "A63_step2_sample3": 0.6377,
+  "A87_step1_sample4": 0.5793
+ },
+ "mean": 0.6773,
+ "max": 0.7996,
+ "images_over_2pct": 0
+}
+##### sub4_full vs sub5
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.7021,
+  "A122_step4_sample1": 0.6734,
+  "A124_step4_sample3": 0.8027,
+  "A127_step3_sample2": 0.4749,
+  "A133_step4_sample1": 0.7522,
+  "A167_step3_sample3": 0.7677,
+  "A38_step2_sample2": 0.6231,
+  "A51_step3_sample3": 0.709,
+  "A63_step2_sample3": 0.6336,
+  "A87_step1_sample4": 0.563
+ },
+ "mean": 0.6702,
+ "max": 0.8027,
+ "images_over_2pct": 0
+}
+sub5 n_models 150 Si clf changed mean 0.0463 max 0.1360
+##### sub5 vs sub5_full
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.03,
+  "A122_step4_sample1": 0.0246,
+  "A124_step4_sample3": 0.0322,
+  "A127_step3_sample2": 0.0146,
+  "A133_step4_sample1": 0.0234,
+  "A167_step3_sample3": 0.0267,
+  "A38_step2_sample2": 0.0451,
+  "A51_step3_sample3": 0.0304,
+  "A63_step2_sample3": 0.0278,
+  "A87_step1_sample4": 0.0235
+ },
+ "mean": 0.0278,
+ "max": 0.0451,
+ "images_over_2pct": 0
+}
+##### sub2 vs sub5_full
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 1.0262,
+  "A122_step4_sample1": 1.0026,
+  "A124_step4_sample3": 1.2765,
+  "A127_step3_sample2": 0.7096,
+  "A133_step4_sample1": 1.0888,
+  "A167_step3_sample3": 1.1392,
+  "A38_step2_sample2": 1.134,
+  "A51_step3_sample3": 1.0479,
+  "A63_step2_sample3": 1.104,
+  "A87_step1_sample4": 1.1565
+ },
+ "mean": 1.0685,
+ "max": 1.2765,
+ "images_over_2pct": 0
+}
+##### 시드끼리 불일치 (90장 모델 vs fold 모델)
+full_x2_unetpp_bw_e120_r90 {"n_models": 3, "pairwise_disagree_pct_mean": 1.127, "max_image": 1.608}
+x2_unetpp_bw_e120_r90 {"n_models": 5, "pairwise_disagree_pct_mean": 1.523, "max_image": 2.14}

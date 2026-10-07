@@ -1,0 +1,1 @@
+alpha_sie=0.4 alpha_al3ni=0.2 sie_spec=sie_x2_unetpp sie_x2_cnx sie_x2_unetpp_e120 sie_x2_cnx_e120

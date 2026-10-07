@@ -1,0 +1,11 @@
+x2_unetpp_bw_e120_r90/fold1: 11s
+x2_unetpp_bw_e120_r90/fold3: 11s
+x2_unetpp_bw_e120_r90_s1/fold0: 11s
+x2_unetpp_bw_e120_r90_s1/fold2: 11s
+x2_unetpp_bw_e120_r90_s1/fold4: 11s
+sie_x2_cnx/fold1: 9s
+sie_x2_cnx/fold3: 6s
+al3ni_x2_unetpp/fold0: 10s
+al3ni_x2_unetpp/fold2: 10s
+al3ni_x2_unetpp/fold4: 10s
+shard 1: 10 models saved per model under submissions/sub3_pred/parts/models
