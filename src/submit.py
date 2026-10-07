@@ -121,13 +121,26 @@ def mixed_prob(mroot, n, weights, full_mix):
     return total / wsum, used
 
 
-def blend_sie(P, q, alpha):
-    """Eutectic Si 전용 모델 섞기 (7단계, decision_rules.py의 blend와 같은 계산):
-    Eutectic Si 확률을 (1-α)·앙상블 + α·전용 모델로 바꾸고, 나머지 상은 합이 1이 되도록 비율대로 줄인다."""
-    p3 = (1 - alpha) * P[3] + alpha * q
-    Q = P * ((1 - p3) / np.maximum(1 - P[3], 1e-6))[None]
-    Q[3] = p3
+def blend_cls(P, q, alpha, c):
+    """한 상 전용 모델 섞기 (decision_rules.py의 blend와 같은 계산):
+    c번 상의 확률을 (1-α)·앙상블 + α·전용 모델로 바꾸고, 나머지 상은 합이 1이 되도록 비율대로 줄인다."""
+    pc = (1 - alpha) * P[c] + alpha * q
+    Q = P * ((1 - pc) / np.maximum(1 - P[c], 1e-6))[None]
+    Q[c] = pc
     return Q
+
+
+def blend_sie(P, q, alpha):
+    """Eutectic Si 전용 모델 섞기 (7단계)."""
+    return blend_cls(P, q, alpha, 3)
+
+
+def spec_mean(mroot, specs, n):
+    """전용 모델([2,H,W], 1번 채널)들의 fold 평균을 실험끼리 다시 평균. 실험마다 쓴 모델 수도 돌려준다."""
+    qs = [mean_of(sorted((mroot / s).glob('fold*')), n) for s in specs]
+    if any(c == 0 for _, c in qs):
+        raise SystemExit(f'{n}: 전용 모델 예측 없음 {specs}')
+    return np.mean([q[1] for q, _ in qs], 0), {s: c for s, (_, c) in zip(specs, qs)}
 
 
 def cmd_combine(args):
@@ -160,12 +173,15 @@ def cmd_combine(args):
                 problems.append(f'{n}: no predictions')
                 continue
             if args.sie_spec:
-                # Eutectic Si 전용 모델([2,H,W], 1번 채널)의 fold 평균을 섞는다
-                qs = [mean_of(sorted((mroot / s).glob('fold*')), n) for s in args.sie_spec]
-                if any(c == 0 for _, c in qs):
-                    raise SystemExit(f'{n}: 전용 모델 예측 없음 {args.sie_spec}')
-                P = blend_sie(P, np.mean([q[1] for q, _ in qs], 0), args.sie_alpha)
-                used = {**used, **{f'sie:{s}': c for s, (_, c) in zip(args.sie_spec, qs)}}
+                # Eutectic Si 전용 모델들을 섞는다 (먼저)
+                q, cnt = spec_mean(mroot, args.sie_spec, n)
+                P = blend_sie(P, q, args.sie_alpha)
+                used = {**used, **{f'sie:{s}': c for s, c in cnt.items()}}
+            if args.al3ni_spec:
+                # Al3Ni 전용 모델을 섞는다 (Eutectic Si 다음. 평가(eval_final_combo.sh)와 같은 순서)
+                q, cnt = spec_mean(mroot, args.al3ni_spec, n)
+                P = blend_cls(P, q, args.al3ni_alpha, 1)
+                used = {**used, **{f'al3ni:{s}': c for s, c in cnt.items()}}
             used_first = used_first or used
             if used != used_first:
                 problems.append(f'{n}: 사진마다 쓴 모델 수가 다름 {used}')
@@ -204,7 +220,8 @@ def cmd_combine(args):
                 problems.append(f'{n}: format problem mode={Image.open(path).mode} shape={chk.shape} colors={len(colors)}')
     if per_model:
         models_info = {'parts': str(mroot), 'recipe': weights, 'full_mix': args.full_mix, 'models_per_exp': used_first,
-                       'sie_spec': args.sie_spec, 'sie_alpha': args.sie_alpha if args.sie_spec else None}
+                       'sie_spec': args.sie_spec, 'sie_alpha': args.sie_alpha if args.sie_spec else None,
+                       'al3ni_spec': args.al3ni_spec, 'al3ni_alpha': args.al3ni_alpha if args.al3ni_spec else None}
         n_models = sum((used_first or {}).values())
         exps = sorted(used_first or {})
     else:
@@ -240,6 +257,8 @@ def main():
     p.add_argument('--full-mix', type=float, default=0.0, help='combine: full_<실험> 예측을 섞는 비율 (0이면 안 섞음)')
     p.add_argument('--sie-spec', nargs='+', default=[], help='combine: Eutectic Si 전용 모델 실험 이름 (7단계)')
     p.add_argument('--sie-alpha', type=float, default=0.3, help='combine: 전용 모델을 섞는 비율 (중첩 검증에서 0.2~0.4)')
+    p.add_argument('--al3ni-spec', nargs='+', default=[], help='combine: Al3Ni 전용 모델 실험 이름 (9단계, Eutectic Si 섞기 뒤)')
+    p.add_argument('--al3ni-alpha', type=float, default=0.3, help='combine: Al3Ni 전용 모델을 섞는 비율')
     args = p.parse_args()
     cmd_predict(args) if args.cmd == 'predict' else cmd_combine(args)
 
