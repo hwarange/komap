@@ -1,0 +1,10 @@
+# 10단계 (2026-10-07): Eutectic Si의 특징에서 출발한 두 아이디어. 무거운 실험을 앞에 배치.
+
+# ① Al3Ni vs Eutectic Si 두 상 전용 모델 (오답의 54%가 이 두 상의 혼동). 두 상이 아닌 픽셀은 손실에서 뺀다.
+#    2배 해상도 UNet++, 지금 GPU에 다른 2배 해상도 작업이 있어 학습 조각만 768로 줄임 (메모리 약 12GB).
+#    판단: 지금 최선 조합(A26 + Eutectic Si 2개 + Al3Ni) 위에서 두 상 비율만 다시 정하는 섞기, 중첩 검증
+pair_al3ni_sie_x2 | --pair-classes 1 3 --arch UnetPlusPlus --width 2560 --crop 768 --tile 1024 --bw 2 --rot rot90 --save-oof runs/oof/pair_al3ni_sie_x2
+
+# ② 가는 어두운 선 강조 입력 (밝기 + black top-hat + ridge 3채널). 두 구조에서. 비교: unetpp_bw_r90, cnx_bw
+upp_feats | --feats --arch UnetPlusPlus --bw 2 --rot rot90 --save-oof runs/oof/upp_feats
+cnx_feats | --feats --encoder tu-convnext_tiny --bw 2 --save-oof runs/oof/cnx_feats

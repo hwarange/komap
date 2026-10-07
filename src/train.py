@@ -56,7 +56,12 @@ def micronet_url(enc):
     return MICRONET_S3 + f'{enc}_pretrained_imagenet-microscopynet_v1.0.pth.tar'
 
 
-def build_model(arch, encoder, weights='imagenet', attention=None, hires=False, n_classes=len(CLASSES)):
+def build_model(arch, encoder, weights='imagenet', attention=None, hires=False, n_classes=len(CLASSES), feats=False):
+    if feats:
+        # 9단계: 밝기 + black top-hat + ridge 3채널 입력. ImageNet RGB 가중치를 그대로 쓴다. infer.py가 input_feats를 보고 필터를 계산
+        m = getattr(smp, arch)(encoder_name=encoder, encoder_weights=weights, in_channels=3, classes=n_classes)
+        m.input_feats = True
+        return m
     kw = {'decoder_attention_type': attention} if attention else {}
     if encoder.startswith('micronet:'):
         # 공식 패키지는 smp를 0.2.1로 내리므로 쓰지 않고, 가중치를 직접 받아 인코더에 넣는다
@@ -89,8 +94,9 @@ def subsample_by_alloy(items, frac, seed=0):
 
 def build_from_args(a, weights=None):
     """체크포인트에 저장된 학습 설정으로 같은 구조의 모델을 만든다 (예측·분석·제출 스크립트용)."""
+    two = a.get('binary_class', -1) >= 0 or bool(a.get('pair_classes'))
     return build_model(a['arch'], a['encoder'], weights=weights, attention=a.get('attention'), hires=a.get('hires', False),
-                       n_classes=2 if a.get('binary_class', -1) >= 0 else len(CLASSES))
+                       n_classes=2 if two else len(CLASSES), feats=a.get('feats', False))
 
 
 def autocast(enabled):
@@ -138,7 +144,7 @@ class SegLoss(nn.Module):
 
 
 @torch.no_grad()
-def evaluate(model, items, width, tile, overlap, device, tta=False, amp=False, save_dir=None, binary_class=-1):
+def evaluate(model, items, width, tile, overlap, device, tta=False, amp=False, save_dir=None, binary_class=-1, pair=None):
     """save_dir를 주면 사진별 예측 확률 [4,H,W]를 float16 .npy로 저장한다 (앙상블·후처리 실험용).
     binary_class >= 0 (한 상 전용 모델): 확률은 [2,H,W] (0: 나머지, 1: 그 상), 점수는 [나머지 IoU, 그 상 IoU, nan, nan]."""
     model.eval()
@@ -150,6 +156,12 @@ def evaluate(model, items, width, tile, overlap, device, tta=False, amp=False, s
             prob = predict_probs(model, it['gray'], width, tile, overlap, tta, device)
         if save_dir:
             np.save(Path(save_dir) / f"{it['name']}.npy", prob.astype(np.float16))
+        if pair:
+            # 두 상 전용 모델 (9단계): 정답이 두 상 중 하나인 픽셀에서만 채점 (0: pair[0], 1: pair[1])
+            m = np.isin(it['lab'], pair)
+            iou = image_iou((it['lab'][m] == pair[1]).astype(np.uint8), prob.argmax(0)[m])
+            rows.append(dict(name=it['name'], step=it['step'], low=it['low_contrast'], W=int(it['gray'].shape[1]), iou=iou, iou_pp=iou))
+            continue
         if binary_class >= 0:
             iou = image_iou((it['lab'] == binary_class).astype(np.uint8), prob.argmax(0))
             rows.append(dict(name=it['name'], step=it['step'], low=it['low_contrast'], W=int(it['gray'].shape[1]), iou=iou, iou_pp=iou))
@@ -226,6 +238,9 @@ def main():
     p.add_argument('--mixup', type=float, default=0.0, help='mixup 확률 (배치마다, 두 crop을 λ~Beta(0.4,0.4)로 겹침)')
     p.add_argument('--cutmix', type=float, default=0.0, help='CutMix 확률 (배치마다, 다른 crop의 네모 조각을 정답째 붙임)')
     # 9단계 옵션
+    p.add_argument('--pair-classes', type=int, nargs=2, default=None,
+                   help='두 상 전용 모델 (예: 1 3 = Al3Ni vs Eutectic Si). 두 상이 아닌 픽셀은 손실에서 뺀다')
+    p.add_argument('--feats', action='store_true', help='입력에 black top-hat·ridge 필터 채널 추가 (3채널)')
     p.add_argument('--hard-crop', type=float, default=0.0, help='오답 위치(경계 띠 밖) 중심으로 자를 확률 (0이면 끔)')
     p.add_argument('--hard-maps', default='runs/hardmaps', help='사진별 오답 지도 폴더 (src/make_hardmaps.py)')
     p.add_argument('--soft-edge', type=float, default=0.0,
@@ -257,16 +272,18 @@ def main():
     ds = CropDataset(train_items, args.crop, args.spi, args.width, rot=args.rot, policy=args.aug_policy, hm=args.hm,
                      lowres=args.lowres, no_int=args.no_int, copypaste=args.copypaste, skel=args.skel > 0,
                      int_drop=[v for v in args.int_drop.split(',') if v], elastic=args.elastic, cutout=args.cutout,
-                     hard=args.hard_crop, hard_maps=args.hard_maps)
+                     hard=args.hard_crop, hard_maps=args.hard_maps, feats=args.feats)
     dl = DataLoader(ds, batch_size=args.bs, shuffle=True, num_workers=args.workers, drop_last=True,
                     worker_init_fn=worker_init_fn, persistent_workers=args.workers > 0, pin_memory=True)
 
-    binary = args.binary_class >= 0
+    binary, pair = args.binary_class >= 0, args.pair_classes
+    assert not (binary and pair), '--binary-class와 --pair-classes는 같이 쓰지 않는다'
     model = build_model(args.arch, args.encoder, attention=args.attention, hires=args.hires,
-                        n_classes=2 if binary else len(CLASSES)).to(device)
+                        n_classes=2 if (binary or pair) else len(CLASSES), feats=args.feats).to(device)
     cw = [float(v) for v in args.class_weights.split(',')] if args.class_weights else None
-    assert not (args.soft_edge > 0 and args.cutout > 0), '--soft-edge와 --cutout은 같이 쓰지 않는다'
-    criterion = SegLoss(args.loss, args.bw, cw, args.skel, use_ignore=args.cutout > 0, soft_edge=args.soft_edge).to(device)
+    assert not (args.soft_edge > 0 and (args.cutout > 0 or pair)), '--soft-edge는 무시 픽셀(cutout·pair)과 같이 쓰지 않는다'
+    criterion = SegLoss(args.loss, args.bw, cw, args.skel, use_ignore=args.cutout > 0 or bool(pair),
+                        soft_edge=args.soft_edge).to(device)
     enc_params = [q for n, q in model.named_parameters() if n.startswith('encoder.')]
     other_params = [q for n, q in model.named_parameters() if not n.startswith('encoder.')]
     opt = torch.optim.AdamW([{'params': enc_params, 'lr': args.lr * args.enc_lr_mult},
@@ -290,7 +307,10 @@ def main():
             if binary:
                 # 그 상 = 1, 나머지 = 0 (경계 가중도 그 상의 경계에 걸린다). 가린 픽셀(IGNORE)은 그대로
                 y = torch.where(y == IGNORE, y, (y == args.binary_class).long())
-            tube = batch[2].to(device, non_blocking=True) if len(batch) > 2 else None
+            elif pair:
+                # 두 상 전용 모델: pair[0] = 0, pair[1] = 1, 나머지 상은 무시 (두 상 사이의 판단만 배운다)
+                y = torch.where(y == pair[0], 0, torch.where(y == pair[1], 1, IGNORE))
+            tube =batch[2].to(device, non_blocking=True) if len(batch) > 2 else None
             lam, perm = 1.0, None
             if args.mixup and np.random.rand() < args.mixup:
                 # mixup: 두 crop을 겹치고 손실도 같은 비율로 섞는다
@@ -333,7 +353,7 @@ def main():
         if val_items and (epoch % args.val_every == 0 or epoch == args.epochs):
             t1 = time.time()
             last_rows = evaluate(ema if ema is not None else model, val_items, args.width, args.tile, args.overlap, device, amp=args.amp,
-                                 binary_class=args.binary_class)
+                                 binary_class=args.binary_class, pair=args.pair_classes)
             model.train()
             log['val'], log['val_pp'] = summarize(last_rows), summarize(last_rows, 'iou_pp')
             log['val_sec'] = round(time.time() - t1, 1)
@@ -354,7 +374,7 @@ def main():
     if val_items:
         # 마지막 에폭 모델의 최종 채점: 그대로 / 후처리 / TTA / TTA+후처리
         tta_rows = evaluate(final, val_items, args.width, args.tile, args.overlap, device, tta=True, amp=args.amp,
-                            save_dir=args.save_oof or None, binary_class=args.binary_class)
+                            save_dir=args.save_oof or None, binary_class=args.binary_class, pair=args.pair_classes)
         rows = [dict(name=a['name'], step=a['step'], low=a['low'], W=a['W'],
                      plain=a['iou'].tolist(), pp=a['iou_pp'].tolist(), tta=b['iou'].tolist(), tta_pp=b['iou_pp'].tolist())
                 for a, b in zip(last_rows, tta_rows)]

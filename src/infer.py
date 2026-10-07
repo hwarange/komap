@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import torch
 
-from data import normalize, scale_for, to_input
+from data import normalize, scale_for, to_input, to_input_feats
 
 N_CLASSES = 4
 SIP = 2
@@ -55,11 +55,12 @@ def _sliding(model, img, tile, overlap, tta, device, batch=4):
     win = torch.from_numpy(_window(tile)).to(device)
     acc = None   # 출력 상 수는 모델에서 정해진다 (4상 모델 / 한 상 전용 모델 2)
     norm = torch.zeros(Hp, Wp, device=device)
-    xin = torch.from_numpy(to_input(x)).to(device)
+    feats = getattr(model, 'input_feats', False)   # 9단계: 필터 채널 입력 모델 (사진 전체에서 한 번 계산)
+    xin = torch.from_numpy(to_input_feats(x) if feats else to_input(x)[None]).to(device)
     ks = range(8) if tta else [0]
     for i in range(0, len(coords), batch):
         cs = coords[i:i + batch]
-        t = torch.stack([xin[y:y + tile, x0:x0 + tile] for y, x0 in cs])[:, None]
+        t = torch.stack([xin[:, y:y + tile, x0:x0 + tile] for y, x0 in cs])
         prob = 0
         for k in ks:
             prob = prob + _undihedral(torch.softmax(model(_dihedral(t, k)), 1), k)

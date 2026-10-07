@@ -86,6 +86,33 @@ def to_input(img):
     return ((img - IN_MEAN) / IN_STD).astype(np.float32)
 
 
+# 9단계 입력 채널: 어두운 가는 구조 강조. 정규화 값은 학습 사진 10장에서 잰 평균·표준편차
+# (상별 평균: Eutectic Si는 black top-hat 0.28 / ridge 0.52로 Al3Ni 0.09 / 0.19보다 3배 가량 높다)
+FEAT_MEAN, FEAT_STD = (0.066, 0.136), (0.112, 0.185)
+_BH_KERNEL = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (7, 7))
+
+
+def ridge_filter(img, sigmas=(1.0, 2.0)):
+    """어두운 선 강조 (Hessian 최대 고윳값, 크기 보정 σ²). 어두운 선을 가로지르는 방향의 2차 미분이 양수로 크다."""
+    out = np.zeros_like(img)
+    for s in sigmas:
+        g = cv2.GaussianBlur(img, (0, 0), s)
+        xx, yy = cv2.Sobel(g, cv2.CV_32F, 2, 0, ksize=3), cv2.Sobel(g, cv2.CV_32F, 0, 2, ksize=3)
+        xy = cv2.Sobel(g, cv2.CV_32F, 1, 1, ksize=3)
+        lam = (xx + yy) / 2 + np.sqrt(((xx - yy) / 2) ** 2 + xy ** 2)
+        out = np.maximum(out, s * s * np.maximum(lam, 0))
+    return out
+
+
+def to_input_feats(img):
+    """[3,H,W] 입력 (9단계): 정규화 밝기 + black top-hat(7×7, 어두운 가는 구조) + ridge(선 모양).
+    Eutectic Si는 1~4px 어두운 선이라 주변과 섞여 중간 회색으로 찍히는데(부분 부피), 두 필터는 이를 직접 드러낸다."""
+    img = np.ascontiguousarray(img, dtype=np.float32)
+    bh = cv2.morphologyEx(img, cv2.MORPH_BLACKHAT, _BH_KERNEL)
+    r = ridge_filter(img)
+    return np.stack([to_input(img), (bh - FEAT_MEAN[0]) / FEAT_STD[0], (r - FEAT_MEAN[1]) / FEAT_STD[1]]).astype(np.float32)
+
+
 # 밝기 증강 확률. default: 지금까지 쓴 값 / lean: nnU-Net v2 기본값에 가깝게 낮춤 (4단계)
 INTENSITY_P = {'default': dict(gamma=0.8, contrast=0.8, illum=0.5, blur=0.2, noise=0.3),
                'lean': dict(gamma=0.3, contrast=0.15, illum=0.15, blur=0.2, noise=0.1)}
@@ -186,12 +213,12 @@ class CropDataset(Dataset):
 
     def __init__(self, items, crop=512, samples_per_image=8, target_width=1280, scale_jitter=0.15, aug=True,
                  rot='any', policy='default', hm=0.0, lowres=0.0, no_int=False, copypaste=0.0, skel=False, int_drop=(),
-                 elastic=0.0, cutout=0.0, hard=0.0, hard_maps=''):
+                 elastic=0.0, cutout=0.0, hard=0.0, hard_maps='', feats=False):
         self.data = [(normalize(it['gray']), it['lab'], scale_for(it['gray'].shape[1], target_width)) for it in items]
         self.crop, self.spi, self.jitter, self.aug = crop, samples_per_image, scale_jitter, aug
         self.rot, self.policy, self.hm, self.lowres = rot, policy, hm, lowres
         self.no_int, self.copypaste, self.skel, self.int_drop = no_int, copypaste, skel, tuple(int_drop)
-        self.elastic, self.cutout, self.hard = elastic, cutout, hard
+        self.elastic, self.cutout, self.hard, self.feats = elastic, cutout, hard, feats
         if hard:
             # 오답 위치 (원본 좌표 y, x). 경계 띠 밖에서 앙상블이 틀린 픽셀 (9단계, make_hardmaps)
             self.hard_xy = [np.argwhere(np.array(Image.open(Path(hard_maps) / f"{it['name']}.png")) > 0) for it in items]
@@ -265,7 +292,8 @@ class CropDataset(Dataset):
                 x = augment_intensity(x, rng, self.policy, self.int_drop)
             if self.cutout and rng.random() < self.cutout:   # 밝기 증강 뒤에 해야 가린 색이 그대로 유지된다
                 x, y = cutout(x, y, rng)
-        out =[torch.from_numpy(to_input(np.ascontiguousarray(x))[None]), torch.from_numpy(y.astype(np.int64))]
+        xin = to_input_feats(x) if self.feats else to_input(np.ascontiguousarray(x))[None]   # 필터는 증강 뒤 사진으로
+        out = [torch.from_numpy(xin), torch.from_numpy(y.astype(np.int64))]
         if self.skel:
             from skimage.morphology import skeletonize
             tube = cv2.dilate(skeletonize(y == 3).astype(np.uint8), np.ones((3, 3), np.uint8))

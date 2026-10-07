@@ -51,8 +51,20 @@ def blend(P, q, alpha, c=3):
     return Q
 
 
+def pair_blend(P, q, alpha, a, b):
+    """두 상 전용 모델 섞기 (9단계): 두 상의 확률 합은 그대로 두고, 그 안에서 b 상의 비율만
+    (1-α)·앙상블 비율 + α·전용 모델 확률로 바꾼다. 다른 상은 건드리지 않는다."""
+    s = P[a] + P[b]
+    r = (1 - alpha) * P[b] / np.maximum(s, 1e-6) + alpha * q
+    Q = P.copy()
+    Q[b], Q[a] = s * r, s * (1 - r)
+    return Q
+
+
 def decide(P, q, cand, c=3):
     kind, v = cand
+    if kind == 'pblend':
+        return postprocess(pair_blend(P, q, v, *G['pair']))
     if kind == 'bias':
         return postprocess(P * np.exp(np.array([0.0, *v], np.float32))[:, None, None])
     if kind == 'blend':
@@ -100,6 +112,7 @@ def run(args, cands):
     items = load_split('data', 'train') + load_split('data', 'valid')
     fold_of = json.loads(Path(args.folds_file).read_text())
     G.update(ens=args.ens, oof=args.oof, spec=getattr(args, 'spec', []), cands=cands, cls=getattr(args, 'cls', 3),
+             pair=tuple(args.pair) if getattr(args, 'pair', None) else None,
              labs={it['name']: it['lab'] for it in items})
     with Pool(args.procs) as pool:
         res = {n: (S, ex) for n, S, ex in pool.imap_unordered(_score_one, [it['name'] for it in items])}
@@ -142,7 +155,8 @@ def run(args, cands):
 
 def _blend_one(n):
     P = np.load(Path(G['ens']) / f'{n}.npy').astype(np.float32)
-    Q = blend(P, spec_prob(G['spec'], n, G['cls']), G['alpha'], G['cls'])
+    q = spec_prob(G['spec'], n, G['cls'])
+    Q = pair_blend(P, q, G['alpha'], *G['pair']) if G['pair'] else blend(P, q, G['alpha'], G['cls'])
     np.save(Path(G['out']) / f'{n}.npy', Q.astype(np.float16))
     return n
 
@@ -151,7 +165,8 @@ def cmd_blendcache(args):
     """앙상블 확률에 전용 모델을 섞은 확률을 저장 (Si 분류기 평가·학습에 '실험 하나'처럼 넘기기 위해)."""
     Path(args.out).mkdir(parents=True, exist_ok=True)
     names = [it['name'] for it in load_split('data', 'train') + load_split('data', 'valid')]
-    G.update(ens=args.ens, oof=args.oof, spec=args.spec, alpha=args.alpha, out=args.out, cls=args.cls)
+    G.update(ens=args.ens, oof=args.oof, spec=args.spec, alpha=args.alpha, out=args.out, cls=args.cls,
+             pair=tuple(args.pair) if args.pair else None)
     with Pool(args.procs) as pool:
         done = list(pool.imap_unordered(_blend_one, names))
     print(f'blended {len(done)} images (alpha {args.alpha}, spec {args.spec}) -> {args.out}', flush=True)
@@ -185,12 +200,14 @@ def main():
         if name == 'sie':
             s.add_argument('--spec', nargs='+', required=True, help='전용 모델 실험 이름 (OOF [2,H,W])')
             s.add_argument('--cls', type=int, default=3, help='전용 모델이 맡은 상 (3 = Eutectic Si, 1 = Al3Ni)')
+            s.add_argument('--pair', type=int, nargs=2, default=None, help='두 상 전용 모델 (예: 1 3). 출력 1번 채널 = 두 번째 상')
     b = sub.add_parser('blendcache')
     b.add_argument('--ens', required=True)
     b.add_argument('--spec', nargs='+', required=True)
     b.add_argument('--alpha', type=float, required=True)
     b.add_argument('--out', required=True)
     b.add_argument('--cls', type=int, default=3)
+    b.add_argument('--pair', type=int, nargs=2, default=None)
     for s in sub.choices.values():
         s.add_argument('--oof', default='runs/oof')
         s.add_argument('--procs', type=int, default=40)
