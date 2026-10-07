@@ -1,0 +1,3 @@
+# 12단계: 3배 해상도 UNet++ (60에폭, 조각 1536, 메모리 최대 27GB → GPU당 1개). 비교: 2배 해상도 60에폭 x2_unetpp_bw_r90 (79.71)
+# 배율: 1230·1278·1440px → 3배, 1096px → 4배, 675px → 6배
+x3_unetpp_bw_r90 | --arch UnetPlusPlus --width 3840 --crop 1536 --tile 1536 --bw 2 --rot rot90 --save-oof runs/oof/x3_unetpp_bw_r90

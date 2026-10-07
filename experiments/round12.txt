@@ -1,0 +1,6 @@
+# 12단계 (10/7 밤샘): 효과가 확인된 방향 키우기. GPU 0·1번에서 GPU당 2개 (2배 해상도 작업당 15GB)
+# 최고 모델 시드 2 (앙상블 흔들림 줄이기). 비교: 시드 0 (80.03), 시드 1 (79.95)
+x2_unetpp_bw_e120_r90_s2 | --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120 --seed 2 --save-oof runs/oof/x2_unetpp_bw_e120_r90_s2
+# Eutectic Si 전용 모델 120에폭 (지금 쓰는 두 전용 모델은 60에폭). 비교: 60에폭 두 개를 섞었을 때 (A27 위에서 +0.091)
+sie_x2_unetpp_e120 | --binary-class 3 --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120 --save-oof runs/oof/sie_x2_unetpp_e120
+sie_x2_cnx_e120 | --binary-class 3 --encoder tu-convnext_tiny --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120 --save-oof runs/oof/sie_x2_cnx_e120
