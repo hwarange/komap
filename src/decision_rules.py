@@ -180,9 +180,13 @@ def cmd_bias(args):
 
 
 def cmd_sie(args):
-    cands = [('blend', round(float(a), 2)) for a in np.arange(0, 1.01, 0.1)] + \
-            [('cascade', round(float(t), 2)) for t in np.arange(0.3, 0.91, 0.1)]
-    args.base_cand = ('blend', 0.0)
+    if args.pair:   # 두 상 전용 모델: 두 상 사이의 비율만 다시 정한다 (먼저 구분하기는 의미 없음)
+        cands = [('pblend', round(float(a), 2)) for a in np.arange(0, 1.01, 0.1)]
+        args.base_cand, args.cls = ('pblend', 0.0), args.pair[1]
+    else:
+        cands = [('blend', round(float(a), 2)) for a in np.arange(0, 1.01, 0.1)] + \
+                [('cascade', round(float(t), 2)) for t in np.arange(0.3, 0.91, 0.1)]
+        args.base_cand = ('blend', 0.0)
     run(args, cands)
 
 
