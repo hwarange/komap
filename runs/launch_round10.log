@@ -1,0 +1,32 @@
+10-07 11:11:19 15 jobs queued on GPUs ['0', '1', '2', '3'] x 1
+10-07 11:11:19 start pair_al3ni_sie_x2/fold0 on GPU 0
+10-07 11:11:19 start pair_al3ni_sie_x2/fold1 on GPU 1
+10-07 11:11:19 start pair_al3ni_sie_x2/fold2 on GPU 2
+10-07 11:11:19 start pair_al3ni_sie_x2/fold3 on GPU 3
+10-07 12:17:59 done pair_al3ni_sie_x2/fold0 (66.7 min)
+10-07 12:17:59 start pair_al3ni_sie_x2/fold4 on GPU 0
+10-07 12:18:19 done pair_al3ni_sie_x2/fold2 (67.0 min)
+10-07 12:18:19 start upp_feats/fold0 on GPU 2
+10-07 12:18:34 done pair_al3ni_sie_x2/fold3 (67.3 min)
+10-07 12:18:34 start upp_feats/fold1 on GPU 3
+10-07 12:18:44 done pair_al3ni_sie_x2/fold1 (67.4 min)
+10-07 12:18:44 start upp_feats/fold2 on GPU 1
+10-07 12:43:04 done upp_feats/fold2 (24.3 min)
+10-07 12:43:04 start upp_feats/fold3 on GPU 1
+10-07 12:46:59 done upp_feats/fold0 (28.7 min)
+10-07 12:46:59 start upp_feats/fold4 on GPU 2
+10-07 12:47:39 done upp_feats/fold1 (29.1 min)
+10-07 12:47:39 start cnx_feats/fold0 on GPU 3
+10-07 12:53:44 done upp_feats/fold3 (10.7 min)
+10-07 12:53:44 start cnx_feats/fold1 on GPU 1
+10-07 12:54:49 done pair_al3ni_sie_x2/fold4 (36.8 min)
+10-07 12:54:49 start cnx_feats/fold2 on GPU 0
+10-07 13:03:34 done cnx_feats/fold1 (9.8 min)
+10-07 13:03:34 start cnx_feats/fold3 on GPU 1
+10-07 13:04:29 done cnx_feats/fold2 (9.7 min)
+10-07 13:04:29 start cnx_feats/fold4 on GPU 0
+10-07 13:06:44 done cnx_feats/fold0 (19.1 min)
+10-07 13:13:34 done cnx_feats/fold3 (10.0 min)
+10-07 13:14:04 done cnx_feats/fold4 (9.6 min)
+10-07 13:15:59 done upp_feats/fold4 (29.0 min)
+10-07 13:15:59 all finished. failed: none

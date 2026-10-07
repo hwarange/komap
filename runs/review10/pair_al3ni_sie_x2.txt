@@ -1,0 +1,166 @@
+{
+ "n_candidates": 18,
+ "base": {
+  "cand": [
+   "blend",
+   0.0
+  ],
+  "mIoU": 80.164,
+  "class_IoU": {
+   "Al": 93.21,
+   "Al3Ni": 79.4,
+   "SiP": 89.08,
+   "SiE": 59.52
+  }
+ },
+ "in_sample_best (optimistic)": {
+  "cand": [
+   "blend",
+   0.0
+  ],
+  "mIoU": 80.164
+ },
+ "nested (honest)": {
+  "mIoU": 80.164,
+  "delta": 0.0,
+  "ci95": [
+   0.0,
+   0.0
+  ],
+  "better/worse": "0/0",
+  "est_test": 80.997,
+  "class_IoU": {
+   "Al": 93.21,
+   "Al3Ni": 79.4,
+   "SiP": 89.08,
+   "SiE": 59.52
+  },
+  "picks_per_fold": [
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.0
+   ]
+  ]
+ },
+ "cls": 3,
+ "spec_alone_SiE_IoU (q>0.5)": 14.79,
+ "by_candidate": {
+  "('blend', 0.0)": 80.164,
+  "('blend', 0.1)": 80.141,
+  "('blend', 0.2)": 80.022,
+  "('blend', 0.3)": 79.769,
+  "('blend', 0.4)": 79.214,
+  "('blend', 0.5)": 76.064,
+  "('blend', 0.6)": 59.152,
+  "('blend', 0.7)": 52.362,
+  "('blend', 0.8)": 48.486,
+  "('blend', 0.9)": 46.036,
+  "('blend', 1.0)": 44.312,
+  "('cascade', 0.3)": 39.349,
+  "('cascade', 0.4)": 42.045,
+  "('cascade', 0.5)": 44.86,
+  "('cascade', 0.6)": 48.036,
+  "('cascade', 0.7)": 51.875,
+  "('cascade', 0.8)": 56.611,
+  "('cascade', 0.9)": 62.494
+ }
+}
+{
+ "n_candidates": 18,
+ "base": {
+  "cand": [
+   "blend",
+   0.0
+  ],
+  "mIoU": 79.98,
+  "class_IoU": {
+   "Al": 93.07,
+   "Al3Ni": 79.14,
+   "SiP": 89.11,
+   "SiE": 59.16
+  }
+ },
+ "in_sample_best (optimistic)": {
+  "cand": [
+   "blend",
+   0.0
+  ],
+  "mIoU": 79.98
+ },
+ "nested (honest)": {
+  "mIoU": 79.963,
+  "delta": -0.017,
+  "ci95": [
+   -0.048,
+   0.015
+  ],
+  "better/worse": "15/21",
+  "est_test": 80.73,
+  "class_IoU": {
+   "Al": 93.04,
+   "Al3Ni": 79.15,
+   "SiP": 89.1,
+   "SiE": 59.13
+  },
+  "picks_per_fold": [
+   [
+    "blend",
+    0.1
+   ],
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.1
+   ],
+   [
+    "blend",
+    0.0
+   ]
+  ]
+ },
+ "cls": 3,
+ "spec_alone_SiE_IoU (q>0.5)": 14.79,
+ "by_candidate": {
+  "('blend', 0.0)": 79.98,
+  "('blend', 0.1)": 79.977,
+  "('blend', 0.2)": 79.864,
+  "('blend', 0.3)": 79.628,
+  "('blend', 0.4)": 79.094,
+  "('blend', 0.5)": 75.931,
+  "('blend', 0.6)": 59.092,
+  "('blend', 0.7)": 52.311,
+  "('blend', 0.8)": 48.436,
+  "('blend', 0.9)": 45.985,
+  "('blend', 1.0)": 44.263,
+  "('cascade', 0.3)": 39.298,
+  "('cascade', 0.4)": 41.99,
+  "('cascade', 0.5)": 44.802,
+  "('cascade', 0.6)": 47.974,
+  "('cascade', 0.7)": 51.81,
+  "('cascade', 0.8)": 56.542,
+  "('cascade', 0.9)": 62.422
+ }
+}

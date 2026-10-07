@@ -1,0 +1,4 @@
+10-07 09:34:34 3 jobs queued on GPUs ['3', '3', '2'] x 1
+10-07 09:34:34 start full_x2_unetpp_bw_e120_r90/fold0 on GPU 3
+10-07 09:34:34 start full_x2_unetpp_bw_e120_r90/fold1 on GPU 3
+10-07 09:34:34 start full_x2_unetpp_bw_e120_r90/fold2 on GPU 2

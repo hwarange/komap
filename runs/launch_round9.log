@@ -1,0 +1,30 @@
+10-07 09:34:14 15 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-07 09:34:14 start x2_unetpp_bw_e120_r90_s1/fold0 on GPU 0
+10-07 09:34:14 start x2_unetpp_bw_e120_r90_s1/fold1 on GPU 0
+10-07 09:34:14 start x2_unetpp_bw_e120_r90_s1/fold2 on GPU 1
+10-07 09:34:14 start x2_unetpp_bw_e120_r90_s1/fold3 on GPU 1
+10-07 09:34:14 start x2_unetpp_bw_e120_r90_s1/fold4 on GPU 2
+10-07 09:34:14 start upp_hard/fold0 on GPU 2
+10-07 09:34:14 start upp_hard/fold1 on GPU 3
+10-07 09:34:14 start upp_hard/fold2 on GPU 3
+10-07 10:02:49 done upp_hard/fold0 (28.6 min)
+10-07 10:02:49 start upp_hard/fold3 on GPU 2
+10-07 10:10:54 done upp_hard/fold1 (36.7 min)
+10-07 10:10:54 done upp_hard/fold2 (36.7 min)
+10-07 10:10:54 start upp_hard/fold4 on GPU 3
+10-07 10:10:54 start cnx_hard/fold0 on GPU 3
+10-07 10:32:19 done upp_hard/fold3 (29.5 min)
+10-07 10:32:19 start cnx_hard/fold1 on GPU 2
+10-07 10:36:29 done cnx_hard/fold0 (25.6 min)
+10-07 10:36:29 start cnx_hard/fold2 on GPU 3
+10-07 10:47:29 done upp_hard/fold4 (36.6 min)
+10-07 10:47:29 start cnx_hard/fold3 on GPU 3
+10-07 10:51:29 done cnx_hard/fold1 (19.2 min)
+10-07 10:51:29 start cnx_hard/fold4 on GPU 2
+10-07 11:00:39 done cnx_hard/fold2 (24.2 min)
+10-07 11:09:19 done cnx_hard/fold3 (21.8 min)
+10-07 11:10:39 done cnx_hard/fold4 (19.2 min)
+10-07 12:40:24 done x2_unetpp_bw_e120_r90_s1/fold0 (186.2 min)
+10-07 12:40:34 done x2_unetpp_bw_e120_r90_s1/fold2 (186.3 min)
+10-07 12:40:39 done x2_unetpp_bw_e120_r90_s1/fold3 (186.4 min)
+10-07 12:41:44 done x2_unetpp_bw_e120_r90_s1/fold1 (187.5 min)
