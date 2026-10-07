@@ -1,0 +1,14 @@
+{
+ "images": 90,
+ "interior_error_pct_mean": 1.477,
+ "edge_error_pct_mean": 5.623,
+ "images_without_interior_error": 0,
+ "top_pairs (정답->예측, 안쪽 오답 중 비율 %)": {
+  "Al3Ni->SiE": 18.9,
+  "Al3Ni->Al": 17.8,
+  "Al->Al3Ni": 16.2,
+  "SiE->SiP": 12.9,
+  "SiP->SiE": 12.4,
+  "SiE->Al3Ni": 11.1
+ }
+}

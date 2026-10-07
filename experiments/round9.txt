@@ -1,0 +1,9 @@
+# 9단계 (2026-10-07): 최고 모델 시드 추가 + 안쪽 오답 위주 학습. 무거운 실험을 앞에 배치.
+# 90장 전체 학습은 round9_full.txt (따로 실행)
+
+# 최고 단일 모델(80.03) 시드 1: 자동 선택이 이 모델에 크게 기대므로 시드를 늘려 흔들림을 줄인다. 시드 잡음도 처음으로 잰다
+x2_unetpp_bw_e120_r90_s1 | --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120 --seed 1 --save-oof runs/oof/x2_unetpp_bw_e120_r90_s1
+
+# 안쪽 오답 위주 학습: 조각의 절반을 '경계 띠 밖에서 앙상블이 틀린 곳' 중심으로 (runs/hardmaps). 비교: unetpp_bw_r90, cnx_bw
+upp_hard | --arch UnetPlusPlus --bw 2 --rot rot90 --hard-crop 0.5 --save-oof runs/oof/upp_hard
+cnx_hard | --encoder tu-convnext_tiny --bw 2 --hard-crop 0.5 --save-oof runs/oof/cnx_hard

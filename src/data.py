@@ -181,16 +181,20 @@ class CropDataset(Dataset):
     - copypaste: 다른 crop의 Primary Si·Al3Ni 덩어리를 테두리 2px와 함께 붙여넣을 확률
     - skel: Eutectic Si 뼈대 띠(skeleton tube)를 함께 반환 (Skeleton Recall 손실용)
     7단계 옵션: elastic(탄성 변형 확률), cutout(일부 가리기 확률). mixup·cutmix는 배치 단위라 train.py에서 한다.
+    9단계 옵션: hard(오답 위치 중심으로 자를 확률), hard_maps(사진별 오답 지도 폴더, <이름>.png, 0이 아니면 오답)
     """
 
     def __init__(self, items, crop=512, samples_per_image=8, target_width=1280, scale_jitter=0.15, aug=True,
                  rot='any', policy='default', hm=0.0, lowres=0.0, no_int=False, copypaste=0.0, skel=False, int_drop=(),
-                 elastic=0.0, cutout=0.0):
+                 elastic=0.0, cutout=0.0, hard=0.0, hard_maps=''):
         self.data = [(normalize(it['gray']), it['lab'], scale_for(it['gray'].shape[1], target_width)) for it in items]
         self.crop, self.spi, self.jitter, self.aug = crop, samples_per_image, scale_jitter, aug
         self.rot, self.policy, self.hm, self.lowres = rot, policy, hm, lowres
         self.no_int, self.copypaste, self.skel, self.int_drop = no_int, copypaste, skel, tuple(int_drop)
-        self.elastic, self.cutout = elastic, cutout
+        self.elastic, self.cutout, self.hard = elastic, cutout, hard
+        if hard:
+            # 오답 위치 (원본 좌표 y, x). 경계 띠 밖에서 앙상블이 틀린 픽셀 (9단계, make_hardmaps)
+            self.hard_xy = [np.argwhere(np.array(Image.open(Path(hard_maps) / f"{it['name']}.png")) > 0) for it in items]
         if hm:
             self.medians = [class_medians(img, lab) for img, lab, _ in self.data]
             self.low_idx = [i for i, it in enumerate(items) if it['low_contrast']]
@@ -198,7 +202,7 @@ class CropDataset(Dataset):
     def __len__(self):
         return len(self.data) * self.spi
 
-    def _warp(self, i, rng):
+    def _warp(self, i, rng, center=None):
         img, lab, base = self.data[i]
         H, W = img.shape
         lean = self.policy == 'lean'
@@ -209,6 +213,10 @@ class CropDataset(Dataset):
         # 출력 crop의 중심을 원본의 무작위 위치에 놓고 확대/회전을 한 번에 적용
         half = self.crop / s / 2
         cx, cy = rng.uniform(min(half, W / 2), max(W - half, W / 2)), rng.uniform(min(half, H / 2), max(H - half, H / 2))
+        if center is not None:
+            # 오답 위치 중심 (9단계): 조각 크기의 ±1/4 안에서 살짝 흔든 뒤 사진 안쪽으로 맞춘다
+            cx = float(np.clip(center[0] + rng.uniform(-half / 2, half / 2), min(half, W / 2), max(W - half, W / 2)))
+            cy = float(np.clip(center[1] + rng.uniform(-half / 2, half / 2), min(half, H / 2), max(H - half, H / 2)))
         cos, sin = math.cos(theta) * s, math.sin(theta) * s
         M = np.array([[cos, -sin, self.crop / 2 - cos * cx + sin * cy],
                       [sin, cos, self.crop / 2 - sin * cx - cos * cy]], np.float32)
@@ -238,7 +246,11 @@ class CropDataset(Dataset):
 
     def __getitem__(self, idx):
         rng = np.random.default_rng(np.random.randint(1 << 31))
-        x, y = self._warp(idx % len(self.data), rng)
+        i, center = idx % len(self.data), None
+        if self.hard and rng.random() < self.hard and len(self.hard_xy[i]):   # hard=0이면 난수를 쓰지 않아 이전과 같다
+            yy, xx = self.hard_xy[i][int(rng.integers(len(self.hard_xy[i])))]
+            center = (float(xx), float(yy))
+        x, y = self._warp(i, rng, center)
         if self.aug:
             if self.elastic and rng.random() < self.elastic:
                 x, y = elastic_deform(x, y, rng)

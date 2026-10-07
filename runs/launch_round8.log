@@ -1,0 +1,52 @@
+10-06 16:37:00 25 jobs queued on GPUs ['0', '1', '2', '3'] x 2
+10-06 16:37:00 start x2_unetpp_bw_e120_r90/fold0 on GPU 0
+10-06 16:37:00 start x2_unetpp_bw_e120_r90/fold1 on GPU 0
+10-06 16:37:00 start x2_unetpp_bw_e120_r90/fold2 on GPU 1
+10-06 16:37:00 start x2_unetpp_bw_e120_r90/fold3 on GPU 1
+10-06 16:37:00 start x2_unetpp_bw_e120_r90/fold4 on GPU 2
+10-06 16:37:00 start al3ni_x2_unetpp/fold0 on GPU 2
+10-06 16:37:00 start al3ni_x2_unetpp/fold1 on GPU 3
+10-06 16:37:00 start al3ni_x2_unetpp/fold2 on GPU 3
+10-06 17:54:55 done al3ni_x2_unetpp/fold0 (77.9 min)
+10-06 17:54:55 start al3ni_x2_unetpp/fold3 on GPU 2
+10-06 17:55:35 done al3ni_x2_unetpp/fold2 (78.6 min)
+10-06 17:55:35 start al3ni_x2_unetpp/fold4 on GPU 3
+10-06 17:55:45 done al3ni_x2_unetpp/fold1 (78.8 min)
+10-06 17:55:45 start sie_x2_cnx/fold0 on GPU 3
+10-06 18:43:00 done sie_x2_cnx/fold0 (47.3 min)
+10-06 18:43:00 start sie_x2_cnx/fold1 on GPU 3
+10-06 19:11:20 done al3ni_x2_unetpp/fold4 (75.8 min)
+10-06 19:11:21 start sie_x2_cnx/fold2 on GPU 3
+10-06 19:13:41 done x2_unetpp_bw_e120_r90/fold4 (156.7 min)
+10-06 19:13:41 start sie_x2_cnx/fold3 on GPU 2
+10-06 19:13:46 done al3ni_x2_unetpp/fold3 (78.8 min)
+10-06 19:13:46 start sie_x2_cnx/fold4 on GPU 2
+10-06 19:13:56 done x2_unetpp_bw_e120_r90/fold0 (156.9 min)
+10-06 19:13:56 start upp_softedge/fold0 on GPU 0
+10-06 19:14:11 done x2_unetpp_bw_e120_r90/fold2 (157.2 min)
+10-06 19:14:11 start upp_softedge/fold1 on GPU 1
+10-06 19:14:16 done x2_unetpp_bw_e120_r90/fold1 (157.3 min)
+10-06 19:14:16 start upp_softedge/fold2 on GPU 0
+10-06 19:14:21 done x2_unetpp_bw_e120_r90/fold3 (157.3 min)
+10-06 19:14:21 start upp_softedge/fold3 on GPU 1
+10-06 19:29:16 done sie_x2_cnx/fold1 (46.3 min)
+10-06 19:29:16 start upp_softedge/fold4 on GPU 3
+10-06 19:31:46 done upp_softedge/fold0 (17.8 min)
+10-06 19:31:46 start cnx_softedge/fold0 on GPU 0
+10-06 19:32:06 done upp_softedge/fold2 (17.8 min)
+10-06 19:32:06 start cnx_softedge/fold1 on GPU 0
+10-06 19:32:16 done upp_softedge/fold1 (18.1 min)
+10-06 19:32:16 start cnx_softedge/fold2 on GPU 1
+10-06 19:32:21 done upp_softedge/fold3 (18.0 min)
+10-06 19:32:21 start cnx_softedge/fold3 on GPU 1
+10-06 19:43:26 done cnx_softedge/fold0 (11.7 min)
+10-06 19:43:26 start cnx_softedge/fold4 on GPU 0
+10-06 19:43:46 done cnx_softedge/fold1 (11.7 min)
+10-06 19:44:01 done cnx_softedge/fold2 (11.8 min)
+10-06 19:44:06 done cnx_softedge/fold3 (11.8 min)
+10-06 19:48:21 done upp_softedge/fold4 (19.1 min)
+10-06 19:52:06 done sie_x2_cnx/fold2 (40.8 min)
+10-06 19:53:31 done cnx_softedge/fold4 (10.1 min)
+10-06 19:59:56 done sie_x2_cnx/fold3 (46.3 min)
+10-06 20:00:01 done sie_x2_cnx/fold4 (46.3 min)
+10-06 20:00:01 all finished. failed: none

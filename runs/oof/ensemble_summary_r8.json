@@ -1,0 +1,274 @@
+{
+ "single": {
+  "unetpp_bw_e120_r90": {
+   "cv": 79.491,
+   "est_test": 80.228
+  },
+  "x2_c1024_bw_r90": {
+   "cv": 79.373,
+   "est_test": 80.221
+  },
+  "a_rot90": {
+   "cv": 79.349,
+   "est_test": 80.058
+  },
+  "cnx_bw_e120": {
+   "cv": 79.331,
+   "est_test": 80.088
+  },
+  "unetpp_bw_e120": {
+   "cv": 79.316,
+   "est_test": 80.132
+  },
+  "m_hires": {
+   "cv": 79.28,
+   "est_test": 80.126
+  },
+  "bw4_r90": {
+   "cv": 79.284,
+   "est_test": 80.042
+  },
+  "a_lean": {
+   "cv": 79.24,
+   "est_test": 80.113
+  },
+  "unetpp_bw": {
+   "cv": 79.243,
+   "est_test": 80.04
+  },
+  "cnx_bw": {
+   "cv": 79.188,
+   "est_test": 79.997
+  },
+  "cnx_bw_c768": {
+   "cv": 79.172,
+   "est_test": 79.995
+  },
+  "cnx_bw_e120_r90": {
+   "cv": 79.214,
+   "est_test": 79.971
+  },
+  "unet_mit_bw_r90": {
+   "cv": 79.147,
+   "est_test": 80.0
+  },
+  "x2_c1024": {
+   "cv": 79.056,
+   "est_test": 79.913
+  },
+  "unet_mit": {
+   "cv": 78.865,
+   "est_test": 79.76
+  },
+  "upp_r50_bw": {
+   "cv": 79.053,
+   "est_test": 79.869
+  },
+  "x2_unetpp_bw_r90": {
+   "cv": 79.706,
+   "est_test": 80.528
+  },
+  "mn_sxt50_unetpp": {
+   "cv": 79.198,
+   "est_test": 80.012
+  },
+  "cnxS_bw_e120": {
+   "cv": 79.272,
+   "est_test": 80.051
+  },
+  "effv2s_unetpp": {
+   "cv": 79.3,
+   "est_test": 80.156
+  },
+  "hrnet_unet": {
+   "cv": 78.972,
+   "est_test": 79.841
+  },
+  "mn_r34_unetpp": {
+   "cv": 79.302,
+   "est_test": 80.094
+  },
+  "unetpp_bw_r90": {
+   "cv": 79.412,
+   "est_test": 80.105
+  },
+  "m_dinov3_lr": {
+   "cv": 79.018,
+   "est_test": 79.877
+  },
+  "m_skel_w015": {
+   "cv": 79.055,
+   "est_test": 79.829
+  },
+  "x2_unetpp_bw_e120_r90": {
+   "cv": 80.027,
+   "est_test": 80.83
+  },
+  "upp_softedge": {
+   "cv": 79.266,
+   "est_test": 80.002
+  },
+  "cnx_softedge": {
+   "cv": 79.011,
+   "est_test": 79.83
+  }
+ },
+ "combos": {
+  "top2 by single score": {
+   "members": [
+    "x2_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_r90"
+   ],
+   "cv": 80.077,
+   "est_test": 80.884
+  },
+  "top3 by single score": {
+   "members": [
+    "x2_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_r90",
+    "unetpp_bw_e120_r90"
+   ],
+   "cv": 80.11,
+   "est_test": 80.879
+  },
+  "top4 by single score": {
+   "members": [
+    "x2_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_r90",
+    "unetpp_bw_e120_r90",
+    "unetpp_bw_r90"
+   ],
+   "cv": 80.069,
+   "est_test": 80.826
+  },
+  "top5 by single score": {
+   "members": [
+    "x2_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_r90",
+    "unetpp_bw_e120_r90",
+    "unetpp_bw_r90",
+    "x2_c1024_bw_r90"
+   ],
+   "cv": 80.047,
+   "est_test": 80.812
+  },
+  "all": {
+   "members": [
+    "unetpp_bw_e120_r90",
+    "x2_c1024_bw_r90",
+    "a_rot90",
+    "cnx_bw_e120",
+    "unetpp_bw_e120",
+    "m_hires",
+    "bw4_r90",
+    "a_lean",
+    "unetpp_bw",
+    "cnx_bw",
+    "cnx_bw_c768",
+    "cnx_bw_e120_r90",
+    "unet_mit_bw_r90",
+    "x2_c1024",
+    "unet_mit",
+    "upp_r50_bw",
+    "x2_unetpp_bw_r90",
+    "mn_sxt50_unetpp",
+    "cnxS_bw_e120",
+    "effv2s_unetpp",
+    "hrnet_unet",
+    "mn_r34_unetpp",
+    "unetpp_bw_r90",
+    "m_dinov3_lr",
+    "m_skel_w015",
+    "x2_unetpp_bw_e120_r90",
+    "upp_softedge",
+    "cnx_softedge"
+   ],
+   "cv": 79.961,
+   "est_test": 80.718
+  }
+ },
+ "greedy": {
+  "in_sample": {
+   "members": [
+    "x2_unetpp_bw_e120_r90",
+    "unet_mit",
+    "x2_unetpp_bw_e120_r90",
+    "cnxS_bw_e120",
+    "m_hires"
+   ],
+   "cv": 80.386,
+   "note": "같은 90장으로 고르고 채점 -> 낙관적"
+  },
+  "nested": {
+   "cv": 80.173,
+   "est_test": 80.934,
+   "picks_per_fold": [
+    [
+     "x2_unetpp_bw_e120_r90",
+     "unet_mit",
+     "x2_unetpp_bw_e120_r90"
+    ],
+    [
+     "x2_unetpp_bw_e120_r90",
+     "unet_mit"
+    ],
+    [
+     "x2_unetpp_bw_e120_r90",
+     "unet_mit"
+    ],
+    [
+     "x2_unetpp_bw_e120_r90",
+     "unet_mit",
+     "x2_unetpp_bw_e120_r90",
+     "cnxS_bw_e120",
+     "effv2s_unetpp"
+    ],
+    [
+     "x2_unetpp_bw_e120_r90",
+     "unet_mit",
+     "x2_unetpp_bw_e120_r90",
+     "cnxS_bw_e120",
+     "m_hires"
+    ]
+   ]
+  }
+ },
+ "adjacency": {
+  "best single": {
+   "members": [
+    "x2_unetpp_bw_e120_r90"
+   ],
+   "pp": {
+    "cv": 80.027,
+    "est_test": 80.83
+   },
+   "pp+adj": {
+    "cv": 80.034,
+    "est_test": 80.833
+   },
+   "delta": 0.007,
+   "improved_images": 49,
+   "worse_images": 31,
+   "pred_contacts": 9010
+  },
+  "best predefined ensemble": {
+   "members": [
+    "x2_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_r90",
+    "unetpp_bw_e120_r90"
+   ],
+   "pp": {
+    "cv": 80.11,
+    "est_test": 80.879
+   },
+   "pp+adj": {
+    "cv": 80.113,
+    "est_test": 80.877
+   },
+   "delta": 0.004,
+   "improved_images": 50,
+   "worse_images": 32,
+   "pred_contacts": 7707
+  }
+ }
+}

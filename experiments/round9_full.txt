@@ -1,0 +1,2 @@
+# 9단계: 최고 단일 모델을 90장 전체로 (시드 3개, --folds 3). sub5_full용. 검증 불가 → check_full.py 안전 점검
+full_x2_unetpp_bw_e120_r90 | --full --arch UnetPlusPlus --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120

@@ -225,6 +225,9 @@ def main():
     p.add_argument('--cutout', type=float, default=0.0, help='일부 가리기 확률 (crop마다, 가린 곳은 손실에서 뺌)')
     p.add_argument('--mixup', type=float, default=0.0, help='mixup 확률 (배치마다, 두 crop을 λ~Beta(0.4,0.4)로 겹침)')
     p.add_argument('--cutmix', type=float, default=0.0, help='CutMix 확률 (배치마다, 다른 crop의 네모 조각을 정답째 붙임)')
+    # 9단계 옵션
+    p.add_argument('--hard-crop', type=float, default=0.0, help='오답 위치(경계 띠 밖) 중심으로 자를 확률 (0이면 끔)')
+    p.add_argument('--hard-maps', default='runs/hardmaps', help='사진별 오답 지도 폴더 (src/make_hardmaps.py)')
     p.add_argument('--soft-edge', type=float, default=0.0,
                    help='경계 1px 띠의 정답을 주변 3×3 상 비율과 섞는 정도 ε (0이면 끔, cutout과 같이 쓰지 않음)')
     args = p.parse_args()
@@ -253,7 +256,8 @@ def main():
         train_items = subsample_by_alloy(train_items, args.train_frac, args.seed)
     ds = CropDataset(train_items, args.crop, args.spi, args.width, rot=args.rot, policy=args.aug_policy, hm=args.hm,
                      lowres=args.lowres, no_int=args.no_int, copypaste=args.copypaste, skel=args.skel > 0,
-                     int_drop=[v for v in args.int_drop.split(',') if v], elastic=args.elastic, cutout=args.cutout)
+                     int_drop=[v for v in args.int_drop.split(',') if v], elastic=args.elastic, cutout=args.cutout,
+                     hard=args.hard_crop, hard_maps=args.hard_maps)
     dl = DataLoader(ds, batch_size=args.bs, shuffle=True, num_workers=args.workers, drop_last=True,
                     worker_init_fn=worker_init_fn, persistent_workers=args.workers > 0, pin_memory=True)
 
