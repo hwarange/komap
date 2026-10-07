@@ -1,0 +1,9 @@
+10-07 14:44:14 microsteel_cnx 사전학습 시작 (GPU 2)
+10-07 14:51:43 microsteel_cnx 사전학습 끝: runs/pretrain/microsteel_cnx/last.pt
+10-07 14:56:44 MICAST 다운로드 끝: 1000장, 변환 시작
+10-07 15:02:48 1000 images -> external/micast_seg | 픽셀 비율 Al 0.953, eutSi 0.020, 무시(AlFeSi) 0.028
+10-07 15:02:48 micast_cnx 사전학습 시작 (GPU 3)
+10-07 15:17:43 cnx_microsteel 미세조정·비교 끝
+10-07 15:26:22 micast_cnx 사전학습 끝: runs/pretrain/micast_cnx/last.pt
+10-07 15:43:27 cnx_micast 미세조정·비교 끝
+10-07 15:43:27 모두 끝

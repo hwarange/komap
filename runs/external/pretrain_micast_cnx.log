@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+train 1000 imgs, 2000 iters/epoch | val 0 imgs | Unet-tu-convnext_tiny
+{"epoch": 1, "loss": 0.3215, "lr": 0.0003, "train_sec": 107.8, "gpu_mem_gb": 3.7}
+{"epoch": 2, "loss": 0.0213, "lr": 0.0002909538931178862, "train_sec": 92.8, "gpu_mem_gb": 3.7}
+{"epoch": 3, "loss": 0.0156, "lr": 0.00026490666646784665, "train_sec": 104.5, "gpu_mem_gb": 3.7}
+{"epoch": 4, "loss": 0.0125, "lr": 0.000225, "train_sec": 112.0, "gpu_mem_gb": 3.7}
+{"epoch": 5, "loss": 0.0115, "lr": 0.00017604722665003956, "train_sec": 116.4, "gpu_mem_gb": 3.7}
+{"epoch": 6, "loss": 0.0107, "lr": 0.00012395277334996044, "train_sec": 117.3, "gpu_mem_gb": 3.7}
+{"epoch": 7, "loss": 0.01, "lr": 7.500000000000002e-05, "train_sec": 123.7, "gpu_mem_gb": 3.7}
+{"epoch": 8, "loss": 0.0097, "lr": 3.509333353215331e-05, "train_sec": 130.6, "gpu_mem_gb": 3.7}
+{"epoch": 9, "loss": 0.0093, "lr": 9.046106882113751e-06, "train_sec": 132.3, "gpu_mem_gb": 3.7}
+{"epoch": 10, "loss": 0.0092, "lr": 0.0, "train_sec": 130.5, "gpu_mem_gb": 3.7}
+done. best val mIoU -1.00

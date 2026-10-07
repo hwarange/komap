@@ -1,0 +1,61 @@
+{
+ "exp": "cnx_microsteel",
+ "base": "cnx_bw",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4582,
+ "base_final_loss": 0.4629,
+ "train_min_per_fold": 21.8,
+ "gpu_mem_gb": 3.7,
+ "log_issues": "none",
+ "cv_mIoU": 79.1,
+ "base_cv_mIoU": 79.19,
+ "delta": -0.09,
+ "ci95": [
+  -0.31,
+  0.12
+ ],
+ "improved_images": "43/90",
+ "delta_plain(no TTA/pp)": -0.22,
+ "delta_per_class": {
+  "Al": -0.07,
+  "Al3Ni": -0.13,
+  "SiP": -0.14,
+  "SiE": -0.03
+ },
+ "class_IoU": {
+  "Al": 92.62,
+  "Al3Ni": 78.19,
+  "SiP": 88.35,
+  "SiE": 57.78
+ },
+ "delta_low_contrast": -0.03,
+ "delta_high_contrast": -0.11,
+ "delta_675px": -0.02,
+ "delta_large": -0.11,
+ "est_test": 79.93,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 68.7,
+   "base": 68.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 60.5,
+   "base": 58.8,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.019,
+  "Al3Ni": 0.965,
+  "SiP": 0.972,
+  "SiE": 1.004
+ },
+ "base_area_ratio": {
+  "Al": 1.019,
+  "Al3Ni": 0.966,
+  "SiP": 0.974,
+  "SiE": 1.002
+ }
+}
