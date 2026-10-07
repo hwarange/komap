@@ -238,6 +238,9 @@ def main():
     p.add_argument('--mixup', type=float, default=0.0, help='mixup 확률 (배치마다, 두 crop을 λ~Beta(0.4,0.4)로 겹침)')
     p.add_argument('--cutmix', type=float, default=0.0, help='CutMix 확률 (배치마다, 다른 crop의 네모 조각을 정답째 붙임)')
     # 9단계 옵션
+    p.add_argument('--init', default='', help='먼저 학습한 체크포인트(last.pt)에서 시작 (외부 데이터 사전학습)')
+    p.add_argument('--init-skip-head', action='store_true', help='--init에서 출력층은 불러오지 않고 새로 (상 정의가 다른 외부 데이터)')
+    p.add_argument('--use-ignore', action='store_true', help='정답의 255(대응 상 없음)를 손실에서 뺀다 (외부 데이터 학습)')
     p.add_argument('--pair-classes', type=int, nargs=2, default=None,
                    help='두 상 전용 모델 (예: 1 3 = Al3Ni vs Eutectic Si). 두 상이 아닌 픽셀은 손실에서 뺀다')
     p.add_argument('--feats', action='store_true', help='입력에 black top-hat·ridge 필터 채널 추가 (3채널)')
@@ -280,9 +283,18 @@ def main():
     assert not (binary and pair), '--binary-class와 --pair-classes는 같이 쓰지 않는다'
     model = build_model(args.arch, args.encoder, attention=args.attention, hires=args.hires,
                         n_classes=2 if (binary or pair) else len(CLASSES), feats=args.feats).to(device)
+    if args.init:
+        # 외부 데이터로 먼저 학습한 가중치에서 시작 (9단계). 모양이 같은 층만 불러오고, --init-skip-head면 출력층은 새로
+        sd = torch.load(args.init, map_location='cpu', weights_only=False)['model']
+        own = model.state_dict()
+        keep = {k: v for k, v in sd.items() if k in own and own[k].shape == v.shape
+                and not (args.init_skip_head and k.startswith('segmentation_head'))}
+        model.load_state_dict(keep, strict=False)
+        print(f'init from {args.init}: loaded {len(keep)}/{len(own)} tensors'
+              f'{" (출력층 새로)" if args.init_skip_head else ""}', flush=True)
     cw = [float(v) for v in args.class_weights.split(',')] if args.class_weights else None
     assert not (args.soft_edge > 0 and (args.cutout > 0 or pair)), '--soft-edge는 무시 픽셀(cutout·pair)과 같이 쓰지 않는다'
-    criterion = SegLoss(args.loss, args.bw, cw, args.skel, use_ignore=args.cutout > 0 or bool(pair),
+    criterion = SegLoss(args.loss, args.bw, cw, args.skel, use_ignore=args.cutout > 0 or bool(pair) or args.use_ignore,
                         soft_edge=args.soft_edge).to(device)
     enc_params = [q for n, q in model.named_parameters() if n.startswith('encoder.')]
     other_params = [q for n, q in model.named_parameters() if not n.startswith('encoder.')]
