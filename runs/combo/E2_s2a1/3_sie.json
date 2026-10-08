@@ -1,0 +1,83 @@
+{
+ "n_candidates": 18,
+ "base": {
+  "cand": [
+   "blend",
+   0.0
+  ],
+  "mIoU": 80.787,
+  "class_IoU": {
+   "Al": 93.68,
+   "Al3Ni": 80.16,
+   "SiP": 89.47,
+   "SiE": 60.45
+  }
+ },
+ "in_sample_best (optimistic)": {
+  "cand": [
+   "blend",
+   0.1
+  ],
+  "mIoU": 80.796
+ },
+ "nested (honest)": {
+  "mIoU": 80.758,
+  "delta": -0.029,
+  "ci95": [
+   -0.082,
+   0.011
+  ],
+  "better/worse": "29/25",
+  "est_test": 81.529,
+  "class_IoU": {
+   "Al": 93.67,
+   "Al3Ni": 80.11,
+   "SiP": 89.47,
+   "SiE": 60.38
+  },
+  "picks_per_fold": [
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.2
+   ],
+   [
+    "blend",
+    0.0
+   ],
+   [
+    "blend",
+    0.1
+   ],
+   [
+    "blend",
+    0.1
+   ]
+  ]
+ },
+ "cls": 3,
+ "spec_alone_SiE_IoU (q>0.5)": 58.75,
+ "by_candidate": {
+  "('blend', 0.0)": 80.787,
+  "('blend', 0.1)": 80.796,
+  "('blend', 0.2)": 80.787,
+  "('blend', 0.3)": 80.747,
+  "('blend', 0.4)": 80.697,
+  "('blend', 0.5)": 80.644,
+  "('blend', 0.6)": 80.586,
+  "('blend', 0.7)": 80.517,
+  "('blend', 0.8)": 80.44,
+  "('blend', 0.9)": 80.344,
+  "('blend', 1.0)": 80.26,
+  "('cascade', 0.3)": 79.876,
+  "('cascade', 0.4)": 80.163,
+  "('cascade', 0.5)": 80.131,
+  "('cascade', 0.6)": 79.832,
+  "('cascade', 0.7)": 79.165,
+  "('cascade', 0.8)": 77.97,
+  "('cascade', 0.9)": 75.738
+ }
+}

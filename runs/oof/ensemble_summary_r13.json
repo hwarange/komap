@@ -1,0 +1,285 @@
+{
+ "single": {
+  "unetpp_bw_e120_r90": {
+   "cv": 79.491,
+   "est_test": 80.228
+  },
+  "x2_c1024_bw_r90": {
+   "cv": 79.373,
+   "est_test": 80.221
+  },
+  "a_rot90": {
+   "cv": 79.349,
+   "est_test": 80.058
+  },
+  "cnx_bw_e120": {
+   "cv": 79.331,
+   "est_test": 80.088
+  },
+  "unetpp_bw_e120": {
+   "cv": 79.316,
+   "est_test": 80.132
+  },
+  "m_hires": {
+   "cv": 79.28,
+   "est_test": 80.126
+  },
+  "bw4_r90": {
+   "cv": 79.284,
+   "est_test": 80.042
+  },
+  "a_lean": {
+   "cv": 79.24,
+   "est_test": 80.113
+  },
+  "unetpp_bw": {
+   "cv": 79.243,
+   "est_test": 80.04
+  },
+  "cnx_bw": {
+   "cv": 79.188,
+   "est_test": 79.997
+  },
+  "cnx_bw_c768": {
+   "cv": 79.172,
+   "est_test": 79.995
+  },
+  "cnx_bw_e120_r90": {
+   "cv": 79.214,
+   "est_test": 79.971
+  },
+  "unet_mit_bw_r90": {
+   "cv": 79.147,
+   "est_test": 80.0
+  },
+  "x2_c1024": {
+   "cv": 79.056,
+   "est_test": 79.913
+  },
+  "unet_mit": {
+   "cv": 78.865,
+   "est_test": 79.76
+  },
+  "upp_r50_bw": {
+   "cv": 79.053,
+   "est_test": 79.869
+  },
+  "x2_unetpp_bw_r90": {
+   "cv": 79.706,
+   "est_test": 80.528
+  },
+  "mn_sxt50_unetpp": {
+   "cv": 79.198,
+   "est_test": 80.012
+  },
+  "cnxS_bw_e120": {
+   "cv": 79.272,
+   "est_test": 80.051
+  },
+  "effv2s_unetpp": {
+   "cv": 79.3,
+   "est_test": 80.156
+  },
+  "hrnet_unet": {
+   "cv": 78.972,
+   "est_test": 79.841
+  },
+  "mn_r34_unetpp": {
+   "cv": 79.302,
+   "est_test": 80.094
+  },
+  "unetpp_bw_r90": {
+   "cv": 79.412,
+   "est_test": 80.105
+  },
+  "m_dinov3_lr": {
+   "cv": 79.018,
+   "est_test": 79.877
+  },
+  "m_skel_w015": {
+   "cv": 79.055,
+   "est_test": 79.829
+  },
+  "x2_unetpp_bw_e120_r90": {
+   "cv": 80.027,
+   "est_test": 80.83
+  },
+  "x2_unetpp_bw_e120_r90_s1": {
+   "cv": 79.955,
+   "est_test": 80.89
+  },
+  "x2_unetpp_bw_e120_r90_s2": {
+   "cv": 80.027,
+   "est_test": 80.953
+  },
+  "x3_unetpp_bw_r90": {
+   "cv": 79.926,
+   "est_test": 80.622
+  },
+  "x3_unetpp_bw_e120_r90": {
+   "cv": 80.162,
+   "est_test": 80.989
+  },
+  "x2_mit_bw_r90": {
+   "cv": 80.171,
+   "est_test": 80.834
+  },
+  "x2_cnx_bw_e120": {
+   "cv": 79.257,
+   "est_test": 80.131
+  }
+ },
+ "combos": {
+  "top2 by single score": {
+   "members": [
+    "x2_mit_bw_r90",
+    "x3_unetpp_bw_e120_r90"
+   ],
+   "cv": 80.788,
+   "est_test": 81.555
+  },
+  "top3 by single score": {
+   "members": [
+    "x2_mit_bw_r90",
+    "x3_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_e120_r90_s2"
+   ],
+   "cv": 80.686,
+   "est_test": 81.475
+  },
+  "top4 by single score": {
+   "members": [
+    "x2_mit_bw_r90",
+    "x3_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_e120_r90_s2",
+    "x2_unetpp_bw_e120_r90"
+   ],
+   "cv": 80.589,
+   "est_test": 81.373
+  },
+  "top5 by single score": {
+   "members": [
+    "x2_mit_bw_r90",
+    "x3_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_e120_r90_s2",
+    "x2_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_e120_r90_s1"
+   ],
+   "cv": 80.506,
+   "est_test": 81.327
+  },
+  "all": {
+   "members": [
+    "unetpp_bw_e120_r90",
+    "x2_c1024_bw_r90",
+    "a_rot90",
+    "cnx_bw_e120",
+    "unetpp_bw_e120",
+    "m_hires",
+    "bw4_r90",
+    "a_lean",
+    "unetpp_bw",
+    "cnx_bw",
+    "cnx_bw_c768",
+    "cnx_bw_e120_r90",
+    "unet_mit_bw_r90",
+    "x2_c1024",
+    "unet_mit",
+    "upp_r50_bw",
+    "x2_unetpp_bw_r90",
+    "mn_sxt50_unetpp",
+    "cnxS_bw_e120",
+    "effv2s_unetpp",
+    "hrnet_unet",
+    "mn_r34_unetpp",
+    "unetpp_bw_r90",
+    "m_dinov3_lr",
+    "m_skel_w015",
+    "x2_unetpp_bw_e120_r90",
+    "x2_unetpp_bw_e120_r90_s1",
+    "x2_unetpp_bw_e120_r90_s2",
+    "x3_unetpp_bw_r90",
+    "x3_unetpp_bw_e120_r90",
+    "x2_mit_bw_r90",
+    "x2_cnx_bw_e120"
+   ],
+   "cv": 80.207,
+   "est_test": 80.974
+  }
+ },
+ "greedy": {
+  "in_sample": {
+   "members": [
+    "x2_mit_bw_r90",
+    "x3_unetpp_bw_e120_r90"
+   ],
+   "cv": 80.788,
+   "note": "같은 90장으로 고르고 채점 -> 낙관적"
+  },
+  "nested": {
+   "cv": 80.766,
+   "est_test": 81.523,
+   "picks_per_fold": [
+    [
+     "x3_unetpp_bw_e120_r90",
+     "x2_mit_bw_r90"
+    ],
+    [
+     "x2_mit_bw_r90",
+     "x3_unetpp_bw_e120_r90"
+    ],
+    [
+     "x2_mit_bw_r90",
+     "x3_unetpp_bw_e120_r90",
+     "x2_mit_bw_r90",
+     "x2_unetpp_bw_e120_r90_s2"
+    ],
+    [
+     "x2_mit_bw_r90",
+     "x3_unetpp_bw_e120_r90"
+    ],
+    [
+     "x3_unetpp_bw_e120_r90",
+     "x2_mit_bw_r90"
+    ]
+   ]
+  }
+ },
+ "adjacency": {
+  "best single": {
+   "members": [
+    "x2_mit_bw_r90"
+   ],
+   "pp": {
+    "cv": 80.171,
+    "est_test": 80.834
+   },
+   "pp+adj": {
+    "cv": 80.179,
+    "est_test": 80.838
+   },
+   "delta": 0.008,
+   "improved_images": 50,
+   "worse_images": 32,
+   "pred_contacts": 7546
+  },
+  "best predefined ensemble": {
+   "members": [
+    "x2_mit_bw_r90",
+    "x3_unetpp_bw_e120_r90"
+   ],
+   "pp": {
+    "cv": 80.788,
+    "est_test": 81.555
+   },
+   "pp+adj": {
+    "cv": 80.782,
+    "est_test": 81.541
+   },
+   "delta": -0.006,
+   "improved_images": 45,
+   "worse_images": 37,
+   "pred_contacts": 11002
+  }
+ }
+}

@@ -1,0 +1,14 @@
+x2_mit_bw_r90/fold0: 30s
+x2_mit_bw_r90/fold4: 34s
+x3_unetpp_bw_e120_r90/fold3: 48s
+shard 0: 3 models, 54 images saved
+sie_x2_unetpp/fold0: 18s
+sie_x2_unetpp/fold4: 21s
+sie_x2_cnx/fold3: 13s
+sie_x2_unetpp_e120/fold2: 17s
+sie_x2_cnx_e120/fold1: 12s
+shard 0: 5 models, 90 images saved
+al3ni_x2_unetpp/fold0: 17s
+al3ni_x2_unetpp/fold4: 21s
+al3ni_x2_cnx_e120/fold3: 13s
+shard 0: 3 models, 54 images saved

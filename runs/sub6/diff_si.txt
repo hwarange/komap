@@ -1,0 +1,17 @@
+{
+ "per_image_pct": {
+  "A107_step1_sample3": 0.0042,
+  "A122_step4_sample1": 0.0117,
+  "A124_step4_sample3": 0.0511,
+  "A127_step3_sample2": 0.0015,
+  "A133_step4_sample1": 0.0268,
+  "A167_step3_sample3": 0.0087,
+  "A38_step2_sample2": 0.0756,
+  "A51_step3_sample3": 0.107,
+  "A63_step2_sample3": 0.1546,
+  "A87_step1_sample4": 0.1207
+ },
+ "mean": 0.0562,
+ "max": 0.1546,
+ "images_over_2pct": 0
+}

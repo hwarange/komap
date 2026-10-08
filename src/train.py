@@ -204,6 +204,7 @@ def main():
     p.add_argument('--bs', type=int, default=4)
     p.add_argument('--crop', type=int, default=512)
     p.add_argument('--spi', type=int, default=8, help='에폭당 이미지 1장에서 뽑는 crop 수')
+    p.add_argument('--scale-jitter', type=float, default=0.15, help='학습 크기 변환 폭 (기존 0.15, 0이면 크기 증강만 끔)')
     p.add_argument('--lr', type=float, default=3e-4)
     p.add_argument('--wd', type=float, default=1e-4)
     p.add_argument('--width', type=int, default=1280, help='배율 기준 가로 길이 (0이면 원본 그대로)')
@@ -249,6 +250,8 @@ def main():
     p.add_argument('--soft-edge', type=float, default=0.0,
                    help='경계 1px 띠의 정답을 주변 3×3 상 비율과 섞는 정도 ε (0이면 끔, cutout과 같이 쓰지 않음)')
     args = p.parse_args()
+    if args.scale_jitter < 0:
+        p.error('--scale-jitter는 0 이상이어야 한다')
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -272,7 +275,8 @@ def main():
         val_items = load_split(args.data, args.val_split) if args.val_split else []
     if args.train_frac < 1.0:
         train_items = subsample_by_alloy(train_items, args.train_frac, args.seed)
-    ds = CropDataset(train_items, args.crop, args.spi, args.width, rot=args.rot, policy=args.aug_policy, hm=args.hm,
+    ds = CropDataset(train_items, args.crop, args.spi, args.width, scale_jitter=args.scale_jitter,
+                     rot=args.rot, policy=args.aug_policy, hm=args.hm,
                      lowres=args.lowres, no_int=args.no_int, copypaste=args.copypaste, skel=args.skel > 0,
                      int_drop=[v for v in args.int_drop.split(',') if v], elastic=args.elastic, cutout=args.cutout,
                      hard=args.hard_crop, hard_maps=args.hard_maps, feats=args.feats)

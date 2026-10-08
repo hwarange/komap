@@ -1,0 +1,10 @@
+10-08 06:17:30 x2_mit_bw_r90 evaluated
+10-08 07:20:14 x3_unetpp_bw_e120_r90 evaluated
+10-08 07:50:56 x2_cnx_bw_e120 evaluated
+10-08 08:51:26 al3ni_x2_cnx_e120 evaluated
+10-08 08:51:26 학습 완료 모델: x3_unetpp_bw_e120_r90 x2_mit_bw_r90 x2_cnx_bw_e120 al3ni_x2_cnx_e120 / 최종 조합 일반 모델 32개 / Al3Ni 전용: al3ni_x2_unetpp al3ni_x2_cnx_e120
+10-08 08:51:26 평가 사진 예측 (GPU 0~3)
+10-08 08:51:26 최종 조합 후보 (CPU, 하나씩 약 3분)
+10-08 08:56:11 평가 사진 예측 끝: x3_unetpp_bw_e120_r90=50/50 x2_mit_bw_r90=50/50 x2_cnx_bw_e120=50/50 al3ni_x2_cnx_e120=50/50
+10-08 08:56:11 앙상블 기여 평가 (ensemble.py, 1시간 이상)
+10-08 09:32:39 all

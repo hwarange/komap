@@ -1,0 +1,9 @@
+{
+ "n_images": 90,
+ "models_per_image": 2,
+ "cv_mIoU": 80.78889758288618,
+ "oof_mIoU": 80.78842560074649,
+ "mean_score_delta": 0.0004719821396677383,
+ "max_probability_diff": 0.006556510925292969
+}
+PASS: independent prediction, complete folds, probability validity, OOF reproduction

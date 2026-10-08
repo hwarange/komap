@@ -1,0 +1,6 @@
+# 10/8 사용자 선택: MiT 추가 실험 2개. 각 실험은 x2_mit_bw_r90에서 한 설정만 변경.
+# 고해상도 MiT는 GPU당 한 작업 (학습 메모리 약 26.6GB).
+# 120에폭: 60에폭 기준에서 학습 길이만 변경. 동일 ImageNet 초기값, 같은 seed/fold.
+x2_mit_bw_e120_r90 | --encoder mit_b2 --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --epochs 120 --save-oof runs/oof/x2_mit_bw_e120_r90
+# 크기 증강만 제거: 기본 2배 해상도, 90도 회전/반전, 감마/노이즈 증강 유지, 60에폭 유지.
+x2_mit_bw_r90_sj0 | --encoder mit_b2 --width 2560 --crop 1024 --tile 1024 --bw 2 --rot rot90 --scale-jitter 0 --save-oof runs/oof/x2_mit_bw_r90_sj0

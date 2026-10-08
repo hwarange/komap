@@ -1,0 +1,124 @@
+### vs 원래 해상도 MiT (해상도만 다름)
+{
+ "exp": "x2_mit_bw_r90",
+ "base": "unet_mit_bw_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4094,
+ "base_final_loss": 0.4554,
+ "train_min_per_fold": 55.3,
+ "gpu_mem_gb": 26.63,
+ "log_issues": "none",
+ "cv_mIoU": 80.17,
+ "base_cv_mIoU": 79.15,
+ "delta": 1.02,
+ "ci95": [
+  0.61,
+  1.45
+ ],
+ "improved_images": "76/90",
+ "delta_plain(no TTA/pp)": 1.22,
+ "delta_per_class": {
+  "Al": 0.63,
+  "Al3Ni": 1.3,
+  "SiP": 0.78,
+  "SiE": 1.53
+ },
+ "class_IoU": {
+  "Al": 93.35,
+  "Al3Ni": 79.71,
+  "SiP": 89.18,
+  "SiE": 59.11
+ },
+ "delta_low_contrast": 0.57,
+ "delta_high_contrast": 1.23,
+ "delta_675px": 1.06,
+ "delta_large": 1.01,
+ "est_test": 80.83,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 59.4,
+   "base": 68.1,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 59.0,
+   "base": 61.2,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.016,
+  "Al3Ni": 0.977,
+  "SiP": 0.982,
+  "SiE": 0.975
+ },
+ "base_area_ratio": {
+  "Al": 1.017,
+  "Al3Ni": 0.972,
+  "SiP": 0.974,
+  "SiE": 0.996
+ }
+}
+### vs 2배 UNet++ 60에폭 (인코더만 다름)
+{
+ "exp": "x2_mit_bw_r90",
+ "base": "x2_unetpp_bw_r90",
+ "result_files": 5,
+ "oof_files": 90,
+ "final_loss": 0.4094,
+ "base_final_loss": 0.4073,
+ "train_min_per_fold": 55.3,
+ "gpu_mem_gb": 26.63,
+ "log_issues": "none",
+ "cv_mIoU": 80.17,
+ "base_cv_mIoU": 79.71,
+ "delta": 0.47,
+ "ci95": [
+  0.0,
+  0.92
+ ],
+ "improved_images": "53/90",
+ "delta_plain(no TTA/pp)": 0.8,
+ "delta_per_class": {
+  "Al": 0.17,
+  "Al3Ni": 1.05,
+  "SiP": 0.49,
+  "SiE": 0.26
+ },
+ "class_IoU": {
+  "Al": 93.35,
+  "Al3Ni": 79.71,
+  "SiP": 89.18,
+  "SiE": 59.11
+ },
+ "delta_low_contrast": 0.08,
+ "delta_high_contrast": 0.64,
+ "delta_675px": 0.87,
+ "delta_large": 0.3,
+ "est_test": 80.83,
+ "no_SiP_images": {
+  "A57_step1_sample3": {
+   "mIoU": 59.4,
+   "base": 70.4,
+   "false_SiP": false
+  },
+  "A71_step2_sample1": {
+   "mIoU": 59.0,
+   "base": 56.8,
+   "false_SiP": false
+  }
+ },
+ "area_ratio_pred/true": {
+  "Al": 1.016,
+  "Al3Ni": 0.977,
+  "SiP": 0.982,
+  "SiE": 0.975
+ },
+ "base_area_ratio": {
+  "Al": 1.022,
+  "Al3Ni": 0.971,
+  "SiP": 0.973,
+  "SiE": 0.958
+ }
+}
