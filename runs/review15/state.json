@@ -1,0 +1,6 @@
+{
+  "time": "2026-10-08T21:49:48+09:00",
+  "pid": 743216,
+  "stage": "waiting_for_first_idle_gpu",
+  "queue_empty_required": true
+}

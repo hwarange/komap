@@ -1,0 +1,7 @@
+{
+  "approved": true,
+  "audit_sha256": "38af50caf04dcc3b186035bcaf90752b410a804a9b922ca65d641146c4417c8b",
+  "visual_pairs_reviewed": 20,
+  "reviewer": "root",
+  "review": "Black manual boundaries aligned; fixed source groups; no duplicate candidates under recorded checks. Temporary binary task only."
+}
