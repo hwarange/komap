@@ -463,3 +463,58 @@ EDA에서 같은 합금이라도 step 3·4로 가면 Al3Ni가 늘고(+4.7%p) Eut
   - MICAST의 공정 Si는 뭉툭한 덩어리라 1~4px 판으로 줄이면 모양이 더 달라져요.
   - 실제 공정 Si는 Al3Ni와 얽힌 공정 영역 안에 있어서, Al 영역에 붙이면 실제로 없는 배치가 돼요.
 - 외부 데이터 검토 누계는 약 25종이에요. 보고서 03장 3.5절에 "검토 → 직접 시험 → 제외" 과정으로 정리해요.
+
+---
+
+## 13. 경진대회 플랫폼 추가 탐색 (2026-10-08)
+
+사용자 제안: Kaggle·데이콘 등 경진대회에서 외부 데이터를 찾는다.
+대회와 플랫폼의 공개 데이터셋을 함께 조사했다. 새 학습은 실행하지 않았다.
+현재 확인 범위에서 Al–Si–Ni 광학현미경 4상 정답과 직접 일치하는 대회 데이터는
+확인하지 못했지만, 실제 조직과 경계 마스크를 가진 신규 후보를 찾았다.
+
+### 우선 후보: Kaggle의 실제 결정립 데이터
+
+| 자료 | 확인한 내용 | 판단 |
+|---|---|---|
+| [Artificial Grains and Real Grains](https://www.kaggle.com/datasets/peterwarren/voronoi-artificial-grains-gen) | 316L, 광학현미경 500배. 실제 RG 480개 + 수작업 RGMask 480개, 파일명 대응 누락 없음. 파일명 기준 40그룹 × 12조각. 합성 AG/AGMask 각 800개. 공개·CC0 | **1순위 조사 후보.** 실제 조직만 우선 사용 검토. 결정립 경계 사전학습 가설 |
+| [ExONE Stainless Steel 316L Grains 500X](https://www.kaggle.com/datasets/peterwarren/exone-stainless-steel-316l-grains-500x) | 같은 재료·광학현미경. 이미지/마스크 각 336개, 파일명 대응 누락 없음. 21그룹 × 16조각. 마스크는 thresholding 생성. 공개·CC0 | 자동 라벨과 중복 가능성 때문에 후순위 |
+
+Kaggle 공개 API에서 설명, 조건, 전체 파일목록과 명목상 대응을 확인했다.
+픽셀 품질·원본 그룹의 독립성·두 자료 사이 중복은 아직 확인하지 않았다.
+Artificial의 설명상 원본 21개와 현재 파일명 그룹 40개는 다르므로,
+480개를 독립적인 원본 사진 수로 해석하지 않는다.
+초기 검색에서 SEM으로 보았으나 **개별 원본 설명의 optical microscope를 따라 OM으로 정정**했다.
+
+재확인 원본: [Artificial 메타](https://www.kaggle.com/api/v1/datasets/view/peterwarren/voronoi-artificial-grains-gen),
+[파일목록](https://www.kaggle.com/api/v1/datasets/list/peterwarren/voronoi-artificial-grains-gen?pageSize=200),
+[ExONE 메타](https://www.kaggle.com/api/v1/datasets/view/peterwarren/exone-stainless-steel-316l-grains-500x),
+[파일목록](https://www.kaggle.com/api/v1/datasets/list/peterwarren/exone-stainless-steel-316l-grains-500x?pageSize=200).
+파일목록은 pageToken을 따라 전량 확인했다.
+
+### 대회 데이터
+
+- [Kaggle Severstal](https://www.kaggle.com/competitions/severstal-steel-defect-detection/data):
+  철강 제품 표면 결함 4종의 픽셀 마스크. 금속 조직의 4상 라벨과 의미가 다르다.
+  [호스트 연구 사용 안내](https://www.kaggle.com/competitions/severstal-steel-defect-detection/discussion/118403)가 있지만,
+  외부 대회 재사용 범위를 별도 확인해야 한다. 결정립 자료보다 후순위.
+- [데이커 합성 미세구조 물성 예측](https://daker.ai/public/hackathons/synthetic-microstructure-property-prediction-ai):
+  데이콘 주최. 256×256 합성 결정립 이미지에서 경도 대용값 하나를 예측한다.
+  공식 설명에 분할 마스크가 없고, 현재 프로젝트 밖 재사용 조건도 미확인이다.
+  실제 현미경 사진이 아니므로 학습 우선순위는 낮다.
+- [데이콘 반도체 이상 탐지](https://dacon.io/competitions/official/236224/data):
+  이미지 단위 정상/비정상 문제로, 이번 상 분할에 직접 맞는 학습 신호가 없다.
+- 2018 Data Science Bowl은 세포핵 마스크, NEU-DET는 표면 결함 박스,
+  CaDDE 2026은 초대가 필요한 배터리 SEM 분류 대회다. 이번 후보에서 제외했다.
+
+### 적용 전 제안하는 계획 (아직 적용하지 않음)
+
+1. Artificial의 실제 사진·마스크 20쌍을 확인하고 라벨 의미·품질·중복을 점검한다.
+2. 같은 원본에서 잘린 조각들은 같은 그룹으로 묶어 외부 학습/검증을 나눈다.
+3. 결정립 경계 구분으로 MiT를 사전학습하고, 4상 출력부를 새로 만들어 KoMaP로 미세조정한다.
+   감마·노이즈·배율 등 KoMaP 설정은 대조 모델과 같게 유지한다.
+4. 미리 정한 두 fold에서 기존 MiT와 같은 사진끼리 예비 비교한다.
+   도움이 보이면 5-fold 전체와 앙상블 기여를 확인한 뒤 채택을 판단한다.
+
+이는 경계·질감 특징이 옮겨갈 수 있다는 **가설**이다. 기존 MICAST/MicroSteel 전이가
+악화했으므로 개선을 보장하지 않는다. 현재 실행 중인 14단계와 자원을 겹쳐 쓰지 않는다.
