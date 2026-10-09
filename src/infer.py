@@ -74,12 +74,12 @@ def _sliding(model, img, tile, overlap, tta, device, batch=4):
 
 
 @torch.no_grad()
-def predict_probs(model, gray, target_width=1280, tile=512, overlap=128, tta=False, device='cuda', extra_scale=1.0):
+def predict_probs(model, gray, target_width=1280, tile=512, overlap=128, tta=False, device='cuda', extra_scale=1.0, scale_multiplier=1.0):
     """원본 해상도의 상별 확률 [4, H, W]를 돌려준다.
     extra_scale: 학습 배율에 더해 사진을 더 키워 예측 (6단계 크기 키운 TTA, 예: 1.25)."""
     img = normalize(gray)
     H, W = img.shape
-    s = scale_for(W, target_width) * extra_scale
+    s = scale_for(W, target_width, scale_multiplier) * extra_scale
     if s != 1:
         img = cv2.resize(img, (round(W * s), round(H * s)), interpolation=cv2.INTER_LINEAR)
     prob = _sliding(model, img, tile, overlap, tta, device)

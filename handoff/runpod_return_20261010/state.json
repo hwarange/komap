@@ -1,0 +1,14 @@
+{
+  "pid": 785506,
+  "stage": "complete",
+  "files": 173,
+  "bytes": 1333982540,
+  "verified_files": 173,
+  "verified_bytes": 1333982540,
+  "transport": "direct_runpod_to_original_server_https",
+  "compression": false,
+  "original_files_preserved": true,
+  "manifest_sha256": "88bafd17660b2db7fe469a469c19fd72af7c93a4467dd17ce30aeff4c820fcb7",
+  "updated_utc": "2026-10-09T15:31:46.696448+00:00",
+  "all_sha256_verified": true
+}

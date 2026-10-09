@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-09T15:36:41.596064+00:00",
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tile": 1536,
+  "batch": 2,
+  "epochs_trained": 0,
+  "training": false,
+  "checkpoints": [
+    {
+      "fold": 0,
+      "path": "runs/cv/x4_mit_bw_r90/fold0/last.pt",
+      "sha256": "d3dde254b06e2d0737aeb70faef39c247ddb9a12c37fba37294b856b290646cf"
+    },
+    {
+      "fold": 1,
+      "path": "runs/cv/x4_mit_bw_r90/fold1/last.pt",
+      "sha256": "97495fde7da34300948cc80909cf96ba8dcb9fc9566c0412daf081e2fbae8148"
+    },
+    {
+      "fold": 2,
+      "path": "runs/cv/x4_mit_bw_r90/fold2/last.pt",
+      "sha256": "e7351f87eb71f411ca8b61a96a58f73e4da9dd31c07ba1cbfaf535baaf0c2184"
+    },
+    {
+      "fold": 3,
+      "path": "runs/cv/x4_mit_bw_r90/fold3/last.pt",
+      "sha256": "fa0c57bf20250a1e016c29622faea2e2af6b8b81e52383241945d897d0e233ed"
+    },
+    {
+      "fold": 4,
+      "path": "runs/cv/x4_mit_bw_r90/fold4/last.pt",
+      "sha256": "7bc650d2e38f6e4c273b2203c3a01fac96c2594d4e091580055ca55e7bb2927a"
+    }
+  ],
+  "overlap": 128,
+  "tta": 8,
+  "candidate_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "script_sha256": "cdc8952d7d64e1a532a190ba42786a1cc87b82615aea0c646c61870215413a6e",
+  "preserve_existing_oof": true,
+  "prior90_seen": true
+}

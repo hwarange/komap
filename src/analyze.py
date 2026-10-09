@@ -50,8 +50,8 @@ def main():
     for it in items:
         gt = it['lab']
         with autocast(a.get('amp', False)):
-            prob_plain = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], False, 'cuda')
-            prob_tta = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda')
+            prob_plain = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], False, 'cuda', scale_multiplier=a.get('scale_multiplier', 1.0))
+            prob_tta = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda', scale_multiplier=a.get('scale_multiplier', 1.0))
         variants = {'plain': prob_plain.argmax(0), 'pp': postprocess(prob_plain),
                     'tta': prob_tta.argmax(0), 'tta+pp': postprocess(prob_tta)}
         r = dict(name=it['name'], step=it['step'], W=it['gray'].shape[1], low=it['low_contrast'])

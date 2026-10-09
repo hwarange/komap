@@ -1,0 +1,23 @@
+[
+  {
+    "seed": 0,
+    "fold": 2,
+    "exp": "x4_mit_bw_r90",
+    "train_seconds": 3295.2,
+    "images": 18
+  },
+  {
+    "seed": 0,
+    "fold": 3,
+    "exp": "x4_mit_bw_r90",
+    "train_seconds": 3304.4,
+    "images": 18
+  },
+  {
+    "seed": 0,
+    "fold": 4,
+    "exp": "x4_mit_bw_r90",
+    "train_seconds": 3308.2,
+    "images": 18
+  }
+]

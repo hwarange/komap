@@ -14,3 +14,34 @@ data/
 *.npy
 *.pkl
 submissions/*/parts/
+
+# Word 작성 중간물: 양식·최종 그림·검증 기록만 버전 관리
+reports/modeling_document_work/*
+!reports/modeling_document_work/artifact.md
+!reports/modeling_document_work/request.json
+!reports/modeling_document_work/reference.docx
+!reports/modeling_document_work/reference_original.doc
+!reports/modeling_document_work/reference_parts.json
+!reports/modeling_document_work/sub6_oof_examples.png
+!reports/modeling_document_work/sub6_oof_examples.json
+!reports/modeling_document_work/final_build_evidence.json
+!reports/modeling_document_work/layout_qa.json
+!reports/modeling_document_work/document_state.json
+
+# 일회성 서버 이전 도우미·접속 흔적 (실행 코드는 scripts/에 보관)
+handoff/migration/*.log
+handoff/migration/*.pid
+handoff/migration/transfer-key.pub
+handoff/migration/destination-known-hosts.txt
+handoff/migration/copy-records-via-relay.py
+handoff/migration/launch-source-relay.py
+handoff/migration/measure-relay.py
+handoff/migration/prepare-destination.py
+handoff/migration/prepare-https-auth.py
+handoff/migration/probe-https-upload.py
+handoff/migration/record-execution.py
+
+# 로컬 용량·전송 대상 조사 중간물
+runs/backup_cleanup_plan.json
+runs/server_transfer_scope.json
+runs/review16_additional/hourly_checks/

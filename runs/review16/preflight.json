@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-09T12:31:13+09:00",
+  "passed": [
+    "syntax11files",
+    "normalized_server_baseline_hash9files",
+    "sync_hash11files",
+    "exact_per_image_scale",
+    "legacy_crop_seed_equivalence",
+    "mask_values",
+    "inverse_probability_shape_and_sum",
+    "invalid_multiplier_cli",
+    "driver_plan_check",
+    "git_diff_check"
+  ],
+  "gpu_startup": {
+    "fold0": {
+      "epoch": 2,
+      "train_sec": 54.7,
+      "loss": 0.6917,
+      "gpu_mem_gb": 26.63
+    },
+    "fold1": {
+      "epoch": 2,
+      "train_sec": 54.6,
+      "loss": 0.7024,
+      "gpu_mem_gb": 26.63
+    }
+  }
+}

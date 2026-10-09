@@ -1,0 +1,8 @@
+{
+  "files": 180,
+  "bytes": 105004601,
+  "all_sha256_match": true,
+  "manifest_sha256": "653284cfcdee307f6ba29839f18a7f9673594fdef5d84f3eb1499c05156eb092",
+  "verified_utc": "2026-10-09T11:09:11.047912+00:00",
+  "scope": "train/valid only"
+}

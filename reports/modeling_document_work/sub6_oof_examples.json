@@ -1,0 +1,19 @@
+{
+  "selection_scope": "90 OOF images, deterministic median and minimum score",
+  "examples": [
+    {
+      "name": "A16_step4_sample4",
+      "selection": "median",
+      "miou": 81.6438803940262,
+      "model": "sub6 OOF",
+      "not_training_prediction": true
+    },
+    {
+      "name": "A224_step1_sample2",
+      "selection": "lowest",
+      "miou": 58.6174709196969,
+      "model": "sub6 OOF",
+      "not_training_prediction": true
+    }
+  ]
+}

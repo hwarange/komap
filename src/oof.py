@@ -35,7 +35,7 @@ def main():
             _, val = load_cv(a['data'], k, a['folds_file'])
             for it in val:
                 with torch.no_grad(), autocast(a.get('amp', False)):
-                    prob = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda')
+                    prob = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda', scale_multiplier=a.get('scale_multiplier', 1.0))
                 np.save(out / f"{it['name']}.npy", prob.astype(np.float16))
             print(f'{exp} fold{k}: {len(val)} images', flush=True)
 

@@ -1,0 +1,86 @@
+{
+  "created_utc": "2026-10-09T10:55:14.638668+00:00",
+  "purpose": "New management code and execution records; progress files are time-stamped snapshots",
+  "files": [
+    {
+      "path": "migration_assets.py",
+      "size": 10783,
+      "sha256": "9ed917a8d847a22a1f489a3cac10d6b0d01ebfd20568e81be00b85b5b4190272"
+    },
+    {
+      "path": "restore_uv.sh",
+      "size": 2189,
+      "sha256": "a98ce349d7e8ea040baba6827fc0120750db5d32ca73d268de28780e66984f8a"
+    },
+    {
+      "path": "runpod_migration_controller.py",
+      "size": 5388,
+      "sha256": "8c4924dc040d52a774a92697c884908b9feee008c9c66f7aee913a285f63da16"
+    },
+    {
+      "path": "migration_https_upload.py",
+      "size": 8834,
+      "sha256": "0941a770bbfbf200b922c8bcd47b2ec95f8ebd4b486326efa151869e86755b57"
+    },
+    {
+      "path": "migration_checkpoint_probe.py",
+      "size": 3070,
+      "sha256": "24651ad2905072a2f372ec7c467abafa07e2aa5504bf03f8f61fedd0005b1f3d"
+    },
+    {
+      "path": "migration_destination_watch.py",
+      "size": 2552,
+      "sha256": "31c0e1e9bc75806f8cc1b09fc6de8c4bc7fa1c4fc0325fee5f1dfc752c94185d"
+    },
+    {
+      "path": "README.md",
+      "size": 4418,
+      "sha256": "e97c32c8036780a176f28774197a13b569600bdafb603ed66b245a9367d5b817"
+    },
+    {
+      "path": "preparation-status.json",
+      "size": 1243,
+      "sha256": "6541c3aa2715e7acdbeedb1ca8f7c2d09c2b20048467472435598c1ecaab070a"
+    },
+    {
+      "path": "current-migration-state.json",
+      "size": 632,
+      "sha256": "c883034557c6259e257896f2701b3c41e7656eca75155df00071f2f3c3a174ad"
+    },
+    {
+      "path": "uv-restore-verified.json",
+      "size": 225,
+      "sha256": "20007b7eb5bea29cc9a3182a8723fd1c3899e4a7484750a9dcb3d88e47a0427c"
+    },
+    {
+      "path": "checkpoint-initial-verified.json",
+      "size": 59318,
+      "sha256": "2442f54af2d950ad4e4c6c18413276a7337976429b516730040f21a88cacd638"
+    },
+    {
+      "path": "transfer_verified.json",
+      "size": 215,
+      "sha256": "d2a25ef2bbe680d25096e28e7ccabd842209ad8d8b2d97f85224de3d14f79904"
+    },
+    {
+      "path": "https_migration_result.json",
+      "size": 359,
+      "sha256": "151a1ce821de636d48226ceb7e671a4f148308d4c31ac645e32e5e5259996d42"
+    },
+    {
+      "path": "checkpoint_inference_verified.json",
+      "size": 59318,
+      "sha256": "2442f54af2d950ad4e4c6c18413276a7337976429b516730040f21a88cacd638"
+    },
+    {
+      "path": "source-confirmed-completion.json",
+      "size": 359,
+      "sha256": "151a1ce821de636d48226ceb7e671a4f148308d4c31ac645e32e5e5259996d42"
+    },
+    {
+      "path": "https_destination_verification.log",
+      "size": 1764,
+      "sha256": "e55554e69b1dd3c84971ae8b7479a3bf096e0be330e71eb4e18efd9ba8915c73"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "manifest_sha256": "fba00a460e51886585fe8a28fbe0a200b9a57d47898b6eb1328c668b97b13ed9",
+  "finished_utc": "2026-10-09T10:52:42.607942+00:00",
+  "files": 5347,
+  "bytes": 123784030984,
+  "all_sha256_match": true,
+  "all_package_versions_match": true,
+  "trained_checkpoint_source_inference_match": true,
+  "checkpoints_compared": 4
+}

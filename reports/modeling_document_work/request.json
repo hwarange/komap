@@ -1,0 +1,11 @@
+{
+  "team_name": "김형수없는김형수",
+  "awards": "없음",
+  "reference_original": "C:/Users/id116/Downloads/모델링결과서 (2).doc",
+  "output_format": "docx",
+  "body_page_limit": 10,
+  "training_scope": "seed 0 folds 2, 3, 4 only; preserve existing pilot seeds; report and stop",
+  "final_result": "runs/review16_additional/seed0_full_results.json",
+  "administrative_receipt_number": "leave blank until assigned",
+  "required_validation": "Separate original train70/valid20 result from alloy-separated 90-image CV"
+}

@@ -1,0 +1,7 @@
+{
+  "controller_pid": 20469,
+  "launched_utc": "2026-10-09T11:10:10.694710+00:00",
+  "logs": "/workspace/komap/runs/review16_additional",
+  "jobs": 6,
+  "gpu": 1
+}

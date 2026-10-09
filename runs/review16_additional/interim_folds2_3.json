@@ -1,0 +1,97 @@
+{
+  "comparison": "4x MiT seed0 vs 2x MiT; same images, final60epochs, TTA+postprocessing",
+  "per_fold": {
+    "2": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.61323388617093,
+      "base_cv_mIoU": 79.31385159378158,
+      "delta": 0.29938229238935915,
+      "group_bootstrap_ci95": [
+        -0.5955399968868877,
+        1.1241231662611526
+      ],
+      "delta_per_fold": {
+        "2": 0.29938229238935915
+      },
+      "delta_per_class": {
+        "Al": 0.00046410957158195113,
+        "Al3Ni": -0.015205276463393128,
+        "Primary Si": 0.4327315499498747,
+        "Eutectic Si": 1.067900554903951
+      },
+      "delta_low_contrast": 0.9659978893895106,
+      "improved_images": 9
+    },
+    "3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 78.95632547782542,
+      "base_cv_mIoU": 78.91236572272771,
+      "delta": 0.04395975509769872,
+      "group_bootstrap_ci95": [
+        -0.3827396382954251,
+        0.5008876666542851
+      ],
+      "delta_per_fold": {
+        "3": 0.04395975509769872
+      },
+      "delta_per_class": {
+        "Al": 0.12104836529515002,
+        "Al3Ni": 0.13710469213132845,
+        "Primary Si": 0.13541296007969428,
+        "Eutectic Si": -0.3231925182218451
+      },
+      "delta_low_contrast": 0.26103444164974404,
+      "improved_images": 11
+    }
+  },
+  "new_folds_2_3": {
+    "images": 36,
+    "alloy_groups": 28,
+    "cv_mIoU": 79.28477968199816,
+    "base_cv_mIoU": 79.11310865825463,
+    "delta": 0.17167102374352894,
+    "group_bootstrap_ci95": [
+      -0.31108635829835307,
+      0.6361533109161949
+    ],
+    "delta_per_fold": {
+      "2": 0.29938229238935915,
+      "3": 0.04395975509769872
+    },
+    "delta_per_class": {
+      "Al": 0.06075623743336599,
+      "Al3Ni": 0.06094970783396766,
+      "Primary Si": 0.2840722550147845,
+      "Eutectic Si": 0.372354018341053
+    },
+    "delta_low_contrast": 0.6455599585987076,
+    "improved_images": 20
+  },
+  "completed_4_folds": {
+    "images": 72,
+    "alloy_groups": 56,
+    "cv_mIoU": 80.2948067128622,
+    "base_cv_mIoU": 80.07691674743971,
+    "delta": 0.2178899654224923,
+    "group_bootstrap_ci95": [
+      -0.19203506020863167,
+      0.6491433979597572
+    ],
+    "delta_per_fold": {
+      "0": 0.26030675128566155,
+      "1": 0.26791106291724986,
+      "2": 0.29938229238935915,
+      "3": 0.04395975509769872
+    },
+    "delta_per_class": {
+      "Al": 0.08338870032543097,
+      "Al3Ni": 0.05896046800058693,
+      "Primary Si": 0.24704061881803238,
+      "Eutectic Si": 0.5268654798094271
+    },
+    "delta_low_contrast": 0.3133821081542788,
+    "improved_images": 42
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "time_utc": "2026-10-09T14:36:24.969194+00:00",
+  "pid": 24444,
+  "stage": "complete_seed0_report_and_stop",
+  "completed": [
+    {
+      "seed": 0,
+      "fold": 2,
+      "exp": "x4_mit_bw_r90",
+      "train_seconds": 3295.2,
+      "images": 18
+    },
+    {
+      "seed": 0,
+      "fold": 3,
+      "exp": "x4_mit_bw_r90",
+      "train_seconds": 3304.4,
+      "images": 18
+    },
+    {
+      "seed": 0,
+      "fold": 4,
+      "exp": "x4_mit_bw_r90",
+      "train_seconds": 3308.2,
+      "images": 18
+    }
+  ],
+  "report": "reports/round16_seed0_final.md",
+  "submission_changed": false,
+  "further_training_scheduled": false
+}

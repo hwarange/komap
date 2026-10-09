@@ -1,0 +1,85 @@
+{
+  "exp": "x2_mit_grains20_r90",
+  "base": "x2_mit_bw_r90",
+  "folds": [
+    0,
+    1
+  ],
+  "images": 36,
+  "alloy_groups": 28,
+  "cv_mIoU": 80.6842293770254,
+  "base_cv_mIoU": 81.04072483662475,
+  "delta": -0.3564954595993566,
+  "group_bootstrap_ci95": [
+    -0.9412840357686928,
+    0.09818147110894802
+  ],
+  "delta_per_fold": {
+    "0": -0.4816650728201554,
+    "1": -0.23132584637855777
+  },
+  "delta_per_class": {
+    "Al": -0.24052008561175992,
+    "Al3Ni": -0.43750003523407344,
+    "Primary Si": -0.4665672612272206,
+    "Eutectic Si": -0.2813944563243643
+  },
+  "delta_low_contrast": 0.19986894358351037,
+  "improved_images": 16,
+  "names": [
+    "A109_step1_sample3",
+    "A118_step2_sample1",
+    "A121_step2_sample2",
+    "A137_step4_sample2",
+    "A138_step4_sample3",
+    "A139_step3_sample4",
+    "A139_step4_sample3",
+    "A146_step2_sample1",
+    "A152_step2_sample1",
+    "A153_step1_sample4",
+    "A153_step3_sample3",
+    "A154_step2_sample3",
+    "A159_step4_sample4",
+    "A15_step1_sample1",
+    "A164_step1_sample2",
+    "A164_step4_sample1",
+    "A167_step3_sample4",
+    "A170_step4_sample3",
+    "A18_step2_sample1",
+    "A191_step3_sample1",
+    "A191_step4_sample1",
+    "A191_step4_sample3",
+    "A224_step1_sample2",
+    "A224_step4_sample2",
+    "A39_step2_sample3",
+    "A42_step2_sample4",
+    "A66_step3_sample2",
+    "A69_step4_sample4",
+    "A72_step4_sample4",
+    "A78_step4_sample1",
+    "A7_step1_sample2",
+    "A7_step1_sample4",
+    "A7_step4_sample3",
+    "A87_step2_sample2",
+    "A89_step1_sample2",
+    "A96_step1_sample1"
+  ],
+  "continue_full_cv": false,
+  "checks": {
+    "mean_delta": false,
+    "both_folds_improve": false,
+    "group_ci_lower": false,
+    "low_contrast": true,
+    "eutectic_si": false,
+    "other_classes": false
+  },
+  "rules": {
+    "mean_delta_min": 0.15,
+    "each_fold_delta_min_exclusive": 0.0,
+    "group_ci95_lower_min": -0.15,
+    "low_contrast_delta_min": -0.15,
+    "eutectic_si_delta_min": -0.15,
+    "other_class_delta_min": -0.3
+  },
+  "purpose": "Screen for remaining-three-fold compute, not submission selection."
+}

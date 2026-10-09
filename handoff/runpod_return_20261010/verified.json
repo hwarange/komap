@@ -1,0 +1,883 @@
+{
+  "state": {
+    "pid": 785506,
+    "stage": "complete",
+    "files": 173,
+    "bytes": 1333982540,
+    "verified_files": 173,
+    "verified_bytes": 1333982540,
+    "transport": "direct_runpod_to_original_server_https",
+    "compression": false,
+    "original_files_preserved": true,
+    "manifest_sha256": "88bafd17660b2db7fe469a469c19fd72af7c93a4467dd17ce30aeff4c820fcb7",
+    "updated_utc": "2026-10-09T15:31:46.692908+00:00",
+    "all_sha256_verified": true
+  },
+  "files": [
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold3/args.json",
+      "stored": "runs/cv/x4_mit_bw_r90/fold3/args.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold2/result.json",
+      "stored": "runs/cv/x4_mit_bw_r90/fold2/result.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold2/log.jsonl",
+      "stored": "runs/cv/x4_mit_bw_r90/fold2/log.jsonl",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold3/log.jsonl",
+      "stored": "runs/cv/x4_mit_bw_r90/fold3/log.jsonl",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold2/args.json",
+      "stored": "runs/cv/x4_mit_bw_r90/fold2/args.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold4/args.json",
+      "stored": "runs/cv/x4_mit_bw_r90/fold4/args.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold3/result.json",
+      "stored": "runs/cv/x4_mit_bw_r90/fold3/result.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold3/best.pt",
+      "stored": "runs/cv/x4_mit_bw_r90/fold3/best.pt",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold4/log.jsonl",
+      "stored": "runs/cv/x4_mit_bw_r90/fold4/log.jsonl",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold4/result.json",
+      "stored": "runs/cv/x4_mit_bw_r90/fold4/result.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold3/last.pt",
+      "stored": "runs/cv/x4_mit_bw_r90/fold3/last.pt",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold2/last.pt",
+      "stored": "runs/cv/x4_mit_bw_r90/fold2/last.pt",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold4/last.pt",
+      "stored": "runs/cv/x4_mit_bw_r90/fold4/last.pt",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold2/best.pt",
+      "stored": "runs/cv/x4_mit_bw_r90/fold2/best.pt",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/cv/x4_mit_bw_r90/fold4/best.pt",
+      "stored": "runs/cv/x4_mit_bw_r90/fold4/best.pt",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/additional_validation_preflight.json",
+      "stored": "backup_metadata/additional_validation_preflight.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/additional_validation_dataset_verified.json",
+      "stored": "backup_metadata/additional_validation_dataset_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/additional_validation_launch.json",
+      "stored": "backup_metadata/additional_validation_launch.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/additional-validation-code-hashes.json",
+      "stored": "backup_metadata/additional-validation-code-hashes.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/additional-validation-dataset-manifest.json",
+      "stored": "backup_metadata/additional-validation-dataset-manifest.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/checkpoint_inference_verified.json",
+      "stored": "backup_metadata/checkpoint_inference_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/https_migration_result.json",
+      "stored": "backup_metadata/https_migration_result.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/checkpoint_initial_verified.json",
+      "stored": "backup_metadata/checkpoint_initial_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/https_transfer_complete.json",
+      "stored": "backup_metadata/https_transfer_complete.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/imagenet-reference.json",
+      "stored": "backup_metadata/imagenet-reference.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/checkpoint_reference.json",
+      "stored": "backup_metadata/checkpoint_reference.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/destination_existing_assets.json",
+      "stored": "backup_metadata/destination_existing_assets.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/imagenet_init_verified.json",
+      "stored": "backup_metadata/imagenet_init_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_cleanup.json",
+      "stored": "backup_metadata/migration_cleanup.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/README.md",
+      "stored": "backup_metadata/migration_execution_20261009/README.md",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/checkpoint-initial-verified.json",
+      "stored": "backup_metadata/migration_execution_20261009/checkpoint-initial-verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/checkpoint_inference_verified.json",
+      "stored": "backup_metadata/migration_execution_20261009/checkpoint_inference_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/current-migration-state.json",
+      "stored": "backup_metadata/migration_execution_20261009/current-migration-state.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/execution-addendum-manifest.json",
+      "stored": "backup_metadata/migration_execution_20261009/execution-addendum-manifest.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/https_migration_result.json",
+      "stored": "backup_metadata/migration_execution_20261009/https_migration_result.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/migration_assets.py",
+      "stored": "backup_metadata/migration_execution_20261009/migration_assets.py",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/migration_checkpoint_probe.py",
+      "stored": "backup_metadata/migration_execution_20261009/migration_checkpoint_probe.py",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/migration_destination_watch.py",
+      "stored": "backup_metadata/migration_execution_20261009/migration_destination_watch.py",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/migration_https_upload.py",
+      "stored": "backup_metadata/migration_execution_20261009/migration_https_upload.py",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/preparation-status.json",
+      "stored": "backup_metadata/migration_execution_20261009/preparation-status.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/transfer_manifest.json",
+      "stored": "backup_metadata/transfer_manifest.json",
+      "status": "already_identical"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/runpod_migration_controller.py",
+      "stored": "backup_metadata/migration_execution_20261009/runpod_migration_controller.py",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/source-confirmed-completion.json",
+      "stored": "backup_metadata/migration_execution_20261009/source-confirmed-completion.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/transfer_verified.json",
+      "stored": "backup_metadata/migration_execution_20261009/transfer_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/uv-restore-verified.json",
+      "stored": "backup_metadata/migration_execution_20261009/uv-restore-verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/transfer_verified.json",
+      "stored": "backup_metadata/transfer_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/uv_restore_started.json",
+      "stored": "backup_metadata/uv_restore_started.json",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/uv_restore_verified.json",
+      "stored": "backup_metadata/uv_restore_verified.json",
+      "status": "recovered"
+    },
+    {
+      "path": "reports/round16_additional_validation_plan.md",
+      "stored": "reports/round16_additional_validation_plan.md",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/all.done",
+      "stored": "runs/review16_additional/all.done",
+      "status": "recovered"
+    },
+    {
+      "path": "backup_metadata/migration_execution_20261009/restore_uv.sh",
+      "stored": "backup_metadata/migration_execution_20261009/restore_uv.sh",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/completed_jobs.json",
+      "stored": "runs/review16_additional/completed_jobs.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/driver.log",
+      "stored": "runs/review16_additional/driver.log",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/original_six_job_plan.json",
+      "stored": "runs/review16_additional/original_six_job_plan.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/original_six_job_started.json",
+      "stored": "runs/review16_additional/original_six_job_started.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/interim_folds2_3.json",
+      "stored": "runs/review16_additional/interim_folds2_3.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/plan.json",
+      "stored": "runs/review16_additional/plan.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/plan_seed0_closeout.json",
+      "stored": "runs/review16_additional/plan_seed0_closeout.json",
+      "status": "recovered"
+    },
+    {
+      "path": "reports/round16_seed0_final.md",
+      "stored": "reports/round16_seed0_final.md",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/result_diagnostics.json",
+      "stored": "runs/review16_additional/result_diagnostics.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_artifacts.json",
+      "stored": "runs/review16_additional/seed0_artifacts.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/scope_change_handover.json",
+      "stored": "runs/review16_additional/scope_change_handover.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_closeout_code_hashes.json",
+      "stored": "runs/review16_additional/seed0_closeout_code_hashes.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_closeout_driver.log",
+      "stored": "runs/review16_additional/seed0_closeout_driver.log",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_closeout_launch.json",
+      "stored": "runs/review16_additional/seed0_closeout_launch.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_closeout_preflight.json",
+      "stored": "runs/review16_additional/seed0_closeout_preflight.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_closeout_started.json",
+      "stored": "runs/review16_additional/seed0_closeout_started.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_closeout_previous_started.json",
+      "stored": "runs/review16_additional/seed0_closeout_previous_started.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_comparison.log",
+      "stored": "runs/review16_additional/seed0_comparison.log",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_fold2.log",
+      "stored": "runs/review16_additional/seed0_fold2.log",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_fold3.log",
+      "stored": "runs/review16_additional/seed0_fold3.log",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_fold4.log",
+      "stored": "runs/review16_additional/seed0_fold4.log",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/started.json",
+      "stored": "runs/review16_additional/started.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/seed0_full_results.json",
+      "stored": "runs/review16_additional/seed0_full_results.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/state.json",
+      "stored": "runs/review16_additional/state.json",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/review16_additional/summary.md",
+      "stored": "runs/review16_additional/summary.md",
+      "status": "recovered"
+    },
+    {
+      "path": "scripts/migration_destination_watch.py",
+      "stored": "scripts/migration_destination_watch.py",
+      "status": "recovered"
+    },
+    {
+      "path": "scripts/run_resolution16_seed0_closeout.py",
+      "stored": "scripts/run_resolution16_seed0_closeout.py",
+      "status": "recovered"
+    },
+    {
+      "path": "scripts/run_resolution16_additional.py",
+      "stored": "scripts/run_resolution16_additional.py",
+      "status": "recovered"
+    },
+    {
+      "path": "src/review_resolution16_full.py",
+      "stored": "src/review_resolution16_full.py",
+      "status": "recovered"
+    },
+    {
+      "path": "scripts/migration_checkpoint_probe.py",
+      "stored": "scripts/migration_checkpoint_probe.py",
+      "status": "recovered"
+    },
+    {
+      "path": "src/review_resolution16_seed0_final.py",
+      "stored": "src/review_resolution16_seed0_final.py",
+      "status": "recovered"
+    },
+    {
+      "path": "scripts/train_runpod.py",
+      "stored": "scripts/train_runpod.py",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A108_step2_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A108_step2_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A101_step3_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A101_step3_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A111_step1_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A111_step1_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A109_step1_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A109_step1_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A106_step4_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A106_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A111_step3_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A111_step3_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A118_step2_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A118_step2_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A11_step1_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A11_step1_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A11_step2_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A11_step2_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A117_step4_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A117_step4_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A121_step2_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A121_step2_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A125_step1_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A125_step1_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A130_step1_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A130_step1_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A137_step4_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A137_step4_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A138_step4_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A138_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A123_step1_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A123_step1_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A123_step4_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A123_step4_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A139_step4_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A139_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A140_step4_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A140_step4_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A139_step3_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A139_step3_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A147_step4_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A147_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A152_step2_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A152_step2_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A146_step2_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A146_step2_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A150_step4_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A150_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A154_step2_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A154_step2_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A153_step3_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A153_step3_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A153_step1_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A153_step1_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A156_step4_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A156_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A15_step1_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A15_step1_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A164_step1_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A164_step1_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A156_step4_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A156_step4_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A155_step3_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A155_step3_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A16_step4_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A16_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A167_step3_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A167_step3_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A164_step4_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A164_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A170_step4_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A170_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A181_step4_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A181_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A159_step4_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A159_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A181_step1_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A181_step1_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A166_step4_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A166_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A182_step4_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A182_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A187_step4_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A187_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A188_step4_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A188_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A187_step2_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A187_step2_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A191_step3_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A191_step3_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A186_step2_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A186_step2_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A191_step4_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A191_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A200_step4_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A200_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A191_step4_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A191_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A201_step3_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A201_step3_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A201_step3_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A201_step3_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A222_step2_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A222_step2_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A224_step1_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A224_step1_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A2_step4_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A2_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A224_step4_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A224_step4_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A21_step2_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A21_step2_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A39_step2_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A39_step2_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A40_step3_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A40_step3_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A40_step3_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A40_step3_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A44_step4_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A44_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A42_step2_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A42_step2_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A49_step2_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A49_step2_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A51_step4_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A51_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A55_step2_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A55_step2_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A57_step1_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A57_step1_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A55_step3_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A55_step3_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A64_step2_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A64_step2_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A61_step2_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A61_step2_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A59_step3_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A59_step3_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A63_step1_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A63_step1_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A67_step1_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A67_step1_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A66_step3_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A66_step3_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A71_step2_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A71_step2_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A74_step3_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A74_step3_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A69_step4_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A69_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A72_step4_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A72_step4_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A78_step4_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A78_step4_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A7_step1_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A7_step1_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A7_step1_sample4.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A7_step1_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A18_step2_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A18_step2_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A83_step1_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A83_step1_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A89_step1_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A89_step1_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A8_step3_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A8_step3_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A7_step4_sample3.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A7_step4_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A8_step2_sample3.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A8_step2_sample3.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A96_step1_sample1.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A96_step1_sample1.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A94_step4_sample2.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A94_step4_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A87_step2_sample2.npy",
+      "stored": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A87_step2_sample2.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A98_step2_sample4.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A98_step2_sample4.npy",
+      "status": "recovered"
+    },
+    {
+      "path": "runs/oof/x4_mit_bw_r90/A125_step2_sample1.npy",
+      "stored": "runs/oof/x4_mit_bw_r90/A125_step2_sample1.npy",
+      "status": "recovered"
+    }
+  ]
+}

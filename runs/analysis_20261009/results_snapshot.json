@@ -1,0 +1,426 @@
+{
+  "checked_at": "2026-10-09T01:15:41.497354+09:00",
+  "round14_summary": {
+    "single": {
+      "x2_mit_bw_r90": {
+        "cv": 80.171,
+        "est_test": 80.834
+      },
+      "x3_unetpp_bw_e120_r90": {
+        "cv": 80.162,
+        "est_test": 80.989
+      },
+      "x2_mit_bw_e120_r90": {
+        "cv": 80.19,
+        "est_test": 80.89
+      },
+      "x2_mit_bw_r90_sj0": {
+        "cv": 79.81,
+        "est_test": 80.538
+      }
+    },
+    "combos": {
+      "top2 by single score": {
+        "members": [
+          "x2_mit_bw_e120_r90",
+          "x2_mit_bw_r90"
+        ],
+        "cv": 80.358,
+        "est_test": 81.033
+      },
+      "top3 by single score": {
+        "members": [
+          "x2_mit_bw_e120_r90",
+          "x2_mit_bw_r90",
+          "x3_unetpp_bw_e120_r90"
+        ],
+        "cv": 80.854,
+        "est_test": 81.568
+      },
+      "top4 by single score": {
+        "members": [
+          "x2_mit_bw_e120_r90",
+          "x2_mit_bw_r90",
+          "x3_unetpp_bw_e120_r90",
+          "x2_mit_bw_r90_sj0"
+        ],
+        "cv": 80.705,
+        "est_test": 81.444
+      },
+      "all": {
+        "members": [
+          "x2_mit_bw_r90",
+          "x3_unetpp_bw_e120_r90",
+          "x2_mit_bw_e120_r90",
+          "x2_mit_bw_r90_sj0"
+        ],
+        "cv": 80.705,
+        "est_test": 81.444
+      }
+    },
+    "greedy": {
+      "in_sample": {
+        "members": [
+          "x2_mit_bw_e120_r90",
+          "x3_unetpp_bw_e120_r90",
+          "x2_mit_bw_r90",
+          "x3_unetpp_bw_e120_r90"
+        ],
+        "cv": 80.858,
+        "note": "같은 90장으로 고르고 채점 -> 낙관적"
+      },
+      "nested": {
+        "cv": 80.773,
+        "est_test": 81.495,
+        "picks_per_fold": [
+          [
+            "x3_unetpp_bw_e120_r90",
+            "x2_mit_bw_e120_r90"
+          ],
+          [
+            "x2_mit_bw_r90",
+            "x3_unetpp_bw_e120_r90",
+            "x2_mit_bw_e120_r90",
+            "x3_unetpp_bw_e120_r90"
+          ],
+          [
+            "x2_mit_bw_e120_r90",
+            "x3_unetpp_bw_e120_r90",
+            "x2_mit_bw_r90"
+          ],
+          [
+            "x2_mit_bw_e120_r90",
+            "x3_unetpp_bw_e120_r90"
+          ],
+          [
+            "x2_mit_bw_e120_r90",
+            "x3_unetpp_bw_e120_r90",
+            "x2_mit_bw_r90"
+          ]
+        ]
+      }
+    },
+    "adjacency": {
+      "best single": {
+        "members": [
+          "x2_mit_bw_e120_r90"
+        ],
+        "pp": {
+          "cv": 80.19,
+          "est_test": 80.89
+        },
+        "pp+adj": {
+          "cv": 80.187,
+          "est_test": 80.886
+        },
+        "delta": -0.003,
+        "improved_images": 42,
+        "worse_images": 39,
+        "pred_contacts": 6015
+      },
+      "best predefined ensemble": {
+        "members": [
+          "x2_mit_bw_e120_r90",
+          "x2_mit_bw_r90",
+          "x3_unetpp_bw_e120_r90"
+        ],
+        "pp": {
+          "cv": 80.854,
+          "est_test": 81.568
+        },
+        "pp+adj": {
+          "cv": 80.857,
+          "est_test": 81.567
+        },
+        "delta": 0.002,
+        "improved_images": 45,
+        "worse_images": 37,
+        "pred_contacts": 8223
+      }
+    }
+  },
+  "single_comparisons": {
+    "x2_mit_bw_e120_r90": {
+      "images": 90,
+      "alloy_groups": 71,
+      "cv_mIoU": 80.19003150327794,
+      "base_cv_mIoU": 80.17129641229494,
+      "delta": 0.018735090983005166,
+      "group_bootstrap_ci95": [
+        -0.35599879069483475,
+        0.32421790730953237
+      ],
+      "delta_per_fold": {
+        "0": 0.1762233837551857,
+        "1": 0.5230405530998696,
+        "2": -0.25664279165643933,
+        "3": -0.09686105855963392,
+        "4": -0.2520846317239563
+      },
+      "delta_per_class": {
+        "Al": 0.059673092767742256,
+        "Al3Ni": -0.32094717788181715,
+        "Primary Si": -0.013897429928474687,
+        "Eutectic Si": 0.3511248989498302
+      },
+      "delta_low_contrast": 0.10781138063284855,
+      "improved_images": 62,
+      "worst_images": [
+        [
+          "A11_step2_sample4",
+          -12.207180312544033
+        ],
+        [
+          "A72_step4_sample4",
+          -2.898438555600862
+        ],
+        [
+          "A125_step2_sample1",
+          -2.6977650599871197
+        ],
+        [
+          "A2_step4_sample1",
+          -1.6793085605961267
+        ],
+        [
+          "A111_step1_sample2",
+          -1.645032437682957
+        ]
+      ],
+      "best_images": [
+        [
+          "A181_step1_sample1",
+          1.3376738245677302
+        ],
+        [
+          "A7_step4_sample3",
+          1.443638834111951
+        ],
+        [
+          "A74_step3_sample4",
+          2.137920366338548
+        ],
+        [
+          "A224_step1_sample2",
+          2.675843248439122
+        ],
+        [
+          "A18_step2_sample1",
+          5.782411183499164
+        ]
+      ]
+    },
+    "x2_mit_bw_r90_sj0": {
+      "images": 90,
+      "alloy_groups": 71,
+      "cv_mIoU": 79.80978377919756,
+      "base_cv_mIoU": 80.17129641229494,
+      "delta": -0.36151263309737475,
+      "group_bootstrap_ci95": [
+        -0.7552298907656303,
+        -0.048887739085200874
+      ],
+      "delta_per_fold": {
+        "0": -0.7572248206665333,
+        "1": -0.5439109632157029,
+        "2": -0.23249830844242997,
+        "3": 0.1171042411608375,
+        "4": -0.3910333143230452
+      },
+      "delta_per_class": {
+        "Al": -0.12118263107678409,
+        "Al3Ni": -0.3287063399414796,
+        "Primary Si": -0.39782649515235724,
+        "Eutectic Si": -0.6183703993756018
+      },
+      "delta_low_contrast": -0.20582715556993594,
+      "improved_images": 43,
+      "worst_images": [
+        [
+          "A224_step1_sample2",
+          -12.855680890452298
+        ],
+        [
+          "A18_step2_sample1",
+          -8.408520378554684
+        ],
+        [
+          "A111_step1_sample2",
+          -3.736772073390526
+        ],
+        [
+          "A72_step4_sample4",
+          -3.3759811082904747
+        ],
+        [
+          "A57_step1_sample3",
+          -3.0875787254414746
+        ]
+      ],
+      "best_images": [
+        [
+          "A2_step4_sample1",
+          1.0223527139785489
+        ],
+        [
+          "A78_step4_sample1",
+          1.0339186379790277
+        ],
+        [
+          "A7_step4_sample3",
+          1.8962567878285483
+        ],
+        [
+          "A186_step2_sample2",
+          2.0499183714808
+        ],
+        [
+          "A71_step2_sample1",
+          4.0951057192418645
+        ]
+      ]
+    }
+  },
+  "external_fold0_partial": {
+    "images": 18,
+    "alloy_groups": 14,
+    "cv_mIoU": 79.4475627752457,
+    "base_cv_mIoU": 79.92922784806585,
+    "delta": -0.4816650728201554,
+    "group_bootstrap_ci95": [
+      -1.4219275474214095,
+      0.19314862523837245
+    ],
+    "delta_per_fold": {
+      "0": -0.4816650728201554
+    },
+    "delta_per_class": {
+      "Al": -0.47977647009071867,
+      "Al3Ni": -0.883474865537868,
+      "Primary Si": -0.7806733869594544,
+      "Eutectic Si": 0.21726443130742742
+    },
+    "delta_low_contrast": 0.19995505908440947,
+    "improved_images": 9,
+    "note": "Only fold0 completed; not the two-fold pilot decision."
+  },
+  "external_state": {
+    "time": "2026-10-09T01:15:13+09:00",
+    "pid": 743216,
+    "stage": "cv_pilot",
+    "pending": [],
+    "running": {
+      "1": {
+        "gpu": 0,
+        "pid": 754400
+      }
+    }
+  },
+  "ensemble_comparisons": {
+    "sub6": {
+      "images": 90,
+      "alloy_groups": 71,
+      "cv_mIoU": 80.7884256007465,
+      "base_cv_mIoU": 80.7884256007465,
+      "delta": 0.0,
+      "group_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_per_fold": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "delta_per_class": {
+        "Al": 0.0,
+        "Al3Ni": 0.0,
+        "Primary Si": 0.0,
+        "Eutectic Si": 0.0
+      },
+      "delta_low_contrast": 0.0,
+      "improved_images": 0
+    },
+    "replace_MiT_120": {
+      "images": 90,
+      "alloy_groups": 71,
+      "cv_mIoU": 80.84524163687661,
+      "base_cv_mIoU": 80.7884256007465,
+      "delta": 0.05681603613012259,
+      "group_bootstrap_ci95": [
+        -0.09551574035226598,
+        0.22903816410558975
+      ],
+      "delta_per_fold": {
+        "0": 0.17552493346848644,
+        "1": 0.3996967192459222,
+        "2": -0.19789143315978602,
+        "3": -0.1825591411240054,
+        "4": 0.08930910221999572
+      },
+      "delta_per_class": {
+        "Al": -0.011221514010908448,
+        "Al3Ni": -0.09694705863553069,
+        "Primary Si": 0.1404631649287377,
+        "Eutectic Si": 0.2081519162461821
+      },
+      "delta_low_contrast": -0.022099501552849028,
+      "improved_images": 51
+    },
+    "add_MiT_120": {
+      "images": 90,
+      "alloy_groups": 71,
+      "cv_mIoU": 80.854464487011,
+      "base_cv_mIoU": 80.7884256007465,
+      "delta": 0.06603888626449748,
+      "group_bootstrap_ci95": [
+        -0.07504429125555163,
+        0.20594172673780548
+      ],
+      "delta_per_fold": {
+        "0": 0.4563565531856438,
+        "1": 0.2803983424027439,
+        "2": -0.38074901607787953,
+        "3": -0.10190516965861107,
+        "4": 0.07609372147059032
+      },
+      "delta_per_class": {
+        "Al": -0.017013132655788056,
+        "Al3Ni": 0.014147696233224455,
+        "Primary Si": 0.19297226504289322,
+        "Eutectic Si": 0.11037980930768287
+      },
+      "delta_low_contrast": -0.05978564459668689,
+      "improved_images": 53
+    },
+    "all4": {
+      "images": 90,
+      "alloy_groups": 71,
+      "cv_mIoU": 80.70501775021559,
+      "base_cv_mIoU": 80.7884256007465,
+      "delta": -0.08340785053091951,
+      "group_bootstrap_ci95": [
+        -0.29762010403693473,
+        0.13108561743043412
+      ],
+      "delta_per_fold": {
+        "0": 0.23122185832074946,
+        "1": -0.030330085760250352,
+        "2": -0.5619985195799271,
+        "3": -0.07700974942670848,
+        "4": 0.02107724379153887
+      },
+      "delta_per_class": {
+        "Al": -0.07155289393704135,
+        "Al3Ni": -0.028371718256011036,
+        "Primary Si": 0.020242265214714485,
+        "Eutectic Si": -0.2132271196619268
+      },
+      "delta_low_contrast": -0.14979302797427557,
+      "improved_images": 34
+    }
+  },
+  "external_latest_log": "{\"epoch\": 39, \"loss\": 0.4365, \"lr\": 8.440390193117169e-05, \"train_sec\": 54.6, \"gpu_mem_gb\": 26.63}"
+}

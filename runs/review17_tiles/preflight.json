@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-09T15:34:43.420519+00:00",
+  "image": "A146_step2_sample1",
+  "shape": [
+    909,
+    1278
+  ],
+  "training": false,
+  "fixed_tile": 1536,
+  "inference_batch": 2,
+  "cases": {
+    "tile1024_batch4": {
+      "seconds": 9.006576459854841,
+      "peak_memory_gb": 8.093760013580322,
+      "min": 1.5776083564511545e-11,
+      "max": 0.9999960660934448,
+      "max_sum_error": 2.980232238769531e-07,
+      "miou": 86.99600735437507
+    },
+    "tile1024_batch2": {
+      "seconds": 8.11044554784894,
+      "peak_memory_gb": 7.548838138580322,
+      "min": 1.585805792236883e-11,
+      "max": 0.9999960660934448,
+      "max_sum_error": 2.980232238769531e-07,
+      "miou": 86.99581575243552
+    },
+    "tile1536_batch2": {
+      "seconds": 15.02789467945695,
+      "peak_memory_gb": 8.552487850189209,
+      "min": 1.0862096812280786e-11,
+      "max": 0.999996542930603,
+      "max_sum_error": 2.980232238769531e-07,
+      "miou": 86.78812091099694
+    }
+  },
+  "canonical_baseline_path": "runs/runpod_return_20261010/conflicts/runs/oof/x4_mit_bw_r90/A146_step2_sample1.npy",
+  "canonical_vs_rerun_max_probability_diff": 0.003289937973022461,
+  "canonical_vs_rerun_miou_delta_pp": -0.0005811818176510997,
+  "batch_only_max_probability_diff": 0.002680063247680664,
+  "batch_only_miou_delta_pp": -0.00019160193954803617
+}

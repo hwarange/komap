@@ -66,7 +66,7 @@ def cmd_predict(args):
             if fold_of is not None and fold_of[it['name']] != k:
                 continue  # 검증 모드: 이 사진을 학습한 모델은 쓰지 않음
             with torch.no_grad(), autocast(a.get('amp', False)):
-                prob = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda')
+                prob = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda', scale_multiplier=a.get('scale_multiplier', 1.0))
             if per_model:
                 md.mkdir(parents=True, exist_ok=True)
                 np.save(md / f"{it['name']}.npy", prob.astype(np.float32))

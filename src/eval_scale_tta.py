@@ -33,8 +33,8 @@ def main():
             _, val = load_cv(a['data'], k, a['folds_file'])
             for it in val:
                 with torch.no_grad(), autocast(a.get('amp', False)):
-                    p1 = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda')
-                    p2 = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda', extra_scale=args.scale)
+                    p1 = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda', scale_multiplier=a.get('scale_multiplier', 1.0))
+                    p2 = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda', extra_scale=args.scale, scale_multiplier=a.get('scale_multiplier', 1.0))
                 for lst, pr in [(s1, p1), (s2, p2), (both, (p1 + p2) / 2)]:
                     lst.append(np.nanmean(image_iou(it['lab'], postprocess(pr))) * 100)
                 low.append(it['low_contrast'])

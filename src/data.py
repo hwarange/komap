@@ -76,10 +76,12 @@ def load_cv(root, fold, folds_file):
     return [it for it in items if fold_of[it['name']] != fold], [it for it in items if fold_of[it['name']] == fold]
 
 
-def scale_for(width, target_width):
+def scale_for(width, target_width, scale_multiplier=1.0):
     """같은 시야를 해상도만 다르게 찍었으므로 작은 이미지를 정수 배로 키워 배율을 맞춘다 (EDA 4절).
     1096~1440px는 1배(원본 그대로)로 두어 불필요한 재샘플링을 피하고, 675px는 2배로 키운다."""
-    return float(max(1, round(target_width / width))) if target_width else 1.0
+    if not math.isfinite(scale_multiplier) or scale_multiplier <= 0:
+        raise ValueError('scale_multiplier must be finite and positive')
+    return (float(max(1, round(target_width / width))) if target_width else 1.0) * scale_multiplier
 
 
 def to_input(img):
@@ -213,8 +215,8 @@ class CropDataset(Dataset):
 
     def __init__(self, items, crop=512, samples_per_image=8, target_width=1280, scale_jitter=0.15, aug=True,
                  rot='any', policy='default', hm=0.0, lowres=0.0, no_int=False, copypaste=0.0, skel=False, int_drop=(),
-                 elastic=0.0, cutout=0.0, hard=0.0, hard_maps='', feats=False):
-        self.data = [(normalize(it['gray']), it['lab'], scale_for(it['gray'].shape[1], target_width)) for it in items]
+                 elastic=0.0, cutout=0.0, hard=0.0, hard_maps='', feats=False, scale_multiplier=1.0):
+        self.data = [(normalize(it['gray']), it['lab'], scale_for(it['gray'].shape[1], target_width, scale_multiplier)) for it in items]
         self.crop, self.spi, self.jitter, self.aug = crop, samples_per_image, scale_jitter, aug
         self.rot, self.policy, self.hm, self.lowres = rot, policy, hm, lowres
         self.no_int, self.copypaste, self.skel, self.int_drop = no_int, copypaste, skel, tuple(int_drop)

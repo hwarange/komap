@@ -39,7 +39,7 @@ def cmd_train_score(args):
             sc = []
             for it in items:
                 with torch.no_grad(), autocast(a.get('amp', False)):
-                    p = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda')
+                    p = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], True, 'cuda', scale_multiplier=a.get('scale_multiplier', 1.0))
                 sc.append(np.nanmean(image_iou(it['lab'], postprocess(p))) * 100)
             seeds[ck_path.parent.name] = round(float(np.mean(sc)), 2)
             print(e, ck_path.parent.name, seeds[ck_path.parent.name], flush=True)

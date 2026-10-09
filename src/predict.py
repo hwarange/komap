@@ -39,7 +39,7 @@ def main():
         save.mkdir(parents=True, exist_ok=True)
     for it in items:
         with autocast(a.get('amp', False)):
-            prob = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], args.tta, 'cuda')
+            prob = predict_probs(model, it['gray'], a['width'], a['tile'], a['overlap'], args.tta, 'cuda', scale_multiplier=a.get('scale_multiplier', 1.0))
         pred = prob.argmax(0).astype(np.uint8) if args.no_pp else postprocess(prob)
         if save:
             Image.fromarray(label_to_rgb(pred)).save(save / f"{it['name']}_mask.png")

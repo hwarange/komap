@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-10-09T15:50:42.548264+00:00",
+  "user_scope": "Fast completion using existing checkpoints; defer new training",
+  "completed": [
+    "fixed ensemble weight comparisons",
+    "tile1536 inference on 90 held-out predictions"
+  ],
+  "new_training_runs": 0,
+  "further_training_scheduled": false,
+  "adopted_model": "sub6",
+  "adopted_cv_miou": 80.7884256007465,
+  "highest_exploratory_cv_miou": 80.90140560679338,
+  "submission_changed": false,
+  "reason": "Small uncertain gain; historical nonpilot54 delta remains negative",
+  "runpod_assets_recovered": true,
+  "result_hashes": {
+    "runs\\review17_weights\\results.json": "12049c7ebfbcb3c7f758939fef901767520e2a8dbfffcc477b65c9839f6ede90",
+    "runs\\review17_tiles\\results.json": "53fd2f4e620b06f89c4adc0fce4816cddc122d5d9e4c4b3f85141a4b77dffd71"
+  }
+}

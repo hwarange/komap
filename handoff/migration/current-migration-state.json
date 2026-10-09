@@ -1,0 +1,19 @@
+{
+  "pid": 779021,
+  "stage": "complete",
+  "started_utc": "2026-10-09T10:02:40.094738+00:00",
+  "files_total": 5347,
+  "bytes_total": 123784030984,
+  "files_complete": 5347,
+  "bytes_complete": 123784030984,
+  "uploaded_bytes": 122747551715,
+  "compression": false,
+  "workers": 8,
+  "source_preserved": true,
+  "user_authorized_ephemeral_storage": true,
+  "transport": "authenticated_source_to_runpod_https",
+  "manifest_sha256": "fba00a460e51886585fe8a28fbe0a200b9a57d47898b6eb1328c668b97b13ed9",
+  "average_MB_s": 41.25,
+  "updated_utc": "2026-10-09T10:52:16.062894+00:00",
+  "finished_utc": "2026-10-09T10:52:48.673694+00:00"
+}

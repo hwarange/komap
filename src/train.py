@@ -144,7 +144,7 @@ class SegLoss(nn.Module):
 
 
 @torch.no_grad()
-def evaluate(model, items, width, tile, overlap, device, tta=False, amp=False, save_dir=None, binary_class=-1, pair=None):
+def evaluate(model, items, width, tile, overlap, device, tta=False, amp=False, save_dir=None, binary_class=-1, pair=None, scale_multiplier=1.0):
     """save_dir를 주면 사진별 예측 확률 [4,H,W]를 float16 .npy로 저장한다 (앙상블·후처리 실험용).
     binary_class >= 0 (한 상 전용 모델): 확률은 [2,H,W] (0: 나머지, 1: 그 상), 점수는 [나머지 IoU, 그 상 IoU, nan, nan]."""
     model.eval()
@@ -153,7 +153,7 @@ def evaluate(model, items, width, tile, overlap, device, tta=False, amp=False, s
         Path(save_dir).mkdir(parents=True, exist_ok=True)
     for it in items:
         with autocast(amp):
-            prob = predict_probs(model, it['gray'], width, tile, overlap, tta, device)
+            prob = predict_probs(model, it['gray'], width, tile, overlap, tta, device, scale_multiplier=scale_multiplier)
         if save_dir:
             np.save(Path(save_dir) / f"{it['name']}.npy", prob.astype(np.float16))
         if pair:
@@ -186,6 +186,20 @@ def summarize(rows, key='iou'):
     return {k: round(float(v), 2) for k, v in s.items()}
 
 
+def accumulation_step(loss, optimizer, scheduler, microstep, microsteps, accumulation):
+    """Average microbatch losses, including a short final group; advance LR per update."""
+    if microstep % accumulation == 0:
+        optimizer.zero_grad(set_to_none=True)
+    group_start = (microstep // accumulation) * accumulation
+    group_size = min(accumulation, microsteps - group_start)
+    (loss if group_size == 1 else loss / group_size).backward()
+    update = (microstep + 1) % accumulation == 0 or microstep + 1 == microsteps
+    if update:
+        optimizer.step()
+        scheduler.step()
+    return update
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--data', default='data')
@@ -202,12 +216,15 @@ def main():
     p.add_argument('--class-weights', default='', help='상별 CE 가중치 (예: 1,1.5,1,2)')
     p.add_argument('--epochs', type=int, default=60)
     p.add_argument('--bs', type=int, default=4)
+    p.add_argument('--accum-steps', type=int, default=1,
+                   help='optimizer update당 microbatch 수; BN·Dice는 microbatch 기준')
     p.add_argument('--crop', type=int, default=512)
     p.add_argument('--spi', type=int, default=8, help='에폭당 이미지 1장에서 뽑는 crop 수')
     p.add_argument('--scale-jitter', type=float, default=0.15, help='학습 크기 변환 폭 (기존 0.15, 0이면 크기 증강만 끔)')
     p.add_argument('--lr', type=float, default=3e-4)
     p.add_argument('--wd', type=float, default=1e-4)
     p.add_argument('--width', type=int, default=1280, help='배율 기준 가로 길이 (0이면 원본 그대로)')
+    p.add_argument('--scale-multiplier', type=float, default=1.0, help='이미지별 정수 배율에 곱하는 값 (2배 설정에서 2이면 정확히 4배)')
     p.add_argument('--tile', type=int, default=512)
     p.add_argument('--overlap', type=int, default=128)
     p.add_argument('--val-every', type=int, default=5)
@@ -250,8 +267,12 @@ def main():
     p.add_argument('--soft-edge', type=float, default=0.0,
                    help='경계 1px 띠의 정답을 주변 3×3 상 비율과 섞는 정도 ε (0이면 끔, cutout과 같이 쓰지 않음)')
     args = p.parse_args()
+    if args.accum_steps < 1:
+        p.error('--accum-steps는 1 이상이어야 한다')
     if args.scale_jitter < 0:
         p.error('--scale-jitter는 0 이상이어야 한다')
+    if not math.isfinite(args.scale_multiplier) or args.scale_multiplier <= 0:
+        p.error('--scale-multiplier는 유한한 양수여야 한다')
 
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -279,7 +300,7 @@ def main():
                      rot=args.rot, policy=args.aug_policy, hm=args.hm,
                      lowres=args.lowres, no_int=args.no_int, copypaste=args.copypaste, skel=args.skel > 0,
                      int_drop=[v for v in args.int_drop.split(',') if v], elastic=args.elastic, cutout=args.cutout,
-                     hard=args.hard_crop, hard_maps=args.hard_maps, feats=args.feats)
+                     hard=args.hard_crop, hard_maps=args.hard_maps, feats=args.feats, scale_multiplier=args.scale_multiplier)
     dl = DataLoader(ds, batch_size=args.bs, shuffle=True, num_workers=args.workers, drop_last=True,
                     worker_init_fn=worker_init_fn, persistent_workers=args.workers > 0, pin_memory=True)
 
@@ -305,7 +326,10 @@ def main():
     opt = torch.optim.AdamW([{'params': enc_params, 'lr': args.lr * args.enc_lr_mult},
                              {'params': other_params, 'lr': args.lr}], weight_decay=args.wd)
     iters = len(dl) if not args.max_iters else min(len(dl), args.max_iters)
-    total, warm = args.epochs * iters, iters
+    if iters < 1:
+        p.error('학습 microbatch가 최소 1개 필요하다')
+    updates_per_epoch = math.ceil(iters / args.accum_steps)
+    total, warm = args.epochs * updates_per_epoch, updates_per_epoch
     sched = torch.optim.lr_scheduler.LambdaLR(
         opt, lambda i: (i + 1) / warm if i < warm else 0.5 * (1 + math.cos(math.pi * (i - warm) / max(total - warm, 1))))
 
@@ -313,7 +337,8 @@ def main():
     for q in (ema.parameters() if ema else []):
         q.requires_grad_(False)
     step = 0
-    print(f'train {len(train_items)} imgs, {iters} iters/epoch | val {len(val_items)} imgs | {args.arch}-{args.encoder}', flush=True)
+    print(f'train {len(train_items)} imgs, {iters} microbatches/{updates_per_epoch} updates per epoch'
+          f' | effective batch {args.bs * args.accum_steps} | val {len(val_items)} imgs | {args.arch}-{args.encoder}', flush=True)
     best, last_rows = -1.0, None
     for epoch in range(1, args.epochs + 1):
         model.train()
@@ -347,12 +372,9 @@ def main():
                 loss = criterion(out_logits, y, tube)
                 if perm is not None:
                     loss = lam * loss + (1 - lam) * criterion(out_logits, y[perm], tube[perm] if tube is not None else None)
-            opt.zero_grad(set_to_none=True)
-            loss.backward()
-            opt.step()
-            sched.step()
-            step += 1
-            if ema is not None:
+            updated = accumulation_step(loss, opt, sched, n, iters, args.accum_steps)
+            step += int(updated)
+            if ema is not None and updated:
                 # 초반에는 decay를 낮게 시작해 무작위 초기값의 영향을 빨리 지운다
                 d = min(args.ema, (1 + step) / (10 + step))
                 with torch.no_grad():
@@ -364,12 +386,14 @@ def main():
             if n >= iters:
                 break
         log = {'epoch': epoch, 'loss': round(run / n, 4), 'lr': opt.param_groups[0]['lr'], 'train_sec': round(time.time() - t0, 1),
-               'gpu_mem_gb': round(torch.cuda.max_memory_allocated() / 1e9, 2)}
+               'gpu_mem_gb': round(torch.cuda.max_memory_allocated() / 1e9, 2),
+               'microbatches': n, 'optimizer_updates': updates_per_epoch,
+               'accum_steps': args.accum_steps, 'effective_batch': args.bs * args.accum_steps}
 
         if val_items and (epoch % args.val_every == 0 or epoch == args.epochs):
             t1 = time.time()
             last_rows = evaluate(ema if ema is not None else model, val_items, args.width, args.tile, args.overlap, device, amp=args.amp,
-                                 binary_class=args.binary_class, pair=args.pair_classes)
+                                 binary_class=args.binary_class, pair=args.pair_classes, scale_multiplier=args.scale_multiplier)
             model.train()
             log['val'], log['val_pp'] = summarize(last_rows), summarize(last_rows, 'iou_pp')
             log['val_sec'] = round(time.time() - t1, 1)
@@ -390,7 +414,7 @@ def main():
     if val_items:
         # 마지막 에폭 모델의 최종 채점: 그대로 / 후처리 / TTA / TTA+후처리
         tta_rows = evaluate(final, val_items, args.width, args.tile, args.overlap, device, tta=True, amp=args.amp,
-                            save_dir=args.save_oof or None, binary_class=args.binary_class, pair=args.pair_classes)
+                            save_dir=args.save_oof or None, binary_class=args.binary_class, pair=args.pair_classes, scale_multiplier=args.scale_multiplier)
         rows = [dict(name=a['name'], step=a['step'], low=a['low'], W=a['W'],
                      plain=a['iou'].tolist(), pp=a['iou_pp'].tolist(), tta=b['iou'].tolist(), tta_pp=b['iou_pp'].tolist())
                 for a, b in zip(last_rows, tta_rows)]

@@ -1,0 +1,16 @@
+Created UTC: 2026-10-09T15:34:33.764015+00:00
+Fixed CPU-only comparison; all values percentages / percentage points.
+Baseline drift from RunPod: -0.000959 pp
+Equal-three drift from RunPod: +0.000016 pp
+baseline_sub6: full=80.788426; delta=+0.000000; CI=[0.0, 0.0]; nonpilot_delta=+0.000000; nonpilot_CI=[0.0, 0.0]
+  fold_delta={'0': 0.0, '1': 0.0, '2': 0.0, '3': 0.0, '4': 0.0}; class_delta={'Al': 0.0, 'Al3Ni': 0.0, 'Primary Si': 0.0, 'Eutectic Si': 0.0}; low_delta=0.0
+candidate_A_x4_0_1: full=80.823834; delta=+0.035409; CI=[-0.053332810130241284, 0.11454398275602765]; nonpilot_delta=+0.016832; nonpilot_CI=[-0.044287323396379356, 0.06918553556775923]
+  fold_delta={'0': -0.0027088021510112506, '1': 0.1292576301743343, '2': 0.04104665157653721, '3': 0.028825543158677566, '4': -0.01937709864756935}; class_delta={'Al': 0.011093974146183743, 'Al3Ni': -0.014732158443327927, 'Primary Si': 0.06127649562992523, 'Eutectic Si': 0.08393550932691107}; low_delta=-0.001012376509202844
+candidate_B_x4_0_2: full=80.831329; delta=+0.042903; CI=[-0.07373813013053256, 0.15833428373846348]; nonpilot_delta=+0.005827; nonpilot_CI=[-0.08604768404875182, 0.08969587104840371]
+  fold_delta={'0': 0.022066540674653683, '1': 0.17497065182556387, '2': 0.03512355759917875, '3': 0.01175888178144804, '4': -0.029402418665969304}; class_delta={'Al': 0.019678111408761998, 'Al3Ni': -0.024035464760039264, 'Primary Si': 0.07504265981509241, 'Eutectic Si': 0.10110847812087329}; low_delta=-0.0005504257260641664
+reference_equal_three: full=80.894686; delta=+0.106261; CI=[-0.04757463551384444, 0.2727568168214552]; nonpilot_delta=-0.035159; nonpilot_CI=[-0.2137181904167132, 0.12147817104827428]
+  fold_delta={'0': 0.4007558155181922, '1': 0.23602507428425903, '2': -0.1816101746997142, '3': 0.08479478548627345, '4': -0.008661915025218687}; class_delta={'Al': 0.03383223782603595, 'Al3Ni': 0.06595144312599303, 'Primary Si': 0.2160062583571255, 'Eutectic Si': 0.1461812561123889}; low_delta=0.003418971186933208
+Exploratory fixed comparisons after inspecting full round16 results; no independent confirmatory test
+Nonpilot means folds2/3/4 of the earlier pilot; these outcomes are now already observed
+Bootstrap resamples alloy groups within folds; does not include training-seed or model-selection uncertainty
+All candidates evaluated using identical current-source probabilities, TTA, labels and postprocessing

@@ -1,0 +1,17 @@
+{
+  "repo_id": "smp-hub/mit_b2.imagenet",
+  "revision": "868ab6f13871dcf8c3d9f90ee4519403475b65ef",
+  "files": [
+    {
+      "path": "config.json",
+      "size": 135,
+      "sha256": "13c350b0a57ad271642f941fedd790491f9fa47c70e3aaddfa5cd18de212540d"
+    },
+    {
+      "path": "model.safetensors",
+      "size": 98867640,
+      "sha256": "ab18b54f81748427bae1183160822903470bcca0e3121944c0d185b4b1816a95"
+    }
+  ],
+  "all_sha256_match": true
+}

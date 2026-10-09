@@ -1,0 +1,92 @@
+[
+  {
+    "path": "[Content_Types].xml",
+    "bytes": 1837,
+    "sha256": "9b12c9b24131d7a341caa42006c7c3a2f456aef1f7c19c36c634124e2a494287",
+    "preserve_only": true
+  },
+  {
+    "path": "_rels/.rels",
+    "bytes": 590,
+    "sha256": "e19238d7a71fa7a2490776252686f70e2de6238c87cd509b5e3a3cc07c2ea4df",
+    "preserve_only": true
+  },
+  {
+    "path": "word/document.xml",
+    "bytes": 50876,
+    "sha256": "e0c50f5e40bb6bede2e273cb68e5c48d5674c3fcb5f224d7087567c4a2c437e9",
+    "preserve_only": false
+  },
+  {
+    "path": "word/_rels/document.xml.rels",
+    "bytes": 1342,
+    "sha256": "8f7c8c05746ae1a89f3141ba7bfddc5d66d58bf5ee307c6c682826711554aedf",
+    "preserve_only": false
+  },
+  {
+    "path": "word/footnotes.xml",
+    "bytes": 3096,
+    "sha256": "42a58cde1b6fb0db1141f348923bb976b424d1708e9157b5ce9b88002fdb578e",
+    "preserve_only": true
+  },
+  {
+    "path": "word/endnotes.xml",
+    "bytes": 3090,
+    "sha256": "7d8cd8c9b2199f1b9c0805dc94c6f8856dd049252d2a683f2ec28f45f8cfdf1d",
+    "preserve_only": true
+  },
+  {
+    "path": "word/header1.xml",
+    "bytes": 2796,
+    "sha256": "3d125539d06b685022ab9028815f01b115496ec66c3d8ac57e518ede17953a81",
+    "preserve_only": true
+  },
+  {
+    "path": "word/theme/theme1.xml",
+    "bytes": 8726,
+    "sha256": "992eb4a60582d8d209a4b327016a4eef2edbcc5600cb35398f8896b2d7cde6ce",
+    "preserve_only": true
+  },
+  {
+    "path": "word/settings.xml",
+    "bytes": 4762,
+    "sha256": "4d7a693f1d3901c74c044fbdd5a09266eb0bcb2a44816fc0d2f4bcac77e21961",
+    "preserve_only": true
+  },
+  {
+    "path": "word/numbering.xml",
+    "bytes": 4002,
+    "sha256": "5e974fb350302021f8c7756a944624478c83ddc0d1ec732b5d8c88041e4913c9",
+    "preserve_only": true
+  },
+  {
+    "path": "word/styles.xml",
+    "bytes": 101028,
+    "sha256": "b9c84e4b9bc2f8057cfb4fb12dd8eb21be9372266ea609969ef2ab4630115612",
+    "preserve_only": true
+  },
+  {
+    "path": "word/webSettings.xml",
+    "bytes": 1449,
+    "sha256": "bb0e7888b4548a15e00a27a455fa8df2c6befe3b46efef299c4d78aa886f5b36",
+    "preserve_only": true
+  },
+  {
+    "path": "word/fontTable.xml",
+    "bytes": 5779,
+    "sha256": "2548784d02bdc60c894bfb59c6aad48f1d7250f7a82837e07d644f409e97aeb4",
+    "preserve_only": true
+  },
+  {
+    "path": "docProps/core.xml",
+    "bytes": 749,
+    "sha256": "3186d42413537e1a80b609ff64911d43afbea3758a526142e1db5883be255b61",
+    "preserve_only": true
+  },
+  {
+    "path": "docProps/app.xml",
+    "bytes": 984,
+    "sha256": "9eefb0365680a458c4bd359ad30765fd4c72a1768b8c1808c40cba3cba139204",
+    "preserve_only": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "reference_sha256": "a9f66f14f8546b37d6a3a4c2c7406c328d95bb6f7b56b501abce9e4bfba0b534",
+  "source_sha256": "d2abbf5da1ac5cff9566c01b94b85b864c1e3f58b27198e5f68dcce21f56927d",
+  "output": "C:\\Users\\id116\\Desktop\\komap\\reports\\모델링결과서_김형수없는김형수.docx",
+  "output_sha256": "42dcb8d60451963febae10e155b5a59d2606a17a9d630eb40868eade351d597e",
+  "draft": false,
+  "preserve_only_parts_match": true,
+  "section_unchanged": true,
+  "validation20_mIoU": 78.76726899601803,
+  "result_sha256": "1a7b0de892f4679f7b3545e05d334b445ff7c1902f95d6cf78e9d4c6360d0d76",
+  "weights_result_sha256": "12049c7ebfbcb3c7f758939fef901767520e2a8dbfffcc477b65c9839f6ede90",
+  "tiles_result_sha256": "53fd2f4e620b06f89c4adc0fce4816cddc122d5d9e4c4b3f85141a4b77dffd71",
+  "sub6_oof_figure_used": true
+}

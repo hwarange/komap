@@ -1,0 +1,127 @@
+[
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold0/args.json",
+    "bytes": 1104,
+    "sha256": "d7289031cb679bdbc5b5534003e5ef7ce6836c327d5d073a6604ebaef16d8601"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold0/log.jsonl",
+    "bytes": 11185,
+    "sha256": "e8d4cc8b46a615c3f6a1789a0a32188a555a6ad10aefab61f72f906032710b07"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold0/result.json",
+    "bytes": 8661,
+    "sha256": "bbe8809c8da13edbcb9cb763ed7e3eb00eb759cec87e990561fc137e66822253"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold0/best.pt",
+    "bytes": 110014971,
+    "sha256": "66187302b2d6235394e97e77027c58590e487d2d0ff3b0449ac9e739477f0256"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold0/last.pt",
+    "bytes": 110014651,
+    "sha256": "d3dde254b06e2d0737aeb70faef39c247ddb9a12c37fba37294b856b290646cf"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold1/args.json",
+    "bytes": 1104,
+    "sha256": "0025915719b2424a99e84443f084fcbfe8acee71c62cbc0247f5ffb5f1230db4"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold1/log.jsonl",
+    "bytes": 11277,
+    "sha256": "1fedccc09b7109ae93be705a19a5308d85fddd2f5a30c5449ecee7ce56b836f5"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold1/result.json",
+    "bytes": 8657,
+    "sha256": "09c7895ac83b1b6450a3b98776da3bad24d9358c5359c7c1b6b021118440fff8"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold1/best.pt",
+    "bytes": 110014971,
+    "sha256": "a8651d64aa7098b622d2f20ad3acbcf75df25dcc97f03911d642a86bc01e402c"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold1/last.pt",
+    "bytes": 110014651,
+    "sha256": "97495fde7da34300948cc80909cf96ba8dcb9fc9566c0412daf081e2fbae8148"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold2/args.json",
+    "bytes": 1104,
+    "sha256": "a52ec46147682dbf02f6c17fedb13cb2adcc132ee9c207526eab274b78bdfd4e"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold2/log.jsonl",
+    "bytes": 11162,
+    "sha256": "6bddac7bca6903c96a5b5412a6c8d77892aabcb8dbb7bddb3e4f2e68bd913950"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold2/result.json",
+    "bytes": 8603,
+    "sha256": "2ad51df2c7c688b59089604b00c33d3601075650071b9dd0b4c236f9d7c38494"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold2/best.pt",
+    "bytes": 110014971,
+    "sha256": "eda7eac8341be3a878fad71d468b3ce4869f6829fe39cfaedbc0316bcf1521a3"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold2/last.pt",
+    "bytes": 110014651,
+    "sha256": "e7351f87eb71f411ca8b61a96a58f73e4da9dd31c07ba1cbfaf535baaf0c2184"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold3/args.json",
+    "bytes": 1104,
+    "sha256": "c2f8a4f9345422cb8ca47acb566a49260ac587b78e2d0d34fc5e1da07d4b9d13"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold3/log.jsonl",
+    "bytes": 11211,
+    "sha256": "5e8b45b7c9ab372e0484fef86a7cd4469c50d2358b48edbf5a656b590457850f"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold3/result.json",
+    "bytes": 8595,
+    "sha256": "26d6991093aede2732adad0b2a711abb4459dfc11be19b2c1767050d44e81f67"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold3/best.pt",
+    "bytes": 110014971,
+    "sha256": "3c688eef998f11a870624d29f7035fb18b3cc7f206c3a90816d5b6ac5e552c54"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold3/last.pt",
+    "bytes": 110014651,
+    "sha256": "fa0c57bf20250a1e016c29622faea2e2af6b8b81e52383241945d897d0e233ed"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold4/args.json",
+    "bytes": 1104,
+    "sha256": "8d90d61291adf142cc09009db99d54ce42005771997fe43d188bb1a02fc064a2"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold4/log.jsonl",
+    "bytes": 11196,
+    "sha256": "694b842bf05ec6432182a582eae4b8a50e395f731c98514e6646eeb875c88a37"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold4/result.json",
+    "bytes": 8641,
+    "sha256": "6f4d8fa42946400f1cd58fb21831e703f172cabc66faa3ff4a530466a75e327f"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold4/best.pt",
+    "bytes": 110014971,
+    "sha256": "2448a168de69566859789496634a0e397f0cf685af3ba3ea16827e764b48be18"
+  },
+  {
+    "path": "runs/cv/x4_mit_bw_r90/fold4/last.pt",
+    "bytes": 110014651,
+    "sha256": "7bc650d2e38f6e4c273b2203c3a01fac96c2594d4e091580055ca55e7bb2927a"
+  }
+]
