@@ -1,0 +1,133 @@
+{
+  "time": "2026-10-11T02:09:37.935226+09:00",
+  "first_epoch_complete": true,
+  "first_epoch": {
+    "epoch": 1,
+    "loss": 1.2993,
+    "lr": 0.0003,
+    "train_sec": 239.6,
+    "gpu_mem_gb": 45.38,
+    "microbatches": 280,
+    "optimizer_updates": 140,
+    "accum_steps": 2,
+    "effective_batch": 4
+  },
+  "completed_epochs": 1,
+  "latest_epoch": {
+    "epoch": 1,
+    "loss": 1.2993,
+    "lr": 0.0003,
+    "train_sec": 239.6,
+    "gpu_mem_gb": 45.38,
+    "microbatches": 280,
+    "optimizer_updates": 140,
+    "accum_steps": 2,
+    "effective_batch": 4
+  },
+  "initial_state_matches_mit4": true,
+  "exact_training_args_match": true,
+  "original70_20_split": true,
+  "plan_sha256": "aaa05c3b8a7b3d3752dee4a747f6030be12e2ad3b99be43e8e4a47cf3dd40008",
+  "gpu_snapshot": "0, GPU-76da22e2-40da-ebc0-098a-fa92ba030976, 41823, 100\n1, GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c, 41823, 100\n2, GPU-e800362c-2a5a-0208-8d32-28107bca6017, 22953, 100\n3, GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, 45029, 100\n",
+  "existing31_state": {
+    "time": "2026-10-11T02:09:28+09:00",
+    "controller_pid": 846798,
+    "jobs": {
+      "mit4": {
+        "stage": "base",
+        "pid": 846805,
+        "gpu_index": 1,
+        "gpu_uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c",
+        "started": "2026-10-10T23:13:25+09:00",
+        "command": [
+          "/home/j-j15a106/komap/.venv/bin/python",
+          "src/train_submission31.py",
+          "--job",
+          "mit4",
+          "--stage",
+          "base"
+        ],
+        "stage_receipts": {},
+        "completed_epochs": 49,
+        "total_epochs": 60,
+        "latest_epoch": {
+          "epoch": 49,
+          "loss": 0.3854,
+          "lr": 2.500291213762274e-05,
+          "train_sec": 205.9,
+          "gpu_mem_gb": 45.38,
+          "microbatches": 280,
+          "optimizer_updates": 140,
+          "accum_steps": 2,
+          "effective_batch": 4
+        }
+      },
+      "unet3": {
+        "stage": "continuation",
+        "pid": 850371,
+        "gpu_index": 2,
+        "gpu_uuid": "GPU-e800362c-2a5a-0208-8d32-28107bca6017",
+        "started": "2026-10-11T02:06:58+09:00",
+        "command": [
+          "/home/j-j15a106/komap/.venv/bin/python",
+          "src/train_submission31.py",
+          "--job",
+          "unet3",
+          "--stage",
+          "continuation"
+        ],
+        "stage_receipts": {
+          "base": {
+            "completed": "2026-10-11T02:06:58+09:00",
+            "epochs": 120,
+            "checkpoint_sha256": "1668b0ef0e25e9be093ed531d60a2425e45f9cda694f421e023d3d09e9e253a8"
+          }
+        },
+        "completed_epochs": 1,
+        "total_epochs": 6,
+        "latest_epoch": {
+          "epoch": 1,
+          "loss": 0.3158,
+          "lr": 3e-05,
+          "train_sec": 120.8,
+          "gpu_mem_gb": 27.15,
+          "microbatches": 140,
+          "optimizer_updates": 140,
+          "accum_steps": 1,
+          "effective_batch": 4
+        }
+      },
+      "context4": {
+        "stage": "base",
+        "pid": 846807,
+        "gpu_index": 3,
+        "gpu_uuid": "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713",
+        "started": "2026-10-10T23:13:25+09:00",
+        "command": [
+          "/home/j-j15a106/komap/.venv/bin/python",
+          "src/train_submission31.py",
+          "--job",
+          "context4",
+          "--stage",
+          "base"
+        ],
+        "stage_receipts": {},
+        "completed_epochs": 48,
+        "total_epochs": 60,
+        "latest_epoch": {
+          "epoch": 48,
+          "loss": 0.3661,
+          "lr": 2.9593254310355478e-05,
+          "train_sec": 208.0,
+          "gpu_mem_gb": 45.68,
+          "microbatches": 280,
+          "optimizer_updates": 140,
+          "accum_steps": 2,
+          "effective_batch": 4
+        }
+      }
+    },
+    "elapsed_minutes": 176.03786745145916
+  },
+  "note": "Initial CUDA allocator workspace warnings recovered; epoch1 completed with finite loss."
+}

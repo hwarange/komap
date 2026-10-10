@@ -1,0 +1,44 @@
+{
+  "epoch": 20,
+  "strict_reload": true,
+  "all_weights_finite": true,
+  "zero_initialized_projections": {
+    "encoder.projections.0.weight": {
+      "nonzero": 1024,
+      "total": 1024,
+      "l1": 13.872947692871094,
+      "max_abs": 0.06832218170166016
+    },
+    "encoder.projections.1.weight": {
+      "nonzero": 3072,
+      "total": 3072,
+      "l1": 26.370994567871094,
+      "max_abs": 0.04100606590509415
+    },
+    "encoder.projections.2.weight": {
+      "nonzero": 10240,
+      "total": 10240,
+      "l1": 56.54295349121094,
+      "max_abs": 0.04028208553791046
+    },
+    "encoder.projections.3.weight": {
+      "nonzero": 24576,
+      "total": 24576,
+      "l1": 109.58358001708984,
+      "max_abs": 0.0322943739593029
+    }
+  },
+  "stored_validation": {
+    "mIoU": 77.55,
+    "Al": 91.51,
+    "Al3Ni": 76.96,
+    "Primary Si": 84.04,
+    "Eutectic Si": 57.69,
+    "low_contrast": 81.53,
+    "high_contrast": 75.56,
+    "step1": 76.77,
+    "step2": 83.13,
+    "step3": 72.67,
+    "step4": 74.5
+  }
+}

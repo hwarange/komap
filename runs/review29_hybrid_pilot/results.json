@@ -1,0 +1,614 @@
+{
+  "completed": "2026-10-11T00:51:06+09:00",
+  "fold": 0,
+  "images": 18,
+  "epochs": 60,
+  "scores": {
+    "control_single_original": {
+      "images": 18,
+      "mIoU": 80.15788100547263,
+      "class_IoU": {
+        "Al": 92.90927849956516,
+        "Al3Ni": 80.39723555054717,
+        "Primary Si": 86.93668684384444,
+        "Eutectic Si": 60.388323127933795
+      }
+    },
+    "candidate_single_original": {
+      "images": 18,
+      "mIoU": 79.58548605157239,
+      "class_IoU": {
+        "Al": 92.83194875805526,
+        "Al3Ni": 80.17832175486714,
+        "Primary Si": 85.7130870122889,
+        "Eutectic Si": 59.61858668107822
+      }
+    },
+    "control_single_cap6": {
+      "images": 18,
+      "mIoU": 80.21681736590416,
+      "class_IoU": {
+        "Al": 92.89803071092346,
+        "Al3Ni": 80.33133185346011,
+        "Primary Si": 87.30139711819585,
+        "Eutectic Si": 60.33650978103723
+      }
+    },
+    "candidate_single_cap6": {
+      "images": 18,
+      "mIoU": 79.75918113336208,
+      "class_IoU": {
+        "Al": 92.81087825409678,
+        "Al3Ni": 80.09446292996346,
+        "Primary Si": 86.38013983326259,
+        "Eutectic Si": 59.75124351612542
+      }
+    },
+    "control_pair_original": {
+      "images": 18,
+      "mIoU": 80.28794029422882,
+      "class_IoU": {
+        "Al": 92.97123866675196,
+        "Al3Ni": 80.3008380639602,
+        "Primary Si": 87.14292505283363,
+        "Eutectic Si": 60.736759393369454
+      }
+    },
+    "candidate_pair_original": {
+      "images": 18,
+      "mIoU": 79.92776051155613,
+      "class_IoU": {
+        "Al": 92.89577104188473,
+        "Al3Ni": 80.13178072096213,
+        "Primary Si": 86.39991869521259,
+        "Eutectic Si": 60.283571588165096
+      }
+    },
+    "selected_pair_cap6": {
+      "images": 18,
+      "mIoU": 80.34187240708857,
+      "class_IoU": {
+        "Al": 92.97929226134285,
+        "Al3Ni": 80.30477865765529,
+        "Primary Si": 87.28872469381731,
+        "Eutectic Si": 60.79469401553881
+      }
+    },
+    "candidate_pair_cap6": {
+      "images": 18,
+      "mIoU": 80.05098873015105,
+      "class_IoU": {
+        "Al": 92.90183632228629,
+        "Al3Ni": 80.12945792518973,
+        "Primary Si": 86.72536889164326,
+        "Eutectic Si": 60.4472917814849
+      }
+    }
+  },
+  "comparisons": {
+    "candidate_single_original_vs_control_single_original": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.58548605157237,
+      "base_cv_mIoU": 80.15788100547263,
+      "delta": -0.5723949539002476,
+      "group_bootstrap_ci95": [
+        -1.1494072780468678,
+        0.03922830357129237
+      ],
+      "delta_per_fold": {
+        "0": -0.5723949539002476
+      },
+      "delta_per_class": {
+        "Al": -0.07732974150988446,
+        "Al3Ni": -0.2189137956799997,
+        "Primary Si": -1.2235998315555336,
+        "Eutectic Si": -0.769736446855572
+      },
+      "delta_low_contrast": 0.037827318078377914,
+      "improved_images": 10,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "candidate_single_cap6_vs_control_single_cap6": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.75918113336209,
+      "base_cv_mIoU": 80.21681736590416,
+      "delta": -0.45763623254209107,
+      "group_bootstrap_ci95": [
+        -1.0574348122428836,
+        0.16917160671851414
+      ],
+      "delta_per_fold": {
+        "0": -0.45763623254209107
+      },
+      "delta_per_class": {
+        "Al": -0.08715245682666506,
+        "Al3Ni": -0.23686892349664668,
+        "Primary Si": -0.921257284933238,
+        "Eutectic Si": -0.5852662649118076
+      },
+      "delta_low_contrast": 0.037827318078377914,
+      "improved_images": 12,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "candidate_pair_original_vs_control_pair_original": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.92776051155613,
+      "base_cv_mIoU": 80.2879402942288,
+      "delta": -0.36017978267268014,
+      "group_bootstrap_ci95": [
+        -0.7701281776932642,
+        0.015621143292585748
+      ],
+      "delta_per_fold": {
+        "0": -0.36017978267268014
+      },
+      "delta_per_class": {
+        "Al": -0.07546762486723838,
+        "Al3Ni": -0.1690573429980774,
+        "Primary Si": -0.743006357621062,
+        "Eutectic Si": -0.45318780520434704
+      },
+      "delta_low_contrast": -0.034213701726834245,
+      "improved_images": 10,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "candidate_pair_cap6_vs_selected_pair_cap6": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 80.05098873015105,
+      "base_cv_mIoU": 80.34187240708856,
+      "delta": -0.29088367693753114,
+      "group_bootstrap_ci95": [
+        -0.7216707754858273,
+        0.10499992781474486
+      ],
+      "delta_per_fold": {
+        "0": -0.29088367693753114
+      },
+      "delta_per_class": {
+        "Al": -0.07745593905658804,
+        "Al3Ni": -0.17532073246555097,
+        "Primary Si": -0.5633558021740789,
+        "Eutectic Si": -0.3474022340539086
+      },
+      "delta_low_contrast": -0.034213701726834245,
+      "improved_images": 10,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "candidate_pair_original_vs_selected_pair_cap6": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.92776051155613,
+      "base_cv_mIoU": 80.34187240708856,
+      "delta": -0.41411189553243194,
+      "group_bootstrap_ci95": [
+        -0.8426637209263025,
+        -0.01246262194904066
+      ],
+      "delta_per_fold": {
+        "0": -0.41411189553243194
+      },
+      "delta_per_class": {
+        "Al": -0.08352121945811872,
+        "Al3Ni": -0.17299793669315536,
+        "Primary Si": -0.8888059986047531,
+        "Eutectic Si": -0.5111224273737034
+      },
+      "delta_low_contrast": -0.034213701726834245,
+      "improved_images": 9,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    }
+  },
+  "highest_fixed_candidate_pair": "candidate_pair_cap6",
+  "delta_best_candidate_vs_selected_pair_pp": -0.2908836769375256,
+  "plan_sha256": "1fcf6f31beef7adea3805e70d1f78e4504e2898dd30f03a366fb64e723e75196",
+  "architecture": {
+    "arch": "HybridMiTCNN29",
+    "transformer": "MiT-B2 pretrained ImageNet",
+    "cnn_channels": [
+      16,
+      24,
+      32,
+      48
+    ],
+    "fusion_strides": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "fusion": "MiT features + zero-initialized1x1 projected CNN features",
+    "cnn_normalization": "GroupNorm8",
+    "decoder": "unchanged U-Net decoder",
+    "input_channels": 1,
+    "same_crop_both_branches": true,
+    "whole_image_context_added": false,
+    "previous_hires_difference": "Four encoder-scale features fused before decoding, rather than full/half-scale features after decoding"
+  },
+  "checkpoint_sha256": "52eb5beb1f17ad9baec7b98f470091c1a0739c0e50d6ff18f60410ef3c4171c6",
+  "output_receipts": [
+    {
+      "path": "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold0/args.json",
+      "sha256": "3864704e78a0afe491044e0d14a8470a2a5624d82f48cab0f02e323fcf82e5da"
+    },
+    {
+      "path": "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold0/last.pt",
+      "sha256": "52eb5beb1f17ad9baec7b98f470091c1a0739c0e50d6ff18f60410ef3c4171c6"
+    },
+    {
+      "path": "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold0/log.jsonl",
+      "sha256": "030c14e5a6d4e1c5f07304d6a80a4d8b7fbcea8275477bbaf87f24bfd2476cee"
+    },
+    {
+      "path": "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold0/result.json",
+      "sha256": "2a099c763cb22f7cc25f41027984785a0671787b95ca9159a16aca0cad834530"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A109_step1_sample3.npy",
+      "sha256": "eb30eb1a5ce4bede81b63d962748fa6990bcf5e0ab8683624594166f7ffc3c9e"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A118_step2_sample1.npy",
+      "sha256": "876670c75e3c7e29e417f09128b66dfab31ffbd179379516e7c9d5421ffad88a"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A137_step4_sample2.npy",
+      "sha256": "a8118a1c26484303358f1543d9a2614a64750a33d3a7f71f5ee3d9a8454982f9"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A138_step4_sample3.npy",
+      "sha256": "663b2017538828bb618da73a1f346112b80188a07cd521f6cb881601ff990049"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A146_step2_sample1.npy",
+      "sha256": "661e371d43204a01c2147597f50199a287dee3b56fe03bca963c3e4afc2295d5"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A153_step1_sample4.npy",
+      "sha256": "65a9e0f9aa71b9c412e2f434aff3584273b11fbc038c8b51d613645712eeb1d2"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A153_step3_sample3.npy",
+      "sha256": "a2b7e5f0604357120b312ab4dcad4c1205fa4ada3b6ce3aee606400be8e2b921"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A159_step4_sample4.npy",
+      "sha256": "7210c0f5ba628ed926f89aedead017d814991fe4ca031db36b1ef5c182cab742"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A224_step1_sample2.npy",
+      "sha256": "8f2923e19e53c7eeada6f46db28d63b1de6a983548630aaf202c2f3efb469ee6"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A224_step4_sample2.npy",
+      "sha256": "ee72bf7371a80c05da6f143c52c4761f0f77c7ec2c2e4a262154d1dbfdbf8e0c"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A39_step2_sample3.npy",
+      "sha256": "8bf3dc459e5cbb1a4d01d15331a68dcee2fcd13404687666449d62076207796b"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A42_step2_sample4.npy",
+      "sha256": "152a1686032883b2cf3cb64e26e0a21647cbcd9cd6064947d86ce1e914f4494f"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A72_step4_sample4.npy",
+      "sha256": "ecbcf84dee6422d4e821413d8344f00b63d75cb4eefd8f1f8e5b819836291f64"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A7_step1_sample2.npy",
+      "sha256": "8ff1e744a346c11e5ca10223bfdbcac812d14e3fe524b8d58119f1cf60da77a4"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A7_step1_sample4.npy",
+      "sha256": "dcd1c2f8eab461e432927a85c1a300f5864f8be526fab8aa69def6dc98be7f8e"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A7_step4_sample3.npy",
+      "sha256": "5a84be7956899d6d45273a83aa135b0954b7c45e7f3628c4b40cc9fedeea8c68"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A87_step2_sample2.npy",
+      "sha256": "606659b6ea3a6c7e4786fd7238c4a86a7ee4bb94396ecd5d56f233e412dce2d1"
+    },
+    {
+      "path": "runs/oof/x4_hybrid_mit_cnn_c1536_bw_r90/A96_step1_sample1.npy",
+      "sha256": "47642c099b67f620ccef7ccad96d8caf28c67b9f0b475c192f03acadb5fec1f8"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A109_step1_sample3.npy",
+      "sha256": "33026475ed236d599120da3b589ac5c5b949e4eb11de94f0a81613f0655f67d4"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A118_step2_sample1.npy",
+      "sha256": "4abc63257902d0916bb91b27b2b447fbf2d0e50c1ab5deb0e3875e93dfe87032"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A137_step4_sample2.npy",
+      "sha256": "e163e46cfa55e1e1cc41d2f397746b578a7f1da855ad48ba480321c0c07f8300"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A138_step4_sample3.npy",
+      "sha256": "4f62dc3c3d2adf1b50e680be3340ae7d03cd37a491de0c90ba2e9a6092d390fe"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A146_step2_sample1.npy",
+      "sha256": "25dff13c6f1e4860e19c5e61d1de36b21162bb7d36575bddd57be6ad56abb047"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A153_step1_sample4.npy",
+      "sha256": "6368495272d97c560511414727126d1a4c0e3f42c7500850b610a444c9e3ef2e"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A153_step3_sample3.npy",
+      "sha256": "b431d99f1be163b81c0b2e8c1568cc691054d71bcec6325348aa979f196fc0c8"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A159_step4_sample4.npy",
+      "sha256": "d5ae7352fbfec9528f8ebb3b117e6535948162eca09a2b06a72b7f35646d739e"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A224_step1_sample2.npy",
+      "sha256": "69d8fed26dc93acb86612f1a723c1f47b70d96ae3a52eb78d5f5527fa8b5f080"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A224_step4_sample2.npy",
+      "sha256": "62b274fe3ac802b5774ac0e24c2ec8b3b62aacd410ee3c1500b8b98e4c7eaf9d"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A39_step2_sample3.npy",
+      "sha256": "ec9773b0425b54823a2a626abd20e6a44c0b57f2dd711d1702892a17632be481"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A42_step2_sample4.npy",
+      "sha256": "7f3d5a43f08d13463ea2af7aa5c7a688298ffe7bb51d31d69269a6a643cd52c5"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A72_step4_sample4.npy",
+      "sha256": "f7fe66c83ac3201a28daaf1e94e62e2337f74bf87571eb2385095bdde07ce5bd"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A7_step1_sample2.npy",
+      "sha256": "ed0e4075cfb91f072582e928d20db2032c03461f51b16f6275169b3cfbaf3133"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A7_step1_sample4.npy",
+      "sha256": "1f5097c3853f6e95b1c2fb8f603e404dce1a8cecbe245cd767122b0419ecc586"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A7_step4_sample3.npy",
+      "sha256": "7335d867e5c776189881a7a4a3550fe43c15e2f7beecb9ad6f4e8be1a3fd4e05"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A87_step2_sample2.npy",
+      "sha256": "10a76333f89c7ed568e7c1ec8f5c0d4ddfae7a956e1ad5bc00f887c0144a2370"
+    },
+    {
+      "path": "runs/oof/x4_mit_c1536_bw_r90/A96_step1_sample1.npy",
+      "sha256": "00cbae6245bddd23d02d17d34933dcdc8ce987a10e29ac74d3bfbd64f8f5b140"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A109_step1_sample3.npy",
+      "sha256": "7066aaf6279c7f781f82876565333351194bd9ae59103504269d99cf52f394ac"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A118_step2_sample1.npy",
+      "sha256": "dd6ed49af09e8f77e639f699043dfc22e95c1583df9166eb1fcb6ce64086a715"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A137_step4_sample2.npy",
+      "sha256": "436fe73ddafc32c221c981dec9f6c546e99ddd34fb93e43dae77d14c53c6c5c1"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A138_step4_sample3.npy",
+      "sha256": "c735cf103afd2d4cf5df365a840c257e576a2627f374a01c93cb1c3607966eda"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A146_step2_sample1.npy",
+      "sha256": "bf79a918fd5aa22a8fd12b72353fbec55305df64fa91e2d6b6981a14512b7b48"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A153_step1_sample4.npy",
+      "sha256": "5d4c845c7c561a8e4905f85edc32a8839b21f5ab4e8f25e2f78ddbec3c2bf92d"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A153_step3_sample3.npy",
+      "sha256": "733cabd1e1fe9c209f58bb416fdbae11cb3d967844cc8026a3bb4bfdc4d569e8"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A159_step4_sample4.npy",
+      "sha256": "cf02744601da7c3ea61a4722f2ac83f8f00d5a01a19eff3d967b52fc45b0dabd"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A224_step1_sample2.npy",
+      "sha256": "f91f55e7061f1932909abcd49458d0242004d61eadf63dc9166a58c0035d9a4c"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A224_step4_sample2.npy",
+      "sha256": "4f2467f00efbf1ebea17de28c71b0fc791cfc6f81b3ba36635fdf1b09e6fb804"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A39_step2_sample3.npy",
+      "sha256": "03d7bd8e70b5739d9c2629aec7c1fcfe7bd0f982db9b8820848d940ae5b63f12"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A42_step2_sample4.npy",
+      "sha256": "3f1b8b56cff730eab5b9c3ae2c5c817f6480d441b58330e39c786ccb5253fdd0"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A72_step4_sample4.npy",
+      "sha256": "5b58ae5769f09fd1e82d5c6811daab018516795ab1664559c769046d48c9b512"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A7_step1_sample2.npy",
+      "sha256": "15c24194b129276316a8211ff84b5969b054287a383b4fae6c8d3a7b1ba3d913"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A7_step1_sample4.npy",
+      "sha256": "ab12cef930c304ac2e40448f290ea7fbeba739ff381a32149b38f368f3a7b39d"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A7_step4_sample3.npy",
+      "sha256": "b3f694f870117521b1a0a27dd2310239e0ae263c794f08d53f7ee1ce258ab99f"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A87_step2_sample2.npy",
+      "sha256": "edead2af13be7f2e55bf92a36720deec5d01035e61530fba73882930b20b365e"
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/oof/interface/A96_step1_sample1.npy",
+      "sha256": "b2b896f4b55d8d7aaf9f81b0b9bbcaae9a940a1533bb224989b1b146f4fe0276"
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A72_step4_sample4.npy",
+      "sha256": "c0cb4e21a9ba3bc3da8346df1bb245c1761ecbb5835c68715b36c73cc8b1ec1d"
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A87_step2_sample2.npy",
+      "sha256": "74f5bb7c5c35c6dd4cc80cbb4997c314631597bfe3fb4f607f832e89e16b22f3"
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A96_step1_sample1.npy",
+      "sha256": "0e6ccad85751faeb34bb2aa6b22f0b7a7eeafdb40cf131c949e4854169c32333"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/candidate_cap6_oof/A72_step4_sample4.npy",
+      "sha256": "ae690c853c2ff1b9d23cde73fd59e3211d5d4128738e1e06a258d9cfa0d0efd7"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/candidate_cap6_oof/A87_step2_sample2.npy",
+      "sha256": "60f6f236b8c3c6bc19680a46f0a86a63e9ba4e84b2034c3299503647e62bfa5d"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/candidate_cap6_oof/A96_step1_sample1.npy",
+      "sha256": "30b4fc379212970ada78e5479e7fb70a7856f0538a9b4b549f43b7f04479ef4d"
+    }
+  ],
+  "cap6_receipts": [
+    {
+      "name": "A87_step2_sample2",
+      "path": "runs/review29_hybrid_pilot/candidate_cap6_oof/A87_step2_sample2.npy",
+      "sha256": "60f6f236b8c3c6bc19680a46f0a86a63e9ba4e84b2034c3299503647e62bfa5d"
+    },
+    {
+      "name": "A96_step1_sample1",
+      "path": "runs/review29_hybrid_pilot/candidate_cap6_oof/A96_step1_sample1.npy",
+      "sha256": "30b4fc379212970ada78e5479e7fb70a7856f0538a9b4b549f43b7f04479ef4d"
+    },
+    {
+      "name": "A72_step4_sample4",
+      "path": "runs/review29_hybrid_pilot/candidate_cap6_oof/A72_step4_sample4.npy",
+      "sha256": "ae690c853c2ff1b9d23cde73fd59e3211d5d4128738e1e06a258d9cfa0d0efd7"
+    }
+  ],
+  "training_minutes": 214.17000000000002,
+  "pilot_only": true,
+  "independent_validation": false,
+  "test_images_or_labels_used": false,
+  "submission_changed": false,
+  "further_training_scheduled": false,
+  "notes": [
+    "Fresh60-epoch training; same control config except architecture/outputpaths.",
+    "Only reused fold0 OOF18. Do not compare its score numerically to full90.",
+    "Original and cap6_width675 are two fixed inference recipes. Confidence intervals are reported, not an adoption gate.",
+    "No automatic submission selection or remaining-fold training."
+  ]
+}

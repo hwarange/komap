@@ -1,0 +1,161 @@
+{
+  "time": "2026-10-11T03:54:35.805896+09:00",
+  "completed": "2026-10-11T02:56:45+09:00",
+  "plan_sha256": "2c78389e34e365a45c77131893972eee5a06e4db6a101693c52b3dc44c7da5ed",
+  "results_sha256": "2906b9eee9c3ab76fc6c1db143424460d6be573ad210ae63d09595e007c16139",
+  "rows_sha256": "39a25422a2d93c2da931290eefee3a5cf319e9e3e036e5d3dbea405da93a6bcf",
+  "jobs": {
+    "mit4": {
+      "completed": "2026-10-11T02:52:47+09:00",
+      "scores": {
+        "original": {
+          "images": 20,
+          "mIoU": 79.70243005228618,
+          "class_IoU": {
+            "Al": 94.47052232478921,
+            "Al3Ni": 74.68085505985258,
+            "Primary Si": 90.5569302201358,
+            "Eutectic Si": 60.73506876855183
+          },
+          "both_absent_one_mIoU": 80.22888246558067,
+          "both_absent_class_image_pairs": 1
+        },
+        "cap6": {
+          "images": 20,
+          "mIoU": 79.62118190575417,
+          "class_IoU": {
+            "Al": 94.3026245731376,
+            "Al3Ni": 75.02242497758228,
+            "Primary Si": 90.74250725812479,
+            "Eutectic Si": 60.0203055188737
+          },
+          "both_absent_one_mIoU": 80.13768424120305,
+          "both_absent_class_image_pairs": 1
+        }
+      }
+    },
+    "unet3": {
+      "completed": "2026-10-11T02:17:43+09:00",
+      "scores": {
+        "base120_original": {
+          "images": 20,
+          "mIoU": 79.56182619248776,
+          "class_IoU": {
+            "Al": 94.5306068976105,
+            "Al3Ni": 74.78208099607461,
+            "Primary Si": 90.58059481709051,
+            "Eutectic Si": 60.06026472924862
+          },
+          "both_absent_one_mIoU": 80.10612942479243,
+          "both_absent_class_image_pairs": 1
+        },
+        "final126_original": {
+          "images": 20,
+          "mIoU": 79.25108049148332,
+          "class_IoU": {
+            "Al": 94.41060653926723,
+            "Al3Ni": 73.93411132075627,
+            "Primary Si": 90.56808841046646,
+            "Eutectic Si": 59.860110346973414
+          },
+          "both_absent_one_mIoU": 79.81112804923501,
+          "both_absent_class_image_pairs": 1
+        }
+      }
+    },
+    "context4": {
+      "completed": "2026-10-11T02:55:33+09:00",
+      "scores": {
+        "original": {
+          "images": 20,
+          "mIoU": 79.64951993133603,
+          "class_IoU": {
+            "Al": 94.43356223672652,
+            "Al3Ni": 74.60686508977574,
+            "Primary Si": 89.6881512381379,
+            "Eutectic Si": 61.540150573739595
+          },
+          "both_absent_one_mIoU": 80.19608039411821,
+          "both_absent_class_image_pairs": 1
+        },
+        "cap6": {
+          "images": 20,
+          "mIoU": 79.51615565003607,
+          "class_IoU": {
+            "Al": 94.25881486121014,
+            "Al3Ni": 74.91569350924017,
+            "Primary Si": 89.72944031149993,
+            "Eutectic Si": 60.73320542427447
+          },
+          "both_absent_one_mIoU": 80.03767052266242,
+          "both_absent_class_image_pairs": 1
+        }
+      }
+    }
+  },
+  "unique_output_receipts_verified": 206,
+  "same_original70_20_names": true,
+  "actual_args_and_initializations_verified": true,
+  "fixed_final_epochs_verified": true,
+  "historical_checkpoint_reused": false,
+  "ranked_recipes": [
+    {
+      "recipe": "context4_original_plus_unet3_base120_original",
+      "mIoU": 80.46991071583071
+    },
+    {
+      "recipe": "context4_cap6_plus_unet3_base120_original",
+      "mIoU": 80.46929528507593
+    },
+    {
+      "recipe": "mit4_cap6_plus_unet3_base120_original",
+      "mIoU": 80.374400759453
+    },
+    {
+      "recipe": "mit4_original_plus_unet3_base120_original",
+      "mIoU": 80.33714124717982
+    },
+    {
+      "recipe": "context4_original_plus_unet3_final126_original",
+      "mIoU": 80.30615901664815
+    },
+    {
+      "recipe": "context4_cap6_plus_unet3_final126_original",
+      "mIoU": 80.2489598959086
+    },
+    {
+      "recipe": "mit4_cap6_plus_unet3_final126_original",
+      "mIoU": 80.19170493247654
+    },
+    {
+      "recipe": "mit4_original_plus_unet3_final126_original",
+      "mIoU": 80.12894433689276
+    },
+    {
+      "recipe": "mit4_original",
+      "mIoU": 79.70243005228618
+    },
+    {
+      "recipe": "context4_original",
+      "mIoU": 79.64951993133603
+    },
+    {
+      "recipe": "mit4_cap6",
+      "mIoU": 79.62118190575417
+    },
+    {
+      "recipe": "unet3_base120_original",
+      "mIoU": 79.56182619248776
+    },
+    {
+      "recipe": "context4_cap6",
+      "mIoU": 79.51615565003607
+    },
+    {
+      "recipe": "unet3_final126_original",
+      "mIoU": 79.25108049148332
+    }
+  ],
+  "automatic_adoption": false,
+  "automatic_submission_change": false
+}

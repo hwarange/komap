@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-10T23:13:25.534837+09:00",
+  "controller_pid": 846798,
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_submission31.py",
+    "run"
+  ],
+  "preserved_gpu0_pid": 836827
+}

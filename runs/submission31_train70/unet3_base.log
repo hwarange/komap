@@ -1,0 +1,5 @@
+{"submission31_initialization": "verified", "job": "unet3", "stage": "base", "initial_state_sha256": "3b9fbb7ae792242dc3f8ee269f837162b43ac7786398643098fdf25679644597", "inherited_checkpoint": null}
+train 70 imgs, 140 microbatches/140 updates per epoch | effective batch 4 | val 20 imgs | UnetPlusPlus-resnet34
+{"epoch": 1, "loss": 1.4328, "lr": 0.0003, "train_sec": 120.4, "gpu_mem_gb": 27.15, "microbatches": 140, "optimizer_updates": 140, "accum_steps": 1, "effective_batch": 4}
+{"epoch": 2, "loss": 0.7159, "lr": 0.0002999477312803273, "train_sec": 84.0, "gpu_mem_gb": 27.15, "microbatches": 140, "optimizer_updates": 140, "accum_steps": 1, "effective_batch": 4}
+{"epoch": 3, "loss": 0.6131, "lr": 0.00029979096154823, "train_sec": 83.9, "gpu_mem_gb": 27.15, "microbatches": 140, "optimizer_updates": 140, "accum_steps": 1, "effective_batch": 4}

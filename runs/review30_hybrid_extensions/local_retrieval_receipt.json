@@ -1,0 +1,90 @@
+{
+  "retrieved": "2026-10-10T22:19:39+09:00",
+  "files": [
+    {
+      "path": "runs/review30_hybrid_extensions/plan.json",
+      "sha256": "65ba7e6da82bfd361fceb5b6ef7f18f3aab238cc4b1c1e8348aff03dba8a3434",
+      "bytes": 66071
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/launch_receipt.json",
+      "sha256": "78b189d483c42083896e23346951cb666aebc1430fce0e3b94080653c2f7dff2",
+      "bytes": 500
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/started.json",
+      "sha256": "8b5e87f8968a9c8daa38fe41b91e3d7248f6517e11e378560402e70041c4c403",
+      "bytes": 6341
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/state.json",
+      "sha256": "ef4c4affa4873acdcfe22b584d077827c58c8e28a32255bf1873e2645bf2e289",
+      "bytes": 6914
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/control_precheck.json",
+      "sha256": "2c296618cb13821426d2710904dda72f25cfa4fbe229e549ba09049f18c7da78",
+      "bytes": 404
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/start_verification.json",
+      "sha256": "318799e3f2e094748042450e7be6cde8f00935dc3200e37fb4cb23230992e5ac",
+      "bytes": 3697
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/runtime/context_fold0.json",
+      "sha256": "c822c6cf217387a5e163ec46258434da74f10a195d56ac97e268237e6bdd2f8a",
+      "bytes": 8030
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/runtime/gated_fold0.json",
+      "sha256": "eb7bd16714dc1f99cbabe5bf6a8aa1f5c7c8651ca87f9997745d888a58d9db71",
+      "bytes": 8031
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/runtime/hybrid_fold1.json",
+      "sha256": "3d688687fd4b6650b5ec9b6426f4020d058aa47d64d74d4a8a9d8750b3d1af5e",
+      "bytes": 8038
+    },
+    {
+      "path": "runs/hybrid30_cpu_precheck.json",
+      "sha256": "86f0f4bc30fc8797be309029f645e70dfc49ef7d66bdfa060c02d1b0e303ef62",
+      "bytes": 1916
+    },
+    {
+      "path": "runs/cv/x4_gated_mit_cnn_c1536_bw_r90/fold0/args.json",
+      "sha256": "3e32a0e5d4005afd17e8a0eada333a0b05e79196470130aaa0e9009558bd3217",
+      "bytes": 1165
+    },
+    {
+      "path": "runs/cv/x4_gated_mit_cnn_c1536_bw_r90/fold0/log.jsonl",
+      "sha256": "e4310d8b6b3948a69a9d6bbcf42a3af611e51cf015d07005e8c4d9b49122926e",
+      "bytes": 171
+    },
+    {
+      "path": "runs/cv/x4_context_mit_cnn_c1536_bw_r90/fold0/args.json",
+      "sha256": "5ddbe218ca94d64ac1b639e33f331f25cd7e5fc2017a2b9722da4254db457bd4",
+      "bytes": 1177
+    },
+    {
+      "path": "runs/cv/x4_context_mit_cnn_c1536_bw_r90/fold0/log.jsonl",
+      "sha256": "45a86f32ae45d8b6ef62a14a650dcc0a0844d39ba79ebe184022e64b68797a57",
+      "bytes": 171
+    },
+    {
+      "path": "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold1/args.json",
+      "sha256": "7751eb1c1de4092b5939bab18d1031baaaaafca506ae1b72babcee98fcc9a702",
+      "bytes": 1168
+    },
+    {
+      "path": "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold1/log.jsonl",
+      "sha256": "1a37ff6bf9ed589663522c9ce1a2f5fa1f27e7db60bb86d2ef57b362a23d1c21",
+      "bytes": 170
+    }
+  ],
+  "total_files": 16,
+  "total_bytes": 113964,
+  "all_hashes_verified": true,
+  "local_sources_equal_remote": 14,
+  "large_data_or_weights_retrieved": false
+}

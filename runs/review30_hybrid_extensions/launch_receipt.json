@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-10T22:13:56+09:00",
+  "controller_pid": 840864,
+  "plan_sha256": "65ba7e6da82bfd361fceb5b6ef7f18f3aab238cc4b1c1e8348aff03dba8a3434",
+  "runtime_hashes": {
+    "gated_fold0": "eb7bd16714dc1f99cbabe5bf6a8aa1f5c7c8651ca87f9997745d888a58d9db71",
+    "context_fold0": "c822c6cf217387a5e163ec46258434da74f10a195d56ac97e268237e6bdd2f8a",
+    "hybrid_fold1": "3d688687fd4b6650b5ec9b6426f4020d058aa47d64d74d4a8a9d8750b3d1af5e"
+  },
+  "detached": true,
+  "existing_gpu0_untouched": true
+}

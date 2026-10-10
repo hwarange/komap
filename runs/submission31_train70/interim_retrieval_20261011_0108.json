@@ -1,0 +1,25 @@
+{
+  "retrieved_utc": "2026-10-10T16:08:39.707808+00:00",
+  "files": {
+    "runs/review29_hybrid_pilot/state.json": "1f10bfbc51bc484620d9b6e7c6abf433ca9fcfedd2d8f7d4ff120c6553099d5d",
+    "runs/review29_hybrid_pilot/plan.json": "1fcf6f31beef7adea3805e70d1f78e4504e2898dd30f03a366fb64e723e75196",
+    "runs/review29_hybrid_pilot/results.json": "e7d755db2740527d5e31159df677c43a9fd27de1049d5e60d752a1d0b4780d36",
+    "runs/review29_hybrid_pilot/per_image_rows.json": "8d516a4f7cb442386a9695fbf67e7505c6d0f04198831469f76889a95bea7546",
+    "runs/review29_hybrid_pilot/all.done": "2d04630bf9f2d09debc8c09d92c74afa92e11df1ccf7b6ea0b319e2b1fa9cfe1",
+    "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold0/args.json": "3864704e78a0afe491044e0d14a8470a2a5624d82f48cab0f02e323fcf82e5da",
+    "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold0/log.jsonl": "030c14e5a6d4e1c5f07304d6a80a4d8b7fbcea8275477bbaf87f24bfd2476cee",
+    "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold0/result.json": "2a099c763cb22f7cc25f41027984785a0671787b95ca9159a16aca0cad834530",
+    "runs/submission31_train70/state.json": "19dc2a15c634224bce7923bbe2f1087446562a65d758096654e34b630eaaddc4",
+    "runs/submission31_train70/interim_20261011_0108.json": "d7d37c17ccce900c6253922f6039e7cd8c1986c709a26040485ffe453a13bd39",
+    "runs/submission31_train70/models/mit4/base/args.json": "d2627bcef61e61ff094bcd4b8909918a9b32af4690bdf9c5b0e49bc24700bd2a",
+    "runs/submission31_train70/models/mit4/base/initialization_audit.json": "e1736832042e2e8976c0a933b486052359e90c468f02f95191cf54d347fa75b3",
+    "runs/submission31_train70/models/mit4/base/log.jsonl": "fc069e9b6eeb8b58dddaf5fb1a67a9f9b60839c6c1c539e15ab30d32e8e44401",
+    "runs/submission31_train70/models/unet3/base/args.json": "afa9778984d0ed04f7edfeb73cac131952e94b130fde60eb1827d7ab568678bb",
+    "runs/submission31_train70/models/unet3/base/initialization_audit.json": "9912eade84f5f2a5adee408470a1bffe5d02fed54333d67dfff0483f89149d19",
+    "runs/submission31_train70/models/unet3/base/log.jsonl": "7897ec44254c8f2b3ac6a61b058bcbcbb8a6c81200462d53fc272036d1a32b0c",
+    "runs/submission31_train70/models/context4/base/args.json": "fc3344f0a27ba25097f73e63be8d543bfbcf01cae3d6adb5e86f7135517d6411",
+    "runs/submission31_train70/models/context4/base/initialization_audit.json": "30bd59c8f61475740a07afa7f1dfefdcc10cfaf44e97d9f8b126cda8efe769c0",
+    "runs/submission31_train70/models/context4/base/log.jsonl": "4dd49925ee1b985944f8f69e6ea8e4a08c9bb301525519328ff5c17df2991c37"
+  },
+  "weights_transferred": false
+}

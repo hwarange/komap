@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-11T00:51:06+09:00",
+  "outcome": "hybrid60_fold0_fixed_review_complete",
+  "images": 18,
+  "plan_sha256": "1fcf6f31beef7adea3805e70d1f78e4504e2898dd30f03a366fb64e723e75196",
+  "results_sha256": "e7d755db2740527d5e31159df677c43a9fd27de1049d5e60d752a1d0b4780d36",
+  "rows_sha256": "8d516a4f7cb442386a9695fbf67e7505c6d0f04198831469f76889a95bea7546",
+  "checkpoint_sha256": "52eb5beb1f17ad9baec7b98f470091c1a0739c0e50d6ff18f60410ef3c4171c6",
+  "further_training_scheduled": false
+}

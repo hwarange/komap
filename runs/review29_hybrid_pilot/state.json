@@ -1,21 +1,8 @@
 {
-  "time": "2026-10-10T21:14:58+09:00",
-  "stage": "training",
-  "pid": 836824,
-  "child_pid": 836827,
-  "completed_epochs": 2,
+  "time": "2026-10-11T00:51:07+09:00",
+  "stage": "complete_and_stop",
+  "completed_epochs": 60,
   "total_epochs": 60,
-  "latest_epoch": {
-    "epoch": 2,
-    "loss": 0.6657,
-    "lr": 0.0002997874043515143,
-    "train_sec": 213.2,
-    "gpu_mem_gb": 45.65,
-    "microbatches": 288,
-    "optimizer_updates": 144,
-    "accum_steps": 2,
-    "effective_batch": 4
-  },
-  "elapsed_minutes": 9.333842123982807,
+  "results": "runs/review29_hybrid_pilot/results.json",
   "further_training_scheduled": false
 }

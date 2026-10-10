@@ -1,0 +1,29 @@
+{
+  "retrieved_utc": "2026-10-10T14:19:17.125578+00:00",
+  "files": {
+    "plan.json": "2c78389e34e365a45c77131893972eee5a06e4db6a101693c52b3dc44c7da5ed",
+    "stop_previous.json": "df21f0df8e63ad44664c1c9f937f188f4c160c5eee19b1e40dc511be3d426bec",
+    "launch_receipt.json": "ca3fa7389ddec71e82181d751b45e1723673e94091ccc2dd942cba8ecab7b9f3",
+    "started.json": "7253877cd56448953c27cd7cda5441095d7af0d6395a719283a63297d22d8f60",
+    "state.json": "56a2b3303ba172b0304c620eeef5fccf3f5fae739066912e1a2ee3e8ed37f661",
+    "startup_verification.json": "fb4cff0f6d86b46f35e86c0d1454dd95c71f1bbf53f31282fa5e5aa7cde69a93",
+    "first_epoch_verification.json": "d57af4af70b7b4cbcccdf14bd8d5a254ff3d3f1d152e297afbfefcba0299b8c1",
+    "controller.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mit4_base.log": "5b9723adca905e2a6bb20564d9a707971a9061418d15a86102667134dcbc1c99",
+    "models/mit4/base/args.json": "d2627bcef61e61ff094bcd4b8909918a9b32af4690bdf9c5b0e49bc24700bd2a",
+    "models/mit4/base/initialization_audit.json": "e1736832042e2e8976c0a933b486052359e90c468f02f95191cf54d347fa75b3",
+    "models/mit4/base/log.jsonl": "ae073728b909d7a3a12fe7e65d2964a29639663553a1fe7decf4ae86bfb21c37",
+    "unet3_base.log": "42edd3ea8886a83a823e5eb3d69b286268d1dbaf4787e7a4293a38bac962e10d",
+    "models/unet3/base/args.json": "afa9778984d0ed04f7edfeb73cac131952e94b130fde60eb1827d7ab568678bb",
+    "models/unet3/base/initialization_audit.json": "9912eade84f5f2a5adee408470a1bffe5d02fed54333d67dfff0483f89149d19",
+    "models/unet3/base/log.jsonl": "6258fc2d8fdae81c48a3b2e09cdd8855f620229d588f88692346b4620162248c",
+    "context4_base.log": "99a5ca875c4652162bbcd605d753a037b36d1b197c556826def1f14d7e189fe2",
+    "models/context4/base/args.json": "fc3344f0a27ba25097f73e63be8d543bfbcf01cae3d6adb5e86f7135517d6411",
+    "models/context4/base/initialization_audit.json": "30bd59c8f61475740a07afa7f1dfefdcc10cfaf44e97d9f8b126cda8efe769c0",
+    "models/context4/base/log.jsonl": "a564702345ecc356a4c7668b52dc734d1a342a7da8b37e9a30fc42ea93053360",
+    "../review30_hybrid_extensions/state.json": "b3338aedc5d294a43275009b95da4b00d1d105106be34bc5b611e6644af2ed33",
+    "../review30_hybrid_extensions/stopped_by_user31.json": "df21f0df8e63ad44664c1c9f937f188f4c160c5eee19b1e40dc511be3d426bec",
+    "../review30_hybrid_extensions/state_before_user_stop31.json": "f6687b5e8b4559835092b240844526f700f7b94e5ca102f377b329ffcdd3f2b8"
+  },
+  "model_weights_transferred": false
+}

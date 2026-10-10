@@ -1,0 +1,75 @@
+{
+  "time": "2026-10-11T02:56:45+09:00",
+  "stage": "complete_and_stop",
+  "jobs": {
+    "mit4": {
+      "stage": "complete",
+      "pid": 851389,
+      "gpu_index": 1,
+      "gpu_uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c",
+      "started": "2026-10-11T02:51:28+09:00",
+      "command": [
+        "/home/j-j15a106/komap/.venv/bin/python",
+        "scripts/review_submission31.py",
+        "--job",
+        "mit4"
+      ],
+      "stage_receipts": {
+        "base": {
+          "completed": "2026-10-11T02:51:28+09:00",
+          "epochs": 60,
+          "checkpoint_sha256": "87446e659a32ebd9d1d559e64b89cef064dde1969adb5f4dfc083824b368766e"
+        }
+      },
+      "finished": "2026-10-11T02:52:58+09:00"
+    },
+    "unet3": {
+      "stage": "complete",
+      "pid": 850752,
+      "gpu_index": 2,
+      "gpu_uuid": "GPU-e800362c-2a5a-0208-8d32-28107bca6017",
+      "started": "2026-10-11T02:17:28+09:00",
+      "command": [
+        "/home/j-j15a106/komap/.venv/bin/python",
+        "scripts/review_submission31.py",
+        "--job",
+        "unet3"
+      ],
+      "stage_receipts": {
+        "base": {
+          "completed": "2026-10-11T02:06:58+09:00",
+          "epochs": 120,
+          "checkpoint_sha256": "1668b0ef0e25e9be093ed531d60a2425e45f9cda694f421e023d3d09e9e253a8"
+        },
+        "continuation": {
+          "completed": "2026-10-11T02:17:28+09:00",
+          "epochs": 6,
+          "checkpoint_sha256": "a6189ddbac2414d87c97b1a190371e748b8b8af2a130a30f7f39d17d23cd43ac"
+        }
+      },
+      "finished": "2026-10-11T02:17:58+09:00"
+    },
+    "context4": {
+      "stage": "complete",
+      "pid": 851424,
+      "gpu_index": 3,
+      "gpu_uuid": "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713",
+      "started": "2026-10-11T02:54:14+09:00",
+      "command": [
+        "/home/j-j15a106/komap/.venv/bin/python",
+        "scripts/review_submission31.py",
+        "--job",
+        "context4"
+      ],
+      "stage_receipts": {
+        "base": {
+          "completed": "2026-10-11T02:54:13+09:00",
+          "epochs": 60,
+          "checkpoint_sha256": "e558dcd36f5b400364cede4729071f075c88fa24709c076e6762673dd34cd2d3"
+        }
+      },
+      "finished": "2026-10-11T02:55:44+09:00"
+    }
+  },
+  "automatic_adoption": false
+}

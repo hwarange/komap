@@ -1,0 +1,91 @@
+{
+  "time": "2026-10-10T23:18:45.709235+09:00",
+  "jobs": {
+    "mit4": {
+      "completed_epochs": 1,
+      "first_epoch": {
+        "epoch": 1,
+        "loss": 1.2591,
+        "lr": 0.0003,
+        "train_sec": 240.0,
+        "gpu_mem_gb": 45.38,
+        "microbatches": 280,
+        "optimizer_updates": 140,
+        "accum_steps": 2,
+        "effective_batch": 4
+      },
+      "latest_epoch": {
+        "epoch": 1,
+        "loss": 1.2591,
+        "lr": 0.0003,
+        "train_sec": 240.0,
+        "gpu_mem_gb": 45.38,
+        "microbatches": 280,
+        "optimizer_updates": 140,
+        "accum_steps": 2,
+        "effective_batch": 4
+      },
+      "pid": 846805
+    },
+    "unet3": {
+      "completed_epochs": 3,
+      "first_epoch": {
+        "epoch": 1,
+        "loss": 1.4328,
+        "lr": 0.0003,
+        "train_sec": 120.4,
+        "gpu_mem_gb": 27.15,
+        "microbatches": 140,
+        "optimizer_updates": 140,
+        "accum_steps": 1,
+        "effective_batch": 4
+      },
+      "latest_epoch": {
+        "epoch": 3,
+        "loss": 0.6131,
+        "lr": 0.00029979096154823,
+        "train_sec": 83.9,
+        "gpu_mem_gb": 27.15,
+        "microbatches": 140,
+        "optimizer_updates": 140,
+        "accum_steps": 1,
+        "effective_batch": 4
+      },
+      "pid": 846806
+    },
+    "context4": {
+      "completed_epochs": 1,
+      "first_epoch": {
+        "epoch": 1,
+        "loss": 1.2583,
+        "lr": 0.0003,
+        "train_sec": 262.5,
+        "gpu_mem_gb": 45.68,
+        "microbatches": 280,
+        "optimizer_updates": 140,
+        "accum_steps": 2,
+        "effective_batch": 4
+      },
+      "latest_epoch": {
+        "epoch": 1,
+        "loss": 1.2583,
+        "lr": 0.0003,
+        "train_sec": 262.5,
+        "gpu_mem_gb": 45.68,
+        "microbatches": 280,
+        "optimizer_updates": 140,
+        "accum_steps": 2,
+        "effective_batch": 4
+      },
+      "pid": 846807
+    }
+  },
+  "gpu0": {
+    "pid": 836827,
+    "completed_epochs": 36
+  },
+  "first_epochs_all_finite": true,
+  "input_hashes_verified": 262,
+  "initial_allocator_warnings_recovered": true,
+  "plan_sha256": "2c78389e34e365a45c77131893972eee5a06e4db6a101693c52b3dc44c7da5ed"
+}

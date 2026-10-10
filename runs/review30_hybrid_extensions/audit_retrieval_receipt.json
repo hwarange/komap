@@ -1,0 +1,41 @@
+{
+  "time": "2026-10-10T22:34:54+09:00",
+  "files": [
+    {
+      "path": "runs/review30_hybrid_extensions/audit_runtime_snapshot.json",
+      "sha256": "f861af981b45f92f85d8615e5d90c5273b8b1edee1e6cd76b77139a9ee62f1a4",
+      "bytes": 81756
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/audit_hybrid29_checkpoint.json",
+      "sha256": "09b1238ee6452380e2ac50c85d70222c8b47b4e58db8a9fc1d128f2a75ffae7b",
+      "bytes": 1017
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/audit_first_validation.json",
+      "sha256": "59be7ba04b7c277f4a19381d671f3e6e7b67cc94ffe3602412222b55611a4c9e",
+      "bytes": 4699
+    },
+    {
+      "path": "runs/review30_hybrid_extensions/state.json",
+      "sha256": "76d54b2fdb3355042ec0cc6b65a10c6421f247118fdc8954428944a720ba8ee0",
+      "bytes": 9122
+    },
+    {
+      "path": "runs/cv/x4_gated_mit_cnn_c1536_bw_r90/fold0/log.jsonl",
+      "sha256": "fd20481d3b113a3266c02f31268aa86ff328d3b9f09eca2682c8243b4626bffb",
+      "bytes": 1365
+    },
+    {
+      "path": "runs/cv/x4_context_mit_cnn_c1536_bw_r90/fold0/log.jsonl",
+      "sha256": "0bda4405ba5c58632ce797b67b82bb08e1c440b10c69db517622a42b923bb118",
+      "bytes": 1365
+    },
+    {
+      "path": "runs/cv/x4_hybrid_mit_cnn_c1536_bw_r90/fold1/log.jsonl",
+      "sha256": "e388b66249965bfcb5f1e18c291cbd8c499c790f683a8caec0a288bbef94216e",
+      "bytes": 1363
+    }
+  ],
+  "hashes_verified": true
+}

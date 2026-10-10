@@ -1,0 +1,5 @@
+{"submission31_initialization": "verified", "job": "mit4", "stage": "base", "initial_state_sha256": "ea1bced04b050efa77c0d1a0a0caf9b6e564e1aa4db4ba1de1aed894283267b3", "inherited_checkpoint": null}
+train 70 imgs, 280 microbatches/140 updates per epoch | effective batch 4 | val 20 imgs | Unet-mit_b2
+[W1010 23:14:14.941556075 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2717908992 bytes (free: 519372800, total: 47676129280).
+[W1010 23:14:15.881773531 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2717908992 bytes (free: 2218065920, total: 47676129280).
+{"epoch": 1, "loss": 1.2591, "lr": 0.0003, "train_sec": 240.0, "gpu_mem_gb": 45.38, "microbatches": 280, "optimizer_updates": 140, "accum_steps": 2, "effective_batch": 4}

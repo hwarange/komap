@@ -1,0 +1,19 @@
+{
+  "time": "2026-10-10T22:15:11+09:00",
+  "plan_sha256": "65ba7e6da82bfd361fceb5b6ef7f18f3aab238cc4b1c1e8348aff03dba8a3434",
+  "checks": [
+    {
+      "fold": 0,
+      "images": 18,
+      "both_control_recipes_match": true,
+      "max_error": 0.0
+    },
+    {
+      "fold": 1,
+      "images": 18,
+      "both_control_recipes_match": true,
+      "max_error": 0.0
+    }
+  ],
+  "test_images_used": false
+}

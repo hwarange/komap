@@ -1,0 +1,29 @@
+{
+  "job": "unet3",
+  "scores": {
+    "base120_original": {
+      "images": 20,
+      "mIoU": 79.56182619248776,
+      "class_IoU": {
+        "Al": 94.5306068976105,
+        "Al3Ni": 74.78208099607461,
+        "Primary Si": 90.58059481709051,
+        "Eutectic Si": 60.06026472924862
+      },
+      "both_absent_one_mIoU": 80.10612942479243,
+      "both_absent_class_image_pairs": 1
+    },
+    "final126_original": {
+      "images": 20,
+      "mIoU": 79.25108049148332,
+      "class_IoU": {
+        "Al": 94.41060653926723,
+        "Al3Ni": 73.93411132075627,
+        "Primary Si": 90.56808841046646,
+        "Eutectic Si": 59.860110346973414
+      },
+      "both_absent_one_mIoU": 79.81112804923501,
+      "both_absent_class_image_pairs": 1
+    }
+  }
+}

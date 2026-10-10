@@ -1,0 +1,40 @@
+{
+  "time": "2026-10-11T02:07:08.433409+09:00",
+  "files": [
+    {
+      "name": "plan.json",
+      "sha256": "aaa05c3b8a7b3d3752dee4a747f6030be12e2ad3b99be43e8e4a47cf3dd40008",
+      "bytes": 45818
+    },
+    {
+      "name": "state.json",
+      "sha256": "52a2378ef495011fff414787bf4a8e9550c7689f418be5184b10fe5dde758047",
+      "bytes": 480
+    },
+    {
+      "name": "started.json",
+      "sha256": "4abb1ac9dc15b0c8bcc187104bf14625f1440986cd73fcfc087624ef249f9bff",
+      "bytes": 564
+    },
+    {
+      "name": "launch_receipt.json",
+      "sha256": "80a640e0a0d0ae960539bfb102846b872c5015bb5d6f99bd041bbfa65e06ca3f",
+      "bytes": 180
+    },
+    {
+      "name": "startup_verification.json",
+      "sha256": "ff75caeb20af29316e34a735585d5705a5ebbce964fde38ffb27215bb9447fb5",
+      "bytes": 976
+    },
+    {
+      "name": "models/mit2/base/args.json",
+      "sha256": "fe2159f541a3ff6e36a052d654baeb31f2acb9b5e27c0be00a2b0158f6d6462f",
+      "bytes": 1200
+    },
+    {
+      "name": "models/mit2/base/initialization_audit.json",
+      "sha256": "332c6814c7dcefb1ed413098df85feb65344456bcf51b8fb4198dede0c0a4c98",
+      "bytes": 5966
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "time": "2026-10-11T02:07:08.433409+09:00",
+  "plan_sha256": "aaa05c3b8a7b3d3752dee4a747f6030be12e2ad3b99be43e8e4a47cf3dd40008",
+  "controller_pid": 850191,
+  "training_pid": 850194,
+  "gpu_index": 0,
+  "gpu_uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976",
+  "actual_args_match": true,
+  "actual70_20_match": true,
+  "inherited_checkpoint": null,
+  "initial_state_matches_mit4": true,
+  "initial_state_sha256": "ea1bced04b050efa77c0d1a0a0caf9b6e564e1aa4db4ba1de1aed894283267b3",
+  "source_hashes_verified_by_training_wrapper": 268,
+  "existing31_jobs": {
+    "mit4": {
+      "stage": "base",
+      "pid": 846805,
+      "completed_epochs": 48,
+      "total_epochs": 60
+    },
+    "unet3": {
+      "stage": "continuation",
+      "pid": 850371,
+      "completed_epochs": null,
+      "total_epochs": null
+    },
+    "context4": {
+      "stage": "base",
+      "pid": 846807,
+      "completed_epochs": 48,
+      "total_epochs": 60
+    }
+  },
+  "first_epoch_verified": false
+}

@@ -1,0 +1,23 @@
+{
+  "time": "2026-10-11T02:56:45+09:00",
+  "outcome": "fresh_train70_valid20_complete",
+  "plan_sha256": "2c78389e34e365a45c77131893972eee5a06e4db6a101693c52b3dc44c7da5ed",
+  "results_sha256": "2906b9eee9c3ab76fc6c1db143424460d6be573ad210ae63d09595e007c16139",
+  "rows_sha256": "39a25422a2d93c2da931290eefee3a5cf319e9e3e036e5d3dbea405da93a6bcf",
+  "job_completion_receipts": {
+    "mit4": {
+      "path": "runs/submission31_train70/reviews/mit4/all.done",
+      "sha256": "6f4bedcc4d8909c507f8f0f4d9f95740fb9f32bb74b984ba3c37df7e7f992155"
+    },
+    "unet3": {
+      "path": "runs/submission31_train70/reviews/unet3/all.done",
+      "sha256": "a4ad882decf85ad5c8d4655b56c3a764d1a0a0008430e9d8b079f4567dd2afb2"
+    },
+    "context4": {
+      "path": "runs/submission31_train70/reviews/context4/all.done",
+      "sha256": "042313e12b7f564c215d91fda9d9b3220c5cb38112cb2859063bdebcae1f1fa4"
+    }
+  },
+  "automatic_model_selection": false,
+  "automatic_submission_change": false
+}

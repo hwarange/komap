@@ -1,0 +1,4 @@
+{"submission31_initialization": "verified", "job": "context4", "stage": "base", "initial_state_sha256": "b5578d8e6b9b8161bd1ec3c74992bad5e2dc00cf2d5f762cd1c4e5ca2e292ba6", "inherited_checkpoint": null}
+train 70 imgs, 280 microbatches/140 updates per epoch | effective batch 4 | val 20 imgs | GlobalContextMiTCNN30-mit_b2
+[W1010 23:14:46.752743774 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2717908992 bytes (free: 2345992192, total: 47676129280).
+{"epoch": 1, "loss": 1.2583, "lr": 0.0003, "train_sec": 262.5, "gpu_mem_gb": 45.68, "microbatches": 280, "optimizer_updates": 140, "accum_steps": 2, "effective_batch": 4}

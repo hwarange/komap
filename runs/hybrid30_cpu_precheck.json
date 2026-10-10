@@ -1,0 +1,58 @@
+{
+  "architectures": {
+    "GatedMiTCNN30": {
+      "parameters": 27573568,
+      "extra_over_hybrid29": 132,
+      "base_tensors_and_initial_logits_exact": true,
+      "cpu_rng_preserved": true,
+      "cuda_not_reseeded": true,
+      "full_inference_zero_branch_equivalence": true,
+      "strict_reload": true,
+      "synthetic_losses": [
+        1.6271147727966309,
+        1.60992431640625,
+        1.6134315729141235,
+        1.600523829460144
+      ],
+      "final_gradient_l1": {
+        "encoder.mit.": 4837.793349715401,
+        "encoder.stem.": 0.0005546615766434115,
+        "encoder.stages.": 0.08800287448320887,
+        "encoder.projections.": 31.940624594688416,
+        "decoder.": 2567.435700200498,
+        "encoder.gates.": 7.9809784938986e-06
+      }
+    },
+    "GlobalContextMiTCNN30": {
+      "parameters": 27720756,
+      "extra_over_hybrid29": 147320,
+      "base_tensors_and_initial_logits_exact": true,
+      "cpu_rng_preserved": true,
+      "cuda_not_reseeded": true,
+      "full_inference_zero_branch_equivalence": true,
+      "strict_reload": true,
+      "synthetic_losses": [
+        1.6243469715118408,
+        1.6199523210525513,
+        1.606777310371399,
+        1.6018003225326538
+      ],
+      "final_gradient_l1": {
+        "encoder.mit.": 3670.9511405489466,
+        "encoder.stem.": 0.000733777524146717,
+        "encoder.stages.": 0.10481085759420239,
+        "encoder.projections.": 36.10590362548828,
+        "decoder.": 2493.6113696545362,
+        "encoder.whole_stem.": 0.0006527501300297445,
+        "encoder.whole_stages.": 0.10890864170505665,
+        "encoder.context_projections.": 40.842451333999634
+      }
+    }
+  },
+  "all_dihedral_pixel_maps_passed": true,
+  "roi_feature_centres_max_error": 0.0,
+  "local_crops_labels_and_rng_identical_seeds": 16,
+  "context_does_not_read_masks": true,
+  "context_batch_collation": true,
+  "test_dataset_images_loaded": false
+}

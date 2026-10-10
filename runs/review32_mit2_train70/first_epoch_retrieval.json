@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-11T02:09:37.935226+09:00",
+  "files": [
+    {
+      "name": "first_epoch_verification.json",
+      "sha256": "581a6d432d9445fd156decefff7dfa4670803a247042a0883c8e34be176a5e63"
+    },
+    {
+      "name": "state.json",
+      "sha256": "c5202ddd03691a9b001a6e3d51a4762fe0bed372f39846dc1fa5198c968975d6"
+    },
+    {
+      "name": "models/mit2/base/log.jsonl",
+      "sha256": "60ce7de9300508697509ccba7040de45137458528993e2d14f1424122e6f8a5e"
+    },
+    {
+      "name": "training.log",
+      "sha256": "4405e295bffaf4dc19806151be16619a764b75b1c9b34998ddf0ee7c65ce606d"
+    }
+  ]
+}

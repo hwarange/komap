@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-11T02:05:22+09:00",
+  "controller_pid": 850191,
+  "plan_sha256": "aaa05c3b8a7b3d3752dee4a747f6030be12e2ad3b99be43e8e4a47cf3dd40008",
+  "job": {
+    "time": "2026-10-11T02:05:22+09:00",
+    "controller_pid": 850191,
+    "gpu_index": 0,
+    "gpu_uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976",
+    "job": "mit2",
+    "stage": "training",
+    "pid": 850194,
+    "command": [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "src/train_scale32.py",
+      "--job",
+      "mit2"
+    ],
+    "stage_started": "2026-10-11T02:05:22+09:00"
+  }
+}

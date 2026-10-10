@@ -4,6 +4,10 @@
 *.txt text eol=lf
 *.md  text eol=lf
 *.json text eol=lf
+# 검증 기록의 SHA256을 다른 운영체제에서도 유지
+*.jsonl text eol=lf
+*.done text eol=lf
+*.log text eol=lf
 *.png binary
 *.jpg binary
 *.ipynb text eol=lf

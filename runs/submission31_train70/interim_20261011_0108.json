@@ -1,0 +1,229 @@
+{
+  "time": "2026-10-11T01:07:37.344983+09:00",
+  "jobs": {
+    "mit4": {
+      "epochs": 32,
+      "total_base_epochs": 60,
+      "latest_validation_epoch": 30,
+      "latest_val_pp": {
+        "mIoU": 78.69,
+        "Al": 93.97,
+        "Al3Ni": 73.66,
+        "Primary Si": 89.38,
+        "Eutectic Si": 59.26,
+        "low_contrast": 83.19,
+        "high_contrast": 77.19,
+        "step1": 78.32,
+        "step2": 71.98,
+        "step3": 77.64,
+        "step4": 86.69
+      },
+      "best_observed_val_pp": {
+        "epoch": 25,
+        "mIoU": 79.12
+      },
+      "validation_trace": [
+        {
+          "epoch": 5,
+          "plain": 74.25,
+          "pp": 74.46
+        },
+        {
+          "epoch": 10,
+          "plain": 74.87,
+          "pp": 75.55
+        },
+        {
+          "epoch": 15,
+          "plain": 74.12,
+          "pp": 74.15
+        },
+        {
+          "epoch": 20,
+          "plain": 77.39,
+          "pp": 77.52
+        },
+        {
+          "epoch": 25,
+          "plain": 79.13,
+          "pp": 79.12
+        },
+        {
+          "epoch": 30,
+          "plain": 78.67,
+          "pp": 78.69
+        }
+      ],
+      "recent_seconds_per_epoch": 205.8,
+      "approx_remaining_training_and_tta_minutes": 104.13666666666668,
+      "pid": 846805,
+      "gpu_index": 1
+    },
+    "unet3": {
+      "epochs": 79,
+      "total_base_epochs": 120,
+      "latest_validation_epoch": 75,
+      "latest_val_pp": {
+        "mIoU": 78.05,
+        "Al": 94.19,
+        "Al3Ni": 72.6,
+        "Primary Si": 89.52,
+        "Eutectic Si": 57.79,
+        "low_contrast": 81.78,
+        "high_contrast": 76.81,
+        "step1": 76.95,
+        "step2": 72.07,
+        "step3": 77.4,
+        "step4": 85.89
+      },
+      "best_observed_val_pp": {
+        "epoch": 35,
+        "mIoU": 79.01
+      },
+      "validation_trace": [
+        {
+          "epoch": 5,
+          "plain": 73.75,
+          "pp": 74.47
+        },
+        {
+          "epoch": 10,
+          "plain": 75.13,
+          "pp": 75.89
+        },
+        {
+          "epoch": 15,
+          "plain": 77.15,
+          "pp": 77.91
+        },
+        {
+          "epoch": 20,
+          "plain": 76.5,
+          "pp": 77.24
+        },
+        {
+          "epoch": 25,
+          "plain": 78.06,
+          "pp": 78.16
+        },
+        {
+          "epoch": 30,
+          "plain": 77.51,
+          "pp": 78.29
+        },
+        {
+          "epoch": 35,
+          "plain": 78.21,
+          "pp": 79.01
+        },
+        {
+          "epoch": 40,
+          "plain": 78.2,
+          "pp": 78.23
+        },
+        {
+          "epoch": 45,
+          "plain": 78.54,
+          "pp": 78.58
+        },
+        {
+          "epoch": 50,
+          "plain": 77.52,
+          "pp": 78.25
+        },
+        {
+          "epoch": 55,
+          "plain": 77.71,
+          "pp": 78.42
+        },
+        {
+          "epoch": 60,
+          "plain": 78.65,
+          "pp": 78.66
+        },
+        {
+          "epoch": 65,
+          "plain": 78.92,
+          "pp": 78.95
+        },
+        {
+          "epoch": 70,
+          "plain": 77.67,
+          "pp": 78.42
+        },
+        {
+          "epoch": 75,
+          "plain": 78.01,
+          "pp": 78.05
+        }
+      ],
+      "recent_seconds_per_epoch": 84.0,
+      "approx_remaining_training_and_tta_minutes": 69.57000000000001,
+      "pid": 846806,
+      "gpu_index": 2
+    },
+    "context4": {
+      "epochs": 31,
+      "total_base_epochs": 60,
+      "latest_validation_epoch": 30,
+      "latest_val_pp": {
+        "mIoU": 79.06,
+        "Al": 94.17,
+        "Al3Ni": 74.46,
+        "Primary Si": 88.98,
+        "Eutectic Si": 60.27,
+        "low_contrast": 83.02,
+        "high_contrast": 77.74,
+        "step1": 79.1,
+        "step2": 72.4,
+        "step3": 78.28,
+        "step4": 86.31
+      },
+      "best_observed_val_pp": {
+        "epoch": 30,
+        "mIoU": 79.06
+      },
+      "validation_trace": [
+        {
+          "epoch": 5,
+          "plain": 75.2,
+          "pp": 75.38
+        },
+        {
+          "epoch": 10,
+          "plain": 76.39,
+          "pp": 76.39
+        },
+        {
+          "epoch": 15,
+          "plain": 77.3,
+          "pp": 78.28
+        },
+        {
+          "epoch": 20,
+          "plain": 76.74,
+          "pp": 76.99
+        },
+        {
+          "epoch": 25,
+          "plain": 78.23,
+          "pp": 79.01
+        },
+        {
+          "epoch": 30,
+          "plain": 78.32,
+          "pp": 79.06
+        }
+      ],
+      "recent_seconds_per_epoch": 208.0,
+      "approx_remaining_training_and_tta_minutes": 108.7,
+      "pid": 846807,
+      "gpu_index": 3
+    }
+  },
+  "input_hashes_verified": 262,
+  "all_pids_alive_args_and_gpu_match": true,
+  "all_losses_finite": true,
+  "no_controller_error": true,
+  "gpu": "0, 0 %, 0 MiB\n1, 100 %, 41823 MiB\n2, 100 %, 23969 MiB\n3, 100 %, 45029 MiB\n"
+}

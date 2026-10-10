@@ -1,0 +1,173 @@
+{
+  "scores": {
+    "mit4_original": {
+      "images": 20,
+      "mIoU": 79.70243005228618,
+      "class_IoU": {
+        "Al": 94.47052232478921,
+        "Al3Ni": 74.68085505985258,
+        "Primary Si": 90.5569302201358,
+        "Eutectic Si": 60.73506876855183
+      },
+      "both_absent_one_mIoU": 80.22888246558067,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_cap6": {
+      "images": 20,
+      "mIoU": 79.62118190575417,
+      "class_IoU": {
+        "Al": 94.3026245731376,
+        "Al3Ni": 75.02242497758228,
+        "Primary Si": 90.74250725812479,
+        "Eutectic Si": 60.0203055188737
+      },
+      "both_absent_one_mIoU": 80.13768424120305,
+      "both_absent_class_image_pairs": 1
+    },
+    "unet3_base120_original": {
+      "images": 20,
+      "mIoU": 79.56182619248776,
+      "class_IoU": {
+        "Al": 94.5306068976105,
+        "Al3Ni": 74.78208099607461,
+        "Primary Si": 90.58059481709051,
+        "Eutectic Si": 60.06026472924862
+      },
+      "both_absent_one_mIoU": 80.10612942479243,
+      "both_absent_class_image_pairs": 1
+    },
+    "unet3_final126_original": {
+      "images": 20,
+      "mIoU": 79.25108049148332,
+      "class_IoU": {
+        "Al": 94.41060653926723,
+        "Al3Ni": 73.93411132075627,
+        "Primary Si": 90.56808841046646,
+        "Eutectic Si": 59.860110346973414
+      },
+      "both_absent_one_mIoU": 79.81112804923501,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_original": {
+      "images": 20,
+      "mIoU": 79.64951993133603,
+      "class_IoU": {
+        "Al": 94.43356223672652,
+        "Al3Ni": 74.60686508977574,
+        "Primary Si": 89.6881512381379,
+        "Eutectic Si": 61.540150573739595
+      },
+      "both_absent_one_mIoU": 80.19608039411821,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_cap6": {
+      "images": 20,
+      "mIoU": 79.51615565003607,
+      "class_IoU": {
+        "Al": 94.25881486121014,
+        "Al3Ni": 74.91569350924017,
+        "Primary Si": 89.72944031149993,
+        "Eutectic Si": 60.73320542427447
+      },
+      "both_absent_one_mIoU": 80.03767052266242,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_original_plus_unet3_base120_original": {
+      "images": 20,
+      "mIoU": 80.33714124717982,
+      "class_IoU": {
+        "Al": 94.6462228545865,
+        "Al3Ni": 75.45082599713848,
+        "Primary Si": 91.31026784096052,
+        "Eutectic Si": 61.64324184544115
+      },
+      "both_absent_one_mIoU": 80.87126128651964,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_original_plus_unet3_final126_original": {
+      "images": 20,
+      "mIoU": 80.12894433689276,
+      "class_IoU": {
+        "Al": 94.62468860075187,
+        "Al3Ni": 75.14655637084486,
+        "Primary Si": 91.14210995177046,
+        "Eutectic Si": 61.332526130024355
+      },
+      "both_absent_one_mIoU": 80.67219388895076,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_cap6_plus_unet3_base120_original": {
+      "images": 20,
+      "mIoU": 80.374400759453,
+      "class_IoU": {
+        "Al": 94.64474290831643,
+        "Al3Ni": 75.67476472316234,
+        "Primary Si": 91.39268033590191,
+        "Eutectic Si": 61.46329273800747
+      },
+      "both_absent_one_mIoU": 80.90146167214827,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_cap6_plus_unet3_final126_original": {
+      "images": 20,
+      "mIoU": 80.19170493247654,
+      "class_IoU": {
+        "Al": 94.61730730774693,
+        "Al3Ni": 75.3339125733585,
+        "Primary Si": 91.33187966851338,
+        "Eutectic Si": 61.19869935863404
+      },
+      "both_absent_one_mIoU": 80.72880123120679,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_original_plus_unet3_base120_original": {
+      "images": 20,
+      "mIoU": 80.46991071583071,
+      "class_IoU": {
+        "Al": 94.62389732879363,
+        "Al3Ni": 75.49195307701149,
+        "Primary Si": 91.37049707839434,
+        "Eutectic Si": 62.138211655224595
+      },
+      "both_absent_one_mIoU": 81.01400857137608,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_original_plus_unet3_final126_original": {
+      "images": 20,
+      "mIoU": 80.30615901664815,
+      "class_IoU": {
+        "Al": 94.59575872414263,
+        "Al3Ni": 75.20309617132794,
+        "Primary Si": 91.28072064719363,
+        "Eutectic Si": 61.919386278412944
+      },
+      "both_absent_one_mIoU": 80.85873144717937,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_cap6_plus_unet3_base120_original": {
+      "images": 20,
+      "mIoU": 80.46929528507593,
+      "class_IoU": {
+        "Al": 94.62153393488626,
+        "Al3Ni": 75.66676991475283,
+        "Primary Si": 91.3048384171303,
+        "Eutectic Si": 61.9671158998894
+      },
+      "both_absent_one_mIoU": 80.99875406145057,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_cap6_plus_unet3_final126_original": {
+      "images": 20,
+      "mIoU": 80.2489598959086,
+      "class_IoU": {
+        "Al": 94.5887087402242,
+        "Al3Ni": 75.32900251547755,
+        "Primary Si": 91.1171895100796,
+        "Eutectic Si": 61.6727312280611
+      },
+      "both_absent_one_mIoU": 80.78794312958462,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "selected_recipe": null
+}

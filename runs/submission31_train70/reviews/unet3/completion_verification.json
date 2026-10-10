@@ -1,0 +1,41 @@
+{
+  "time": "2026-10-11T02:32:25.012763+09:00",
+  "job": "unet3",
+  "completed": "2026-10-11T02:17:43+09:00",
+  "plan_sha256": "2c78389e34e365a45c77131893972eee5a06e4db6a101693c52b3dc44c7da5ed",
+  "results_sha256": "64dfff82575f6e46ea59b04e7d52e06c372ebd4c03fdcda6da00d204a26123f1",
+  "rows_sha256": "bee80ab5daf17b0c6cca162f7856fdc60479bea711817d669ccd27ae38fa7d90",
+  "output_receipts_verified": 118,
+  "fixed_base_epochs": 120,
+  "fixed_continuation_epochs": 6,
+  "same70_20_names": true,
+  "fresh_imagenet_base": true,
+  "continuation_only_own_base": true,
+  "scores": {
+    "base120_original": {
+      "images": 20,
+      "mIoU": 79.56182619248776,
+      "class_IoU": {
+        "Al": 94.5306068976105,
+        "Al3Ni": 74.78208099607461,
+        "Primary Si": 90.58059481709051,
+        "Eutectic Si": 60.06026472924862
+      },
+      "both_absent_one_mIoU": 80.10612942479243,
+      "both_absent_class_image_pairs": 1
+    },
+    "final126_original": {
+      "images": 20,
+      "mIoU": 79.25108049148332,
+      "class_IoU": {
+        "Al": 94.41060653926723,
+        "Al3Ni": 73.93411132075627,
+        "Primary Si": 90.56808841046646,
+        "Eutectic Si": 59.860110346973414
+      },
+      "both_absent_one_mIoU": 79.81112804923501,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "base_vs_continuation_delta_pp": -0.31074570100443566
+}

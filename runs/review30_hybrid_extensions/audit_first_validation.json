@@ -1,0 +1,164 @@
+{
+  "time": "2026-10-10T22:33:42+09:00",
+  "first_validation_checks": [
+    {
+      "job": "gated_fold0",
+      "fold": 0,
+      "completed_epochs": 5,
+      "latest_loss": 0.5329,
+      "validation_epoch": 5,
+      "candidate_no_tta_pp": {
+        "mIoU": 76.46,
+        "Al": 91.62,
+        "Al3Ni": 77.43,
+        "Primary Si": 81.29,
+        "Eutectic Si": 55.5,
+        "low_contrast": 81.69,
+        "high_contrast": 73.85,
+        "step1": 75.53,
+        "step2": 83.12,
+        "step3": 71.22,
+        "step4": 72.72
+      },
+      "control_no_tta_pp": {
+        "mIoU": 72.67,
+        "Al": 90.4,
+        "Al3Ni": 71.49,
+        "Primary Si": 76.06,
+        "Eutectic Si": 52.71,
+        "low_contrast": 79.67,
+        "high_contrast": 69.17,
+        "step1": 69.6,
+        "step2": 81.41,
+        "step3": 72.39,
+        "step4": 68.49
+      },
+      "delta_pp": 3.789999999999992,
+      "validation_seconds": 35.9,
+      "checkpoint_epoch": 5,
+      "checkpoint_sha256": "2fcd7346fe545e5ead7a81a51b499e7693839ee0d45465728b8784ab5332429a",
+      "all_weights_finite": true,
+      "strict_reload": true,
+      "learned_branch_weight_l1_changes": {
+        "encoder.stem.": 0.7577339373528957,
+        "encoder.stages.": 304.38530668616295,
+        "encoder.projections.": 125.22417068481445,
+        "encoder.gates.": 2.7914925273507833
+      }
+    },
+    {
+      "job": "context_fold0",
+      "fold": 0,
+      "completed_epochs": 5,
+      "latest_loss": 0.5173,
+      "validation_epoch": 5,
+      "candidate_no_tta_pp": {
+        "mIoU": 76.64,
+        "Al": 90.99,
+        "Al3Ni": 76.47,
+        "Primary Si": 82.97,
+        "Eutectic Si": 56.12,
+        "low_contrast": 82.2,
+        "high_contrast": 73.86,
+        "step1": 75.34,
+        "step2": 83.38,
+        "step3": 69.15,
+        "step4": 73.57
+      },
+      "control_no_tta_pp": {
+        "mIoU": 72.67,
+        "Al": 90.4,
+        "Al3Ni": 71.49,
+        "Primary Si": 76.06,
+        "Eutectic Si": 52.71,
+        "low_contrast": 79.67,
+        "high_contrast": 69.17,
+        "step1": 69.6,
+        "step2": 81.41,
+        "step3": 72.39,
+        "step4": 68.49
+      },
+      "delta_pp": 3.969999999999999,
+      "validation_seconds": 36.2,
+      "checkpoint_epoch": 5,
+      "checkpoint_sha256": "58d1c7c506130f050a7b6543ed618f41fede58c7e890a80b758394603d27a8f1",
+      "all_weights_finite": true,
+      "strict_reload": true,
+      "learned_branch_weight_l1_changes": {
+        "encoder.stem.": 0.5801043920218945,
+        "encoder.stages.": 311.03453966230154,
+        "encoder.projections.": 122.10817241668701,
+        "encoder.whole_stem.": 1.4792560636997223,
+        "encoder.whole_stages.": 505.29329396784306,
+        "encoder.context_projections.": 509.716552734375
+      }
+    },
+    {
+      "job": "hybrid_fold1",
+      "fold": 1,
+      "completed_epochs": 5,
+      "latest_loss": 0.5739,
+      "validation_epoch": 5,
+      "candidate_no_tta_pp": {
+        "mIoU": 80.16,
+        "Al": 93.53,
+        "Al3Ni": 82.58,
+        "Primary Si": 89.64,
+        "Eutectic Si": 54.9,
+        "low_contrast": 82.76,
+        "high_contrast": 78.87,
+        "step1": 77.33,
+        "step2": 81.01,
+        "step3": 78.56,
+        "step4": 81.81
+      },
+      "control_no_tta_pp": {
+        "mIoU": 80.13,
+        "Al": 93.43,
+        "Al3Ni": 82.61,
+        "Primary Si": 90.05,
+        "Eutectic Si": 54.45,
+        "low_contrast": 82.33,
+        "high_contrast": 79.04,
+        "step1": 78.14,
+        "step2": 80.9,
+        "step3": 77.73,
+        "step4": 81.92
+      },
+      "delta_pp": 0.030000000000001137,
+      "validation_seconds": 35.7,
+      "checkpoint_epoch": 5,
+      "checkpoint_sha256": "1bc719f6682d2e55b8f6fed2cb1b422a2aab0b8f6b4ed338cc45e250fda48782",
+      "all_weights_finite": true,
+      "strict_reload": true,
+      "learned_branch_weight_l1_changes": {
+        "encoder.stem.": 0.8459591306746006,
+        "encoder.stages.": 445.1305092573166,
+        "encoder.projections.": 207.0064296722412
+      }
+    }
+  ],
+  "existing_gpu0_state": {
+    "time": "2026-10-10T22:33:38+09:00",
+    "stage": "training",
+    "pid": 836824,
+    "child_pid": 836827,
+    "completed_epochs": 23,
+    "total_epochs": 60,
+    "latest_epoch": {
+      "epoch": 23,
+      "loss": 0.4256,
+      "lr": 0.00020832362632099808,
+      "train_sec": 213.6,
+      "gpu_mem_gb": 45.65,
+      "microbatches": 288,
+      "optimizer_updates": 144,
+      "accum_steps": 2,
+      "effective_batch": 4
+    },
+    "elapsed_minutes": 88.0061648990959,
+    "further_training_scheduled": false
+  },
+  "cpu_only": true,
+  "performance_conclusion": "First5epoch observations only; compare matched fold and epoch, not final TTA scores."
+}
