@@ -1,0 +1,21 @@
+Created UTC: 2026-10-09T17:54:52.077433+00:00
+Stage: existing; images=90; folds=[0, 1, 2, 3, 4]
+Fixed rule: sub6 top1-top2 margin < 0.15; inside use equal-three, outside preserve sub6.
+Baseline mIoU=80.788426; expected=80.788426
+Selected pixel fraction=0.027124; mean image fraction=0.027249
+existing_x4_uniform_vs_sub6: mIoU=80.901406; delta=+0.112980 pp; CI95=[-0.04982662472552683, 0.26486699297266875]
+  folds={'0': 0.4741958421776869, '1': 0.1632823165023538, '2': -0.15249317716199526, '3': 0.09811662629299771, '4': -0.018201577576655994}; classes={'Al': 0.04926965091313302, 'Al3Ni': 0.08743357776528976, 'Primary Si': 0.20080762419506512, 'Eutectic Si': 0.16153787669247374}; low=0.03308524635537629; improved=51/90
+existing_x4_selected_vs_sub6: mIoU=80.862914; delta=+0.074488 pp; CI95=[-0.02036448848077683, 0.16472744720354576]
+  folds={'0': 0.28524311550874715, '1': 0.07447130376411495, '2': -0.07450536045442115, '3': 0.06854090623707876, '4': 0.018691919102977295}; classes={'Al': 0.01809094943215541, 'Al3Ni': 0.05597427854539087, 'Primary Si': 0.14872673043844928, 'Eutectic Si': 0.10040039110262815}; low=0.031968795410493654; improved=52/90
+existing_x4_selected_vs_uniform: mIoU=80.862914; delta=-0.038492 pp; CI95=[-0.10792321569031227, 0.03347876057083954]
+  folds={'0': -0.1889527266689398, '1': -0.08881101273823885, '2': 0.07798781670757411, '3': -0.029575720055918946, '4': 0.03689349667963329}; classes={'Al': -0.031178701480977605, 'Al3Ni': -0.031459299219898894, 'Primary Si': -0.052080893756615836, 'Eutectic Si': -0.061137485589845594}; low=-0.0011164509448826315; improved=40/90
+Elapsed before writing: 32.247 seconds
+Selective blending of stored full-image OOF predictions is a proxy; no region is cropped, enlarged or inferred again
+This evaluation cannot establish runtime or memory savings from actual selective ROI inference
+All 90 images have been reviewed repeatedly; this is exploratory, not an independent confirmatory test
+The gate uses only sub6 probabilities and is identical for both crop arms; confidently wrong pixels may be missed
+The gate restricts probability replacement; global Primary Si postprocessing can also change final labels outside the gate
+Threshold 0.15 and x4 weight one-third are fixed before scoring; no threshold or weight search is performed
+mIoU is the mean of per-image means across present-in-GT-or-prediction classes, preserving existing scoring and postprocessing
+Confidence intervals resample alloy groups within folds 10000 times with seed0; training-seed and model-selection uncertainty are not included
+No training, additional GPU inference, submission replacement, or expansion to new folds is performed

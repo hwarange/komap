@@ -1,0 +1,31 @@
+{
+  "time": "2026-10-10T13:17:19.731477+09:00",
+  "server": "komap:/home/j-j15a106/komap",
+  "artifacts_sha256": {
+    "all.done": "be26f6ee3e69878c8b10cda7537247b3f963da7c403933422f5a5ca09d033b88",
+    "results.json": "7b0368d56a060183855ec54562894be2c5baa577b67eafdd22bbf431b5f4b3f5",
+    "per_image_rows.json": "540a092538bc07171838696f436f168b4de8099a87db4ce5f290cdd549980e82",
+    "summary.txt": "a9cd5546de470bfbcd2f61df95e302acb552e3c746f1b8481357d4a34d0a1ff7",
+    "completed_jobs.json": "039302568fb460c882af9d74b6fe81b11b5938e61fbc126a8a62e4206f46f81c",
+    "state.json": "27146ed3c86197110645e813b9ddbdb792256d5b443fdf9c47f9ec42568593db",
+    "plan.json": "36c7e8a2950c38a1fcb94963a1ef7552ce28f3357a475da0ccf5f9723e72800b",
+    "started.json": "5b3a6ac06328dcbdb787758c2651d9c25d2b55fb8d30decdbc3585b75f3076cb"
+  },
+  "all_remote_local_hashes_match": true,
+  "completion_results_and_plan_hash_match": true,
+  "recomputed_scores_90_images_nine_recipes": {
+    "sub6": 80.78842560074649,
+    "old_tile1536_single": 80.35765504065613,
+    "old_tile1536_uniform": 80.90140560679338,
+    "matched_crop1024_single": 80.20295730677924,
+    "matched_crop1024_uniform": 80.82207236630464,
+    "matched_crop1024_selected": 80.81195515838759,
+    "crop1536_single": 80.48265860177872,
+    "crop1536_uniform": 80.91681999039915,
+    "crop1536_selected": 80.88567051538074
+  },
+  "ten_completed_crop_runs": true,
+  "both_crop_arms_60_epochs": true,
+  "submission_changed": false,
+  "further_training_scheduled": false
+}

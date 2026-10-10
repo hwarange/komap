@@ -1,0 +1,3 @@
+train 72 imgs, 288 microbatches/144 updates per epoch | effective batch 4 | val 18 imgs | Unet-mit_b2
+[W1010 14:13:00.129071459 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2717908992 bytes (free: 519372800, total: 47676129280).
+[W1010 14:13:01.070652880 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 2717908992 bytes (free: 2218065920, total: 47676129280).

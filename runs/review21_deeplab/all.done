@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-10T13:50:15+09:00",
+  "outcome": "deeplab_two_fold_pilot_complete",
+  "folds": [
+    0,
+    1
+  ],
+  "images": 36,
+  "epochs": 60,
+  "new_training_jobs": 2,
+  "results_sha256": "361731d00631ff6fc58445ac40b0999196d8dbce4f3ac81eb685e553a2091185",
+  "plan_sha256": "8acbf9730d7befcf97fbf0c723778a3b480e39534a84e02c2847229216bab5aa",
+  "further_training_scheduled": false,
+  "submission_changed": false
+}

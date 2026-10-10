@@ -1,0 +1,12 @@
+{
+  "files": {
+    "scripts/review_pair22.py": "7e6533839d6c6ba45c296f0a0d137321d142251d8a58dee302be5880adbd56ac",
+    "runs/review22_pair/plan.json": "97a72ef3158aa84d91cf30025d4b778e73e8cd0affb878baef15f9454239a592",
+    "runs/review22_pair/per_image_rows.json": "84469027fe8869d266b5764409e8e2a6022e1356d911b631c66f5141dccdb19d",
+    "runs/review22_pair/summary.txt": "f99ddbea1ca0a33300857578af5881c8545f7f13e64cef486df899b45590c511",
+    "runs/review22_pair/results.json": "3f51b84982c992e8abb28ff1be10328ef58a87e60ba39bcd32b7ddb261d216c3",
+    "runs/review22_pair/all.done": "21cb6f69da41737f2466331997ba3527471f92d4864f5e36c4fdadac62d62030"
+  },
+  "local_remote_match": true,
+  "result_done_match": true
+}

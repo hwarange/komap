@@ -1,0 +1,98 @@
+{
+  "checked_time": "2026-10-10T14:13:27+09:00",
+  "files": {
+    "plan.json": "6d82716b58e78a0b884a3269c65e36331fe9e99c678abf44d8b3c263715ca2d9",
+    "started.json": "b96ce59090c59eeb7506cb730ba6f4b2fa6abf2ee345a4575ed30ce981b0ca15",
+    "state.json": "fb1e9221c603ce14da59c6bcf1fa901ce5dd6c39de2832f33376345d42e1dad9",
+    "runtime_mit5.json": "9cff2f89167d786b5b11b57308db359e9e1d08956b59e12db3b45994772b0c68",
+    "runtime_deeplab4.json": "0f41e5213ca16aab2cfa6ebf17bd7760aa5d38c8f305b9373801898f50511fdf",
+    "logs/mit5.log": "06ab2353b25b453b449703e2b50ef8010ae438bcec9cc02f0a03aad72d47fc12",
+    "logs/deeplab4.log": "e1dc6d7e209dba4d95e68eae81e66dd1347ee6e9586b0e69b05ad4f923ab93bd"
+  },
+  "source_checks": {
+    "src/train.py": true,
+    "src/data.py": true,
+    "src/infer.py": true,
+    "src/review_grains15.py": true,
+    "scripts/run_crop18.py": true,
+    "scripts/run_scale24.py": true,
+    "scripts/review_scale24.py": true,
+    "scripts/check_scale24_runtime.py": true
+  },
+  "jobs": [
+    {
+      "id": "mit5",
+      "actual_args_match": true,
+      "latest": null
+    },
+    {
+      "id": "deeplab4",
+      "actual_args_match": true,
+      "latest": {
+        "epoch": 4,
+        "loss": 0.608,
+        "lr": 0.0002980902532082017,
+        "train_sec": 11.3,
+        "gpu_mem_gb": 9.0,
+        "microbatches": 144,
+        "optimizer_updates": 144,
+        "accum_steps": 1,
+        "effective_batch": 4
+      }
+    }
+  ],
+  "prior_state": {
+    "time": "2026-10-10T14:13:22+09:00",
+    "pid": 815030,
+    "stage": "pilot_training",
+    "folds": [
+      0,
+      1
+    ],
+    "epochs": 60,
+    "further_training_scheduled": false,
+    "submission_changed": false,
+    "jobs": [
+      {
+        "id": "unetpp_fold0",
+        "arm": "unetpp",
+        "fold": 0,
+        "gpu": 0,
+        "pid": 815041,
+        "epoch": 9,
+        "total_epochs": 60,
+        "phase": "training",
+        "train_sec": 86.1,
+        "recent_three_mean_train_sec": 86.2,
+        "elapsed_sec": 870.1,
+        "remaining_train_sec_estimate": 4396.2,
+        "remaining_total_sec_estimate": 4652.7,
+        "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+        "loss": 0.509,
+        "gpu_mem_gb": 27.15
+      },
+      {
+        "id": "unetpp_fold1",
+        "arm": "unetpp",
+        "fold": 1,
+        "gpu": 1,
+        "pid": 815042,
+        "epoch": 9,
+        "total_epochs": 60,
+        "phase": "training",
+        "train_sec": 86.4,
+        "recent_three_mean_train_sec": 86.43333333333334,
+        "elapsed_sec": 870.1,
+        "remaining_train_sec_estimate": 4408.1,
+        "remaining_total_sec_estimate": 4666.5,
+        "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+        "loss": 0.5197,
+        "gpu_mem_gb": 27.15
+      }
+    ],
+    "completed_jobs": [],
+    "remaining_total_sec_estimate": 4666.5
+  },
+  "gpu_inventory": "0, GPU-76da22e2-40da-ebc0-098a-fa92ba030976, NVIDIA L40S, 22953, 100\n1, GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c, NVIDIA L40S, 22925, 100\n2, GPU-e800362c-2a5a-0208-8d32-28107bca6017, NVIDIA L40S, 41823, 100\n3, GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, NVIDIA L40S, 4435, 99\n",
+  "error_present": false
+}

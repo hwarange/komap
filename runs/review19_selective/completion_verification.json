@@ -1,0 +1,22 @@
+{
+  "verified_utc": "2026-10-10T00:19:53.567762+00:00",
+  "crop18_completed": "2026-10-10T05:03:31+09:00",
+  "selective19_completed_utc": "2026-10-09T20:04:18.552351+00:00",
+  "downloaded_completion_hashes_verified": true,
+  "image_counts_and_fold_sets_match": true,
+  "shared_source_probability_hashes_match": true,
+  "per_image_scores_recomputed": true,
+  "completed_training_runs": 4,
+  "epochs_each": 60,
+  "adopted_model": "sub6",
+  "submission_changed": false,
+  "further_training_scheduled": false,
+  "crop18_result_sha256": "87bc048a28d58059e79f685137bb5d5feaa1689083d87224100db037a2187b7d",
+  "selective19_crop_result_sha256": "7b060735f3f99ed537e45c552298a463a6e9e655d72204ccbd351d706c507b8b",
+  "scores_on_same_36_images": {
+    "sub6": 81.32454871040675,
+    "matched_crop1024_uniform": 81.45353844510814,
+    "crop1536_uniform": 81.67329559331478,
+    "crop1536_selected": 81.53135987475899
+  }
+}

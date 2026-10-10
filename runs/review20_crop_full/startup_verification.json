@@ -1,0 +1,32 @@
+﻿{
+  "docx_verified": true,
+  "docx_sha256": "25209ec9e9405438ea1f0b0124091e182fcd5778954d52899034c4c7620cf6a5",
+  "plan_verified": true,
+  "source_hashes_verified": true,
+  "time": "2026-10-10T09:37:21+09:00",
+  "stage": "full_fold_training",
+  "active_jobs": [
+    {
+      "id": "control_fold2",
+      "epoch": 4,
+      "loss": 0.6132
+    },
+    {
+      "id": "candidate_fold2",
+      "epoch": 1,
+      "loss": 1.2684
+    },
+    {
+      "id": "candidate_fold3",
+      "epoch": 1,
+      "loss": 1.2645
+    },
+    {
+      "id": "candidate_fold4",
+      "epoch": 1,
+      "loss": 1.264
+    }
+  ],
+  "queued_jobs": 2,
+  "error_exists": false
+}

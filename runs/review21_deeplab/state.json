@@ -1,0 +1,33 @@
+{
+  "time": "2026-10-10T13:50:15+09:00",
+  "pid": 811889,
+  "stage": "complete_pilot_and_stop",
+  "folds": [
+    0,
+    1
+  ],
+  "epochs": 60,
+  "further_training_scheduled": false,
+  "submission_changed": false,
+  "jobs": [],
+  "completed_jobs": [
+    {
+      "id": "deeplab_fold1",
+      "fold": 1,
+      "completed": "2026-10-10T13:49:41+09:00",
+      "epochs": 60,
+      "images": 18,
+      "train_seconds": 680.9,
+      "result_sha256": "2a46b6747722297010bad8cd0e1a94ea293e6449a46b8b55319566c988a61ade"
+    },
+    {
+      "id": "deeplab_fold0",
+      "fold": 0,
+      "completed": "2026-10-10T13:49:56+09:00",
+      "epochs": 60,
+      "images": 18,
+      "train_seconds": 691.8,
+      "result_sha256": "7bebba469cd4b5fef1db824e2f2a21b7e067108978e49bede1741108d507846c"
+    }
+  ]
+}

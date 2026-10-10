@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-10T13:21:46.776712+09:00",
+  "server": "komap:/home/j-j15a106/komap",
+  "files": {
+    "reports/모델링결과서_김형수없는김형수_심사기준보완.docx": "e58d20de73a2b28021b6dc8fb6f6ef864c735c822ec7936f59d4e0a8767e1551",
+    "scripts/build_modeling_report.py": "41864ec4d046a5ea0f18215b704cc69ab23094c2079165e534eef58ca33df7d7",
+    "handoff/HANDOFF_latest.md": "28f6684bfc73fa4143e01c72099104a067536dbd088dcd7d13a84146ef3c7b2c",
+    "reports/research_notes.md": "5771df57a0459c70dfb80939f65d8c0d77fd3e5e2c9147fe16b2e06addf4075c",
+    "reports/idea_journey.md": "5708037d727e0937e25c933eb3bff285d0b37542927cd885318b6369ceee604a",
+    "runs/review20_crop_full/completion_verification.json": "0a10a7d7bcec62550bf96ae33c1c64323eecae7221319d6eb1e3c13f401f9e0f",
+    "reports/modeling_document_work/artifact.md": "fa0e2715ae51275b559f4b9fc8f837f4a4e0fe7083e52ac1bdda4911e8c73ff5",
+    "reports/modeling_document_work/document_state.json": "e8f758077eafb987a32e0c1ad9093da6144744dc84dde5073293f14f714e42ad",
+    "reports/modeling_document_work/layout_qa.json": "bb8fec400700286ac0c474a79ff6c46af1d4febf51fcc96d078e2f9f70fe49aa",
+    "reports/modeling_document_work/final_build_evidence.json": "4987fc40fb1d290226dd56f3ef5d7ccdb9e88678d3de88be3f2d69f6d94e3262"
+  },
+  "all_sha256_match": true,
+  "full20_complete": true,
+  "new_training_started": false,
+  "submission_changed": false,
+  "development_plan_executed": false
+}

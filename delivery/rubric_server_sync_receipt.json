@@ -1,0 +1,32 @@
+{
+  "time": "2026-10-10T11:35:47.010167+09:00",
+  "server": "komap:/home/j-j15a106/komap",
+  "files": {
+    "reports/모델링결과서_김형수없는김형수_심사기준보완.docx": "85beac8261308c61c194b95d9df3ddafaa80104f250fa6d6385d933c7ff8d3ec",
+    "scripts/build_modeling_report.py": "29d6b4cad5bad16ee0725eef1cf6048061615a590a376cca0194d6f8a55d4ad0",
+    "scripts/summarize_phase_masks.py": "974a0d2a926eb4cdb14d6cc2ae5ca243542170ac423fb3b56c26f4aa02cae4cd",
+    "delivery/sub6_code_bundle.zip": "247a254ba55c13a5d1dcb8ee550da01d7f6fabbe899e9f80b35c89021bcd0d33",
+    "delivery/sub6_code_bundle_receipt.json": "9692a3f0ea8ce259f9ec0c8584b879e025cacaae0aebd34c4e11cafb388a60c0",
+    "handoff/HANDOFF_latest.md": "4ef0a0f843f9b089dad50dee55c218cb009f80bd9c73aea2e45d370799fe260e",
+    "delivery/sub6_repro/environment.yml": "df1d9c003a934f1c60a339b3ce3746352a835e57307aefe035f3d3b1ebc53c3a",
+    "delivery/sub6_repro/manifest.json": "fc85cb0588c147d9efe4423a8d12a5cbc00d4cf31410b1200f92bc07e0d79f34",
+    "delivery/sub6_repro/README.md": "a42804536546f2f27452bd87b52aff4f52f8bcc5f3ab1aae9ab25b9b7f642081",
+    "delivery/sub6_repro/run_submission.py": "70ae75e0535c6b979a175f768526f898126461e7ac04fcc9cf22bb07f2bfd0da",
+    "reports/phase_application/phase_area_fractions.png": "abf15a041a5078ea1d75d4ca6ecf06803429ec740ebc033888c2c29f3e70b57e",
+    "reports/phase_application/phase_area_summary.json": "f6ad32eb17f4610b743bb122eb3adc01add093a2d7686a9de80b610a4fd513ae",
+    "reports/phase_application/verification.json": "ac93497c5af336c3907864f28b0b115246967504b4d84ad0984003992ecac86f",
+    "reports/modeling_document_work/artifact.md": "7a9f0b5f0564d47cb83079b5a68baacf478ad16ec6d144fe6ec75b5d17273245",
+    "reports/modeling_document_work/document_state.json": "a6b30eed4eefaf47caeb245dbc63e2cfe6acab3e2af56f4731f55d59faa2964e",
+    "reports/modeling_document_work/layout_qa.json": "943129fd36cb34962cd24e829d6ab63466e88c6a2353e7acddb853329a182d21",
+    "reports/modeling_document_work/final_build_evidence.json": "8970c579b119f6a3abeb0a5e8df8a311faf8ab8b7cfa28f493bcd571e99b801f"
+  },
+  "all_sha256_match": true,
+  "read_only_preflight_passed": true,
+  "preflight_counts": {
+    "source_files": 4,
+    "checkpoints": 10,
+    "test_images": 10
+  },
+  "gpu_inference_performed": false,
+  "new_environment_install_tested": false
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "control_fold0",
+    "completed": "2026-10-10T02:23:14+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 3169.4,
+    "result_sha256": "1bdc4250d176f7364c0132fa3476fa54c727841682397a3d28b6df9bc5645e6e"
+  },
+  {
+    "id": "control_fold1",
+    "completed": "2026-10-10T02:23:29+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 3177.0,
+    "result_sha256": "6da0cd8842ca87a3c30e8b7fd63713610f9dec2da6ad1ab19b3ecb0072413c26"
+  },
+  {
+    "id": "candidate_fold0",
+    "completed": "2026-10-10T05:03:01+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 12741.5,
+    "result_sha256": "895fab2c5008dc3ac0f928c9453e4ba0215e39abac7f6f88866e7271b58d7339"
+  },
+  {
+    "id": "candidate_fold1",
+    "completed": "2026-10-10T05:03:01+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 12742.1,
+    "result_sha256": "23f832763e1f6496290f8a03224cd199e48fdd5b634305e738cf72c771d307f3"
+  }
+]

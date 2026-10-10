@@ -1,0 +1,20 @@
+{
+  "time": "2026-10-10T13:16:30+09:00",
+  "outcome": "matched_crop_five_fold_validation_complete",
+  "preserved_folds": [
+    0,
+    1
+  ],
+  "new_folds": [
+    2,
+    3,
+    4
+  ],
+  "new_training_jobs": 6,
+  "epochs": 60,
+  "validation_images": 90,
+  "further_training_scheduled": false,
+  "submission_changed": false,
+  "plan_sha256": "36c7e8a2950c38a1fcb94963a1ef7552ce28f3357a475da0ccf5f9723e72800b",
+  "results_sha256": "7b0368d56a060183855ec54562894be2c5baa577b67eafdd22bbf431b5f4b3f5"
+}

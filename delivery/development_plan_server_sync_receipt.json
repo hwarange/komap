@@ -1,0 +1,16 @@
+{
+  "time": "2026-10-10T12:55:30.054171+09:00",
+  "server": "komap:/home/j-j15a106/komap",
+  "files": {
+    "reports/모델링결과서_김형수없는김형수_심사기준보완.docx": "4192b586be1919a1b7ba3b3020965da44f28bc9da6ee4f06f7cdeeb6bdcedfcf",
+    "scripts/build_modeling_report.py": "8a3c7dcce7623ce561117340c116da19ee3279a9b55e4c2edaab48eb79136fa5",
+    "handoff/HANDOFF_latest.md": "06a26dd2196e062eef0ba167e6ca9a56179b8e476e04651ef73a5882fa03487c",
+    "reports/modeling_document_work/artifact.md": "854171103867bb99e284c81d180d6ce7fce361e73281e146cc3c54561287c67b",
+    "reports/modeling_document_work/document_state.json": "b3c210469a5398138cb448ac0fbd6e412e7aa52a8353d79d3d5a63883c60d233",
+    "reports/modeling_document_work/layout_qa.json": "74845b00082985ddbcedef3aafda87ca533eedb8501fe0cff6712e01e86d056f",
+    "reports/modeling_document_work/final_build_evidence.json": "9ceddef5d05b22a55683834036d20fff91fa9846d2b4cfe5135d92e977c63e06"
+  },
+  "all_sha256_match": true,
+  "development_plan_executed": false,
+  "gpu_inference_performed": false
+}

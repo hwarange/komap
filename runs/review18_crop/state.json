@@ -1,0 +1,9 @@
+{
+  "time": "2026-10-10T05:03:31+09:00",
+  "pid": 790972,
+  "stage": "complete_pilot_and_stop",
+  "pilot_only": true,
+  "further_training_scheduled": false,
+  "results": "runs/review18_crop/results.json",
+  "submission_changed": false
+}

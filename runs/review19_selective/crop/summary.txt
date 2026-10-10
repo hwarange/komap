@@ -1,0 +1,29 @@
+Created UTC: 2026-10-09T20:04:18.217773+00:00
+Stage: crop; images=36; folds=[0, 1]
+Fixed rule: sub6 top1-top2 margin < 0.15; inside use equal-three, outside preserve sub6.
+Baseline mIoU=81.324549; expected=81.324549
+Selected pixel fraction=0.026954; mean image fraction=0.026357
+matched_crop1024_uniform_vs_sub6: mIoU=81.453538; delta=+0.128990 pp; CI95=[-0.04367330500899752, 0.3631108448182042]
+  folds={'0': 0.08060854523244704, '1': 0.17737092417034875}; classes={'Al': 0.06740671359491499, 'Al3Ni': 0.09413127685416928, 'Primary Si': 0.1089156488561641, 'Eutectic Si': 0.24550529950034683}; low=-0.010629559537541411; improved=19/36
+matched_crop1024_selected_vs_sub6: mIoU=81.369295; delta=+0.044746 pp; CI95=[-0.04928617459114832, 0.16309605905046795]
+  folds={'0': 0.03561923425307375, '1': 0.0538723985709508}; classes={'Al': 0.016791653450166026, 'Al3Ni': 0.022917232783495223, 'Primary Si': 0.06477812847266663, 'Eutectic Si': 0.07449625094172536}; low=-0.02874163113823632; improved=19/36
+matched_crop1024_selected_vs_uniform: mIoU=81.369295; delta=-0.084244 pp; CI95=[-0.21210770800914805, 0.001098575002728357]
+  folds={'0': -0.04498931097937328, '1': -0.12349852559939795}; classes={'Al': -0.05061506014474896, 'Al3Ni': -0.07121404407067405, 'Primary Si': -0.04413752038349747, 'Eutectic Si': -0.17100904855862145}; low=-0.018112071600694907; improved=14/36
+crop1536_uniform_vs_sub6: mIoU=81.673296; delta=+0.348747 pp; CI95=[0.06434073344934116, 0.7023270054858393]
+  folds={'0': 0.434965248761511, '1': 0.26252851705453867}; classes={'Al': 0.10036172125022781, 'Al3Ni': 0.29850331166180866, 'Primary Si': 0.3322546915585735, 'Eutectic Si': 0.66386780716149}; low=0.043370699713355755; improved=21/36
+crop1536_selected_vs_sub6: mIoU=81.531360; delta=+0.206811 pp; CI95=[0.04839472772380807, 0.39283055634352937]
+  folds={'0': 0.29742100949192996, '1': 0.11620131921249784}; classes={'Al': 0.04325336439621531, 'Al3Ni': 0.17802613279213395, 'Primary Si': 0.23772682879268953, 'Eutectic Si': 0.36823833142781237}; low=0.04370698625440165; improved=22/36
+crop1536_selected_vs_uniform: mIoU=81.531360; delta=-0.141936 pp; CI95=[-0.31986866773980555, -0.01049389126641493]
+  folds={'0': -0.13754423926958104, '1': -0.14632719784204085}; classes={'Al': -0.0571083568540125, 'Al3Ni': -0.1204771788696747, 'Primary Si': -0.09452786276588397, 'Eutectic Si': -0.29562947573367765}; low=0.00033628654104589373; improved=19/36
+crop1536_selected_vs_matched_crop1024_selected: mIoU=81.531360; delta=+0.162065 pp; CI95=[0.020774077511564182, 0.3144770489016984]
+  folds={'0': 0.26180177523885617, '1': 0.062328920641547034}; classes={'Al': 0.026461710946049283, 'Al3Ni': 0.15510890000863872, 'Primary Si': 0.17294870032002288, 'Eutectic Si': 0.29374208048608696}; low=0.07244861739263797; improved=23/36
+Elapsed before writing: 24.551 seconds
+Selective blending of stored full-image OOF predictions is a proxy; no region is cropped, enlarged or inferred again
+This evaluation cannot establish runtime or memory savings from actual selective ROI inference
+All 90 images have been reviewed repeatedly; this is exploratory, not an independent confirmatory test
+The gate uses only sub6 probabilities and is identical for both crop arms; confidently wrong pixels may be missed
+The gate restricts probability replacement; global Primary Si postprocessing can also change final labels outside the gate
+Threshold 0.15 and x4 weight one-third are fixed before scoring; no threshold or weight search is performed
+mIoU is the mean of per-image means across present-in-GT-or-prediction classes, preserving existing scoring and postprocessing
+Confidence intervals resample alloy groups within folds 10000 times with seed0; training-seed and model-selection uncertainty are not included
+No training, additional GPU inference, submission replacement, or expansion to new folds is performed

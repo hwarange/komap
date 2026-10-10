@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-10T05:03:31+09:00",
+  "outcome": "four_job_crop_pilot_complete",
+  "pilot_folds": [
+    0,
+    1
+  ],
+  "further_training_scheduled": false,
+  "submission_changed": false,
+  "results_sha256": "87bc048a28d58059e79f685137bb5d5feaa1689083d87224100db037a2187b7d"
+}

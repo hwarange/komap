@@ -1,0 +1,26 @@
+Created UTC: 2026-10-09T20:03:26.448411+00:00
+Exploratory matched-control pilot: folds0/1, 36 previously examined images.
+Primary: crop1536 versus new crop1024; both batch2/accumulation2/60epoch/tile1536.
+crop1536_vs_matched_crop1024_single: mIoU=81.418130; base=81.017466; delta=+0.400663 pp; CI95=[-0.15617260369645597, 1.0047831103115696]
+  folds={'0': 0.7551025209374357, '1': 0.046224300127196076}; classes={'Al': 0.1254400752455551, 'Al3Ni': 0.6282507489367494, 'Primary Si': 0.2009497759678391, 'Eutectic Si': 0.6480130419791211}; low=0.014223364801997226; improved=17/36
+crop1536_addition_vs_matched_crop1024_addition: mIoU=81.673296; base=81.453538; delta=+0.219757 pp; CI95=[0.00977384661071356, 0.4500579249201087]
+  folds={'0': 0.35435670352906395, '1': 0.08515759288418995}; classes={'Al': 0.03295500765531282, 'Al3Ni': 0.20437203480763935, 'Primary Si': 0.2233390427024094, 'Eutectic Si': 0.4183625076611432}; low=0.054000259250897166; improved=19/36
+crop1536_addition_vs_sub6: mIoU=81.673296; base=81.324549; delta=+0.348747 pp; CI95=[0.06434073344934116, 0.7023270054858393]
+  folds={'0': 0.434965248761511, '1': 0.26252851705453867}; classes={'Al': 0.10036172125022781, 'Al3Ni': 0.29850331166180866, 'Primary Si': 0.3322546915585735, 'Eutectic Si': 0.66386780716149}; low=0.043370699713355755; improved=21/36
+matched_crop1024_addition_vs_sub6: mIoU=81.453538; base=81.324549; delta=+0.128990 pp; CI95=[-0.04367330500899752, 0.3631108448182042]
+  folds={'0': 0.08060854523244704, '1': 0.17737092417034875}; classes={'Al': 0.06740671359491499, 'Al3Ni': 0.09413127685416928, 'Primary Si': 0.1089156488561641, 'Eutectic Si': 0.24550529950034683}; low=-0.010629559537541411; improved=19/36
+crop1536_vs_original_tile1536_single: mIoU=81.418130; base=81.407692; delta=+0.010438 pp; CI95=[-0.231955081253209, 0.2910493172075124]
+  folds={'0': -0.237475117072944, '1': 0.25835015300793807}; classes={'Al': 0.11621326850681196, 'Al3Ni': 0.08595199599905613, 'Primary Si': -0.20932205834507991, 'Eutectic Si': 0.04890686570919378}; low=-0.15695829109675566; improved=16/36
+matched_crop1024_vs_original_tile1536_single: mIoU=81.017466; base=81.407692; delta=-0.390226 pp; CI95=[-0.9543708960580168, 0.1760794123359822]
+  folds={'0': -0.9925776380103797, '1': 0.21212585288074198}; classes={'Al': -0.009226806738743123, 'Al3Ni': -0.5422987529376933, 'Primary Si': -0.410271834312919, 'Eutectic Si': -0.5991061762699273}; low=-0.1711816558987529; improved=14/36
+crop1536_addition_vs_original_tile1536_addition: mIoU=81.673296; base=81.643288; delta=+0.030008 pp; CI95=[-0.0736177983506125, 0.16339923674507337]
+  folds={'0': -0.03923059341617593, '1': 0.09924620055218487}; classes={'Al': 0.009460972643151107, 'Al3Ni': -0.016684416222374193, 'Primary Si': 0.018721499653601963, 'Eutectic Si': 0.10853315819764278}; low=-0.04080379605469512; improved=14/36
+original_tile1536_addition_vs_sub6: mIoU=81.643288; base=81.324549; delta=+0.318739 pp; CI95=[0.09932322647144635, 0.5750016700061001]
+  folds={'0': 0.4741958421776869, '1': 0.1632823165023538}; classes={'Al': 0.0909007486070767, 'Al3Ni': 0.3151877278841828, 'Primary Si': 0.31353319190497153, 'Eutectic Si': 0.5553346489638472}; low=0.08417449576805087; improved=23/36
+Exploratory screening on folds0/1 (36 images) from a repeatedly examined 90-image dataset; not an independent test or full five-fold validation
+Primary comparisons match batch2, accumulation2, epochs60, seed0, inference tile1536 and other recorded options; only training crop changes
+Matching effective batch alone does not reproduce historical batch4 training because BatchNorm and Dice reductions can differ; the newly trained matched control is primary
+Original crop1024 tile1536 and sub6 are secondary references, not substitutes for the matched-control comparison
+Changing training crop also changes visible context, pixel coverage and the spatial distribution used by normalization and the loss; no single causal mechanism is established
+Confidence intervals resample alloy groups within folds 10000 times with seed0; training-seed and repeated model-selection uncertainty are not included
+This review produces evidence only; no automatic submission replacement or extension to folds2/3/4 is performed

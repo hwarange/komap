@@ -1,0 +1,62 @@
+[
+  {
+    "id": "control_fold2",
+    "completed": "2026-10-10T10:35:35+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 3175.4,
+    "result_sha256": "4ecdb6127bd94406017f916df35344a0002efa6309a7d19dc0ac3a2f931fe47d",
+    "gpu": 0,
+    "elapsed_seconds": 3811.7
+  },
+  {
+    "id": "control_fold3",
+    "completed": "2026-10-10T11:39:06+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 3175.0,
+    "result_sha256": "58ad649173c4b0bb095ccd56cff75c206b91720009faf1ef6aec146333eb7a83",
+    "gpu": 0,
+    "elapsed_seconds": 3810.7
+  },
+  {
+    "id": "control_fold4",
+    "completed": "2026-10-10T12:42:22+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 3167.7,
+    "result_sha256": "425f837cf43b6f22a2542a74497985f477e5481180249b313ff07ef88d6006a3",
+    "gpu": 0,
+    "elapsed_seconds": 3796.1
+  },
+  {
+    "id": "candidate_fold2",
+    "completed": "2026-10-10T13:14:54+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 12742.0,
+    "result_sha256": "4d17ab13b70d338cd749c055f58c1568aa7eb7a5270d842ab2881ca404ba1eeb",
+    "gpu": 1,
+    "elapsed_seconds": 13370.7
+  },
+  {
+    "id": "candidate_fold3",
+    "completed": "2026-10-10T13:15:09+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 12748.1,
+    "result_sha256": "5c7658ebc2e6b1045b4d2f040e2507be43be7c5f2a1a77ed772e83540e0eded5",
+    "gpu": 2,
+    "elapsed_seconds": 13385.5
+  },
+  {
+    "id": "candidate_fold4",
+    "completed": "2026-10-10T13:15:09+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 12747.0,
+    "result_sha256": "92486fe3bc04991fea64ffd43f6f6ae8bdebdf310bcc785a3b53b7011a74ac8d",
+    "gpu": 3,
+    "elapsed_seconds": 13385.3
+  }
+]

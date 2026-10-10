@@ -1,0 +1,17 @@
+Created UTC: 2026-10-10T04:50:14.775730+00:00
+Exploratory DeepLabV3+ pilot: folds0/1, 36 images, seed0, 60 epochs.
+sub6: mIoU=81.324549
+deeplab_single: mIoU=79.443906
+deeplab_equal_three: mIoU=81.008253
+equal_three_vs_sub6: delta=-0.316296 pp; CI95=[-0.5930184263553848, -0.07888935431229945]
+  folds={'0': -0.2690576767971322, '1': -0.36353429959663447}; classes={'Al': -0.14440494342534058, 'Al3Ni': -0.24509711360467573, 'Primary Si': -0.2801152922291706, 'Eutectic Si': -0.5955666035283428}; improved=13/36
+deeplab_single_vs_sub6: delta=-1.880643 pp; CI95=[-2.547701310079326, -1.258797379944]
+  folds={'0': -2.2050286346609, '1': -1.5562566260937014}; classes={'Al': -1.0663520144452387, 'Al3Ni': -1.9688535469772783, 'Primary Si': -1.2190376345312108, 'Eutectic Si': -3.268327325555484}; improved=2/36
+Exploratory pilot36 from folds0/1 of a repeatedly examined 90-image dataset; not an independent test or full90 result
+Each image is evaluated out of fold and all images from an alloy remain together; only training seed0 is evaluated
+Historical sub6 references are not retrained: MiT60 epochs and UNet++120 epochs; DeepLabV3+60 epochs uses its last checkpoint
+Primary objective is ensemble complementarity, not the highest DeepLab single-model score; no architecture-only causal claim
+Grouped bootstrap resamples alloy groups within each fold10000 times with seed0; training-seed and repeated-selection uncertainty are not included
+mIoU averages per-image class means; classes absent from both prediction and truth are excluded within an image
+Probabilities are saved TTA OOF arrays and existing postprocessing is applied after each fixed blend; no real ROI reinference
+CPU review elapsed time excludes GPU training/inference and is not deployment latency; no automatic remaining-fold extension or submission replacement

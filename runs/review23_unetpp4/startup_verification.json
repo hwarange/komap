@@ -1,0 +1,62 @@
+{
+  "checked_time": "2026-10-10T14:01:52+09:00",
+  "files": {
+    "benchmark.json": "d8f2601c2b19d9087e8dcc6c749944d80e19e4692407a1ad4b0ef5a5197ea732",
+    "plan.json": "6e144ce53aeea8bd41ef255b58e8192048dda8d437c8ceaaec7689c6ba8168b2",
+    "started.json": "49a02295f52639638b919fea90355fbcae016f1988f92ce3d45c40314e98bb6e",
+    "state.json": "41d2e4ea8d40d498c761bd707925d50301596e35b5db5bf039f01257bb078bf7",
+    "logs/unetpp_fold0.log": "2b7a205f50ec1003e793988e62c0205b8a720c03f9bd170c494b74d1d128bbef",
+    "logs/unetpp_fold1.log": "e43cede2d0b9c51c29728b6f3bee38bb19400db70e79e3f2c444bb0964badbf6"
+  },
+  "source_checks": {
+    "src/train.py": true,
+    "src/data.py": true,
+    "src/infer.py": true,
+    "src/review_grains15.py": true,
+    "scripts/run_crop18.py": true,
+    "scripts/run_unetpp23.py": true,
+    "scripts/review_unetpp23.py": true,
+    "scripts/benchmark_unetpp23.py": true
+  },
+  "actual_jobs": [
+    {
+      "id": "unetpp_fold0",
+      "actual_args_match": true,
+      "latest": {
+        "epoch": 1,
+        "loss": 1.4298,
+        "lr": 0.0003,
+        "train_sec": 122.5,
+        "gpu_mem_gb": 27.15,
+        "microbatches": 144,
+        "optimizer_updates": 144,
+        "accum_steps": 1,
+        "effective_batch": 4
+      }
+    },
+    {
+      "id": "unetpp_fold1",
+      "actual_args_match": true,
+      "latest": {
+        "epoch": 1,
+        "loss": 1.4457,
+        "lr": 0.0003,
+        "train_sec": 122.7,
+        "gpu_mem_gb": 27.15,
+        "microbatches": 144,
+        "optimizer_updates": 144,
+        "accum_steps": 1,
+        "effective_batch": 4
+      }
+    }
+  ],
+  "error_present": false,
+  "gpu_inventory": "0, GPU-76da22e2-40da-ebc0-098a-fa92ba030976, NVIDIA L40S, 22953, 100\n1, GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c, NVIDIA L40S, 22925, 100\n2, GPU-e800362c-2a5a-0208-8d32-28107bca6017, NVIDIA L40S, 0, 0\n3, GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, NVIDIA L40S, 0, 0\n",
+  "benchmark_metadata_correction": {
+    "field": "gpu_name",
+    "raw_value": "model.safetensors",
+    "verified_value": "NVIDIA L40S",
+    "reason": "Benchmark loop reused name variable; immutable raw benchmark retained. GPU UUID/index and timing unchanged; name independently verified with nvidia-smi."
+  },
+  "first_epoch_verified": true
+}

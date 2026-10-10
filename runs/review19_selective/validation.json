@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-09T17:57:16.717798+00:00",
+  "server_numerical_checks_passed": [
+    "gate top-two margin selection",
+    "fixed equal-three blend inside gate",
+    "unchanged probability outside gate",
+    "probability sum",
+    "ties",
+    "shape rejection",
+    "GPU disabled"
+  ],
+  "controller_read_only_preflight_passed": true,
+  "independent_code_review": "no blocking correctness issue found",
+  "local_deployed_python_source_hashes_match": true,
+  "fold_mapping_semantically_identical": true,
+  "fold_file_byte_hash_note": "Local and server JSON bytes differ; exact server file preserved as folds5.server.json and all parsed assignments match",
+  "downloaded_result_hash_matches_completion_receipt": true,
+  "source_sha256": {
+    "scripts/run_selective19.py": "c0e772ca0bbd5763f2577f9dd392aa5a048deb9aa9dfa2444d69293a542739bf",
+    "scripts/review_selective19.py": "b79f36419a15dcbc6ef38503c181fe02f5d73af2c1720f592cc99cd1b20e6a8e",
+    "scripts/review_crop18.py": "83f9f6a641b86108cd79025b34cc9352a3bc197fb957f3a537fe9bb16a0d901f",
+    "src/data.py": "8e1ee2cfc7f296d001777f60c57d74c0030e28788e85949341700a55343a2fd9",
+    "src/infer.py": "66ab7875b796b203db9dae40851eee25841f61435e409f7bbb043015febf1bea",
+    "src/review_grains15.py": "8af12112559901db97475b2d0c0f0e6381aee75510cfa66fbc60c310b8e5191b",
+    "splits/folds5.json": "10c4630034ad99dfa798c29d3358d0d22c6876dc9c0bbc7df71f144c512169b8"
+  },
+  "existing_results_sha256": "b86e174c9b4007897176ea828fbdf899cb802b07ce21e8b323496c102b5de4f6",
+  "pending_validation": "crop stage will validate completed runs and both new OOF arms after crop18 all.done"
+}

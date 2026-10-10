@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-10T04:57:34.244311+00:00",
+  "outcome": "fixed_two_model_pair_complete",
+  "images": 90,
+  "results_sha256": "3f51b84982c992e8abb28ff1be10328ef58a87e60ba39bcd32b7ddb261d216c3",
+  "plan_sha256": "97a72ef3158aa84d91cf30025d4b778e73e8cd0affb878baef15f9454239a592",
+  "submission_changed": false,
+  "training_started": false,
+  "gpu_inference_started": false
+}

@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "synthetic_exact_counts_and_percent": true,
+    "synthetic_source_unchanged": true,
+    "default_overwrite_refused_and_existing_output_preserved": true,
+    "explicit_overwrite_works": true,
+    "wrong_expected_count_rejected": true,
+    "source_output_same_dir_refused": true,
+    "invalid_rgb_color_rejected": true,
+    "non_rgb_rejected": true,
+    "all_10_real_masks_counts_percent_and_source_hashes_verified": true,
+    "pooled_total_9074964_pixels_verified": true,
+    "source_script_sha256_matches": true,
+    "project_relative_input_path_no_username": true
+  },
+  "all_passed": true,
+  "script_sha256": "974a0d2a926eb4cdb14d6cc2ae5ca243542170ac423fb3b56c26f4aa02cae4cd",
+  "summary_sha256": "f6ad32eb17f4610b743bb122eb3adc01add093a2d7686a9de80b610a4fd513ae",
+  "figure_sha256": "abf15a041a5078ea1d75d4ca6ecf06803429ec740ebc033888c2c29f3e70b57e",
+  "figure_visual_qa": "Final 2100x1350 PNG inspected: readable labels, original four colors, separated footer and axis labels, no overlap or clipping. 7x4.5 inch source canvas supports 5.6x3.6 inch report placement."
+}

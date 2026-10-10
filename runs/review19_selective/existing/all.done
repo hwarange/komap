@@ -1,0 +1,7 @@
+{
+  "completed_utc": "2026-10-09T17:54:52.420693+00:00",
+  "stage": "existing",
+  "results_sha256": "b86e174c9b4007897176ea828fbdf899cb802b07ce21e8b323496c102b5de4f6",
+  "training_started": false,
+  "gpu_inference_started": false
+}

@@ -1,0 +1,521 @@
+{
+  "created_utc": "2026-10-10T05:09:52.989969+00:00",
+  "status": "complete",
+  "arm": "deeplab4",
+  "purpose": "Disposable readiness and timing only",
+  "writes_checkpoints": false,
+  "writes_oof": false,
+  "weights_reused_for_experiment": false,
+  "imagenet_network_allowed": false,
+  "imagenet_revision": "7a57b34f723329ff020b3f8bc41771163c519d0c",
+  "imagenet_file_sha256": {
+    "config.json": "01bf2cf24eb29b405c28c159f46ceda92c098ab85868be88fb100967db47166e",
+    "model.safetensors": "6549ccd46a2d20a0a74fca866cfc5c6f9b3672d468b0a92aa94a58545a61103e"
+  },
+  "source_hashes": {
+    "src/train.py": "8be5a7dcadc5809a4c07757a86d909c2407272c0e9d1184a342a1e60ff363db9",
+    "src/data.py": "8e1ee2cfc7f296d001777f60c57d74c0030e28788e85949341700a55343a2fd9",
+    "src/infer.py": "66ab7875b796b203db9dae40851eee25841f61435e409f7bbb043015febf1bea"
+  },
+  "reference_sha256": "04ca0380d8b03b5b4043fa1e8b73809cfd3ce4befd1c3fd877852428bf8c934f",
+  "script_sha256": "a328e1a452ce520414fbb2f0ef75510471ea89cfe036ba6393f2f1527574b349",
+  "reference_args": {
+    "data": "data",
+    "out": "runs/cv/x2_deeplabv3plus_r34_bw_r90/fold0",
+    "train_splits": [
+      "train"
+    ],
+    "val_split": "valid",
+    "fold": 0,
+    "folds_file": "splits/folds5.json",
+    "arch": "DeepLabV3Plus",
+    "encoder": "resnet34",
+    "attention": null,
+    "loss": "dice",
+    "bw": 2.0,
+    "class_weights": "",
+    "epochs": 60,
+    "bs": 4,
+    "accum_steps": 1,
+    "crop": 1024,
+    "spi": 8,
+    "scale_jitter": 0.15,
+    "lr": 0.0003,
+    "wd": 0.0001,
+    "width": 2560,
+    "scale_multiplier": 1.0,
+    "tile": 1024,
+    "overlap": 128,
+    "val_every": 5,
+    "workers": 4,
+    "seed": 0,
+    "max_iters": 0,
+    "amp": true,
+    "save_oof": "runs/oof/x2_deeplabv3plus_r34_bw_r90",
+    "hires": false,
+    "skel": 0.0,
+    "rot": "rot90",
+    "aug_policy": "default",
+    "hm": 0.0,
+    "lowres": 0.0,
+    "no_int": false,
+    "copypaste": 0.0,
+    "int_drop": "",
+    "ema": 0.0,
+    "train_frac": 1.0,
+    "enc_lr_mult": 1.0,
+    "full": false,
+    "binary_class": -1,
+    "elastic": 0.0,
+    "cutout": 0.0,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "init": "",
+    "init_skip_head": false,
+    "use_ignore": false,
+    "pair_classes": null,
+    "feats": false,
+    "hard_crop": 0.0,
+    "hard_maps": "runs/hardmaps",
+    "soft_edge": 0.0
+  },
+  "benchmark_args": {
+    "data": "data",
+    "out": "",
+    "train_splits": [
+      "train"
+    ],
+    "val_split": "valid",
+    "fold": 0,
+    "folds_file": "splits/folds5.json",
+    "arch": "DeepLabV3Plus",
+    "encoder": "resnet34",
+    "attention": null,
+    "loss": "dice",
+    "bw": 2.0,
+    "class_weights": "",
+    "epochs": 60,
+    "bs": 4,
+    "accum_steps": 1,
+    "crop": 1024,
+    "spi": 8,
+    "scale_jitter": 0.15,
+    "lr": 0.0003,
+    "wd": 0.0001,
+    "width": 2560,
+    "scale_multiplier": 2.0,
+    "tile": 1024,
+    "overlap": 128,
+    "val_every": 5,
+    "workers": 4,
+    "seed": 0,
+    "max_iters": 0,
+    "amp": true,
+    "save_oof": "",
+    "hires": false,
+    "skel": 0.0,
+    "rot": "rot90",
+    "aug_policy": "default",
+    "hm": 0.0,
+    "lowres": 0.0,
+    "no_int": false,
+    "copypaste": 0.0,
+    "int_drop": "",
+    "ema": 0.0,
+    "train_frac": 1.0,
+    "enc_lr_mult": 1.0,
+    "full": false,
+    "binary_class": -1,
+    "elastic": 0.0,
+    "cutout": 0.0,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "init": "",
+    "init_skip_head": false,
+    "use_ignore": false,
+    "pair_classes": null,
+    "feats": false,
+    "hard_crop": 0.0,
+    "hard_maps": "runs/hardmaps",
+    "soft_edge": 0.0
+  },
+  "gpu_index": 3,
+  "gpu_uuid": "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713",
+  "gpu_name": "NVIDIA L40S",
+  "gpu_memory_total_mib": 46068,
+  "idle_checks": [
+    "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, NVIDIA L40S, 0, 46068, 0",
+    "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, NVIDIA L40S, 0, 46068, 0"
+  ],
+  "measurement": {
+    "cached_imagenet_init_seconds": 0.5541868843138218,
+    "train_images": 72,
+    "validation_images": 18,
+    "microbatch": 4,
+    "gradient_accumulation": 1,
+    "effective_batch": 4,
+    "microbatches_per_epoch": 144,
+    "optimizer_updates_per_epoch": 144,
+    "crops_per_epoch": 576,
+    "warmup_updates": 2,
+    "timed_updates": 4,
+    "timed_update_seconds": [
+      0.07158185541629791,
+      0.07175596430897713,
+      0.07170473784208298,
+      0.07180624082684517
+    ],
+    "seconds_per_update_mean": 0.0717121995985508,
+    "seconds_per_update_median": 0.07173035107553005,
+    "estimated_train_seconds_per_epoch": 10.326556742191315,
+    "estimated_train_minutes_60_epochs": 10.326556742191315,
+    "estimated_validation18_no_tta_seconds": 5.007072560861707,
+    "estimated_final_8tta_seconds": 40.05658048689366,
+    "estimated_total_minutes": 11.995580929145216,
+    "peak_train_memory_allocated_gib": 8.377550601959229,
+    "peak_train_memory_reserved_gib": 8.478515625,
+    "validation_geometry_all18": [
+      {
+        "name": "A109_step1_sample3",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A118_step2_sample1",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A137_step4_sample2",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A138_step4_sample3",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A146_step2_sample1",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A153_step1_sample4",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A159_step4_sample4",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A224_step1_sample2",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A224_step4_sample2",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A39_step2_sample3",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A7_step1_sample2",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A7_step4_sample3",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A87_step2_sample2",
+        "original_hw": [
+          480,
+          675
+        ],
+        "scale": 8.0,
+        "scaled_hw": [
+          3840,
+          5400
+        ],
+        "scaled_pixels": 20736000,
+        "tiles": 30,
+        "inference_batches_of_four": 8
+      },
+      {
+        "name": "A96_step1_sample1",
+        "original_hw": [
+          480,
+          675
+        ],
+        "scale": 8.0,
+        "scaled_hw": [
+          3840,
+          5400
+        ],
+        "scaled_pixels": 20736000,
+        "tiles": 30,
+        "inference_batches_of_four": 8
+      },
+      {
+        "name": "A153_step3_sample3",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A42_step2_sample4",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      },
+      {
+        "name": "A72_step4_sample4",
+        "original_hw": [
+          480,
+          675
+        ],
+        "scale": 8.0,
+        "scaled_hw": [
+          3840,
+          5400
+        ],
+        "scaled_pixels": 20736000,
+        "tiles": 30,
+        "inference_batches_of_four": 8
+      },
+      {
+        "name": "A7_step1_sample4",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6
+      }
+    ],
+    "validation_measurements": [
+      {
+        "name": "A87_step2_sample2",
+        "original_hw": [
+          480,
+          675
+        ],
+        "scale": 8.0,
+        "scaled_hw": [
+          3840,
+          5400
+        ],
+        "scaled_pixels": 20736000,
+        "tiles": 30,
+        "inference_batches_of_four": 8,
+        "no_tta_seconds": 0.4071697071194649,
+        "peak_memory_allocated_gib": 4.212121963500977,
+        "peak_memory_reserved_gib": 4.52734375
+      },
+      {
+        "name": "A39_step2_sample3",
+        "original_hw": [
+          909,
+          1278
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3636,
+          5112
+        ],
+        "scaled_pixels": 18587232,
+        "tiles": 24,
+        "inference_batches_of_four": 6,
+        "no_tta_seconds": 0.24687690287828445,
+        "peak_memory_allocated_gib": 1.961085319519043,
+        "peak_memory_reserved_gib": 2.46875
+      },
+      {
+        "name": "A109_step1_sample3",
+        "original_hw": [
+          875,
+          1230
+        ],
+        "scale": 4.0,
+        "scaled_hw": [
+          3500,
+          4920
+        ],
+        "scaled_pixels": 17220000,
+        "tiles": 24,
+        "inference_batches_of_four": 6,
+        "no_tta_seconds": 0.22438717260956764,
+        "peak_memory_allocated_gib": 1.9298515319824219,
+        "peak_memory_reserved_gib": 2.46875
+      }
+    ],
+    "largest_scaled_canvas_checked": "A87_step2_sample2",
+    "width675_image_checked": "A87_step2_sample2",
+    "finite_gradient_and_parameter_checks_after_updates": [
+      2,
+      6
+    ],
+    "loss_first_last": [
+      2.2111239433288574,
+      2.1897928714752197
+    ],
+    "all_losses_finite": true,
+    "optimizer_state_resident_during_validation": true,
+    "empty_cache_called": false,
+    "caveat": "Four timed updates only; concurrent GPUs may affect speed. Validation18 extrapolated from three images by batch-of-four tile count; final 8TTA approximated. No checkpoint or OOF writes, full 8TTA, or CPU comparison timed. Readiness is not accuracy evidence."
+  },
+  "completed_utc": "2026-10-10T05:10:23.507609+00:00"
+}

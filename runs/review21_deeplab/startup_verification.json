@@ -1,0 +1,62 @@
+{
+  "checked_time": "2026-10-10T13:41:11+09:00",
+  "controller_pid": 811889,
+  "stage": "pilot_training",
+  "files": {
+    "benchmark.json": "8adb9ec662c6e1ad1f3dffc7bb3dc76d255ff5f705c5f70796fa0b4de3855675",
+    "plan.json": "8acbf9730d7befcf97fbf0c723778a3b480e39534a84e02c2847229216bab5aa",
+    "started.json": "f0dd6a1db761107e8b05be5f76ddaa992a7e14760396e9ecfc5d63d690635df3",
+    "state.json": "64a34623c9e5339df422879753d7d5005046bbc5edb014d395bc58f047be8b42",
+    "logs/deeplab_fold0.log": "1ddbfcaf2e62456af770a6c33b6441587046aa9522a6d90bdf7f1f1333391f7f",
+    "logs/deeplab_fold1.log": "e8841ac44000c7dfa38f59b5b2f86f51b9cad630fa8f71b3bf653340f763b694"
+  },
+  "source_checks": {
+    "src/train.py": true,
+    "src/data.py": true,
+    "src/infer.py": true,
+    "src/review_grains15.py": true,
+    "scripts/run_crop18.py": true,
+    "scripts/run_deeplab21.py": true,
+    "scripts/review_deeplab21.py": true,
+    "scripts/benchmark_deeplab21.py": true
+  },
+  "error_present": false,
+  "jobs": [
+    {
+      "id": "deeplab_fold0",
+      "arm": "deeplab",
+      "fold": 0,
+      "gpu": 0,
+      "pid": 811954,
+      "epoch": 16,
+      "total_epochs": 60,
+      "phase": "training",
+      "train_sec": 11.3,
+      "recent_three_mean_train_sec": 11.300000000000002,
+      "elapsed_sec": 225.0,
+      "remaining_train_sec_estimate": 497.2000000000001,
+      "remaining_total_sec_estimate": 530.6333333333334,
+      "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+      "loss": 0.5292,
+      "gpu_mem_gb": 9.0
+    },
+    {
+      "id": "deeplab_fold1",
+      "arm": "deeplab",
+      "fold": 1,
+      "gpu": 1,
+      "pid": 811955,
+      "epoch": 17,
+      "total_epochs": 60,
+      "phase": "training",
+      "train_sec": 11.2,
+      "recent_three_mean_train_sec": 11.199999999999998,
+      "elapsed_sec": 225.0,
+      "remaining_train_sec_estimate": 481.5999999999999,
+      "remaining_total_sec_estimate": 516.7333333333332,
+      "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+      "loss": 0.5472,
+      "gpu_mem_gb": 9.0
+    }
+  ]
+}

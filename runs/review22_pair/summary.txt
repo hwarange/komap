@@ -1,0 +1,15 @@
+Fixed equal two-model ensemble: x4 MiT crop1536 + x3 UNet++120
+full90: sub6=80.788425601; pair=80.900653378; delta=+0.112227778; CI95=[-0.12167412621548471, 0.37335654184515404]
+  folds={'0': 0.19994391490865956, '1': 0.3873785158097781, '2': 0.18619258618357015, '3': -0.10412575009806939, '4': -0.10825037929643441}; classes={'Al': 0.06326612385552657, 'Al3Ni': -0.06337225037037039, 'Primary Si': 0.1926834696746777, 'Eutectic Si': 0.30311891535619523}; improved=55/90
+remaining54: sub6=80.431010194; pair=80.422282347; delta=-0.008727848; CI95=[-0.23862183134593357, 0.229522783424145]
+  folds={'2': 0.18619258618357015, '3': -0.10412575009806939, '4': -0.10825037929643441}; classes={'Al': 0.015937768394071523, 'Al3Ni': -0.24707371988958274, 'Primary Si': 0.15669717439252487, 'Eutectic Si': 0.11616980792059459}; improved=30/54
+pilot36: sub6=81.324548710; pair=81.618209926; delta=+0.293661215; CI95=[-0.17554895707723256, 0.8215989673061993]
+  folds={'0': 0.19994391490865956, '1': 0.3873785158097781}; classes={'Al': 0.13425865704770917, 'Al3Ni': 0.21217995390844813, 'Primary Si': 0.24466367397112065, 'Eutectic Si': 0.5835425765095962}; improved=25/36
+Reused saved TTA out-of-fold probabilities; fixed 50:50 soft voting, then unchanged postprocessing
+x4 MiT crop1536 trained60 epochs, x3 UNet++ trained120 epochs, baseline x2 MiT trained60 epochs; one training seed
+90 images from a repeatedly examined dataset; pilot36 and remaining54 are descriptive subsets, not independent confirmatory tests
+Alloy groups remain in one fold; paired bootstrap resamples alloy groups within folds10000 times, RNG seed0
+Bootstrap excludes training-seed and repeated-model-selection uncertainty
+mIoU averages per-image class means; classes absent in both truth and prediction are excluded within an image
+Stored OOF arrays were checked against completed review20 receipts; all180 data files and split were rehashed
+No GPU inference, additional training, weight search, ROI reinference, automatic adoption, or submission replacement

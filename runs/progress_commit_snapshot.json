@@ -1,0 +1,322 @@
+{
+  "checked_at": "2026-10-10T14:16:20+09:00",
+  "experiments": {
+    "review21_deeplab": {
+      "state": {
+        "time": "2026-10-10T13:50:15+09:00",
+        "pid": 811889,
+        "stage": "complete_pilot_and_stop",
+        "folds": [
+          0,
+          1
+        ],
+        "epochs": 60,
+        "further_training_scheduled": false,
+        "submission_changed": false,
+        "jobs": [],
+        "completed_jobs": [
+          {
+            "id": "deeplab_fold1",
+            "fold": 1,
+            "completed": "2026-10-10T13:49:41+09:00",
+            "epochs": 60,
+            "images": 18,
+            "train_seconds": 680.9,
+            "result_sha256": "2a46b6747722297010bad8cd0e1a94ea293e6449a46b8b55319566c988a61ade"
+          },
+          {
+            "id": "deeplab_fold0",
+            "fold": 0,
+            "completed": "2026-10-10T13:49:56+09:00",
+            "epochs": 60,
+            "images": 18,
+            "train_seconds": 691.8,
+            "result_sha256": "7bebba469cd4b5fef1db824e2f2a21b7e067108978e49bede1741108d507846c"
+          }
+        ]
+      },
+      "actual_jobs": [
+        {
+          "id": "deeplab_fold0",
+          "actual_args_match": true,
+          "latest": {
+            "epoch": 60,
+            "loss": 0.4542,
+            "lr": 0.0,
+            "train_sec": 11.1,
+            "gpu_mem_gb": 9.0,
+            "microbatches": 144,
+            "optimizer_updates": 144,
+            "accum_steps": 1,
+            "effective_batch": 4,
+            "val": {
+              "mIoU": 77.32,
+              "Al": 91.03,
+              "Al3Ni": 76.34,
+              "Primary Si": 85.14,
+              "Eutectic Si": 56.78,
+              "low_contrast": 82.35,
+              "high_contrast": 74.8,
+              "step1": 77.14,
+              "step2": 84.06,
+              "step3": 68.94,
+              "step4": 73.29
+            },
+            "val_pp": {
+              "mIoU": 77.38,
+              "Al": 91.02,
+              "Al3Ni": 76.35,
+              "Primary Si": 85.24,
+              "Eutectic Si": 56.94,
+              "low_contrast": 82.44,
+              "high_contrast": 74.86,
+              "step1": 77.15,
+              "step2": 84.14,
+              "step3": 69.11,
+              "step4": 73.37
+            },
+            "val_sec": 1.9
+          }
+        },
+        {
+          "id": "deeplab_fold1",
+          "actual_args_match": true,
+          "latest": {
+            "epoch": 60,
+            "loss": 0.4619,
+            "lr": 0.0,
+            "train_sec": 11.1,
+            "gpu_mem_gb": 9.0,
+            "microbatches": 144,
+            "optimizer_updates": 144,
+            "accum_steps": 1,
+            "effective_batch": 4,
+            "val": {
+              "mIoU": 80.72,
+              "Al": 93.56,
+              "Al3Ni": 82.55,
+              "Primary Si": 90.97,
+              "Eutectic Si": 55.82,
+              "low_contrast": 82.47,
+              "high_contrast": 79.85,
+              "step1": 81.21,
+              "step2": 80.12,
+              "step3": 77.51,
+              "step4": 82.7
+            },
+            "val_pp": {
+              "mIoU": 80.77,
+              "Al": 93.55,
+              "Al3Ni": 82.55,
+              "Primary Si": 91.06,
+              "Eutectic Si": 55.91,
+              "low_contrast": 82.5,
+              "high_contrast": 79.9,
+              "step1": 81.26,
+              "step2": 80.15,
+              "step3": 77.55,
+              "step4": 82.75
+            },
+            "val_sec": 2.0
+          }
+        }
+      ],
+      "error_present": false,
+      "all.done_sha256": "92c7314a36d678c8360eb7e8555ee049e86c4b994b48092206c3a6e489e28b41",
+      "results.json_sha256": "361731d00631ff6fc58445ac40b0999196d8dbce4f3ac81eb685e553a2091185"
+    },
+    "review23_unetpp4": {
+      "state": {
+        "time": "2026-10-10T14:16:07+09:00",
+        "pid": 815030,
+        "stage": "pilot_training",
+        "folds": [
+          0,
+          1
+        ],
+        "epochs": 60,
+        "further_training_scheduled": false,
+        "submission_changed": false,
+        "jobs": [
+          {
+            "id": "unetpp_fold0",
+            "arm": "unetpp",
+            "fold": 0,
+            "gpu": 0,
+            "pid": 815041,
+            "epoch": 11,
+            "total_epochs": 60,
+            "phase": "training",
+            "train_sec": 86.3,
+            "recent_three_mean_train_sec": 86.23333333333333,
+            "elapsed_sec": 1035.2,
+            "remaining_train_sec_estimate": 4225.433333333333,
+            "remaining_total_sec_estimate": 4469.333333333333,
+            "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+            "loss": 0.4952,
+            "gpu_mem_gb": 27.15
+          },
+          {
+            "id": "unetpp_fold1",
+            "arm": "unetpp",
+            "fold": 1,
+            "gpu": 1,
+            "pid": 815042,
+            "epoch": 11,
+            "total_epochs": 60,
+            "phase": "training",
+            "train_sec": 86.6,
+            "recent_three_mean_train_sec": 86.5,
+            "elapsed_sec": 1035.2,
+            "remaining_train_sec_estimate": 4238.5,
+            "remaining_total_sec_estimate": 4483.3,
+            "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+            "loss": 0.5043,
+            "gpu_mem_gb": 27.15
+          }
+        ],
+        "completed_jobs": [],
+        "remaining_total_sec_estimate": 4483.3
+      },
+      "actual_jobs": [
+        {
+          "id": "unetpp_fold0",
+          "actual_args_match": true,
+          "latest": {
+            "epoch": 11,
+            "loss": 0.4952,
+            "lr": 0.0002792331122090709,
+            "train_sec": 86.3,
+            "gpu_mem_gb": 27.15,
+            "microbatches": 144,
+            "optimizer_updates": 144,
+            "accum_steps": 1,
+            "effective_batch": 4
+          }
+        },
+        {
+          "id": "unetpp_fold1",
+          "actual_args_match": true,
+          "latest": {
+            "epoch": 11,
+            "loss": 0.5043,
+            "lr": 0.0002792331122090709,
+            "train_sec": 86.6,
+            "gpu_mem_gb": 27.15,
+            "microbatches": 144,
+            "optimizer_updates": 144,
+            "accum_steps": 1,
+            "effective_batch": 4
+          }
+        }
+      ],
+      "error_present": false
+    },
+    "review24_single_scale": {
+      "state": {
+        "time": "2026-10-10T14:16:12+09:00",
+        "pid": 816718,
+        "stage": "single_holdout_training",
+        "fixed_holdout_fold": 0,
+        "repeated_cross_validation": false,
+        "training_images": 72,
+        "validation_images": 18,
+        "further_training_scheduled": false,
+        "submission_changed": false,
+        "jobs": [
+          {
+            "id": "mit5",
+            "arm": "mit5",
+            "fold": 0,
+            "gpu": 2,
+            "pid": 816728,
+            "epoch": 0,
+            "total_epochs": 60,
+            "phase": "training",
+            "train_sec": null,
+            "recent_three_mean_train_sec": null,
+            "elapsed_sec": 240.0,
+            "remaining_train_sec_estimate": null,
+            "remaining_total_sec_estimate": null,
+            "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+            "loss": null,
+            "gpu_mem_gb": null
+          },
+          {
+            "id": "deeplab4",
+            "arm": "deeplab4",
+            "fold": 0,
+            "gpu": 3,
+            "pid": 816729,
+            "epoch": 17,
+            "total_epochs": 60,
+            "phase": "training",
+            "train_sec": 11.2,
+            "recent_three_mean_train_sec": 11.266666666666666,
+            "elapsed_sec": 240.0,
+            "remaining_train_sec_estimate": 484.46666666666664,
+            "remaining_total_sec_estimate": 565.5,
+            "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
+            "loss": 0.5173,
+            "gpu_mem_gb": 9.0
+          }
+        ],
+        "completed_jobs": [],
+        "failed_jobs": []
+      },
+      "actual_jobs": [
+        {
+          "id": "mit5",
+          "actual_args_match": true,
+          "latest": null
+        },
+        {
+          "id": "deeplab4",
+          "actual_args_match": true,
+          "latest": {
+            "epoch": 18,
+            "loss": 0.5094,
+            "lr": 0.00024262869224192876,
+            "train_sec": 11.1,
+            "gpu_mem_gb": 9.0,
+            "microbatches": 144,
+            "optimizer_updates": 144,
+            "accum_steps": 1,
+            "effective_batch": 4
+          }
+        }
+      ],
+      "error_present": false
+    }
+  },
+  "source_checks": {
+    "src/train.py": "8be5a7dcadc5809a4c07757a86d909c2407272c0e9d1184a342a1e60ff363db9",
+    "src/data.py": "8e1ee2cfc7f296d001777f60c57d74c0030e28788e85949341700a55343a2fd9",
+    "src/infer.py": "66ab7875b796b203db9dae40851eee25841f61435e409f7bbb043015febf1bea",
+    "src/review_grains15.py": "8af12112559901db97475b2d0c0f0e6381aee75510cfa66fbc60c310b8e5191b",
+    "scripts/run_crop18.py": "0339e58cac3a77c13e425fe360742aa7fcbb9db68d92b99389b102e14f7e030e",
+    "scripts/run_deeplab21.py": "16c3d7bc09165cfd018a9fe6f8a02afc2c92cadc02e18302f2fb20f853e7b1fe",
+    "scripts/review_deeplab21.py": "54cce4304490cd7ea7a249d95959bce5366e2c6021cbf4ef72c3d40c137dfbb2",
+    "scripts/benchmark_deeplab21.py": "df7e280ed0402a8c008f67bb48e0e7c16ead1be90aed383138c3ef32a9372534",
+    "scripts/run_unetpp23.py": "3eed8a7cefb2d7c018cb31e4d118c9dc9803edda12a526f2b3dbce255ba8d764",
+    "scripts/review_unetpp23.py": "af29b740fa8f527710bcf19aa412616a0386bbc939cf832ca8dc285835d97283",
+    "scripts/benchmark_unetpp23.py": "3e4fb421807e9a2de648b45f423353e36fa5087bdcd9d3eb879448532c117032",
+    "scripts/run_scale24.py": "139333ec8f870cdf60c98e335b62c740c301077b3ed9fce085b733ad3b50dad7",
+    "scripts/review_scale24.py": "f62954b80222bc0c6c2f593105e72c8264401183d5feaa2369722886f71e2be0",
+    "scripts/check_scale24_runtime.py": "a328e1a452ce520414fbb2f0ef75510471ea89cfe036ba6393f2f1527574b349"
+  },
+  "gpu_inventory": "0, GPU-76da22e2-40da-ebc0-098a-fa92ba030976, NVIDIA L40S, 22953, 100\n1, GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c, NVIDIA L40S, 22925, 100\n2, GPU-e800362c-2a5a-0208-8d32-28107bca6017, NVIDIA L40S, 41823, 100\n3, GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, NVIDIA L40S, 4807, 93\n",
+  "copied_file_sha256": {
+    "runs/review21_deeplab/state.json": "9179f56b5d1a81d0d49e889387002aaa59bd940b0f461dca3529f63f9e87aad4",
+    "runs/review21_deeplab/logs/deeplab_fold0.log": "5e802658978718eb08881ef734db7c7e315e7566d176a12dc196ba57f8b7deb4",
+    "runs/review21_deeplab/logs/deeplab_fold1.log": "24fbba32bbaf0e4f61d2e618a29d95b7189dedb8767add24ec640a6aadd791b2",
+    "runs/review21_deeplab/logs/evaluation.log": "45e653eff54bdcd1081a2c4f4b1a786df2fb0ca773e45ee589f4a30148635403",
+    "runs/review21_deeplab/completed_jobs.json": "7e383fc97fe3a6afe41cb82c7589d6458ef3b47e1a997b570012b127fefc2434",
+    "runs/review23_unetpp4/state.json": "baa2a244872059bdd13865505a1770dd0c4473908254021cdb4cc1692a9ed000",
+    "runs/review23_unetpp4/logs/unetpp_fold0.log": "2e5b387352d87713f8d307e447b8bd04159898c0ee559f15b1bc7f0f9fdc27ef",
+    "runs/review23_unetpp4/logs/unetpp_fold1.log": "6528e8d0ae7e8664f7dec091d38fbf77178516fdddaa63913c6d246b88ddbef7",
+    "runs/review24_single_scale/state.json": "c053ac856c146452ce658f2bf0509b38bb358bd0a4f6824d8e1d199cb4715f01",
+    "runs/review24_single_scale/logs/deeplab4.log": "f2dc7bc53f0505ccbd944c61f0066350930ad255377856b0327309e48fac927d",
+    "runs/review24_single_scale/logs/mit5.log": "06ab2353b25b453b449703e2b50ef8010ae438bcec9cc02f0a03aad72d47fc12"
+  }
+}

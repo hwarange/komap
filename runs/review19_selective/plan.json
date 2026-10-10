@@ -1,0 +1,49 @@
+{
+  "source_sha256": {
+    "scripts/run_selective19.py": "c0e772ca0bbd5763f2577f9dd392aa5a048deb9aa9dfa2444d69293a542739bf",
+    "scripts/review_selective19.py": "b79f36419a15dcbc6ef38503c181fe02f5d73af2c1720f592cc99cd1b20e6a8e",
+    "scripts/review_crop18.py": "83f9f6a641b86108cd79025b34cc9352a3bc197fb957f3a537fe9bb16a0d901f",
+    "src/data.py": "8e1ee2cfc7f296d001777f60c57d74c0030e28788e85949341700a55343a2fd9",
+    "src/infer.py": "66ab7875b796b203db9dae40851eee25841f61435e409f7bbb043015febf1bea",
+    "src/review_grains15.py": "8af12112559901db97475b2d0c0f0e6381aee75510cfa66fbc60c310b8e5191b",
+    "splits/folds5.json": "10c4630034ad99dfa798c29d3358d0d22c6876dc9c0bbc7df71f144c512169b8"
+  },
+  "crop_plan_sha256": "6c9a1ce372481416e6b3c85463e9918173238919f02de9d255dfc4f2e448bf44",
+  "fixed_policy": {
+    "selection": "sub6 top1 minus top2 probability < 0.15",
+    "threshold": 0.15,
+    "selected_probability": "(x2_MiT + x3_UNetpp + x4_MiT) / 3",
+    "else_probability": "(x2_MiT + x3_UNetpp) / 2",
+    "uniform_control": "equal three everywhere",
+    "threshold_search": false
+  },
+  "stages": {
+    "existing": {
+      "images": 90,
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "crop": {
+      "images": 36,
+      "folds": [
+        0,
+        1
+      ],
+      "arms": [
+        "matched_crop1024",
+        "crop1536"
+      ]
+    }
+  },
+  "scope": "Stored-probability selective blending only; no ROI reinference or training",
+  "cpu_threads": 2,
+  "opencv_threads": 1,
+  "submission_changed": false,
+  "automatic_model_replacement": false,
+  "created_utc": "2026-10-09T17:54:18.858142+00:00"
+}
