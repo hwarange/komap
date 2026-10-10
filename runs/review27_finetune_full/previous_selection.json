@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "selected_at": "2026-10-10T18:49:03.942995+09:00",
+  "selection_authority": "user chose MiT4 plus UNet++3 in conversation",
+  "status": "selected_and_test_artifacts_verified",
+  "model_name": "MiT4 crop1536 plus UNet++3",
+  "experiments": [
+    {
+      "name": "x4_mit_c1536_bw_r90",
+      "architecture": "Unet",
+      "encoder": "mit_b2",
+      "epochs": 60,
+      "crop": 1536,
+      "tile": 1536,
+      "width": 2560,
+      "scale_multiplier": 2.0,
+      "weight": 0.5
+    },
+    {
+      "name": "x3_unetpp_bw_e120_r90",
+      "architecture": "UnetPlusPlus",
+      "encoder": "resnet34",
+      "epochs": 120,
+      "crop": 1536,
+      "tile": 1536,
+      "width": 3840,
+      "scale_multiplier": 1.0,
+      "weight": 0.5
+    }
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoint": "last.pt",
+  "ensemble": "mean probabilities across five folds within each family, then 50:50 soft voting",
+  "tta": "8 dihedral transforms",
+  "postprocessing": "unchanged src/infer.py postprocess defaults",
+  "validation": {
+    "scope": "90 reused out-of-fold images; not independent test",
+    "source": "runs/review22_pair/results.json",
+    "source_sha256": "3f51b84982c992e8abb28ff1be10328ef58a87e60ba39bcd32b7ddb261d216c3",
+    "scores": {
+      "sub6": 80.7884256007465,
+      "x4_mit_x3_unetpp_pair": 80.900653378248
+    },
+    "delta_vs_sub6_pp": 0.1122277775015008,
+    "group_bootstrap_ci95_pp": [
+      -0.12167412621548471,
+      0.37335654184515404
+    ],
+    "remaining54_delta_pp": -0.008727847736977878,
+    "class_iou_percent": {
+      "Al": 93.74133855612625,
+      "Al3Ni": 80.09209124516556,
+      "Primary Si": 89.6683334626026,
+      "Eutectic Si": 60.752567040890625
+    }
+  },
+  "submission_directory": "submissions/final_pair_mit4_unet3",
+  "reproduction_directory": "delivery/final_pair_repro",
+  "previous_artifact_preserved": "submissions/sub6",
+  "official_submission_performed": false,
+  "new_training_authorized_or_started": true,
+  "further_eda": "diagnostic analysis of existing out-of-fold results; no test-label tuning",
+  "test_inference_started": {
+    "pid": 820406,
+    "started_at": "2026-10-10T18:51:18.078047+09:00",
+    "command": [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "/home/j-j15a106/komap/delivery/final_pair_repro/run_submission.py",
+      "--run",
+      "--gpus",
+      "0",
+      "1",
+      "2",
+      "3",
+      "--project-root",
+      "/home/j-j15a106/komap",
+      "--out",
+      "submissions/final_pair_mit4_unet3"
+    ],
+    "runner_sha256": "1f121cae6e4a44c8cf8a945afe3986e7ed6084be87bde779a397d1b7ac6d8d43",
+    "manifest_sha256": "645be82744b5aba79b30e230f84307309536bbbebd6d3d640dde4eeac34e639e",
+    "new_training": false
+  },
+  "eda_results": {
+    "full90": "runs/review25_final_pair_eda/results.json",
+    "selected_error_cases": "runs/review25_final_pair_eda/case_diagnostics.json",
+    "not_independent_validation": true
+  },
+  "test_inference_finished_utc": "2026-10-10T09:56:14.023013+00:00",
+  "mask_zip": "submissions/final_pair_mit4_unet3/final_pair_masks.zip",
+  "mask_zip_sha256": "51532d2b7b4661afbab176a3f8190f58bbc8160bc58d4e14d53a58f9b142c103",
+  "mask_count": 10,
+  "report": "reports/모델링결과서_김형수없는김형수_최종보강.docx",
+  "report_sha256": "5fbe1eb653f15615441ab7478d80dbc3a5f873d9f204ecfbae736259178d1341",
+  "report_pages": 10,
+  "report_visually_verified": true,
+  "code_bundle": "delivery/final_strengthened_code_bundle.zip",
+  "code_bundle_sha256": "9ee5ff07d41ac774f1302890fd86f5226bff20c858b023126b3a689cf6be3be4",
+  "phase_application": "reports/phase_application_final_pair/phase_area_summary.json",
+  "final_strengthening": {
+    "status": "complete_original_model_and_masks_retained",
+    "decision_record": "runs/review26_final_strengthening/final_review.json",
+    "diagnostics": "runs/review26_final_strengthening/diagnostics/results.json",
+    "scale_comparison": "runs/review26_final_strengthening/scale_trials/results.json",
+    "short_training": "runs/review26_final_strengthening/finetune_plan/results.json",
+    "short_training_epochs_per_arm": 6,
+    "short_training_used_in_selected_model": false,
+    "further_training_scheduled": false
+  },
+  "pending_validation": {
+    "experiment": "review27_finetune_full",
+    "status": "running",
+    "started_at": "2026-10-10T20:06:55+09:00",
+    "controller_pid": 829294,
+    "new_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reused_fold0": true,
+    "epochs_per_fold": 6,
+    "gpu_count": 4,
+    "selection_priority": "highest observed image-mean full90 OOF mIoU across four fixed two-family configurations",
+    "confidence_interval_is_adoption_gate": false,
+    "remaining72_reported_separately": true,
+    "existing_selected_artifacts_preserved": true
+  }
+}

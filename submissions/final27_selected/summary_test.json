@@ -1,0 +1,23 @@
+{
+  "split": "test",
+  "n_images": 10,
+  "n_models": 10,
+  "models_per_image": [
+    10
+  ],
+  "models_per_exp": {
+    "mit4": 5,
+    "unet3": 5
+  },
+  "recipe": {
+    "mit4": 1.0,
+    "unet3": 1.0
+  },
+  "full_mix": 0,
+  "problems": [],
+  "si_classifier": null,
+  "mit_policy": "cap6_width675",
+  "unet_policy": "interface6",
+  "test_ground_truth_used": false,
+  "mixture": "mean5folds per family; then 50:50 soft voting; then unchanged postprocess"
+}

@@ -1,0 +1,21 @@
+{
+  "pid": 820406,
+  "started_at": "2026-10-10T18:51:18.078047+09:00",
+  "command": [
+    "/home/j-j15a106/komap/.venv/bin/python",
+    "/home/j-j15a106/komap/delivery/final_pair_repro/run_submission.py",
+    "--run",
+    "--gpus",
+    "0",
+    "1",
+    "2",
+    "3",
+    "--project-root",
+    "/home/j-j15a106/komap",
+    "--out",
+    "submissions/final_pair_mit4_unet3"
+  ],
+  "runner_sha256": "1f121cae6e4a44c8cf8a945afe3986e7ed6084be87bde779a397d1b7ac6d8d43",
+  "manifest_sha256": "645be82744b5aba79b30e230f84307309536bbbebd6d3d640dde4eeac34e639e",
+  "new_training": false
+}

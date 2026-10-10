@@ -1,0 +1,37 @@
+{
+  "started_utc": "2026-10-10T10:14:06.401476+00:00",
+  "nonce": "e83b9c3d045c453fb5b73364104d455e",
+  "pid": 823579,
+  "plan_sha256": "f7b357342de5dc1da01d17644d5cc16350e521eebe2cbf00c38c0989927d12ba",
+  "gpus": [
+    {
+      "index": 0,
+      "uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976",
+      "memory_mib": 0,
+      "utilization": 0,
+      "idle": true
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c",
+      "memory_mib": 0,
+      "utilization": 0,
+      "idle": true
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-e800362c-2a5a-0208-8d32-28107bca6017",
+      "memory_mib": 0,
+      "utilization": 0,
+      "idle": true
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713",
+      "memory_mib": 0,
+      "utilization": 0,
+      "idle": true
+    }
+  ],
+  "training_started": false
+}

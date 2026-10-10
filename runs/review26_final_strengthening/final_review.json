@@ -1,0 +1,198 @@
+{
+  "status": "complete_retaining_original_selected_pair",
+  "selected_pair": "MiT4 crop1536 epoch60 + UNet++3 crop1536 epoch120; 50:50 soft voting",
+  "selected_full90_mIoU": 80.900653378248,
+  "selected_weights_or_inference_changed": false,
+  "test_masks_changed": false,
+  "automatic_further_training": false,
+  "official_submission_performed": false,
+  "diagnostic_images": 90,
+  "scale_comparison_images": 90,
+  "scale_affected_images": 26,
+  "finetune_validation_images": 18,
+  "finetune_epochs_per_arm": 6,
+  "finetune_started": "2026-10-10T19:19:14+09:00",
+  "finetune_completed": "2026-10-10T19:30:01+09:00",
+  "scale6": {
+    "score": 80.95664213120858,
+    "delta_pp": 0.055988752960577336,
+    "ci95": [
+      -0.052473122833332025,
+      0.1982630712669368
+    ],
+    "decision": "retain as faster research candidate; do not replace final policy",
+    "reason": "Passed all six predeclared diagnostic flags, but 12 of 26 improve, 14 worsen; median negative; mean gain concentrated in two images. Post-hoc sensitivity is descriptive, not independent validation."
+  },
+  "finetune": {
+    "scores": {
+      "baseline_UNet3": {
+        "mIoU": 79.03420741154166,
+        "per_class": {
+          "Al": 92.56192247115305,
+          "Al3Ni": 79.01280190684798,
+          "Primary Si": 85.70712403454887,
+          "Eutectic Si": 58.854981233616726
+        }
+      },
+      "control_UNet3": {
+        "mIoU": 79.08117747043877,
+        "per_class": {
+          "Al": 92.57097288582654,
+          "Al3Ni": 79.14309912414436,
+          "Primary Si": 85.63721035319568,
+          "Eutectic Si": 58.973427518588565
+        }
+      },
+      "interface_UNet3": {
+        "mIoU": 79.2521773022857,
+        "per_class": {
+          "Al": 92.56571477809149,
+          "Al3Ni": 79.14198421390364,
+          "Primary Si": 85.99583712498027,
+          "Eutectic Si": 59.3051730921674
+        }
+      },
+      "baseline_pair": {
+        "mIoU": 80.25877271361557,
+        "per_class": {
+          "Al": 92.9811155044891,
+          "Al3Ni": 80.27483841741545,
+          "Primary Si": 87.1129166279193,
+          "Eutectic Si": 60.66622030463839
+        }
+      },
+      "control_pair": {
+        "mIoU": 80.1920440995499,
+        "per_class": {
+          "Al": 92.97455666967466,
+          "Al3Ni": 80.31314834839043,
+          "Primary Si": 86.91172405616118,
+          "Eutectic Si": 60.568747323973426
+        }
+      },
+      "interface_pair": {
+        "mIoU": 80.2879402942288,
+        "per_class": {
+          "Al": 92.97123866675199,
+          "Al3Ni": 80.3008380639602,
+          "Primary Si": 87.14292505283365,
+          "Eutectic Si": 60.736759393369454
+        }
+      }
+    },
+    "pair_interface_vs_baseline": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 80.2879402942288,
+      "base_cv_mIoU": 80.25877271361557,
+      "delta": 0.029167580613256503,
+      "group_bootstrap_ci95": [
+        -0.060068761874723514,
+        0.14971939958683061
+      ],
+      "delta_per_fold": {
+        "0": 0.029167580613256503
+      },
+      "delta_per_class": {
+        "Al": -0.00987683773713065,
+        "Al3Ni": 0.025999646544752706,
+        "Primary Si": 0.03000842491433649,
+        "Eutectic Si": 0.07053908873107811
+      },
+      "delta_low_contrast": 0.18661277551791736,
+      "improved_images": 12,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "single_interface_vs_baseline": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.2521773022857,
+      "base_cv_mIoU": 79.03420741154166,
+      "delta": 0.21796989074403406,
+      "group_bootstrap_ci95": [
+        0.0734018929657225,
+        0.39673137663180746
+      ],
+      "delta_per_fold": {
+        "0": 0.21796989074403406
+      },
+      "delta_per_class": {
+        "Al": 0.003792306938420451,
+        "Al3Ni": 0.1291823070556634,
+        "Primary Si": 0.2887130904313935,
+        "Eutectic Si": 0.45019185855065835
+      },
+      "delta_low_contrast": 0.4256932437869831,
+      "improved_images": 15,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "decision": "promising single-model pilot; retain original ensemble; no additional folds",
+    "reason": "Single-model gain does not transfer strongly to the selected pair; pair gain 0.02917pp has CI spanning zero on only 18 repeatedly examined images."
+  },
+  "evidence": {
+    "runs/review26_final_strengthening/diagnostics/results.json": "f4952492e0f3d826f801c5d9834b12c07909f318d60a2a27334c9c5a6f7b0e76",
+    "runs/review26_final_strengthening/scale_trials/results.json": "d36b3b44644c0033df717ae5cc07db6cb9e8b8008023a4b034b9ef8d488d2aa2",
+    "runs/review26_final_strengthening/scale_trials/cap6_sensitivity_diagnostic.json": "0387e1203cb79787d988ec58ab88a4fc4ecef54e9ce6087e46aa0d195aa34edd",
+    "runs/review26_final_strengthening/finetune_plan/results.json": "7a05d8efaaca387242938ab03bc4fed9ebe8137761af90b4b7504e6491d26dbb"
+  },
+  "verification": {
+    "all_six_finetune_scores_recomputed": true,
+    "note": "Nested legacy progress fields used a 60-epoch display denominator; actual args and completed logs confirm six epochs per arm.",
+    "protected_payload_hashes_unchanged": [
+      "delivery/final_pair_code_bundle.zip",
+      "delivery/final_pair_repro/manifest.json",
+      "delivery/final_pair_repro/run_submission.py",
+      "submissions/final_pair_mit4_unet3/final_pair_masks.zip"
+    ],
+    "selection_ledger_metadata_updated_only": true
+  },
+  "report": {
+    "path": "reports/모델링결과서_김형수없는김형수_최종보강.docx",
+    "sha256": "5fbe1eb653f15615441ab7478d80dbc3a5f873d9f204ecfbae736259178d1341",
+    "pages": 10,
+    "all_pages_visually_verified": true
+  },
+  "code_bundle": {
+    "path": "delivery/final_strengthened_code_bundle.zip",
+    "sha256": "9ee5ff07d41ac774f1302890fd86f5226bff20c858b023126b3a689cf6be3be4",
+    "file_count": 59
+  }
+}

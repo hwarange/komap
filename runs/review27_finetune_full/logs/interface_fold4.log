@@ -1,0 +1,10 @@
+init from runs/cv/x3_unetpp_bw_e120_r90/fold4/last.pt: loaded 350/350 tensors
+train 72 imgs, 144 microbatches/144 updates per epoch | effective batch 4 | val 18 imgs | UnetPlusPlus-resnet34
+{"epoch": 1, "loss": 0.3184, "lr": 3e-05, "train_sec": 122.8, "gpu_mem_gb": 27.15, "microbatches": 144, "optimizer_updates": 144, "accum_steps": 1, "effective_batch": 4}
+{"epoch": 2, "loss": 0.3192, "lr": 2.7135254915624213e-05, "train_sec": 86.5, "gpu_mem_gb": 27.15, "microbatches": 144, "optimizer_updates": 144, "accum_steps": 1, "effective_batch": 4}
+{"epoch": 3, "loss": 0.3188, "lr": 1.963525491562421e-05, "train_sec": 86.7, "gpu_mem_gb": 27.15, "microbatches": 144, "optimizer_updates": 144, "accum_steps": 1, "effective_batch": 4}
+{"epoch": 4, "loss": 0.3151, "lr": 1.036474508437579e-05, "train_sec": 86.7, "gpu_mem_gb": 27.15, "microbatches": 144, "optimizer_updates": 144, "accum_steps": 1, "effective_batch": 4}
+{"epoch": 5, "loss": 0.3202, "lr": 2.86474508437579e-06, "train_sec": 86.7, "gpu_mem_gb": 27.15, "microbatches": 144, "optimizer_updates": 144, "accum_steps": 1, "effective_batch": 4}
+{"epoch": 6, "loss": 0.3189, "lr": 0.0, "train_sec": 86.8, "gpu_mem_gb": 27.15, "microbatches": 144, "optimizer_updates": 144, "accum_steps": 1, "effective_batch": 4, "val": {"mIoU": 79.48, "Al": 94.21, "Al3Ni": 75.46, "Primary Si": 90.44, "Eutectic Si": 57.82, "low_contrast": 79.89, "high_contrast": 79.32, "step1": 77.15, "step2": 78.42, "step3": 79.8, "step4": 81.63}, "val_pp": {"mIoU": 79.52, "Al": 94.2, "Al3Ni": 75.44, "Primary Si": 90.53, "Eutectic Si": 57.9, "low_contrast": 79.95, "high_contrast": 79.36, "step1": 77.17, "step2": 78.47, "step3": 79.82, "step4": 81.68}, "val_sec": 9.4, "saved": true}
+final {"plain": 79.48, "pp": 79.52, "tta": 79.79, "tta_pp": 79.83}
+done. best val mIoU 79.48

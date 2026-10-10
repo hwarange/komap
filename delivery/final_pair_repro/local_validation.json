@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Mocked subprocess/GPU identity only; real probability/mask/ZIP validators with tiny synthetic arrays. No GPU execution.",
+  "checks": [
+    "CLI rejects missing, duplicate, and negative GPU selection",
+    "Four shards use distinct checked UUIDs and disjoint model assignments",
+    "All100 probability arrays validated before CPU combine",
+    "Ten RGB masks, shapes, colors, recipe, and ZIP bytes verified",
+    "Missing probability and invalid probability mass rejected",
+    "Existing output directory rejected"
+  ],
+  "entrypoint_sha256": "1f121cae6e4a44c8cf8a945afe3986e7ed6084be87bde779a397d1b7ac6d8d43"
+}

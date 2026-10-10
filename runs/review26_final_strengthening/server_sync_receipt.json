@@ -1,0 +1,105 @@
+{
+  "checked_utc": "2026-10-10T10:53:44.723664+00:00",
+  "records": [
+    {
+      "path": "reports/모델링결과서_김형수없는김형수_최종보강.docx",
+      "sha256": "5fbe1eb653f15615441ab7478d80dbc3a5f873d9f204ecfbae736259178d1341",
+      "bytes": 734278
+    },
+    {
+      "path": "scripts/build_modeling_report.py",
+      "sha256": "f0eb7dc258fa052a5a99dd64c5b1864309ae1225eb1ae417d07da9b8170f87c6",
+      "bytes": 86022
+    },
+    {
+      "path": "handoff/HANDOFF_latest.md",
+      "sha256": "5be79047d120b8da2666bd83161c7d25d235d0a1df388c18eac0288c178e297c",
+      "bytes": 59659
+    },
+    {
+      "path": "reports/research_notes.md",
+      "sha256": "2fe18d120832a687ed6661c8e7bdcd56967161fdd34b1cc0cb5c5670b960ebbf",
+      "bytes": 86095
+    },
+    {
+      "path": "reports/idea_journey.md",
+      "sha256": "7a11de36ec85ad3a407155265bddddf5cc4957ae680e03fe8d13aba1bff2af94",
+      "bytes": 57255
+    },
+    {
+      "path": "reports/modeling_document_work/artifact.md",
+      "sha256": "11df3c6c032f368f4a66069cfd7af61478dd4d76f5f3668da417bda18cf77480",
+      "bytes": 13227
+    },
+    {
+      "path": "reports/modeling_document_work/document_state.json",
+      "sha256": "7bad406352fa39385b48b4160faee8738541dfa4274682646409387e9830a5d6",
+      "bytes": 1369
+    },
+    {
+      "path": "reports/modeling_document_work/layout_qa.json",
+      "sha256": "373531cb9d82746f8a7a6835b0288db64d6bdb205e8d574c1203f2255dda7548",
+      "bytes": 2421
+    },
+    {
+      "path": "reports/modeling_document_work/final_build_evidence.json",
+      "sha256": "a7e90165cd5c3f08f18cd04ad39a4a2bc51c62e62a2d5f7f70857659726de120",
+      "bytes": 4690
+    },
+    {
+      "path": "delivery/final_model_selection.json",
+      "sha256": "6972058985134291a7370f2bed60702c500715e714b45c90d13e458a900435ff",
+      "bytes": 4338
+    },
+    {
+      "path": "delivery/build_final_strengthened_bundle.py",
+      "sha256": "b8f11664d350f19523b24a09dbaa26b4097fbaf3bf6aaa4d064ce48b3f82ebf9",
+      "bytes": 14481
+    },
+    {
+      "path": "delivery/final_strengthened_bundle_README.md",
+      "sha256": "d4a4ea310cfd179f4cee0fc4e597f24cc9f0661c794057f5fad1ca2e82d49861",
+      "bytes": 7595
+    },
+    {
+      "path": "delivery/final_strengthened_code_bundle.zip",
+      "sha256": "9ee5ff07d41ac774f1302890fd86f5226bff20c858b023126b3a689cf6be3be4",
+      "bytes": 414504
+    },
+    {
+      "path": "delivery/final_strengthened_code_bundle_receipt.json",
+      "sha256": "65d426b33230c4f90cf6ea2f8df0231ff8f86f66b9d2fac9db360475e2f54203",
+      "bytes": 12906
+    },
+    {
+      "path": "runs/review26_final_strengthening/final_review.json",
+      "sha256": "9bfca5503bc1c6454a2f3844cfec14a19e386281e4b88ab27870fa6c4c688e89",
+      "bytes": 7072
+    },
+    {
+      "path": "runs/review26_final_strengthening/protected_artifacts.json",
+      "sha256": "e73236471e5ccfa8567f903c501cf104608842a1e9238b8887a9a5dba5923f6a",
+      "bytes": 945
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/local_metadata_verification.json",
+      "sha256": "9e9c49673ec522840ba5d331eeca31e1980ce542904796711471fe90051711d1",
+      "bytes": 2730
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/cap6_sensitivity_diagnostic.json",
+      "sha256": "0387e1203cb79787d988ec58ab88a4fc4ecef54e9ce6087e46aa0d195aa34edd",
+      "bytes": 3095
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/local_completion_verification.json",
+      "sha256": "5816d5f1bb9c4384e438ee8c18efe9075b3daaddc117bff89570f6e51e9905c3",
+      "bytes": 3367
+    }
+  ],
+  "remote_verification": {
+    "verified_files": 19,
+    "gpu_inventory": "0, GPU-76da22e2-40da-ebc0-098a-fa92ba030976, 0, 0\n1, GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c, 0, 0\n2, GPU-e800362c-2a5a-0208-8d32-28107bca6017, 0, 0\n3, GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, 0, 0\n"
+  },
+  "official_submission_performed": false
+}

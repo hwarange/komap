@@ -1,0 +1,14 @@
+{
+  "matched_remote_files": {
+    "phase_area_summary.json": {
+      "sha256": "9a44d3f58e65b8ecd0f249352c17102e6e57a0a29323d4b1e747a4de031ad017"
+    },
+    "phase_area_fractions.png": {
+      "sha256": "ba9fda549fae61cbf47c0eb5ab3d44130d0bf4354a05bb6e3b183cda40844e4e"
+    }
+  },
+  "source_masks_match_local": true,
+  "mask_count": 10,
+  "total_pixels": 9074964,
+  "script_hash_matched": true
+}

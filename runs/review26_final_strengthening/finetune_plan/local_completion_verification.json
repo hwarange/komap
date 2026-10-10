@@ -1,0 +1,86 @@
+{
+  "results_and_plan_verified": true,
+  "all_six_epochs_verified": true,
+  "downloaded_files": [
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/plan.json",
+      "sha256": "14c683c41fb881e71449440bca109013d21c62771b52ddbecd38b06d4ce2fc87",
+      "bytes": 60843
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/state.json",
+      "sha256": "429baff348fe4da6551c3052ffe6ca1358bbaac29a4b220b42045b4fd5418ec6",
+      "bytes": 370
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/started.json",
+      "sha256": "9261f071ad78c50f855e1447ffc4fc06ac7440df86649e4149c40bd07c03f14a",
+      "bytes": 336
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/results.json",
+      "sha256": "7a05d8efaaca387242938ab03bc4fed9ebe8137761af90b4b7504e6491d26dbb",
+      "bytes": 16355
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/per_image_rows.json",
+      "sha256": "ef915be5757d7e3177e46af2c380212bb6ebfcd925eb12bc26504ab48bea679b",
+      "bytes": 20766
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/completed_jobs.json",
+      "sha256": "b8bac1bbbee2c2d7e762901d7fd0ca423ac763f2f2c99a53438b9af2c2dbaf67",
+      "bytes": 7181
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/all.done",
+      "sha256": "34ba09aeee97fb880fc0aa77934690614d338238e7735d38564d760a251f949d",
+      "bytes": 340
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/controller.log",
+      "sha256": "264b59553ab05feac5edc92b481e4115b85e5e8f489db154b1a942cbb4dcfbd5",
+      "bytes": 56348
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/control/args.json",
+      "sha256": "e394b65a377a7e692ef2ae78e306cb209037523e53df8a82f4e038ad6fdbb781",
+      "bytes": 1295
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/control/log.jsonl",
+      "sha256": "b27c83854683f64fab5997701e3d2d6ac37bb7606e7e979e382babaea5a63332",
+      "bytes": 1521
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/control/result.json",
+      "sha256": "d50e8f49f10b1145301bb6f16b1e26ef21b0b756b2c20c0faf5fcb5bb1bb5ff2",
+      "bytes": 8859
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/interface/args.json",
+      "sha256": "1af2184fd27acea2212048b753da23d59d32fe04d3bde675fb4f8d29ea8e3827",
+      "bytes": 1300
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/interface/log.jsonl",
+      "sha256": "eb1d3b3ef632184fa4af0a71463a7044f730673dbf0d94eff9d20912b33eac19",
+      "bytes": 1521
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/interface/result.json",
+      "sha256": "3704a297c22bcc7c912c0676104619465ccc50d562f52b745580ab070e410889",
+      "bytes": 8876
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/logs/control.log",
+      "sha256": "81551ea8b80a2c47fbe58ff9bd613beb3fcabb503355d6daccdeb0dc12067f4a",
+      "bytes": 1804
+    },
+    {
+      "path": "runs/review26_final_strengthening/finetune_plan/logs/interface.log",
+      "sha256": "862e5b46779ea0f3c5d12acf302c34b58c1ae947be0b34d688f9787c50c63a33",
+      "bytes": 1804
+    }
+  ]
+}

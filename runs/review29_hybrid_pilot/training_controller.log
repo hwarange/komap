@@ -1,0 +1,3 @@
+train 72 imgs, 288 microbatches/144 updates per epoch | effective batch 4 | val 18 imgs | HybridMiTCNN29-mit_b2
+{"epoch": 1, "loss": 1.2505, "lr": 0.0003, "train_sec": 256.9, "gpu_mem_gb": 45.65, "microbatches": 288, "optimizer_updates": 144, "accum_steps": 2, "effective_batch": 4}
+{"epoch": 2, "loss": 0.6657, "lr": 0.0002997874043515143, "train_sec": 213.2, "gpu_mem_gb": 45.65, "microbatches": 288, "optimizer_updates": 144, "accum_steps": 2, "effective_batch": 4}

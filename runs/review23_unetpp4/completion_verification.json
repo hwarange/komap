@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-10T18:41:18.400772+09:00",
+  "checks": {
+    "completion": {
+      "time": "2026-10-10T15:30:53+09:00",
+      "outcome": "unetpp4_two_fold_pilot_complete",
+      "folds": [
+        0,
+        1
+      ],
+      "images": 36,
+      "epochs": 60,
+      "new_training_jobs": 2,
+      "results_sha256": "573f8e61b167051c0b4f3d67d1d7c2d5f3fcd641bf2d1c78ad29b5fbe2781fa5",
+      "plan_sha256": "6e144ce53aeea8bd41ef255b58e8192048dda8d437c8ceaaec7689c6ba8168b2",
+      "further_training_scheduled": false,
+      "submission_changed": false
+    },
+    "source_hashes_matched": 8,
+    "errors": []
+  },
+  "gpu_status": "0, NVIDIA L40S, 0 %, 0 MiB\n1, NVIDIA L40S, 0 %, 0 MiB\n2, NVIDIA L40S, 0 %, 0 MiB\n3, NVIDIA L40S, 0 %, 0 MiB\n",
+  "downloaded_files": {
+    "runs/review23_unetpp4/all.done": {
+      "sha256": "728b76818d6305ecad7f8ef4c851040dfdbb0dc8536dfd5799ede8f6183b529e",
+      "bytes": 422
+    },
+    "runs/review23_unetpp4/completed_jobs.json": {
+      "sha256": "a6728d77c67ddf2f9f3c6bcfbfcc0a377811bc06b621f4527def9beae4aa5a1e",
+      "bytes": 501
+    },
+    "runs/review23_unetpp4/per_image_rows.json": {
+      "sha256": "ddb31f6c05412ec4c5f50b9ddf2629be2234cb637486dca6cbf2e5b9c0564cd9",
+      "bytes": 53937
+    },
+    "runs/review23_unetpp4/results.json": {
+      "sha256": "573f8e61b167051c0b4f3d67d1d7c2d5f3fcd641bf2d1c78ad29b5fbe2781fa5",
+      "bytes": 88975
+    },
+    "runs/review23_unetpp4/state.json": {
+      "sha256": "349d24b3b0e3ebc24566de51cfbca0890b520512bff6ae991e88805bef843b02",
+      "bytes": 788
+    },
+    "runs/review23_unetpp4/summary.txt": {
+      "sha256": "fdc8f35f61ff0a6097b007fadaf2d6d956914821ace823c728a1a80aa96fba99",
+      "bytes": 4432
+    },
+    "runs/review23_unetpp4/logs/evaluation.log": {
+      "sha256": "25f82919ff963b9770c4f45fff124bd21452266938c5505a1b986629880f3f99",
+      "bytes": 4611
+    },
+    "runs/review23_unetpp4/logs/unetpp_fold0.log": {
+      "sha256": "81586ada368c3dea9d25269858ecd06d51f4d969e01383a501ff2e0df8b02408",
+      "bytes": 16600
+    },
+    "runs/review23_unetpp4/logs/unetpp_fold1.log": {
+      "sha256": "26dcff07a10880b8f38866b98aa766ff67ee16b7915fae41406d423920573304",
+      "bytes": 16624
+    }
+  },
+  "local_score_recalculation": {
+    "images_per_recipe": 36,
+    "recipes": 7,
+    "all_means_match": true,
+    "tolerance": 1e-09
+  }
+}

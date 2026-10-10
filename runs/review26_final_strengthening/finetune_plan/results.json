@@ -1,0 +1,379 @@
+{
+  "time": "2026-10-10T19:30:01+09:00",
+  "images": 18,
+  "fold": 0,
+  "scores": {
+    "baseline_UNet3": {
+      "mIoU": 79.03420741154166,
+      "per_class": {
+        "Al": 92.56192247115305,
+        "Al3Ni": 79.01280190684798,
+        "Primary Si": 85.70712403454887,
+        "Eutectic Si": 58.854981233616726
+      }
+    },
+    "control_UNet3": {
+      "mIoU": 79.08117747043877,
+      "per_class": {
+        "Al": 92.57097288582654,
+        "Al3Ni": 79.14309912414436,
+        "Primary Si": 85.63721035319568,
+        "Eutectic Si": 58.973427518588565
+      }
+    },
+    "interface_UNet3": {
+      "mIoU": 79.2521773022857,
+      "per_class": {
+        "Al": 92.56571477809149,
+        "Al3Ni": 79.14198421390364,
+        "Primary Si": 85.99583712498027,
+        "Eutectic Si": 59.3051730921674
+      }
+    },
+    "baseline_pair": {
+      "mIoU": 80.25877271361557,
+      "per_class": {
+        "Al": 92.9811155044891,
+        "Al3Ni": 80.27483841741545,
+        "Primary Si": 87.1129166279193,
+        "Eutectic Si": 60.66622030463839
+      }
+    },
+    "control_pair": {
+      "mIoU": 80.1920440995499,
+      "per_class": {
+        "Al": 92.97455666967466,
+        "Al3Ni": 80.31314834839043,
+        "Primary Si": 86.91172405616118,
+        "Eutectic Si": 60.568747323973426
+      }
+    },
+    "interface_pair": {
+      "mIoU": 80.2879402942288,
+      "per_class": {
+        "Al": 92.97123866675199,
+        "Al3Ni": 80.3008380639602,
+        "Primary Si": 87.14292505283365,
+        "Eutectic Si": 60.736759393369454
+      }
+    }
+  },
+  "comparisons": {
+    "control_pair_vs_baseline_pair": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 80.1920440995499,
+      "base_cv_mIoU": 80.25877271361557,
+      "delta": -0.06672861406564855,
+      "group_bootstrap_ci95": [
+        -0.2516127650291319,
+        0.1074529480614472
+      ],
+      "delta_per_fold": {
+        "0": -0.06672861406564855
+      },
+      "delta_per_class": {
+        "Al": -0.0065588348144558495,
+        "Al3Ni": 0.03830993097497447,
+        "Primary Si": -0.20119257175814,
+        "Eutectic Si": -0.09747298066496413
+      },
+      "delta_low_contrast": 0.12396193570935547,
+      "improved_images": 10,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "interface_pair_vs_baseline_pair": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 80.2879402942288,
+      "base_cv_mIoU": 80.25877271361557,
+      "delta": 0.029167580613256503,
+      "group_bootstrap_ci95": [
+        -0.060068761874723514,
+        0.14971939958683061
+      ],
+      "delta_per_fold": {
+        "0": 0.029167580613256503
+      },
+      "delta_per_class": {
+        "Al": -0.00987683773713065,
+        "Al3Ni": 0.025999646544752706,
+        "Primary Si": 0.03000842491433649,
+        "Eutectic Si": 0.07053908873107811
+      },
+      "delta_low_contrast": 0.18661277551791736,
+      "improved_images": 12,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "interface_pair_vs_control_pair": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 80.2879402942288,
+      "base_cv_mIoU": 80.1920440995499,
+      "delta": 0.09589619467890505,
+      "group_bootstrap_ci95": [
+        -0.0006029346177669389,
+        0.23434282849951385
+      ],
+      "delta_per_fold": {
+        "0": 0.09589619467890505
+      },
+      "delta_per_class": {
+        "Al": -0.0033180029226748,
+        "Al3Ni": -0.012310284430221764,
+        "Primary Si": 0.2312009966724765,
+        "Eutectic Si": 0.16801206939604224
+      },
+      "delta_low_contrast": 0.0626508398085619,
+      "improved_images": 13,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "control_UNet3_vs_baseline_UNet3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.08117747043877,
+      "base_cv_mIoU": 79.03420741154166,
+      "delta": 0.04697005889711568,
+      "group_bootstrap_ci95": [
+        -0.17317482819744148,
+        0.29377195635207876
+      ],
+      "delta_per_fold": {
+        "0": 0.04697005889711568
+      },
+      "delta_per_class": {
+        "Al": 0.00905041467347366,
+        "Al3Ni": 0.1302972172963687,
+        "Primary Si": -0.06991368135319379,
+        "Eutectic Si": 0.11844628497182105
+      },
+      "delta_low_contrast": 0.3017615711263299,
+      "improved_images": 10,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "interface_UNet3_vs_baseline_UNet3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.2521773022857,
+      "base_cv_mIoU": 79.03420741154166,
+      "delta": 0.21796989074403406,
+      "group_bootstrap_ci95": [
+        0.0734018929657225,
+        0.39673137663180746
+      ],
+      "delta_per_fold": {
+        "0": 0.21796989074403406
+      },
+      "delta_per_class": {
+        "Al": 0.003792306938420451,
+        "Al3Ni": 0.1291823070556634,
+        "Primary Si": 0.2887130904313935,
+        "Eutectic Si": 0.45019185855065835
+      },
+      "delta_low_contrast": 0.4256932437869831,
+      "improved_images": 15,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    },
+    "interface_UNet3_vs_control_UNet3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "cv_mIoU": 79.2521773022857,
+      "base_cv_mIoU": 79.08117747043877,
+      "delta": 0.1709998318469184,
+      "group_bootstrap_ci95": [
+        0.056785991677244435,
+        0.2798174875322404
+      ],
+      "delta_per_fold": {
+        "0": 0.1709998318469184
+      },
+      "delta_per_class": {
+        "Al": -0.005258107735053209,
+        "Al3Ni": -0.0011149102407053135,
+        "Primary Si": 0.35862677178458724,
+        "Eutectic Si": 0.33174557357883727
+      },
+      "delta_low_contrast": 0.12393167266065319,
+      "improved_images": 13,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ]
+    }
+  },
+  "plan_sha256": "14c683c41fb881e71449440bca109013d21c62771b52ddbecd38b06d4ce2fc87",
+  "completion_receipts": [
+    {
+      "id": "control",
+      "completed": "2026-10-10T19:29:45+09:00",
+      "train_seconds": 553.8,
+      "hashes": {
+        "runs/review26_final_strengthening/finetune_plan/control/args.json": "e394b65a377a7e692ef2ae78e306cb209037523e53df8a82f4e038ad6fdbb781",
+        "runs/review26_final_strengthening/finetune_plan/control/log.jsonl": "b27c83854683f64fab5997701e3d2d6ac37bb7606e7e979e382babaea5a63332",
+        "runs/review26_final_strengthening/finetune_plan/control/last.pt": "f1dc27c1be365344002bce700a7c7f2096a44b5421502110c6b6e0b04cc17969",
+        "runs/review26_final_strengthening/finetune_plan/control/result.json": "d50e8f49f10b1145301bb6f16b1e26ef21b0b756b2c20c0faf5fcb5bb1bb5ff2",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A109_step1_sample3.npy": "bd0275c707c8f8071465763c88e59389549db435d1c6f5e83cd47ad4d7dff86a",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A118_step2_sample1.npy": "40c9a4943b6f8dc8f8f3453bc3cd5f195e3091e12d753bd627f74f3032268aae",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A137_step4_sample2.npy": "e5b8922a6ef85579007784b4da112acc32738689c443afa001c8679061571cdc",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A138_step4_sample3.npy": "f621e5faa800f9da59673e611b8826037d5b6db9e670ab7dd2b22d2af34282ac",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A146_step2_sample1.npy": "35ed416d087b5c8cc3a91784f587bb977216df0ff10537ce07534c07592aa26b",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A153_step1_sample4.npy": "8117643384a59f9fc33c9ab9c835f2e6db697d29ae72ec6fc75d0f55784ece15",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A153_step3_sample3.npy": "044195bfba3a26260d7f65fbf50867e0b27a79c1b6fec2f43d2868453bdb604b",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A159_step4_sample4.npy": "3684c35ce97557c90c370c3c7b69102b0db4fb27eb7bf9bb2184a54f8cc4a507",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A224_step1_sample2.npy": "353630cfdf78ecdf3a59d30760ba15ed9f06d5625af10d8131ae0616fe74063b",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A224_step4_sample2.npy": "94030b1ac7b89ee62ec569991a67c8cb1daaed082e910aba6d9fe3a0fab562bf",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A39_step2_sample3.npy": "d820d74916b6b4d077daf27e5e4d2fc49ffdc08e7ad49f4c18ff9c8af162dc98",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A42_step2_sample4.npy": "3343b1bf70a5e9b7bf21cc9e7cf934f546bcde10f17168dab01185d44607daa4",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A72_step4_sample4.npy": "175b8b584d2746646d92a557a3bb11264e690ea1f76081829e5cab27d25ae2a7",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A7_step1_sample2.npy": "0b8597c0c965c63a6cc8ac32d351108b220b70d32cad44d729bc80fdc5616b54",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A7_step1_sample4.npy": "9d326c138855cf57a069352e10683da672a9fee8334316fd89beeb317a410274",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A7_step4_sample3.npy": "0d32096416a7d2b9366a0c6c3604b87e98bf56e3a51fc5fd9f5f80ffb1d2e021",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A87_step2_sample2.npy": "36ae1be68fd2f96ab19573870f01e9c5a137f6ca6990af9aa335ff42fd7e8d7d",
+        "runs/review26_final_strengthening/finetune_plan/oof/control/A96_step1_sample1.npy": "cf85f1b2ef3a77c676eb26cb756acb8937794347eb8a9cdd160a821c5be37eee"
+      }
+    },
+    {
+      "id": "interface",
+      "completed": "2026-10-10T19:29:45+09:00",
+      "train_seconds": 555.1,
+      "hashes": {
+        "runs/review26_final_strengthening/finetune_plan/interface/args.json": "1af2184fd27acea2212048b753da23d59d32fe04d3bde675fb4f8d29ea8e3827",
+        "runs/review26_final_strengthening/finetune_plan/interface/log.jsonl": "eb1d3b3ef632184fa4af0a71463a7044f730673dbf0d94eff9d20912b33eac19",
+        "runs/review26_final_strengthening/finetune_plan/interface/last.pt": "7fd4de6f04026b2e4f6bcefdcd608a5daf7fafb7c45d7d03ceff8b04957daebd",
+        "runs/review26_final_strengthening/finetune_plan/interface/result.json": "3704a297c22bcc7c912c0676104619465ccc50d562f52b745580ab070e410889",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A109_step1_sample3.npy": "7066aaf6279c7f781f82876565333351194bd9ae59103504269d99cf52f394ac",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A118_step2_sample1.npy": "dd6ed49af09e8f77e639f699043dfc22e95c1583df9166eb1fcb6ce64086a715",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A137_step4_sample2.npy": "436fe73ddafc32c221c981dec9f6c546e99ddd34fb93e43dae77d14c53c6c5c1",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A138_step4_sample3.npy": "c735cf103afd2d4cf5df365a840c257e576a2627f374a01c93cb1c3607966eda",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A146_step2_sample1.npy": "bf79a918fd5aa22a8fd12b72353fbec55305df64fa91e2d6b6981a14512b7b48",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A153_step1_sample4.npy": "5d4c845c7c561a8e4905f85edc32a8839b21f5ab4e8f25e2f78ddbec3c2bf92d",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A153_step3_sample3.npy": "733cabd1e1fe9c209f58bb416fdbae11cb3d967844cc8026a3bb4bfdc4d569e8",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A159_step4_sample4.npy": "cf02744601da7c3ea61a4722f2ac83f8f00d5a01a19eff3d967b52fc45b0dabd",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A224_step1_sample2.npy": "f91f55e7061f1932909abcd49458d0242004d61eadf63dc9166a58c0035d9a4c",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A224_step4_sample2.npy": "4f2467f00efbf1ebea17de28c71b0fc791cfc6f81b3ba36635fdf1b09e6fb804",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A39_step2_sample3.npy": "03d7bd8e70b5739d9c2629aec7c1fcfe7bd0f982db9b8820848d940ae5b63f12",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A42_step2_sample4.npy": "3f1b8b56cff730eab5b9c3ae2c5c817f6480d441b58330e39c786ccb5253fdd0",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A72_step4_sample4.npy": "5b58ae5769f09fd1e82d5c6811daab018516795ab1664559c769046d48c9b512",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A7_step1_sample2.npy": "15c24194b129276316a8211ff84b5969b054287a383b4fae6c8d3a7b1ba3d913",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A7_step1_sample4.npy": "ab12cef930c304ac2e40448f290ea7fbeba739ff381a32149b38f368f3a7b39d",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A7_step4_sample3.npy": "b3f694f870117521b1a0a27dd2310239e0ae263c794f08d53f7ee1ce258ab99f",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A87_step2_sample2.npy": "edead2af13be7f2e55bf92a36720deec5d01035e61530fba73882930b20b365e",
+        "runs/review26_final_strengthening/finetune_plan/oof/interface/A96_step1_sample1.npy": "b2b896f4b55d8d7aaf9f81b0b9bbcaae9a940a1533bb224989b1b146f4fe0276"
+      }
+    }
+  ],
+  "independent_validation": false,
+  "submission_changed": false,
+  "note": "Exploratory single-holdout paired continuation; no full90 claim or automatic adoption/expansion"
+}

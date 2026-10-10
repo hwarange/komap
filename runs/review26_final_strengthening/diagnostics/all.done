@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-10T10:08:37.390758+00:00",
+  "outcome": "frozen_final_pair_full90_diagnostics_complete",
+  "duration_seconds": 20.639532193541527,
+  "artifacts": [
+    {
+      "path": "runs/review26_final_strengthening/diagnostics/results.json",
+      "sha256": "f4952492e0f3d826f801c5d9834b12c07909f318d60a2a27334c9c5a6f7b0e76",
+      "bytes": 166696
+    },
+    {
+      "path": "runs/review26_final_strengthening/diagnostics/per_image.json",
+      "sha256": "020fc4169885c06845f98e86662d531cd4950923a2c72f851572ef2d94774244",
+      "bytes": 969417
+    },
+    {
+      "path": "runs/review26_final_strengthening/diagnostics/summary.png",
+      "sha256": "b0ef275018acc1805e97525c5bfa512747a3f4420a73d46e2344f31905a3906f",
+      "bytes": 186257
+    }
+  ],
+  "script": {
+    "path": "scripts/analyze_final_confusion26.py",
+    "sha256": "649f028fadf97916ee45390e00f563ae687dc5678735ee965faf633a1e214206",
+    "bytes": 14935
+  },
+  "gpu_used": false,
+  "submission_changed": false
+}

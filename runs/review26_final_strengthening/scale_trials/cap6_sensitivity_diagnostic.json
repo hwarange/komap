@@ -1,0 +1,104 @@
+{
+  "median_delta_pp": -0.13656586656091152,
+  "mean_pp": 0.19380722178661655,
+  "improved": 12,
+  "worsened": 14,
+  "unchanged": 0,
+  "top_gains": [
+    [
+      "A57_step1_sample3",
+      4.532871083567425
+    ],
+    [
+      "A18_step2_sample1",
+      2.82033480654158
+    ],
+    [
+      "A71_step2_sample1",
+      0.7940938968116873
+    ],
+    [
+      "A63_step1_sample4",
+      0.6518642371613592
+    ],
+    [
+      "A96_step1_sample1",
+      0.5401151804640403
+    ],
+    [
+      "A8_step3_sample3",
+      0.3947712211640031
+    ]
+  ],
+  "net_sum_pp": 5.03898776645203,
+  "top2_sum_pp": 7.353205890109005,
+  "top2_fraction_of_net": 1.459262500906293,
+  "excluding_top2_mean_affected_pp": -0.09642575515237395,
+  "leave_one_alloy_worst": [
+    {
+      "alloy": "A57",
+      "removed_n": 1,
+      "removed_sum_pp": 4.532871083567425,
+      "remaining_affected_mean_pp": 0.020244667315384213,
+      "remaining_full90_mean_pp": 0.005686704302074217
+    },
+    {
+      "alloy": "A18",
+      "removed_n": 1,
+      "removed_sum_pp": 2.82033480654158,
+      "remaining_affected_mean_pp": 0.08874611839641801,
+      "remaining_full90_mean_pp": 0.02492868494281405
+    },
+    {
+      "alloy": "A71",
+      "removed_n": 1,
+      "removed_sum_pp": 0.7940938968116873,
+      "remaining_affected_mean_pp": 0.16979575478561373,
+      "remaining_full90_mean_pp": 0.047695436737531946
+    },
+    {
+      "alloy": "A63",
+      "removed_n": 1,
+      "removed_sum_pp": 0.6518642371613592,
+      "remaining_affected_mean_pp": 0.17548494117162683,
+      "remaining_full90_mean_pp": 0.04929352280101877
+    },
+    {
+      "alloy": "A96",
+      "removed_n": 1,
+      "removed_sum_pp": 0.5401151804640403,
+      "remaining_affected_mean_pp": 0.17995490343951961,
+      "remaining_full90_mean_pp": 0.050549130179640335
+    }
+  ],
+  "leave_one_alloy_best": [
+    {
+      "alloy": "A11",
+      "removed_n": 2,
+      "removed_sum_pp": -1.8505188616088297,
+      "remaining_affected_mean_pp": 0.2870627761692025,
+      "remaining_full90_mean_pp": 0.07828984804614614
+    },
+    {
+      "alloy": "A64",
+      "removed_n": 1,
+      "removed_sum_pp": -0.5634753424360706,
+      "remaining_affected_mean_pp": 0.22409852435552402,
+      "remaining_full90_mean_pp": 0.06294902369537192
+    },
+    {
+      "alloy": "A78",
+      "removed_n": 1,
+      "removed_sum_pp": -0.4432555435313068,
+      "remaining_affected_mean_pp": 0.2192897323993335,
+      "remaining_full90_mean_pp": 0.061598239438015026
+    }
+  ],
+  "negative_after_leaving_one_alloy": 0,
+  "created_utc": "2026-10-10T10:20:41.476227+00:00",
+  "source_results_sha256": "d36b3b44644c0033df717ae5cc07db6cb9e8b8008023a4b034b9ef8d488d2aa2",
+  "source_results": "runs/review26_final_strengthening/scale_trials/results.json",
+  "note": "Post-hoc descriptive sensitivity only. Removing the largest observed gains is not an independent validation test; no thresholds, weights, model or submission changed.",
+  "submission_changed": false,
+  "training_started": false
+}

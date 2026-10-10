@@ -1,0 +1,3549 @@
+{
+  "created_utc": "2026-10-10T10:18:31.977799+00:00",
+  "nonce": "e83b9c3d045c453fb5b73364104d455e",
+  "plan_sha256": "f7b357342de5dc1da01d17644d5cc16350e521eebe2cbf00c38c0989927d12ba",
+  "scopes": {
+    "full90": {
+      "arms": {
+        "saved_baseline": {
+          "images": 90,
+          "mIoU": 80.900653378248,
+          "class_IoU": {
+            "Al": 93.74133855612625,
+            "Al3Ni": 80.09209124516556,
+            "Primary Si": 89.6683334626026,
+            "Eutectic Si": 60.752567040890625
+          },
+          "class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          },
+          "per_fold": {
+            "0": 80.25877271361557,
+            "1": 82.97764713791638,
+            "2": 80.71191549663776,
+            "3": 79.43432812415746,
+            "4": 81.12060341891282
+          }
+        },
+        "fresh_scale8": {
+          "images": 90,
+          "mIoU": 80.9006186212145,
+          "class_IoU": {
+            "Al": 93.7413227770634,
+            "Al3Ni": 80.09202515455202,
+            "Primary Si": 89.66824268386739,
+            "Eutectic Si": 60.752597300010024
+          },
+          "class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          },
+          "per_fold": {
+            "0": 80.25866775732052,
+            "1": 82.97762538500746,
+            "2": 80.71181400584274,
+            "3": 79.43438253898896,
+            "4": 81.12060341891282
+          }
+        },
+        "cap6": {
+          "images": 90,
+          "mIoU": 80.95664213120858,
+          "class_IoU": {
+            "Al": 93.73474284219657,
+            "Al3Ni": 80.10883831192295,
+            "Primary Si": 89.74067407057531,
+            "Eutectic Si": 60.83644916121664
+          },
+          "class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          },
+          "per_fold": {
+            "0": 80.29608021333519,
+            "1": 83.07109286075564,
+            "2": 80.94439844393885,
+            "3": 79.52878625223445,
+            "4": 80.94285288577876
+          }
+        },
+        "cap4": {
+          "images": 90,
+          "mIoU": 80.81646033817854,
+          "class_IoU": {
+            "Al": 93.65887569197079,
+            "Al3Ni": 79.87991158708155,
+            "Primary Si": 89.7445319626677,
+            "Eutectic Si": 60.53133306086552
+          },
+          "class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          },
+          "per_fold": {
+            "0": 80.34120734582416,
+            "1": 82.79834478138838,
+            "2": 81.101245356367,
+            "3": 79.47398870940636,
+            "4": 80.36751549790682
+          }
+        }
+      },
+      "comparisons_vs_saved": {
+        "fresh_scale8": {
+          "images": 90,
+          "alloy_groups": 71,
+          "cv_mIoU": 80.9006186212145,
+          "base_cv_mIoU": 80.900653378248,
+          "delta": -3.475703349988319e-05,
+          "group_bootstrap_ci95": [
+            -0.00015221210049384451,
+            7.219196320904852e-05
+          ],
+          "delta_per_fold": {
+            "0": -0.00010495629505176869,
+            "1": -2.1752908923626062e-05,
+            "2": -0.00010149079503286707,
+            "3": 5.4414831508845886e-05,
+            "4": 0.0
+          },
+          "delta_per_class": {
+            "Al": -1.5779062851903643e-05,
+            "Al3Ni": -6.609061354115257e-05,
+            "Primary Si": -9.07787352125408e-05,
+            "Eutectic Si": 3.0259119405210792e-05
+          },
+          "delta_low_contrast": 2.3533776605688672e-05,
+          "improved_images": 8,
+          "names": [
+            "A101_step3_sample3",
+            "A106_step4_sample1",
+            "A108_step2_sample2",
+            "A109_step1_sample3",
+            "A111_step1_sample2",
+            "A111_step3_sample4",
+            "A117_step4_sample2",
+            "A118_step2_sample1",
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A121_step2_sample2",
+            "A123_step1_sample1",
+            "A123_step4_sample2",
+            "A125_step1_sample4",
+            "A125_step2_sample1",
+            "A130_step1_sample1",
+            "A137_step4_sample2",
+            "A138_step4_sample3",
+            "A139_step3_sample4",
+            "A139_step4_sample3",
+            "A140_step4_sample2",
+            "A146_step2_sample1",
+            "A147_step4_sample4",
+            "A150_step4_sample1",
+            "A152_step2_sample1",
+            "A153_step1_sample4",
+            "A153_step3_sample3",
+            "A154_step2_sample3",
+            "A155_step3_sample2",
+            "A156_step4_sample1",
+            "A156_step4_sample2",
+            "A159_step4_sample4",
+            "A15_step1_sample1",
+            "A164_step1_sample2",
+            "A164_step4_sample1",
+            "A166_step4_sample3",
+            "A167_step3_sample4",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A181_step1_sample1",
+            "A181_step4_sample4",
+            "A182_step4_sample3",
+            "A186_step2_sample2",
+            "A187_step2_sample1",
+            "A187_step4_sample4",
+            "A188_step4_sample1",
+            "A18_step2_sample1",
+            "A191_step3_sample1",
+            "A191_step4_sample1",
+            "A191_step4_sample3",
+            "A200_step4_sample3",
+            "A201_step3_sample1",
+            "A201_step3_sample4",
+            "A21_step2_sample4",
+            "A222_step2_sample2",
+            "A224_step1_sample2",
+            "A224_step4_sample2",
+            "A2_step4_sample1",
+            "A39_step2_sample3",
+            "A40_step3_sample3",
+            "A40_step3_sample4",
+            "A42_step2_sample4",
+            "A44_step4_sample3",
+            "A49_step2_sample2",
+            "A51_step4_sample4",
+            "A55_step2_sample1",
+            "A55_step3_sample4",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A7_step1_sample2",
+            "A7_step1_sample4",
+            "A7_step4_sample3",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A66_step3_sample2",
+              "delta_pp": -0.0021469234561033446
+            },
+            {
+              "name": "A67_step1_sample1",
+              "delta_pp": -0.0021409322919829776
+            },
+            {
+              "name": "A18_step2_sample1",
+              "delta_pp": -0.001893359069471412
+            },
+            {
+              "name": "A72_step4_sample4",
+              "delta_pp": -0.0017116017711149567
+            },
+            {
+              "name": "A96_step1_sample1",
+              "delta_pp": -0.0010003003332315075
+            },
+            {
+              "name": "A16_step4_sample4",
+              "delta_pp": -0.0009224451426814717
+            },
+            {
+              "name": "A57_step1_sample3",
+              "delta_pp": -0.000904389167921682
+            },
+            {
+              "name": "A8_step2_sample3",
+              "delta_pp": -0.0009018163902085874
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -0.00041238490831041474
+            },
+            {
+              "name": "A101_step3_sample3",
+              "delta_pp": 0.0
+            }
+          ],
+          "drops_below_minus2pp": {},
+          "per_image_delta_pp": {
+            "A101_step3_sample3": 0.0,
+            "A106_step4_sample1": 0.0,
+            "A108_step2_sample2": 0.0,
+            "A109_step1_sample3": 0.0,
+            "A111_step1_sample2": 0.0,
+            "A111_step3_sample4": 0.0,
+            "A118_step2_sample1": 0.0,
+            "A121_step2_sample2": 0.0,
+            "A123_step1_sample1": 0.0,
+            "A123_step4_sample2": 0.0,
+            "A125_step2_sample1": 0.0,
+            "A130_step1_sample1": 0.0,
+            "A137_step4_sample2": 0.0,
+            "A138_step4_sample3": 0.0,
+            "A139_step3_sample4": 0.0,
+            "A139_step4_sample3": 0.0,
+            "A140_step4_sample2": 0.0,
+            "A146_step2_sample1": 0.0,
+            "A147_step4_sample4": 0.0,
+            "A150_step4_sample1": 0.0,
+            "A152_step2_sample1": 0.0,
+            "A153_step1_sample4": 0.0,
+            "A154_step2_sample3": 0.0,
+            "A155_step3_sample2": 0.0,
+            "A156_step4_sample1": 0.0,
+            "A156_step4_sample2": 0.0,
+            "A159_step4_sample4": 0.0,
+            "A15_step1_sample1": 0.0009191822083032264,
+            "A164_step1_sample2": 0.0,
+            "A164_step4_sample1": 0.0,
+            "A166_step4_sample3": 0.0,
+            "A167_step3_sample4": 0.0,
+            "A16_step4_sample4": -0.0009224451426814717,
+            "A181_step4_sample4": 0.0,
+            "A182_step4_sample3": 0.0,
+            "A187_step2_sample1": 0.0,
+            "A187_step4_sample4": 0.0,
+            "A188_step4_sample1": 0.0,
+            "A18_step2_sample1": -0.001893359069471412,
+            "A191_step3_sample1": 0.0,
+            "A191_step4_sample1": 0.0,
+            "A200_step4_sample3": 0.0,
+            "A201_step3_sample1": 0.0,
+            "A201_step3_sample4": 0.0,
+            "A21_step2_sample4": 0.0,
+            "A222_step2_sample2": 0.0,
+            "A224_step1_sample2": 0.0,
+            "A224_step4_sample2": 0.0,
+            "A2_step4_sample1": 0.0,
+            "A39_step2_sample3": 0.0,
+            "A40_step3_sample4": 0.0,
+            "A49_step2_sample2": 0.0,
+            "A51_step4_sample4": 0.0,
+            "A55_step3_sample4": 0.0,
+            "A57_step1_sample3": -0.000904389167921682,
+            "A61_step2_sample2": 0.0,
+            "A64_step2_sample3": 0.0,
+            "A66_step3_sample2": -0.0021469234561033446,
+            "A69_step4_sample4": -0.00041238490831041474,
+            "A78_step4_sample1": 0.0010967228939340323,
+            "A7_step1_sample2": 0.0,
+            "A7_step4_sample3": 0.0,
+            "A83_step1_sample2": 0.0,
+            "A87_step2_sample2": 0.0008226887934226212,
+            "A89_step1_sample2": 0.0008225342740697528,
+            "A8_step2_sample3": -0.0009018163902085874,
+            "A8_step3_sample3": 0.0023379339688878176,
+            "A94_step4_sample2": 0.0,
+            "A96_step1_sample1": -0.0010003003332315075,
+            "A98_step2_sample4": 0.0,
+            "A117_step4_sample2": 0.0,
+            "A11_step1_sample4": 0.0,
+            "A11_step2_sample4": 0.0,
+            "A125_step1_sample4": 0.0,
+            "A153_step3_sample3": 0.0,
+            "A170_step4_sample3": 0.0012226756969879737,
+            "A181_step1_sample1": 0.0,
+            "A186_step2_sample2": 0.0,
+            "A191_step4_sample3": 0.0,
+            "A40_step3_sample3": 0.0,
+            "A42_step2_sample4": 0.0,
+            "A44_step4_sample3": 0.0,
+            "A55_step2_sample1": 0.0,
+            "A59_step3_sample1": 0.0,
+            "A63_step1_sample4": 0.0006589457449690528,
+            "A67_step1_sample1": -0.0021409322919829776,
+            "A71_step2_sample1": 0.0010253359355116842,
+            "A72_step4_sample4": -0.0017116017711149567,
+            "A74_step3_sample4": 0.0,
+            "A7_step1_sample4": 0.0
+          },
+          "paired_class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          }
+        },
+        "cap6": {
+          "images": 90,
+          "alloy_groups": 71,
+          "cv_mIoU": 80.95664213120858,
+          "base_cv_mIoU": 80.900653378248,
+          "delta": 0.055988752960577336,
+          "group_bootstrap_ci95": [
+            -0.052473122833332025,
+            0.1982630712669368
+          ],
+          "delta_per_fold": {
+            "0": 0.03730749971961463,
+            "1": 0.09344572283926705,
+            "2": 0.23248294730109326,
+            "3": 0.09445812807698199,
+            "4": -0.17775053313407024
+          },
+          "delta_per_class": {
+            "Al": -0.006595713929700272,
+            "Al3Ni": 0.016747066757401303,
+            "Primary Si": 0.07234060797270833,
+            "Eutectic Si": 0.08388212032597021
+          },
+          "delta_low_contrast": 0.023280865612905797,
+          "improved_images": 12,
+          "names": [
+            "A101_step3_sample3",
+            "A106_step4_sample1",
+            "A108_step2_sample2",
+            "A109_step1_sample3",
+            "A111_step1_sample2",
+            "A111_step3_sample4",
+            "A117_step4_sample2",
+            "A118_step2_sample1",
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A121_step2_sample2",
+            "A123_step1_sample1",
+            "A123_step4_sample2",
+            "A125_step1_sample4",
+            "A125_step2_sample1",
+            "A130_step1_sample1",
+            "A137_step4_sample2",
+            "A138_step4_sample3",
+            "A139_step3_sample4",
+            "A139_step4_sample3",
+            "A140_step4_sample2",
+            "A146_step2_sample1",
+            "A147_step4_sample4",
+            "A150_step4_sample1",
+            "A152_step2_sample1",
+            "A153_step1_sample4",
+            "A153_step3_sample3",
+            "A154_step2_sample3",
+            "A155_step3_sample2",
+            "A156_step4_sample1",
+            "A156_step4_sample2",
+            "A159_step4_sample4",
+            "A15_step1_sample1",
+            "A164_step1_sample2",
+            "A164_step4_sample1",
+            "A166_step4_sample3",
+            "A167_step3_sample4",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A181_step1_sample1",
+            "A181_step4_sample4",
+            "A182_step4_sample3",
+            "A186_step2_sample2",
+            "A187_step2_sample1",
+            "A187_step4_sample4",
+            "A188_step4_sample1",
+            "A18_step2_sample1",
+            "A191_step3_sample1",
+            "A191_step4_sample1",
+            "A191_step4_sample3",
+            "A200_step4_sample3",
+            "A201_step3_sample1",
+            "A201_step3_sample4",
+            "A21_step2_sample4",
+            "A222_step2_sample2",
+            "A224_step1_sample2",
+            "A224_step4_sample2",
+            "A2_step4_sample1",
+            "A39_step2_sample3",
+            "A40_step3_sample3",
+            "A40_step3_sample4",
+            "A42_step2_sample4",
+            "A44_step4_sample3",
+            "A49_step2_sample2",
+            "A51_step4_sample4",
+            "A55_step2_sample1",
+            "A55_step3_sample4",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A7_step1_sample2",
+            "A7_step1_sample4",
+            "A7_step4_sample3",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -0.9471462596730484
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -0.9033726019357813
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -0.5634753424360706
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -0.4432555435313068
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -0.4360094251337876
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -0.38837862254430533
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -0.3569880994752972
+            },
+            {
+              "name": "A16_step4_sample4",
+              "delta_pp": -0.348178032147739
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -0.2968857933991931
+            },
+            {
+              "name": "A66_step3_sample2",
+              "delta_pp": -0.2846234750494725
+            }
+          ],
+          "drops_below_minus2pp": {},
+          "per_image_delta_pp": {
+            "A101_step3_sample3": 0.0,
+            "A106_step4_sample1": 0.0,
+            "A108_step2_sample2": 0.0,
+            "A109_step1_sample3": 0.0,
+            "A111_step1_sample2": 0.0,
+            "A111_step3_sample4": 0.0,
+            "A118_step2_sample1": 0.0,
+            "A121_step2_sample2": 0.0,
+            "A123_step1_sample1": 0.0,
+            "A123_step4_sample2": 0.0,
+            "A125_step2_sample1": 0.0,
+            "A130_step1_sample1": 0.0,
+            "A137_step4_sample2": 0.0,
+            "A138_step4_sample3": 0.0,
+            "A139_step3_sample4": 0.0,
+            "A139_step4_sample3": 0.0,
+            "A140_step4_sample2": 0.0,
+            "A146_step2_sample1": 0.0,
+            "A147_step4_sample4": 0.0,
+            "A150_step4_sample1": 0.0,
+            "A152_step2_sample1": 0.0,
+            "A153_step1_sample4": 0.0,
+            "A154_step2_sample3": 0.0,
+            "A155_step3_sample2": 0.0,
+            "A156_step4_sample1": 0.0,
+            "A156_step4_sample2": 0.0,
+            "A159_step4_sample4": 0.0,
+            "A15_step1_sample1": 0.23509947065348813,
+            "A164_step1_sample2": 0.0,
+            "A164_step4_sample1": 0.0,
+            "A166_step4_sample3": 0.0,
+            "A167_step3_sample4": 0.0,
+            "A16_step4_sample4": -0.348178032147739,
+            "A181_step4_sample4": 0.0,
+            "A182_step4_sample3": 0.0,
+            "A187_step2_sample1": 0.0,
+            "A187_step4_sample4": 0.0,
+            "A188_step4_sample1": 0.0,
+            "A18_step2_sample1": 2.82033480654158,
+            "A191_step3_sample1": 0.0,
+            "A191_step4_sample1": 0.0,
+            "A200_step4_sample3": 0.0,
+            "A201_step3_sample1": 0.0,
+            "A201_step3_sample4": 0.0,
+            "A21_step2_sample4": 0.0,
+            "A222_step2_sample2": 0.0,
+            "A224_step1_sample2": 0.0,
+            "A224_step4_sample2": 0.0,
+            "A2_step4_sample1": 0.0,
+            "A39_step2_sample3": 0.0,
+            "A40_step3_sample4": 0.0,
+            "A49_step2_sample2": 0.0,
+            "A51_step4_sample4": 0.0,
+            "A55_step3_sample4": 0.0,
+            "A57_step1_sample3": 4.532871083567425,
+            "A61_step2_sample2": -0.19262364187137004,
+            "A64_step2_sample3": -0.5634753424360706,
+            "A66_step3_sample2": -0.2846234750494725,
+            "A69_step4_sample4": -0.2968857933991931,
+            "A78_step4_sample1": -0.4432555435313068,
+            "A7_step1_sample2": 0.0,
+            "A7_step4_sample3": 0.0,
+            "A83_step1_sample2": 0.12770413375715606,
+            "A87_step2_sample2": -0.21837259558185051,
+            "A89_step1_sample2": -0.38837862254430533,
+            "A8_step2_sample3": 0.08683209631104027,
+            "A8_step3_sample3": 0.3947712211640031,
+            "A94_step4_sample2": -0.4360094251337876,
+            "A96_step1_sample1": 0.5401151804640403,
+            "A98_step2_sample4": 0.15290973160544397,
+            "A117_step4_sample2": 0.0,
+            "A11_step1_sample4": -0.9033726019357813,
+            "A11_step2_sample4": -0.9471462596730484,
+            "A125_step1_sample4": 0.0,
+            "A153_step3_sample3": 0.0,
+            "A170_step4_sample3": 0.039732168436057425,
+            "A181_step1_sample1": 0.0,
+            "A186_step2_sample2": 0.0,
+            "A191_step4_sample3": 0.0,
+            "A40_step3_sample3": 0.0,
+            "A42_step2_sample4": 0.0,
+            "A44_step4_sample3": 0.0,
+            "A55_step2_sample1": 0.0,
+            "A59_step3_sample1": -0.3569880994752972,
+            "A63_step1_sample4": 0.6518642371613592,
+            "A67_step1_sample1": -0.22731514606242342,
+            "A71_step2_sample1": 0.7940938968116873,
+            "A72_step4_sample4": 0.34979241007084827,
+            "A74_step3_sample4": -0.080508091250453,
+            "A7_step1_sample4": 0.0
+          },
+          "paired_class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          }
+        },
+        "cap4": {
+          "images": 90,
+          "alloy_groups": 71,
+          "cv_mIoU": 80.81646033817854,
+          "base_cv_mIoU": 80.900653378248,
+          "delta": -0.08419304006945864,
+          "group_bootstrap_ci95": [
+            -0.3152868503340833,
+            0.165831459941943
+          ],
+          "delta_per_fold": {
+            "0": 0.08243463220859581,
+            "1": -0.17930235652801546,
+            "2": 0.38932985972923756,
+            "3": 0.03966058524890473,
+            "4": -0.7530879210060158
+          },
+          "delta_per_class": {
+            "Al": -0.08246286415547041,
+            "Al3Ni": -0.21217965808400652,
+            "Primary Si": 0.0761985000650986,
+            "Eutectic Si": -0.2212339800251405
+          },
+          "delta_low_contrast": 0.021189670317921485,
+          "improved_images": 8,
+          "names": [
+            "A101_step3_sample3",
+            "A106_step4_sample1",
+            "A108_step2_sample2",
+            "A109_step1_sample3",
+            "A111_step1_sample2",
+            "A111_step3_sample4",
+            "A117_step4_sample2",
+            "A118_step2_sample1",
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A121_step2_sample2",
+            "A123_step1_sample1",
+            "A123_step4_sample2",
+            "A125_step1_sample4",
+            "A125_step2_sample1",
+            "A130_step1_sample1",
+            "A137_step4_sample2",
+            "A138_step4_sample3",
+            "A139_step3_sample4",
+            "A139_step4_sample3",
+            "A140_step4_sample2",
+            "A146_step2_sample1",
+            "A147_step4_sample4",
+            "A150_step4_sample1",
+            "A152_step2_sample1",
+            "A153_step1_sample4",
+            "A153_step3_sample3",
+            "A154_step2_sample3",
+            "A155_step3_sample2",
+            "A156_step4_sample1",
+            "A156_step4_sample2",
+            "A159_step4_sample4",
+            "A15_step1_sample1",
+            "A164_step1_sample2",
+            "A164_step4_sample1",
+            "A166_step4_sample3",
+            "A167_step3_sample4",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A181_step1_sample1",
+            "A181_step4_sample4",
+            "A182_step4_sample3",
+            "A186_step2_sample2",
+            "A187_step2_sample1",
+            "A187_step4_sample4",
+            "A188_step4_sample1",
+            "A18_step2_sample1",
+            "A191_step3_sample1",
+            "A191_step4_sample1",
+            "A191_step4_sample3",
+            "A200_step4_sample3",
+            "A201_step3_sample1",
+            "A201_step3_sample4",
+            "A21_step2_sample4",
+            "A222_step2_sample2",
+            "A224_step1_sample2",
+            "A224_step4_sample2",
+            "A2_step4_sample1",
+            "A39_step2_sample3",
+            "A40_step3_sample3",
+            "A40_step3_sample4",
+            "A42_step2_sample4",
+            "A44_step4_sample3",
+            "A49_step2_sample2",
+            "A51_step4_sample4",
+            "A55_step2_sample1",
+            "A55_step3_sample4",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A7_step1_sample2",
+            "A7_step1_sample4",
+            "A7_step4_sample3",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -5.320322316603498
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -1.762983972503318
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -1.585618465247396
+            },
+            {
+              "name": "A170_step4_sample3",
+              "delta_pp": -1.3961622090382764
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -1.3891818410520562
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -1.2972983992007525
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -1.292328585632485
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -1.2525601098009487
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -1.2357753070304511
+            },
+            {
+              "name": "A61_step2_sample2",
+              "delta_pp": -1.2012659092219602
+            }
+          ],
+          "drops_below_minus2pp": {
+            "A11_step2_sample4": -5.320322316603498
+          },
+          "per_image_delta_pp": {
+            "A101_step3_sample3": 0.0,
+            "A106_step4_sample1": 0.0,
+            "A108_step2_sample2": 0.0,
+            "A109_step1_sample3": 0.0,
+            "A111_step1_sample2": 0.0,
+            "A111_step3_sample4": 0.0,
+            "A118_step2_sample1": 0.0,
+            "A121_step2_sample2": 0.0,
+            "A123_step1_sample1": 0.0,
+            "A123_step4_sample2": 0.0,
+            "A125_step2_sample1": 0.0,
+            "A130_step1_sample1": 0.0,
+            "A137_step4_sample2": 0.0,
+            "A138_step4_sample3": 0.0,
+            "A139_step3_sample4": 0.0,
+            "A139_step4_sample3": 0.0,
+            "A140_step4_sample2": 0.0,
+            "A146_step2_sample1": 0.0,
+            "A147_step4_sample4": 0.0,
+            "A150_step4_sample1": 0.0,
+            "A152_step2_sample1": 0.0,
+            "A153_step1_sample4": 0.0,
+            "A154_step2_sample3": 0.0,
+            "A155_step3_sample2": 0.0,
+            "A156_step4_sample1": 0.0,
+            "A156_step4_sample2": 0.0,
+            "A159_step4_sample4": 0.0,
+            "A15_step1_sample1": 0.2600049887820366,
+            "A164_step1_sample2": 0.0,
+            "A164_step4_sample1": 0.0,
+            "A166_step4_sample3": 0.0,
+            "A167_step3_sample4": 0.0,
+            "A16_step4_sample4": -0.6259046508569455,
+            "A181_step4_sample4": 0.0,
+            "A182_step4_sample3": 0.0,
+            "A187_step2_sample1": 0.0,
+            "A187_step4_sample4": 0.0,
+            "A188_step4_sample1": 0.0,
+            "A18_step2_sample1": 2.146348482271565,
+            "A191_step3_sample1": 0.0,
+            "A191_step4_sample1": 0.0,
+            "A200_step4_sample3": 0.0,
+            "A201_step3_sample1": 0.0,
+            "A201_step3_sample4": 0.0,
+            "A21_step2_sample4": 0.0,
+            "A222_step2_sample2": 0.0,
+            "A224_step1_sample2": 0.0,
+            "A224_step4_sample2": 0.0,
+            "A2_step4_sample1": 0.0,
+            "A39_step2_sample3": 0.0,
+            "A40_step3_sample4": 0.0,
+            "A49_step2_sample2": 0.0,
+            "A51_step4_sample4": 0.0,
+            "A55_step3_sample4": 0.0,
+            "A57_step1_sample3": 7.633842125983225,
+            "A61_step2_sample2": -1.2012659092219602,
+            "A64_step2_sample3": -1.585618465247396,
+            "A66_step3_sample2": -0.4519998634873956,
+            "A69_step4_sample4": -1.2525601098009487,
+            "A78_step4_sample1": -1.2972983992007525,
+            "A7_step1_sample2": 0.0,
+            "A7_step4_sample3": 0.0,
+            "A83_step1_sample2": -0.3703070010181886,
+            "A87_step2_sample2": -0.9577311507548036,
+            "A89_step1_sample2": -1.2357753070304511,
+            "A8_step2_sample3": -0.830496112280732,
+            "A8_step3_sample3": -0.04066045171421395,
+            "A94_step4_sample2": -1.762983972503318,
+            "A96_step1_sample1": 1.533201533613282,
+            "A98_step2_sample4": 0.3156009792044001,
+            "A117_step4_sample2": 0.0,
+            "A11_step1_sample4": -1.3891818410520562,
+            "A11_step2_sample4": -5.320322316603498,
+            "A125_step1_sample4": 0.0,
+            "A153_step3_sample3": 0.0,
+            "A170_step4_sample3": -1.3961622090382764,
+            "A181_step1_sample1": 0.0,
+            "A186_step2_sample2": 0.0,
+            "A191_step4_sample3": 0.0,
+            "A40_step3_sample3": 0.0,
+            "A42_step2_sample4": 0.0,
+            "A44_step4_sample3": 0.0,
+            "A55_step2_sample1": 0.0,
+            "A59_step3_sample1": -1.292328585632485,
+            "A63_step1_sample4": 0.5933107689018113,
+            "A67_step1_sample1": -0.7883443175250693,
+            "A71_step2_sample1": 1.7800806470985142,
+            "A72_step4_sample4": 0.9083529968962334,
+            "A74_step3_sample4": -0.9491754660337692,
+            "A7_step1_sample4": 0.0
+          },
+          "paired_class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          }
+        }
+      },
+      "comparisons_vs_fresh": {
+        "cap6": {
+          "images": 90,
+          "alloy_groups": 71,
+          "cv_mIoU": 80.95664213120858,
+          "base_cv_mIoU": 80.9006186212145,
+          "delta": 0.05602350999407722,
+          "group_bootstrap_ci95": [
+            -0.05250957214530954,
+            0.19830439487012222
+          ],
+          "delta_per_fold": {
+            "0": 0.0374124560146664,
+            "1": 0.09346747574819068,
+            "2": 0.2325844380961261,
+            "3": 0.09440371324547314,
+            "4": -0.17775053313407024
+          },
+          "delta_per_class": {
+            "Al": -0.006579934866848368,
+            "Al3Ni": 0.016813157370942456,
+            "Primary Si": 0.07243138670792088,
+            "Eutectic Si": 0.083851861206565
+          },
+          "delta_low_contrast": 0.023257331836300108,
+          "improved_images": 12,
+          "names": [
+            "A101_step3_sample3",
+            "A106_step4_sample1",
+            "A108_step2_sample2",
+            "A109_step1_sample3",
+            "A111_step1_sample2",
+            "A111_step3_sample4",
+            "A117_step4_sample2",
+            "A118_step2_sample1",
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A121_step2_sample2",
+            "A123_step1_sample1",
+            "A123_step4_sample2",
+            "A125_step1_sample4",
+            "A125_step2_sample1",
+            "A130_step1_sample1",
+            "A137_step4_sample2",
+            "A138_step4_sample3",
+            "A139_step3_sample4",
+            "A139_step4_sample3",
+            "A140_step4_sample2",
+            "A146_step2_sample1",
+            "A147_step4_sample4",
+            "A150_step4_sample1",
+            "A152_step2_sample1",
+            "A153_step1_sample4",
+            "A153_step3_sample3",
+            "A154_step2_sample3",
+            "A155_step3_sample2",
+            "A156_step4_sample1",
+            "A156_step4_sample2",
+            "A159_step4_sample4",
+            "A15_step1_sample1",
+            "A164_step1_sample2",
+            "A164_step4_sample1",
+            "A166_step4_sample3",
+            "A167_step3_sample4",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A181_step1_sample1",
+            "A181_step4_sample4",
+            "A182_step4_sample3",
+            "A186_step2_sample2",
+            "A187_step2_sample1",
+            "A187_step4_sample4",
+            "A188_step4_sample1",
+            "A18_step2_sample1",
+            "A191_step3_sample1",
+            "A191_step4_sample1",
+            "A191_step4_sample3",
+            "A200_step4_sample3",
+            "A201_step3_sample1",
+            "A201_step3_sample4",
+            "A21_step2_sample4",
+            "A222_step2_sample2",
+            "A224_step1_sample2",
+            "A224_step4_sample2",
+            "A2_step4_sample1",
+            "A39_step2_sample3",
+            "A40_step3_sample3",
+            "A40_step3_sample4",
+            "A42_step2_sample4",
+            "A44_step4_sample3",
+            "A49_step2_sample2",
+            "A51_step4_sample4",
+            "A55_step2_sample1",
+            "A55_step3_sample4",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A7_step1_sample2",
+            "A7_step1_sample4",
+            "A7_step4_sample3",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -0.9471462596730484
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -0.9033726019357813
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -0.5634753424360706
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -0.44435226642524084
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -0.4360094251337876
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -0.3892011568183751
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -0.3569880994752972
+            },
+            {
+              "name": "A16_step4_sample4",
+              "delta_pp": -0.34725558700505754
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -0.29647340849088266
+            },
+            {
+              "name": "A66_step3_sample2",
+              "delta_pp": -0.28247655159336915
+            }
+          ],
+          "drops_below_minus2pp": {},
+          "per_image_delta_pp": {
+            "A101_step3_sample3": 0.0,
+            "A106_step4_sample1": 0.0,
+            "A108_step2_sample2": 0.0,
+            "A109_step1_sample3": 0.0,
+            "A111_step1_sample2": 0.0,
+            "A111_step3_sample4": 0.0,
+            "A118_step2_sample1": 0.0,
+            "A121_step2_sample2": 0.0,
+            "A123_step1_sample1": 0.0,
+            "A123_step4_sample2": 0.0,
+            "A125_step2_sample1": 0.0,
+            "A130_step1_sample1": 0.0,
+            "A137_step4_sample2": 0.0,
+            "A138_step4_sample3": 0.0,
+            "A139_step3_sample4": 0.0,
+            "A139_step4_sample3": 0.0,
+            "A140_step4_sample2": 0.0,
+            "A146_step2_sample1": 0.0,
+            "A147_step4_sample4": 0.0,
+            "A150_step4_sample1": 0.0,
+            "A152_step2_sample1": 0.0,
+            "A153_step1_sample4": 0.0,
+            "A154_step2_sample3": 0.0,
+            "A155_step3_sample2": 0.0,
+            "A156_step4_sample1": 0.0,
+            "A156_step4_sample2": 0.0,
+            "A159_step4_sample4": 0.0,
+            "A15_step1_sample1": 0.2341802884451849,
+            "A164_step1_sample2": 0.0,
+            "A164_step4_sample1": 0.0,
+            "A166_step4_sample3": 0.0,
+            "A167_step3_sample4": 0.0,
+            "A16_step4_sample4": -0.34725558700505754,
+            "A181_step4_sample4": 0.0,
+            "A182_step4_sample3": 0.0,
+            "A187_step2_sample1": 0.0,
+            "A187_step4_sample4": 0.0,
+            "A188_step4_sample1": 0.0,
+            "A18_step2_sample1": 2.8222281656110515,
+            "A191_step3_sample1": 0.0,
+            "A191_step4_sample1": 0.0,
+            "A200_step4_sample3": 0.0,
+            "A201_step3_sample1": 0.0,
+            "A201_step3_sample4": 0.0,
+            "A21_step2_sample4": 0.0,
+            "A222_step2_sample2": 0.0,
+            "A224_step1_sample2": 0.0,
+            "A224_step4_sample2": 0.0,
+            "A2_step4_sample1": 0.0,
+            "A39_step2_sample3": 0.0,
+            "A40_step3_sample4": 0.0,
+            "A49_step2_sample2": 0.0,
+            "A51_step4_sample4": 0.0,
+            "A55_step3_sample4": 0.0,
+            "A57_step1_sample3": 4.533775472735346,
+            "A61_step2_sample2": -0.19262364187137004,
+            "A64_step2_sample3": -0.5634753424360706,
+            "A66_step3_sample2": -0.28247655159336915,
+            "A69_step4_sample4": -0.29647340849088266,
+            "A78_step4_sample1": -0.44435226642524084,
+            "A7_step1_sample2": 0.0,
+            "A7_step4_sample3": 0.0,
+            "A83_step1_sample2": 0.12770413375715606,
+            "A87_step2_sample2": -0.21919528437527314,
+            "A89_step1_sample2": -0.3892011568183751,
+            "A8_step2_sample3": 0.08773391270124886,
+            "A8_step3_sample3": 0.3924332871951153,
+            "A94_step4_sample2": -0.4360094251337876,
+            "A96_step1_sample1": 0.5411154807972718,
+            "A98_step2_sample4": 0.15290973160544397,
+            "A117_step4_sample2": 0.0,
+            "A11_step1_sample4": -0.9033726019357813,
+            "A11_step2_sample4": -0.9471462596730484,
+            "A125_step1_sample4": 0.0,
+            "A153_step3_sample3": 0.0,
+            "A170_step4_sample3": 0.03850949273906945,
+            "A181_step1_sample1": 0.0,
+            "A186_step2_sample2": 0.0,
+            "A191_step4_sample3": 0.0,
+            "A40_step3_sample3": 0.0,
+            "A42_step2_sample4": 0.0,
+            "A44_step4_sample3": 0.0,
+            "A55_step2_sample1": 0.0,
+            "A59_step3_sample1": -0.3569880994752972,
+            "A63_step1_sample4": 0.6512052914163902,
+            "A67_step1_sample1": -0.22517421377044045,
+            "A71_step2_sample1": 0.7930685608761756,
+            "A72_step4_sample4": 0.3515040118419632,
+            "A74_step3_sample4": -0.080508091250453,
+            "A7_step1_sample4": 0.0
+          },
+          "paired_class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          }
+        },
+        "cap4": {
+          "images": 90,
+          "alloy_groups": 71,
+          "cv_mIoU": 80.81646033817854,
+          "base_cv_mIoU": 80.9006186212145,
+          "delta": -0.08415828303595876,
+          "group_bootstrap_ci95": [
+            -0.31527585775171046,
+            0.16585398727159856
+          ],
+          "delta_per_fold": {
+            "0": 0.08253958850364758,
+            "1": -0.17928060361909182,
+            "2": 0.3894313505242704,
+            "3": 0.03960617041739588,
+            "4": -0.7530879210060158
+          },
+          "delta_per_class": {
+            "Al": -0.0824470850926185,
+            "Al3Ni": -0.21211356747046536,
+            "Primary Si": 0.07628927880031112,
+            "Eutectic Si": -0.2212642391445457
+          },
+          "delta_low_contrast": 0.021166136541315796,
+          "improved_images": 8,
+          "names": [
+            "A101_step3_sample3",
+            "A106_step4_sample1",
+            "A108_step2_sample2",
+            "A109_step1_sample3",
+            "A111_step1_sample2",
+            "A111_step3_sample4",
+            "A117_step4_sample2",
+            "A118_step2_sample1",
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A121_step2_sample2",
+            "A123_step1_sample1",
+            "A123_step4_sample2",
+            "A125_step1_sample4",
+            "A125_step2_sample1",
+            "A130_step1_sample1",
+            "A137_step4_sample2",
+            "A138_step4_sample3",
+            "A139_step3_sample4",
+            "A139_step4_sample3",
+            "A140_step4_sample2",
+            "A146_step2_sample1",
+            "A147_step4_sample4",
+            "A150_step4_sample1",
+            "A152_step2_sample1",
+            "A153_step1_sample4",
+            "A153_step3_sample3",
+            "A154_step2_sample3",
+            "A155_step3_sample2",
+            "A156_step4_sample1",
+            "A156_step4_sample2",
+            "A159_step4_sample4",
+            "A15_step1_sample1",
+            "A164_step1_sample2",
+            "A164_step4_sample1",
+            "A166_step4_sample3",
+            "A167_step3_sample4",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A181_step1_sample1",
+            "A181_step4_sample4",
+            "A182_step4_sample3",
+            "A186_step2_sample2",
+            "A187_step2_sample1",
+            "A187_step4_sample4",
+            "A188_step4_sample1",
+            "A18_step2_sample1",
+            "A191_step3_sample1",
+            "A191_step4_sample1",
+            "A191_step4_sample3",
+            "A200_step4_sample3",
+            "A201_step3_sample1",
+            "A201_step3_sample4",
+            "A21_step2_sample4",
+            "A222_step2_sample2",
+            "A224_step1_sample2",
+            "A224_step4_sample2",
+            "A2_step4_sample1",
+            "A39_step2_sample3",
+            "A40_step3_sample3",
+            "A40_step3_sample4",
+            "A42_step2_sample4",
+            "A44_step4_sample3",
+            "A49_step2_sample2",
+            "A51_step4_sample4",
+            "A55_step2_sample1",
+            "A55_step3_sample4",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A7_step1_sample2",
+            "A7_step1_sample4",
+            "A7_step4_sample3",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -5.320322316603498
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -1.762983972503318
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -1.585618465247396
+            },
+            {
+              "name": "A170_step4_sample3",
+              "delta_pp": -1.3973848847352643
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -1.3891818410520562
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -1.2983951220946865
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -1.292328585632485
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -1.2521477248926383
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -1.2365978413045209
+            },
+            {
+              "name": "A61_step2_sample2",
+              "delta_pp": -1.2012659092219602
+            }
+          ],
+          "drops_below_minus2pp": {
+            "A11_step2_sample4": -5.320322316603498
+          },
+          "per_image_delta_pp": {
+            "A101_step3_sample3": 0.0,
+            "A106_step4_sample1": 0.0,
+            "A108_step2_sample2": 0.0,
+            "A109_step1_sample3": 0.0,
+            "A111_step1_sample2": 0.0,
+            "A111_step3_sample4": 0.0,
+            "A118_step2_sample1": 0.0,
+            "A121_step2_sample2": 0.0,
+            "A123_step1_sample1": 0.0,
+            "A123_step4_sample2": 0.0,
+            "A125_step2_sample1": 0.0,
+            "A130_step1_sample1": 0.0,
+            "A137_step4_sample2": 0.0,
+            "A138_step4_sample3": 0.0,
+            "A139_step3_sample4": 0.0,
+            "A139_step4_sample3": 0.0,
+            "A140_step4_sample2": 0.0,
+            "A146_step2_sample1": 0.0,
+            "A147_step4_sample4": 0.0,
+            "A150_step4_sample1": 0.0,
+            "A152_step2_sample1": 0.0,
+            "A153_step1_sample4": 0.0,
+            "A154_step2_sample3": 0.0,
+            "A155_step3_sample2": 0.0,
+            "A156_step4_sample1": 0.0,
+            "A156_step4_sample2": 0.0,
+            "A159_step4_sample4": 0.0,
+            "A15_step1_sample1": 0.25908580657373337,
+            "A164_step1_sample2": 0.0,
+            "A164_step4_sample1": 0.0,
+            "A166_step4_sample3": 0.0,
+            "A167_step3_sample4": 0.0,
+            "A16_step4_sample4": -0.624982205714264,
+            "A181_step4_sample4": 0.0,
+            "A182_step4_sample3": 0.0,
+            "A187_step2_sample1": 0.0,
+            "A187_step4_sample4": 0.0,
+            "A188_step4_sample1": 0.0,
+            "A18_step2_sample1": 2.1482418413410365,
+            "A191_step3_sample1": 0.0,
+            "A191_step4_sample1": 0.0,
+            "A200_step4_sample3": 0.0,
+            "A201_step3_sample1": 0.0,
+            "A201_step3_sample4": 0.0,
+            "A21_step2_sample4": 0.0,
+            "A222_step2_sample2": 0.0,
+            "A224_step1_sample2": 0.0,
+            "A224_step4_sample2": 0.0,
+            "A2_step4_sample1": 0.0,
+            "A39_step2_sample3": 0.0,
+            "A40_step3_sample4": 0.0,
+            "A49_step2_sample2": 0.0,
+            "A51_step4_sample4": 0.0,
+            "A55_step3_sample4": 0.0,
+            "A57_step1_sample3": 7.634746515151147,
+            "A61_step2_sample2": -1.2012659092219602,
+            "A64_step2_sample3": -1.585618465247396,
+            "A66_step3_sample2": -0.4498529400312923,
+            "A69_step4_sample4": -1.2521477248926383,
+            "A78_step4_sample1": -1.2983951220946865,
+            "A7_step1_sample2": 0.0,
+            "A7_step4_sample3": 0.0,
+            "A83_step1_sample2": -0.3703070010181886,
+            "A87_step2_sample2": -0.9585538395482263,
+            "A89_step1_sample2": -1.2365978413045209,
+            "A8_step2_sample3": -0.8295942958905234,
+            "A8_step3_sample3": -0.04299838568310177,
+            "A94_step4_sample2": -1.762983972503318,
+            "A96_step1_sample1": 1.5342018339465135,
+            "A98_step2_sample4": 0.3156009792044001,
+            "A117_step4_sample2": 0.0,
+            "A11_step1_sample4": -1.3891818410520562,
+            "A11_step2_sample4": -5.320322316603498,
+            "A125_step1_sample4": 0.0,
+            "A153_step3_sample3": 0.0,
+            "A170_step4_sample3": -1.3973848847352643,
+            "A181_step1_sample1": 0.0,
+            "A186_step2_sample2": 0.0,
+            "A191_step4_sample3": 0.0,
+            "A40_step3_sample3": 0.0,
+            "A42_step2_sample4": 0.0,
+            "A44_step4_sample3": 0.0,
+            "A55_step2_sample1": 0.0,
+            "A59_step3_sample1": -1.292328585632485,
+            "A63_step1_sample4": 0.5926518231568423,
+            "A67_step1_sample1": -0.7862033852330863,
+            "A71_step2_sample1": 1.7790553111630025,
+            "A72_step4_sample4": 0.9100645986673483,
+            "A74_step3_sample4": -0.9491754660337692,
+            "A7_step1_sample4": 0.0
+          },
+          "paired_class_valid_images": {
+            "Al": 90,
+            "Al3Ni": 90,
+            "Primary Si": 88,
+            "Eutectic Si": 90
+          }
+        }
+      }
+    },
+    "affected26": {
+      "arms": {
+        "saved_baseline": {
+          "images": 26,
+          "mIoU": 79.77722921144988,
+          "class_IoU": {
+            "Al": 93.52743109177065,
+            "Al3Ni": 72.91181280833793,
+            "Primary Si": 92.01024289233253,
+            "Eutectic Si": 63.095519673390456
+          },
+          "class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          },
+          "per_fold": {
+            "0": 86.76131690934966,
+            "1": 82.01356361836739,
+            "2": 72.17003869657131,
+            "3": 74.67779799502526,
+            "4": 80.23333289697857
+          }
+        },
+        "fresh_scale8": {
+          "images": 26,
+          "mIoU": 79.77710889864161,
+          "class_IoU": {
+            "Al": 93.52737647193773,
+            "Al3Ni": 72.91158403313722,
+            "Primary Si": 92.00991003697008,
+            "Eutectic Si": 63.09562441649609
+          },
+          "class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          },
+          "per_fold": {
+            "0": 86.76068717157936,
+            "1": 82.01350768231588,
+            "2": 72.16912527941602,
+            "3": 74.67799388841868,
+            "4": 80.23333289697857
+          }
+        },
+        "cap6": {
+          "images": 26,
+          "mIoU": 79.97103643323649,
+          "class_IoU": {
+            "Al": 93.50459977432173,
+            "Al3Ni": 72.96978342403662,
+            "Primary Si": 92.27549178823244,
+            "Eutectic Si": 63.385880859134204
+          },
+          "class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          },
+          "per_fold": {
+            "0": 86.98516190766735,
+            "1": 82.25385261995406,
+            "2": 74.26238522228115,
+            "3": 75.01784725610239,
+            "4": 79.87783183071043
+          }
+        },
+        "cap4": {
+          "images": 26,
+          "mIoU": 79.48579176505558,
+          "class_IoU": {
+            "Al": 93.24198271584791,
+            "Al3Ni": 72.17734476112405,
+            "Primary Si": 92.28963739257121,
+            "Eutectic Si": 62.32970974253422
+          },
+          "class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          },
+          "per_fold": {
+            "0": 87.25592470260123,
+            "1": 81.55250041586677,
+            "2": 75.67400743413445,
+            "3": 74.82057610192132,
+            "4": 78.72715705496654
+          }
+        }
+      },
+      "comparisons_vs_saved": {
+        "fresh_scale8": {
+          "images": 26,
+          "alloy_groups": 24,
+          "cv_mIoU": 79.77710889864161,
+          "base_cv_mIoU": 79.77722921144988,
+          "delta": -0.00012031280826882643,
+          "group_bootstrap_ci95": [
+            -0.0005088701958779333,
+            0.0002262891213062088
+          ],
+          "delta_per_fold": {
+            "0": -0.0006297377703106122,
+            "1": -5.593605151789559e-05,
+            "2": -0.0009134171552958037,
+            "3": 0.0001958933934318452,
+            "4": 0.0
+          },
+          "delta_per_class": {
+            "Al": -5.4619832948897234e-05,
+            "Al3Ni": -0.00022877520071937433,
+            "Primary Si": -0.0003328553624459829,
+            "Eutectic Si": 0.00010474310563342197
+          },
+          "delta_low_contrast": 0.0006589457449592828,
+          "improved_images": 8,
+          "names": [
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A15_step1_sample1",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A18_step2_sample1",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A66_step3_sample2",
+              "delta_pp": -0.0021469234561033446
+            },
+            {
+              "name": "A67_step1_sample1",
+              "delta_pp": -0.0021409322919829776
+            },
+            {
+              "name": "A18_step2_sample1",
+              "delta_pp": -0.001893359069471412
+            },
+            {
+              "name": "A72_step4_sample4",
+              "delta_pp": -0.0017116017711149567
+            },
+            {
+              "name": "A96_step1_sample1",
+              "delta_pp": -0.0010003003332315075
+            },
+            {
+              "name": "A16_step4_sample4",
+              "delta_pp": -0.0009224451426814717
+            },
+            {
+              "name": "A57_step1_sample3",
+              "delta_pp": -0.000904389167921682
+            },
+            {
+              "name": "A8_step2_sample3",
+              "delta_pp": -0.0009018163902085874
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -0.00041238490831041474
+            },
+            {
+              "name": "A61_step2_sample2",
+              "delta_pp": 0.0
+            }
+          ],
+          "drops_below_minus2pp": {},
+          "per_image_delta_pp": {
+            "A15_step1_sample1": 0.0009191822083032264,
+            "A16_step4_sample4": -0.0009224451426814717,
+            "A18_step2_sample1": -0.001893359069471412,
+            "A57_step1_sample3": -0.000904389167921682,
+            "A61_step2_sample2": 0.0,
+            "A64_step2_sample3": 0.0,
+            "A66_step3_sample2": -0.0021469234561033446,
+            "A69_step4_sample4": -0.00041238490831041474,
+            "A78_step4_sample1": 0.0010967228939340323,
+            "A83_step1_sample2": 0.0,
+            "A87_step2_sample2": 0.0008226887934226212,
+            "A89_step1_sample2": 0.0008225342740697528,
+            "A8_step2_sample3": -0.0009018163902085874,
+            "A8_step3_sample3": 0.0023379339688878176,
+            "A94_step4_sample2": 0.0,
+            "A96_step1_sample1": -0.0010003003332315075,
+            "A98_step2_sample4": 0.0,
+            "A11_step1_sample4": 0.0,
+            "A11_step2_sample4": 0.0,
+            "A170_step4_sample3": 0.0012226756969879737,
+            "A59_step3_sample1": 0.0,
+            "A63_step1_sample4": 0.0006589457449690528,
+            "A67_step1_sample1": -0.0021409322919829776,
+            "A71_step2_sample1": 0.0010253359355116842,
+            "A72_step4_sample4": -0.0017116017711149567,
+            "A74_step3_sample4": 0.0
+          },
+          "paired_class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          }
+        },
+        "cap6": {
+          "images": 26,
+          "alloy_groups": 24,
+          "cv_mIoU": 79.97103643323649,
+          "base_cv_mIoU": 79.77722921144988,
+          "delta": 0.19380722178661386,
+          "group_bootstrap_ci95": [
+            -0.1539746210086791,
+            0.5777283209119108
+          ],
+          "delta_per_fold": {
+            "0": 0.22384499831768778,
+            "1": 0.24028900158668673,
+            "2": 2.0923465257098393,
+            "3": 0.3400492610771352,
+            "4": -0.3555010662681405
+          },
+          "delta_per_class": {
+            "Al": -0.02283131744896248,
+            "Al3Ni": 0.05797061569869682,
+            "Primary Si": 0.26524889589993056,
+            "Eutectic Si": 0.29036118574374303
+          },
+          "delta_low_contrast": 0.6518642371613623,
+          "improved_images": 12,
+          "names": [
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A15_step1_sample1",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A18_step2_sample1",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -0.9471462596730484
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -0.9033726019357813
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -0.5634753424360706
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -0.4432555435313068
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -0.4360094251337876
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -0.38837862254430533
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -0.3569880994752972
+            },
+            {
+              "name": "A16_step4_sample4",
+              "delta_pp": -0.348178032147739
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -0.2968857933991931
+            },
+            {
+              "name": "A66_step3_sample2",
+              "delta_pp": -0.2846234750494725
+            }
+          ],
+          "drops_below_minus2pp": {},
+          "per_image_delta_pp": {
+            "A15_step1_sample1": 0.23509947065348813,
+            "A16_step4_sample4": -0.348178032147739,
+            "A18_step2_sample1": 2.82033480654158,
+            "A57_step1_sample3": 4.532871083567425,
+            "A61_step2_sample2": -0.19262364187137004,
+            "A64_step2_sample3": -0.5634753424360706,
+            "A66_step3_sample2": -0.2846234750494725,
+            "A69_step4_sample4": -0.2968857933991931,
+            "A78_step4_sample1": -0.4432555435313068,
+            "A83_step1_sample2": 0.12770413375715606,
+            "A87_step2_sample2": -0.21837259558185051,
+            "A89_step1_sample2": -0.38837862254430533,
+            "A8_step2_sample3": 0.08683209631104027,
+            "A8_step3_sample3": 0.3947712211640031,
+            "A94_step4_sample2": -0.4360094251337876,
+            "A96_step1_sample1": 0.5401151804640403,
+            "A98_step2_sample4": 0.15290973160544397,
+            "A11_step1_sample4": -0.9033726019357813,
+            "A11_step2_sample4": -0.9471462596730484,
+            "A170_step4_sample3": 0.039732168436057425,
+            "A59_step3_sample1": -0.3569880994752972,
+            "A63_step1_sample4": 0.6518642371613592,
+            "A67_step1_sample1": -0.22731514606242342,
+            "A71_step2_sample1": 0.7940938968116873,
+            "A72_step4_sample4": 0.34979241007084827,
+            "A74_step3_sample4": -0.080508091250453
+          },
+          "paired_class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          }
+        },
+        "cap4": {
+          "images": 26,
+          "alloy_groups": 24,
+          "cv_mIoU": 79.48579176505558,
+          "base_cv_mIoU": 79.77722921144988,
+          "delta": -0.29143744639427993,
+          "group_bootstrap_ci95": [
+            -0.9566269100237048,
+            0.3857531424603569
+          ],
+          "delta_per_fold": {
+            "0": 0.4946077932515749,
+            "1": -0.46106320250061117,
+            "2": 3.503968737563138,
+            "3": 0.14277810689605702,
+            "4": -1.5061758420120317
+          },
+          "delta_per_class": {
+            "Al": -0.28544837592278216,
+            "Al3Ni": -0.7344680472138687,
+            "Primary Si": 0.27939450023869483,
+            "Eutectic Si": -0.7658099308562556
+          },
+          "delta_low_contrast": 0.5933107689018016,
+          "improved_images": 8,
+          "names": [
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A15_step1_sample1",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A18_step2_sample1",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -5.320322316603498
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -1.762983972503318
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -1.585618465247396
+            },
+            {
+              "name": "A170_step4_sample3",
+              "delta_pp": -1.3961622090382764
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -1.3891818410520562
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -1.2972983992007525
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -1.292328585632485
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -1.2525601098009487
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -1.2357753070304511
+            },
+            {
+              "name": "A61_step2_sample2",
+              "delta_pp": -1.2012659092219602
+            }
+          ],
+          "drops_below_minus2pp": {
+            "A11_step2_sample4": -5.320322316603498
+          },
+          "per_image_delta_pp": {
+            "A15_step1_sample1": 0.2600049887820366,
+            "A16_step4_sample4": -0.6259046508569455,
+            "A18_step2_sample1": 2.146348482271565,
+            "A57_step1_sample3": 7.633842125983225,
+            "A61_step2_sample2": -1.2012659092219602,
+            "A64_step2_sample3": -1.585618465247396,
+            "A66_step3_sample2": -0.4519998634873956,
+            "A69_step4_sample4": -1.2525601098009487,
+            "A78_step4_sample1": -1.2972983992007525,
+            "A83_step1_sample2": -0.3703070010181886,
+            "A87_step2_sample2": -0.9577311507548036,
+            "A89_step1_sample2": -1.2357753070304511,
+            "A8_step2_sample3": -0.830496112280732,
+            "A8_step3_sample3": -0.04066045171421395,
+            "A94_step4_sample2": -1.762983972503318,
+            "A96_step1_sample1": 1.533201533613282,
+            "A98_step2_sample4": 0.3156009792044001,
+            "A11_step1_sample4": -1.3891818410520562,
+            "A11_step2_sample4": -5.320322316603498,
+            "A170_step4_sample3": -1.3961622090382764,
+            "A59_step3_sample1": -1.292328585632485,
+            "A63_step1_sample4": 0.5933107689018113,
+            "A67_step1_sample1": -0.7883443175250693,
+            "A71_step2_sample1": 1.7800806470985142,
+            "A72_step4_sample4": 0.9083529968962334,
+            "A74_step3_sample4": -0.9491754660337692
+          },
+          "paired_class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          }
+        }
+      },
+      "comparisons_vs_fresh": {
+        "cap6": {
+          "images": 26,
+          "alloy_groups": 24,
+          "cv_mIoU": 79.97103643323649,
+          "base_cv_mIoU": 79.77710889864161,
+          "delta": 0.19392753459488268,
+          "group_bootstrap_ci95": [
+            -0.15398257857613476,
+            0.5778697697889611
+          ],
+          "delta_per_fold": {
+            "0": 0.2244747360879984,
+            "1": 0.2403449376382046,
+            "2": 2.093259942865135,
+            "3": 0.33985336768370333,
+            "4": -0.3555010662681405
+          },
+          "delta_per_class": {
+            "Al": -0.022776697616013582,
+            "Al3Ni": 0.0581993908994162,
+            "Primary Si": 0.26558175126237654,
+            "Eutectic Si": 0.2902564426381096
+          },
+          "delta_low_contrast": 0.651205291416403,
+          "improved_images": 12,
+          "names": [
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A15_step1_sample1",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A18_step2_sample1",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -0.9471462596730484
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -0.9033726019357813
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -0.5634753424360706
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -0.44435226642524084
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -0.4360094251337876
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -0.3892011568183751
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -0.3569880994752972
+            },
+            {
+              "name": "A16_step4_sample4",
+              "delta_pp": -0.34725558700505754
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -0.29647340849088266
+            },
+            {
+              "name": "A66_step3_sample2",
+              "delta_pp": -0.28247655159336915
+            }
+          ],
+          "drops_below_minus2pp": {},
+          "per_image_delta_pp": {
+            "A15_step1_sample1": 0.2341802884451849,
+            "A16_step4_sample4": -0.34725558700505754,
+            "A18_step2_sample1": 2.8222281656110515,
+            "A57_step1_sample3": 4.533775472735346,
+            "A61_step2_sample2": -0.19262364187137004,
+            "A64_step2_sample3": -0.5634753424360706,
+            "A66_step3_sample2": -0.28247655159336915,
+            "A69_step4_sample4": -0.29647340849088266,
+            "A78_step4_sample1": -0.44435226642524084,
+            "A83_step1_sample2": 0.12770413375715606,
+            "A87_step2_sample2": -0.21919528437527314,
+            "A89_step1_sample2": -0.3892011568183751,
+            "A8_step2_sample3": 0.08773391270124886,
+            "A8_step3_sample3": 0.3924332871951153,
+            "A94_step4_sample2": -0.4360094251337876,
+            "A96_step1_sample1": 0.5411154807972718,
+            "A98_step2_sample4": 0.15290973160544397,
+            "A11_step1_sample4": -0.9033726019357813,
+            "A11_step2_sample4": -0.9471462596730484,
+            "A170_step4_sample3": 0.03850949273906945,
+            "A59_step3_sample1": -0.3569880994752972,
+            "A63_step1_sample4": 0.6512052914163902,
+            "A67_step1_sample1": -0.22517421377044045,
+            "A71_step2_sample1": 0.7930685608761756,
+            "A72_step4_sample4": 0.3515040118419632,
+            "A74_step3_sample4": -0.080508091250453
+          },
+          "paired_class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          }
+        },
+        "cap4": {
+          "images": 26,
+          "alloy_groups": 24,
+          "cv_mIoU": 79.48579176505558,
+          "base_cv_mIoU": 79.77710889864161,
+          "delta": -0.2913171335860111,
+          "group_bootstrap_ci95": [
+            -0.9565974826329648,
+            0.3859040411562628
+          ],
+          "delta_per_fold": {
+            "0": 0.4952375310218855,
+            "1": -0.4610072664490933,
+            "2": 3.504882154718434,
+            "3": 0.14258221350262518,
+            "4": -1.5061758420120317
+          },
+          "delta_per_class": {
+            "Al": -0.2853937560898333,
+            "Al3Ni": -0.7342392720131493,
+            "Primary Si": 0.2797273556011408,
+            "Eutectic Si": -0.765914673961889
+          },
+          "delta_low_contrast": 0.5926518231568423,
+          "improved_images": 8,
+          "names": [
+            "A11_step1_sample4",
+            "A11_step2_sample4",
+            "A15_step1_sample1",
+            "A16_step4_sample4",
+            "A170_step4_sample3",
+            "A18_step2_sample1",
+            "A57_step1_sample3",
+            "A59_step3_sample1",
+            "A61_step2_sample2",
+            "A63_step1_sample4",
+            "A64_step2_sample3",
+            "A66_step3_sample2",
+            "A67_step1_sample1",
+            "A69_step4_sample4",
+            "A71_step2_sample1",
+            "A72_step4_sample4",
+            "A74_step3_sample4",
+            "A78_step4_sample1",
+            "A83_step1_sample2",
+            "A87_step2_sample2",
+            "A89_step1_sample2",
+            "A8_step2_sample3",
+            "A8_step3_sample3",
+            "A94_step4_sample2",
+            "A96_step1_sample1",
+            "A98_step2_sample4"
+          ],
+          "worst10": [
+            {
+              "name": "A11_step2_sample4",
+              "delta_pp": -5.320322316603498
+            },
+            {
+              "name": "A94_step4_sample2",
+              "delta_pp": -1.762983972503318
+            },
+            {
+              "name": "A64_step2_sample3",
+              "delta_pp": -1.585618465247396
+            },
+            {
+              "name": "A170_step4_sample3",
+              "delta_pp": -1.3973848847352643
+            },
+            {
+              "name": "A11_step1_sample4",
+              "delta_pp": -1.3891818410520562
+            },
+            {
+              "name": "A78_step4_sample1",
+              "delta_pp": -1.2983951220946865
+            },
+            {
+              "name": "A59_step3_sample1",
+              "delta_pp": -1.292328585632485
+            },
+            {
+              "name": "A69_step4_sample4",
+              "delta_pp": -1.2521477248926383
+            },
+            {
+              "name": "A89_step1_sample2",
+              "delta_pp": -1.2365978413045209
+            },
+            {
+              "name": "A61_step2_sample2",
+              "delta_pp": -1.2012659092219602
+            }
+          ],
+          "drops_below_minus2pp": {
+            "A11_step2_sample4": -5.320322316603498
+          },
+          "per_image_delta_pp": {
+            "A15_step1_sample1": 0.25908580657373337,
+            "A16_step4_sample4": -0.624982205714264,
+            "A18_step2_sample1": 2.1482418413410365,
+            "A57_step1_sample3": 7.634746515151147,
+            "A61_step2_sample2": -1.2012659092219602,
+            "A64_step2_sample3": -1.585618465247396,
+            "A66_step3_sample2": -0.4498529400312923,
+            "A69_step4_sample4": -1.2521477248926383,
+            "A78_step4_sample1": -1.2983951220946865,
+            "A83_step1_sample2": -0.3703070010181886,
+            "A87_step2_sample2": -0.9585538395482263,
+            "A89_step1_sample2": -1.2365978413045209,
+            "A8_step2_sample3": -0.8295942958905234,
+            "A8_step3_sample3": -0.04299838568310177,
+            "A94_step4_sample2": -1.762983972503318,
+            "A96_step1_sample1": 1.5342018339465135,
+            "A98_step2_sample4": 0.3156009792044001,
+            "A11_step1_sample4": -1.3891818410520562,
+            "A11_step2_sample4": -5.320322316603498,
+            "A170_step4_sample3": -1.3973848847352643,
+            "A59_step3_sample1": -1.292328585632485,
+            "A63_step1_sample4": 0.5926518231568423,
+            "A67_step1_sample1": -0.7862033852330863,
+            "A71_step2_sample1": 1.7790553111630025,
+            "A72_step4_sample4": 0.9100645986673483,
+            "A74_step3_sample4": -0.9491754660337692
+          },
+          "paired_class_valid_images": {
+            "Al": 26,
+            "Al3Ni": 26,
+            "Primary Si": 24,
+            "Eutectic Si": 26
+          }
+        }
+      }
+    }
+  },
+  "diagnostic_review_flags": {
+    "cap6": {
+      "full90_gain_at_least_0_05pp": true,
+      "affected_gain_positive": true,
+      "gain_vs_fresh_control_positive": true,
+      "eutectic_nonnegative": true,
+      "other_class_drop_at_most_0_10pp": true,
+      "no_image_drop_below_minus2pp": true
+    },
+    "cap4": {
+      "full90_gain_at_least_0_05pp": false,
+      "affected_gain_positive": false,
+      "gain_vs_fresh_control_positive": false,
+      "eutectic_nonnegative": false,
+      "other_class_drop_at_most_0_10pp": false,
+      "no_image_drop_below_minus2pp": false
+    }
+  },
+  "worker_receipts": [
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/complete.json",
+      "sha256": "94cbea44cb5ae4dd8a77ee9a295a1927a1e8bbebfa04effbd62cd28f5bd87f1e",
+      "bytes": 14300
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/complete.json",
+      "sha256": "a820d7ad25974e9f4ffdb254fa0c306d4fd74250e580f526025e2bdcacca1a3d",
+      "bytes": 11465
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/complete.json",
+      "sha256": "2bc1ef472602125d5c9fb1e40bec8598f257f303506da872495167b757af6fa2",
+      "bytes": 8317
+    },
+    {
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/complete.json",
+      "sha256": "d661bdbbc9190e5e6fb1af0ae34476d8ad83823d5b31ae5f8c461089bd1a605a",
+      "bytes": 8335
+    }
+  ],
+  "output_receipts": [
+    {
+      "name": "A11_step1_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A11_step1_sample4.npy",
+      "sha256": "2bdf4ae7bfa24b15a773dfc1d5d6c344bfc0f1577319e0b2264a5622c2a41b70",
+      "bytes": 2592128
+    },
+    {
+      "name": "A11_step1_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A11_step1_sample4.npy",
+      "sha256": "63dabd3089b791402723b349b60f7f274bb0e229621f140c3f901a946be4c69f",
+      "bytes": 2592128
+    },
+    {
+      "name": "A11_step1_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A11_step1_sample4.npy",
+      "sha256": "bdccdb8a1fed57cae7c7ad995311eab3ea194c63d12d9bcaf3f039d52f4b8a1c",
+      "bytes": 2592128
+    },
+    {
+      "name": "A11_step2_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A11_step2_sample4.npy",
+      "sha256": "785ae3c543cc4f543772403351db94b7c6ee56185ee43bbc7e3aa41a539cf9ef",
+      "bytes": 2592128
+    },
+    {
+      "name": "A11_step2_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A11_step2_sample4.npy",
+      "sha256": "650d035367d457b8106570e5d6c91bdca72d26bb03b738ab27db50378ca48b75",
+      "bytes": 2592128
+    },
+    {
+      "name": "A11_step2_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A11_step2_sample4.npy",
+      "sha256": "1e75b6dc529e84e8ca0eb59c31573a0ad8ee8181107a9251f118f44c0adc632b",
+      "bytes": 2592128
+    },
+    {
+      "name": "A59_step3_sample1",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A59_step3_sample1.npy",
+      "sha256": "ce23b821f59f19da3ccee3d08ebb9a131d1cda1d4e2f7047f7c3bb49f79d671f",
+      "bytes": 2592128
+    },
+    {
+      "name": "A59_step3_sample1",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A59_step3_sample1.npy",
+      "sha256": "52d4f3a9f0e4992d9f3e62cedf274bafbf912ea4498b3fa97e41c2c2162ac80d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A59_step3_sample1",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A59_step3_sample1.npy",
+      "sha256": "0d223462a2c87c549caa81f244171867a17192980edced4025e82f2e56160370",
+      "bytes": 2592128
+    },
+    {
+      "name": "A61_step2_sample2",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A61_step2_sample2.npy",
+      "sha256": "3b0e667e3782e74e89c5ad9fc8f33b1c398ab4700fc9f51446f8f9ef801a3545",
+      "bytes": 2592128
+    },
+    {
+      "name": "A61_step2_sample2",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A61_step2_sample2.npy",
+      "sha256": "d58214e92c883813058f648c139c0e8960f0d605e80d1480ffdd539423f4d299",
+      "bytes": 2592128
+    },
+    {
+      "name": "A61_step2_sample2",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A61_step2_sample2.npy",
+      "sha256": "7a14f53b1ec1fc278b708c447e32b24813390aad2fecb88b60cc9e51a9f93072",
+      "bytes": 2592128
+    },
+    {
+      "name": "A64_step2_sample3",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A64_step2_sample3.npy",
+      "sha256": "73d32a64c1bf57740958741fc00b5919b33f189b3ba03ce52a54c4d8329ba6bb",
+      "bytes": 2592128
+    },
+    {
+      "name": "A64_step2_sample3",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A64_step2_sample3.npy",
+      "sha256": "4f3e294afc76209bfda9809be7459d87c74725c4ada593de607495250db05f73",
+      "bytes": 2592128
+    },
+    {
+      "name": "A64_step2_sample3",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A64_step2_sample3.npy",
+      "sha256": "6855570d427a02b6ac5d733bcfbb9bde981e167f9f94d4b6ec99f896f18eff80",
+      "bytes": 2592128
+    },
+    {
+      "name": "A74_step3_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A74_step3_sample4.npy",
+      "sha256": "942c88acf21e9ddae186f068a61dca20c3999e0764559397c3d46566e9198a52",
+      "bytes": 2592128
+    },
+    {
+      "name": "A74_step3_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A74_step3_sample4.npy",
+      "sha256": "9947c0676b7b48dc1ebbc1bae4f0aaf9064a7a13143620f675bed28d5d56b2ea",
+      "bytes": 2592128
+    },
+    {
+      "name": "A74_step3_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A74_step3_sample4.npy",
+      "sha256": "9531d112501b165c20f78dff44a2f0d46d3ebcbb992e9ca3624cbbef18958e96",
+      "bytes": 2592128
+    },
+    {
+      "name": "A83_step1_sample2",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A83_step1_sample2.npy",
+      "sha256": "bf0680219b57567edd41b33681b48acaa2e1a31e9e9304cb0c33c8a70ae0e09d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A83_step1_sample2",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A83_step1_sample2.npy",
+      "sha256": "a35f322b1f481d4d160d315daad4a6f1cdd0e4314396ac8fdd11eacc5a8f4c97",
+      "bytes": 2592128
+    },
+    {
+      "name": "A83_step1_sample2",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A83_step1_sample2.npy",
+      "sha256": "eb36a7d9f0d99d454a56fec895d838068c96b5685da9305b263281fe48ed86c8",
+      "bytes": 2592128
+    },
+    {
+      "name": "A94_step4_sample2",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A94_step4_sample2.npy",
+      "sha256": "d810c0fe02a1e0df1e6f57e637f0d037a5daba84186a3d6dfbbde2e0bb141630",
+      "bytes": 2592128
+    },
+    {
+      "name": "A94_step4_sample2",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A94_step4_sample2.npy",
+      "sha256": "eabf7bb08f81c403987488eb07bdd72aa55f8d9bbd6f8cf720c1d145c1a8fbd1",
+      "bytes": 2592128
+    },
+    {
+      "name": "A94_step4_sample2",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A94_step4_sample2.npy",
+      "sha256": "8091cbd60a7c8285444b459235ab966607582a8ca9c66cb8a72dfa4c348d3bd7",
+      "bytes": 2592128
+    },
+    {
+      "name": "A98_step2_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/fresh_scale8/A98_step2_sample4.npy",
+      "sha256": "287afd3c2eef643f3375d082be351df3d99d6a06f23d8add3fa1cf2a4a2bf578",
+      "bytes": 2592128
+    },
+    {
+      "name": "A98_step2_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap6/A98_step2_sample4.npy",
+      "sha256": "cdfa681dc6d19a2fcf5b1e00649955c78ab994fe13ec0c6d78350e8c51beaba9",
+      "bytes": 2592128
+    },
+    {
+      "name": "A98_step2_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu0/cap4/A98_step2_sample4.npy",
+      "sha256": "2e95b375c11eae385718e8215116d98391cf548351333b8725a2de9af937b711",
+      "bytes": 2592128
+    },
+    {
+      "name": "A15_step1_sample1",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/fresh_scale8/A15_step1_sample1.npy",
+      "sha256": "12870c80dc03f993283f628f6f0bf0270d8319bc9bf98c6bb72e66e7597a713f",
+      "bytes": 2592128
+    },
+    {
+      "name": "A15_step1_sample1",
+      "fold": 1,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap6/A15_step1_sample1.npy",
+      "sha256": "a120035871f20e076cc4747fa57a06e0e91f7bc9191163dc4c8a6f2ba1c9aac8",
+      "bytes": 2592128
+    },
+    {
+      "name": "A15_step1_sample1",
+      "fold": 1,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap4/A15_step1_sample1.npy",
+      "sha256": "13a88190030b844be2368c378a884fd5948bcc878bb4a904acafea4243958186",
+      "bytes": 2592128
+    },
+    {
+      "name": "A170_step4_sample3",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/fresh_scale8/A170_step4_sample3.npy",
+      "sha256": "b1a0e738e1f63b5b755e21b57622a3f66b9effca8d13f611987ad8700c79c0e0",
+      "bytes": 2592128
+    },
+    {
+      "name": "A170_step4_sample3",
+      "fold": 1,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap6/A170_step4_sample3.npy",
+      "sha256": "c8ab23a79dd45132316e0df9e69e2f43064896d4ae9a8dc7b7b7d2d7c35d90c8",
+      "bytes": 2592128
+    },
+    {
+      "name": "A170_step4_sample3",
+      "fold": 1,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap4/A170_step4_sample3.npy",
+      "sha256": "aa993462c9c1175c3e3e4f72c4bbb07fd1d0af00f3a70d9cd3e808713e4801d3",
+      "bytes": 2592128
+    },
+    {
+      "name": "A18_step2_sample1",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/fresh_scale8/A18_step2_sample1.npy",
+      "sha256": "1f00e95921f477d66f06c91e31e1cdb4042778e8eb140c786da9d9647cefc958",
+      "bytes": 2592128
+    },
+    {
+      "name": "A18_step2_sample1",
+      "fold": 1,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap6/A18_step2_sample1.npy",
+      "sha256": "9f5b342f97c62f3c8544b7329de1e3c2bc6f5f742a161876cd03ae616c8df68a",
+      "bytes": 2592128
+    },
+    {
+      "name": "A18_step2_sample1",
+      "fold": 1,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap4/A18_step2_sample1.npy",
+      "sha256": "79bfec62bc307412f87e486d7a84732b52631fcca55aa111494bb106406bbd4e",
+      "bytes": 2592128
+    },
+    {
+      "name": "A66_step3_sample2",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/fresh_scale8/A66_step3_sample2.npy",
+      "sha256": "aea2fe598356382634d185e2e9ad42301d32869c54a9266186152340a9c84cc9",
+      "bytes": 2592128
+    },
+    {
+      "name": "A66_step3_sample2",
+      "fold": 1,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap6/A66_step3_sample2.npy",
+      "sha256": "1a61d7b2480fee2a2e8a3669dbe1a854f66b20f556fc43180f2749ceca85e034",
+      "bytes": 2592128
+    },
+    {
+      "name": "A66_step3_sample2",
+      "fold": 1,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap4/A66_step3_sample2.npy",
+      "sha256": "1d93f81b5a9edcb83b4b1d892c5e484d3d701f3d2b178a12045af566dd40a076",
+      "bytes": 2592128
+    },
+    {
+      "name": "A69_step4_sample4",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/fresh_scale8/A69_step4_sample4.npy",
+      "sha256": "0af04925242a745d465aa4587270da2398ac73ad6eba26e5c5cb3cd52437a1d7",
+      "bytes": 2592128
+    },
+    {
+      "name": "A69_step4_sample4",
+      "fold": 1,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap6/A69_step4_sample4.npy",
+      "sha256": "a5fd18ebbb981d5dd50fa45c9cee60a56babc69d3c4e3af86f09ec12fa7b852d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A69_step4_sample4",
+      "fold": 1,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap4/A69_step4_sample4.npy",
+      "sha256": "b11f6a1725cd26d0058dd2255ce2caba03b77584c3cf46a41fd7b2021bad83ae",
+      "bytes": 2592128
+    },
+    {
+      "name": "A78_step4_sample1",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/fresh_scale8/A78_step4_sample1.npy",
+      "sha256": "96c36bdc3cb777cc65127739256076625a17f6ed8ae47b03f61969ea709ea456",
+      "bytes": 2592128
+    },
+    {
+      "name": "A78_step4_sample1",
+      "fold": 1,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap6/A78_step4_sample1.npy",
+      "sha256": "baa57a26ec26134b71340c02540c6aac18fbfceaa5830b736597511d7f7a6e58",
+      "bytes": 2592128
+    },
+    {
+      "name": "A78_step4_sample1",
+      "fold": 1,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap4/A78_step4_sample1.npy",
+      "sha256": "6ced092f08831c24c9a4ee0e3fe92fb77aa3642ee586c2139e213c473e63445b",
+      "bytes": 2592128
+    },
+    {
+      "name": "A89_step1_sample2",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/fresh_scale8/A89_step1_sample2.npy",
+      "sha256": "44a6575f8b4a4355abc3a0d16eede1226ee5c04ee66abb5c5a46519c8ef0e439",
+      "bytes": 2592128
+    },
+    {
+      "name": "A89_step1_sample2",
+      "fold": 1,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap6/A89_step1_sample2.npy",
+      "sha256": "70b2129ca00014132665e4a11043e91d78c3ef7fd469e2e8eb08b56d0d14d0eb",
+      "bytes": 2592128
+    },
+    {
+      "name": "A89_step1_sample2",
+      "fold": 1,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu1/cap4/A89_step1_sample2.npy",
+      "sha256": "ecace5970f8c88aa6ef6055c0df17636cbcc884410dc27638ede8b28888e11c9",
+      "bytes": 2592128
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A63_step1_sample4.npy",
+      "sha256": "eae57e35fb6e46ae8b5e08ef95ca528779ace1c382e4eebdbe64b9d8a9a94f16",
+      "bytes": 2592128
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A63_step1_sample4.npy",
+      "sha256": "c0e7692663dae53904379b6d7c302ad7eaf8f2074ac80600d09126a3adb57dd9",
+      "bytes": 2592128
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A63_step1_sample4.npy",
+      "sha256": "66fc1497a184f25b4392152a3cf278bef57795cf32981d8d28cf43cebf410a39",
+      "bytes": 2592128
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A67_step1_sample1.npy",
+      "sha256": "09aac09c7b16f45382ecc4f06da1471dc80ac77837b1fc2abcd8498206d8e8f0",
+      "bytes": 2592128
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A67_step1_sample1.npy",
+      "sha256": "45ecab6e538e2402251aa175e0ca95e7bc4c4d9d660ed59c3c194718fe55e605",
+      "bytes": 2592128
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A67_step1_sample1.npy",
+      "sha256": "789dfe4753ce076698e66befecda5f4895fca792c862b67829cc5fe875c8784a",
+      "bytes": 2592128
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A71_step2_sample1.npy",
+      "sha256": "e76f6f3143c0aef03335e57041e1fc254b52a585d9fda434d43f8e2b396d992b",
+      "bytes": 2592128
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A71_step2_sample1.npy",
+      "sha256": "36cf196d42ef6987d0282448f4a5d3ad8241c4318a59c3c3a1acf56b9c2ce86b",
+      "bytes": 2592128
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A71_step2_sample1.npy",
+      "sha256": "10feb45ae4aa77908ec23dff1794df82ba8520e309564df55516c4ab46e3934d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A8_step2_sample3.npy",
+      "sha256": "3e643245a60002f72a51ce2a2fcd6766d7dc96de66c69b44d95dcd17fb2113ec",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A8_step2_sample3.npy",
+      "sha256": "94f7d326fa3b14c1de5e8d812b9b0ffb12e0f1b5d722bd99019396b7b977f0c9",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A8_step2_sample3.npy",
+      "sha256": "dc0a17259177d2b5f17752755990f35d08d41b02552d8c31ad9ce14e90d0615d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A8_step3_sample3.npy",
+      "sha256": "c50801e3eab30fffeadaeec33723da0b812a4466237e0c03d84919dbc6aa271a",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A8_step3_sample3.npy",
+      "sha256": "f785ec846cbc9f4b6e20055fe457befe21d6854c23c32b4ca834225ac1656533",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A8_step3_sample3.npy",
+      "sha256": "e00726ffb2b29627465554d7ce615bd229d11323f4c3a5b029fd7e1de3de8133",
+      "bytes": 2592128
+    },
+    {
+      "name": "A72_step4_sample4",
+      "fold": 0,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/fresh_scale8/A72_step4_sample4.npy",
+      "sha256": "e27613d8a82c453de6fd2dd2901da73c5d469c25b3e85fa4731077b73c1da7bd",
+      "bytes": 2592128
+    },
+    {
+      "name": "A72_step4_sample4",
+      "fold": 0,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A72_step4_sample4.npy",
+      "sha256": "c0cb4e21a9ba3bc3da8346df1bb245c1761ecbb5835c68715b36c73cc8b1ec1d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A72_step4_sample4",
+      "fold": 0,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap4/A72_step4_sample4.npy",
+      "sha256": "b0c0a545b82c9d8aecfd5bcafe93e5b0a233c14c3a131fc8f4b265f3656f07a0",
+      "bytes": 2592128
+    },
+    {
+      "name": "A87_step2_sample2",
+      "fold": 0,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/fresh_scale8/A87_step2_sample2.npy",
+      "sha256": "d431a1e3aab5b0113a0dbabd5cd5029eacbf8336062128e5a5d8046e407b4e3f",
+      "bytes": 2592128
+    },
+    {
+      "name": "A87_step2_sample2",
+      "fold": 0,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A87_step2_sample2.npy",
+      "sha256": "74f5bb7c5c35c6dd4cc80cbb4997c314631597bfe3fb4f607f832e89e16b22f3",
+      "bytes": 2592128
+    },
+    {
+      "name": "A87_step2_sample2",
+      "fold": 0,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap4/A87_step2_sample2.npy",
+      "sha256": "e3076a3dc846e940c145fc42b7d9e3f5a652147e385cbc8bfadfeb1850bf9d96",
+      "bytes": 2592128
+    },
+    {
+      "name": "A96_step1_sample1",
+      "fold": 0,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/fresh_scale8/A96_step1_sample1.npy",
+      "sha256": "bdde7882aac0c9fcc7e072df8f3f7d2809bf2ecdaefcaeadc7e5f8ce1a054c62",
+      "bytes": 2592128
+    },
+    {
+      "name": "A96_step1_sample1",
+      "fold": 0,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A96_step1_sample1.npy",
+      "sha256": "0e6ccad85751faeb34bb2aa6b22f0b7a7eeafdb40cf131c949e4854169c32333",
+      "bytes": 2592128
+    },
+    {
+      "name": "A96_step1_sample1",
+      "fold": 0,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap4/A96_step1_sample1.npy",
+      "sha256": "7d743338378dd399cd45651ddb7e3d60ddc73bc3b3f38d9728bc31a18048fc25",
+      "bytes": 2592128
+    },
+    {
+      "name": "A16_step4_sample4",
+      "fold": 2,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/fresh_scale8/A16_step4_sample4.npy",
+      "sha256": "b4910ba6b59665b5411637163e618e36cf42c19ae095a5c6bd027b1f3a53c568",
+      "bytes": 2592128
+    },
+    {
+      "name": "A16_step4_sample4",
+      "fold": 2,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A16_step4_sample4.npy",
+      "sha256": "25fc7d875009ef431aea268a7a02e4fb9e36f497d27b17708cb6111547bd7161",
+      "bytes": 2592128
+    },
+    {
+      "name": "A16_step4_sample4",
+      "fold": 2,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap4/A16_step4_sample4.npy",
+      "sha256": "ace029366ac9f6ca74c38a3a0345be03cb1fe497dcf73ed4717eab9f34c7af72",
+      "bytes": 2592128
+    },
+    {
+      "name": "A57_step1_sample3",
+      "fold": 2,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/fresh_scale8/A57_step1_sample3.npy",
+      "sha256": "b4500f2e9aa662db35c4f1dba3f4fb3f10ac0b1f7026e84f3322a0dc9e115a98",
+      "bytes": 2592128
+    },
+    {
+      "name": "A57_step1_sample3",
+      "fold": 2,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap6/A57_step1_sample3.npy",
+      "sha256": "719c438ed26516cc430125caf47f14fa24f4e81a94c582ada2d1d8d03970aa72",
+      "bytes": 2592128
+    },
+    {
+      "name": "A57_step1_sample3",
+      "fold": 2,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu3/cap4/A57_step1_sample3.npy",
+      "sha256": "514b279728ac96e63dd939f546654eb32504ddb7483847e7aabee56ee7445361",
+      "bytes": 2592128
+    }
+  ],
+  "inference_timings": [
+    {
+      "name": "A11_step1_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 16.349744256585836
+    },
+    {
+      "name": "A11_step1_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 8.797587361186743
+    },
+    {
+      "name": "A11_step1_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.220154225826263
+    },
+    {
+      "name": "A11_step2_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.652402997016907
+    },
+    {
+      "name": "A11_step2_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.32343340292573
+    },
+    {
+      "name": "A11_step2_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.214548192918301
+    },
+    {
+      "name": "A59_step3_sample1",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.652012884616852
+    },
+    {
+      "name": "A59_step3_sample1",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.32894029468298
+    },
+    {
+      "name": "A59_step3_sample1",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.212065160274506
+    },
+    {
+      "name": "A61_step2_sample2",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.658747464418411
+    },
+    {
+      "name": "A61_step2_sample2",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.331215787678957
+    },
+    {
+      "name": "A61_step2_sample2",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.213653285056353
+    },
+    {
+      "name": "A64_step2_sample3",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.658318493515253
+    },
+    {
+      "name": "A64_step2_sample3",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.326752159744501
+    },
+    {
+      "name": "A64_step2_sample3",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.213114984333515
+    },
+    {
+      "name": "A74_step3_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.657686699181795
+    },
+    {
+      "name": "A74_step3_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.325304783880711
+    },
+    {
+      "name": "A74_step3_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.2139726132154465
+    },
+    {
+      "name": "A83_step1_sample2",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.656435519456863
+    },
+    {
+      "name": "A83_step1_sample2",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.327476438134909
+    },
+    {
+      "name": "A83_step1_sample2",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.213008109480143
+    },
+    {
+      "name": "A94_step4_sample2",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.664174914360046
+    },
+    {
+      "name": "A94_step4_sample2",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.325022414326668
+    },
+    {
+      "name": "A94_step4_sample2",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.217796489596367
+    },
+    {
+      "name": "A98_step2_sample4",
+      "fold": 4,
+      "arm": "fresh_scale8",
+      "seconds": 12.661480952054262
+    },
+    {
+      "name": "A98_step2_sample4",
+      "fold": 4,
+      "arm": "cap6",
+      "seconds": 6.324526894837618
+    },
+    {
+      "name": "A98_step2_sample4",
+      "fold": 4,
+      "arm": "cap4",
+      "seconds": 4.214605741202831
+    },
+    {
+      "name": "A15_step1_sample1",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "seconds": 16.373516283929348
+    },
+    {
+      "name": "A15_step1_sample1",
+      "fold": 1,
+      "arm": "cap6",
+      "seconds": 8.824318252503872
+    },
+    {
+      "name": "A15_step1_sample1",
+      "fold": 1,
+      "arm": "cap4",
+      "seconds": 4.220493704080582
+    },
+    {
+      "name": "A170_step4_sample3",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "seconds": 12.667826499789953
+    },
+    {
+      "name": "A170_step4_sample3",
+      "fold": 1,
+      "arm": "cap6",
+      "seconds": 6.330364171415567
+    },
+    {
+      "name": "A170_step4_sample3",
+      "fold": 1,
+      "arm": "cap4",
+      "seconds": 4.216739162802696
+    },
+    {
+      "name": "A18_step2_sample1",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "seconds": 12.664719011634588
+    },
+    {
+      "name": "A18_step2_sample1",
+      "fold": 1,
+      "arm": "cap6",
+      "seconds": 6.334176808595657
+    },
+    {
+      "name": "A18_step2_sample1",
+      "fold": 1,
+      "arm": "cap4",
+      "seconds": 4.212724439799786
+    },
+    {
+      "name": "A66_step3_sample2",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "seconds": 12.674252279102802
+    },
+    {
+      "name": "A66_step3_sample2",
+      "fold": 1,
+      "arm": "cap6",
+      "seconds": 6.328585471957922
+    },
+    {
+      "name": "A66_step3_sample2",
+      "fold": 1,
+      "arm": "cap4",
+      "seconds": 4.219709977507591
+    },
+    {
+      "name": "A69_step4_sample4",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "seconds": 12.666522022336721
+    },
+    {
+      "name": "A69_step4_sample4",
+      "fold": 1,
+      "arm": "cap6",
+      "seconds": 6.3342443108558655
+    },
+    {
+      "name": "A69_step4_sample4",
+      "fold": 1,
+      "arm": "cap4",
+      "seconds": 4.215879447758198
+    },
+    {
+      "name": "A78_step4_sample1",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "seconds": 12.669118095189333
+    },
+    {
+      "name": "A78_step4_sample1",
+      "fold": 1,
+      "arm": "cap6",
+      "seconds": 6.330635268241167
+    },
+    {
+      "name": "A78_step4_sample1",
+      "fold": 1,
+      "arm": "cap4",
+      "seconds": 4.218869440257549
+    },
+    {
+      "name": "A89_step1_sample2",
+      "fold": 1,
+      "arm": "fresh_scale8",
+      "seconds": 12.670812793076038
+    },
+    {
+      "name": "A89_step1_sample2",
+      "fold": 1,
+      "arm": "cap6",
+      "seconds": 6.338348373770714
+    },
+    {
+      "name": "A89_step1_sample2",
+      "fold": 1,
+      "arm": "cap4",
+      "seconds": 4.217037849128246
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 16.34927621856332
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 8.789884820580482
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.220280822366476
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.663405541330576
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.3249081037938595
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.214887376874685
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.662072889506817
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.33264222368598
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.213940016925335
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.658081144094467
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.331104103475809
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.211686763912439
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.65633349865675
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.332062169909477
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.212746847420931
+    },
+    {
+      "name": "A72_step4_sample4",
+      "fold": 0,
+      "arm": "fresh_scale8",
+      "seconds": 16.369051337242126
+    },
+    {
+      "name": "A72_step4_sample4",
+      "fold": 0,
+      "arm": "cap6",
+      "seconds": 8.811215348541737
+    },
+    {
+      "name": "A72_step4_sample4",
+      "fold": 0,
+      "arm": "cap4",
+      "seconds": 4.22068228572607
+    },
+    {
+      "name": "A87_step2_sample2",
+      "fold": 0,
+      "arm": "fresh_scale8",
+      "seconds": 12.663879603147507
+    },
+    {
+      "name": "A87_step2_sample2",
+      "fold": 0,
+      "arm": "cap6",
+      "seconds": 6.32305459305644
+    },
+    {
+      "name": "A87_step2_sample2",
+      "fold": 0,
+      "arm": "cap4",
+      "seconds": 4.217332907021046
+    },
+    {
+      "name": "A96_step1_sample1",
+      "fold": 0,
+      "arm": "fresh_scale8",
+      "seconds": 12.665859926491976
+    },
+    {
+      "name": "A96_step1_sample1",
+      "fold": 0,
+      "arm": "cap6",
+      "seconds": 6.332182306796312
+    },
+    {
+      "name": "A96_step1_sample1",
+      "fold": 0,
+      "arm": "cap4",
+      "seconds": 4.216730613261461
+    },
+    {
+      "name": "A16_step4_sample4",
+      "fold": 2,
+      "arm": "fresh_scale8",
+      "seconds": 12.68088785558939
+    },
+    {
+      "name": "A16_step4_sample4",
+      "fold": 2,
+      "arm": "cap6",
+      "seconds": 6.33087931573391
+    },
+    {
+      "name": "A16_step4_sample4",
+      "fold": 2,
+      "arm": "cap4",
+      "seconds": 4.214526850730181
+    },
+    {
+      "name": "A57_step1_sample3",
+      "fold": 2,
+      "arm": "fresh_scale8",
+      "seconds": 12.69309889152646
+    },
+    {
+      "name": "A57_step1_sample3",
+      "fold": 2,
+      "arm": "cap6",
+      "seconds": 6.326342590153217
+    },
+    {
+      "name": "A57_step1_sample3",
+      "fold": 2,
+      "arm": "cap4",
+      "seconds": 4.214870389550924
+    }
+  ],
+  "fresh_control_probability_drift": [
+    {
+      "name": "A11_step1_sample4",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A11_step2_sample4",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A59_step3_sample1",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A61_step2_sample2",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A64_step2_sample3",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A74_step3_sample4",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A83_step1_sample2",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A94_step4_sample2",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A98_step2_sample4",
+      "max_abs_probability_difference": 0.0,
+      "mean_abs_probability_difference": 0.0,
+      "changed_argmax_pixels": 0
+    },
+    {
+      "name": "A15_step1_sample1",
+      "max_abs_probability_difference": 0.0029296875,
+      "mean_abs_probability_difference": 1.5815539882169105e-05,
+      "changed_argmax_pixels": 8
+    },
+    {
+      "name": "A170_step4_sample3",
+      "max_abs_probability_difference": 0.003173828125,
+      "mean_abs_probability_difference": 1.5080569937708788e-05,
+      "changed_argmax_pixels": 7
+    },
+    {
+      "name": "A18_step2_sample1",
+      "max_abs_probability_difference": 0.0048828125,
+      "mean_abs_probability_difference": 1.2552703992696479e-05,
+      "changed_argmax_pixels": 4
+    },
+    {
+      "name": "A66_step3_sample2",
+      "max_abs_probability_difference": 0.00244140625,
+      "mean_abs_probability_difference": 2.5114472009590827e-05,
+      "changed_argmax_pixels": 16
+    },
+    {
+      "name": "A69_step4_sample4",
+      "max_abs_probability_difference": 0.001708984375,
+      "mean_abs_probability_difference": 1.8044307580566965e-05,
+      "changed_argmax_pixels": 13
+    },
+    {
+      "name": "A78_step4_sample1",
+      "max_abs_probability_difference": 0.00146484375,
+      "mean_abs_probability_difference": 2.3997943571885116e-05,
+      "changed_argmax_pixels": 18
+    },
+    {
+      "name": "A89_step1_sample2",
+      "max_abs_probability_difference": 0.0029296875,
+      "mean_abs_probability_difference": 2.6879517463385127e-05,
+      "changed_argmax_pixels": 15
+    },
+    {
+      "name": "A63_step1_sample4",
+      "max_abs_probability_difference": 0.00244140625,
+      "mean_abs_probability_difference": 1.8020935385720804e-05,
+      "changed_argmax_pixels": 5
+    },
+    {
+      "name": "A67_step1_sample1",
+      "max_abs_probability_difference": 0.0029296875,
+      "mean_abs_probability_difference": 2.651949216669891e-05,
+      "changed_argmax_pixels": 13
+    },
+    {
+      "name": "A71_step2_sample1",
+      "max_abs_probability_difference": 0.00244140625,
+      "mean_abs_probability_difference": 2.7585831048781984e-05,
+      "changed_argmax_pixels": 15
+    },
+    {
+      "name": "A8_step2_sample3",
+      "max_abs_probability_difference": 0.00537109375,
+      "mean_abs_probability_difference": 2.8052731067873538e-05,
+      "changed_argmax_pixels": 18
+    },
+    {
+      "name": "A8_step3_sample3",
+      "max_abs_probability_difference": 0.00390625,
+      "mean_abs_probability_difference": 3.234953328501433e-05,
+      "changed_argmax_pixels": 11
+    },
+    {
+      "name": "A72_step4_sample4",
+      "max_abs_probability_difference": 0.005126953125,
+      "mean_abs_probability_difference": 1.99819914996624e-05,
+      "changed_argmax_pixels": 18
+    },
+    {
+      "name": "A87_step2_sample2",
+      "max_abs_probability_difference": 0.001953125,
+      "mean_abs_probability_difference": 2.0677176507888362e-05,
+      "changed_argmax_pixels": 10
+    },
+    {
+      "name": "A96_step1_sample1",
+      "max_abs_probability_difference": 0.00390625,
+      "mean_abs_probability_difference": 1.2189505468995776e-05,
+      "changed_argmax_pixels": 5
+    },
+    {
+      "name": "A16_step4_sample4",
+      "max_abs_probability_difference": 0.00390625,
+      "mean_abs_probability_difference": 1.830715154937934e-05,
+      "changed_argmax_pixels": 9
+    },
+    {
+      "name": "A57_step1_sample3",
+      "max_abs_probability_difference": 0.0029296875,
+      "mean_abs_probability_difference": 3.202281004632823e-05,
+      "changed_argmax_pixels": 18
+    }
+  ],
+  "unchanged64_verified": true,
+  "caveats": [
+    "Exploratory, same repeatedly examined dataset; no independent test labels.",
+    "Two fixed scale candidates; bootstrap is descriptive and excludes selection uncertainty.",
+    "Width675 is not proof of lower physical resolution or matched field of view.",
+    "Fresh scale8 estimates backend/numerical variation from saved OOF.",
+    "No automatic adoption, report rewrite, mask replacement or new training."
+  ],
+  "automatic_adoption": false,
+  "training_started": false,
+  "submission_changed": false,
+  "test_inference": false
+}

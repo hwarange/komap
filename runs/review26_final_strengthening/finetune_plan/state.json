@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-10T19:30:01+09:00",
+  "pid": 824855,
+  "stage": "complete_and_stop",
+  "fixed_holdout_fold": 0,
+  "training_images": 72,
+  "validation_images": 18,
+  "epochs": 6,
+  "repeated_cross_validation": false,
+  "submission_changed": false,
+  "further_training_scheduled": false,
+  "results": "runs/review26_final_strengthening/finetune_plan/results.json"
+}

@@ -1,0 +1,137 @@
+{
+  "time": "2026-10-10T20:18:41.046330+09:00",
+  "source": "komap:/home/j-j15a106/komap",
+  "metadata_only": true,
+  "weights_downloaded": false,
+  "probabilities_downloaded": false,
+  "maps_downloaded": false,
+  "file_count": 25,
+  "total_bytes": 743789,
+  "files": [
+    {
+      "path": "runs/review27_finetune_full/plan.json",
+      "bytes": 204010,
+      "sha256": "5c046c50f0e4054995c4570282a08613de70237c856da4d8aa1621e7f80ae498"
+    },
+    {
+      "path": "runs/review27_finetune_full/state.json",
+      "bytes": 413,
+      "sha256": "aeda2cfe99bb13924a110ef52483a17aab166393e1f58b29e357140493966840"
+    },
+    {
+      "path": "runs/review27_finetune_full/started.json",
+      "bytes": 512,
+      "sha256": "c807a0447f3a3133170e42baa164a12d782cf8cf9f6a39fe7dc88ead6daa127c"
+    },
+    {
+      "path": "runs/review27_finetune_full/completed_jobs.json",
+      "bytes": 13833,
+      "sha256": "cd3f413157a4f740ce0cebfe5f142b0f6e7f3b6d4279ac2e530f7e7b397dc920"
+    },
+    {
+      "path": "runs/review27_finetune_full/results.json",
+      "bytes": 203311,
+      "sha256": "6ebff39397087d8f3c5cc6e470361a48a06b348b83262f2d1a0a98e31c1f59bd"
+    },
+    {
+      "path": "runs/review27_finetune_full/per_image_rows.json",
+      "bytes": 174707,
+      "sha256": "1fcf2d2f32c3c68732f2a91814e240aca0c9d0619b7b5ba26b28b34d14929c55"
+    },
+    {
+      "path": "runs/review27_finetune_full/all.done",
+      "bytes": 619,
+      "sha256": "6bf800134650fd96288a9695643606c952ee5eb24f0c507d00fa21ff475507dd"
+    },
+    {
+      "path": "runs/review27_finetune_full/logs/evaluation.log",
+      "bytes": 484,
+      "sha256": "cad8bf071053e26426820c73afa591b4ca247aaee2bbb5cc98ce28de0af6a67b"
+    },
+    {
+      "path": "runs/review27_finetune_full/logs/interface_fold1.log",
+      "bytes": 1802,
+      "sha256": "167427da674d1759f5e374c0594df2c642db36dc7b536251b3fe71517135d8b5"
+    },
+    {
+      "path": "runs/review27_finetune_full/logs/interface_fold2.log",
+      "bytes": 1805,
+      "sha256": "33d9b236a41fd1fc9a48af5c7ceaa4041a5035f3ebaff086331d051c24724ef1"
+    },
+    {
+      "path": "runs/review27_finetune_full/logs/interface_fold3.log",
+      "bytes": 1808,
+      "sha256": "1acf388a2d50f39c542ee7da889a051a269e8075c38205d50f3c9dc7f8b505df"
+    },
+    {
+      "path": "runs/review27_finetune_full/logs/interface_fold4.log",
+      "bytes": 1805,
+      "sha256": "87c1847244a8fef095644bb97a52333d53e6ef2788b819a08011daeb785834c5"
+    },
+    {
+      "path": "runs/review27_finetune_full/controller.log",
+      "bytes": 92433,
+      "sha256": "06c424b5fc6d75bb932264caf96a2a2028299a88cfeccf0f48083d32fc7f2b9a"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold1/args.json",
+      "bytes": 1258,
+      "sha256": "b4772490146f8ad70ee1733a95310c3a4d5ed8d3c07bd285113e1cec9cd2dd92"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold1/log.jsonl",
+      "bytes": 1519,
+      "sha256": "9c1c96e13bb8bcd960c3a8bb4b2ebb2fbcf50a4dcae0db75fc9df097796cdd62"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold1/result.json",
+      "bytes": 8804,
+      "sha256": "6ad613b76817e8928fe4d4ceb45731cc8a43befe17bc4777db7caabd7ea033a6"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold2/args.json",
+      "bytes": 1258,
+      "sha256": "669102d51c620d0f52f3ca2c78d12113af57c0b43a9fe2310f6d12c4a01e9b9e"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold2/log.jsonl",
+      "bytes": 1523,
+      "sha256": "3b39d222862b5e4ca32c9f7282a5cd6ba42d918f076795160e6bb4afb70d1f7c"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold2/result.json",
+      "bytes": 8761,
+      "sha256": "7f944102b461111097a804409be575340d08cdb2413cf4d68ee6b704cae13180"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold3/args.json",
+      "bytes": 1258,
+      "sha256": "5bd0dd07fbb3b377977cb04521b34a5834c0cfec4590417eb4806261c2a1619d"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold3/log.jsonl",
+      "bytes": 1525,
+      "sha256": "65b0dec26867eb2a4f1e8a89155cfc14233dbde4b0bccafecd6534ec9ea5c1e1"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold3/result.json",
+      "bytes": 8748,
+      "sha256": "5110956083f4328012e0adb7fdf25f51a813bb2013af4308d25573f5532ce11a"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold4/args.json",
+      "bytes": 1258,
+      "sha256": "3a5422298617e4dd45afd8d2b3c78b4f6ed67a3b17c2e458b2d50426884c64e2"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold4/log.jsonl",
+      "bytes": 1522,
+      "sha256": "bc428c5287123012f90485d0c861c1f195b3ef01c430a27e7c6e3de7a77c819e"
+    },
+    {
+      "path": "runs/review27_finetune_full/interface/fold4/result.json",
+      "bytes": 8813,
+      "sha256": "2b7be23a5c7456bd99c5168b9f442d44ef6b4d0671f47c6ae6a1b6179cc2d190"
+    }
+  ]
+}

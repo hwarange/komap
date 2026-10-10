@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-10T11:25:06.171331+00:00",
+  "source_mask_directory": "submissions/final27_selected/masks",
+  "script_sha256": "974a0d2a926eb4cdb14d6cc2ae5ca243542170ac423fb3b56c26f4aa02cae4cd",
+  "quantity": "predicted_2d_area_fraction",
+  "formula": "100 * class_pixel_count / total_image_pixels",
+  "mask_count": 10,
+  "palette_rgb": {
+    "Al": [
+      153,
+      127,
+      76
+    ],
+    "Al3Ni": [
+      25,
+      76,
+      153
+    ],
+    "Primary Si": [
+      76,
+      178,
+      76
+    ],
+    "Eutectic Si": [
+      204,
+      204,
+      204
+    ]
+  },
+  "all_masks_exact_four_color_valid": true,
+  "images": [
+    {
+      "file": "A107_step1_sample3_mask.png",
+      "sha256": "3c3a6e6ebe26b60f6a469d43cc8ecc80b300269aedb3686bf5acfc231a2f54a5",
+      "width_pixels": 1230,
+      "height_pixels": 875,
+      "total_pixels": 1076250,
+      "class_pixel_counts": {
+        "Al": 558588,
+        "Al3Ni": 367470,
+        "Primary Si": 102868,
+        "Eutectic Si": 47324
+      },
+      "predicted_area_percent": {
+        "Al": 51.90132404181185,
+        "Al3Ni": 34.14355400696864,
+        "Primary Si": 9.558002322880371,
+        "Eutectic Si": 4.397119628339141
+      }
+    },
+    {
+      "file": "A122_step4_sample1_mask.png",
+      "sha256": "2af35b11c8fd9df687223fd7fcefc6eb4e95f8412c95f75a62169c898d0f3249",
+      "width_pixels": 1230,
+      "height_pixels": 875,
+      "total_pixels": 1076250,
+      "class_pixel_counts": {
+        "Al": 601979,
+        "Al3Ni": 320237,
+        "Primary Si": 95701,
+        "Eutectic Si": 58333
+      },
+      "predicted_area_percent": {
+        "Al": 55.9330081300813,
+        "Al3Ni": 29.754889663182343,
+        "Primary Si": 8.892078977932636,
+        "Eutectic Si": 5.420023228803716
+      }
+    },
+    {
+      "file": "A124_step4_sample3_mask.png",
+      "sha256": "9af05fb50d1bb800d731ab73590369f511cc02d51ed2e94753567180f0b48db1",
+      "width_pixels": 1230,
+      "height_pixels": 875,
+      "total_pixels": 1076250,
+      "class_pixel_counts": {
+        "Al": 533909,
+        "Al3Ni": 396080,
+        "Primary Si": 82857,
+        "Eutectic Si": 63404
+      },
+      "predicted_area_percent": {
+        "Al": 49.60826945412311,
+        "Al3Ni": 36.80185830429733,
+        "Primary Si": 7.698675958188153,
+        "Eutectic Si": 5.891196283391405
+      }
+    },
+    {
+      "file": "A127_step3_sample2_mask.png",
+      "sha256": "2d49cc642273d9b4d54913bb5faa0eee17a7a1dcbefe1765f47dc29cbcf688a4",
+      "width_pixels": 1440,
+      "height_pixels": 1024,
+      "total_pixels": 1474560,
+      "class_pixel_counts": {
+        "Al": 739630,
+        "Al3Ni": 529348,
+        "Primary Si": 123893,
+        "Eutectic Si": 81689
+      },
+      "predicted_area_percent": {
+        "Al": 50.15936957465278,
+        "Al3Ni": 35.89870876736111,
+        "Primary Si": 8.402031792534723,
+        "Eutectic Si": 5.539889865451389
+      }
+    },
+    {
+      "file": "A133_step4_sample1_mask.png",
+      "sha256": "4ea08667cabcfeefba0552a660f34402f8122ab4eb05aa8e9d023c336dcbc8c5",
+      "width_pixels": 1230,
+      "height_pixels": 875,
+      "total_pixels": 1076250,
+      "class_pixel_counts": {
+        "Al": 683927,
+        "Al3Ni": 251550,
+        "Primary Si": 87039,
+        "Eutectic Si": 53734
+      },
+      "predicted_area_percent": {
+        "Al": 63.54722415795586,
+        "Al3Ni": 23.37282229965157,
+        "Primary Si": 8.087247386759582,
+        "Eutectic Si": 4.992706155632985
+      }
+    },
+    {
+      "file": "A167_step3_sample3_mask.png",
+      "sha256": "9ab45ceee8840ab9b8336042ad8c525dc91399d564f21aca80fa81e5872c0d2f",
+      "width_pixels": 1278,
+      "height_pixels": 909,
+      "total_pixels": 1161702,
+      "class_pixel_counts": {
+        "Al": 519823,
+        "Al3Ni": 471370,
+        "Primary Si": 110543,
+        "Eutectic Si": 59966
+      },
+      "predicted_area_percent": {
+        "Al": 44.74667341538536,
+        "Al3Ni": 40.57581031968612,
+        "Primary Si": 9.515607272777356,
+        "Eutectic Si": 5.161908992151171
+      }
+    },
+    {
+      "file": "A38_step2_sample2_mask.png",
+      "sha256": "0cb5ab84c4134d56487a658370225ea0e101806650e4936b88473a30ff717027",
+      "width_pixels": 675,
+      "height_pixels": 480,
+      "total_pixels": 324000,
+      "class_pixel_counts": {
+        "Al": 200886,
+        "Al3Ni": 61030,
+        "Primary Si": 34854,
+        "Eutectic Si": 27230
+      },
+      "predicted_area_percent": {
+        "Al": 62.00185185185185,
+        "Al3Ni": 18.83641975308642,
+        "Primary Si": 10.757407407407408,
+        "Eutectic Si": 8.404320987654321
+      }
+    },
+    {
+      "file": "A51_step3_sample3_mask.png",
+      "sha256": "18abe5ea930ac768c7df9b920b9ada2b75cc6bf3ce9b2daefa2b25d0fd246eab",
+      "width_pixels": 1278,
+      "height_pixels": 909,
+      "total_pixels": 1161702,
+      "class_pixel_counts": {
+        "Al": 714733,
+        "Al3Ni": 103651,
+        "Primary Si": 232636,
+        "Eutectic Si": 110682
+      },
+      "predicted_area_percent": {
+        "Al": 61.52464229208523,
+        "Al3Ni": 8.92233980831573,
+        "Primary Si": 20.02544542404162,
+        "Eutectic Si": 9.527572475557415
+      }
+    },
+    {
+      "file": "A63_step2_sample3_mask.png",
+      "sha256": "4244754709882ff329b50179b1049ecf89f94f425bd4809c750e0e3ffed289b5",
+      "width_pixels": 675,
+      "height_pixels": 480,
+      "total_pixels": 324000,
+      "class_pixel_counts": {
+        "Al": 201296,
+        "Al3Ni": 54445,
+        "Primary Si": 34614,
+        "Eutectic Si": 33645
+      },
+      "predicted_area_percent": {
+        "Al": 62.12839506172839,
+        "Al3Ni": 16.804012345679013,
+        "Primary Si": 10.683333333333334,
+        "Eutectic Si": 10.38425925925926
+      }
+    },
+    {
+      "file": "A87_step1_sample4_mask.png",
+      "sha256": "066318dfc5d1178f8383d83a14adbe1324f9cf2a9cb1e52071ea3fd05f3eba32",
+      "width_pixels": 675,
+      "height_pixels": 480,
+      "total_pixels": 324000,
+      "class_pixel_counts": {
+        "Al": 204157,
+        "Al3Ni": 54574,
+        "Primary Si": 39444,
+        "Eutectic Si": 25825
+      },
+      "predicted_area_percent": {
+        "Al": 63.011419753086415,
+        "Al3Ni": 16.843827160493827,
+        "Primary Si": 12.174074074074074,
+        "Eutectic Si": 7.970679012345679
+      }
+    }
+  ],
+  "pooled_digital_pixel_counts": {
+    "Al": 4958928,
+    "Al3Ni": 2609755,
+    "Primary Si": 944449,
+    "Eutectic Si": 561832
+  },
+  "pooled_digital_pixel_percent": {
+    "Al": 54.6440514805348,
+    "Al3Ni": 28.757744934304974,
+    "Primary Si": 10.407192799883283,
+    "Eutectic Si": 6.191010785276944
+  },
+  "image_mean_area_percent": {
+    "Al": 56.456217773276215,
+    "Al3Ni": 26.195424242872214,
+    "Primary Si": 10.579390394992926,
+    "Eutectic Si": 6.768967588858648
+  },
+  "limitations": [
+    "Predicted 2D area fractions are calculated from segmentation masks, not ground truth.",
+    "They are not measured chemical composition, volume fraction, elastic modulus or accuracy.",
+    "No physical pixel scale is supplied; pixel counts are not converted to square micrometres.",
+    "Test labels are unavailable, so phase-fraction error and test mIoU cannot be calculated.",
+    "Image-level percentages describe sampled fields of view; they are not bulk-alloy estimates.",
+    "The pooled fraction is weighted by digital pixel count, not physical sampled area.",
+    "Expert review and reference measurements are required for materials decisions."
+  ],
+  "source_masks_unchanged": true
+}

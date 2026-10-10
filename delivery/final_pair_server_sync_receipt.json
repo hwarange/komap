@@ -1,0 +1,67 @@
+{
+  "verified_at": "2026-10-10T19:02:19.198805+09:00",
+  "synced": {
+    "reports/모델링결과서_김형수없는김형수_최종조합.docx": {
+      "sha256": "eb1e5169796cdada3d03b94c00370ce2ead9afd88bc749dd027e6fb56cb75a40",
+      "bytes": 732377
+    },
+    "scripts/build_modeling_report.py": {
+      "sha256": "3078d18a60572de0e1116a3fbe863ad0e83a3b7bbdb7e58d8f383715ff5974a3",
+      "bytes": 73839
+    },
+    "reports/final_pair_oof_example.png": {
+      "sha256": "e5aef819200662b973a6b03b1b69bcfc87dbaafa9d41f70addded51a8731287f",
+      "bytes": 423923
+    },
+    "reports/modeling_document_work/final_build_evidence.json": {
+      "sha256": "57d0813890f8265be4d5f760fc88c7e2e2c82b6ef657537501e0cb8bc21d2ef0",
+      "bytes": 3469
+    },
+    "reports/modeling_document_work/layout_qa.json": {
+      "sha256": "897adf3a012d3662f225c42a839a44a498c5a0be3bf5fa5c8d6820d07cfac964",
+      "bytes": 1042
+    },
+    "reports/modeling_document_work/document_state.json": {
+      "sha256": "e51252fe6a4a1f90ed296476ce923e0f7c2f9239ea67a70911456c8dc388f09c",
+      "bytes": 1108
+    },
+    "reports/modeling_document_work/artifact.md": {
+      "sha256": "b6039efe5806ee132a9d0b113041daf07aeadc5c51a2016986accf3dab4bd987",
+      "bytes": 10843
+    },
+    "reports/research_notes.md": {
+      "sha256": "14f9a375d95c464dcc9aa771db098634bf1df7e97731b18092b6be5e50ab7484",
+      "bytes": 82099
+    },
+    "reports/idea_journey.md": {
+      "sha256": "873f0f263702067a87b3512139b48f49df71473faa6a763fbbc291a425bfeee0",
+      "bytes": 53616
+    },
+    "handoff/HANDOFF_latest.md": {
+      "sha256": "d815916d8e079e7fd9c269e7c0af70b1659e369f2d6d1212c5e82ace0541a1e3",
+      "bytes": 56545
+    },
+    "delivery/final_model_selection.json": {
+      "sha256": "643edbd1328a50633aa830aaed762234889c43899df962abc9fef6c467951e63",
+      "bytes": 3764
+    },
+    "runs/final_pair_submission/completion_verification.json": {
+      "sha256": "3049437badd8d9b469fab92e66032b4ee18f8878857f957eb100b6035ae5cc9e",
+      "bytes": 3577
+    },
+    "runs/final_pair_submission/mask_diff_vs_sub6.json": {
+      "sha256": "fc4214d08a600647ba62b679ead192f80b21f4c12847edfa8d14650abd8dea1e",
+      "bytes": 1875
+    },
+    "reports/phase_application_final_pair/verification.json": {
+      "sha256": "25b8b2984e04889efd7686210904f2d0e5e42462eb1e69005ab551c496f92750",
+      "bytes": 410
+    }
+  },
+  "existing_artifacts_verified": {
+    "delivery/final_pair_code_bundle.zip": "e849a0c711a5a6a6f8fc939581313fed2615af9de182a27ff515e112e327669d",
+    "submissions/final_pair_mit4_unet3/final_pair_masks.zip": "51532d2b7b4661afbab176a3f8190f58bbc8160bc58d4e14d53a58f9b142c103",
+    "delivery/final_pair_repro/run_submission.py": "1f121cae6e4a44c8cf8a945afe3986e7ed6084be87bde779a397d1b7ac6d8d43",
+    "delivery/final_pair_repro/manifest.json": "645be82744b5aba79b30e230f84307309536bbbebd6d3d640dde4eeac34e639e"
+  }
+}

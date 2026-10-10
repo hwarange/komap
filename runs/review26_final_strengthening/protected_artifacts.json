@@ -1,0 +1,25 @@
+{
+  "purpose": "pre-strengthening artifact references; original versions preserved",
+  "files": {
+    "delivery/final_model_selection.json": {
+      "sha256": "643edbd1328a50633aa830aaed762234889c43899df962abc9fef6c467951e63",
+      "bytes": 3764
+    },
+    "delivery/final_pair_code_bundle.zip": {
+      "sha256": "e849a0c711a5a6a6f8fc939581313fed2615af9de182a27ff515e112e327669d",
+      "bytes": 91842
+    },
+    "delivery/final_pair_repro/manifest.json": {
+      "sha256": "645be82744b5aba79b30e230f84307309536bbbebd6d3d640dde4eeac34e639e",
+      "bytes": 11732
+    },
+    "delivery/final_pair_repro/run_submission.py": {
+      "sha256": "1f121cae6e4a44c8cf8a945afe3986e7ed6084be87bde779a397d1b7ac6d8d43",
+      "bytes": 14882
+    },
+    "submissions/final_pair_mit4_unet3/final_pair_masks.zip": {
+      "sha256": "51532d2b7b4661afbab176a3f8190f58bbc8160bc58d4e14d53a58f9b142c103",
+      "bytes": 1137553
+    }
+  }
+}

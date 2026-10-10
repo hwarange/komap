@@ -1,0 +1,108 @@
+{
+  "time": "2026-10-10T20:32:17.256972+09:00",
+  "verified": true,
+  "uploaded_files": 16,
+  "total_verified_files": 20,
+  "files": [
+    {
+      "path": "reports/모델링결과서_김형수없는김형수_최종검증.docx",
+      "size_bytes": 733730,
+      "sha256": "5203a6e239314cb71ecad5303ca0ac19b201425cb402eed532e47854327564e8"
+    },
+    {
+      "path": "delivery/final_model_selection.json",
+      "size_bytes": 8591,
+      "sha256": "928b3108ca51ab5c30ce6d6888f233c8cc474e79d692be511e5d62e8d7055600"
+    },
+    {
+      "path": "delivery/final27_repro/local_validation.json",
+      "size_bytes": 8920,
+      "sha256": "0a60eec1bf2418736c4342c8cadec3c05ad31b82a9c1b7681bd633455133be3e"
+    },
+    {
+      "path": "scripts/build_modeling_report.py",
+      "size_bytes": 108749,
+      "sha256": "6c5d1fd5f7252a439d090bde4db2c1a8ea7a99989f76e3ae73cef40b364d3ed1"
+    },
+    {
+      "path": "handoff/HANDOFF_latest.md",
+      "size_bytes": 64781,
+      "sha256": "e9f69653a63a014937fed68dfed7112df07517c44d22edde4467d28452251130"
+    },
+    {
+      "path": "reports/research_notes.md",
+      "size_bytes": 89667,
+      "sha256": "d8e595ee9c81a787b32d5f4a7199ba10ede75a563a3825bc4390c4a69e0ebfc6"
+    },
+    {
+      "path": "reports/idea_journey.md",
+      "size_bytes": 60827,
+      "sha256": "4e694b97e4cbdbb736fff43c2690df82b571bfe7d010810e2280b93c94269fc5"
+    },
+    {
+      "path": "runs/review27_finetune_full/final_review.json",
+      "size_bytes": 3279,
+      "sha256": "0eb19a9e6c30a2ddac42e9fe598c8d68bb3bad47180d1cfafdce1133846c465e"
+    },
+    {
+      "path": "runs/review27_finetune_full/previous_selection.json",
+      "size_bytes": 4930,
+      "sha256": "673705dbe0bd288237d560a07482b3a791d38949a77f2171b99651d1ad1cdf56"
+    },
+    {
+      "path": "runs/review27_finetune_full/metadata_download_receipt.json",
+      "size_bytes": 5017,
+      "sha256": "316d650fd1f8168414f96f07847a8f68ce63b6e5e241ddebbc79856121223527"
+    },
+    {
+      "path": "reports/modeling_document_work/document_state.json",
+      "size_bytes": 1353,
+      "sha256": "ff43cc8945322f77478611152890adf9c818aeb44407d0d9e313d95574960a64"
+    },
+    {
+      "path": "reports/modeling_document_work/layout_qa.json",
+      "size_bytes": 2173,
+      "sha256": "9a2a2f2df84f0d8bc5cf6fa484f01a63ae3d3530bdc084ca8d81ac66aa99dd84"
+    },
+    {
+      "path": "reports/modeling_document_work/final_build_evidence.json",
+      "size_bytes": 3887,
+      "sha256": "cb0022bf0836f87a28924f883b2735834c488eff5e72b26d576e5150175b59d3"
+    },
+    {
+      "path": "reports/modeling_document_work/artifact.md",
+      "size_bytes": 15819,
+      "sha256": "cf6e54418814407b7485b8ba156f79b7154148b4b034c3951f28e6e38e5b64c4"
+    },
+    {
+      "path": "reports/phase_application_final27/phase_area_summary.json",
+      "size_bytes": 7518,
+      "sha256": "150a971c7f4a2531989db29b9e3e831448e54c14d01a88b4b6a08e8d9accfb6b"
+    },
+    {
+      "path": "reports/phase_application_final27/phase_area_fractions.png",
+      "size_bytes": 246123,
+      "sha256": "1a820a81372e07ea96fcf6c1f2d265e2ae267e6bf2d356ab11b72453d2f46852"
+    },
+    {
+      "path": "delivery/final27_code_bundle.zip",
+      "size_bytes": 612027,
+      "sha256": "cfc9d84a9add385081a73ad8aa6c000c1ae895bf845c8ad9b5968898885a2f3b"
+    },
+    {
+      "path": "delivery/final27_code_bundle_receipt.json",
+      "size_bytes": 19703,
+      "sha256": "a149f19ddac81d707c1b57908b3b340bb1ccf0f1932730d30028f8735a92087c"
+    },
+    {
+      "path": "submissions/final27_selected/final27_masks.zip",
+      "size_bytes": 1135026,
+      "sha256": "646601cbc242aa5583f889a30c47a65d7b1ca82775bb7fcb7c398ecdfd2b4b86"
+    },
+    {
+      "path": "delivery/final27_repro/manifest.json",
+      "size_bytes": 29261,
+      "sha256": "dd497b49a765e790e90deac8c60371507df369cb85558e6961ecc6ad0e334da0"
+    }
+  ]
+}

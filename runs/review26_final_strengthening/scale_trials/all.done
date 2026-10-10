@@ -1,0 +1,13 @@
+{
+  "completed_utc": "2026-10-10T10:18:31.981067+00:00",
+  "nonce": "e83b9c3d045c453fb5b73364104d455e",
+  "outcome": "fixed_low_resolution_inference_scale_review_complete",
+  "plan_sha256": "f7b357342de5dc1da01d17644d5cc16350e521eebe2cbf00c38c0989927d12ba",
+  "results_sha256": "d36b3b44644c0033df717ae5cc07db6cb9e8b8008023a4b034b9ef8d488d2aa2",
+  "rows_sha256": "5f310195f15c15c5c55bf3caa32a1b355217b2c01d1076dbbe13c6843d26b0eb",
+  "images": 90,
+  "affected_images": 26,
+  "automatic_adoption": false,
+  "training_started": false,
+  "submission_changed": false
+}

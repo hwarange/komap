@@ -1,0 +1,3 @@
+{"model": "mit4_fold1", "seconds": 116.02187313139439}
+{"model": "unet3_fold0", "seconds": 28.10114699229598}
+{"model": "unet3_fold4", "seconds": 25.738152965903282}

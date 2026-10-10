@@ -1,0 +1,20 @@
+{
+  "time": "2026-10-10T20:18:18+09:00",
+  "pid": 829294,
+  "stage": "complete_and_stop",
+  "new_training_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "reused_completed_folds": [
+    0
+  ],
+  "epochs_per_new_fold": 6,
+  "total_evaluation_images": 90,
+  "independent_validation": false,
+  "submission_changed": false,
+  "further_training_scheduled": false,
+  "results": "runs/review27_finetune_full/results.json"
+}

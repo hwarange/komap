@@ -1,0 +1,20 @@
+[
+  {
+    "id": "deeplab4",
+    "arm": "deeplab4",
+    "completed": "2026-10-10T14:25:12+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 685.4,
+    "result_sha256": "eeb85a1f432cf54921606e1a8dcae7bd306157beb7d404a1fbb668dc2738fec1"
+  },
+  {
+    "id": "mit5",
+    "arm": "mit5",
+    "completed": "2026-10-10T18:01:44+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 12741.300000000001,
+    "result_sha256": "89d073a15e098b23e48575e314b3aab962f9f9536ef10bcf6a4d6f583d363ede"
+  }
+]

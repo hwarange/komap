@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-10T15:30:53+09:00",
+  "outcome": "unetpp4_two_fold_pilot_complete",
+  "folds": [
+    0,
+    1
+  ],
+  "images": 36,
+  "epochs": 60,
+  "new_training_jobs": 2,
+  "results_sha256": "573f8e61b167051c0b4f3d67d1d7c2d5f3fcd641bf2d1c78ad29b5fbe2781fa5",
+  "plan_sha256": "6e144ce53aeea8bd41ef255b58e8192048dda8d437c8ceaaec7689c6ba8168b2",
+  "further_training_scheduled": false,
+  "submission_changed": false
+}

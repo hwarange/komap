@@ -1,0 +1,128 @@
+{
+  "checked_at": "2026-10-10T20:41:12.352512+09:00",
+  "question": "Whether regressions under selected model resemble test images",
+  "comparison": "interface_cap6 minus baseline_original",
+  "results_sha256": "d588884922a8d64e8d15287eecf1db80740af8f23195756a1ea9411993411342",
+  "reference_images": 90,
+  "test_images": 10,
+  "handcrafted_image_features": true,
+  "test_labels_used": false,
+  "models_or_selected_artifacts_changed": false,
+  "gpu_used": false,
+  "all_similarity_schemes": {
+    "photometry_all90": {
+      "neighbor_slots": 50,
+      "worsened_neighbor_slots": 13,
+      "unique_neighbors": 34
+    },
+    "photometry_same_width": {
+      "neighbor_slots": 50,
+      "worsened_neighbor_slots": 18,
+      "unique_neighbors": 37
+    },
+    "normalized_texture_all90": {
+      "neighbor_slots": 50,
+      "worsened_neighbor_slots": 20,
+      "unique_neighbors": 36
+    },
+    "normalized_texture_same_width": {
+      "neighbor_slots": 50,
+      "worsened_neighbor_slots": 15,
+      "unique_neighbors": 39
+    },
+    "equal_photo_texture_all90": {
+      "neighbor_slots": 50,
+      "worsened_neighbor_slots": 14,
+      "unique_neighbors": 35
+    },
+    "equal_photo_texture_same_width": {
+      "neighbor_slots": 50,
+      "worsened_neighbor_slots": 17,
+      "unique_neighbors": 38
+    }
+  },
+  "same_width_random_reference_expected_worsened_slots": 18.02940313060253,
+  "slot_counts_are_not_independent_observations": true,
+  "no_test_accuracy_claim": true,
+  "per_test": [
+    {
+      "test": "A107_step1_sample3",
+      "width": 1230,
+      "nearest5_worsened": 1,
+      "reference_count": 23,
+      "reference_worsened": 5
+    },
+    {
+      "test": "A122_step4_sample1",
+      "width": 1230,
+      "nearest5_worsened": 0,
+      "reference_count": 23,
+      "reference_worsened": 5
+    },
+    {
+      "test": "A124_step4_sample3",
+      "width": 1230,
+      "nearest5_worsened": 0,
+      "reference_count": 23,
+      "reference_worsened": 5
+    },
+    {
+      "test": "A127_step3_sample2",
+      "width": 1440,
+      "nearest5_worsened": 1,
+      "reference_count": 11,
+      "reference_worsened": 4
+    },
+    {
+      "test": "A133_step4_sample1",
+      "width": 1230,
+      "nearest5_worsened": 0,
+      "reference_count": 23,
+      "reference_worsened": 5
+    },
+    {
+      "test": "A167_step3_sample3",
+      "width": 1278,
+      "nearest5_worsened": 2,
+      "reference_count": 29,
+      "reference_worsened": 16
+    },
+    {
+      "test": "A38_step2_sample2",
+      "width": 675,
+      "nearest5_worsened": 4,
+      "reference_count": 26,
+      "reference_worsened": 11
+    },
+    {
+      "test": "A51_step3_sample3",
+      "width": 1278,
+      "nearest5_worsened": 3,
+      "reference_count": 29,
+      "reference_worsened": 16
+    },
+    {
+      "test": "A63_step2_sample3",
+      "width": 675,
+      "nearest5_worsened": 3,
+      "reference_count": 26,
+      "reference_worsened": 11
+    },
+    {
+      "test": "A87_step1_sample4",
+      "width": 675,
+      "nearest5_worsened": 3,
+      "reference_count": 26,
+      "reference_worsened": 11
+    }
+  ],
+  "notes": [
+    "Image-only exploratory diagnostic after model selection; no GT masks loaded.",
+    "All similarity definitions and k5 are fixed in this script, without tuning to outcomes.",
+    "Each texture block has equal mean-squared standardized-feature weight; combined metric equally weights photometry and texture.",
+    "Texture uses per-image p1-p99 normalization then common width675. Physical field of view is not calibrated.",
+    "Same-width results control pixel-resolution group, but cannot establish same alloy chemistry or semantic class correctness.",
+    "The10test images have no labels. Visual similarity does not determine which model is more accurate.",
+    "No training, GPU inference, model-weight selection, mask generation, or existing report/package changes."
+  ]
+}

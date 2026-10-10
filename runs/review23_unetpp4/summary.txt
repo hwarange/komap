@@ -1,0 +1,31 @@
+Created UTC: 2026-10-10T06:30:52.998996+00:00
+Exploratory 4x UNet++ pilot: folds0/1, 36 images, seed0, 60 epochs.
+x3_unet60_single: mIoU=80.467103; classes={'Al': 93.18121330794436, 'Al3Ni': 80.68607973903788, 'Primary Si': 89.08588233269883, 'Eutectic Si': 58.915237349588715}
+x3_unet120_single: mIoU=80.622796; classes={'Al': 93.4090874855472, 'Al3Ni': 81.15209839400316, 'Primary Si': 88.78028512609012, 'Eutectic Si': 59.14971448553542}
+x4_unet60_single: mIoU=80.323120; classes={'Al': 93.14180734339641, 'Al3Ni': 80.49352310204239, 'Primary Si': 89.07762240610278, 'Eutectic Si': 58.57952697036205}
+sub6: mIoU=81.324549; classes={'Al': 93.4964528721981, 'Al3Ni': 81.77388107273637, 'Primary Si': 89.63805353662022, 'Eutectic Si': 60.389807360072325}
+x4_mit_x3_unet120_pair: mIoU=81.618210; classes={'Al': 93.63071152924579, 'Al3Ni': 81.9860610266448, 'Primary Si': 89.88271721059137, 'Eutectic Si': 60.97334993658189}
+x2_mit_x4_unet60_pair: mIoU=81.314707; classes={'Al': 93.34556376551242, 'Al3Ni': 81.5436426065896, 'Primary Si': 89.86390356632525, 'Eutectic Si': 60.50571800171098}
+x4_mit_x4_unet60_pair: mIoU=81.403284; classes={'Al': 93.46342701050503, 'Al3Ni': 81.66986528765608, 'Primary Si': 89.84072256528341, 'Eutectic Si': 60.63911952851717}
+x4_vs_x3_unet60: delta=-0.143983 pp; CI95=[-0.5775708680747725, 0.2679436768273885]
+  folds={'0': -0.026451858285033342, '1': -0.26151459539805366}; classes={'Al': -0.039405964547958895, 'Al3Ni': -0.19255663699550002, 'Primary Si': -0.00825992659604956, 'Eutectic Si': -0.3357103792266643}; improved=20/36
+x4_unet60_vs_x3_unet120: delta=-0.299676 pp; CI95=[-0.7759355348167623, 0.14592815243478596]
+  folds={'0': 0.028493485316012764, '1': -0.6278463199521513}; classes={'Al': -0.2672801421508228, 'Al3Ni': -0.6585752919607794, 'Primary Si': 0.29733728001268095, 'Eutectic Si': -0.5701875151733463}; improved=10/36
+x4_mit_x3_unet120_vs_sub6: delta=+0.293661 pp; CI95=[-0.17554895707723256, 0.8215989673061993]
+  folds={'0': 0.19994391490865956, '1': 0.3873785158097781}; classes={'Al': 0.13425865704770917, 'Al3Ni': 0.21217995390844813, 'Primary Si': 0.24466367397112065, 'Eutectic Si': 0.5835425765095962}; improved=25/36
+replace_unet_vs_sub6: delta=-0.009842 pp; CI95=[-0.24236835138735022, 0.21177626443255781]
+  folds={'0': 0.14205784335359162, '1': -0.1617412940979427}; classes={'Al': -0.15088910668566768, 'Al3Ni': -0.2302384661467642, 'Primary Si': 0.22585002970503393, 'Eutectic Si': 0.11591064163869774}; improved=14/36
+both4x_vs_sub6: delta=+0.078735 pp; CI95=[-0.414816421614927, 0.6270263246861262]
+  folds={'0': 0.13168979434690364, '1': 0.025779980820446094}; classes={'Al': -0.03302586169306368, 'Al3Ni': -0.10401578508028446, 'Primary Si': 0.2026690286631568, 'Eutectic Si': 0.24931216844489168}; improved=16/36
+both4x_vs_x4_mit_x3_unet120: delta=-0.214926 pp; CI95=[-0.41134281178056825, -0.048695087079787557]
+  folds={'0': -0.06825412056175592, '1': -0.36159853498933203}; classes={'Al': -0.16728451874077285, 'Al3Ni': -0.3161957389887326, 'Primary Si': -0.04199464530796387, 'Eutectic Si': -0.3342304080647045}; improved=11/36
+Exploratory pilot36 from folds0/1 of a repeatedly examined 90-image dataset; not an independent test or full90 result
+Each image is evaluated out of fold and all images from an alloy remain together; only training seed0 is evaluated
+Primary resolution comparison uses x3 and x4 UNet++ at 60 epochs with crop1536; the adopted x3 UNet++120 comparison also differs in training duration
+Existing predictions are reused; x2 MiT60, x4 MiT crop1536 at60, x3 UNet++60 and x3 UNet++120 are separate historical runs
+New x4 UNet++60 uses its last checkpoint, ImageNet initialization and unchanged crop1536; higher image scale reduces the original-image field of view per crop
+All pair recipes are pixel-probability soft voting at 50:50; no weight search, probability calibration or automatic adoption
+Grouped bootstrap resamples alloy groups within each fold10000 times with seed0; training-seed and repeated-selection uncertainty are not included
+mIoU averages per-image class means; classes absent from both prediction and truth are excluded within an image
+Probabilities are saved TTA OOF arrays and existing postprocessing is applied after each fixed blend; no real ROI reinference
+CPU review elapsed time excludes GPU training/inference and is not deployment latency; no automatic remaining-fold extension or submission replacement

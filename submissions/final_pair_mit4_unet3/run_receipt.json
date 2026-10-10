@@ -1,0 +1,269 @@
+{
+  "started_utc": "2026-10-10T09:51:19.189345+00:00",
+  "preflight": {
+    "ok": true,
+    "mode": "read_only_preflight",
+    "project_root": "/home/j-j15a106/komap",
+    "output": "/home/j-j15a106/komap/submissions/final_pair_mit4_unet3",
+    "verified_files": {
+      "source_files": 4,
+      "checkpoints": 10,
+      "test_images": 10
+    },
+    "versions": {
+      "torch": "2.14.1+cu126",
+      "torchvision": "0.29.1+cu126",
+      "segmentation-models-pytorch": "0.5.0",
+      "timm": "1.0.30",
+      "numpy": "2.5.2",
+      "opencv-python-headless": "5.0.0.93",
+      "pillow": "12.3.0",
+      "scipy": "1.18.1"
+    },
+    "image_sizes_width_height": {
+      "A107_step1_sample3": [
+        1230,
+        875
+      ],
+      "A122_step4_sample1": [
+        1230,
+        875
+      ],
+      "A124_step4_sample3": [
+        1230,
+        875
+      ],
+      "A127_step3_sample2": [
+        1440,
+        1024
+      ],
+      "A133_step4_sample1": [
+        1230,
+        875
+      ],
+      "A167_step3_sample3": [
+        1278,
+        909
+      ],
+      "A38_step2_sample2": [
+        675,
+        480
+      ],
+      "A51_step3_sample3": [
+        1278,
+        909
+      ],
+      "A63_step2_sample3": [
+        675,
+        480
+      ],
+      "A87_step1_sample4": [
+        675,
+        480
+      ]
+    },
+    "warnings": [],
+    "errors": [],
+    "gpu_checked": false,
+    "gpu_inference_performed": false
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976",
+      "name": "NVIDIA L40S",
+      "total_mib": 46068,
+      "used_mib": 0
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c",
+      "name": "NVIDIA L40S",
+      "total_mib": 46068,
+      "used_mib": 0
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-e800362c-2a5a-0208-8d32-28107bca6017",
+      "name": "NVIDIA L40S",
+      "total_mib": 46068,
+      "used_mib": 0
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713",
+      "name": "NVIDIA L40S",
+      "total_mib": 46068,
+      "used_mib": 0
+    }
+  ],
+  "manifest_sha256": "645be82744b5aba79b30e230f84307309536bbbebd6d3d640dde4eeac34e639e",
+  "entrypoint_sha256": "1f121cae6e4a44c8cf8a945afe3986e7ed6084be87bde779a397d1b7ac6d8d43",
+  "commands": [
+    [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "/home/j-j15a106/komap/src/submit.py",
+      "predict",
+      "--exps",
+      "x4_mit_c1536_bw_r90",
+      "x3_unetpp_bw_e120_r90",
+      "--root",
+      "runs/cv",
+      "--folds",
+      "5",
+      "--split",
+      "test",
+      "--out",
+      "/home/j-j15a106/komap/submissions/final_pair_mit4_unet3",
+      "--shard",
+      "0",
+      "--nshards",
+      "4"
+    ],
+    [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "/home/j-j15a106/komap/src/submit.py",
+      "predict",
+      "--exps",
+      "x4_mit_c1536_bw_r90",
+      "x3_unetpp_bw_e120_r90",
+      "--root",
+      "runs/cv",
+      "--folds",
+      "5",
+      "--split",
+      "test",
+      "--out",
+      "/home/j-j15a106/komap/submissions/final_pair_mit4_unet3",
+      "--shard",
+      "1",
+      "--nshards",
+      "4"
+    ],
+    [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "/home/j-j15a106/komap/src/submit.py",
+      "predict",
+      "--exps",
+      "x4_mit_c1536_bw_r90",
+      "x3_unetpp_bw_e120_r90",
+      "--root",
+      "runs/cv",
+      "--folds",
+      "5",
+      "--split",
+      "test",
+      "--out",
+      "/home/j-j15a106/komap/submissions/final_pair_mit4_unet3",
+      "--shard",
+      "2",
+      "--nshards",
+      "4"
+    ],
+    [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "/home/j-j15a106/komap/src/submit.py",
+      "predict",
+      "--exps",
+      "x4_mit_c1536_bw_r90",
+      "x3_unetpp_bw_e120_r90",
+      "--root",
+      "runs/cv",
+      "--folds",
+      "5",
+      "--split",
+      "test",
+      "--out",
+      "/home/j-j15a106/komap/submissions/final_pair_mit4_unet3",
+      "--shard",
+      "3",
+      "--nshards",
+      "4"
+    ],
+    [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "/home/j-j15a106/komap/src/submit.py",
+      "combine",
+      "--split",
+      "test",
+      "--parts",
+      "/home/j-j15a106/komap/submissions/final_pair_mit4_unet3",
+      "--out",
+      "/home/j-j15a106/komap/submissions/final_pair_mit4_unet3",
+      "--recipe",
+      "x4_mit_c1536_bw_r90",
+      "x3_unetpp_bw_e120_r90",
+      "--full-mix",
+      "0"
+    ]
+  ],
+  "status": "complete",
+  "prediction_reuse": false,
+  "training_performed": false,
+  "prediction_pids": [
+    820423,
+    820424,
+    820425,
+    820426
+  ],
+  "prediction_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "masks": [
+    {
+      "name": "A107_step1_sample3_mask.png",
+      "sha256": "5cc9d86a9510d368707c8c4ddbfcff7ae9ed0cb1826efc9acef3cc59fb6862ca",
+      "size_bytes": 115183
+    },
+    {
+      "name": "A122_step4_sample1_mask.png",
+      "sha256": "0f35fd722f363fa38eab77c629fd4abc6ab834c9325a063f41855f2e499d668e",
+      "size_bytes": 143568
+    },
+    {
+      "name": "A124_step4_sample3_mask.png",
+      "sha256": "9cc14bb5bb2e3b874d604b4afb8dc3559fbb61b845c4583fb9e0dac249876a52",
+      "size_bytes": 154368
+    },
+    {
+      "name": "A127_step3_sample2_mask.png",
+      "sha256": "842d2610a0ef74b5ce7d6aa16e58850007184a0c8a60cffd41038fced9810bdc",
+      "size_bytes": 152418
+    },
+    {
+      "name": "A133_step4_sample1_mask.png",
+      "sha256": "b0412e88cfdf986f2f0df329a36c0f54dd2303ebf6c3ca755a4d10dad95eb712",
+      "size_bytes": 127468
+    },
+    {
+      "name": "A167_step3_sample3_mask.png",
+      "sha256": "faefcfcd76645066b337a01bb370cea2da3ada8d0a8d1e5a422bee76251a689d",
+      "size_bytes": 153428
+    },
+    {
+      "name": "A38_step2_sample2_mask.png",
+      "sha256": "9efed9f2a91a8cee011533631698d2696c45a8c4ca3f25c24ff5558d5d64bd54",
+      "size_bytes": 61626
+    },
+    {
+      "name": "A51_step3_sample3_mask.png",
+      "sha256": "36e1091680dd83ae69a7dfbeb9ebf293097aacc5a0b345ec59c20874e9a8570e",
+      "size_bytes": 115503
+    },
+    {
+      "name": "A63_step2_sample3_mask.png",
+      "sha256": "5337fc7d793056f8fa86173ac568484d3e39cfd1d215da961d3b417c04462e95",
+      "size_bytes": 55499
+    },
+    {
+      "name": "A87_step1_sample4_mask.png",
+      "sha256": "d959c2a320726f13553eca48042bf0c40c3145d37d22fdc9d730ff4fa19ebb60",
+      "size_bytes": 56803
+    }
+  ],
+  "zip_sha256": "51532d2b7b4661afbab176a3f8190f58bbc8160bc58d4e14d53a58f9b142c103",
+  "finished_utc": "2026-10-10T09:56:14.023013+00:00"
+}

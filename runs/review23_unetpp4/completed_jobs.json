@@ -1,0 +1,20 @@
+[
+  {
+    "id": "unetpp_fold0",
+    "fold": 0,
+    "completed": "2026-10-10T15:30:08+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 5209.8,
+    "result_sha256": "170d06d654df3f5926d5d18a894271a13bb3d39aac7872b687efcc88a7b33f22"
+  },
+  {
+    "id": "unetpp_fold1",
+    "fold": 1,
+    "completed": "2026-10-10T15:30:23+09:00",
+    "epochs": 60,
+    "images": 18,
+    "train_seconds": 5224.1,
+    "result_sha256": "2f5f59e5610a9621ed1b6486eda30a1e794a3006751cecf1c86c2d8b3dffb62d"
+  }
+]

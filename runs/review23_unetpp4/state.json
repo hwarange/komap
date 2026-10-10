@@ -1,7 +1,7 @@
 {
-  "time": "2026-10-10T14:16:07+09:00",
+  "time": "2026-10-10T15:30:53+09:00",
   "pid": 815030,
-  "stage": "pilot_training",
+  "stage": "complete_pilot_and_stop",
   "folds": [
     0,
     1
@@ -9,44 +9,25 @@
   "epochs": 60,
   "further_training_scheduled": false,
   "submission_changed": false,
-  "jobs": [
+  "jobs": [],
+  "completed_jobs": [
     {
       "id": "unetpp_fold0",
-      "arm": "unetpp",
       "fold": 0,
-      "gpu": 0,
-      "pid": 815041,
-      "epoch": 11,
-      "total_epochs": 60,
-      "phase": "training",
-      "train_sec": 86.3,
-      "recent_three_mean_train_sec": 86.23333333333333,
-      "elapsed_sec": 1035.2,
-      "remaining_train_sec_estimate": 4225.433333333333,
-      "remaining_total_sec_estimate": 4469.333333333333,
-      "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
-      "loss": 0.4952,
-      "gpu_mem_gb": 27.15
+      "completed": "2026-10-10T15:30:08+09:00",
+      "epochs": 60,
+      "images": 18,
+      "train_seconds": 5209.8,
+      "result_sha256": "170d06d654df3f5926d5d18a894271a13bb3d39aac7872b687efcc88a7b33f22"
     },
     {
       "id": "unetpp_fold1",
-      "arm": "unetpp",
       "fold": 1,
-      "gpu": 1,
-      "pid": 815042,
-      "epoch": 11,
-      "total_epochs": 60,
-      "phase": "training",
-      "train_sec": 86.6,
-      "recent_three_mean_train_sec": 86.5,
-      "elapsed_sec": 1035.2,
-      "remaining_train_sec_estimate": 4238.5,
-      "remaining_total_sec_estimate": 4483.3,
-      "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
-      "loss": 0.5043,
-      "gpu_mem_gb": 27.15
+      "completed": "2026-10-10T15:30:23+09:00",
+      "epochs": 60,
+      "images": 18,
+      "train_seconds": 5224.1,
+      "result_sha256": "2f5f59e5610a9621ed1b6486eda30a1e794a3006751cecf1c86c2d8b3dffb62d"
     }
-  ],
-  "completed_jobs": [],
-  "remaining_total_sec_estimate": 4483.3
+  ]
 }

@@ -1,0 +1,84 @@
+{
+  "status": "complete_highest_full90_recipe_selected_all_deliverables_verified",
+  "selected_recipe": "interface_cap6",
+  "selection_authority": "User requested highest observed full90 mIoU and four-GPU remaining-fold validation",
+  "confidence_interval_is_adoption_gate": false,
+  "ranking": [
+    {
+      "config": "interface_cap6",
+      "mIoU": 81.01167156392448,
+      "delta_vs_original_pp": 0.11101818567648536
+    },
+    {
+      "config": "baseline_cap6",
+      "mIoU": 80.95664213120858,
+      "delta_vs_original_pp": 0.05598875296058736
+    },
+    {
+      "config": "interface_original",
+      "mIoU": 80.95148746234301,
+      "delta_vs_original_pp": 0.05083408409501544
+    },
+    {
+      "config": "baseline_original",
+      "mIoU": 80.900653378248,
+      "delta_vs_original_pp": 0.0
+    }
+  ],
+  "result_sha256": "6ebff39397087d8f3c5cc6e470361a48a06b348b83262f2d1a0a98e31c1f59bd",
+  "recomputed_full90_scores": {
+    "baseline_original": 80.900653378248,
+    "baseline_cap6": 80.95664213120858,
+    "interface_original": 80.951487462343,
+    "interface_cap6": 81.01167156392447,
+    "baseline_UNet3": 80.16161929427822,
+    "interface_UNet3": 80.20507380742157
+  },
+  "full90_comparison": {
+    "images": 90,
+    "delta": 0.11101818567646894,
+    "group_bootstrap_ci95": [
+      -0.07838910243233572,
+      0.36577869511483657
+    ],
+    "delta_per_fold": {
+      "0": 0.08309969347300832,
+      "1": 0.170586552366404,
+      "2": 0.4535169200890472,
+      "3": 0.07295301767274667,
+      "4": -0.2250652552188615
+    },
+    "delta_per_class": {
+      "Al": -0.016248010167004643,
+      "Al3Ni": -0.022536763007153245,
+      "Primary Si": 0.10205325031995188,
+      "Eutectic Si": 0.2831889902685159
+    },
+    "improved_images": 53,
+    "worsened_images": 37
+  },
+  "remaining72_delta_pp": 0.11799780872733409,
+  "posthoc_sensitivity": {
+    "top_two_delta_sum_pp": 12.535868118422012,
+    "total_delta_sum_pp": 9.991636710882258,
+    "mean_remaining88_pp": -0.02891172054022448,
+    "interpretation": "Post-hoc concentration diagnostic; not independent validation and not an adoption gate"
+  },
+  "limitations": [
+    "Repeatedly examined90-image OOF development data; no officialtest accuracy available",
+    "No matched uniform6-epoch continuation control across allfolds; cannot isolate interface sampling effect",
+    "Current continuation and finalrecipe evaluated at seed0; no additionalseeds in this stage"
+  ],
+  "further_training_scheduled": false,
+  "previous_artifacts_preserved": true,
+  "test_mask_zip": "submissions/final27_selected/final27_masks.zip",
+  "test_mask_zip_sha256": "646601cbc242aa5583f889a30c47a65d7b1ca82775bb7fcb7c398ecdfd2b4b86",
+  "local_validation": "delivery/final27_repro/local_validation.json",
+  "official_submission_performed": false,
+  "report": "reports/모델링결과서_김형수없는김형수_최종검증.docx",
+  "report_sha256": "5203a6e239314cb71ecad5303ca0ac19b201425cb402eed532e47854327564e8",
+  "report_pages": 8,
+  "code_bundle": "delivery/final27_code_bundle.zip",
+  "code_bundle_sha256": "cfc9d84a9add385081a73ad8aa6c000c1ae895bf845c8ad9b5968898885a2f3b",
+  "selected_model_ledger": "delivery/final_model_selection.json"
+}

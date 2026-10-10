@@ -1,0 +1,48 @@
+Created UTC: 2026-10-10T09:02:10.016027+00:00
+Single fixed holdout: train72/validation18, existing fold0, seed0,60 epochs; no repeated CV.
+sub6: holdout mIoU=80.058829; classes={'Al': 92.68832012725167, 'Al3Ni': 79.74705402805716, 'Primary Si': 86.93048749316988, 'Eutectic Si': 60.86945354634889}
+mit4_unet3_pair: holdout mIoU=80.258773; classes={'Al': 92.98111550448911, 'Al3Ni': 80.27483841741545, 'Primary Si': 87.11291662791932, 'Eutectic Si': 60.66622030463837}
+mit5_single: holdout mIoU=79.572686; classes={'Al': 92.78540616381802, 'Al3Ni': 79.81206600979563, 'Primary Si': 86.67628990698223, 'Eutectic Si': 59.0169815017486}
+deeplab4_single: holdout mIoU=77.418458; classes={'Al': 91.72080091263662, 'Al3Ni': 77.16394996029352, 'Primary Si': 84.48986027595983, 'Eutectic Si': 56.299220138129634}
+mit4_single: holdout mIoU=80.157881; classes={'Al': 92.90927849956515, 'Al3Ni': 80.39723555054715, 'Primary Si': 86.93668684384443, 'Eutectic Si': 60.38832312793381}
+deeplab2_single: holdout mIoU=77.853800; classes={'Al': 91.21311660148874, 'Al3Ni': 76.87363787151038, 'Primary Si': 85.54987931930323, 'Eutectic Si': 57.778566863881665}
+unet4_single: holdout mIoU=79.062701; classes={'Al': 92.4601269490053, 'Al3Ni': 78.68868344632429, 'Primary Si': 86.2410347459265, 'Eutectic Si': 58.86095844617463}
+mit5_unet3_pair: holdout mIoU=79.885942; classes={'Al': 92.87335794475321, 'Al3Ni': 79.94428941915123, 'Primary Si': 86.81710637771917, 'Eutectic Si': 59.90901292519828}
+mit4_unet4_pair: holdout mIoU=80.190519; classes={'Al': 92.91028827358119, 'Al3Ni': 80.07465712130139, 'Primary Si': 87.21238168645743, 'Eutectic Si': 60.5647472908752}
+mit5_unet4_pair: holdout mIoU=79.789320; classes={'Al': 92.80942966725773, 'Al3Ni': 79.72904016042568, 'Primary Si': 86.99512278673264, 'Eutectic Si': 59.623687548152006}
+mit4_unet3_deeplab4_triple: holdout mIoU=79.652341; classes={'Al': 92.69923836293465, 'Al3Ni': 79.59064130427673, 'Primary Si': 86.44838775200118, 'Eutectic Si': 59.871095491016845}
+mit5_vs_mit4: delta=-0.585195 pp; CI95=[-1.3180601166585209, 0.0750704038333618]
+  classes={'Al': -0.12387233574710718, 'Al3Ni': -0.585169540751501, 'Primary Si': -0.2603969368621944, 'Eutectic Si': -1.3713416261851998}; improved=11/18
+deeplab4_vs_deeplab2: delta=-0.435342 pp; CI95=[-1.0628420546439281, 0.14664267502657355]
+  classes={'Al': 0.507684311147886, 'Al3Ni': 0.2903120887831581, 'Primary Si': -1.0600190433434142, 'Eutectic Si': -1.4793467257520152}; improved=9/18
+mit5_unet3_vs_mit4_unet3: delta=-0.372831 pp; CI95=[-0.7181797328451638, -0.01818053936629481]
+  classes={'Al': -0.10775755973588493, 'Al3Ni': -0.3305489982642299, 'Primary Si': -0.2958102502001398, 'Eutectic Si': -0.7572073794401}; improved=9/18
+mit5_unet3_vs_sub6: delta=-0.172887 pp; CI95=[-1.1541612160322545, 0.5340329424429723]
+  classes={'Al': 0.18503781750154502, 'Al3Ni': 0.19723539109405566, 'Primary Si': -0.11338111545070796, 'Eutectic Si': -0.9604406211506156}; improved=11/18
+mit4_unet4_vs_mit4_unet3: delta=-0.068254 pp; CI95=[-0.2124442215115163, 0.11456569383146657]
+  classes={'Al': -0.07082723090789421, 'Al3Ni': -0.20018129611406327, 'Primary Si': 0.09946505853812344, 'Eutectic Si': -0.10147301376317842}; improved=7/18
+mit4_unet4_vs_sub6: delta=+0.131690 pp; CI95=[-0.6241285217796829, 0.8992948570510637]
+  classes={'Al': 0.22196814632953574, 'Al3Ni': 0.32760309324422227, 'Primary Si': 0.2818941932875553, 'Eutectic Si': -0.304706255473694}; improved=9/18
+mit5_unet4_vs_mit4_unet4: delta=-0.401199 pp; CI95=[-0.7648889579529276, -0.04010836247033568]
+  classes={'Al': -0.10085860632347653, 'Al3Ni': -0.34561696087571137, 'Primary Si': -0.21725889972479034, 'Eutectic Si': -0.9410597427231999}; improved=8/18
+mit5_unet4_vs_mit5_unet3: delta=-0.096622 pp; CI95=[-0.3044566214166835, 0.1520438275845709]
+  classes={'Al': -0.06392827749548581, 'Al3Ni': -0.2152492587255447, 'Primary Si': 0.17801640901347288, 'Eutectic Si': -0.2853253770462783}; improved=4/18
+mit5_unet4_vs_sub6: delta=-0.269509 pp; CI95=[-1.2315432091041978, 0.5758903841190366]
+  classes={'Al': 0.12110954000605921, 'Al3Ni': -0.01801386763148906, 'Primary Si': 0.06463529356276491, 'Eutectic Si': -1.2457659981968938}; improved=8/18
+deeplab4_triple_vs_mit4_unet3: delta=-0.606432 pp; CI95=[-1.0374122025543073, -0.15680686392067866]
+  classes={'Al': -0.2818771415544453, 'Al3Ni': -0.6841971131387079, 'Primary Si': -0.6645288759181227, 'Eutectic Si': -0.7951248136215351}; improved=3/18
+deeplab4_triple_vs_sub6: delta=-0.406488 pp; CI95=[-1.0024772404381233, 0.04163063771815781]
+  classes={'Al': 0.010918235682984643, 'Al3Ni': -0.1564127237804224, 'Primary Si': -0.4820997411686909, 'Eutectic Si': -0.9983580553320507}; improved=7/18
+Separate completed review23 pilot36: {"x3_unet60_single": 80.46710318231746, "x3_unet120_single": 80.62279637279396, "x4_unet60_single": 80.3231199554759, "sub6": 81.32454871040675, "x4_mit_x3_unet120_pair": 81.61820992576598, "x2_mit_x4_unet60_pair": 81.31470698503458, "x4_mit_x4_unet60_pair": 81.40328359799042}
+One fixed train72/validation18 split reuses existing fold0; no repeated-fold cross-validation or new independent test
+These 18 images are repeatedly examined; scores are not directly comparable to 36-image or 90-image means
+Each new model excludes these 18 images from training; all images of each alloy remain together across the split
+Only seed0 is trained, and new models use their last checkpoint at epoch60; no best-epoch selection
+MiT5 uses crop1536 and accumulation2 to retain effective batch4; the matched MiT4 reference also uses crop1536 at60 epochs
+DeepLab4 keeps crop1024 and60 epochs like DeepLab2; this tests higher image scale with less original-image context per crop
+The historical UNet++3 reference uses120 epochs while UNet++4 uses60, so their comparison also changes training duration
+Pairs use50:50 and the triple uses equal thirds of per-pixel TTA probabilities, followed by unchanged postprocessing
+Grouped bootstrap resamples alloy groups within this one holdout10000 times with seed0; it does not measure split, seed, or repeated-selection uncertainty
+mIoU averages per-image class means; classes absent from both prediction and truth are excluded within an image
+Review23 is separately linked as a completed36-image pilot; this review never pools its two folds with the18-image comparison
+CPU review time excludes GPU training/inference and is not deployment latency; no ROI reinference, extra training or automatic model adoption

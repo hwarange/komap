@@ -1,0 +1,257 @@
+{
+  "time": "2026-10-10T20:24:40.033240+09:00",
+  "status": "verified",
+  "server_run_status": "complete",
+  "selected_recipe": "interface_cap6",
+  "selected_oof_mIoU": 81.01167156392448,
+  "run_receipt_sha256": "5ced68f616706bd15ccd8043889c5228cbbd49d49a79ceb139971772e65ba6fd",
+  "manifest_sha256": "dd497b49a765e790e90deac8c60371507df369cb85558e6961ecc6ad0e334da0",
+  "runner_sha256": "37da36b7a5026c2cef3d6023d1b3e3aebf1d66f3af336972a987fb4cbbf1957b",
+  "zip_path": "submissions/final27_selected/final27_masks.zip",
+  "zip_sha256": "646601cbc242aa5583f889a30c47a65d7b1ca82775bb7fcb7c398ecdfd2b4b86",
+  "zip_crc_valid": true,
+  "zip_members_match_masks": true,
+  "mask_count": 10,
+  "mask_palette_and_original_dimensions_valid": true,
+  "masks": [
+    {
+      "name": "A107_step1_sample3_mask.png",
+      "sha256": "3c3a6e6ebe26b60f6a469d43cc8ecc80b300269aedb3686bf5acfc231a2f54a5",
+      "size_bytes": 115159,
+      "width": 1230,
+      "height": 875,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A122_step4_sample1_mask.png",
+      "sha256": "2af35b11c8fd9df687223fd7fcefc6eb4e95f8412c95f75a62169c898d0f3249",
+      "size_bytes": 143514,
+      "width": 1230,
+      "height": 875,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A124_step4_sample3_mask.png",
+      "sha256": "9af05fb50d1bb800d731ab73590369f511cc02d51ed2e94753567180f0b48db1",
+      "size_bytes": 154510,
+      "width": 1230,
+      "height": 875,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A127_step3_sample2_mask.png",
+      "sha256": "2d49cc642273d9b4d54913bb5faa0eee17a7a1dcbefe1765f47dc29cbcf688a4",
+      "size_bytes": 152464,
+      "width": 1440,
+      "height": 1024,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A133_step4_sample1_mask.png",
+      "sha256": "4ea08667cabcfeefba0552a660f34402f8122ab4eb05aa8e9d023c336dcbc8c5",
+      "size_bytes": 127535,
+      "width": 1230,
+      "height": 875,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A167_step3_sample3_mask.png",
+      "sha256": "9ab45ceee8840ab9b8336042ad8c525dc91399d564f21aca80fa81e5872c0d2f",
+      "size_bytes": 153370,
+      "width": 1278,
+      "height": 909,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A38_step2_sample2_mask.png",
+      "sha256": "0cb5ab84c4134d56487a658370225ea0e101806650e4936b88473a30ff717027",
+      "size_bytes": 60527,
+      "width": 675,
+      "height": 480,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A51_step3_sample3_mask.png",
+      "sha256": "18abe5ea930ac768c7df9b920b9ada2b75cc6bf3ce9b2daefa2b25d0fd246eab",
+      "size_bytes": 115558,
+      "width": 1278,
+      "height": 909,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A63_step2_sample3_mask.png",
+      "sha256": "4244754709882ff329b50179b1049ecf89f94f425bd4809c750e0e3ffed289b5",
+      "size_bytes": 54893,
+      "width": 675,
+      "height": 480,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    },
+    {
+      "name": "A87_step1_sample4_mask.png",
+      "sha256": "066318dfc5d1178f8383d83a14adbe1324f9cf2a9cb1e52071ea3fd05f3eba32",
+      "size_bytes": 55807,
+      "width": 675,
+      "height": 480,
+      "mode": "RGB",
+      "palette_valid": true,
+      "colors_used": 4
+    }
+  ],
+  "all_remote_local_hashes_match": true,
+  "downloaded_file_count": 23,
+  "downloaded_total_bytes": 2322811,
+  "downloaded_files": [
+    {
+      "path": "submissions/final27_selected/run_receipt.json",
+      "bytes": 27896,
+      "sha256": "5ced68f616706bd15ccd8043889c5228cbbd49d49a79ceb139971772e65ba6fd"
+    },
+    {
+      "path": "submissions/final27_selected/summary_test.json",
+      "bytes": 453,
+      "sha256": "b4184a991c5986d2d9cd42812d99a068a88ed3edab94aba5be8ff856b69b6137"
+    },
+    {
+      "path": "submissions/final27_selected/final27_masks.zip",
+      "bytes": 1135026,
+      "sha256": "646601cbc242aa5583f889a30c47a65d7b1ca82775bb7fcb7c398ecdfd2b4b86"
+    },
+    {
+      "path": "submissions/final27_selected/worker0.complete.json",
+      "bytes": 7096,
+      "sha256": "d38e757b0be4ec50317afbfcca52d1e9fd9edc02e22a950318be7d0be9120d3c"
+    },
+    {
+      "path": "submissions/final27_selected/worker1.complete.json",
+      "bytes": 7104,
+      "sha256": "97dca4541db4847b7c18fe9ceb4e5ecc1b9ed8a35a9cd74a62e409d883789c5f"
+    },
+    {
+      "path": "submissions/final27_selected/worker2.complete.json",
+      "bytes": 4844,
+      "sha256": "df7bf55aa82ed01c9f7fb570f32f800830ea74affcacac6db239c5ac3a383789"
+    },
+    {
+      "path": "submissions/final27_selected/worker3.complete.json",
+      "bytes": 4842,
+      "sha256": "7f8b2fcb4a7642d28f3198db332f560ffd1cd830b40709c659ed667ed61d28dd"
+    },
+    {
+      "path": "submissions/final27_selected/predict_shard0.log",
+      "bytes": 166,
+      "sha256": "a6ea5279098c4015eab0b9f738e011740ed018a313a4d2532eb11ab22376d52b"
+    },
+    {
+      "path": "submissions/final27_selected/predict_shard1.log",
+      "bytes": 166,
+      "sha256": "a5f0c762cda89d640b45a282e39589cafc7c701568a5d2294c365c5ae95ebe49"
+    },
+    {
+      "path": "submissions/final27_selected/predict_shard2.log",
+      "bytes": 111,
+      "sha256": "760f6446b86e33bea91f1a559ec6378f698e1ebf13f4c4b321736e0044f04014"
+    },
+    {
+      "path": "submissions/final27_selected/predict_shard3.log",
+      "bytes": 109,
+      "sha256": "b4441a03d5e6efe7487aaca1c40d9df587f1dd4003a2fa1e61c0c93b2bd171c6"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A107_step1_sample3_mask.png",
+      "bytes": 115159,
+      "sha256": "3c3a6e6ebe26b60f6a469d43cc8ecc80b300269aedb3686bf5acfc231a2f54a5"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A122_step4_sample1_mask.png",
+      "bytes": 143514,
+      "sha256": "2af35b11c8fd9df687223fd7fcefc6eb4e95f8412c95f75a62169c898d0f3249"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A124_step4_sample3_mask.png",
+      "bytes": 154510,
+      "sha256": "9af05fb50d1bb800d731ab73590369f511cc02d51ed2e94753567180f0b48db1"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A127_step3_sample2_mask.png",
+      "bytes": 152464,
+      "sha256": "2d49cc642273d9b4d54913bb5faa0eee17a7a1dcbefe1765f47dc29cbcf688a4"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A133_step4_sample1_mask.png",
+      "bytes": 127535,
+      "sha256": "4ea08667cabcfeefba0552a660f34402f8122ab4eb05aa8e9d023c336dcbc8c5"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A167_step3_sample3_mask.png",
+      "bytes": 153370,
+      "sha256": "9ab45ceee8840ab9b8336042ad8c525dc91399d564f21aca80fa81e5872c0d2f"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A38_step2_sample2_mask.png",
+      "bytes": 60527,
+      "sha256": "0cb5ab84c4134d56487a658370225ea0e101806650e4936b88473a30ff717027"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A51_step3_sample3_mask.png",
+      "bytes": 115558,
+      "sha256": "18abe5ea930ac768c7df9b920b9ada2b75cc6bf3ce9b2daefa2b25d0fd246eab"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A63_step2_sample3_mask.png",
+      "bytes": 54893,
+      "sha256": "4244754709882ff329b50179b1049ecf89f94f425bd4809c750e0e3ffed289b5"
+    },
+    {
+      "path": "submissions/final27_selected/masks/A87_step1_sample4_mask.png",
+      "bytes": 55807,
+      "sha256": "066318dfc5d1178f8383d83a14adbe1324f9cf2a9cb1e52071ea3fd05f3eba32"
+    },
+    {
+      "path": "runs/review27_finetune_full/final_inference_started.json",
+      "bytes": 338,
+      "sha256": "e523b72ee6256f152f6c0a24636e9bc480e2aa8f9cdab24c635236556eb641a6"
+    },
+    {
+      "path": "runs/review27_finetune_full/final_inference_controller.log",
+      "bytes": 1323,
+      "sha256": "233cb6b267d0966ca3da837110edd75f5b310ec37f981a8f45086ca2573ecac3"
+    }
+  ],
+  "worker_count": 4,
+  "prediction_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "model_count": 10,
+  "probability_output_receipts": 100,
+  "probabilities_validated_by_server_runner": true,
+  "probabilities_downloaded": false,
+  "weights_downloaded": false,
+  "maps_downloaded": false,
+  "prediction_reuse": false,
+  "test_ground_truth_used": false,
+  "fresh_environment_installation_verified": false,
+  "official_submission_performed": false,
+  "started_utc": "2026-10-10T11:19:07.085652+00:00",
+  "finished_utc": "2026-10-10T11:23:30.163996+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-10T20:18:15+09:00",
+  "outcome": "five_fold_continuation_fixed_2x2_review_complete",
+  "images": 90,
+  "results_sha256": "6ebff39397087d8f3c5cc6e470361a48a06b348b83262f2d1a0a98e31c1f59bd",
+  "rows_sha256": "1fcf2d2f32c3c68732f2a91814e240aca0c9d0619b7b5ba26b28b34d14929c55",
+  "plan_sha256": "5c046c50f0e4054995c4570282a08613de70237c856da4d8aa1621e7f80ae498",
+  "completed_jobs_sha256": "cd3f413157a4f740ce0cebfe5f142b0f6e7f3b6d4279ac2e530f7e7b397dc920",
+  "highest_observed_full90_config": "interface_cap6",
+  "submission_changed": false,
+  "test_inference": false,
+  "automatic_adoption": false
+}

@@ -1,0 +1,23 @@
+{
+  "time": "2026-10-10T20:06:55+09:00",
+  "pid": 829294,
+  "plan_sha256": "5c046c50f0e4054995c4570282a08613de70237c856da4d8aa1621e7f80ae498",
+  "gpus": [
+    {
+      "index": 0,
+      "uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976"
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c"
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-e800362c-2a5a-0208-8d32-28107bca6017"
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713"
+    }
+  ]
+}

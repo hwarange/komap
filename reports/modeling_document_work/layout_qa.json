@@ -1,6 +1,6 @@
 {
-  "document_sha256": "e58d20de73a2b28021b6dc8fb6f6ef864c735c822ec7936f59d4e0a8767e1551",
-  "final_pages": 10,
+  "document_sha256": "5203a6e239314cb71ecad5303ca0ac19b201425cb402eed532e47854327564e8",
+  "final_pages": 8,
   "render_pages": [
     1,
     2,
@@ -9,22 +9,41 @@
     5,
     6,
     7,
-    8,
-    9,
-    10
+    8
   ],
-  "render_directory": "full20_final_v1_render",
+  "render_directory": "final_validation_v7_render",
   "final_all_pages_visually_reviewed": true,
   "final_visual_review_pending": false,
   "figures_and_tables_reviewed": true,
   "clipping_or_overlap_found": false,
   "orphan_headings_or_table_headers_found": false,
+  "orphan_figure_captions_found": false,
   "reference_package_preserved": true,
   "section_unchanged": true,
+  "preserve_only_parts_checked": 12,
   "source_metrics_cross_checked": true,
   "full_validation_pending": false,
-  "reviewed_at": "2026-10-10T13:21:15.549429+09:00",
-  "development_plan_included": true,
-  "development_plan_executed": false,
-  "full_validation_complete": true
+  "reviewed_at": "2026-10-10T20:30:16.496523+09:00",
+  "highest_same90_configuration_selected": true,
+  "confidence_interval_reported_not_selection_gate": true,
+  "full90_remaining72_reused18_distinct": true,
+  "same_family_policy_all5folds": true,
+  "optimizer_reset_continuation_disclosed": true,
+  "no_full90_uniform_continuation_control_disclosed": true,
+  "original_diagnostics_and_A42_explicitly_historical": true,
+  "phase_area_image_is_selected_final27_test10": true,
+  "image_macro_and_pixel_pooled_denominators_distinct": true,
+  "prior_strengthening_and_final_pair_reports_preserved": true,
+  "repeated_model_selection_uncertainty_and_gain_concentration_disclosed": true,
+  "renderer": "native Word PDF plus packaged render_docx.py and bundled Poppler; no bundled LibreOffice available",
+  "render_page_sha256": {
+    "1": "3eb208c25a09afbc2ed62094ce928c56f84eb1bf060d3fdc50db46fcffda521a",
+    "2": "09afb86661e8ec1acad1984ab8d5a8e3de76d168dbd13fc049e324407a389ee8",
+    "3": "eda7f24d79afe9bd7634b77922c95bee60b61f8e770c6c205b7a40f68be654f0",
+    "4": "a0f5a61cc9110324ab4339f383c660694c80669c6d3698c0ff09d13164487c65",
+    "5": "4e690384beab8efcaf6f5ca20cf3f23e46a7be6b03ba62b53f558eb731b10efc",
+    "6": "26a9bc48c8695ad2a8ab94f71b23640f1583a915e8bd36ac69f411a4c0b42b85",
+    "7": "e78b7135d865e416f26b3be896441fc462608d705d1d20ff01214266bfad0ba4",
+    "8": "d61b249e908ef38794782d1330fdc14250aff1f9b2d07a69fa941b2cab3541a4"
+  }
 }

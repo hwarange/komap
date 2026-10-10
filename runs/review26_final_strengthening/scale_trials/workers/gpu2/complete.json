@@ -1,0 +1,278 @@
+{
+  "nonce": "e83b9c3d045c453fb5b73364104d455e",
+  "plan_sha256": "f7b357342de5dc1da01d17644d5cc16350e521eebe2cbf00c38c0989927d12ba",
+  "completed_utc": "2026-10-10T10:16:22.657109+00:00",
+  "gpu": 2,
+  "uuid": "GPU-e800362c-2a5a-0208-8d32-28107bca6017",
+  "folds": [
+    3
+  ],
+  "images": 5,
+  "outputs": [
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A63_step1_sample4.npy",
+      "sha256": "eae57e35fb6e46ae8b5e08ef95ca528779ace1c382e4eebdbe64b9d8a9a94f16",
+      "bytes": 2592128
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A63_step1_sample4.npy",
+      "sha256": "c0e7692663dae53904379b6d7c302ad7eaf8f2074ac80600d09126a3adb57dd9",
+      "bytes": 2592128
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A63_step1_sample4.npy",
+      "sha256": "66fc1497a184f25b4392152a3cf278bef57795cf32981d8d28cf43cebf410a39",
+      "bytes": 2592128
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A67_step1_sample1.npy",
+      "sha256": "09aac09c7b16f45382ecc4f06da1471dc80ac77837b1fc2abcd8498206d8e8f0",
+      "bytes": 2592128
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A67_step1_sample1.npy",
+      "sha256": "45ecab6e538e2402251aa175e0ca95e7bc4c4d9d660ed59c3c194718fe55e605",
+      "bytes": 2592128
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A67_step1_sample1.npy",
+      "sha256": "789dfe4753ce076698e66befecda5f4895fca792c862b67829cc5fe875c8784a",
+      "bytes": 2592128
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A71_step2_sample1.npy",
+      "sha256": "e76f6f3143c0aef03335e57041e1fc254b52a585d9fda434d43f8e2b396d992b",
+      "bytes": 2592128
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A71_step2_sample1.npy",
+      "sha256": "36cf196d42ef6987d0282448f4a5d3ad8241c4318a59c3c3a1acf56b9c2ce86b",
+      "bytes": 2592128
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A71_step2_sample1.npy",
+      "sha256": "10feb45ae4aa77908ec23dff1794df82ba8520e309564df55516c4ab46e3934d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A8_step2_sample3.npy",
+      "sha256": "3e643245a60002f72a51ce2a2fcd6766d7dc96de66c69b44d95dcd17fb2113ec",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A8_step2_sample3.npy",
+      "sha256": "94f7d326fa3b14c1de5e8d812b9b0ffb12e0f1b5d722bd99019396b7b977f0c9",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A8_step2_sample3.npy",
+      "sha256": "dc0a17259177d2b5f17752755990f35d08d41b02552d8c31ad9ce14e90d0615d",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "actual_scale": 8,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/fresh_scale8/A8_step3_sample3.npy",
+      "sha256": "c50801e3eab30fffeadaeec33723da0b812a4466237e0c03d84919dbc6aa271a",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "actual_scale": 6,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap6/A8_step3_sample3.npy",
+      "sha256": "f785ec846cbc9f4b6e20055fe457befe21d6854c23c32b4ca834225ac1656533",
+      "bytes": 2592128
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "actual_scale": 4,
+      "path": "runs/review26_final_strengthening/scale_trials/workers/gpu2/cap4/A8_step3_sample3.npy",
+      "sha256": "e00726ffb2b29627465554d7ce615bd229d11323f4c3a5b029fd7e1de3de8133",
+      "bytes": 2592128
+    }
+  ],
+  "timings": [
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 16.34927621856332
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 8.789884820580482
+    },
+    {
+      "name": "A63_step1_sample4",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.220280822366476
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.663405541330576
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.3249081037938595
+    },
+    {
+      "name": "A67_step1_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.214887376874685
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.662072889506817
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.33264222368598
+    },
+    {
+      "name": "A71_step2_sample1",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.213940016925335
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.658081144094467
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.331104103475809
+    },
+    {
+      "name": "A8_step2_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.211686763912439
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "fresh_scale8",
+      "seconds": 12.65633349865675
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap6",
+      "seconds": 6.332062169909477
+    },
+    {
+      "name": "A8_step3_sample3",
+      "fold": 3,
+      "arm": "cap4",
+      "seconds": 4.212746847420931
+    }
+  ],
+  "fresh_control_probability_drift": [
+    {
+      "name": "A63_step1_sample4",
+      "max_abs_probability_difference": 0.00244140625,
+      "mean_abs_probability_difference": 1.8020935385720804e-05,
+      "changed_argmax_pixels": 5
+    },
+    {
+      "name": "A67_step1_sample1",
+      "max_abs_probability_difference": 0.0029296875,
+      "mean_abs_probability_difference": 2.651949216669891e-05,
+      "changed_argmax_pixels": 13
+    },
+    {
+      "name": "A71_step2_sample1",
+      "max_abs_probability_difference": 0.00244140625,
+      "mean_abs_probability_difference": 2.7585831048781984e-05,
+      "changed_argmax_pixels": 15
+    },
+    {
+      "name": "A8_step2_sample3",
+      "max_abs_probability_difference": 0.00537109375,
+      "mean_abs_probability_difference": 2.8052731067873538e-05,
+      "changed_argmax_pixels": 18
+    },
+    {
+      "name": "A8_step3_sample3",
+      "max_abs_probability_difference": 0.00390625,
+      "mean_abs_probability_difference": 3.234953328501433e-05,
+      "changed_argmax_pixels": 11
+    }
+  ],
+  "elapsed_seconds": 124.5856240130961,
+  "torch_version": "2.14.1+cu126",
+  "cuda_version": "12.6",
+  "gpu_name": "NVIDIA L40S",
+  "training_started": false,
+  "submission_changed": false
+}

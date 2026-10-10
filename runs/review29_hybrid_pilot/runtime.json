@@ -1,0 +1,373 @@
+{
+  "cached_imagenet_init_seconds": 0.7430410422384739,
+  "train_images": 72,
+  "validation_images": 18,
+  "microbatch": 2,
+  "gradient_accumulation": 2,
+  "effective_batch": 4,
+  "microbatches_per_epoch": 288,
+  "optimizer_updates_per_epoch": 144,
+  "crops_per_epoch": 576,
+  "warmup_updates": 2,
+  "timed_updates": 4,
+  "timed_update_seconds": [
+    1.4785181246697903,
+    1.641065813601017,
+    1.4800617508590221,
+    1.47848629206419
+  ],
+  "seconds_per_update_mean": 1.5195329952985048,
+  "seconds_per_update_median": 1.4792899377644062,
+  "estimated_train_seconds_per_epoch": 218.8127513229847,
+  "estimated_train_minutes_60_epochs": 218.8127513229847,
+  "estimated_validation18_no_tta_seconds": 57.64941854774952,
+  "estimated_final_8tta_seconds": 461.19534838199615,
+  "estimated_total_minutes": 238.02922417223454,
+  "peak_train_memory_allocated_gib": 42.512149810791016,
+  "peak_train_memory_reserved_gib": 42.70703125,
+  "validation_geometry_all18": [
+    {
+      "name": "A109_step1_sample3",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A118_step2_sample1",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A137_step4_sample2",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A138_step4_sample3",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A146_step2_sample1",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A153_step1_sample4",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A159_step4_sample4",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A224_step1_sample2",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A224_step4_sample2",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A39_step2_sample3",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A7_step1_sample2",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A7_step4_sample3",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A87_step2_sample2",
+      "original_hw": [
+        480,
+        675
+      ],
+      "scale": 8.0,
+      "scaled_hw": [
+        3840,
+        5400
+      ],
+      "scaled_pixels": 20736000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A96_step1_sample1",
+      "original_hw": [
+        480,
+        675
+      ],
+      "scale": 8.0,
+      "scaled_hw": [
+        3840,
+        5400
+      ],
+      "scaled_pixels": 20736000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A153_step3_sample3",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A42_step2_sample4",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A72_step4_sample4",
+      "original_hw": [
+        480,
+        675
+      ],
+      "scale": 8.0,
+      "scaled_hw": [
+        3840,
+        5400
+      ],
+      "scaled_pixels": 20736000,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    },
+    {
+      "name": "A7_step1_sample4",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3
+    }
+  ],
+  "validation_measurements": [
+    {
+      "name": "A87_step2_sample2",
+      "original_hw": [
+        480,
+        675
+      ],
+      "scale": 8.0,
+      "scaled_hw": [
+        3840,
+        5400
+      ],
+      "scaled_pixels": 20736000,
+      "tiles": 12,
+      "inference_batches_of_four": 3,
+      "no_tta_seconds": 6.051976032555103,
+      "peak_memory_allocated_gib": 14.326607704162598,
+      "peak_memory_reserved_gib": 42.255859375
+    },
+    {
+      "name": "A39_step2_sample3",
+      "original_hw": [
+        909,
+        1278
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3636,
+        5112
+      ],
+      "scaled_pixels": 18587232,
+      "tiles": 12,
+      "inference_batches_of_four": 3,
+      "no_tta_seconds": 1.7876345552504063,
+      "peak_memory_allocated_gib": 14.27775526046753,
+      "peak_memory_reserved_gib": 29.060546875
+    },
+    {
+      "name": "A109_step1_sample3",
+      "original_hw": [
+        875,
+        1230
+      ],
+      "scale": 4.0,
+      "scaled_hw": [
+        3500,
+        4920
+      ],
+      "scaled_pixels": 17220000,
+      "tiles": 12,
+      "inference_batches_of_four": 3,
+      "no_tta_seconds": 1.7686258368194103,
+      "peak_memory_allocated_gib": 14.2475905418396,
+      "peak_memory_reserved_gib": 29.060546875
+    }
+  ],
+  "largest_scaled_canvas_checked": "A87_step2_sample2",
+  "width675_image_checked": "A87_step2_sample2",
+  "finite_gradient_and_parameter_checks_after_updates": [
+    2,
+    6
+  ],
+  "loss_first_last": [
+    2.121354103088379,
+    2.1429953575134277
+  ],
+  "all_losses_finite": true,
+  "optimizer_state_resident_during_validation": true,
+  "empty_cache_called": false,
+  "caveat": "Four timed updates only; concurrent GPUs may affect speed. Validation18 extrapolated from three images by batch-of-four tile count; final 8TTA approximated. No checkpoint or OOF writes, full 8TTA, or CPU comparison timed. Readiness is not accuracy evidence.",
+  "gpu": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976, NVIDIA L40S, 0, 0",
+  "plan_sha256": "1fcf6f31beef7adea3805e70d1f78e4504e2898dd30f03a366fb64e723e75196",
+  "temporary_training_not_reused": true
+}

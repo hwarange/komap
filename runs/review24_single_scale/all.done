@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-10T18:02:10+09:00",
+  "outcome": "two_single_holdout_runs_and_all_four_jobs_reviewed",
+  "new_training_jobs": 2,
+  "validation_images": 18,
+  "repeated_cross_validation": false,
+  "results_sha256": "79ef7e64adea50084d82fc55bdf7bb94f224ee629c4b53432cdf6d4bda1a2cd8",
+  "plan_sha256": "6d82716b58e78a0b884a3269c65e36331fe9e99c678abf44d8b3c263715ca2d9",
+  "prerequisite_results_sha256": "573f8e61b167051c0b4f3d67d1d7c2d5f3fcd641bf2d1c78ad29b5fbe2781fa5",
+  "further_training_scheduled": false,
+  "submission_changed": false
+}

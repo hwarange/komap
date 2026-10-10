@@ -1,0 +1,22 @@
+{
+  "time_utc": "2026-10-10T11:11:16.483246+00:00",
+  "checks": [
+    "scale policy applies exactly to selected MiT width675; all other families/widths unchanged",
+    "real reference checkpoint/source/input/package preflight passed; creates no output; rejects existing output",
+    "all100 array validator passed; float16, invalid mass, NaN and missing-array cases rejected",
+    "new family-mean combination/postprocess masks match unchanged src.submit.mixed_prob exactly on10 fixtures",
+    "mask validator rejects palette violations",
+    "CUDA was not initialized; no training or inference launched"
+  ],
+  "source_sha256": "37da36b7a5026c2cef3d6023d1b3e3aebf1d66f3af336972a987fb4cbbf1957b",
+  "prepare_sha256": "cf5bb3dd9f1ea27c15c9ae47d5ef3a5da5ab93e1b8759b10eec44b03d900c47b",
+  "gpu_inference_performed": false,
+  "manifest_finalized": false,
+  "manifest_schema_checks": [
+    "actual evaluator schema: six score keys accepted; only four eligible recipes ranked, standalone99.5 does not win",
+    "prepared_manifest complete CPU fixture path and final runner manifest checks pass for ten selected checkpoints",
+    "changed new UNet checkpoint rejected by evaluated receipt SHA before that checkpoint is deserialized",
+    "conflicting validation/checkpoint receipt rejected even after outer results completion hash resealed",
+    "changed per-image rows rejected by completion checksum chain"
+  ]
+}

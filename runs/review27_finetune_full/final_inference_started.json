@@ -1,0 +1,15 @@
+{
+  "pid": 831880,
+  "started_utc": "2026-10-10T11:19:05.987672+00:00",
+  "command": [
+    "/home/j-j15a106/komap/.venv/bin/python",
+    "delivery/final27_repro/run_submission.py",
+    "--run",
+    "--gpus",
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "manifest_sha256": "dd497b49a765e790e90deac8c60371507df369cb85558e6961ecc6ad0e334da0"
+}

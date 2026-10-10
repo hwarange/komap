@@ -1,0 +1,66 @@
+{
+  "comparison": "final pair vs previous sub6 test predictions; labels unavailable, changes are not accuracy gains",
+  "images": [
+    {
+      "file": "A107_step1_sample3_mask.png",
+      "changed_pixels": 7102,
+      "total_pixels": 1076250,
+      "changed_percent": 0.659883855981417
+    },
+    {
+      "file": "A122_step4_sample1_mask.png",
+      "changed_pixels": 6787,
+      "total_pixels": 1076250,
+      "changed_percent": 0.6306155632984901
+    },
+    {
+      "file": "A124_step4_sample3_mask.png",
+      "changed_pixels": 10565,
+      "total_pixels": 1076250,
+      "changed_percent": 0.9816492450638792
+    },
+    {
+      "file": "A127_step3_sample2_mask.png",
+      "changed_pixels": 7066,
+      "total_pixels": 1474560,
+      "changed_percent": 0.47919379340277773
+    },
+    {
+      "file": "A133_step4_sample1_mask.png",
+      "changed_pixels": 8042,
+      "total_pixels": 1076250,
+      "changed_percent": 0.7472241579558653
+    },
+    {
+      "file": "A167_step3_sample3_mask.png",
+      "changed_pixels": 8494,
+      "total_pixels": 1161702,
+      "changed_percent": 0.7311685785166936
+    },
+    {
+      "file": "A38_step2_sample2_mask.png",
+      "changed_pixels": 2111,
+      "total_pixels": 324000,
+      "changed_percent": 0.6515432098765432
+    },
+    {
+      "file": "A51_step3_sample3_mask.png",
+      "changed_pixels": 11413,
+      "total_pixels": 1161702,
+      "changed_percent": 0.9824378368979307
+    },
+    {
+      "file": "A63_step2_sample3_mask.png",
+      "changed_pixels": 1776,
+      "total_pixels": 324000,
+      "changed_percent": 0.5481481481481482
+    },
+    {
+      "file": "A87_step1_sample4_mask.png",
+      "changed_pixels": 1961,
+      "total_pixels": 324000,
+      "changed_percent": 0.605246913580247
+    }
+  ],
+  "pooled_changed_percent": 0.7197494116781069
+}

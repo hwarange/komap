@@ -1,0 +1,85 @@
+{
+  "verified": true,
+  "files": [
+    {
+      "path": "all.done",
+      "sha256": "4cb2f8ddd33ad13c3d38d3e25f7f9e6d153bc4819fedfb9fed487ed28077d2ed",
+      "bytes": 564
+    },
+    {
+      "path": "baseline_rows.json",
+      "sha256": "638b20a62fada2164e6328cadbd68703843ca9c2148d3696f3863ae7de1bcfea",
+      "bytes": 15526
+    },
+    {
+      "path": "controller.log",
+      "sha256": "69f05c1799c5ee1a47d6bc895ad5e34d8fe1a30dd3abf1f9ce1e0a78e2d7da70",
+      "bytes": 2140
+    },
+    {
+      "path": "gpu0.log",
+      "sha256": "6ea88b4f6fc1fc7c99957f4ded70d877e856ddf002f75d2cee354397dfa81877",
+      "bytes": 2347
+    },
+    {
+      "path": "gpu1.log",
+      "sha256": "0dcdfcac76c879d04e79692b70e368f11df47958b7d48ecf4d2471c4c0a9e0bd",
+      "bytes": 1827
+    },
+    {
+      "path": "gpu2.log",
+      "sha256": "6ab909b9956765bda9fdae48337077df95228da97c806b75b97187451602907b",
+      "bytes": 1297
+    },
+    {
+      "path": "gpu3.log",
+      "sha256": "41c3bd9bc2e5bb2ea41a19ee14f247db1375ccb4d3904f9a1f4f2f1809494122",
+      "bytes": 1305
+    },
+    {
+      "path": "per_image_rows.json",
+      "sha256": "5f310195f15c15c5c55bf3caa32a1b355217b2c01d1076dbbe13c6843d26b0eb",
+      "bytes": 68654
+    },
+    {
+      "path": "plan.json",
+      "sha256": "f7b357342de5dc1da01d17644d5cc16350e521eebe2cbf00c38c0989927d12ba",
+      "bytes": 84046
+    },
+    {
+      "path": "results.json",
+      "sha256": "d36b3b44644c0033df717ae5cc07db6cb9e8b8008023a4b034b9ef8d488d2aa2",
+      "bytes": 117406
+    },
+    {
+      "path": "started.json",
+      "sha256": "dc07841b89b506141d4c447ed9ee6731e67635d709902046955d31dd0b72817f",
+      "bytes": 870
+    },
+    {
+      "path": "workers/gpu0/complete.json",
+      "sha256": "94cbea44cb5ae4dd8a77ee9a295a1927a1e8bbebfa04effbd62cd28f5bd87f1e",
+      "bytes": 14300
+    },
+    {
+      "path": "workers/gpu1/complete.json",
+      "sha256": "a820d7ad25974e9f4ffdb254fa0c306d4fd74250e580f526025e2bdcacca1a3d",
+      "bytes": 11465
+    },
+    {
+      "path": "workers/gpu2/complete.json",
+      "sha256": "2bc1ef472602125d5c9fb1e40bec8598f257f303506da872495167b757af6fa2",
+      "bytes": 8317
+    },
+    {
+      "path": "workers/gpu3/complete.json",
+      "sha256": "d661bdbbc9190e5e6fb1af0ae34476d8ad83823d5b31ae5f8c461089bd1a605a",
+      "bytes": 8335
+    }
+  ],
+  "plan_sha256": "f7b357342de5dc1da01d17644d5cc16350e521eebe2cbf00c38c0989927d12ba",
+  "results_sha256": "d36b3b44644c0033df717ae5cc07db6cb9e8b8008023a4b034b9ef8d488d2aa2",
+  "rows_sha256": "5f310195f15c15c5c55bf3caa32a1b355217b2c01d1076dbbe13c6843d26b0eb",
+  "nonce": "e83b9c3d045c453fb5b73364104d455e",
+  "probability_arrays_downloaded": false
+}

@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-10-10T18:57:02.256701+09:00",
+  "files": {
+    "submissions/final_pair_mit4_unet3/run_receipt.json": {
+      "sha256": "ee41047f1c17ea48738f46ec3eb9c81d464416c43232ac33980b865065a38aa3",
+      "bytes": 6483
+    },
+    "submissions/final_pair_mit4_unet3/summary_test.json": {
+      "sha256": "6504a9db743eafe95ad6a83932eddc34d47d6e41f73f44410a93124cfa9fb37a",
+      "bytes": 570
+    },
+    "submissions/final_pair_mit4_unet3/final_pair_masks.zip": {
+      "sha256": "51532d2b7b4661afbab176a3f8190f58bbc8160bc58d4e14d53a58f9b142c103",
+      "bytes": 1137553
+    },
+    "submissions/final_pair_mit4_unet3/combine.log": {
+      "sha256": "30ca2f950139500d3ee6426b0950bd5d016038c498a7f40a6d8ded3745ec5915",
+      "bytes": 571
+    },
+    "submissions/final_pair_mit4_unet3/predict_shard0.log": {
+      "sha256": "1e3ed4ae840a7f4c6ad0916e0f7ec2f3e50a9d35c0b57c3f4dabc151335dbf54",
+      "bytes": 206
+    },
+    "submissions/final_pair_mit4_unet3/predict_shard1.log": {
+      "sha256": "7060dbeff567f8d1508b95e87ec6341de8e384aa6490b1af233babb5af3fd195",
+      "bytes": 207
+    },
+    "submissions/final_pair_mit4_unet3/predict_shard2.log": {
+      "sha256": "a8ca0cfdb20f1f8d3870fe0d37a7bbe5ce5af1c06b65be6133d03dedb507e4d9",
+      "bytes": 174
+    },
+    "submissions/final_pair_mit4_unet3/predict_shard3.log": {
+      "sha256": "5ca2a8a356d2d05e3fea6bf719386b7be7cfa5655a6f4b12a3bdf814c4ebb7a9",
+      "bytes": 174
+    },
+    "submissions/final_pair_mit4_unet3/masks/A107_step1_sample3_mask.png": {
+      "sha256": "5cc9d86a9510d368707c8c4ddbfcff7ae9ed0cb1826efc9acef3cc59fb6862ca",
+      "bytes": 115183
+    },
+    "submissions/final_pair_mit4_unet3/masks/A122_step4_sample1_mask.png": {
+      "sha256": "0f35fd722f363fa38eab77c629fd4abc6ab834c9325a063f41855f2e499d668e",
+      "bytes": 143568
+    },
+    "submissions/final_pair_mit4_unet3/masks/A124_step4_sample3_mask.png": {
+      "sha256": "9cc14bb5bb2e3b874d604b4afb8dc3559fbb61b845c4583fb9e0dac249876a52",
+      "bytes": 154368
+    },
+    "submissions/final_pair_mit4_unet3/masks/A127_step3_sample2_mask.png": {
+      "sha256": "842d2610a0ef74b5ce7d6aa16e58850007184a0c8a60cffd41038fced9810bdc",
+      "bytes": 152418
+    },
+    "submissions/final_pair_mit4_unet3/masks/A133_step4_sample1_mask.png": {
+      "sha256": "b0412e88cfdf986f2f0df329a36c0f54dd2303ebf6c3ca755a4d10dad95eb712",
+      "bytes": 127468
+    },
+    "submissions/final_pair_mit4_unet3/masks/A167_step3_sample3_mask.png": {
+      "sha256": "faefcfcd76645066b337a01bb370cea2da3ada8d0a8d1e5a422bee76251a689d",
+      "bytes": 153428
+    },
+    "submissions/final_pair_mit4_unet3/masks/A38_step2_sample2_mask.png": {
+      "sha256": "9efed9f2a91a8cee011533631698d2696c45a8c4ca3f25c24ff5558d5d64bd54",
+      "bytes": 61626
+    },
+    "submissions/final_pair_mit4_unet3/masks/A51_step3_sample3_mask.png": {
+      "sha256": "36e1091680dd83ae69a7dfbeb9ebf293097aacc5a0b345ec59c20874e9a8570e",
+      "bytes": 115503
+    },
+    "submissions/final_pair_mit4_unet3/masks/A63_step2_sample3_mask.png": {
+      "sha256": "5337fc7d793056f8fa86173ac568484d3e39cfd1d215da961d3b417c04462e95",
+      "bytes": 55499
+    },
+    "submissions/final_pair_mit4_unet3/masks/A87_step1_sample4_mask.png": {
+      "sha256": "d959c2a320726f13553eca48042bf0c40c3145d37d22fdc9d730ff4fa19ebb60",
+      "bytes": 56803
+    },
+    "runs/final_pair_submission/driver.log": {
+      "sha256": "347f85f278e1536de3544c17cae7e89ebf832ed773a9074e4807083d64fea4b6",
+      "bytes": 1345
+    }
+  }
+}

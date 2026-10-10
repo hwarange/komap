@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-10T19:19:14+09:00",
+  "pid": 824855,
+  "plan_sha256": "14c683c41fb881e71449440bca109013d21c62771b52ddbecd38b06d4ce2fc87",
+  "gpus": [
+    {
+      "index": 0,
+      "uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976"
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c"
+    }
+  ]
+}

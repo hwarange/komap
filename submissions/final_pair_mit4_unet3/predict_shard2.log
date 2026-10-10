@@ -1,0 +1,3 @@
+x4_mit_c1536_bw_r90/fold2: 129s
+x3_unetpp_bw_e120_r90/fold1: 25s
+shard 2: 2 models saved per model under /home/j-j15a106/komap/submissions/final_pair_mit4_unet3/parts/models

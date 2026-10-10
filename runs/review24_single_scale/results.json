@@ -1,0 +1,2107 @@
+{
+  "created_utc": "2026-10-10T09:02:10.016027+00:00",
+  "fixed_holdout_fold": 0,
+  "repeated_cross_validation": false,
+  "images": 18,
+  "training_images": 72,
+  "dataset_pool_images": 90,
+  "training_seed": 0,
+  "epochs": 60,
+  "scores": {
+    "sub6": 80.0588287987069,
+    "mit4_unet3_pair": 80.25877271361556,
+    "mit5_single": 79.57268589558613,
+    "deeplab4_single": 77.4184578217549,
+    "mit4_single": 80.15788100547263,
+    "deeplab2_single": 77.853800164046,
+    "unet4_single": 79.06270089685769,
+    "mit5_unet3_pair": 79.88594166670548,
+    "mit4_unet4_pair": 80.19051859305381,
+    "mit5_unet4_pair": 79.78932004064202,
+    "mit4_unet3_deeplab4_triple": 79.65234072755734
+  },
+  "class_scores": {
+    "sub6": {
+      "Al": 92.68832012725167,
+      "Al3Ni": 79.74705402805716,
+      "Primary Si": 86.93048749316988,
+      "Eutectic Si": 60.86945354634889
+    },
+    "mit4_unet3_pair": {
+      "Al": 92.98111550448911,
+      "Al3Ni": 80.27483841741545,
+      "Primary Si": 87.11291662791932,
+      "Eutectic Si": 60.66622030463837
+    },
+    "mit5_single": {
+      "Al": 92.78540616381802,
+      "Al3Ni": 79.81206600979563,
+      "Primary Si": 86.67628990698223,
+      "Eutectic Si": 59.0169815017486
+    },
+    "deeplab4_single": {
+      "Al": 91.72080091263662,
+      "Al3Ni": 77.16394996029352,
+      "Primary Si": 84.48986027595983,
+      "Eutectic Si": 56.299220138129634
+    },
+    "mit4_single": {
+      "Al": 92.90927849956515,
+      "Al3Ni": 80.39723555054715,
+      "Primary Si": 86.93668684384443,
+      "Eutectic Si": 60.38832312793381
+    },
+    "deeplab2_single": {
+      "Al": 91.21311660148874,
+      "Al3Ni": 76.87363787151038,
+      "Primary Si": 85.54987931930323,
+      "Eutectic Si": 57.778566863881665
+    },
+    "unet4_single": {
+      "Al": 92.4601269490053,
+      "Al3Ni": 78.68868344632429,
+      "Primary Si": 86.2410347459265,
+      "Eutectic Si": 58.86095844617463
+    },
+    "mit5_unet3_pair": {
+      "Al": 92.87335794475321,
+      "Al3Ni": 79.94428941915123,
+      "Primary Si": 86.81710637771917,
+      "Eutectic Si": 59.90901292519828
+    },
+    "mit4_unet4_pair": {
+      "Al": 92.91028827358119,
+      "Al3Ni": 80.07465712130139,
+      "Primary Si": 87.21238168645743,
+      "Eutectic Si": 60.5647472908752
+    },
+    "mit5_unet4_pair": {
+      "Al": 92.80942966725773,
+      "Al3Ni": 79.72904016042568,
+      "Primary Si": 86.99512278673264,
+      "Eutectic Si": 59.623687548152006
+    },
+    "mit4_unet3_deeplab4_triple": {
+      "Al": 92.69923836293465,
+      "Al3Ni": 79.59064130427673,
+      "Primary Si": 86.44838775200118,
+      "Eutectic Si": 59.871095491016845
+    }
+  },
+  "class_image_counts": {
+    "sub6": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "mit4_unet3_pair": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "mit5_single": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "deeplab4_single": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "mit4_single": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "deeplab2_single": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "unet4_single": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "mit5_unet3_pair": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "mit4_unet4_pair": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "mit5_unet4_pair": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    },
+    "mit4_unet3_deeplab4_triple": {
+      "Al": 18,
+      "Al3Ni": 18,
+      "Primary Si": 18,
+      "Eutectic Si": 18
+    }
+  },
+  "comparisons": {
+    "mit5_vs_mit4": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.5851951098865027,
+      "group_bootstrap_ci95": [
+        -1.3180601166585209,
+        0.0750704038333618
+      ],
+      "delta_per_fold": {
+        "0": -0.5851951098865027
+      },
+      "delta_per_class": {
+        "Al": -0.12387233574710718,
+        "Al3Ni": -0.585169540751501,
+        "Primary Si": -0.2603969368621944,
+        "Eutectic Si": -1.3713416261851998
+      },
+      "delta_low_contrast": -0.9595061940924173,
+      "improved_images": 11,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.57268589558613,
+      "base_holdout_mIoU": 80.15788100547263
+    },
+    "deeplab4_vs_deeplab2": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.4353423422910979,
+      "group_bootstrap_ci95": [
+        -1.0628420546439281,
+        0.14664267502657355
+      ],
+      "delta_per_fold": {
+        "0": -0.4353423422910979
+      },
+      "delta_per_class": {
+        "Al": 0.507684311147886,
+        "Al3Ni": 0.2903120887831581,
+        "Primary Si": -1.0600190433434142,
+        "Eutectic Si": -1.4793467257520152
+      },
+      "delta_low_contrast": -0.5598874450932527,
+      "improved_images": 9,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 77.4184578217549,
+      "base_holdout_mIoU": 77.85380016404599
+    },
+    "mit5_unet3_vs_mit4_unet3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.3728310469100897,
+      "group_bootstrap_ci95": [
+        -0.7181797328451638,
+        -0.01818053936629481
+      ],
+      "delta_per_fold": {
+        "0": -0.3728310469100897
+      },
+      "delta_per_class": {
+        "Al": -0.10775755973588493,
+        "Al3Ni": -0.3305489982642299,
+        "Primary Si": -0.2958102502001398,
+        "Eutectic Si": -0.7572073794401
+      },
+      "delta_low_contrast": -0.45349273346082225,
+      "improved_images": 9,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.88594166670549,
+      "base_holdout_mIoU": 80.25877271361557
+    },
+    "mit5_unet3_vs_sub6": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.17288713200143016,
+      "group_bootstrap_ci95": [
+        -1.1541612160322545,
+        0.5340329424429723
+      ],
+      "delta_per_fold": {
+        "0": -0.17288713200143016
+      },
+      "delta_per_class": {
+        "Al": 0.18503781750154502,
+        "Al3Ni": 0.19723539109405566,
+        "Primary Si": -0.11338111545070796,
+        "Eutectic Si": -0.9604406211506156
+      },
+      "delta_low_contrast": -0.9396339889373237,
+      "improved_images": 11,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.88594166670549,
+      "base_holdout_mIoU": 80.0588287987069
+    },
+    "mit4_unet4_vs_mit4_unet3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.06825412056175592,
+      "group_bootstrap_ci95": [
+        -0.2124442215115163,
+        0.11456569383146657
+      ],
+      "delta_per_fold": {
+        "0": -0.06825412056175592
+      },
+      "delta_per_class": {
+        "Al": -0.07082723090789421,
+        "Al3Ni": -0.20018129611406327,
+        "Primary Si": 0.09946505853812344,
+        "Eutectic Si": -0.10147301376317842
+      },
+      "delta_low_contrast": -0.06368375267669535,
+      "improved_images": 7,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 80.19051859305381,
+      "base_holdout_mIoU": 80.25877271361557
+    },
+    "mit4_unet4_vs_sub6": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": 0.13168979434690364,
+      "group_bootstrap_ci95": [
+        -0.6241285217796829,
+        0.8992948570510637
+      ],
+      "delta_per_fold": {
+        "0": 0.13168979434690364
+      },
+      "delta_per_class": {
+        "Al": 0.22196814632953574,
+        "Al3Ni": 0.32760309324422227,
+        "Primary Si": 0.2818941932875553,
+        "Eutectic Si": -0.304706255473694
+      },
+      "delta_low_contrast": -0.5498250081531969,
+      "improved_images": 9,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 80.19051859305381,
+      "base_holdout_mIoU": 80.0588287987069
+    },
+    "mit5_unet4_vs_mit4_unet4": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.40119855241179103,
+      "group_bootstrap_ci95": [
+        -0.7648889579529276,
+        -0.04010836247033568
+      ],
+      "delta_per_fold": {
+        "0": -0.40119855241179103
+      },
+      "delta_per_class": {
+        "Al": -0.10085860632347653,
+        "Al3Ni": -0.34561696087571137,
+        "Primary Si": -0.21725889972479034,
+        "Eutectic Si": -0.9410597427231999
+      },
+      "delta_low_contrast": -0.5332312197337691,
+      "improved_images": 8,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.78932004064201,
+      "base_holdout_mIoU": 80.19051859305381
+    },
+    "mit5_unet4_vs_mit5_unet3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.09662162606345721,
+      "group_bootstrap_ci95": [
+        -0.3044566214166835,
+        0.1520438275845709
+      ],
+      "delta_per_fold": {
+        "0": -0.09662162606345721
+      },
+      "delta_per_class": {
+        "Al": -0.06392827749548581,
+        "Al3Ni": -0.2152492587255447,
+        "Primary Si": 0.17801640901347288,
+        "Eutectic Si": -0.2853253770462783
+      },
+      "delta_low_contrast": -0.14342223894964215,
+      "improved_images": 4,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.78932004064201,
+      "base_holdout_mIoU": 79.88594166670549
+    },
+    "mit5_unet4_vs_sub6": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.2695087580648874,
+      "group_bootstrap_ci95": [
+        -1.2315432091041978,
+        0.5758903841190366
+      ],
+      "delta_per_fold": {
+        "0": -0.2695087580648874
+      },
+      "delta_per_class": {
+        "Al": 0.12110954000605921,
+        "Al3Ni": -0.01801386763148906,
+        "Primary Si": 0.06463529356276491,
+        "Eutectic Si": -1.2457659981968938
+      },
+      "delta_low_contrast": -1.083056227886966,
+      "improved_images": 8,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.78932004064201,
+      "base_holdout_mIoU": 80.0588287987069
+    },
+    "deeplab4_triple_vs_mit4_unet3": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.6064319860582026,
+      "group_bootstrap_ci95": [
+        -1.0374122025543073,
+        -0.15680686392067866
+      ],
+      "delta_per_fold": {
+        "0": -0.6064319860582026
+      },
+      "delta_per_class": {
+        "Al": -0.2818771415544453,
+        "Al3Ni": -0.6841971131387079,
+        "Primary Si": -0.6645288759181227,
+        "Eutectic Si": -0.7951248136215351
+      },
+      "delta_low_contrast": -0.06585885650350558,
+      "improved_images": 3,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.65234072755736,
+      "base_holdout_mIoU": 80.25877271361557
+    },
+    "deeplab4_triple_vs_sub6": {
+      "images": 18,
+      "alloy_groups": 14,
+      "delta": -0.40648807114954305,
+      "group_bootstrap_ci95": [
+        -1.0024772404381233,
+        0.04163063771815781
+      ],
+      "delta_per_fold": {
+        "0": -0.40648807114954305
+      },
+      "delta_per_class": {
+        "Al": 0.010918235682984643,
+        "Al3Ni": -0.1564127237804224,
+        "Primary Si": -0.4820997411686909,
+        "Eutectic Si": -0.9983580553320507
+      },
+      "delta_low_contrast": -0.5520001119800071,
+      "improved_images": 7,
+      "names": [
+        "A109_step1_sample3",
+        "A118_step2_sample1",
+        "A137_step4_sample2",
+        "A138_step4_sample3",
+        "A146_step2_sample1",
+        "A153_step1_sample4",
+        "A153_step3_sample3",
+        "A159_step4_sample4",
+        "A224_step1_sample2",
+        "A224_step4_sample2",
+        "A39_step2_sample3",
+        "A42_step2_sample4",
+        "A72_step4_sample4",
+        "A7_step1_sample2",
+        "A7_step1_sample4",
+        "A7_step4_sample3",
+        "A87_step2_sample2",
+        "A96_step1_sample1"
+      ],
+      "holdout_mIoU": 79.65234072755736,
+      "base_holdout_mIoU": 80.0588287987069
+    }
+  },
+  "primary_comparisons": [
+    "mit5_vs_mit4",
+    "deeplab4_vs_deeplab2"
+  ],
+  "class_order": [
+    "Al",
+    "Al3Ni",
+    "Primary Si",
+    "Eutectic Si"
+  ],
+  "fixed_recipes": {
+    "sub6": {
+      "mit2": 0.5,
+      "unet3": 0.5
+    },
+    "mit4_unet3_pair": {
+      "mit4": 0.5,
+      "unet3": 0.5
+    },
+    "mit5_single": {
+      "mit5": 1.0
+    },
+    "deeplab4_single": {
+      "deeplab4": 1.0
+    },
+    "mit4_single": {
+      "mit4": 1.0
+    },
+    "deeplab2_single": {
+      "deeplab2": 1.0
+    },
+    "unet4_single": {
+      "unet4": 1.0
+    },
+    "mit5_unet3_pair": {
+      "mit5": 0.5,
+      "unet3": 0.5
+    },
+    "mit4_unet4_pair": {
+      "mit4": 0.5,
+      "unet4": 0.5
+    },
+    "mit5_unet4_pair": {
+      "mit5": 0.5,
+      "unet4": 0.5
+    },
+    "mit4_unet3_deeplab4_triple": {
+      "mit4": 0.3333333333333333,
+      "unet3": 0.3333333333333333,
+      "deeplab4": 0.3333333333333333
+    }
+  },
+  "source_experiments": {
+    "mit2": "x2_mit_bw_r90",
+    "mit4": "x4_mit_c1536_bw_r90",
+    "unet3": "x3_unetpp_bw_e120_r90",
+    "deeplab2": "x2_deeplabv3plus_r34_bw_r90",
+    "mit5": "x5_mit_c1536_bw_r90",
+    "deeplab4": "x4_deeplabv3plus_r34_bw_r90",
+    "unet4": "x4_unetpp_c1536_bw_r90"
+  },
+  "threshold_or_weight_search": false,
+  "run_receipts": [
+    {
+      "experiment": "x5_mit_c1536_bw_r90",
+      "fold": 0,
+      "epochs": 60,
+      "training_seconds": 12741.300000000001,
+      "files": [
+        {
+          "path": "runs/cv/x5_mit_c1536_bw_r90/fold0/args.json",
+          "sha256": "241a20d017ffe89053fc3c77b2a9a3ab912dfe846ae93f20cc212dbe976079a5",
+          "bytes": 1136
+        },
+        {
+          "path": "runs/cv/x5_mit_c1536_bw_r90/fold0/log.jsonl",
+          "sha256": "5f487b7b5cfe6366b1b962a96539fd46ff3d2efdb399d101b1187a4d53f1aeab",
+          "bytes": 16498
+        },
+        {
+          "path": "runs/cv/x5_mit_c1536_bw_r90/fold0/result.json",
+          "sha256": "89d073a15e098b23e48575e314b3aab962f9f9536ef10bcf6a4d6f583d363ede",
+          "bytes": 8703
+        },
+        {
+          "path": "runs/cv/x5_mit_c1536_bw_r90/fold0/last.pt",
+          "sha256": "bba8b16e18759dea289fb9d2ba499491d554aa860f0792ff916c042285e77821",
+          "bytes": 110014715
+        }
+      ]
+    },
+    {
+      "experiment": "x4_deeplabv3plus_r34_bw_r90",
+      "fold": 0,
+      "epochs": 60,
+      "training_seconds": 685.4,
+      "files": [
+        {
+          "path": "runs/cv/x4_deeplabv3plus_r34_bw_r90/fold0/args.json",
+          "sha256": "49f387767cd99b7cc645c992c73c61bd44a4803902fca632d097b1afb8e23bbf",
+          "bytes": 1163
+        },
+        {
+          "path": "runs/cv/x4_deeplabv3plus_r34_bw_r90/fold0/log.jsonl",
+          "sha256": "62709ef78cffc313113021da21510a1b0f82ff321b0ed40d6aa9a30a3b91d35a",
+          "bytes": 16265
+        },
+        {
+          "path": "runs/cv/x4_deeplabv3plus_r34_bw_r90/fold0/result.json",
+          "sha256": "eeb85a1f432cf54921606e1a8dcae7bd306157beb7d404a1fbb668dc2738fec1",
+          "bytes": 8739
+        },
+        {
+          "path": "runs/cv/x4_deeplabv3plus_r34_bw_r90/fold0/last.pt",
+          "sha256": "a8859c9e5f5f01628ec7559ac600dcb40d1995f47e878deefbcac7d7ee4ca0c3",
+          "bytes": 89895044
+        }
+      ]
+    }
+  ],
+  "prerequisite_review23": {
+    "review23": [
+      {
+        "path": "runs/review23_unetpp4/plan.json",
+        "sha256": "6e144ce53aeea8bd41ef255b58e8192048dda8d437c8ceaaec7689c6ba8168b2",
+        "bytes": 48607
+      },
+      {
+        "path": "runs/review23_unetpp4/started.json",
+        "sha256": "49a02295f52639638b919fea90355fbcae016f1988f92ce3d45c40314e98bb6e",
+        "bytes": 135
+      },
+      {
+        "path": "runs/review23_unetpp4/all.done",
+        "sha256": "728b76818d6305ecad7f8ef4c851040dfdbb0dc8536dfd5799ede8f6183b529e",
+        "bytes": 422
+      },
+      {
+        "path": "runs/review23_unetpp4/results.json",
+        "sha256": "573f8e61b167051c0b4f3d67d1d7c2d5f3fcd641bf2d1c78ad29b5fbe2781fa5",
+        "bytes": 88975
+      }
+    ],
+    "completed_runs": [
+      {
+        "experiment": "x4_unetpp_c1536_bw_r90",
+        "fold": 0,
+        "epochs": 60,
+        "training_seconds": 5209.8,
+        "files": [
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold0/args.json",
+            "sha256": "870f8023b15e4fdaac343532741386ef61e173414c4a311e2b9a5b82cbec10c6",
+            "bytes": 1152
+          },
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold0/log.jsonl",
+            "sha256": "91ec201a95905c4e3c0de67c21d9ff61d0d82eece72e69c83f373046f40ca89a",
+            "bytes": 16396
+          },
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold0/result.json",
+            "sha256": "170d06d654df3f5926d5d18a894271a13bb3d39aac7872b687efcc88a7b33f22",
+            "bytes": 8718
+          },
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold0/last.pt",
+            "sha256": "a310c9a63880eb5b2a05dff6a66d44e4e164e2eed19a055b61602d0bcaa2d1df",
+            "bytes": 104482071
+          }
+        ]
+      },
+      {
+        "experiment": "x4_unetpp_c1536_bw_r90",
+        "fold": 1,
+        "epochs": 60,
+        "training_seconds": 5224.1,
+        "files": [
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold1/args.json",
+            "sha256": "ef1232c0c7d8b54800d0cda972042295d3b07b87cd4e9a5425a7c7c8439e1e6d",
+            "bytes": 1152
+          },
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold1/log.jsonl",
+            "sha256": "20c54af386fe76d1b0d0bb858d00dd37c533a8729fed7b3cbba3fc5dfadc4370",
+            "bytes": 16419
+          },
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold1/result.json",
+            "sha256": "2f5f59e5610a9621ed1b6486eda30a1e794a3006751cecf1c86c2d8b3dffb62d",
+            "bytes": 8696
+          },
+          {
+            "path": "runs/cv/x4_unetpp_c1536_bw_r90/fold1/last.pt",
+            "sha256": "4621109b7aefdce85d1b9fa466811739bb1e4fb03d69f8bb8ebb36aa6d086b2d",
+            "bytes": 104482071
+          }
+        ]
+      }
+    ],
+    "images": 36,
+    "folds": [
+      0,
+      1
+    ],
+    "scores_36_images": {
+      "x3_unet60_single": 80.46710318231746,
+      "x3_unet120_single": 80.62279637279396,
+      "x4_unet60_single": 80.3231199554759,
+      "sub6": 81.32454871040675,
+      "x4_mit_x3_unet120_pair": 81.61820992576598,
+      "x2_mit_x4_unet60_pair": 81.31470698503458,
+      "x4_mit_x4_unet60_pair": 81.40328359799042
+    },
+    "note": "Separate completed pilot36 reference; never pooled with this holdout18",
+    "per_image_rows": {
+      "path": "runs/review23_unetpp4/per_image_rows.json",
+      "sha256": "ddb31f6c05412ec4c5f50b9ddf2629be2234cb637486dca6cbf2e5b9c0564cd9",
+      "bytes": 53937
+    }
+  },
+  "provenance": {
+    "plan": {
+      "path": "runs/review24_single_scale/plan.json",
+      "sha256": "6d82716b58e78a0b884a3269c65e36331fe9e99c678abf44d8b3c263715ca2d9",
+      "bytes": 40080
+    },
+    "started": {
+      "path": "runs/review24_single_scale/started.json",
+      "sha256": "b96ce59090c59eeb7506cb730ba6f4b2fa6abf2ee345a4575ed30ce981b0ca15",
+      "bytes": 135
+    },
+    "split": {
+      "path": "splits/folds5.json",
+      "sha256": "10c4630034ad99dfa798c29d3358d0d22c6876dc9c0bbc7df71f144c512169b8",
+      "bytes": 2388
+    },
+    "frozen_sources": [
+      {
+        "path": "src/train.py",
+        "sha256": "8be5a7dcadc5809a4c07757a86d909c2407272c0e9d1184a342a1e60ff363db9",
+        "bytes": 27515
+      },
+      {
+        "path": "src/data.py",
+        "sha256": "8e1ee2cfc7f296d001777f60c57d74c0030e28788e85949341700a55343a2fd9",
+        "bytes": 16874
+      },
+      {
+        "path": "src/infer.py",
+        "sha256": "66ab7875b796b203db9dae40851eee25841f61435e409f7bbb043015febf1bea",
+        "bytes": 4728
+      },
+      {
+        "path": "src/review_grains15.py",
+        "sha256": "8af12112559901db97475b2d0c0f0e6381aee75510cfa66fbc60c310b8e5191b",
+        "bytes": 7597
+      },
+      {
+        "path": "scripts/run_crop18.py",
+        "sha256": "0339e58cac3a77c13e425fe360742aa7fcbb9db68d92b99389b102e14f7e030e",
+        "bytes": 17342
+      },
+      {
+        "path": "scripts/run_scale24.py",
+        "sha256": "139333ec8f870cdf60c98e335b62c740c301077b3ed9fce085b733ad3b50dad7",
+        "bytes": 16396
+      },
+      {
+        "path": "scripts/review_scale24.py",
+        "sha256": "f62954b80222bc0c6c2f593105e72c8264401183d5feaa2369722886f71e2be0",
+        "bytes": 21954
+      },
+      {
+        "path": "scripts/check_scale24_runtime.py",
+        "sha256": "a328e1a452ce520414fbb2f0ef75510471ea89cfe036ba6393f2f1527574b349",
+        "bytes": 13612
+      }
+    ],
+    "pinned_data_files": 180,
+    "pinned_existing_oof_files": 72,
+    "baseline_runs": [
+      {
+        "path": "runs/cv/x2_mit_bw_r90/fold0/args.json",
+        "sha256": "32f19600cef18e323927568009bf845c3278ad2c3c752c90108bdb6323ea18fe",
+        "bytes": 1053
+      },
+      {
+        "path": "runs/cv/x2_mit_bw_r90/fold0/result.json",
+        "sha256": "8e94836d9eaff7ad9d90ca911240f135bc975445acc463da27ab9bdddd9c1105",
+        "bytes": 8606
+      },
+      {
+        "path": "runs/cv/x4_mit_c1536_bw_r90/fold0/args.json",
+        "sha256": "863ebece7b1b71d88f2b6827875552560ed1dc7b95d235b0fa595882115d85bc",
+        "bytes": 1136
+      },
+      {
+        "path": "runs/cv/x4_mit_c1536_bw_r90/fold0/result.json",
+        "sha256": "895fab2c5008dc3ac0f928c9453e4ba0215e39abac7f6f88866e7271b58d7339",
+        "bytes": 8690
+      },
+      {
+        "path": "runs/cv/x3_unetpp_bw_e120_r90/fold0/args.json",
+        "sha256": "5981b7f87482c168cbb70a4c563757e4297932166c050151371db632c1fdbd94",
+        "bytes": 1080
+      },
+      {
+        "path": "runs/cv/x3_unetpp_bw_e120_r90/fold0/result.json",
+        "sha256": "cba52d5c4cdf582f88f5455e825da2c73e7219f0f496181f8cc11eb2c724fde1",
+        "bytes": 8646
+      },
+      {
+        "path": "runs/cv/x2_deeplabv3plus_r34_bw_r90/fold0/args.json",
+        "sha256": "04ca0380d8b03b5b4043fa1e8b73809cfd3ce4befd1c3fd877852428bf8c934f",
+        "bytes": 1163
+      },
+      {
+        "path": "runs/cv/x2_deeplabv3plus_r34_bw_r90/fold0/result.json",
+        "sha256": "7bebba469cd4b5fef1db824e2f2a21b7e067108978e49bede1741108d507846c",
+        "bytes": 8721
+      }
+    ],
+    "source_files": [
+      {
+        "name": "A109_step1_sample3",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A109_step1_sample3.npy",
+        "sha256": "38f250c03a5d2e9694e9d568557c5bb27a4cd51f106f196f6859682ca7f1eb2d",
+        "bytes": 8610128
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A109_step1_sample3.npy",
+        "sha256": "33026475ed236d599120da3b589ac5c5b949e4eb11de94f0a81613f0655f67d4",
+        "bytes": 8610128
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A109_step1_sample3.npy",
+        "sha256": "8e5d213074aa8225887e9461a90ff6a7804c46a010c5ce9e71c441a1cde89155",
+        "bytes": 8610128
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A109_step1_sample3.npy",
+        "sha256": "32b071032c8a101a99fedd641fa33cc904db1cbb185af75d5fc9c363e63cdc44",
+        "bytes": 8610128
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A109_step1_sample3.npy",
+        "sha256": "80ed853df11da5cfdffb97871f2ddbc816fb03ce9afbc553efc64c001dac04ad",
+        "bytes": 8610128
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A109_step1_sample3.npy",
+        "sha256": "fcbfe3d1684cfb447121b5a6aadf705f4a27afca48513cf9b4a3be4a7a7ab9bc",
+        "bytes": 8610128
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A109_step1_sample3.npy",
+        "sha256": "51140d7992f2f63eea9c066b8faf7d7dec3e45b4967f71bab10a6d94873377df",
+        "bytes": 8610128
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "image",
+        "path": "data/train/images/A109_step1_sample3_image.png",
+        "sha256": "dac0ab5313f800b20bc9ce507901d28d1594deadcfb9903548d90a30193bdb9c",
+        "bytes": 1085579
+      },
+      {
+        "name": "A109_step1_sample3",
+        "source": "mask",
+        "path": "data/train/masks/A109_step1_sample3_mask.png",
+        "sha256": "70d86b9d7f63363262a4ab24958f14fb869a6885f1c7c478ca18fd4796077f14",
+        "bytes": 119711
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A118_step2_sample1.npy",
+        "sha256": "17a6eb220e9d56188deff8cc74b86f40e32075c9aeac6898ff18d70e854415ca",
+        "bytes": 8610128
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A118_step2_sample1.npy",
+        "sha256": "4abc63257902d0916bb91b27b2b447fbf2d0e50c1ab5deb0e3875e93dfe87032",
+        "bytes": 8610128
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A118_step2_sample1.npy",
+        "sha256": "da7670ffd4ac626d81e55822706c34bec473456268f4e951383ce46517928511",
+        "bytes": 8610128
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A118_step2_sample1.npy",
+        "sha256": "ec657849c726deb48d1ab5b8609f73b183580edc1e386f0ab5789d3cf74f4a50",
+        "bytes": 8610128
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A118_step2_sample1.npy",
+        "sha256": "e787dceae4112030d253165bdb84122e919cb8ab381c8e4b6c015517b2ebe51f",
+        "bytes": 8610128
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A118_step2_sample1.npy",
+        "sha256": "35672046ae41b17076c512fb1315c4369b038660e633c5096339f40a148cf611",
+        "bytes": 8610128
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A118_step2_sample1.npy",
+        "sha256": "c4c6af66a3153286081962fc69ce4edefb1c1de02953f2024f84024aebf839b2",
+        "bytes": 8610128
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "image",
+        "path": "data/train/images/A118_step2_sample1_image.png",
+        "sha256": "bb178fa2289f0bba70f21399edd777de3142e4e7f1023f86d6ebe20b56abf780",
+        "bytes": 1164003
+      },
+      {
+        "name": "A118_step2_sample1",
+        "source": "mask",
+        "path": "data/train/masks/A118_step2_sample1_mask.png",
+        "sha256": "d09e568203a119414bcd19459cefbe96dd595b288850c0b60d15960aa4b24dab",
+        "bytes": 133220
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A137_step4_sample2.npy",
+        "sha256": "f386d23c97b675f9a892d341deb5932d09d3b949e8d345d2d2b79959c414eca9",
+        "bytes": 8610128
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A137_step4_sample2.npy",
+        "sha256": "e163e46cfa55e1e1cc41d2f397746b578a7f1da855ad48ba480321c0c07f8300",
+        "bytes": 8610128
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A137_step4_sample2.npy",
+        "sha256": "82d68409810e7124dcaa8ec2cf6a32a8c549717e55232b3ec6357345aa33e034",
+        "bytes": 8610128
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A137_step4_sample2.npy",
+        "sha256": "772b3381ef53fb751796ac0fc65f5c997e3225b5da3812d7925c1b83c0d6f5d3",
+        "bytes": 8610128
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A137_step4_sample2.npy",
+        "sha256": "51cbadba64bc2c6fcad833f76d0c2064eb49fe5c563d7f7f1f6b3ede92200c60",
+        "bytes": 8610128
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A137_step4_sample2.npy",
+        "sha256": "46437fbea38fd980878b9a9b209c35f9a89ef4e4c78d058b91fbe78c0ab5b89a",
+        "bytes": 8610128
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A137_step4_sample2.npy",
+        "sha256": "2aa243dbb837980ddd209f45474f417a54691c925bfbb24f7387ba2eb8b5dbc5",
+        "bytes": 8610128
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "image",
+        "path": "data/train/images/A137_step4_sample2_image.png",
+        "sha256": "4294579c0fc30b272eede1075d5e3c2a83e1c7a8a589e39cec1c5dd40fe481ae",
+        "bytes": 1248273
+      },
+      {
+        "name": "A137_step4_sample2",
+        "source": "mask",
+        "path": "data/train/masks/A137_step4_sample2_mask.png",
+        "sha256": "d545725253e515cfd4260b0add4ca07d48c22fad65dcd3c88dcae59df349c45f",
+        "bytes": 120900
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A138_step4_sample3.npy",
+        "sha256": "dbfe4fb9d0ab0b1c5092940ebf49aa485bc62d2e8572c6aa2f97e566a41848c4",
+        "bytes": 8610128
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A138_step4_sample3.npy",
+        "sha256": "4f62dc3c3d2adf1b50e680be3340ae7d03cd37a491de0c90ba2e9a6092d390fe",
+        "bytes": 8610128
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A138_step4_sample3.npy",
+        "sha256": "ee3ea01acdf28644fd7f169b2faaf0a2027006388391c4f47eec6871cfc51334",
+        "bytes": 8610128
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A138_step4_sample3.npy",
+        "sha256": "7d0d3a622ef454e1bb88619ba4034fd78a762a2dba850c8b04061afde3f2e85a",
+        "bytes": 8610128
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A138_step4_sample3.npy",
+        "sha256": "c0b37e218cec85502141a824f5510b05e75605ba37bd104405ea49e67307854a",
+        "bytes": 8610128
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A138_step4_sample3.npy",
+        "sha256": "9f3913271b41cdf988195de3724d723636a7d878a7e697bf58c5fd113cecde45",
+        "bytes": 8610128
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A138_step4_sample3.npy",
+        "sha256": "05e67b7282c2fbcf3d0cb40327e24bdb171be938ac7383f3658c9f05ddff44e3",
+        "bytes": 8610128
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "image",
+        "path": "data/train/images/A138_step4_sample3_image.png",
+        "sha256": "a317ac3842b67361311e4531efa64b0c9807ad9b082e70c57a5596e3a0f3b88e",
+        "bytes": 1283865
+      },
+      {
+        "name": "A138_step4_sample3",
+        "source": "mask",
+        "path": "data/train/masks/A138_step4_sample3_mask.png",
+        "sha256": "7c92d33645a3cbed978eaa6fe42a29b8b635979b134197529ec0c027af61a3f9",
+        "bytes": 180138
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A146_step2_sample1.npy",
+        "sha256": "5f1934fed470c38b52dfef717d8cb0cae90ab37482dd3511b8895ae17ac09995",
+        "bytes": 9293744
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A146_step2_sample1.npy",
+        "sha256": "25dff13c6f1e4860e19c5e61d1de36b21162bb7d36575bddd57be6ad56abb047",
+        "bytes": 9293744
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A146_step2_sample1.npy",
+        "sha256": "193949d26e931692fd1101d682f297fbd2c4585c3eec1b981f9996f7c7f01fab",
+        "bytes": 9293744
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A146_step2_sample1.npy",
+        "sha256": "01e953959d7572a57b62d5ad20510f0e61e9463a7fe3279ab68ad964c3f36c88",
+        "bytes": 9293744
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A146_step2_sample1.npy",
+        "sha256": "d5480a5b38f2dbb899c3bb7de745643d541c86ad45ac673ed44da84fc75f1bec",
+        "bytes": 9293744
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A146_step2_sample1.npy",
+        "sha256": "34e945418c1a9f3a2fe13075ee40816fc1bbf0577a5ece788cea3f22c1b17bbe",
+        "bytes": 9293744
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A146_step2_sample1.npy",
+        "sha256": "c5dd69abe2fb262b8c96e3f55caaf00ab8d2c5d023cda68a93db7d56e6227a46",
+        "bytes": 9293744
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "image",
+        "path": "data/train/images/A146_step2_sample1_image.png",
+        "sha256": "716123a629a41b005c0d2836984d12ac1c4b0b2bc355967cb60df0e2b3f25745",
+        "bytes": 1147675
+      },
+      {
+        "name": "A146_step2_sample1",
+        "source": "mask",
+        "path": "data/train/masks/A146_step2_sample1_mask.png",
+        "sha256": "1119380aa7e90082b599359b65aafe25b57d7f113d0f69059a05a66fc66984c1",
+        "bytes": 105203
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A153_step1_sample4.npy",
+        "sha256": "79ef84a833b799e22f80d55567a1cd603f00ede3fae02afdcefd1b0ac273d995",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A153_step1_sample4.npy",
+        "sha256": "6368495272d97c560511414727126d1a4c0e3f42c7500850b610a444c9e3ef2e",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A153_step1_sample4.npy",
+        "sha256": "c712a6c4623068234714dad58fb3d9adce1efaa3b9a5f8923a9ae21a36ccd80c",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A153_step1_sample4.npy",
+        "sha256": "e13ad671b43539d914b09ff644e493bd549afec79a9cc5a1d1b3599466c0db51",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A153_step1_sample4.npy",
+        "sha256": "e23b704bf28477f32c3bd1a6ec810d4c3451370a6751efaa5b90de86f65d38b3",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A153_step1_sample4.npy",
+        "sha256": "3f1a6ebaf649f3e0d4170e3727b0bd8efb7d590a118225447420b792bb2581ae",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A153_step1_sample4.npy",
+        "sha256": "3f7ca17bd90ccc9b2a1ed57ad4c50d3532e8a68fe27fd688df213fbb23a45164",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "image",
+        "path": "data/train/images/A153_step1_sample4_image.png",
+        "sha256": "2967165d7ee874f2cfce1e34d8710d8296e379ddd3fb8e628f703fadea298b4a",
+        "bytes": 1679794
+      },
+      {
+        "name": "A153_step1_sample4",
+        "source": "mask",
+        "path": "data/train/masks/A153_step1_sample4_mask.png",
+        "sha256": "6c92d52bbd213f368e671bc09290557cfe43b2be644f67faf0c337ff6dab7a1f",
+        "bytes": 155124
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A159_step4_sample4.npy",
+        "sha256": "be73a9117dbe15454e34ecbb493af62c7c50baadd13665bda4022554f7b954c5",
+        "bytes": 9293744
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A159_step4_sample4.npy",
+        "sha256": "d5ae7352fbfec9528f8ebb3b117e6535948162eca09a2b06a72b7f35646d739e",
+        "bytes": 9293744
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A159_step4_sample4.npy",
+        "sha256": "1ebc5804230be91dbb489c99c28c67f6cd4869bf72e8df49b2c5c1c9d176ecc0",
+        "bytes": 9293744
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A159_step4_sample4.npy",
+        "sha256": "856800e26207796fab9062805531df7d868162c47a11426474ee97e65274b1f7",
+        "bytes": 9293744
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A159_step4_sample4.npy",
+        "sha256": "aaf3c0a8778a1d90acf424175f6ed1226ecab329e6d9fc584c6f462d83dcef0e",
+        "bytes": 9293744
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A159_step4_sample4.npy",
+        "sha256": "9cab57e686f15861cb63a6f9b09eded3a7b32e8372aa813dd7945713d01160b0",
+        "bytes": 9293744
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A159_step4_sample4.npy",
+        "sha256": "aecd161eedc890e6a1ebc7792269886eb2e73a34ea0ec6b22936fc281987c784",
+        "bytes": 9293744
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "image",
+        "path": "data/train/images/A159_step4_sample4_image.png",
+        "sha256": "5346c61a5a97e7d88e17521cffa6a2a4a45390b1e8f47e41e4a047a20519e541",
+        "bytes": 1560365
+      },
+      {
+        "name": "A159_step4_sample4",
+        "source": "mask",
+        "path": "data/train/masks/A159_step4_sample4_mask.png",
+        "sha256": "46e77b42cb87829a70e0c63c77ce90c7226959f8915403a702e5bee275eb369e",
+        "bytes": 178749
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A224_step1_sample2.npy",
+        "sha256": "9758b50c1c38646b66ddd973753d60b16da95c236173da599e3ddeb88bda42c7",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A224_step1_sample2.npy",
+        "sha256": "69d8fed26dc93acb86612f1a723c1f47b70d96ae3a52eb78d5f5527fa8b5f080",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A224_step1_sample2.npy",
+        "sha256": "8ed05c37bf2446b560ebcde2c7c320823fa3667658baa06b5d618c86f7ed2474",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A224_step1_sample2.npy",
+        "sha256": "e33fd1c31b6e0de05f47618dad2d8c3889eaaee0424a849d89a08c4568da558e",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A224_step1_sample2.npy",
+        "sha256": "d743688db70ada0cc19d760dea049cac53ce5722ce7ed06adf25cd23f4a53f1c",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A224_step1_sample2.npy",
+        "sha256": "30038dbe05952fab0e3032f21a962eebbff309905fb104eac49cfc24308dbe0e",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A224_step1_sample2.npy",
+        "sha256": "7ee845d2dfa1b4a313849b336a6fa7a0f305b789ec357d3f2c930eff46da7343",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "image",
+        "path": "data/train/images/A224_step1_sample2_image.png",
+        "sha256": "7adb1c216d3884e3d30a774229e390fc57de3f9680da1f5d9196f978b41a7270",
+        "bytes": 1426671
+      },
+      {
+        "name": "A224_step1_sample2",
+        "source": "mask",
+        "path": "data/train/masks/A224_step1_sample2_mask.png",
+        "sha256": "cb664c26fa6f9271fe8877025c90c35c7ef2d78dfc64459efc1bc0dfd98d92ab",
+        "bytes": 172468
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A224_step4_sample2.npy",
+        "sha256": "98fd1be2cdc3952046ac1c17f0c076443df550e369b07f2fa861ea9bc2c079e4",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A224_step4_sample2.npy",
+        "sha256": "62b274fe3ac802b5774ac0e24c2ec8b3b62aacd410ee3c1500b8b98e4c7eaf9d",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A224_step4_sample2.npy",
+        "sha256": "1d7c54671042f0706e66e43ba118c00cd1958df59c7af71ae76da0513420fc0f",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A224_step4_sample2.npy",
+        "sha256": "a14d1050b5cc21642054d61741516cf83c6f35d4e03be107b79b0cb0080c4513",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A224_step4_sample2.npy",
+        "sha256": "e1172244c4eee5ca0baf2ffe24a4aed0306ba768fbcc427995b1ad028a397107",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A224_step4_sample2.npy",
+        "sha256": "308a52565251ee26675bc6f2f28348f33e4c4de7587761a0a36bae15f93ab437",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A224_step4_sample2.npy",
+        "sha256": "e3658d0f7d01650c8dc1464ebad33e0bab21cadc084200b7c8cd69741c437678",
+        "bytes": 8610128
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "image",
+        "path": "data/train/images/A224_step4_sample2_image.png",
+        "sha256": "e799a1711b4b9969ea21f60b2ad600fc22949869e14ca9fa0b1c990ed35b4f35",
+        "bytes": 1209897
+      },
+      {
+        "name": "A224_step4_sample2",
+        "source": "mask",
+        "path": "data/train/masks/A224_step4_sample2_mask.png",
+        "sha256": "d3d2b2cd031645c9e066bd80f009a71fde8acc04d030f681e252332534724df1",
+        "bytes": 156150
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A39_step2_sample3.npy",
+        "sha256": "d5786139de75a506dfdf143a9d25f9c7ccc6c9c3cd61a2d01cf9eaee2b7fcb6f",
+        "bytes": 9293744
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A39_step2_sample3.npy",
+        "sha256": "ec9773b0425b54823a2a626abd20e6a44c0b57f2dd711d1702892a17632be481",
+        "bytes": 9293744
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A39_step2_sample3.npy",
+        "sha256": "5632ddddd0f6c61fd9bd4aeaf10230c1a92273803a10eb28de8b039ce0694f54",
+        "bytes": 9293744
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A39_step2_sample3.npy",
+        "sha256": "37bc295c3b054d222f71156e79ed79a50b3c31c2b403a521719eb08d1c2aaa1f",
+        "bytes": 9293744
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A39_step2_sample3.npy",
+        "sha256": "468a23e54f775dd2a329ce24a3025e6e1c45a14fcefd2d171d1fbe0ab72d657b",
+        "bytes": 9293744
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A39_step2_sample3.npy",
+        "sha256": "13137bad5c5f9f1b30bf36a329022c45bbf79b0338ba15e53e8890acb0af8a52",
+        "bytes": 9293744
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A39_step2_sample3.npy",
+        "sha256": "925cebdc20226cb51eb145d3fb5f2833f6d4391be7d601d76e0c8a388a70a396",
+        "bytes": 9293744
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "image",
+        "path": "data/train/images/A39_step2_sample3_image.png",
+        "sha256": "9d3be7ae57b48b6dd43b833698c8c5dc8716bbed6bb293f3a57791b95ab6e1c8",
+        "bytes": 1403578
+      },
+      {
+        "name": "A39_step2_sample3",
+        "source": "mask",
+        "path": "data/train/masks/A39_step2_sample3_mask.png",
+        "sha256": "eb863ec019f70ec40778ac29287eed77bcea9798936fbcd697f1f0e15a8fbeeb",
+        "bytes": 132079
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A7_step1_sample2.npy",
+        "sha256": "c436e827a4027930e40ec0751727f805770cf3ec0da78f0002ce5e984a95e9d0",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A7_step1_sample2.npy",
+        "sha256": "ed0e4075cfb91f072582e928d20db2032c03461f51b16f6275169b3cfbaf3133",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A7_step1_sample2.npy",
+        "sha256": "0d1944875f56ddf3e5ea8c92d41210941368fb3be121019972ea5bab3fb87a10",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A7_step1_sample2.npy",
+        "sha256": "b9299a6eb67ed84ea9a961527254eda7731a01e639ad367503104a55e3431bc8",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A7_step1_sample2.npy",
+        "sha256": "7af422917da9daa4b270f67d1e40f82c412b0568372461e34583dcd82704e036",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A7_step1_sample2.npy",
+        "sha256": "d8882e6221bce0929169972b9d2b79012209c605894b0e5ae6777071ff33220a",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A7_step1_sample2.npy",
+        "sha256": "dd1a60d77dfa144d2ceb720e3c7eb6dfc02bd41369ec49f71d097f3db3f039fd",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "image",
+        "path": "data/train/images/A7_step1_sample2_image.png",
+        "sha256": "c957addb26b1edc9262b3684b83f277f47f6449f5240d456aa73af4e6a1642c5",
+        "bytes": 1425922
+      },
+      {
+        "name": "A7_step1_sample2",
+        "source": "mask",
+        "path": "data/train/masks/A7_step1_sample2_mask.png",
+        "sha256": "c484ec29f51bda56a6a1e922918ecec65bb40d6a4cdec00b01cf86d070356d89",
+        "bytes": 115104
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A7_step4_sample3.npy",
+        "sha256": "ef5f20891d6ed49d614eaeb9ff418bd9d47aeb992db7b09bfaed617054b7638f",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A7_step4_sample3.npy",
+        "sha256": "7335d867e5c776189881a7a4a3550fe43c15e2f7beecb9ad6f4e8be1a3fd4e05",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A7_step4_sample3.npy",
+        "sha256": "e76d3e10696362ff8a5134086228a67063b90476e36737026fedb1c640af8e5f",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A7_step4_sample3.npy",
+        "sha256": "74d81a0f34082fe6408e47f12dce84b27ca4be3df1b660f5e910d109992d651c",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A7_step4_sample3.npy",
+        "sha256": "b5cd04612a206413512a8b4f27dbfb980a60bccdb373edddd48f4303e25c02c9",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A7_step4_sample3.npy",
+        "sha256": "8da9d43de4a11512209b5f1bb1f908d6146b9e312143ffc20ac089009ba69ccc",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A7_step4_sample3.npy",
+        "sha256": "3fd741b04997fec36b9195b4d05f8a4228fb6e5ae615ba879f342249bc6bec61",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "image",
+        "path": "data/train/images/A7_step4_sample3_image.png",
+        "sha256": "98c8b25261fab124da9727a1656754b3c5157448f5cdea9a82f9308dbe15e7a1",
+        "bytes": 1516968
+      },
+      {
+        "name": "A7_step4_sample3",
+        "source": "mask",
+        "path": "data/train/masks/A7_step4_sample3_mask.png",
+        "sha256": "24b2b53b8bb634e1761d4e045f5308047c326237aca8299fe23e488394f264cc",
+        "bytes": 215682
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A87_step2_sample2.npy",
+        "sha256": "0da1f2c3774578758e17ed6cd1c2989491619d809b94eb4a057c8dc9ce1b2e50",
+        "bytes": 2592128
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A87_step2_sample2.npy",
+        "sha256": "10a76333f89c7ed568e7c1ec8f5c0d4ddfae7a956e1ad5bc00f887c0144a2370",
+        "bytes": 2592128
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A87_step2_sample2.npy",
+        "sha256": "52e95dd9dbc822b1fe79382ba4ef71ba2cfe4de5a1dea5798381b4eac9b2d942",
+        "bytes": 2592128
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A87_step2_sample2.npy",
+        "sha256": "a39ed9970c4df7c46f54a7ac24984c671c8776fadfbfe680024957cf1d932bfa",
+        "bytes": 2592128
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A87_step2_sample2.npy",
+        "sha256": "622f1fcbbf47cc6e38028d9f746781ba4043dd1aa5d959045595cbff6d8b50af",
+        "bytes": 2592128
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A87_step2_sample2.npy",
+        "sha256": "995322e9b5fa5f077d2c3940fac889072737acecc425fb0194c680b89349a54b",
+        "bytes": 2592128
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A87_step2_sample2.npy",
+        "sha256": "92e7197632b2dd6c4bb0f99dbe30e0d54b2f3b1bff43b39583600adb55b31aeb",
+        "bytes": 2592128
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "image",
+        "path": "data/train/images/A87_step2_sample2_image.png",
+        "sha256": "be608c1c417e67a87c62001eec3dddacfa7a2073d147f8749ff45ff6ef3c2e38",
+        "bytes": 438263
+      },
+      {
+        "name": "A87_step2_sample2",
+        "source": "mask",
+        "path": "data/train/masks/A87_step2_sample2_mask.png",
+        "sha256": "83e34acf5aa99c63134d2e7c3d59525f8f27dafc0cb7f3d9cd7443dd1021b548",
+        "bytes": 64092
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A96_step1_sample1.npy",
+        "sha256": "56d65489156f1acd94e4f8085814fd1bf9ab14bdebb40b5d1149cfb876af03bd",
+        "bytes": 2592128
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A96_step1_sample1.npy",
+        "sha256": "00cbae6245bddd23d02d17d34933dcdc8ce987a10e29ac74d3bfbd64f8f5b140",
+        "bytes": 2592128
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A96_step1_sample1.npy",
+        "sha256": "a113985e174ff0b8b1534072956eabc6dd9c2773de6a9987e916e4e1e5fd0545",
+        "bytes": 2592128
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A96_step1_sample1.npy",
+        "sha256": "13fc8884e52fc85a5ecc5dbcea478e04adf17fe1a5b4241a398804dea11cedde",
+        "bytes": 2592128
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A96_step1_sample1.npy",
+        "sha256": "426541302987da082789291345ec5bda7aec13fa33717a7d943a7c5c0382fa1b",
+        "bytes": 2592128
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A96_step1_sample1.npy",
+        "sha256": "7d161fac90907b7129506b6055f112a34738e6496c91686f1a4ae10284cbc846",
+        "bytes": 2592128
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A96_step1_sample1.npy",
+        "sha256": "5b70f7b052f7143ff41d81e5a53214a0b3ed0f8dbe9e7b61703266772b07bd64",
+        "bytes": 2592128
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "image",
+        "path": "data/train/images/A96_step1_sample1_image.png",
+        "sha256": "a61844558afb7e63637e7103ac0093dde86c42c1880aac0ba9cc0bf0dc2f3d13",
+        "bytes": 434036
+      },
+      {
+        "name": "A96_step1_sample1",
+        "source": "mask",
+        "path": "data/train/masks/A96_step1_sample1_mask.png",
+        "sha256": "6cdb047587366c3160780416e6767e37ed0ca4165d41eb0f1e38b8ddf18e02bf",
+        "bytes": 39526
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A153_step3_sample3.npy",
+        "sha256": "4425e171eb04c47eb5294fe8cc546f61ee631036cdcdfadcc13beb27340aeb3a",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A153_step3_sample3.npy",
+        "sha256": "b431d99f1be163b81c0b2e8c1568cc691054d71bcec6325348aa979f196fc0c8",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A153_step3_sample3.npy",
+        "sha256": "ab5f6091a1617a029e0d4111e1ccc99babaf85ea25c9d5b7eeb669cde17dee85",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A153_step3_sample3.npy",
+        "sha256": "20e7ce9141a130b92678af0e75357728aa17183c698cb1112b43e296c37a4b16",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A153_step3_sample3.npy",
+        "sha256": "8d86e132158b0015345693b33fee6ca5fab1fc6fa7a3d74d1b8e345df250a8af",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A153_step3_sample3.npy",
+        "sha256": "b5e6cb6963fcbc355089352b3e66ebb9dc55087040d33f0c52401c48797048d8",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A153_step3_sample3.npy",
+        "sha256": "70ee433a180c2815b1c889f0d5e773c68e54fe9fb2fedfa6e12ac189f78e8956",
+        "bytes": 9293744
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "image",
+        "path": "data/valid/images/A153_step3_sample3_image.png",
+        "sha256": "1c1410fcbd71747e6fe77a2898aa0a6c108ba1524b272efd1451d97516aeb32a",
+        "bytes": 1736627
+      },
+      {
+        "name": "A153_step3_sample3",
+        "source": "mask",
+        "path": "data/valid/masks/A153_step3_sample3_mask.png",
+        "sha256": "cc8c59abc0d1a85994a42abb64f99f010a79db085844bb0a7f8468c1c9d2b188",
+        "bytes": 141053
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A42_step2_sample4.npy",
+        "sha256": "1a5f5fe264be6e99a340ec7e94158f7e1ad32c32382f6386534486051cfcbae5",
+        "bytes": 8610128
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A42_step2_sample4.npy",
+        "sha256": "7f3d5a43f08d13463ea2af7aa5c7a688298ffe7bb51d31d69269a6a643cd52c5",
+        "bytes": 8610128
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A42_step2_sample4.npy",
+        "sha256": "3662cf01c1f4ca28c15a477298432a90a099c80b035c6f398f96e6075a981be7",
+        "bytes": 8610128
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A42_step2_sample4.npy",
+        "sha256": "31a60f73b05998bc8d000c5f576a76161effe1e694bcac66c4ce2e5d082a6622",
+        "bytes": 8610128
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A42_step2_sample4.npy",
+        "sha256": "66ca69f05d78725370a4ebc68aba672888105bb2421f62e3c9e508b93a8def06",
+        "bytes": 8610128
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A42_step2_sample4.npy",
+        "sha256": "0993607733bb57758a0e0053719753512740b3fdab48f3151d3c604e52159268",
+        "bytes": 8610128
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A42_step2_sample4.npy",
+        "sha256": "eb417822af3a96b98dffb6873288007190946fed4a6e177d1bbc9e6eada402da",
+        "bytes": 8610128
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "image",
+        "path": "data/valid/images/A42_step2_sample4_image.png",
+        "sha256": "fb9ad5641210ed705bf0a83d2ba7d6a4e775cf2f2d6242cbc5a3c513e3c9cc40",
+        "bytes": 911719
+      },
+      {
+        "name": "A42_step2_sample4",
+        "source": "mask",
+        "path": "data/valid/masks/A42_step2_sample4_mask.png",
+        "sha256": "5357add176968a98f86bf6d06d4efdc3610c0a738aa87ce3486edf8e58222e70",
+        "bytes": 95380
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A72_step4_sample4.npy",
+        "sha256": "4b5396e3f700dcae01833f924089ebb4a58160bd8c77aaf4f33dc4cda1bc3e53",
+        "bytes": 2592128
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A72_step4_sample4.npy",
+        "sha256": "f7fe66c83ac3201a28daaf1e94e62e2337f74bf87571eb2385095bdde07ce5bd",
+        "bytes": 2592128
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A72_step4_sample4.npy",
+        "sha256": "26cc9168343da754b8c28210ff30a65ce855d35ba0162c0ee795f17e4278defe",
+        "bytes": 2592128
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A72_step4_sample4.npy",
+        "sha256": "664939fb52bd65404c261f2d4d6efeab80e2421c9ae6970ae4ef858bbbbeee2a",
+        "bytes": 2592128
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A72_step4_sample4.npy",
+        "sha256": "b6c5d4ad216144a0fc6e4d3feb023d7bc959383b3b671278d11c96a52a96776c",
+        "bytes": 2592128
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A72_step4_sample4.npy",
+        "sha256": "bd6a73c74d4c846c0ca6df2121bc65470466e991c5bbe0584c8f303062250b34",
+        "bytes": 2592128
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A72_step4_sample4.npy",
+        "sha256": "c8bc0fb091648263bf5ec48be0909a2510c3c8b9d20a860a9646f100b630d0f1",
+        "bytes": 2592128
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "image",
+        "path": "data/valid/images/A72_step4_sample4_image.png",
+        "sha256": "48f692d2ffc41abadd8f6e0f8cc379d922097f4a20b52f502976eb11417f9283",
+        "bytes": 390186
+      },
+      {
+        "name": "A72_step4_sample4",
+        "source": "mask",
+        "path": "data/valid/masks/A72_step4_sample4_mask.png",
+        "sha256": "cb0062143cd19b3fa8bd9ddf3b48b9ce2c6ba6c0994a26e0f8e4705dcf0af0cb",
+        "bytes": 58708
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "mit2",
+        "path": "runs/oof/x2_mit_bw_r90/A7_step1_sample4.npy",
+        "sha256": "adf529f327cbb0868a8ba8998da92ebd5cd11b7add81a6cd9e4707b8cd09560e",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "mit4",
+        "path": "runs/oof/x4_mit_c1536_bw_r90/A7_step1_sample4.npy",
+        "sha256": "1f5097c3853f6e95b1c2fb8f603e404dce1a8cecbe245cd767122b0419ecc586",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "unet3",
+        "path": "runs/oof/x3_unetpp_bw_e120_r90/A7_step1_sample4.npy",
+        "sha256": "e8e577058995b390239dfd31636e39018771b7aebbdb501e602bb773fdda3c23",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "deeplab2",
+        "path": "runs/oof/x2_deeplabv3plus_r34_bw_r90/A7_step1_sample4.npy",
+        "sha256": "7caf94db3d62040c4145ea39bf4f60803e078bc6d775373c28976c99f04c999f",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "mit5",
+        "path": "runs/oof/x5_mit_c1536_bw_r90/A7_step1_sample4.npy",
+        "sha256": "27b628af3642a25a9c37ed51c9b3b981b36ed16a11b44494e12b405e804d73f6",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "deeplab4",
+        "path": "runs/oof/x4_deeplabv3plus_r34_bw_r90/A7_step1_sample4.npy",
+        "sha256": "8661806b7e91a550fb478ad33b38c678652830bb77ed39d2723947e5540c3b91",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "unet4",
+        "path": "runs/oof/x4_unetpp_c1536_bw_r90/A7_step1_sample4.npy",
+        "sha256": "5b7e8c45512a107129fb2e5f94ce6e67a7215574f286bca1055783a0a9bdcd84",
+        "bytes": 9293744
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "image",
+        "path": "data/valid/images/A7_step1_sample4_image.png",
+        "sha256": "48f0925a9df4312a9cb3c5d64cb5519950339f93b791e9daef6e031fd2dc03e6",
+        "bytes": 1390919
+      },
+      {
+        "name": "A7_step1_sample4",
+        "source": "mask",
+        "path": "data/valid/masks/A7_step1_sample4_mask.png",
+        "sha256": "1a0e81af8032f6a985d906953c0b3d6e209aa69e3b0cec86e5f9bcd80a1de56a",
+        "bytes": 118903
+      }
+    ]
+  },
+  "caveats": [
+    "One fixed train72/validation18 split reuses existing fold0; no repeated-fold cross-validation or new independent test",
+    "These 18 images are repeatedly examined; scores are not directly comparable to 36-image or 90-image means",
+    "Each new model excludes these 18 images from training; all images of each alloy remain together across the split",
+    "Only seed0 is trained, and new models use their last checkpoint at epoch60; no best-epoch selection",
+    "MiT5 uses crop1536 and accumulation2 to retain effective batch4; the matched MiT4 reference also uses crop1536 at60 epochs",
+    "DeepLab4 keeps crop1024 and60 epochs like DeepLab2; this tests higher image scale with less original-image context per crop",
+    "The historical UNet++3 reference uses120 epochs while UNet++4 uses60, so their comparison also changes training duration",
+    "Pairs use50:50 and the triple uses equal thirds of per-pixel TTA probabilities, followed by unchanged postprocessing",
+    "Grouped bootstrap resamples alloy groups within this one holdout10000 times with seed0; it does not measure split, seed, or repeated-selection uncertainty",
+    "mIoU averages per-image class means; classes absent from both prediction and truth are excluded within an image",
+    "Review23 is separately linked as a completed36-image pilot; this review never pools its two folds with the18-image comparison",
+    "CPU review time excludes GPU training/inference and is not deployment latency; no ROI reinference, extra training or automatic model adoption"
+  ],
+  "elapsed_seconds": 23.713864490389824,
+  "cpu_threads": 2,
+  "opencv_threads": 1,
+  "training_started_by_review": false,
+  "gpu_inference_started": false,
+  "actual_roi_inference": false,
+  "further_training_scheduled": false,
+  "automatic_model_adoption": false,
+  "submission_changed": false
+}

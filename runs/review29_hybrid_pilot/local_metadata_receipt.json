@@ -1,0 +1,61 @@
+{
+  "files": [
+    {
+      "path": "runs/review29_hybrid_pilot/controller.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/git_progress_snapshot.json",
+      "bytes": 2329,
+      "sha256": "89e8b26d909b1d02e3240ffd4bc4299919629124455df60f096858eecf392a01"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/launch_receipt.json",
+      "bytes": 459,
+      "sha256": "097f8a8bf30ef66553aa1697bcf008385df1a6a23448b9c5d9ab177986934700"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/plan.json",
+      "bytes": 37737,
+      "sha256": "1fcf6f31beef7adea3805e70d1f78e4504e2898dd30f03a366fb64e723e75196"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/runtime.json",
+      "bytes": 7998,
+      "sha256": "ae725b208e2d2c26aa0fcd4fcb0c365ac7660a783ee3eb48d71a58e751389d99"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/start_verification.json",
+      "bytes": 1685,
+      "sha256": "ed9c713c4f32ccd5f07e5ad9ebf1d31cbcbfacca434fa9e4eea6baa7691ae0f8"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/started.json",
+      "bytes": 1735,
+      "sha256": "f6f0192f16504d390bceb555463e75698a2936d0126b99b061286d04b9d82a03"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/state.json",
+      "bytes": 476,
+      "sha256": "11d1d7be5891485021af45c33a1b54a30e46aa85388fa5c12174887d25cf159e"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/training_args.json",
+      "bytes": 1168,
+      "sha256": "3864704e78a0afe491044e0d14a8470a2a5624d82f48cab0f02e323fcf82e5da"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/training_controller.log",
+      "bytes": 469,
+      "sha256": "9b9b9e6f14acbb8b6a5d54ca204c0be29e8ffc4f49e786dc93617ece85377821"
+    },
+    {
+      "path": "runs/review29_hybrid_pilot/training_log.jsonl",
+      "bytes": 357,
+      "sha256": "11c0dd599d57c4dc5a8a47de5f16006a8d489b6445151d2cbfbf53277df4a460"
+    }
+  ],
+  "scope": "Running Git snapshot checked at 2026-10-10T21:15:17+09:00; first-epoch startup proof preserved; not completion evidence",
+  "plan_runtime_receipt_link_verified": true
+}

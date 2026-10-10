@@ -1,51 +1,32 @@
 {
-  "time": "2026-10-10T14:16:12+09:00",
+  "time": "2026-10-10T18:02:10+09:00",
   "pid": 816718,
-  "stage": "single_holdout_training",
+  "stage": "all_four_jobs_complete_and_reviewed",
   "fixed_holdout_fold": 0,
   "repeated_cross_validation": false,
   "training_images": 72,
   "validation_images": 18,
   "further_training_scheduled": false,
   "submission_changed": false,
-  "jobs": [
-    {
-      "id": "mit5",
-      "arm": "mit5",
-      "fold": 0,
-      "gpu": 2,
-      "pid": 816728,
-      "epoch": 0,
-      "total_epochs": 60,
-      "phase": "training",
-      "train_sec": null,
-      "recent_three_mean_train_sec": null,
-      "elapsed_sec": 240.0,
-      "remaining_train_sec_estimate": null,
-      "remaining_total_sec_estimate": null,
-      "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
-      "loss": null,
-      "gpu_mem_gb": null
-    },
+  "jobs": [],
+  "completed_jobs": [
     {
       "id": "deeplab4",
       "arm": "deeplab4",
-      "fold": 0,
-      "gpu": 3,
-      "pid": 816729,
-      "epoch": 17,
-      "total_epochs": 60,
-      "phase": "training",
-      "train_sec": 11.2,
-      "recent_three_mean_train_sec": 11.266666666666666,
-      "elapsed_sec": 240.0,
-      "remaining_train_sec_estimate": 484.46666666666664,
-      "remaining_total_sec_estimate": 565.5,
-      "eta_method": "recent up-to-3 training/validation means; final 8-TTA estimated as 8 validations",
-      "loss": 0.5173,
-      "gpu_mem_gb": 9.0
+      "completed": "2026-10-10T14:25:12+09:00",
+      "epochs": 60,
+      "images": 18,
+      "train_seconds": 685.4,
+      "result_sha256": "eeb85a1f432cf54921606e1a8dcae7bd306157beb7d404a1fbb668dc2738fec1"
+    },
+    {
+      "id": "mit5",
+      "arm": "mit5",
+      "completed": "2026-10-10T18:01:44+09:00",
+      "epochs": 60,
+      "images": 18,
+      "train_seconds": 12741.300000000001,
+      "result_sha256": "89d073a15e098b23e48575e314b3aab962f9f9536ef10bcf6a4d6f583d363ede"
     }
-  ],
-  "completed_jobs": [],
-  "failed_jobs": []
+  ]
 }
