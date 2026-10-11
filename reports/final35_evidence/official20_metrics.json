@@ -1,0 +1,544 @@
+{
+  "scope": "Fresh models trained on original train70; evaluation on original validation20",
+  "scores": {
+    "mit2": {
+      "images": 20,
+      "mIoU": 80.04866417193188,
+      "class_IoU": {
+        "Al": 94.28443977735326,
+        "Al3Ni": 76.10869287664697,
+        "Primary Si": 90.95187478755471,
+        "Eutectic Si": 60.44657186583967
+      },
+      "both_absent_one_mIoU": 80.56099639200423,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4": {
+      "images": 20,
+      "mIoU": 79.70243005228618,
+      "class_IoU": {
+        "Al": 94.47052232478921,
+        "Al3Ni": 74.68085505985258,
+        "Primary Si": 90.5569302201358,
+        "Eutectic Si": 60.73506876855183
+      },
+      "both_absent_one_mIoU": 80.22888246558067,
+      "both_absent_class_image_pairs": 1
+    },
+    "unet3": {
+      "images": 20,
+      "mIoU": 79.56182619248776,
+      "class_IoU": {
+        "Al": 94.5306068976105,
+        "Al3Ni": 74.78208099607461,
+        "Primary Si": 90.58059481709051,
+        "Eutectic Si": 60.06026472924862
+      },
+      "both_absent_one_mIoU": 80.10612942479243,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4": {
+      "images": 20,
+      "mIoU": 79.64951993133603,
+      "class_IoU": {
+        "Al": 94.43356223672652,
+        "Al3Ni": 74.60686508977574,
+        "Primary Si": 89.6881512381379,
+        "Eutectic Si": 61.540150573739595
+      },
+      "both_absent_one_mIoU": 80.19608039411821,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit2_plus_unet3": {
+      "images": 20,
+      "mIoU": 80.62075310543737,
+      "class_IoU": {
+        "Al": 94.59274471919716,
+        "Al3Ni": 76.28315346835703,
+        "Primary Si": 91.3868135636865,
+        "Eutectic Si": 61.90387327001504
+      },
+      "both_absent_one_mIoU": 81.14931108576785,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_plus_unet3": {
+      "images": 20,
+      "mIoU": 80.33714124717982,
+      "class_IoU": {
+        "Al": 94.6462228545865,
+        "Al3Ni": 75.45082599713848,
+        "Primary Si": 91.31026784096052,
+        "Eutectic Si": 61.64324184544115
+      },
+      "both_absent_one_mIoU": 80.87126128651964,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_plus_unet3": {
+      "images": 20,
+      "mIoU": 80.46991071583071,
+      "class_IoU": {
+        "Al": 94.62389732879363,
+        "Al3Ni": 75.49195307701149,
+        "Primary Si": 91.37049707839434,
+        "Eutectic Si": 62.138211655224595
+      },
+      "both_absent_one_mIoU": 81.01400857137608,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "model_args": {
+    "mit2": {
+      "data": "data",
+      "out": "runs/review32_mit2_train70/models/mit2/base",
+      "train_splits": [
+        "train"
+      ],
+      "val_split": "valid",
+      "fold": -1,
+      "folds_file": "splits/folds5.json",
+      "arch": "Unet",
+      "encoder": "mit_b2",
+      "attention": null,
+      "loss": "dice",
+      "bw": 2.0,
+      "class_weights": "",
+      "epochs": 60,
+      "bs": 2,
+      "accum_steps": 2,
+      "crop": 1536,
+      "spi": 8,
+      "scale_jitter": 0.15,
+      "lr": 0.0003,
+      "wd": 0.0001,
+      "width": 2560,
+      "scale_multiplier": 1.0,
+      "tile": 1536,
+      "overlap": 128,
+      "val_every": 5,
+      "workers": 4,
+      "seed": 0,
+      "max_iters": 0,
+      "amp": true,
+      "save_oof": "runs/review32_mit2_train70/valid_probs/mit2/base",
+      "hires": false,
+      "skel": 0.0,
+      "rot": "rot90",
+      "aug_policy": "default",
+      "hm": 0.0,
+      "lowres": 0.0,
+      "no_int": false,
+      "copypaste": 0.0,
+      "int_drop": "",
+      "ema": 0.0,
+      "train_frac": 1.0,
+      "enc_lr_mult": 1.0,
+      "full": false,
+      "binary_class": -1,
+      "elastic": 0.0,
+      "cutout": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "init": "",
+      "init_skip_head": false,
+      "use_ignore": false,
+      "pair_classes": null,
+      "feats": false,
+      "hard_crop": 0.0,
+      "hard_maps": "runs/submission31_train70/train_interface_maps",
+      "soft_edge": 0.0
+    },
+    "mit4": {
+      "data": "data",
+      "out": "runs/submission31_train70/models/mit4/base",
+      "train_splits": [
+        "train"
+      ],
+      "val_split": "valid",
+      "fold": -1,
+      "folds_file": "splits/folds5.json",
+      "arch": "Unet",
+      "encoder": "mit_b2",
+      "attention": null,
+      "loss": "dice",
+      "bw": 2.0,
+      "class_weights": "",
+      "epochs": 60,
+      "bs": 2,
+      "accum_steps": 2,
+      "crop": 1536,
+      "spi": 8,
+      "scale_jitter": 0.15,
+      "lr": 0.0003,
+      "wd": 0.0001,
+      "width": 2560,
+      "scale_multiplier": 2.0,
+      "tile": 1536,
+      "overlap": 128,
+      "val_every": 5,
+      "workers": 4,
+      "seed": 0,
+      "max_iters": 0,
+      "amp": true,
+      "save_oof": "runs/submission31_train70/valid_probs/mit4/base",
+      "hires": false,
+      "skel": 0.0,
+      "rot": "rot90",
+      "aug_policy": "default",
+      "hm": 0.0,
+      "lowres": 0.0,
+      "no_int": false,
+      "copypaste": 0.0,
+      "int_drop": "",
+      "ema": 0.0,
+      "train_frac": 1.0,
+      "enc_lr_mult": 1.0,
+      "full": false,
+      "binary_class": -1,
+      "elastic": 0.0,
+      "cutout": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "init": "",
+      "init_skip_head": false,
+      "use_ignore": false,
+      "pair_classes": null,
+      "feats": false,
+      "hard_crop": 0.0,
+      "hard_maps": "runs/submission31_train70/train_interface_maps",
+      "soft_edge": 0.0
+    },
+    "unet3": {
+      "data": "data",
+      "out": "runs/submission31_train70/models/unet3/base",
+      "train_splits": [
+        "train"
+      ],
+      "val_split": "valid",
+      "fold": -1,
+      "folds_file": "splits/folds5.json",
+      "arch": "UnetPlusPlus",
+      "encoder": "resnet34",
+      "attention": null,
+      "loss": "dice",
+      "bw": 2.0,
+      "class_weights": "",
+      "epochs": 120,
+      "bs": 4,
+      "accum_steps": 1,
+      "crop": 1536,
+      "spi": 8,
+      "scale_jitter": 0.15,
+      "lr": 0.0003,
+      "wd": 0.0001,
+      "width": 3840,
+      "scale_multiplier": 1.0,
+      "tile": 1536,
+      "overlap": 128,
+      "val_every": 5,
+      "workers": 4,
+      "seed": 0,
+      "max_iters": 0,
+      "amp": true,
+      "save_oof": "runs/submission31_train70/valid_probs/unet3/base",
+      "hires": false,
+      "skel": 0.0,
+      "rot": "rot90",
+      "aug_policy": "default",
+      "hm": 0.0,
+      "lowres": 0.0,
+      "no_int": false,
+      "copypaste": 0.0,
+      "int_drop": "",
+      "ema": 0.0,
+      "train_frac": 1.0,
+      "enc_lr_mult": 1.0,
+      "full": false,
+      "binary_class": -1,
+      "elastic": 0.0,
+      "cutout": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "init": "",
+      "init_skip_head": false,
+      "use_ignore": false,
+      "pair_classes": null,
+      "feats": false,
+      "hard_crop": 0.0,
+      "hard_maps": "runs/submission31_train70/train_interface_maps",
+      "soft_edge": 0.0
+    },
+    "context4": {
+      "data": "data",
+      "out": "runs/submission31_train70/models/context4/base",
+      "train_splits": [
+        "train"
+      ],
+      "val_split": "valid",
+      "fold": -1,
+      "folds_file": "splits/folds5.json",
+      "arch": "GlobalContextMiTCNN30",
+      "encoder": "mit_b2",
+      "attention": null,
+      "loss": "dice",
+      "bw": 2.0,
+      "class_weights": "",
+      "epochs": 60,
+      "bs": 2,
+      "accum_steps": 2,
+      "crop": 1536,
+      "spi": 8,
+      "scale_jitter": 0.15,
+      "lr": 0.0003,
+      "wd": 0.0001,
+      "width": 2560,
+      "scale_multiplier": 2.0,
+      "tile": 1536,
+      "overlap": 128,
+      "val_every": 5,
+      "workers": 4,
+      "seed": 0,
+      "max_iters": 0,
+      "amp": true,
+      "save_oof": "runs/submission31_train70/valid_probs/context4/base",
+      "hires": false,
+      "skel": 0.0,
+      "rot": "rot90",
+      "aug_policy": "default",
+      "hm": 0.0,
+      "lowres": 0.0,
+      "no_int": false,
+      "copypaste": 0.0,
+      "int_drop": "",
+      "ema": 0.0,
+      "train_frac": 1.0,
+      "enc_lr_mult": 1.0,
+      "full": false,
+      "binary_class": -1,
+      "elastic": 0.0,
+      "cutout": 0.0,
+      "mixup": 0.0,
+      "cutmix": 0.0,
+      "init": "",
+      "init_skip_head": false,
+      "use_ignore": false,
+      "pair_classes": null,
+      "feats": false,
+      "hard_crop": 0.0,
+      "hard_maps": "runs/submission31_train70/train_interface_maps",
+      "soft_edge": 0.0
+    }
+  },
+  "selected_recipe": "mit2_plus_unet3",
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "selected_per_image_ascending": [
+    {
+      "name": "A71_step2_sample1",
+      "mIoU": 57.71536157356103,
+      "class_IoU": {
+        "Al": 92.70655498470704,
+        "Al3Ni": 37.23184226815018,
+        "Primary Si": null,
+        "Eutectic Si": 43.20768746782589
+      }
+    },
+    {
+      "name": "A153_step3_sample3",
+      "mIoU": 73.33766512585835,
+      "class_IoU": {
+        "Al": 89.00692067271916,
+        "Al3Ni": 74.09302870022785,
+        "Primary Si": 94.35285817017409,
+        "Eutectic Si": 35.8978529603123
+      }
+    },
+    {
+      "name": "A11_step2_sample4",
+      "mIoU": 74.98802230101062,
+      "class_IoU": {
+        "Al": 92.6055188079141,
+        "Al3Ni": 58.58419996351031,
+        "Primary Si": 92.01241885407846,
+        "Eutectic Si": 56.7499515785396
+      }
+    },
+    {
+      "name": "A186_step2_sample2",
+      "mIoU": 75.17359377873028,
+      "class_IoU": {
+        "Al": 97.41815621113825,
+        "Al3Ni": 95.59991715020027,
+        "Primary Si": 74.2106457685273,
+        "Eutectic Si": 33.46565598505533
+      }
+    },
+    {
+      "name": "A67_step1_sample1",
+      "mIoU": 76.02463881232299,
+      "class_IoU": {
+        "Al": 89.48845448462764,
+        "Al3Ni": 57.29422894985808,
+        "Primary Si": 91.24028120489781,
+        "Eutectic Si": 66.07559060990845
+      }
+    },
+    {
+      "name": "A74_step3_sample4",
+      "mIoU": 76.83908735795893,
+      "class_IoU": {
+        "Al": 94.20997224614796,
+        "Al3Ni": 78.78606920329455,
+        "Primary Si": 89.38241140585373,
+        "Eutectic Si": 44.97789657653953
+      }
+    },
+    {
+      "name": "A11_step1_sample4",
+      "mIoU": 77.97843101801904,
+      "class_IoU": {
+        "Al": 96.63094542226841,
+        "Al3Ni": 53.11397453597178,
+        "Primary Si": 95.61676111551195,
+        "Eutectic Si": 66.55204299832398
+      }
+    },
+    {
+      "name": "A125_step1_sample4",
+      "mIoU": 79.55319073158807,
+      "class_IoU": {
+        "Al": 95.0607071731984,
+        "Al3Ni": 79.22852520579808,
+        "Primary Si": 80.82061475118904,
+        "Eutectic Si": 63.10291579616677
+      }
+    },
+    {
+      "name": "A181_step1_sample1",
+      "mIoU": 80.70044784752588,
+      "class_IoU": {
+        "Al": 96.64628767364974,
+        "Al3Ni": 79.34909563008083,
+        "Primary Si": 89.75680592346727,
+        "Eutectic Si": 57.049602162905686
+      }
+    },
+    {
+      "name": "A7_step1_sample4",
+      "mIoU": 82.17522731454056,
+      "class_IoU": {
+        "Al": 96.56911943373304,
+        "Al3Ni": 72.89422135161607,
+        "Primary Si": 90.42011490147658,
+        "Eutectic Si": 68.81745357133659
+      }
+    },
+    {
+      "name": "A55_step2_sample1",
+      "mIoU": 82.45072610250776,
+      "class_IoU": {
+        "Al": 95.37290244849753,
+        "Al3Ni": 80.65281434940167,
+        "Primary Si": 90.82158483228002,
+        "Eutectic Si": 62.955602779851816
+      }
+    },
+    {
+      "name": "A40_step3_sample3",
+      "mIoU": 83.48254698249669,
+      "class_IoU": {
+        "Al": 94.6921136142608,
+        "Al3Ni": 81.93271135312192,
+        "Primary Si": 90.63221568181079,
+        "Eutectic Si": 66.67314728079323
+      }
+    },
+    {
+      "name": "A191_step4_sample3",
+      "mIoU": 83.52670458159407,
+      "class_IoU": {
+        "Al": 94.58828206529842,
+        "Al3Ni": 80.85548329594465,
+        "Primary Si": 97.50195839498652,
+        "Eutectic Si": 61.16109457014676
+      }
+    },
+    {
+      "name": "A59_step3_sample1",
+      "mIoU": 83.79007353939332,
+      "class_IoU": {
+        "Al": 94.86252806554536,
+        "Al3Ni": 80.62435263730646,
+        "Primary Si": 96.01863727979479,
+        "Eutectic Si": 63.65477617492663
+      }
+    },
+    {
+      "name": "A63_step1_sample4",
+      "mIoU": 84.05644707005519,
+      "class_IoU": {
+        "Al": 94.86157098275335,
+        "Al3Ni": 80.36716820121266,
+        "Primary Si": 97.43595808595691,
+        "Eutectic Si": 63.5610910102978
+      }
+    },
+    {
+      "name": "A42_step2_sample4",
+      "mIoU": 85.38750979614514,
+      "class_IoU": {
+        "Al": 96.54421993581532,
+        "Al3Ni": 86.74546833000207,
+        "Primary Si": 85.06078771919996,
+        "Eutectic Si": 73.1995631995632
+      }
+    },
+    {
+      "name": "A72_step4_sample4",
+      "mIoU": 87.41112239307493,
+      "class_IoU": {
+        "Al": 94.62963453272967,
+        "Al3Ni": 79.13482422974822,
+        "Primary Si": 94.9868073878628,
+        "Eutectic Si": 80.89322342195906
+      }
+    },
+    {
+      "name": "A117_step4_sample2",
+      "mIoU": 87.78213161361666,
+      "class_IoU": {
+        "Al": 94.61549728175805,
+        "Al3Ni": 85.13766206012252,
+        "Primary Si": 96.41468924968076,
+        "Eutectic Si": 74.96067786290527
+      }
+    },
+    {
+      "name": "A170_step4_sample3",
+      "mIoU": 89.3659291569021,
+      "class_IoU": {
+        "Al": 94.04445712044777,
+        "Al3Ni": 91.67482593559617,
+        "Primary Si": 94.37973959078552,
+        "Eutectic Si": 77.36469398077895
+      }
+    },
+    {
+      "name": "A44_step4_sample3",
+      "mIoU": 90.67620501184565,
+      "class_IoU": {
+        "Al": 97.30105122673314,
+        "Al3Ni": 92.36265601597604,
+        "Primary Si": 95.2841673925093,
+        "Eutectic Si": 77.75694541216413
+      }
+    }
+  ],
+  "all_scores_exactly_reproduced": true,
+  "metric": "Image-wise class IoU mean, then mean across20images; class absent in prediction andGT excluded.",
+  "limitations": [
+    "Validation20 was previously inspected during model development; not an untouched test set.",
+    "MiT/Context60epochs,UNet120epochs; these are recipe comparisons, not matched-epoch architecture ablations."
+  ]
+}

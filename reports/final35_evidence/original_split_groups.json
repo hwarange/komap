@@ -1,0 +1,19 @@
+{
+  "scope": "Provided train70 versus validation20; only group metadata comparison",
+  "training_images": 70,
+  "validation_images": 20,
+  "training_alloys": 59,
+  "validation_alloys": 19,
+  "shared_alloy_ids": [
+    7,
+    40,
+    55,
+    125,
+    153,
+    181,
+    191
+  ],
+  "shared_alloy_count": 7,
+  "shared_image_names": [],
+  "note": "Original split has shared alloy IDs; grouped train70 CV prevents alloy overlap within each fold."
+}

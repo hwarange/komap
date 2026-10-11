@@ -45,3 +45,13 @@ handoff/migration/record-execution.py
 runs/backup_cleanup_plan.json
 runs/server_transfer_scope.json
 runs/review16_additional/hourly_checks/
+
+# 최종 제출 보고서의 렌더 PDF·PNG는 내부 QA 전용
+reports/final35_document_work/*.pdf
+reports/final35_document_work/render_v*/
+reports/final35_document_work/render_v*.json
+reports/final35_document_work/diag*.docx
+reports/final35_document_work/diag_render/
+reports/final35_document_work/~$*.docx
+reports/final35_document_work/prepare_native.py
+reports/final35_document_work/render*.ps1

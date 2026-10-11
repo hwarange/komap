@@ -1,0 +1,74 @@
+{
+  "completed_at": "2026-10-11T21:53:06.753797+09:00",
+  "document": {
+    "path": "reports/모델링결과서_김형수없는김형수_최종제출.docx",
+    "size_bytes": 30278,
+    "sha256": "778e87526ea18b8db40796d014d128fcb860ff562a7caf4e2aa3a18b8db30666"
+  },
+  "pages": 9,
+  "render_iteration": 19,
+  "all_pages_visually_reviewed": true,
+  "checks": [
+    "template form and section retained",
+    "all text readable",
+    "no clipped or overlapping tables or images",
+    "official validation and internal OOF clearly separated",
+    "train70-only selected weights match submitted masks",
+    "within ten-page submission limit"
+  ],
+  "rendered_pages": [
+    {
+      "path": "reports/final35_document_work/render_v19/page-1.png",
+      "size_bytes": 108063,
+      "sha256": "3b0c0e3763e87bc3eb8f253066f06ad34713489729502591756b8a42c2993780"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-2.png",
+      "size_bytes": 295332,
+      "sha256": "4b4954d3c42f29b078a73f9d4e205c4769724ca2df3a7f166c923692a9d3cc4a"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-3.png",
+      "size_bytes": 240158,
+      "sha256": "65cf872f4fbbdf9e543c3e97cbcc1fb652b67e9e780dac0580a319471c1d56c6"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-4.png",
+      "size_bytes": 305062,
+      "sha256": "a959882a41d283fb9bd1a3f31f605fba2fe47218d74a286798f95583a0e7ff74"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-5.png",
+      "size_bytes": 217576,
+      "sha256": "02df20d0a6cc7ca7ab18122ec2b6db4734bdaa340a24efbd1b93399c412bc455"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-6.png",
+      "size_bytes": 238019,
+      "sha256": "6df3295482740af38ec896b4e2d6cbca0dbac538ac234fe50d73e33c8b4822c5"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-7.png",
+      "size_bytes": 225616,
+      "sha256": "3c248acce3c3e267b51cf19d34955c54559948279306f9e30eaf5a279c0cc63a"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-8.png",
+      "size_bytes": 280208,
+      "sha256": "c5e5ba9b889edc0c99e45c77a3661d4bf5419de35648d79c5dfd2b38ba961d32"
+    },
+    {
+      "path": "reports/final35_document_work/render_v19/page-9.png",
+      "size_bytes": 307150,
+      "sha256": "25e812ef84066474830263a23bb6caa17a6e2d8d694e8bffa95e9c5262abbe8b"
+    }
+  ],
+  "pdf": {
+    "path": "reports/final35_document_work/final35_v19.pdf",
+    "size_bytes": 219393,
+    "sha256": "b683cbc24e91147b1be823ee3149949af6de718f7ee3973588239820e23cf13d"
+  },
+  "official_validation20_mIoU": 80.62075310543737,
+  "train70_internal_oof_mIoU": 80.77829756479382,
+  "external_submission_performed": false
+}

@@ -1,0 +1,37 @@
+{
+  "completed_at": "2026-10-11T21:53:06.753797+09:00",
+  "artifacts": [
+    {
+      "path": "reports/모델링결과서_김형수없는김형수_최종제출.docx",
+      "size_bytes": 30278,
+      "sha256": "778e87526ea18b8db40796d014d128fcb860ff562a7caf4e2aa3a18b8db30666"
+    },
+    {
+      "path": "submissions/final35_train70/final35_masks.zip",
+      "size_bytes": 1143301,
+      "sha256": "dfa5b800457e73f9aba23c98347db69687ef5f90fe9b4dbeab3eaf2109ec803a"
+    },
+    {
+      "path": "delivery/final35_code_bundle.zip",
+      "size_bytes": 197453,
+      "sha256": "b5426896d153a08b5d89c87acfeb8b614404bb9dde4bc6f895590f12faeab624"
+    },
+    {
+      "path": "delivery/final35_repro/checkpoints/mit2_last.pt",
+      "size_bytes": 110014779,
+      "sha256": "2739b79a9e052808d318b621fb2d1cb9ae31b43473f4266e73fb275cd199aee1"
+    },
+    {
+      "path": "delivery/final35_repro/checkpoints/unet3_last.pt",
+      "size_bytes": 104482135,
+      "sha256": "1668b0ef0e25e9be093ed531d60a2425e45f9cda694f421e023d3d09e9e253a8"
+    }
+  ],
+  "report_qa": {
+    "path": "reports/final35_document_work/layout_qa.json",
+    "size_bytes": 2808,
+    "sha256": "7b526ae1766f39254e9730cd10583b070d92643879154818be07c0a80cdbf6d0"
+  },
+  "external_submission_performed": false,
+  "new_training_performed": false
+}

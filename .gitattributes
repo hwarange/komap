@@ -11,3 +11,20 @@
 *.png binary
 *.jpg binary
 *.ipynb text eol=lf
+
+# Preserve the original bytes of final35 audit records and report inputs.
+# Their recorded SHA256 values must survive Git checkout on any platform.
+delivery/final35_code_bundle_receipt.json -text whitespace=cr-at-eol
+delivery/final35_delivery_receipt.json -text whitespace=cr-at-eol
+delivery/final35_repro/checkpoints/checkpoint_copy_receipt.json -text whitespace=cr-at-eol
+delivery/final_model_selection_before_final35.json -text whitespace=cr-at-eol
+reports/final35_document_work/build_evidence.json -text whitespace=cr-at-eol
+reports/final35_document_work/content.json -text whitespace=cr-at-eol
+reports/final35_document_work/layout_qa.json -text whitespace=cr-at-eol
+reports/final35_document_work/report_text.txt -text whitespace=cr-at-eol
+reports/final35_evidence/report_figures_retrieval_receipt.json -text whitespace=cr-at-eol
+reports/final35_evidence/retrieval_receipt.json -text whitespace=cr-at-eol
+runs/final35_submission/local_copy_verification.json -text whitespace=cr-at-eol
+runs/review34_train70_group5fold/completion_retrieval.json -text whitespace=cr-at-eol
+runs/review34_train70_group5fold/independent_results_check.json -text whitespace=cr-at-eol
+delivery/final35_repro/environment.yml text eol=lf

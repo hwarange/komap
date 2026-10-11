@@ -1,0 +1,26 @@
+{
+  "all_hashes_verified": true,
+  "raw_dataset_transferred": false,
+  "files": [
+    {
+      "name": "format_report_figures.py",
+      "sha256": "4f19a273d781bb0419a5dc5038fd12db355227b98a91cb5907e360ede3fd3f4f",
+      "bytes": 7223
+    },
+    {
+      "name": "report_figures_receipt.json",
+      "sha256": "3850d21fd96a51a29143142c9a9483f34738cc30b3432b666db71b2b8c8dfeaa",
+      "bytes": 2846
+    },
+    {
+      "name": "report_eda.png",
+      "sha256": "bbf2dc05d3aca05d7bb5754cd0a98536b49516f3f7a3b65f1dbc7a2a8cd068c3",
+      "bytes": 171322
+    },
+    {
+      "name": "report_validation_cases.png",
+      "sha256": "17b709a91627a40399b5ae56d1b29cab93764df4df3e9fe5c2522c92a8f3d403",
+      "bytes": 1715910
+    }
+  ]
+}

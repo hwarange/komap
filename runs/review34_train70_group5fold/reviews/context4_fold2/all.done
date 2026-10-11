@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-11T14:41:32+09:00",
+  "job": "context4_fold2",
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f",
+  "results_sha256": "c8ec8d71c9415cbfe9390bf22de000d9a9949c1c47c78ab8ae63db753c913d7a",
+  "rows_sha256": "a28c7912cb467bcb70329a1fdd20e6428fd907a96a1db97eed822d70add48c19"
+}

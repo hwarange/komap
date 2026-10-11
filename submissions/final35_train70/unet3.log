@@ -1,0 +1,10 @@
+{"family": "unet3", "image": "A107_step1_sample3_image.png", "elapsed_seconds": 5.384035978466272}
+{"family": "unet3", "image": "A122_step4_sample1_image.png", "elapsed_seconds": 7.975210256874561}
+{"family": "unet3", "image": "A124_step4_sample3_image.png", "elapsed_seconds": 10.527878675609827}
+{"family": "unet3", "image": "A127_step3_sample2_image.png", "elapsed_seconds": 14.89133270084858}
+{"family": "unet3", "image": "A133_step4_sample1_image.png", "elapsed_seconds": 17.48206190764904}
+{"family": "unet3", "image": "A167_step3_sample3_image.png", "elapsed_seconds": 20.062805589288473}
+{"family": "unet3", "image": "A38_step2_sample2_image.png", "elapsed_seconds": 22.493900436908007}
+{"family": "unet3", "image": "A51_step3_sample3_image.png", "elapsed_seconds": 25.111219435930252}
+{"family": "unet3", "image": "A63_step2_sample3_image.png", "elapsed_seconds": 27.544550824910402}
+{"family": "unet3", "image": "A87_step1_sample4_image.png", "elapsed_seconds": 29.978019539266825}

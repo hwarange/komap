@@ -1,0 +1,38 @@
+[
+  {
+    "rank_ascending": 1,
+    "selection_rule": "Ascending per-image mIoU; name breaks ties; rank1 andrank10 fixed before inspecting panels.",
+    "name": "A71_step2_sample1",
+    "mIoU": 57.71536157356103,
+    "class_IoU": {
+      "Al": 92.70655498470704,
+      "Al3Ni": 37.23184226815018,
+      "Primary Si": null,
+      "Eutectic Si": 43.20768746782589
+    },
+    "width": 675,
+    "height": 480,
+    "error_pixel_percent": 13.828086419753086,
+    "figure": "validation_case_lowest.png",
+    "absent_ground_truth_classes": [
+      "Primary Si"
+    ]
+  },
+  {
+    "rank_ascending": 10,
+    "selection_rule": "Ascending per-image mIoU; name breaks ties; rank1 andrank10 fixed before inspecting panels.",
+    "name": "A7_step1_sample4",
+    "mIoU": 82.17522731454056,
+    "class_IoU": {
+      "Al": 96.56911943373304,
+      "Al3Ni": 72.89422135161607,
+      "Primary Si": 90.42011490147658,
+      "Eutectic Si": 68.81745357133659
+    },
+    "width": 1278,
+    "height": 909,
+    "error_pixel_percent": 4.831789908255301,
+    "figure": "validation_case_lower_median.png",
+    "absent_ground_truth_classes": []
+  }
+]

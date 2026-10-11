@@ -1,0 +1,89 @@
+{
+  "scores": {
+    "mit2": {
+      "images": 70,
+      "mIoU": 80.33079880445743,
+      "class_IoU": {
+        "Al": 93.08832198452214,
+        "Al3Ni": 80.73207244838164,
+        "Primary Si": 88.54235317539383,
+        "Eutectic Si": 59.200982638594965
+      },
+      "both_absent_one_mIoU": 80.43185272895387,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4": {
+      "images": 70,
+      "mIoU": 80.24323319089964,
+      "class_IoU": {
+        "Al": 93.250742182289,
+        "Al3Ni": 80.91991635754503,
+        "Primary Si": 88.15468942585277,
+        "Eutectic Si": 58.9726248251745
+      },
+      "both_absent_one_mIoU": 80.36679787833728,
+      "both_absent_class_image_pairs": 1
+    },
+    "unet3": {
+      "images": 70,
+      "mIoU": 79.76131851826968,
+      "class_IoU": {
+        "Al": 93.1181187751586,
+        "Al3Ni": 79.84779276758609,
+        "Primary Si": 87.65657091074334,
+        "Eutectic Si": 58.65647092648931
+      },
+      "both_absent_one_mIoU": 79.86382202031311,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4": {
+      "images": 70,
+      "mIoU": 80.13944918746824,
+      "class_IoU": {
+        "Al": 93.30463570568335,
+        "Al3Ni": 80.76592139039633,
+        "Primary Si": 87.16614713764027,
+        "Eutectic Si": 59.321092516152994
+      },
+      "both_absent_one_mIoU": 80.13944918746823,
+      "both_absent_class_image_pairs": 0
+    },
+    "mit2_plus_unet3": {
+      "images": 70,
+      "mIoU": 80.77829756479382,
+      "class_IoU": {
+        "Al": 93.32532184546228,
+        "Al3Ni": 80.94644606367032,
+        "Primary Si": 88.76090970642628,
+        "Eutectic Si": 60.31536002459467
+      },
+      "both_absent_one_mIoU": 80.87714901822972,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_plus_unet3": {
+      "images": 70,
+      "mIoU": 80.58147071973595,
+      "class_IoU": {
+        "Al": 93.3796208240743,
+        "Al3Ni": 80.96283595485528,
+        "Primary Si": 88.41688190547877,
+        "Eutectic Si": 59.83522007975339
+      },
+      "both_absent_one_mIoU": 80.69000796994943,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_plus_unet3": {
+      "images": 70,
+      "mIoU": 80.6553424637621,
+      "class_IoU": {
+        "Al": 93.38603993581222,
+        "Al3Ni": 80.8696337299082,
+        "Primary Si": 88.59682515261674,
+        "Eutectic Si": 60.08371533747104
+      },
+      "both_absent_one_mIoU": 80.77477916340699,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "selected_recipe": null
+}

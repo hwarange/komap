@@ -1,0 +1,14 @@
+[
+  {
+    "local_path": "delivery/final35_repro/checkpoints/mit2_last.pt",
+    "project_relative_archive_path": "runs/review32_mit2_train70/models/mit2/base/last.pt",
+    "sha256": "2739b79a9e052808d318b621fb2d1cb9ae31b43473f4266e73fb275cd199aee1",
+    "size_bytes": 110014779
+  },
+  {
+    "local_path": "delivery/final35_repro/checkpoints/unet3_last.pt",
+    "project_relative_archive_path": "runs/submission31_train70/models/unet3/base/last.pt",
+    "sha256": "1668b0ef0e25e9be093ed531d60a2425e45f9cda694f421e023d3d09e9e253a8",
+    "size_bytes": 104482135
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "family": "mit2",
+  "manifest_sha256": "1f5fa391b80f9b5acaf283b0978aa6a860a95c3a526b63f1d5891f7e1a9a4386",
+  "outputs": [
+    {
+      "path": "parts/mit2/A107_step1_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "4db5e7d2ab539dbef00c3c9fed62440725d0efe9790a17dc65f0e765f4dd6524",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A122_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "ec7eb1a3dde3fc08a9addb727c73fdbca302cb437adfe7b0418cdb3a70d16021",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A124_step4_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "fec04ded217c00dcf9be8ba03d16d520c655ec3d84ffeacca621d8067ee5fe97",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A127_step3_sample2.npy",
+      "size_bytes": 11796608,
+      "sha256": "d5f7ab439050b099b33036e05f4988f73abc31702bfe91115930b0fd8ed83e40",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A133_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "a19fe21ebaef4488ce9606e5937baec38dee8de4c27c83013a056b5f9f7b4fb3",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A167_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "1d1924ec8306ed250e32240c8432da2087e97ce451f0bc95a2d484f62b5f5c20",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A38_step2_sample2.npy",
+      "size_bytes": 2592128,
+      "sha256": "b566d6a85f2da83ed5831c5918453a59aaabd9b75da3a40550d74ae695b33116",
+      "actual_scale": 4.0
+    },
+    {
+      "path": "parts/mit2/A51_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "01b599dbd13bfa03fc912291b1a4b785ad99adb4d73e3064ac4e91c9a8235dee",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A63_step2_sample3.npy",
+      "size_bytes": 2592128,
+      "sha256": "a488c2dc8a1c0fbce848e94f285e9694b0fbbe224041c0ecc3dcb2ab484e6466",
+      "actual_scale": 4.0
+    },
+    {
+      "path": "parts/mit2/A87_step1_sample4.npy",
+      "size_bytes": 2592128,
+      "sha256": "8e9cf3748125b0a27cfc5635c84777cd19cbccf08d7c5abbef1dd64705feb0a0",
+      "actual_scale": 4.0
+    }
+  ],
+  "strict_checkpoint_load": true,
+  "checkpoint": {
+    "path": "runs/review32_mit2_train70/models/mit2/base/last.pt",
+    "size_bytes": 110014779,
+    "sha256": "2739b79a9e052808d318b621fb2d1cb9ae31b43473f4266e73fb275cd199aee1"
+  },
+  "elapsed_seconds": 47.64233822003007,
+  "completed_utc": "2026-10-11T11:59:44.222424+00:00"
+}

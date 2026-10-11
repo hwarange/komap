@@ -1,0 +1,17 @@
+{
+  "job": "context4_fold3",
+  "scores": {
+    "original": {
+      "images": 14,
+      "mIoU": 81.62781493911335,
+      "class_IoU": {
+        "Al": 93.38439732575581,
+        "Al3Ni": 83.38219671671095,
+        "Primary Si": 91.4688497613619,
+        "Eutectic Si": 58.27581595262469
+      },
+      "both_absent_one_mIoU": 81.62781493911335,
+      "both_absent_class_image_pairs": 0
+    }
+  }
+}

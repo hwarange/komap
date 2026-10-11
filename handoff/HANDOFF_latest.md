@@ -1,5 +1,26 @@
 # HANDOFF: KoMaP 상 분할 프로젝트 (다른 노트북·다른 날 이어서 작업하기)
 
+## 최종 채택 — 2026-10-11 · final35 제출물과 최종 보고서 9쪽 검수 완료
+
+- 사용자 **“좋아 이걸로 마무리하고 최종 보고서를 작성해줘”** 지시로 **MiT2 original + UNet++3 base120**을 정식 채택했다. `delivery/final_model_selection.json`이 현재 선택 원장이다. 변경 직전 철회 상태는 `delivery/final_model_selection_before_final35.json`에 바이트 그대로 보존했다. 과거 final27/90장 가중치·보고서·마스크는 개발 이력으로 남기며 이번 제출에 사용하지 않는다.
+- 공식 **train70 학습 → validation20 평가 mIoU는 80.620753%**, 별도 **train70 내부 합금 그룹 5-fold OOF는 80.778298%**다. 두 점수는 학습량·평가 대상이 다르므로 합치거나 차이를 성능 향상으로 쓰지 않는다. validation20은 주최측 허용 범위인 선택·평가에만 사용했으며 독립 테스트라고 부르지 않는다. test10 정답·성능 점수는 없다.
+- 제출 모델은 `runs/review32_mit2_train70/models/mit2/base/last.pt`(MiT-B2/U-Net, 60epoch)와 `runs/submission31_train70/models/unet3/base/last.pt`(ResNet34/UNet++, 120epoch), **총2개**다. 두 모델 모두 ImageNet에서 새로 시작해 train70만 학습했다. 내부5fold의56장 학습 가중치, cap6, UNet126, 과거90장 가중치는 제외했다.
+- 같은 모델·original 배율·crop/tile1536·overlap128·TTA8·BF16으로 test10을 새 추론했다. 모델별 원본 크기 확률을 float16 저장 후 float32로 바꿔 **50:50 soft voting → 기존 후처리**를 적용했다. 추가 학습 없이 **20:59:50 KST 완료**했다. 모든10장 원본 크기·RGB 팔레트·SHA와 ZIP CRC가 일치했고, 저장 확률20개를 독립 재조합해 마스크와 픽셀 단위 완전일치를 확인했다.
+- 제출 마스크는 `submissions/final35_train70/final35_masks.zip`(10장, 1,143,301바이트), 재현 코드는 `delivery/final35_code_bundle.zip`(39개 소스·메타파일, 197,453바이트)이다. 코드 ZIP에는 원본 영상·가중치·확률 배열을 넣지 않았다. `delivery/final35_repro/BUNDLE_README.md`에 외부 test10 및 두 체크포인트의 정확한 배치 경로가 있다. 코드와 마스크 ZIP 모두 로컬·서버에 동일 SHA로 보존했다.
+- 선택 가중치 로컬 백업은 `delivery/final35_repro/checkpoints/mit2_last.pt`, `unet3_last.pt`이며 원본 SHA와 일치한다. 원래 경로 매핑은 같은 폴더의 `checkpoint_copy_receipt.json`에 있다. 예측 면적분율은 `submissions/final35_train70/prediction_area_fractions.json`이며 **2차원 예측 픽셀 비율**이다. 조성비·정답 면적·성능으로 해석하지 않는다.
+- 완료 감사는 `runs/final35_submission/completion_verification.json`, 로컬 회수 검증은 `local_copy_verification.json`, 실행 증거는 `submissions/final35_train70/run_receipt.json` 및 `all.done`이다. **21:01:24 KST 사후 감사에서 GPU compute process가0개**였다. 추가 학습·추론은 예약하지 않았고 서버 종료/회수는 수행하지 않았다.
+- 최종 DOCX 대상은 `reports/모델링결과서_김형수없는김형수_최종제출.docx`다. 표지 포함 **9쪽의 전 페이지 렌더·시각 검수**를 마쳤다. 보고서 SHA256은 `778e87526ea18b8db40796d014d128fcb860ff562a7caf4e2aa3a18b8db30666`이며 검수 증거는 `reports/final35_document_work/layout_qa.json`이다. 이 단계에서 Git commit/push나 대회 외부 제출을 하지 않았다. 아래 기록은 각 시점의 과거 스냅샷이다.
+
+## 최종 완료 — 2026-10-11 20:34 KST · train70 내부 5-fold 20/20 완료
+
+- **20:34:26 전체20회 학습·개별 검토·최종 집계 완료**, `state.stage=complete_and_stop`, 루트 `all.done` 생성. 20:36:51 확인 시 GPU0~3 모두0%/0MiB다. 계획은 기존 `1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f`와 동일하다.
+- 전체70장 OOF 최종 순위: **MiT2+UNet3 80.778298%**, Context4+UNet3 80.655342%, MiT4+UNet3 80.581471%. 단독은 MiT2 80.330799%, MiT4 80.243233%, Context4 80.139449%, UNet3 79.761319%다. 모든 가족을 같은 합금 분할56/14, seed0, 고정 last, original 배율, TTA8/동일 후처리로 비교했다. 앙상블은 동일한 검증 fold의 두 모델만50:50 확률 평균한다.
+- MiT2쌍은 MiT4쌍보다 **+0.196827%p**, 42장 개선/28장 하락, **5개 fold 중4개 우세**다. 59합금 bootstrap95% 차이 구간[+0.002793,+0.403183]%p는 아주 근소하게0보다 높다. 초정Si+0.344028, 공정Si+0.480140%p에서 이득이다. 학습 seed 변동·반복 선택·겹치는 학습 집합의 의존성을 포함한 보장은 아니다.
+- Context쌍 대비 MiT2쌍은 **+0.122955%p**이나31장 개선/39장 하락,2/5fold 우세,95%구간[−0.124200,+0.395038]%p다. 평균 차이는 주로fold0에서 발생하므로 모든 분할에서2배가 우세하다거나 Hybrid가 무의미하다고 쓰지 않는다. MiT2쌍의fold별 점수는80.146713/79.450635/79.328381/81.853828/83.111931%, 표준편차1.474209%p다.
+- **최종 구성 추천은 MiT2 original+UNet++3 base120 유지**다. 공식70→validation20 최고80.620753%와 이번train70 내부OOF 최고80.778298%에서 동일 구성이다. 제출에는 평가받은70장 전체 학습 가중치를 사용하고, 보고서의 공식20장 성적은80.620753%, 내부5fold 근거는80.778298%로 구분한다. 기존90장 가중치·제출물은 계속 제출 제외 상태다. 이번 확인으로 새학습·test10 생성·DOCX 교체·Git push를 하지 않았다.
+- 결과 근거는 `runs/review34_train70_group5fold/results.json`, `per_image_rows.json`, `all.done`, `completion_retrieval.json`, `independent_results_check.json`이다. 완료 메타데이터195파일2,039,767바이트를 SHA 대조 회수했다. 결과SHA `e6ab947336f92410477ea637be904e331c199dd71bd8eb7df9113765017ae563`, 행SHA `cb6666c50086db66dcf9c20b6114f1ae0b7fbe862af1ad064babf69e650c943a`. 독립 계산에서7구성·35fold·상별 점수와 주요3비교 bootstrap이1e-12 이내 일치했다. 아래 기록은 각 시점의 과거 스냅샷이다.
+- **완료 감사 통과:** 입력186개·ImageNet캐시4개·출력380개(4,360,440,171바이트) SHA 및20개 완료표식 체인이 일치했다. 모든 작업의 새 초기화·56/14 합금 분리·60/120epoch·112update와70사진×4가족의 held-out 출처280건을 검증했다. 감사 기록 `completion_verification.json`은 서버·로컬 동일하며 SHA `c119cddc263897fead401bfb50593518f6dbbd47daf73bb3378818dca205db4b`다.
+
 ## 주최측 답변 확정 — 2026-10-11 · 학습은 train70, validation20은 선택·평가 전용
 
 - 사용자가 주최측 회신을 전달하고70/20 진행을 확정했다. 회신 원문: **“validation 데이터는 모델 학습에 사용할 수 없습니다. 모델·설정 선택과 성능 확인에만 사용해 주시기 바랍니다.”** 아래 과거 기록의 허용 여부 미수신·확인 필요 또는 사용 가능이라는 표현은 이 답변으로 대체한다.

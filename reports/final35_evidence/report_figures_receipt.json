@@ -1,0 +1,41 @@
+{
+  "created": "2026-10-11T20:59:43.552278+09:00",
+  "cpu_only": true,
+  "new_training": false,
+  "new_model_inference": false,
+  "input_hashes": {
+    "reports/final35_evidence/all.done": "282c08410cd83ed7eb3c8b380a81165e628afec5a3776457d55bc699ee6a91d7",
+    "reports/final35_evidence/format_report_figures.py": "4f19a273d781bb0419a5dc5038fd12db355227b98a91cb5907e360ede3fd3f4f",
+    "src/data.py": "8e1ee2cfc7f296d001777f60c57d74c0030e28788e85949341700a55343a2fd9",
+    "src/infer.py": "66ab7875b796b203db9dae40851eee25841f61435e409f7bbb043015febf1bea",
+    "scripts/review_submission31.py": "a8bccbca8bec5608f14019802ffa370337098b8afcc0c5996adfd2f7213a312d",
+    "reports/final35_evidence/train70_eda.json": "53a3633685f3ea968cf4da91777b7f1491b1773fc023afce19c1978a7fd306b4",
+    "reports/final35_evidence/validation_cases.json": "1b9483771e636cc395b838314601b5d24e31d0692a9f67a8d81d06877be854af",
+    "reports/final35_evidence/official20_per_image_rows.json": "9537617c8f6cb922365b3e0c212192ecf5acc49cb6c056ef108e07be456ce2ab",
+    "runs/review32_mit2_train70/review/results.json": "32682b5be921c6d71ff7ae7c76f690fb7c020069024b79f4dc810ddf559a3211",
+    "runs/submission31_train70/reviews/unet3/results.json": "64dfff82575f6e46ea59b04e7d52e06c372ebd4c03fdcda6da00d204a26123f1",
+    "data/valid/images/A71_step2_sample1_image.png": "3d4ca3ba899c17a5b7a447751a0a9bfe43ebda9341dc89885ee806ffb52eb1b8",
+    "data/valid/masks/A71_step2_sample1_mask.png": "3319f05cd9e2c676ddc76ae8acd10d9750cfe3d55b450e0fa4b0142c1318f333",
+    "data/valid/images/A7_step1_sample4_image.png": "48f0925a9df4312a9cb3c5d64cb5519950339f93b791e9daef6e031fd2dc03e6",
+    "data/valid/masks/A7_step1_sample4_mask.png": "1a0e81af8032f6a985d906953c0b3d6e209aa69e3b0cec86e5f9bcd80a1de56a",
+    "runs/review32_mit2_train70/valid_probs/mit2/base/A71_step2_sample1.npy": "6bfc5b2c0f320e51b63457241ad0c38d5b565373c1f88d9aff81078e71eb8b71",
+    "runs/submission31_train70/valid_probs/unet3/base/A71_step2_sample1.npy": "52585e2941eeb4b75b37e722008c19e8b6fcfcf3b9fae5780a7cdff1b19c8cd8",
+    "runs/review32_mit2_train70/valid_probs/mit2/base/A7_step1_sample4.npy": "63444cfa483878000f18f517601f0466c4d5812d695c4074283b1d27d5475bf9",
+    "runs/submission31_train70/valid_probs/unet3/base/A7_step1_sample4.npy": "6ee7e8379c64c4a2ce98f4ff79e121af81b0e0796c35712798c54b9b90018b5a"
+  },
+  "outputs": [
+    {
+      "name": "report_eda.png",
+      "sha256": "bbf2dc05d3aca05d7bb5754cd0a98536b49516f3f7a3b65f1dbc7a2a8cd068c3",
+      "bytes": 171322
+    },
+    {
+      "name": "report_validation_cases.png",
+      "sha256": "17b709a91627a40399b5ae56d1b29cab93764df4df3e9fe5c2522c92a8f3d403",
+      "bytes": 1715910
+    }
+  ],
+  "intended_width_inches": 5.6,
+  "case_selection": "Ascending validation20 image mIoU, ranks1 and10; ties by name",
+  "scores_identical_to_sealed_evidence": true
+}

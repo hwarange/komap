@@ -1,0 +1,291 @@
+{
+  "status": "complete",
+  "started_utc": "2026-10-11T11:58:53.576864+00:00",
+  "manifest_sha256": "1f5fa391b80f9b5acaf283b0978aa6a860a95c3a526b63f1d5891f7e1a9a4386",
+  "runner_sha256": "0c508beb7790bca1a5851a4529700fd13c761169c57b96226070bcde84d1e797",
+  "preflight": {
+    "ok": true,
+    "mode": "read_only_preflight",
+    "checked": {
+      "sources": 7,
+      "provenance": 17,
+      "checkpoints": 2,
+      "test_images": 10
+    },
+    "errors": [],
+    "versions": {
+      "torch": "2.14.1+cu126",
+      "torchvision": "0.29.1+cu126",
+      "segmentation-models-pytorch": "0.5.0",
+      "timm": "1.0.30",
+      "numpy": "2.5.2",
+      "opencv-python-headless": "5.0.0.93",
+      "pillow": "12.3.0",
+      "scipy": "1.18.1"
+    },
+    "image_sizes_width_height": {
+      "A107_step1_sample3": [
+        1230,
+        875
+      ],
+      "A122_step4_sample1": [
+        1230,
+        875
+      ],
+      "A124_step4_sample3": [
+        1230,
+        875
+      ],
+      "A127_step3_sample2": [
+        1440,
+        1024
+      ],
+      "A133_step4_sample1": [
+        1230,
+        875
+      ],
+      "A167_step3_sample3": [
+        1278,
+        909
+      ],
+      "A38_step2_sample2": [
+        675,
+        480
+      ],
+      "A51_step3_sample3": [
+        1278,
+        909
+      ],
+      "A63_step2_sample3": [
+        675,
+        480
+      ],
+      "A87_step1_sample4": [
+        675,
+        480
+      ]
+    },
+    "training_performed": false,
+    "test_ground_truth_used": false,
+    "gpu_initialized": false
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976",
+      "name": "NVIDIA L40S",
+      "total_mib": 46068
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c",
+      "name": "NVIDIA L40S",
+      "total_mib": 46068
+    }
+  ],
+  "training_performed": false,
+  "test_ground_truth_used": false,
+  "prediction_reuse": false,
+  "family_weights": {
+    "mit2": 0.5,
+    "unet3": 0.5
+  },
+  "backend": {
+    "cudnn_benchmark": true,
+    "cuda_matmul_allow_tf32": true,
+    "cudnn_allow_tf32": true
+  },
+  "prediction_pids": [
+    917713,
+    917714
+  ],
+  "completed_utc": "2026-10-11T11:59:50.991978+00:00",
+  "prediction_exit_codes": [
+    0,
+    0
+  ],
+  "masks": [
+    {
+      "path": "masks/A107_step1_sample3_mask.png",
+      "size_bytes": 116760,
+      "sha256": "fcae476fa32b23ff208c48da63d0ef5b8ab5952761d500f270d7842a069cc9dc"
+    },
+    {
+      "path": "masks/A122_step4_sample1_mask.png",
+      "size_bytes": 143373,
+      "sha256": "caf63a993ff885095af039f2d8d5152b52003745444ba14a01f2d7e7029dd51c"
+    },
+    {
+      "path": "masks/A124_step4_sample3_mask.png",
+      "size_bytes": 155688,
+      "sha256": "b2ab3e84dc9c7f885d999f09c985c70c1d5a55f279f78880a90f13b68c310aa7"
+    },
+    {
+      "path": "masks/A127_step3_sample2_mask.png",
+      "size_bytes": 152818,
+      "sha256": "4a60ab6c28e2760689a20da8da1bd13a3f50de687c0f3738e0845556cc8d0101"
+    },
+    {
+      "path": "masks/A133_step4_sample1_mask.png",
+      "size_bytes": 127983,
+      "sha256": "8fcef5754cba54d47830f168ac82d733f73e4a7f22b768903d99098b92ffdc00"
+    },
+    {
+      "path": "masks/A167_step3_sample3_mask.png",
+      "size_bytes": 154278,
+      "sha256": "7cfa46a9bf3d16d31dbe551db0188f580f857b96c34bb4a3dc7fee52ed5b7016"
+    },
+    {
+      "path": "masks/A38_step2_sample2_mask.png",
+      "size_bytes": 61711,
+      "sha256": "cd7124e608397af032ead457a1d408e550b6739ed1117e6c024ddbd37dbe38e4"
+    },
+    {
+      "path": "masks/A51_step3_sample3_mask.png",
+      "size_bytes": 116663,
+      "sha256": "f8f74a1f1a29352ff8b93910cdf6634f6a5fb4787df368af5de99ba080f11f05"
+    },
+    {
+      "path": "masks/A63_step2_sample3_mask.png",
+      "size_bytes": 55421,
+      "sha256": "764872a97603ca91cea2dd6aebc265cd5a671b3d896f0df43de638265472327d"
+    },
+    {
+      "path": "masks/A87_step1_sample4_mask.png",
+      "size_bytes": 56917,
+      "sha256": "dc325a78d4d8fc15568ed6eb901dc689a3d8d5184bd53a7fbe311ec1a69c3bad"
+    }
+  ],
+  "probability_outputs": [
+    {
+      "path": "parts/mit2/A107_step1_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "4db5e7d2ab539dbef00c3c9fed62440725d0efe9790a17dc65f0e765f4dd6524",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A122_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "ec7eb1a3dde3fc08a9addb727c73fdbca302cb437adfe7b0418cdb3a70d16021",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A124_step4_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "fec04ded217c00dcf9be8ba03d16d520c655ec3d84ffeacca621d8067ee5fe97",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A127_step3_sample2.npy",
+      "size_bytes": 11796608,
+      "sha256": "d5f7ab439050b099b33036e05f4988f73abc31702bfe91115930b0fd8ed83e40",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A133_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "a19fe21ebaef4488ce9606e5937baec38dee8de4c27c83013a056b5f9f7b4fb3",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A167_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "1d1924ec8306ed250e32240c8432da2087e97ce451f0bc95a2d484f62b5f5c20",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A38_step2_sample2.npy",
+      "size_bytes": 2592128,
+      "sha256": "b566d6a85f2da83ed5831c5918453a59aaabd9b75da3a40550d74ae695b33116",
+      "actual_scale": 4.0
+    },
+    {
+      "path": "parts/mit2/A51_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "01b599dbd13bfa03fc912291b1a4b785ad99adb4d73e3064ac4e91c9a8235dee",
+      "actual_scale": 2.0
+    },
+    {
+      "path": "parts/mit2/A63_step2_sample3.npy",
+      "size_bytes": 2592128,
+      "sha256": "a488c2dc8a1c0fbce848e94f285e9694b0fbbe224041c0ecc3dcb2ab484e6466",
+      "actual_scale": 4.0
+    },
+    {
+      "path": "parts/mit2/A87_step1_sample4.npy",
+      "size_bytes": 2592128,
+      "sha256": "8e9cf3748125b0a27cfc5635c84777cd19cbccf08d7c5abbef1dd64705feb0a0",
+      "actual_scale": 4.0
+    },
+    {
+      "path": "parts/unet3/A107_step1_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "fb1dfbebce8d48e2282bcff95525ef386a4d24bff14b48783088c3766934d5af",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A122_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "e3d3b3e8abdd58789da14073c6c51915a259e2a29742d1aa52d4ac940650ac25",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A124_step4_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "26458697256f79af8a556a3a9e9cf60424fbbb123638e4923cc7c5ea1f2fb9ef",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A127_step3_sample2.npy",
+      "size_bytes": 11796608,
+      "sha256": "1b928d8d92861e17e2f38c186f7839a1902f0cda0a7288aba465f3523fa47381",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A133_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "7daf443528c8032bee42876c767cad6c036043ba1cfb8e7dd574fdbcbd14ae84",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A167_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "51de69fb0fbeb4313ae0eceb0bdd11f7d2a190a6f4a1ec10d6ff5eb1891b18c0",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A38_step2_sample2.npy",
+      "size_bytes": 2592128,
+      "sha256": "4b2b5feed5e5018f698a5093e8b0117bc422644736fc669346d7ec38dcd5c2e5",
+      "actual_scale": 6.0
+    },
+    {
+      "path": "parts/unet3/A51_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "3869f46b95a8f07866d8ac62a46b4f4cfd723ae02b0ec67197232964bcda011d",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A63_step2_sample3.npy",
+      "size_bytes": 2592128,
+      "sha256": "3abea3d4cd6f66046244967dd4c7a716ce40fe569c64c744e3b389e4436b32d7",
+      "actual_scale": 6.0
+    },
+    {
+      "path": "parts/unet3/A87_step1_sample4.npy",
+      "size_bytes": 2592128,
+      "sha256": "b8e9f0529c6a51dffff6a945efe59394399f1e3cdcb06b7ee8725dcb097fdbcb",
+      "actual_scale": 6.0
+    }
+  ],
+  "mask_zip": {
+    "path": "final35_masks.zip",
+    "size_bytes": 1143301,
+    "sha256": "dfa5b800457e73f9aba23c98347db69687ef5f90fe9b4dbeab3eaf2109ec803a"
+  },
+  "area_fractions": {
+    "path": "prediction_area_fractions.json",
+    "size_bytes": 4965,
+    "sha256": "4b299e71731fa5858eaffdd1eb3e4df83b8d6d631d8a3009e5022b0a9d17223a"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "remote": "komap:/home/j-j15a106/komap/reports/final35_evidence",
+  "all_done_sha256": "282c08410cd83ed7eb3c8b380a81165e628afec5a3776457d55bc699ee6a91d7",
+  "verified_files": [
+    {
+      "name": "build_evidence.py",
+      "sha256": "afead40d253ed4f53448e57556f60b4edd61eb6474cbf4797caac6afebaab846",
+      "bytes": 16483
+    },
+    {
+      "name": "evidence_plan.json",
+      "sha256": "6c8b4ee0167136c1a0355ac245307dcf09eb14593a88d897b883a93fc8cb8682",
+      "bytes": 39545
+    },
+    {
+      "name": "official20_metrics.json",
+      "sha256": "1d987ddce8dfe7c3c3327bc4c39117c8cad51c9e587be8ac28fa3795d47e4fc9",
+      "bytes": 14133
+    },
+    {
+      "name": "official20_per_image_rows.json",
+      "sha256": "9537617c8f6cb922365b3e0c212192ecf5acc49cb6c056ef108e07be456ce2ab",
+      "bytes": 32319
+    },
+    {
+      "name": "official20_scores.png",
+      "sha256": "2b648732af24c6e85ead802c2f6cfabee84adfeff0568a969ab4d94e435f7c07",
+      "bytes": 110916
+    },
+    {
+      "name": "original_split_groups.json",
+      "sha256": "aecd13896bb6b44765533e7cea3cd65fdb3cf60ca6aff759e84b186b277174d2",
+      "bytes": 441
+    },
+    {
+      "name": "train70_eda.json",
+      "sha256": "53a3633685f3ea968cf4da91777b7f1491b1773fc023afce19c1978a7fd306b4",
+      "bytes": 64859
+    },
+    {
+      "name": "train70_eda.png",
+      "sha256": "ad9fbf0a7377a15704cb34bde3d5918d155cbb5469ffd039537f243bb0a796c8",
+      "bytes": 161941
+    },
+    {
+      "name": "train70_groupcv.png",
+      "sha256": "69b012754b9226236862913be56b4bc745e730ca49b366f9bac0b7018042796a",
+      "bytes": 124844
+    },
+    {
+      "name": "train70_groupcv_metrics.json",
+      "sha256": "7941d0b2d2d3e883ebaca3a25e5443ab423f7a6a88a0a506fe498b5f27641628",
+      "bytes": 55343
+    },
+    {
+      "name": "validation_case_lower_median.png",
+      "sha256": "2e84bd7953d89f3f675f69fd451d8912bb03b675319f02db26211f0ae9a8a256",
+      "bytes": 1382653
+    },
+    {
+      "name": "validation_case_lowest.png",
+      "sha256": "f6a2e85c5626dfda583647f85e1ffdc67ddd693de289954fe4b07eadc509d40b",
+      "bytes": 1667683
+    },
+    {
+      "name": "validation_cases.json",
+      "sha256": "1b9483771e636cc395b838314601b5d24e31d0692a9f67a8d81d06877be854af",
+      "bytes": 1119
+    }
+  ],
+  "raw_dataset_transferred": false
+}

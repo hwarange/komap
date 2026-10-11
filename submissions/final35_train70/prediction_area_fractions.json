@@ -1,0 +1,207 @@
+{
+  "split": "test",
+  "ground_truth_available": false,
+  "interpretation": "Predicted two-dimensional pixel area fractions; not measured composition or accuracy.",
+  "images": [
+    {
+      "name": "A107_step1_sample3",
+      "size_width_height": [
+        1230,
+        875
+      ],
+      "pixel_count": 1076250,
+      "class_pixel_count": {
+        "Al": 557782,
+        "Al3Ni": 367449,
+        "Primary Si": 102585,
+        "Eutectic Si": 48434
+      },
+      "area_fraction_percent": {
+        "Al": 51.82643437862951,
+        "Al3Ni": 34.14160278745645,
+        "Primary Si": 9.53170731707317,
+        "Eutectic Si": 4.500255516840883
+      }
+    },
+    {
+      "name": "A122_step4_sample1",
+      "size_width_height": [
+        1230,
+        875
+      ],
+      "pixel_count": 1076250,
+      "class_pixel_count": {
+        "Al": 603050,
+        "Al3Ni": 321387,
+        "Primary Si": 94811,
+        "Eutectic Si": 57002
+      },
+      "area_fraction_percent": {
+        "Al": 56.03252032520325,
+        "Al3Ni": 29.861742160278748,
+        "Primary Si": 8.80938443670151,
+        "Eutectic Si": 5.296353077816493
+      }
+    },
+    {
+      "name": "A124_step4_sample3",
+      "size_width_height": [
+        1230,
+        875
+      ],
+      "pixel_count": 1076250,
+      "class_pixel_count": {
+        "Al": 531147,
+        "Al3Ni": 396857,
+        "Primary Si": 81831,
+        "Eutectic Si": 66415
+      },
+      "area_fraction_percent": {
+        "Al": 49.35163763066202,
+        "Al3Ni": 36.87405342624855,
+        "Primary Si": 7.6033449477351915,
+        "Eutectic Si": 6.1709639953542395
+      }
+    },
+    {
+      "name": "A127_step3_sample2",
+      "size_width_height": [
+        1440,
+        1024
+      ],
+      "pixel_count": 1474560,
+      "class_pixel_count": {
+        "Al": 740871,
+        "Al3Ni": 526559,
+        "Primary Si": 124206,
+        "Eutectic Si": 82924
+      },
+      "area_fraction_percent": {
+        "Al": 50.2435302734375,
+        "Al3Ni": 35.709567599826386,
+        "Primary Si": 8.423258463541666,
+        "Eutectic Si": 5.623643663194445
+      }
+    },
+    {
+      "name": "A133_step4_sample1",
+      "size_width_height": [
+        1230,
+        875
+      ],
+      "pixel_count": 1076250,
+      "class_pixel_count": {
+        "Al": 683115,
+        "Al3Ni": 249910,
+        "Primary Si": 87269,
+        "Eutectic Si": 55956
+      },
+      "area_fraction_percent": {
+        "Al": 63.47177700348432,
+        "Al3Ni": 23.220441347270615,
+        "Primary Si": 8.108617886178862,
+        "Eutectic Si": 5.199163763066203
+      }
+    },
+    {
+      "name": "A167_step3_sample3",
+      "size_width_height": [
+        1278,
+        909
+      ],
+      "pixel_count": 1161702,
+      "class_pixel_count": {
+        "Al": 521324,
+        "Al3Ni": 469171,
+        "Primary Si": 110689,
+        "Eutectic Si": 60518
+      },
+      "area_fraction_percent": {
+        "Al": 44.875880389290884,
+        "Al3Ni": 40.38651909009368,
+        "Primary Si": 9.528175039726195,
+        "Eutectic Si": 5.209425480889247
+      }
+    },
+    {
+      "name": "A38_step2_sample2",
+      "size_width_height": [
+        675,
+        480
+      ],
+      "pixel_count": 324000,
+      "class_pixel_count": {
+        "Al": 200018,
+        "Al3Ni": 59038,
+        "Primary Si": 34778,
+        "Eutectic Si": 30166
+      },
+      "area_fraction_percent": {
+        "Al": 61.73395061728395,
+        "Al3Ni": 18.221604938271604,
+        "Primary Si": 10.73395061728395,
+        "Eutectic Si": 9.310493827160494
+      }
+    },
+    {
+      "name": "A51_step3_sample3",
+      "size_width_height": [
+        1278,
+        909
+      ],
+      "pixel_count": 1161702,
+      "class_pixel_count": {
+        "Al": 714838,
+        "Al3Ni": 99080,
+        "Primary Si": 232789,
+        "Eutectic Si": 114995
+      },
+      "area_fraction_percent": {
+        "Al": 61.53368075461694,
+        "Al3Ni": 8.528865406102426,
+        "Primary Si": 20.03861575515924,
+        "Eutectic Si": 9.898838084121401
+      }
+    },
+    {
+      "name": "A63_step2_sample3",
+      "size_width_height": [
+        675,
+        480
+      ],
+      "pixel_count": 324000,
+      "class_pixel_count": {
+        "Al": 201877,
+        "Al3Ni": 51912,
+        "Primary Si": 34777,
+        "Eutectic Si": 35434
+      },
+      "area_fraction_percent": {
+        "Al": 62.30771604938271,
+        "Al3Ni": 16.022222222222222,
+        "Primary Si": 10.733641975308641,
+        "Eutectic Si": 10.936419753086419
+      }
+    },
+    {
+      "name": "A87_step1_sample4",
+      "size_width_height": [
+        675,
+        480
+      ],
+      "pixel_count": 324000,
+      "class_pixel_count": {
+        "Al": 204684,
+        "Al3Ni": 52210,
+        "Primary Si": 39390,
+        "Eutectic Si": 27716
+      },
+      "area_fraction_percent": {
+        "Al": 63.17407407407407,
+        "Al3Ni": 16.114197530864196,
+        "Primary Si": 12.157407407407407,
+        "Eutectic Si": 8.554320987654322
+      }
+    }
+  ]
+}

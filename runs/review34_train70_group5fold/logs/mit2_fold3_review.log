@@ -1,0 +1,17 @@
+{
+  "job": "mit2_fold3",
+  "scores": {
+    "original": {
+      "images": 14,
+      "mIoU": 81.36399447422677,
+      "class_IoU": {
+        "Al": 93.2492993037621,
+        "Al3Ni": 83.15820383210045,
+        "Primary Si": 91.40542535870027,
+        "Eutectic Si": 57.643049402344225
+      },
+      "both_absent_one_mIoU": 81.36399447422676,
+      "both_absent_class_image_pairs": 0
+    }
+  }
+}

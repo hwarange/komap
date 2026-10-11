@@ -1,0 +1,26 @@
+{
+  "output": "C:\\Users\\id116\\Desktop\\komap\\reports\\모델링결과서_김형수없는김형수_최종제출.docx",
+  "sha256": "778e87526ea18b8db40796d014d128fcb860ff562a7caf4e2aa3a18b8db30666",
+  "reference_sha256": "a9f66f14f8546b37d6a3a4c2c7406c328d95bb6f7b56b501abce9e4bfba0b534",
+  "preserve_only_parts_match": true,
+  "preserve_only_parts": [
+    "_rels/.rels",
+    "word/footnotes.xml",
+    "word/endnotes.xml",
+    "word/header1.xml",
+    "word/theme/theme1.xml",
+    "word/numbering.xml",
+    "word/styles.xml",
+    "word/webSettings.xml",
+    "word/fontTable.xml",
+    "docProps/core.xml",
+    "docProps/app.xml"
+  ],
+  "section_unchanged": true,
+  "official_validation20_mIoU": 80.62075310543737,
+  "train70_internal_oof_mIoU": 80.77829756479382,
+  "images": [],
+  "visual_qa_complete": true,
+  "page_count": 9,
+  "layout_qa": "reports/final35_document_work/layout_qa.json"
+}

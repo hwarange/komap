@@ -1,264 +1,84 @@
 {
-  "schema_version": 2,
-  "selected_at": "2026-10-10T20:25:25.675093+09:00",
-  "selection_authority": "User requested highest observed same-full90 OOF mIoU; four-GPU remaining-fold validation authorized",
-  "status": "withdrawn_from_submission_validation_training_prohibited",
-  "selected_recipe": "interface_cap6",
-  "model_name": "MiT4 crop1536 with width675 cap6 plus UNet++3 after120+6 separate-stage epochs",
+  "schema_version": 3,
+  "selected_at": "2026-10-11T21:14:01.950643+09:00",
+  "selection_authority": "Explicit latest user instruction to finalize this configuration and write the final report.",
+  "status": "selected_train70_submission_complete",
+  "active_submission_selection": true,
+  "submission_eligible": true,
+  "eligibility_scope": "The selected two models comply with the confirmed train70-only training rule. Final report and local submission artifacts are verified; no external submission has been performed.",
+  "selected_recipe": "mit2_original_plus_unet3_base120",
+  "model_name": "MiT2 original (U-Net / MiT-B2, last60) + UNet++3 (ResNet34, base last120)",
   "experiments": [
     {
-      "family": "mit4",
+      "family": "mit2",
       "architecture": "Unet",
       "encoder": "mit_b2",
       "epochs": 60,
       "crop": 1536,
       "tile": 1536,
+      "overlap": 128,
       "width": 2560,
-      "scale_multiplier": 2.0,
+      "scale_multiplier": 1.0,
+      "seed": 0,
       "weight": 0.5,
-      "inference_policy": "original width675 only extra_scale0.75; otherwise original"
+      "inference_policy": "original; extra_scale=1.0; resolution-adaptive integer scale"
     },
     {
       "family": "unet3",
       "architecture": "UnetPlusPlus",
       "encoder": "resnet34",
-      "initial_training_epochs": 120,
-      "continuation_epochs": 6,
-      "optimizer_state_resumed": false,
-      "seed": 0,
-      "focus_probability": 0.35,
+      "epochs": 120,
       "crop": 1536,
       "tile": 1536,
+      "overlap": 128,
       "width": 3840,
       "scale_multiplier": 1.0,
-      "weight": 0.5
+      "seed": 0,
+      "weight": 0.5,
+      "inference_policy": "original; extra_scale=1.0; resolution-adaptive integer scale"
     }
   ],
-  "folds": [
-    0,
-    1,
-    2,
-    3,
-    4
-  ],
+  "folds": [],
   "checkpoint": "last.pt",
   "selected_checkpoints": [
     {
-      "id": "mit4_fold0",
-      "family": "mit4",
-      "fold": 0,
+      "id": "mit2_train70_last",
+      "family": "mit2",
+      "fold": -1,
       "checkpoint": {
-        "path": "runs/cv/x4_mit_c1536_bw_r90/fold0/last.pt",
-        "size_bytes": 110014715,
-        "sha256": "20b06319d664200e9ae33b136e92ee251258645bb7f25379f9dd79c44b91dc52"
+        "path": "runs/review32_mit2_train70/models/mit2/base/last.pt",
+        "size_bytes": 110014779,
+        "sha256": "2739b79a9e052808d318b621fb2d1cb9ae31b43473f4266e73fb275cd199aee1"
       },
       "checkpoint_epoch": 60,
-      "initial_training_epochs": 0
-    },
-    {
-      "id": "mit4_fold1",
-      "family": "mit4",
-      "fold": 1,
-      "checkpoint": {
-        "path": "runs/cv/x4_mit_c1536_bw_r90/fold1/last.pt",
-        "size_bytes": 110014715,
-        "sha256": "6187591cab01848d18d4be59bcebb94cd0c9429990ba39235da12c9064dd5c18"
+      "initialization_audit": {
+        "path": "runs/review32_mit2_train70/models/mit2/base/initialization_audit.json",
+        "size_bytes": 5966,
+        "sha256": "332c6814c7dcefb1ed413098df85feb65344456bcf51b8fb4198dede0c0a4c98"
       },
-      "checkpoint_epoch": 60,
-      "initial_training_epochs": 0
+      "initial_state_sha256": "ea1bced04b050efa77c0d1a0a0caf9b6e564e1aa4db4ba1de1aed894283267b3"
     },
     {
-      "id": "mit4_fold2",
-      "family": "mit4",
-      "fold": 2,
-      "checkpoint": {
-        "path": "runs/cv/x4_mit_c1536_bw_r90/fold2/last.pt",
-        "size_bytes": 110014715,
-        "sha256": "44f04e512d631478a81faeb24f72c3057508156de755126bfafdb33a438b79c8"
-      },
-      "checkpoint_epoch": 60,
-      "initial_training_epochs": 0
-    },
-    {
-      "id": "mit4_fold3",
-      "family": "mit4",
-      "fold": 3,
-      "checkpoint": {
-        "path": "runs/cv/x4_mit_c1536_bw_r90/fold3/last.pt",
-        "size_bytes": 110014715,
-        "sha256": "5d153ea92a7594010984686e3a6d051c7637c3afc7512b01ff90b314b3cb4df7"
-      },
-      "checkpoint_epoch": 60,
-      "initial_training_epochs": 0
-    },
-    {
-      "id": "mit4_fold4",
-      "family": "mit4",
-      "fold": 4,
-      "checkpoint": {
-        "path": "runs/cv/x4_mit_c1536_bw_r90/fold4/last.pt",
-        "size_bytes": 110014715,
-        "sha256": "1a20df8ae7e0147ae113cbdbdcb74a6a09a95d00e4869bd71419b00f5d791e05"
-      },
-      "checkpoint_epoch": 60,
-      "initial_training_epochs": 0
-    },
-    {
-      "id": "unet3_fold0",
+      "id": "unet3_train70_last",
       "family": "unet3",
-      "fold": 0,
+      "fold": -1,
       "checkpoint": {
-        "path": "runs/review26_final_strengthening/finetune_plan/interface/last.pt",
-        "size_bytes": 104482199,
-        "sha256": "7fd4de6f04026b2e4f6bcefdcd608a5daf7fafb7c45d7d03ceff8b04957daebd"
-      },
-      "checkpoint_epoch": 6,
-      "initial_training_epochs": 120
-    },
-    {
-      "id": "unet3_fold1",
-      "family": "unet3",
-      "fold": 1,
-      "checkpoint": {
-        "path": "runs/review27_finetune_full/interface/fold1/last.pt",
+        "path": "runs/submission31_train70/models/unet3/base/last.pt",
         "size_bytes": 104482135,
-        "sha256": "0be30af79df8d1eed7271f8b273b6225ed14bbf32f1836dc689f27d52b3ac396"
+        "sha256": "1668b0ef0e25e9be093ed531d60a2425e45f9cda694f421e023d3d09e9e253a8"
       },
-      "checkpoint_epoch": 6,
-      "initial_training_epochs": 120
-    },
-    {
-      "id": "unet3_fold2",
-      "family": "unet3",
-      "fold": 2,
-      "checkpoint": {
-        "path": "runs/review27_finetune_full/interface/fold2/last.pt",
-        "size_bytes": 104482135,
-        "sha256": "9ec6622597c6406f7b79b255bdcc899cd59218e967016134368c3948e736aaef"
+      "checkpoint_epoch": 120,
+      "initialization_audit": {
+        "path": "runs/submission31_train70/models/unet3/base/initialization_audit.json",
+        "size_bytes": 5750,
+        "sha256": "9912eade84f5f2a5adee408470a1bffe5d02fed54333d67dfff0483f89149d19"
       },
-      "checkpoint_epoch": 6,
-      "initial_training_epochs": 120
-    },
-    {
-      "id": "unet3_fold3",
-      "family": "unet3",
-      "fold": 3,
-      "checkpoint": {
-        "path": "runs/review27_finetune_full/interface/fold3/last.pt",
-        "size_bytes": 104482135,
-        "sha256": "cd0759ff1ddc76c06e20b199960b45d488e5e9e02333c980892ac26653f8d0bb"
-      },
-      "checkpoint_epoch": 6,
-      "initial_training_epochs": 120
-    },
-    {
-      "id": "unet3_fold4",
-      "family": "unet3",
-      "fold": 4,
-      "checkpoint": {
-        "path": "runs/review27_finetune_full/interface/fold4/last.pt",
-        "size_bytes": 104482135,
-        "sha256": "1bd6e9dda85b5ccf170de81c668c776fbfff21b547315789d7cdc1c698eb030a"
-      },
-      "checkpoint_epoch": 6,
-      "initial_training_epochs": 120
+      "initial_state_sha256": "3b9fbb7ae792242dc3f8ee269f837162b43ac7786398643098fdf25679644597"
     }
   ],
-  "ensemble": "Five-fold probability mean within eachfamily, then50:50 soft voting",
+  "ensemble": "One train70 checkpoint per family; float16 cached probabilities cast to float32, then 50:50 soft voting",
   "tta": "8 dihedral transforms",
-  "postprocessing": "unchanged src/infer.py postprocess defaults",
-  "validation": {
-    "scope": "90 reused out-of-fold images; not independenttest",
-    "source": "runs/review27_finetune_full/results.json",
-    "source_sha256": "6ebff39397087d8f3c5cc6e470361a48a06b348b83262f2d1a0a98e31c1f59bd",
-    "mIoU": 81.01167156392448,
-    "scores": {
-      "interface_cap6": 81.01167156392448,
-      "baseline_cap6": 80.95664213120858,
-      "interface_original": 80.95148746234301,
-      "baseline_original": 80.900653378248
-    },
-    "delta_vs_original_pp": 0.11101818567646894,
-    "group_bootstrap_ci95_pp": [
-      -0.07838910243233572,
-      0.36577869511483657
-    ],
-    "confidence_interval_is_adoption_gate": false,
-    "remaining72_delta_pp": 0.11799780872733409,
-    "class_iou_percent": {
-      "Al": 93.72509054595925,
-      "Al3Ni": 80.06955448215841,
-      "Primary Si": 89.77038671292257,
-      "Eutectic Si": 61.03575603115915
-    },
-    "per_fold": {
-      "0": 80.34187240708856,
-      "1": 83.14823369028278,
-      "2": 81.1654324167268,
-      "3": 79.50728114183022,
-      "4": 80.89553816369397
-    },
-    "improved_images": 53,
-    "worsened_images": 37
-  },
-  "submission_directory": "submissions/final27_selected",
-  "reproduction_directory": "delivery/final27_repro",
-  "manifest_sha256": "dd497b49a765e790e90deac8c60371507df369cb85558e6961ecc6ad0e334da0",
-  "previous_artifacts_preserved": [
-    "submissions/sub6",
-    "submissions/final_pair_mit4_unet3",
-    "delivery/final_strengthened_code_bundle.zip"
-  ],
-  "previous_selection_snapshot": "runs/review27_finetune_full/previous_selection.json",
-  "official_submission_performed": false,
-  "further_training_scheduled": false,
-  "new_training_completed": true,
-  "training": {
-    "new_folds": [
-      1,
-      2,
-      3,
-      4
-    ],
-    "reused_fold0": true,
-    "epochs_per_fold": 6,
-    "gpu_count": 4,
-    "started_at": "2026-10-10T20:06:55+09:00",
-    "evaluation_completed_at": "2026-10-10T20:18:15+09:00"
-  },
-  "test_inference_started": {
-    "pid": 831880,
-    "started_utc": "2026-10-10T11:19:05.987672+00:00",
-    "command": [
-      "/home/j-j15a106/komap/.venv/bin/python",
-      "delivery/final27_repro/run_submission.py",
-      "--run",
-      "--gpus",
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "manifest_sha256": "dd497b49a765e790e90deac8c60371507df369cb85558e6961ecc6ad0e334da0"
-  },
-  "test_inference_finished_utc": "2026-10-10T11:23:30.163996+00:00",
-  "mask_zip": "submissions/final27_selected/final27_masks.zip",
-  "mask_zip_sha256": "646601cbc242aa5583f889a30c47a65d7b1ca82775bb7fcb7c398ecdfd2b4b86",
-  "mask_count": 10,
-  "local_validation": "delivery/final27_repro/local_validation.json",
-  "final_review": "runs/review27_finetune_full/final_review.json",
-  "phase_application": "reports/phase_application_final27/phase_area_summary.json",
-  "report_status": "verified",
-  "code_bundle_status": "verified",
-  "code_bundle": "delivery/final27_code_bundle.zip",
-  "code_bundle_sha256": "cfc9d84a9add385081a73ad8aa6c000c1ae895bf845c8ad9b5968898885a2f3b",
-  "report": "reports/모델링결과서_김형수없는김형수_최종검증.docx",
-  "report_sha256": "5203a6e239314cb71ecad5303ca0ac19b201425cb402eed532e47854327564e8",
-  "report_pages": 8,
-  "report_visually_verified": true,
-  "completed_at": "2026-10-10T20:31:13.393929+09:00",
-  "active_submission_selection": false,
-  "submission_eligible": false,
+  "postprocessing": "unchanged frozen source/infer.py postprocess defaults: min_comp=1e-4, min_total=0.005",
   "organizer_rule_update": {
     "received_date": "2026-10-11",
     "source": "Organizer reply forwarded verbatim by user in this conversation",
@@ -269,19 +89,148 @@
       "configuration_selection",
       "performance_evaluation"
     ],
-    "reason_for_withdrawal": "The historical final27 checkpoints were trained in CV over train70 + validation20; their derived test masks and 90-image OOF score are not eligible as the official train70/validation20 submission.",
-    "historical_selection_snapshot": "delivery/final_model_selection_final27_historical.json",
-    "historical_artifacts_preserved": true,
-    "historical_verification_scope": "Existing verified report/code/mask fields record past artifact checks only; they do not establish submission eligibility. All final27 deliverables require replacement under the confirmed train70-only rule.",
-    "replacement_status": "Pending completed train70-only grouped CV comparison and final report/test-mask generation",
-    "current_train70_validation20_best": {
-      "recipe": "MiT2 original + UNet++3 base120",
-      "mIoU": 80.62075310543737,
-      "source": "runs/review33_mit2_pair/results.json",
-      "selected_for_submission": false
+    "current_selection_complies_with_train70_only": true,
+    "validation20_training_used": false,
+    "validation20_reused_for_model_selection": true,
+    "independent_test_claim": false
+  },
+  "training": {
+    "images": 70,
+    "split": "train",
+    "validation_images": 20,
+    "initialization": "ImageNet encoder plus fresh decoder",
+    "previous_project_checkpoint_used_for_initialization": false,
+    "validation_images_used_for_optimizer_updates": false,
+    "further_training_for_final35": false
+  },
+  "validation": {
+    "scope": "Official validation20 after training on train70; reused for permitted model/configuration selection, not an independent test",
+    "source": "runs/review33_mit2_pair/results.json",
+    "source_sha256": "1367a8cb04573e4880b4857a8c5dd4ee24417faedeb51967027bde6d5ebb0de0",
+    "recipe": "mit2_plus_unet120",
+    "mIoU": 80.62075310543737,
+    "class_iou_percent": {
+      "Al": 94.59274471919716,
+      "Al3Ni": 76.28315346835703,
+      "Primary Si": 91.3868135636865,
+      "Eutectic Si": 61.90387327001504
     },
-    "ongoing_cv": "runs/review34_train70_group5fold",
-    "ongoing_cv_uses_only_train70": true,
-    "rule_does_not_change_independent_test_claim": true
+    "metric": "Mean of per-image mean class IoU; both-absent classes excluded within each image"
+  },
+  "supporting_cross_validation": {
+    "scope": "Train70 internal five-fold alloy-group heldout evaluation; 56 training and14 validation images per fold",
+    "source": "runs/review34_train70_group5fold/results.json",
+    "source_sha256": "e6ab947336f92410477ea637be904e331c199dd71bd8eb7df9113765017ae563",
+    "recipe": "mit2_plus_unet3",
+    "mIoU": 80.77829756479382,
+    "images": 70,
+    "folds": 5,
+    "official_validation20_used": false,
+    "test_images_used": false,
+    "fold_checkpoints_used_in_final35": false,
+    "not_official_validation20_score": true,
+    "independent_test": false
+  },
+  "submission_directory": "submissions/final35_train70",
+  "reproduction_directory": "delivery/final35_repro",
+  "manifest_sha256": "1f5fa391b80f9b5acaf283b0978aa6a860a95c3a526b63f1d5891f7e1a9a4386",
+  "test_inference_started_utc": "2026-10-11T11:58:53.576864+00:00",
+  "test_inference_finished_utc": "2026-10-11T11:59:50.991978+00:00",
+  "test_inference_model_count": 2,
+  "test_ground_truth_used": false,
+  "official_test_score_available": false,
+  "mask_zip": "submissions/final35_train70/final35_masks.zip",
+  "mask_zip_sha256": "dfa5b800457e73f9aba23c98347db69687ef5f90fe9b4dbeab3eaf2109ec803a",
+  "mask_count": 10,
+  "mask_validation_status": "verified",
+  "mask_validation": "Original dimensions, RGB allowed palette, per-file SHA, ZIP CRC/member SHA; independent recombination of20 model probabilities exactly matches10 masks",
+  "code_bundle_status": "verified",
+  "code_bundle": "delivery/final35_code_bundle.zip",
+  "code_bundle_sha256": "b5426896d153a08b5d89c87acfeb8b614404bb9dde4bc6f895590f12faeab624",
+  "code_bundle_file_count": 39,
+  "code_bundle_excludes": [
+    "raw_images",
+    "trained_weights",
+    "probability_arrays"
+  ],
+  "weight_backups": [
+    {
+      "local_path": "delivery/final35_repro/checkpoints/mit2_last.pt",
+      "project_relative_archive_path": "runs/review32_mit2_train70/models/mit2/base/last.pt",
+      "sha256": "2739b79a9e052808d318b621fb2d1cb9ae31b43473f4266e73fb275cd199aee1",
+      "size_bytes": 110014779
+    },
+    {
+      "local_path": "delivery/final35_repro/checkpoints/unet3_last.pt",
+      "project_relative_archive_path": "runs/submission31_train70/models/unet3/base/last.pt",
+      "sha256": "1668b0ef0e25e9be093ed531d60a2425e45f9cda694f421e023d3d09e9e253a8",
+      "size_bytes": 104482135
+    }
+  ],
+  "server_original_checkpoints_preserved": true,
+  "phase_application": "submissions/final35_train70/prediction_area_fractions.json",
+  "phase_application_interpretation": "Predicted two-dimensional pixel area fractions, not chemical composition or accuracy",
+  "local_validation": "runs/final35_submission/local_copy_verification.json",
+  "final_review": "runs/final35_submission/completion_verification.json",
+  "verification_receipts": [
+    {
+      "path": "runs/final35_submission/completion_verification.json",
+      "size_bytes": 3648,
+      "sha256": "76c9f49f6c61eab5b7e76cb3d61a0c21d69b2b807c68b8c5bff0153cff97f10f"
+    },
+    {
+      "path": "runs/final35_submission/local_copy_verification.json",
+      "size_bytes": 891,
+      "sha256": "f6bed21f700d88c9cf70d211356b339e6edc38ab7cf47a11ba28955b46fd5961"
+    },
+    {
+      "path": "submissions/final35_train70/run_receipt.json",
+      "size_bytes": 8447,
+      "sha256": "f1af4343faba976c5a411e0b27add3b8ed8eaa42e473f28857d4df3ce13c4952"
+    },
+    {
+      "path": "submissions/final35_train70/all.done",
+      "size_bytes": 2161,
+      "sha256": "ae82af06ce65dbb3ed2d95422a11c0e902f72aa9ea749ef34cf360e78897d448"
+    },
+    {
+      "path": "delivery/final35_code_bundle_receipt.json",
+      "size_bytes": 15079,
+      "sha256": "e3ce2b35f001f8052bc1922e093227ce6eb5572f818a7d703abd5d4593d12fcc"
+    }
+  ],
+  "report": "reports/모델링결과서_김형수없는김형수_최종제출.docx",
+  "report_status": "complete",
+  "report_sha256": "778e87526ea18b8db40796d014d128fcb860ff562a7caf4e2aa3a18b8db30666",
+  "report_pages": 9,
+  "report_visually_verified": true,
+  "report_qa_status": "passed",
+  "report_qa": "reports/final35_document_work/layout_qa.json",
+  "historical_selection": {
+    "immediately_previous_snapshot": "delivery/final_model_selection_before_final35.json",
+    "snapshot_sha256": "9ed762515cd63d56192fb29e850ad71d5c1b6b43caa81db9739b3d084259adab",
+    "status": "withdrawn_from_submission_validation_training_prohibited",
+    "earlier_final27_snapshot": "delivery/final_model_selection_final27_historical.json",
+    "earlier_final27_snapshot_sha256": "928b3108ca51ab5c30ce6d6888f233c8cc474e79d692be511e5d62e8d7055600",
+    "reason_excluded": "Historical final27 models were trained in CV over train70+validation20, contrary to the confirmed train70-only rule. Their derived masks and81.011672% score remain development history only.",
+    "artifacts_preserved": true
+  },
+  "previous_artifacts_preserved": [
+    "submissions/sub6",
+    "submissions/final_pair_mit4_unet3",
+    "delivery/final_strengthened_code_bundle.zip",
+    "submissions/final27_selected",
+    "delivery/final27_code_bundle.zip",
+    "reports/모델링결과서_김형수없는김형수_최종검증.docx"
+  ],
+  "official_submission_performed": false,
+  "git_commit_or_push_performed_at_final35_artifact_completion": false,
+  "further_training_scheduled": false,
+  "further_inference_scheduled": false,
+  "server_state": {
+    "observed_utc": "2026-10-11T12:01:24.082458+00:00",
+    "active_gpu_compute_processes": 0,
+    "source": "runs/final35_submission/completion_verification.json",
+    "server_shutdown_or_reclaimed": false
   }
 }
