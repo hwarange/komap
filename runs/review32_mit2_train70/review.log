@@ -1,0 +1,77 @@
+{
+  "job": "mit2",
+  "scores": {
+    "plain": {
+      "images": 20,
+      "mIoU": 79.64538713698056,
+      "class_IoU": {
+        "Al": 94.22289975617456,
+        "Al3Ni": 75.80799513079171,
+        "Primary Si": 90.40079645857787,
+        "Eutectic Si": 59.75338564948319
+      },
+      "both_absent_one_mIoU": 80.1662592930246,
+      "both_absent_class_image_pairs": 1
+    },
+    "pp": {
+      "images": 20,
+      "mIoU": 79.67282041756756,
+      "class_IoU": {
+        "Al": 94.21685027559526,
+        "Al3Ni": 75.80164931496698,
+        "Primary Si": 90.45041504421086,
+        "Eutectic Si": 59.82837641188385
+      },
+      "both_absent_one_mIoU": 80.19369257361161,
+      "both_absent_class_image_pairs": 1
+    },
+    "tta": {
+      "images": 20,
+      "mIoU": 80.03744686951026,
+      "class_IoU": {
+        "Al": 94.28680055783364,
+        "Al3Ni": 76.11350747270727,
+        "Primary Si": 90.9452676083886,
+        "Eutectic Si": 60.40089556260171
+      },
+      "both_absent_one_mIoU": 80.54980195527796,
+      "both_absent_class_image_pairs": 1
+    },
+    "tta_pp": {
+      "images": 20,
+      "mIoU": 80.04858334569033,
+      "class_IoU": {
+        "Al": 94.284099101344,
+        "Al3Ni": 76.10811024059237,
+        "Primary Si": 90.952085423859,
+        "Eutectic Si": 60.44706323122961
+      },
+      "both_absent_one_mIoU": 80.56093843145801,
+      "both_absent_class_image_pairs": 1
+    },
+    "stored_tta": {
+      "images": 20,
+      "mIoU": 80.03748688373925,
+      "class_IoU": {
+        "Al": 94.28714121406256,
+        "Al3Ni": 76.11403222478097,
+        "Primary Si": 90.94498473440771,
+        "Eutectic Si": 60.400367478715445
+      },
+      "both_absent_one_mIoU": 80.54981910381159,
+      "both_absent_class_image_pairs": 1
+    },
+    "stored_tta_pp": {
+      "images": 20,
+      "mIoU": 80.04866417193188,
+      "class_IoU": {
+        "Al": 94.28443977735326,
+        "Al3Ni": 76.10869287664697,
+        "Primary Si": 90.95187478755471,
+        "Eutectic Si": 60.44657186583967
+      },
+      "both_absent_one_mIoU": 80.56099639200423,
+      "both_absent_class_image_pairs": 1
+    }
+  }
+}

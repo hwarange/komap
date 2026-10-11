@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-11T14:01:47.875709+09:00",
+  "files": [
+    {
+      "path": "runs/review34_train70_group5fold/state.json",
+      "sha256": "2f2b27e1ea6c237481ce508aaac1ded3b8d4296464ab2b5b7396c9c2b131098c",
+      "bytes": 23719
+    },
+    {
+      "path": "runs/review34_train70_group5fold/controller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold2/results.json",
+      "sha256": "93c446ab85cc70c9a1dc584e89270307d6f365b5d78c42dcff2353315da8797e",
+      "bytes": 18476
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold2/per_image_rows.json",
+      "sha256": "47934ca55da64199afd100a6f09ca983426a0eb8511c318ab865fedc92006a3d",
+      "bytes": 3496
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold2/all.done",
+      "sha256": "573c939fd377378aad85b95026809310cffd87b9f09f73846aac25a56712ffb3",
+      "bytes": 323
+    }
+  ]
+}

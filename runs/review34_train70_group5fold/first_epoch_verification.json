@@ -1,0 +1,132 @@
+{
+  "time": "2026-10-11T05:57:54+09:00",
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f",
+  "controller_pid": 862727,
+  "all_four_first_epochs_completed": true,
+  "all_loss_finite": true,
+  "input_hashes_verified": 186,
+  "no_controller_errors": true,
+  "jobs": [
+    {
+      "job": "mit2_fold0",
+      "gpu_index": 0,
+      "gpu_uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976",
+      "pid": 862736,
+      "completed_epochs": 1,
+      "first_epoch": {
+        "epoch": 1,
+        "loss": 1.3753,
+        "lr": 0.0003,
+        "train_sec": 198.9,
+        "gpu_mem_gb": 45.38,
+        "microbatches": 224,
+        "optimizer_updates": 112,
+        "accum_steps": 2,
+        "effective_batch": 4
+      },
+      "latest_epoch": {
+        "epoch": 1,
+        "loss": 1.3753,
+        "lr": 0.0003,
+        "train_sec": 198.9,
+        "gpu_mem_gb": 45.38,
+        "microbatches": 224,
+        "optimizer_updates": 112,
+        "accum_steps": 2,
+        "effective_batch": 4
+      }
+    },
+    {
+      "job": "mit4_fold0",
+      "gpu_index": 1,
+      "gpu_uuid": "GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c",
+      "pid": 862737,
+      "completed_epochs": 1,
+      "first_epoch": {
+        "epoch": 1,
+        "loss": 1.3149,
+        "lr": 0.0003,
+        "train_sec": 198.7,
+        "gpu_mem_gb": 45.38,
+        "microbatches": 224,
+        "optimizer_updates": 112,
+        "accum_steps": 2,
+        "effective_batch": 4
+      },
+      "latest_epoch": {
+        "epoch": 1,
+        "loss": 1.3149,
+        "lr": 0.0003,
+        "train_sec": 198.7,
+        "gpu_mem_gb": 45.38,
+        "microbatches": 224,
+        "optimizer_updates": 112,
+        "accum_steps": 2,
+        "effective_batch": 4
+      }
+    },
+    {
+      "job": "unet3_fold0",
+      "gpu_index": 2,
+      "gpu_uuid": "GPU-e800362c-2a5a-0208-8d32-28107bca6017",
+      "pid": 862738,
+      "completed_epochs": 3,
+      "first_epoch": {
+        "epoch": 1,
+        "loss": 1.5111,
+        "lr": 0.0003,
+        "train_sec": 103.5,
+        "gpu_mem_gb": 27.15,
+        "microbatches": 112,
+        "optimizer_updates": 112,
+        "accum_steps": 1,
+        "effective_batch": 4
+      },
+      "latest_epoch": {
+        "epoch": 3,
+        "loss": 0.6331,
+        "lr": 0.00029979096154823,
+        "train_sec": 67.4,
+        "gpu_mem_gb": 27.15,
+        "microbatches": 112,
+        "optimizer_updates": 112,
+        "accum_steps": 1,
+        "effective_batch": 4
+      }
+    },
+    {
+      "job": "context4_fold0",
+      "gpu_index": 3,
+      "gpu_uuid": "GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713",
+      "pid": 862739,
+      "completed_epochs": 1,
+      "first_epoch": {
+        "epoch": 1,
+        "loss": 1.3182,
+        "lr": 0.0003,
+        "train_sec": 220.6,
+        "gpu_mem_gb": 45.68,
+        "microbatches": 224,
+        "optimizer_updates": 112,
+        "accum_steps": 2,
+        "effective_batch": 4
+      },
+      "latest_epoch": {
+        "epoch": 1,
+        "loss": 1.3182,
+        "lr": 0.0003,
+        "train_sec": 220.6,
+        "gpu_mem_gb": 45.68,
+        "microbatches": 224,
+        "optimizer_updates": 112,
+        "accum_steps": 2,
+        "effective_batch": 4
+      }
+    }
+  ],
+  "gpus": "0, GPU-76da22e2-40da-ebc0-098a-fa92ba030976, 41823 MiB, 100 %\n1, GPU-3fc53ad0-271b-ffd6-c83c-84575e82d19c, 41823 MiB, 100 %\n2, GPU-e800362c-2a5a-0208-8d32-28107bca6017, 22925 MiB, 100 %\n3, GPU-dce5fed1-b1cd-7a95-9c1b-1f281a29f713, 44221 MiB, 100 %\n",
+  "expected_total_hours": [
+    15,
+    17
+  ]
+}

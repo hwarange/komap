@@ -1,0 +1,39 @@
+{
+  "files": [
+    {
+      "name": "calculate.py",
+      "sha256": "37e608d268463493b78d6ca5251b3802aaaa6bb0dd17392dc56e46687087d8a8",
+      "bytes": 7710
+    },
+    {
+      "name": "plan.json",
+      "sha256": "a6bccdbeae5d55da275f47e182d36cfef773420d7b0d5df5b65afcdd9c71c4fe",
+      "bytes": 32753
+    },
+    {
+      "name": "results.json",
+      "sha256": "3d022826d45426c25ac17abc537d95fa852f5df6fabee2722af4f829528cd29c",
+      "bytes": 5864
+    },
+    {
+      "name": "per_image_rows.json",
+      "sha256": "a83e9671b0b6580b987806dfce29d37a7d27879e69f1c9d15f1e8869c4d68817",
+      "bytes": 42095
+    },
+    {
+      "name": "all.done",
+      "sha256": "5311073a336de9055aa724844988b30ed4bf15ff1ada2715691a02f846c25ffb",
+      "bytes": 359
+    }
+  ],
+  "total_bytes": 88781,
+  "downloaded_metadata_files": 4,
+  "all_sha256_verified": true,
+  "partial": true,
+  "combined_folds": [
+    0,
+    1,
+    2
+  ],
+  "images": 42
+}

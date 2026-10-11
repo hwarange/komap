@@ -1,0 +1,108 @@
+{
+  "completed": "2026-10-11T05:36:37+09:00",
+  "plan_sha256": "aaa05c3b8a7b3d3752dee4a747f6030be12e2ad3b99be43e8e4a47cf3dd40008",
+  "train_images": 70,
+  "validation_images": 20,
+  "scores": {
+    "mit2_original": {
+      "images": 20,
+      "mIoU": 80.04866417193188,
+      "class_IoU": {
+        "Al": 94.28443977735326,
+        "Al3Ni": 76.10869287664697,
+        "Primary Si": 90.95187478755471,
+        "Eutectic Si": 60.44657186583967
+      },
+      "both_absent_one_mIoU": 80.56099639200423,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_original": {
+      "images": 20,
+      "mIoU": 79.70243005228618,
+      "class_IoU": {
+        "Al": 94.47052232478921,
+        "Al3Ni": 74.68085505985258,
+        "Primary Si": 90.5569302201358,
+        "Eutectic Si": 60.73506876855183
+      },
+      "both_absent_one_mIoU": 80.22888246558067,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "comparison": {
+    "direction": "MiT4 minus MiT2; positive favors MiT4",
+    "images": 20,
+    "mean_delta_pp": -0.3462341196457125,
+    "median_delta_pp": 0.18386360393574663,
+    "minimum_image_delta_pp": -9.748473794777102,
+    "maximum_image_delta_pp": 9.55959616572748,
+    "improved": 11,
+    "worsened": 9,
+    "unchanged": 0,
+    "class_delta_pp": {
+      "Al": 0.18608254743595865,
+      "Al3Ni": -1.4278378167943941,
+      "Primary Si": -0.3949445674189178,
+      "Eutectic Si": 0.2884969027121542
+    },
+    "per_image_delta_pp": {
+      "A117_step4_sample2": 0.928815888731549,
+      "A11_step1_sample4": -6.946819926963199,
+      "A11_step2_sample4": 1.6492469744510574,
+      "A125_step1_sample4": 1.6019675755797214,
+      "A153_step3_sample3": 0.2785174552420111,
+      "A170_step4_sample3": 0.25599386019308223,
+      "A181_step1_sample1": -2.0010258131817005,
+      "A186_step2_sample2": 9.55959616572748,
+      "A191_step4_sample3": 0.905608829967075,
+      "A40_step3_sample3": 0.1742442869969274,
+      "A42_step2_sample4": -9.748473794777102,
+      "A44_step4_sample3": 0.2373894794317155,
+      "A55_step2_sample1": 0.7010518931547804,
+      "A59_step3_sample1": -0.1119095639045109,
+      "A63_step1_sample4": -0.1770405998261504,
+      "A67_step1_sample1": -0.31650847128212867,
+      "A71_step2_sample1": -1.1296154577722817,
+      "A72_step4_sample4": -1.138714445011535,
+      "A74_step3_sample4": -1.840489650545607,
+      "A7_step1_sample4": 0.19348292087456587
+    }
+  },
+  "recipe": "TTA8 + postprocess, original scale policies, no cap6",
+  "metric": "Mean of per-image class IoU; exclude classes absent in both ground truth and prediction",
+  "probability_storage": "Both stored float16 probabilities, converted to float32 for scoring",
+  "only_training_argument_changes": [
+    "scale_multiplier",
+    "out",
+    "save_oof"
+  ],
+  "same_initial_state_sha256": "ea1bced04b050efa77c0d1a0a0caf9b6e564e1aa4db4ba1de1aed894283267b3",
+  "same_seed": 0,
+  "same_epochs": 60,
+  "own_review_completion": {
+    "path": "runs/review32_mit2_train70/review/all.done",
+    "sha256": "3a29b001975bd723e223e15942556218f11ca122a873992098278f45cc26c588"
+  },
+  "reference_review_completion": {
+    "path": "runs/submission31_train70/reviews/mit4/all.done",
+    "sha256": "6f4bedcc4d8909c507f8f0f4d9f95740fb9f32bb74b984ba3c37df7e7f992155"
+  },
+  "reference_initialization_receipt": {
+    "path": "runs/submission31_train70/models/mit4/base/initialization_audit.json",
+    "sha256": "e1736832042e2e8976c0a933b486052359e90c468f02f95191cf54d347fa75b3"
+  },
+  "previously_viewed_validation": true,
+  "independent_validation": false,
+  "historical_oof_probabilities_used": false,
+  "historical_project_checkpoints_used": false,
+  "test_images_or_labels_used": false,
+  "automatic_model_selection": false,
+  "automatic_submission_change": false,
+  "notes": [
+    "Only fresh train70 runs are compared on the same provided validation20.",
+    "Changing scale with a fixed1536 crop also changes effective field of view, not just resolution.",
+    "Nominal MiT2/MiT4 policies have image-width-dependent actual scale; see the per-image scale audit.",
+    "Single-seed comparison on previously inspected validation; not a guarantee of generalization.",
+    "No ensembles or per-image policy selection are evaluated."
+  ]
+}

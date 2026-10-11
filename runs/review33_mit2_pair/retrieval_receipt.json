@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "name": "plan.json",
+      "sha256": "9e947e5e70edfc4daacc8e911be9dbae2a265f8eff4ad1885e9c0fefc375214c",
+      "bytes": 73891
+    },
+    {
+      "name": "results.json",
+      "sha256": "1367a8cb04573e4880b4857a8c5dd4ee24417faedeb51967027bde6d5ebb0de0",
+      "bytes": 14030
+    },
+    {
+      "name": "per_image_rows.json",
+      "sha256": "2950865a48784918d4892b9f53f5bd23ee09b9eda12a15745116a30440e437bc",
+      "bytes": 46253
+    },
+    {
+      "name": "all.done",
+      "sha256": "c28d5276a413c7e45d91c5962042cd202370d172758b5312c6f930efafe2beff",
+      "bytes": 449
+    }
+  ],
+  "total_bytes": 134623,
+  "all_sha256_verified": true,
+  "remote_source": "komap:/home/j-j15a106/komap/runs/review33_mit2_pair"
+}

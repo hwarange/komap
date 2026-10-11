@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-11T12:17:24+09:00",
+  "partial": true,
+  "plan_sha256": "88379a6ff016b4ab1470888d2eb47ed68dcb5154c3ff65dd83b5ce29c25efb23",
+  "results_sha256": "382fd74304bfa3b4b675c563a48184e1b9cc005749499cb49d3800a444fa8ac6",
+  "rows_sha256": "c68423003e6dae99748015eca020876cc9c75ec61270b4a25918a1921e6f2568",
+  "completed_folds": [
+    0,
+    1
+  ],
+  "images": 28,
+  "automatic_submission_change": false
+}

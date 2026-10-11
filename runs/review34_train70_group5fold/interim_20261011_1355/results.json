@@ -1,0 +1,79 @@
+{
+  "completed": "2026-10-11T13:56:56+09:00",
+  "plan_sha256": "336dd1662638feddf6346dd9fbf96eaf86e8a0c5534d80b15e4061e09e06cad0",
+  "partial": true,
+  "fold2_images": 14,
+  "fold2_scores": {
+    "mit2": {
+      "images": 14,
+      "mIoU": 79.12762965893897,
+      "class_IoU": {
+        "Al": 92.41348940159114,
+        "Al3Ni": 83.51107204208714,
+        "Primary Si": 83.22814112520777,
+        "Eutectic Si": 57.357816066869894
+      },
+      "both_absent_one_mIoU": 79.12762965893897,
+      "both_absent_class_image_pairs": 0
+    },
+    "unet3": {
+      "images": 14,
+      "mIoU": 77.44769183943787,
+      "class_IoU": {
+        "Al": 92.2626368508327,
+        "Al3Ni": 81.66539605752376,
+        "Primary Si": 81.19882245986796,
+        "Eutectic Si": 54.66391198952707
+      },
+      "both_absent_one_mIoU": 77.44769183943788,
+      "both_absent_class_image_pairs": 0
+    },
+    "mit2_plus_unet3": {
+      "images": 14,
+      "mIoU": 79.32838138626553,
+      "class_IoU": {
+        "Al": 92.5299985760029,
+        "Al3Ni": 83.28999124241679,
+        "Primary Si": 83.52883757736602,
+        "Eutectic Si": 57.96469814927644
+      },
+      "both_absent_one_mIoU": 79.32838138626553,
+      "both_absent_class_image_pairs": 0
+    }
+  },
+  "combined_images": 42,
+  "combined_scores": {
+    "mit2_plus_unet3": {
+      "images": 42,
+      "mIoU": 79.64190964098786,
+      "class_IoU": {
+        "Al": 93.00708030014917,
+        "Al3Ni": 79.0478705370596,
+        "Primary Si": 87.33398363704902,
+        "Eutectic Si": 59.53614196110075
+      },
+      "both_absent_one_mIoU": 79.80666206338101,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "matched42_comparison": null,
+  "context4_fold2": "pending_not_evaluated",
+  "pending_folds": [
+    3,
+    4
+  ],
+  "remaining_context_fold2": true,
+  "source_singles_exactly_reproduced": true,
+  "cpu_only": true,
+  "new_training": false,
+  "new_inference": false,
+  "official_validation_images_used": false,
+  "test_images_or_labels_used": false,
+  "automatic_model_selection": false,
+  "automatic_submission_change": false,
+  "notes": [
+    "Only completedfold2 jobs are added; each pair uses its own held-out-fold models.",
+    "42-image scores must not be ranked against the other28-image partial results.",
+    "This is partial grouped CV within train70, not the final70OOF result or an independent test."
+  ]
+}

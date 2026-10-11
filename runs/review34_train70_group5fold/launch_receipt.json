@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-11T05:53:23+09:00",
+  "controller_pid": 862727,
+  "command": [
+    "/home/j-j15a106/komap/.venv/bin/python",
+    "scripts/run_group34.py",
+    "run"
+  ],
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f"
+}

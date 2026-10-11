@@ -1,0 +1,424 @@
+{
+  "time": "2026-10-11T12:16:36+09:00",
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f",
+  "files": [
+    {
+      "path": "runs/review34_train70_group5fold/state.json",
+      "sha256": "34310b3a478d8cfbb1b477fbc8196c694e4dcb3055fecdf4ae58cf0463c555c5",
+      "bytes": 19592
+    },
+    {
+      "path": "runs/review34_train70_group5fold/controller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold0/args.json",
+      "sha256": "f7c59b8399645c759627ec82ac2fadd879b857017ca300ac2f6bad17996dda0c",
+      "bytes": 1232
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold0/initialization_audit.json",
+      "sha256": "d825f66f288d9651ab371e0a5acfa22d0037b39f181641097b2619e697df7f98",
+      "bytes": 8808
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold0/log.jsonl",
+      "sha256": "bf1736221d4e3b7ccad057c5114040ee189bea2c543485b940e6b69881678df4",
+      "bytes": 16450
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold0/result.json",
+      "sha256": "3a02681062fb17b20d6bfbcfa59ac0ba5eb9c72d3047f988c0705afa2474a87d",
+      "bytes": 7019
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit2_fold0_training.log",
+      "sha256": "f19f634f950d498e4d6eda6c769d1377a8cdfa0826777443793227b7eec146e5",
+      "bytes": 17428
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit2_fold0/results.json",
+      "sha256": "164b14157709e070d1f93e88e05bde09d21998b05600f52680e662ced4d94af8",
+      "bytes": 18490
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit2_fold0/per_image_rows.json",
+      "sha256": "164db493df58621a924703e97c61b9b5bdc874910a1c2c1372d1eddd6207ea1c",
+      "bytes": 3472
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit2_fold0/all.done",
+      "sha256": "8184d4889ec07f65f773b45f27e841b7fc05c64d46e7785c25745612bbe0418f",
+      "bytes": 323
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold0/args.json",
+      "sha256": "e44ce9b92a3894af5484b38a21e9ac0af5c45ab64329385236918ca5eec3eca4",
+      "bytes": 1232
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold0/initialization_audit.json",
+      "sha256": "67786d3c37bb2577546bdb8040820cc669519f916a74c06c015d48af602d3d32",
+      "bytes": 8807
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold0/log.jsonl",
+      "sha256": "e7214c63004e938b4beb071c5247602d98c9739465680eb933daa3f497f3e2ce",
+      "bytes": 16453
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold0/result.json",
+      "sha256": "e901272d6b545d58d5bd33d6b737a787b0895b5732bcc1ecbbe95f771d2619af",
+      "bytes": 7024
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit4_fold0_training.log",
+      "sha256": "3e79b128e9faf8b636303e679796f8df8faa3a92d318f93ccf61dba3483c937d",
+      "bytes": 17245
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold0/results.json",
+      "sha256": "cdcc568963bb556e4572e7b8f7780407ce6bd54fd7019a7371c5f94699304bcd",
+      "bytes": 18488
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold0/per_image_rows.json",
+      "sha256": "91da6e8afeabdd710cec60c90dc3692c3995493b6f1f1820075d1ec62d331eb9",
+      "bytes": 3476
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold0/all.done",
+      "sha256": "829abf9098e03320728777a68431d299fee06b0baa0ed949b4f4f23880d278a8",
+      "bytes": 323
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold0/args.json",
+      "sha256": "480be9f41f4ec44ff739c0efce5dfe7d8753f17531170fb3b6b0a49842a18423",
+      "bytes": 1245
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold0/initialization_audit.json",
+      "sha256": "2dae6cf51084a728394a96f8cb7de96573a6c003c8a3a8ada709366533712938",
+      "bytes": 8823
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold0/log.jsonl",
+      "sha256": "3535e89302802fb33d35fbb90787cca1ed58b4dc9c3cc9dce384af3af80a6714",
+      "bytes": 32747
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold0/result.json",
+      "sha256": "fed58002e390d101e4fe0c7a27bdbd29c746747dc44a916dc76678c569ade1ef",
+      "bytes": 7039
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/unet3_fold0_training.log",
+      "sha256": "dbc7707c1db2c4ed7633c8e82f812900a8d8a2b4fdb1c3d6a202619cde4c1865",
+      "bytes": 33182
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/unet3_fold0/results.json",
+      "sha256": "771f62e98671ead0c38aaada3201f984f629f31ae4c1f118e395f4e26b1044a0",
+      "bytes": 18553
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/unet3_fold0/per_image_rows.json",
+      "sha256": "1bcefa4e7a89cf8396f63cfb3b1f28e345ecb1d0211fabe503d60592115a21e5",
+      "bytes": 3478
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/unet3_fold0/all.done",
+      "sha256": "28bc205463e82840f3b39ea18c4ce0d3bd354ae7ad710c3284ce64f1e3d418d0",
+      "bytes": 324
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold0/args.json",
+      "sha256": "39a8af967344baa7ed65cbd6444f5fc197ef4a031baaf250194df02e185934b1",
+      "bytes": 1257
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold0/initialization_audit.json",
+      "sha256": "4d5b5af01f575704af1b3a26a369856e538a33545bbc669bb9dcd5858b065717",
+      "bytes": 8844
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold0/log.jsonl",
+      "sha256": "8af2d1650c3be12a64a4efd61c01357204b3e6ca1e9d1a79c2bfa101b761a2f4",
+      "bytes": 16441
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold0/result.json",
+      "sha256": "51bb7b65585b7cacbad22452702dd71fce09cb33d520eb210c2b9a6c69e1524c",
+      "bytes": 7047
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/context4_fold0_training.log",
+      "sha256": "dfcaa73a667e377140bb55055846b2f4b31f2096512ba7c0d7db7d06158789a3",
+      "bytes": 17073
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/context4_fold0/results.json",
+      "sha256": "9c6e3110ed0def1a7afe4afffd4a7a3f9a3ebb15f91d05595c7ac7fe72e50e1e",
+      "bytes": 18595
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/context4_fold0/per_image_rows.json",
+      "sha256": "6748977e928182e10a284f8388cb3694164b40c73694195f311dc0e3decd7cbc",
+      "bytes": 3480
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/context4_fold0/all.done",
+      "sha256": "51303386f3a5ed0abbc24412572100e71dae532fb3c223efd19dce8132141929",
+      "bytes": 327
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold1/args.json",
+      "sha256": "66692c25deea5ee2f4d9bdde5f0a5fb626d4b3ecd10717206094c9023c46bca1",
+      "bytes": 1232
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold1/initialization_audit.json",
+      "sha256": "a4bc654fb9988a293c070616c0eb3b2084434c69c2056eba40adf6810b290786",
+      "bytes": 8808
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold1/log.jsonl",
+      "sha256": "c59bc408992af254ceeaa816280258a8183182da58b8e1034517998fd69bf981",
+      "bytes": 16436
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold1/result.json",
+      "sha256": "119a25adbe7f505ce1ee9efe65ad59489e104c539696ddbb2c2b7c2e45441640",
+      "bytes": 7083
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit2_fold1_training.log",
+      "sha256": "4d2643981d9a88bdb6c5ec46ec570d944164989159e3e960439097ae54a0faa5",
+      "bytes": 17414
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit2_fold1/results.json",
+      "sha256": "c94c502eb962dc1ea402174c6a73794abfeec1d364e4d82b364833981eabfb9f",
+      "bytes": 18510
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit2_fold1/per_image_rows.json",
+      "sha256": "1c9874807b8a2af579371781811ee52655c5f07e994224f705ac27f6164c6f27",
+      "bytes": 3491
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit2_fold1/all.done",
+      "sha256": "f74c95963f44c4fbbe3a31c5ae62ccbcde9a9ca06d42a0606694472d104720da",
+      "bytes": 323
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold1/args.json",
+      "sha256": "f28037049f3e509d76f6ae859818a901965665cd9907e8c7985ff4d1689f8f68",
+      "bytes": 1232
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold1/initialization_audit.json",
+      "sha256": "8830fb4c986163ce239ed762cf3a987004d408ea6f63d3f2da8206cb70945cd2",
+      "bytes": 8807
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold1/log.jsonl",
+      "sha256": "5e90d7a4e4e955c203ccdcdb8874c5346c3c887ca4cb599cd98b93829dae7e47",
+      "bytes": 16458
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold1/result.json",
+      "sha256": "8ad0166f95f199ce9d252c0470c6db78f4e450ac2457bb446b5c38a4a437c8ec",
+      "bytes": 7093
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit4_fold1_training.log",
+      "sha256": "b59b079ab1160a0797d0af65fb3ed94124c0b11935ec08d432d94e7887828e83",
+      "bytes": 17250
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold1/results.json",
+      "sha256": "06683783dfd6e43b175e8bbd8ab1bc8343e4833e42475284408b19dd08bf7084",
+      "bytes": 18472
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold1/per_image_rows.json",
+      "sha256": "6b4b1698308c6bcd94086fdbde603e81b558703cf7fd6debc9a3244c61add9fa",
+      "bytes": 3493
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/mit4_fold1/all.done",
+      "sha256": "4a6072c21afdb8ed2c046808fe4d0f7f6cf014d56ffe37937bcfce9e7923e612",
+      "bytes": 323
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold1/args.json",
+      "sha256": "27c98f2e4240e1a4c14aa34f795cfacbe603be51e896df92bc17853937448f56",
+      "bytes": 1245
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold1/initialization_audit.json",
+      "sha256": "5dafe0db4459ac40498b9032136fe85c03778bc60305c9236dfeb52048e54a83",
+      "bytes": 8823
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold1/log.jsonl",
+      "sha256": "f66656f5e2b5674faa1dca492d51418e8e079c5da8e733ab39848531236d05bd",
+      "bytes": 32805
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold1/result.json",
+      "sha256": "70a2d4edf50caf4e70bbcfa8823045c694f9ea5e7d0010c3cd071dcc8f070493",
+      "bytes": 7102
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/unet3_fold1_training.log",
+      "sha256": "ed98ff5109c564c884f826d211b4ae22f73f261c9cfcecc9d2e476b463a05926",
+      "bytes": 33240
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/unet3_fold1/results.json",
+      "sha256": "170f1b07672b44181d3734393b5c05b03e6cad7eb19cd1d7b05a0fbd3fa8f6bd",
+      "bytes": 18553
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/unet3_fold1/per_image_rows.json",
+      "sha256": "4faa834d0e517ae3016256835fb1ebac39efd83f5a6ec8c189b7aa683716f605",
+      "bytes": 3487
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/unet3_fold1/all.done",
+      "sha256": "a6bb9fb2c3fdafda557751231125d4a39fae41fce3e9265e00318910b1bf3718",
+      "bytes": 324
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold1/args.json",
+      "sha256": "9366aa6f86185584a0eb4159e71de53fbf310b22c5c1970840a302372ab23576",
+      "bytes": 1257
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold1/initialization_audit.json",
+      "sha256": "b77dd4557e4f074f8d1eae670360c711e30fe10cc3a0ad6009b942a9e6b8fa8b",
+      "bytes": 8844
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold1/log.jsonl",
+      "sha256": "0e705c3bef344f174d627edea59d9b4ab87712451b1bb77e9e77166df3fde411",
+      "bytes": 16485
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold1/result.json",
+      "sha256": "597565763887b45e9c274cf183d7cf4edbf60fdabbe1e37868d53d008e0714a1",
+      "bytes": 7111
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/context4_fold1_training.log",
+      "sha256": "99675bb7f1e1126b5281b0bd4ac6492010734f4ac1ecc491f84e98aa11c1fbca",
+      "bytes": 17119
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/context4_fold1/results.json",
+      "sha256": "8eaad995f8b187ff69b6b192106b7f49a20953959f022b263482ecac7ebd8623",
+      "bytes": 18625
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/context4_fold1/per_image_rows.json",
+      "sha256": "198e956898a9ded524189bad232897dea268d0e9f8f3c80a8d6c1660ede1bf27",
+      "bytes": 3495
+    },
+    {
+      "path": "runs/review34_train70_group5fold/reviews/context4_fold1/all.done",
+      "sha256": "ded20f462ee81273773ed18260a287a223db7073f4bdc049cc0573b5c288359a",
+      "bytes": 327
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold2/args.json",
+      "sha256": "9a80f49e30a59f0311046949f6d6f135aaf71ced0fdca96c49a428239cc37367",
+      "bytes": 1232
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold2/initialization_audit.json",
+      "sha256": "45bba68b02de633eb2900291b4472bc5cd56b0aade7c34805c03f40103f74966",
+      "bytes": 8808
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold2/log.jsonl",
+      "sha256": "06c0a530bbd3c3840ef7f1be6a1344d9e0c26722e2d9718eb6d7b82436cd204b",
+      "bytes": 6926
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit2_fold2_training.log",
+      "sha256": "703e84d3d8de29934019eb70d686f59df4d3c4461b1e6ff5799f11b9570b0206",
+      "bytes": 7811
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold2/args.json",
+      "sha256": "85102cc53d63d11441f2cb92b995d1cf5429ccc961eae9d7488a9f217e301a54",
+      "bytes": 1232
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold2/initialization_audit.json",
+      "sha256": "e85bb5d46891355bad79e74f3913023db4b60e6df429de42ad305d3db0d7d0cd",
+      "bytes": 8807
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold2/log.jsonl",
+      "sha256": "2e6475501d31aa26de7db722ddfdd2f99afadc7b8b5aa339b901ef393333faa2",
+      "bytes": 6136
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit4_fold2_training.log",
+      "sha256": "22b55ab436191a85f207ab02f3b30bce48ea69175086ef90a6cdda305c2ca63f",
+      "bytes": 6836
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold2/args.json",
+      "sha256": "0976b3ce1649d27a57718b340d4d27c8fc9969d5da61995685377fda92ac6d3e",
+      "bytes": 1245
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold2/initialization_audit.json",
+      "sha256": "cf939970715a8bc02112f4bb5d43460cece2085bb6d092e45927f883a408bbc3",
+      "bytes": 8823
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold2/log.jsonl",
+      "sha256": "e2186c6f59025399d010dbe778b6fbbd40bafb5fcc320cfa9ad4ed66fcecceaa",
+      "bytes": 8740
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/unet3_fold2_training.log",
+      "sha256": "35a419dcfa1137ac3318cb7a2197ab5369a107bc83acc56453194a1fcd6c95b7",
+      "bytes": 9083
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold2/args.json",
+      "sha256": "9c19c9c31495d27e42c4897d05f1124026967f3cd4f65c383c0855eb2278ed1d",
+      "bytes": 1257
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold2/initialization_audit.json",
+      "sha256": "935ebac09b4de0d3a2b67e0dfc0414d75500c7acd5e52ae040840dcfec9be6e5",
+      "bytes": 8844
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold2/log.jsonl",
+      "sha256": "85ea8f25af7f18509e2a207ce5e197912ffdd38544a689172364884dc5d425bc",
+      "bytes": 2673
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/context4_fold2_training.log",
+      "sha256": "e573cca66bcba6c9cc0c05d67c709a25775ec7698cf718736955dbd7a4eb03e6",
+      "bytes": 3214
+    },
+    {
+      "path": "runs/review34_train70_group5fold/interim_status_20261011_1215.json",
+      "sha256": "ef2700b6caab5574a56cfc98fd4a2306c472a4936ba72cea7774ca381fc905eb",
+      "bytes": 13229
+    }
+  ],
+  "file_count": 83,
+  "total_bytes": 774480,
+  "sha_verified": true
+}

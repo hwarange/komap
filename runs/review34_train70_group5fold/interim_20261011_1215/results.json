@@ -1,0 +1,765 @@
+{
+  "completed": "2026-10-11T12:17:24+09:00",
+  "plan_sha256": "88379a6ff016b4ab1470888d2eb47ed68dcb5154c3ff65dd83b5ce29c25efb23",
+  "partial": true,
+  "completed_folds": [
+    0,
+    1
+  ],
+  "remaining_folds": [
+    2,
+    3,
+    4
+  ],
+  "images": 28,
+  "total_planned_images": 70,
+  "scores": {
+    "mit2": {
+      "images": 28,
+      "mIoU": 79.37345550502303,
+      "class_IoU": {
+        "Al": 92.96964324364717,
+        "Al3Ni": 76.79276415581013,
+        "Primary Si": 88.86308665994461,
+        "Eutectic Si": 59.481120300652634
+      },
+      "both_absent_one_mIoU": 79.62609031626414,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4": {
+      "images": 28,
+      "mIoU": 79.107798305506,
+      "class_IoU": {
+        "Al": 93.07289998431293,
+        "Al3Ni": 76.51957611952288,
+        "Primary Si": 88.91254669726976,
+        "Eutectic Si": 58.76583682019729
+      },
+      "both_absent_one_mIoU": 79.41671002410008,
+      "both_absent_class_image_pairs": 1
+    },
+    "unet3": {
+      "images": 28,
+      "mIoU": 78.87840888820354,
+      "class_IoU": {
+        "Al": 93.00804391995163,
+        "Al3Ni": 75.53704206277196,
+        "Primary Si": 88.8527762443958,
+        "Eutectic Si": 58.74269321200043
+      },
+      "both_absent_one_mIoU": 79.13466764331216,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4": {
+      "images": 28,
+      "mIoU": 78.14492266266113,
+      "class_IoU": {
+        "Al": 92.98915123383001,
+        "Al3Ni": 75.84769429886698,
+        "Primary Si": 85.71745414859924,
+        "Eutectic Si": 58.025390969348365
+      },
+      "both_absent_one_mIoU": 78.14492266266113,
+      "both_absent_class_image_pairs": 0
+    },
+    "mit2_plus_unet3": {
+      "images": 28,
+      "mIoU": 79.79867376834902,
+      "class_IoU": {
+        "Al": 93.24562116222229,
+        "Al3Ni": 76.92681018438098,
+        "Primary Si": 89.30702233466245,
+        "Eutectic Si": 60.321863867012915
+      },
+      "both_absent_one_mIoU": 80.04580240193874,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_plus_unet3": {
+      "images": 28,
+      "mIoU": 79.59754975666861,
+      "class_IoU": {
+        "Al": 93.22883126869903,
+        "Al3Ni": 76.59480526472325,
+        "Primary Si": 89.43654385371515,
+        "Eutectic Si": 59.83812485073309
+      },
+      "both_absent_one_mIoU": 79.86889288220232,
+      "both_absent_class_image_pairs": 1
+    },
+    "context4_plus_unet3": {
+      "images": 28,
+      "mIoU": 79.3817629949573,
+      "class_IoU": {
+        "Al": 93.1743951929348,
+        "Al3Ni": 76.26963727433268,
+        "Primary Si": 89.39086156296182,
+        "Eutectic Si": 59.50762714472596
+      },
+      "both_absent_one_mIoU": 79.6803547440695,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "fold_scores": {
+    "0": {
+      "mit2": {
+        "images": 14,
+        "mIoU": 79.93572477231774,
+        "class_IoU": {
+          "Al": 93.21716546848879,
+          "Al3Ni": 77.02168698088798,
+          "Primary Si": 86.65919337299603,
+          "Eutectic Si": 63.913016997755165
+        },
+        "both_absent_one_mIoU": 80.44099439479993,
+        "both_absent_class_image_pairs": 1
+      },
+      "mit4": {
+        "images": 14,
+        "mIoU": 78.91462684134922,
+        "class_IoU": {
+          "Al": 93.0869941174614,
+          "Al3Ni": 76.01034952875487,
+          "Primary Si": 86.22687054992706,
+          "Eutectic Si": 61.821791957286884
+        },
+        "both_absent_one_mIoU": 79.53245027853742,
+        "both_absent_class_image_pairs": 1
+      },
+      "unet3": {
+        "images": 14,
+        "mIoU": 78.95971168920421,
+        "class_IoU": {
+          "Al": 92.97106221261747,
+          "Al3Ni": 75.00302728750438,
+          "Primary Si": 86.31552249885638,
+          "Eutectic Si": 62.62184212005438
+        },
+        "both_absent_one_mIoU": 79.47222919942143,
+        "both_absent_class_image_pairs": 1
+      },
+      "context4": {
+        "images": 14,
+        "mIoU": 77.09930423344916,
+        "class_IoU": {
+          "Al": 92.87905606221952,
+          "Al3Ni": 74.77599890898684,
+          "Primary Si": 80.2508553042361,
+          "Eutectic Si": 60.49130665835419
+        },
+        "both_absent_one_mIoU": 77.09930423344916,
+        "both_absent_class_image_pairs": 0
+      },
+      "mit2_plus_unet3": {
+        "images": 14,
+        "mIoU": 80.14671295038156,
+        "class_IoU": {
+          "Al": 93.2931116995154,
+          "Al3Ni": 76.70384180091875,
+          "Primary Si": 87.01539644240219,
+          "Eutectic Si": 64.62405924472202
+        },
+        "both_absent_one_mIoU": 80.64097021756099,
+        "both_absent_class_image_pairs": 1
+      },
+      "mit4_plus_unet3": {
+        "images": 14,
+        "mIoU": 79.58642860970396,
+        "class_IoU": {
+          "Al": 93.19007582335314,
+          "Al3Ni": 76.10576391061346,
+          "Primary Si": 86.87981812173953,
+          "Eutectic Si": 63.40364573893219
+        },
+        "both_absent_one_mIoU": 80.12911486077137,
+        "both_absent_class_image_pairs": 1
+      },
+      "context4_plus_unet3": {
+        "images": 14,
+        "mIoU": 79.19162216458619,
+        "class_IoU": {
+          "Al": 93.07893061013962,
+          "Al3Ni": 75.4686271286513,
+          "Primary Si": 86.96201803773326,
+          "Eutectic Si": 62.71436244884201
+        },
+        "both_absent_one_mIoU": 79.7888056628106,
+        "both_absent_class_image_pairs": 1
+      }
+    },
+    "1": {
+      "mit2": {
+        "images": 14,
+        "mIoU": 78.81118623772836,
+        "class_IoU": {
+          "Al": 92.72212101880562,
+          "Al3Ni": 76.5638413307323,
+          "Primary Si": 90.90955899782543,
+          "Eutectic Si": 55.049223603550104
+        },
+        "both_absent_one_mIoU": 78.81118623772836,
+        "both_absent_class_image_pairs": 0
+      },
+      "mit4": {
+        "images": 14,
+        "mIoU": 79.30096976966276,
+        "class_IoU": {
+          "Al": 93.05880585116445,
+          "Al3Ni": 77.02880271029089,
+          "Primary Si": 91.40638883408799,
+          "Eutectic Si": 55.709881683107675
+        },
+        "both_absent_one_mIoU": 79.30096976966274,
+        "both_absent_class_image_pairs": 0
+      },
+      "unet3": {
+        "images": 14,
+        "mIoU": 78.79710608720286,
+        "class_IoU": {
+          "Al": 93.04502562728578,
+          "Al3Ni": 76.07105683803962,
+          "Primary Si": 91.2087975795395,
+          "Eutectic Si": 54.863544303946476
+        },
+        "both_absent_one_mIoU": 78.79710608720283,
+        "both_absent_class_image_pairs": 0
+      },
+      "context4": {
+        "images": 14,
+        "mIoU": 79.19054109187311,
+        "class_IoU": {
+          "Al": 93.09924640544047,
+          "Al3Ni": 76.91938968874712,
+          "Primary Si": 91.18405299296238,
+          "Eutectic Si": 55.55947528034252
+        },
+        "both_absent_one_mIoU": 79.19054109187313,
+        "both_absent_class_image_pairs": 0
+      },
+      "mit2_plus_unet3": {
+        "images": 14,
+        "mIoU": 79.45063458631647,
+        "class_IoU": {
+          "Al": 93.19813062492918,
+          "Al3Ni": 77.1497785678432,
+          "Primary Si": 91.43496066318978,
+          "Eutectic Si": 56.01966848930379
+        },
+        "both_absent_one_mIoU": 79.45063458631648,
+        "both_absent_class_image_pairs": 0
+      },
+      "mit4_plus_unet3": {
+        "images": 14,
+        "mIoU": 79.60867090363325,
+        "class_IoU": {
+          "Al": 93.26758671404491,
+          "Al3Ni": 77.08384661883309,
+          "Primary Si": 91.81064631912108,
+          "Eutectic Si": 56.272603962533985
+        },
+        "both_absent_one_mIoU": 79.60867090363325,
+        "both_absent_class_image_pairs": 0
+      },
+      "context4_plus_unet3": {
+        "images": 14,
+        "mIoU": 79.57190382532842,
+        "class_IoU": {
+          "Al": 93.26985977572993,
+          "Al3Ni": 77.07064742001407,
+          "Primary Si": 91.64621626495976,
+          "Eutectic Si": 56.30089184060989
+        },
+        "both_absent_one_mIoU": 79.5719038253284,
+        "both_absent_class_image_pairs": 0
+      }
+    }
+  },
+  "comparisons": {
+    "mit2_vs_mit4": {
+      "direction": "candidate minus baseline",
+      "mean_delta_pp": 0.26565719951704864,
+      "improved": 13,
+      "worsened": 15,
+      "unchanged": 0,
+      "class_delta_pp": {
+        "Al": -0.1032567406657563,
+        "Al3Ni": 0.27318803628725163,
+        "Primary Si": -0.049460037325147255,
+        "Eutectic Si": 0.7152834804553407
+      },
+      "per_image_delta_pp": {
+        "A101_step3_sample3": -0.8873636238958982,
+        "A108_step2_sample2": -0.8011591701126197,
+        "A111_step1_sample2": -0.8383037821896311,
+        "A111_step3_sample4": -2.3600428864202327,
+        "A130_step1_sample1": 0.5334040411626884,
+        "A138_step4_sample3": 0.08680436783831125,
+        "A152_step2_sample1": -0.16719335131096802,
+        "A153_step1_sample4": 0.5632487431684874,
+        "A154_step2_sample3": 0.4306731182299628,
+        "A156_step4_sample1": -0.0783680725386926,
+        "A156_step4_sample2": -0.30788308503597595,
+        "A16_step4_sample4": 0.4586758500422228,
+        "A182_step4_sample3": 3.0672049093756315,
+        "A191_step3_sample1": 0.5346757657431533,
+        "A191_step4_sample1": -0.2982596204132326,
+        "A2_step4_sample1": -1.077479548507132,
+        "A40_step3_sample4": 0.4372359517843316,
+        "A49_step2_sample2": -0.9320520589482739,
+        "A55_step3_sample4": -0.08789483001381271,
+        "A57_step1_sample3": 6.303013623536069,
+        "A61_step2_sample2": -0.2864786637125971,
+        "A64_step2_sample3": 0.7955059962774569,
+        "A66_step3_sample2": -0.2341040463950672,
+        "A7_step1_sample2": -1.8686125774425855,
+        "A7_step4_sample3": 2.3053184226246026,
+        "A8_step2_sample3": 2.1202568025590396,
+        "A8_step3_sample3": 1.859278990151203,
+        "A96_step1_sample1": -1.8316996790790796
+      }
+    },
+    "context4_vs_mit4": {
+      "direction": "candidate minus baseline",
+      "mean_delta_pp": -0.962875642844848,
+      "improved": 17,
+      "worsened": 11,
+      "unchanged": 0,
+      "class_delta_pp": {
+        "Al": -0.0837487504829113,
+        "Al3Ni": -0.6718818206558979,
+        "Primary Si": -3.195092548670516,
+        "Eutectic Si": -0.7404458508489284
+      },
+      "per_image_delta_pp": {
+        "A101_step3_sample3": 0.37744639654297973,
+        "A108_step2_sample2": 0.4655244035711381,
+        "A111_step1_sample2": -0.7342052581730596,
+        "A111_step3_sample4": -0.6945684896712323,
+        "A130_step1_sample1": 1.2331215920424632,
+        "A138_step4_sample3": 0.8552554642513477,
+        "A152_step2_sample1": -0.0609878547164433,
+        "A153_step1_sample4": 0.29546454078225315,
+        "A154_step2_sample3": 0.6221660054937406,
+        "A156_step4_sample1": 0.3013800448230852,
+        "A156_step4_sample2": 0.1046598314645153,
+        "A16_step4_sample4": 0.02819963598513775,
+        "A182_step4_sample3": 0.18222345619951508,
+        "A191_step3_sample1": -0.35460398224508305,
+        "A191_step4_sample1": 0.3911586894861041,
+        "A2_step4_sample1": -0.25618011681886044,
+        "A40_step3_sample4": 0.11733655449164271,
+        "A49_step2_sample2": -0.9480333299887289,
+        "A55_step3_sample4": 0.35458990252016376,
+        "A57_step1_sample3": -22.712421693518536,
+        "A61_step2_sample2": -1.6735679915540258,
+        "A64_step2_sample3": 0.1770180984805969,
+        "A66_step3_sample2": 0.34369247462860963,
+        "A7_step1_sample2": -0.26537740566482393,
+        "A7_step4_sample3": -3.888710282353658,
+        "A8_step2_sample3": 0.05072318052506963,
+        "A8_step3_sample3": 0.3007708313513935,
+        "A96_step1_sample1": -1.5725926975910465
+      }
+    },
+    "mit2_plus_unet3_vs_mit4_plus_unet3": {
+      "direction": "candidate minus baseline",
+      "mean_delta_pp": 0.20112401168039723,
+      "improved": 16,
+      "worsened": 12,
+      "unchanged": 0,
+      "class_delta_pp": {
+        "Al": 0.016789893523267096,
+        "Al3Ni": 0.3320049196577344,
+        "Primary Si": -0.1295215190527017,
+        "Eutectic Si": 0.4837390162798272
+      },
+      "per_image_delta_pp": {
+        "A101_step3_sample3": -0.08969971377553732,
+        "A108_step2_sample2": -0.025261497074979822,
+        "A111_step1_sample2": -0.22260456174837406,
+        "A111_step3_sample4": -0.8677383658644122,
+        "A130_step1_sample1": 0.06939291274590254,
+        "A138_step4_sample3": 0.5893757647837838,
+        "A152_step2_sample1": -0.17183747102791358,
+        "A153_step1_sample4": 0.3468733712225447,
+        "A154_step2_sample3": -0.03830128213060391,
+        "A156_step4_sample1": 0.19668390386405887,
+        "A156_step4_sample2": -0.03644925905260665,
+        "A16_step4_sample4": 0.0661837146755162,
+        "A182_step4_sample3": 2.385044944711623,
+        "A191_step3_sample1": 0.24298374642423015,
+        "A191_step4_sample1": -0.19186753157879322,
+        "A2_step4_sample1": -0.7097100263725231,
+        "A40_step3_sample4": 0.09144615122764765,
+        "A49_step2_sample2": -0.45309170833424117,
+        "A55_step3_sample4": 0.06610186760508396,
+        "A57_step1_sample3": 2.712023097725258,
+        "A61_step2_sample2": 0.08174613092041261,
+        "A64_step2_sample3": 0.5013833562245829,
+        "A66_step3_sample2": 0.022770048011411248,
+        "A7_step1_sample2": -1.3002342043023973,
+        "A7_step4_sample3": 1.4199042191166633,
+        "A8_step2_sample3": 0.8450051852599505,
+        "A8_step3_sample3": 1.4685091474740952,
+        "A96_step1_sample1": -1.3671596136792585
+      }
+    },
+    "context4_plus_unet3_vs_mit4_plus_unet3": {
+      "direction": "candidate minus baseline",
+      "mean_delta_pp": -0.21578676171131422,
+      "improved": 14,
+      "worsened": 14,
+      "unchanged": 0,
+      "class_delta_pp": {
+        "Al": -0.054436075764229486,
+        "Al3Ni": -0.3251679903905682,
+        "Primary Si": -0.04568229075333363,
+        "Eutectic Si": -0.33049770600712947
+      },
+      "per_image_delta_pp": {
+        "A101_step3_sample3": 0.12374341519033605,
+        "A108_step2_sample2": 0.5562092738211399,
+        "A111_step1_sample2": -0.2697519627136602,
+        "A111_step3_sample4": -0.29380586530247665,
+        "A130_step1_sample1": 0.13601803820449954,
+        "A138_step4_sample3": 0.6199495662538634,
+        "A152_step2_sample1": 0.17456640885077368,
+        "A153_step1_sample4": -0.09017724053106413,
+        "A154_step2_sample3": 0.34541379850741016,
+        "A156_step4_sample1": 0.1485382717702044,
+        "A156_step4_sample2": 0.07179507880724634,
+        "A16_step4_sample4": 0.29562159139830957,
+        "A182_step4_sample3": 0.06655748601512856,
+        "A191_step3_sample1": 0.021612844729246294,
+        "A191_step4_sample1": -0.0764857070119529,
+        "A2_step4_sample1": -0.2941430501061215,
+        "A40_step3_sample4": -0.044642644154813116,
+        "A49_step2_sample2": -0.3408087495241463,
+        "A55_step3_sample4": 0.29873699646147944,
+        "A57_step1_sample3": -3.051845840792544,
+        "A61_step2_sample2": -0.8734561291016463,
+        "A64_step2_sample3": 0.16822805409595354,
+        "A66_step3_sample2": 0.1909000351899559,
+        "A7_step1_sample2": -0.3941563036047868,
+        "A7_step4_sample3": -1.8475177289214773,
+        "A8_step2_sample3": -0.4085350269781518,
+        "A8_step3_sample3": -0.08549410483548181,
+        "A96_step1_sample1": -1.189099833634022
+      }
+    },
+    "mit2_plus_unet3_vs_context4_plus_unet3": {
+      "direction": "candidate minus baseline",
+      "mean_delta_pp": 0.4169107733917115,
+      "improved": 12,
+      "worsened": 16,
+      "unchanged": 0,
+      "class_delta_pp": {
+        "Al": 0.07122596928749658,
+        "Al3Ni": 0.6571729100483026,
+        "Primary Si": -0.08383922829936807,
+        "Eutectic Si": 0.8142367222869566
+      },
+      "per_image_delta_pp": {
+        "A101_step3_sample3": -0.21344312896587336,
+        "A108_step2_sample2": -0.5814707708961198,
+        "A111_step1_sample2": 0.047147400965286135,
+        "A111_step3_sample4": -0.5739325005619356,
+        "A130_step1_sample1": -0.066625125458597,
+        "A138_step4_sample3": -0.030573801470079598,
+        "A152_step2_sample1": -0.34640387987868726,
+        "A153_step1_sample4": 0.4370506117536088,
+        "A154_step2_sample3": -0.38371508063801407,
+        "A156_step4_sample1": 0.048145632093854474,
+        "A156_step4_sample2": -0.10824433785985299,
+        "A16_step4_sample4": -0.22943787672279337,
+        "A182_step4_sample3": 2.3184874586964943,
+        "A191_step3_sample1": 0.22137090169498386,
+        "A191_step4_sample1": -0.11538182456684032,
+        "A2_step4_sample1": -0.4155669762664016,
+        "A40_step3_sample4": 0.13608879538246077,
+        "A49_step2_sample2": -0.11228295881009487,
+        "A55_step3_sample4": -0.23263512885639548,
+        "A57_step1_sample3": 5.763868938517803,
+        "A61_step2_sample2": 0.9552022600220589,
+        "A64_step2_sample3": 0.3331553021286293,
+        "A66_step3_sample2": -0.16812998717854466,
+        "A7_step1_sample2": -0.9060779006976105,
+        "A7_step4_sample3": 3.2674219480381406,
+        "A8_step2_sample3": 1.2535402122381023,
+        "A8_step3_sample3": 1.554003252309577,
+        "A96_step1_sample1": -0.1780597800452366
+      }
+    }
+  },
+  "prediction_provenance": {
+    "A101_step3_sample3": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A108_step2_sample2": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A111_step1_sample2": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A111_step3_sample4": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A130_step1_sample1": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A138_step4_sample3": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A152_step2_sample1": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A153_step1_sample4": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A154_step2_sample3": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A156_step4_sample1": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A156_step4_sample2": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A16_step4_sample4": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A182_step4_sample3": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A191_step3_sample1": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A191_step4_sample1": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A2_step4_sample1": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A40_step3_sample4": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A49_step2_sample2": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A55_step3_sample4": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A57_step1_sample3": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A61_step2_sample2": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A64_step2_sample3": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A66_step3_sample2": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    },
+    "A7_step1_sample2": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A7_step4_sample3": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A8_step2_sample3": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A8_step3_sample3": {
+      "fold": 0,
+      "jobs": {
+        "mit2": "mit2_fold0",
+        "mit4": "mit4_fold0",
+        "unet3": "unet3_fold0",
+        "context4": "context4_fold0"
+      }
+    },
+    "A96_step1_sample1": {
+      "fold": 1,
+      "jobs": {
+        "mit2": "mit2_fold1",
+        "mit4": "mit4_fold1",
+        "unet3": "unet3_fold1",
+        "context4": "context4_fold1"
+      }
+    }
+  },
+  "source_singles_exactly_reproduced": true,
+  "metric": "Equal image mean of per-image class IoU; both-absent class excluded",
+  "inference": "Stored TTA8, original scale policies; same-fold50:50 probabilities then fixed postprocessing",
+  "float16_probabilities_converted_to_float32": true,
+  "cpu_only": true,
+  "new_training": false,
+  "new_inference": false,
+  "official_validation_images_used": false,
+  "test_images_or_labels_used": false,
+  "independent_validation": false,
+  "automatic_model_selection": false,
+  "automatic_submission_change": false,
+  "caveats": [
+    "Only the28 held-out images of completedfolds0/1; not the final70-image OOF result.",
+    "Never averages predictions across differentfold models for the same image.",
+    "No comparison to the differently composed officialvalidation20 score is implied.",
+    "Three folds remain, and no new training-seed stability test is provided."
+  ]
+}

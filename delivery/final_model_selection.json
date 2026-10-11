@@ -2,7 +2,7 @@
   "schema_version": 2,
   "selected_at": "2026-10-10T20:25:25.675093+09:00",
   "selection_authority": "User requested highest observed same-full90 OOF mIoU; four-GPU remaining-fold validation authorized",
-  "status": "complete_selected_and_all_deliverables_verified",
+  "status": "withdrawn_from_submission_validation_training_prohibited",
   "selected_recipe": "interface_cap6",
   "model_name": "MiT4 crop1536 with width675 cap6 plus UNet++3 after120+6 separate-stage epochs",
   "experiments": [
@@ -256,5 +256,32 @@
   "report_sha256": "5203a6e239314cb71ecad5303ca0ac19b201425cb402eed532e47854327564e8",
   "report_pages": 8,
   "report_visually_verified": true,
-  "completed_at": "2026-10-10T20:31:13.393929+09:00"
+  "completed_at": "2026-10-10T20:31:13.393929+09:00",
+  "active_submission_selection": false,
+  "submission_eligible": false,
+  "organizer_rule_update": {
+    "received_date": "2026-10-11",
+    "source": "Organizer reply forwarded verbatim by user in this conversation",
+    "quote": "validation 데이터는 모델 학습에 사용할 수 없습니다. 모델·설정 선택과 성능 확인에만 사용해 주시기 바랍니다.",
+    "allowed_training_split": "train70",
+    "validation20_role": [
+      "model_selection",
+      "configuration_selection",
+      "performance_evaluation"
+    ],
+    "reason_for_withdrawal": "The historical final27 checkpoints were trained in CV over train70 + validation20; their derived test masks and 90-image OOF score are not eligible as the official train70/validation20 submission.",
+    "historical_selection_snapshot": "delivery/final_model_selection_final27_historical.json",
+    "historical_artifacts_preserved": true,
+    "historical_verification_scope": "Existing verified report/code/mask fields record past artifact checks only; they do not establish submission eligibility. All final27 deliverables require replacement under the confirmed train70-only rule.",
+    "replacement_status": "Pending completed train70-only grouped CV comparison and final report/test-mask generation",
+    "current_train70_validation20_best": {
+      "recipe": "MiT2 original + UNet++3 base120",
+      "mIoU": 80.62075310543737,
+      "source": "runs/review33_mit2_pair/results.json",
+      "selected_for_submission": false
+    },
+    "ongoing_cv": "runs/review34_train70_group5fold",
+    "ongoing_cv_uses_only_train70": true,
+    "rule_does_not_change_independent_test_claim": true
+  }
 }

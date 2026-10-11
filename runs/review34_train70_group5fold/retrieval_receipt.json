@@ -1,0 +1,64 @@
+{
+  "time": "2026-10-11T05:57:54+09:00",
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f",
+  "last_batch_files": [
+    {
+      "path": "runs/review34_train70_group5fold/models/mit2/fold0/log.jsonl",
+      "sha256": "0fcbf276e9da8f0b7d80ca9aa8f2819f9d8ab155d8ecf484c79160feddb00e7b",
+      "bytes": 171
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit2_fold0_training.log",
+      "sha256": "d84703c02ead1ca9d70a1a9476bf032ee312e1186d9225e65e5ad86551512f5c",
+      "bytes": 871
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/mit4/fold0/log.jsonl",
+      "sha256": "de0ad95b2e29fa51d3bbb988492728f01e3f232352918508ac6ec9b66ae876df",
+      "bytes": 171
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/mit4_fold0_training.log",
+      "sha256": "ca033c92f2eeff4acb30067f549fb76a1573e0bce11452cf390147f16c0b66c4",
+      "bytes": 871
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/unet3/fold0/log.jsonl",
+      "sha256": "9060b666a5d93aa0a8a0fc2329d8cec20d5379c7ca866a897e346e2f4bbee526",
+      "bytes": 539
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/unet3_fold0_training.log",
+      "sha256": "99979cc6dc90c6013fe25b9a07eab040b9e345f4d464e598f96de86e16776211",
+      "bytes": 882
+    },
+    {
+      "path": "runs/review34_train70_group5fold/models/context4/fold0/log.jsonl",
+      "sha256": "302df4e77df96e05cadf79c68fb69c62285dee451e15e3f6760113b9880b91aa",
+      "bytes": 171
+    },
+    {
+      "path": "runs/review34_train70_group5fold/logs/context4_fold0_training.log",
+      "sha256": "aa882ba11f0717a3c821247a53c35cbd82c6827bacefc7f4b3a4e14f43c3b57c",
+      "bytes": 712
+    },
+    {
+      "path": "runs/review34_train70_group5fold/first_epoch_verification.json",
+      "sha256": "6da4f18283c09c1c384bf8cccc8d2b932e75f4a3c3da3a22bf70e461f7834c7f",
+      "bytes": 3516
+    },
+    {
+      "path": "runs/review34_train70_group5fold/state.json",
+      "sha256": "7e312ca70099774218de5713e8c24f66652043175186e1425fe782ad842be2f9",
+      "bytes": 4969
+    },
+    {
+      "path": "runs/review34_train70_group5fold/controller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "local_metadata_files": 29,
+  "local_metadata_bytes": 229412,
+  "sha_verified": true
+}

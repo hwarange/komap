@@ -1,0 +1,1 @@
+{"epoch": 1, "loss": 1.365, "lr": 0.0003, "train_sec": 199.1, "gpu_mem_gb": 45.38, "microbatches": 224, "optimizer_updates": 112, "accum_steps": 2, "effective_batch": 4}

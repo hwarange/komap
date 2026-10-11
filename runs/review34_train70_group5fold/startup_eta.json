@@ -1,0 +1,138 @@
+{
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f",
+  "basis": "Measured31/32 epoch/validation times scaled to56/14; initialization/finalTTA/CPUreview allowance; FIFO simulation",
+  "fold_minutes": {
+    "mit2": 169.2,
+    "mit4": 174.3,
+    "unet3": 139.3,
+    "context4": 176.5
+  },
+  "predicted_schedule": [
+    {
+      "job": "mit2_fold0",
+      "estimated_gpu": 0,
+      "start_minutes": 0.0,
+      "end_minutes": 169.2
+    },
+    {
+      "job": "mit4_fold0",
+      "estimated_gpu": 1,
+      "start_minutes": 0.0,
+      "end_minutes": 174.3
+    },
+    {
+      "job": "unet3_fold0",
+      "estimated_gpu": 2,
+      "start_minutes": 0.0,
+      "end_minutes": 139.3
+    },
+    {
+      "job": "context4_fold0",
+      "estimated_gpu": 3,
+      "start_minutes": 0.0,
+      "end_minutes": 176.5
+    },
+    {
+      "job": "mit2_fold1",
+      "estimated_gpu": 2,
+      "start_minutes": 139.3,
+      "end_minutes": 308.5
+    },
+    {
+      "job": "mit4_fold1",
+      "estimated_gpu": 0,
+      "start_minutes": 169.2,
+      "end_minutes": 343.5
+    },
+    {
+      "job": "unet3_fold1",
+      "estimated_gpu": 1,
+      "start_minutes": 174.3,
+      "end_minutes": 313.6
+    },
+    {
+      "job": "context4_fold1",
+      "estimated_gpu": 3,
+      "start_minutes": 176.5,
+      "end_minutes": 353.0
+    },
+    {
+      "job": "mit2_fold2",
+      "estimated_gpu": 2,
+      "start_minutes": 308.5,
+      "end_minutes": 477.7
+    },
+    {
+      "job": "mit4_fold2",
+      "estimated_gpu": 1,
+      "start_minutes": 313.6,
+      "end_minutes": 487.9
+    },
+    {
+      "job": "unet3_fold2",
+      "estimated_gpu": 0,
+      "start_minutes": 343.5,
+      "end_minutes": 482.8
+    },
+    {
+      "job": "context4_fold2",
+      "estimated_gpu": 3,
+      "start_minutes": 353.0,
+      "end_minutes": 529.5
+    },
+    {
+      "job": "mit2_fold3",
+      "estimated_gpu": 2,
+      "start_minutes": 477.7,
+      "end_minutes": 646.9
+    },
+    {
+      "job": "mit4_fold3",
+      "estimated_gpu": 0,
+      "start_minutes": 482.8,
+      "end_minutes": 657.1
+    },
+    {
+      "job": "unet3_fold3",
+      "estimated_gpu": 1,
+      "start_minutes": 487.9,
+      "end_minutes": 627.2
+    },
+    {
+      "job": "context4_fold3",
+      "estimated_gpu": 3,
+      "start_minutes": 529.5,
+      "end_minutes": 706.0
+    },
+    {
+      "job": "mit2_fold4",
+      "estimated_gpu": 1,
+      "start_minutes": 627.2,
+      "end_minutes": 796.4
+    },
+    {
+      "job": "mit4_fold4",
+      "estimated_gpu": 2,
+      "start_minutes": 646.9,
+      "end_minutes": 821.2
+    },
+    {
+      "job": "unet3_fold4",
+      "estimated_gpu": 0,
+      "start_minutes": 657.1,
+      "end_minutes": 796.4
+    },
+    {
+      "job": "context4_fold4",
+      "estimated_gpu": 3,
+      "start_minutes": 706.0,
+      "end_minutes": 882.5
+    }
+  ],
+  "total_hours_including_aggregate": 14.792,
+  "communicated_hours": [
+    15,
+    17
+  ],
+  "uncertainty": "Estimate only; image scale distribution and actual GPU speed may change runtime"
+}

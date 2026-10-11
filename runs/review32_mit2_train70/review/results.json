@@ -1,0 +1,551 @@
+{
+  "completed": "2026-10-11T05:36:22+09:00",
+  "job": "mit2",
+  "plan_sha256": "aaa05c3b8a7b3d3752dee4a747f6030be12e2ad3b99be43e8e4a47cf3dd40008",
+  "epochs": 60,
+  "train_images": 70,
+  "validation_images": 20,
+  "args": {
+    "data": "data",
+    "out": "runs/review32_mit2_train70/models/mit2/base",
+    "train_splits": [
+      "train"
+    ],
+    "val_split": "valid",
+    "fold": -1,
+    "folds_file": "splits/folds5.json",
+    "arch": "Unet",
+    "encoder": "mit_b2",
+    "attention": null,
+    "loss": "dice",
+    "bw": 2.0,
+    "class_weights": "",
+    "epochs": 60,
+    "bs": 2,
+    "accum_steps": 2,
+    "crop": 1536,
+    "spi": 8,
+    "scale_jitter": 0.15,
+    "lr": 0.0003,
+    "wd": 0.0001,
+    "width": 2560,
+    "scale_multiplier": 1.0,
+    "tile": 1536,
+    "overlap": 128,
+    "val_every": 5,
+    "workers": 4,
+    "seed": 0,
+    "max_iters": 0,
+    "amp": true,
+    "save_oof": "runs/review32_mit2_train70/valid_probs/mit2/base",
+    "hires": false,
+    "skel": 0.0,
+    "rot": "rot90",
+    "aug_policy": "default",
+    "hm": 0.0,
+    "lowres": 0.0,
+    "no_int": false,
+    "copypaste": 0.0,
+    "int_drop": "",
+    "ema": 0.0,
+    "train_frac": 1.0,
+    "enc_lr_mult": 1.0,
+    "full": false,
+    "binary_class": -1,
+    "elastic": 0.0,
+    "cutout": 0.0,
+    "mixup": 0.0,
+    "cutmix": 0.0,
+    "init": "",
+    "init_skip_head": false,
+    "use_ignore": false,
+    "pair_classes": null,
+    "feats": false,
+    "hard_crop": 0.0,
+    "hard_maps": "runs/submission31_train70/train_interface_maps",
+    "soft_edge": 0.0
+  },
+  "scores": {
+    "plain": {
+      "images": 20,
+      "mIoU": 79.64538713698056,
+      "class_IoU": {
+        "Al": 94.22289975617456,
+        "Al3Ni": 75.80799513079171,
+        "Primary Si": 90.40079645857787,
+        "Eutectic Si": 59.75338564948319
+      },
+      "both_absent_one_mIoU": 80.1662592930246,
+      "both_absent_class_image_pairs": 1
+    },
+    "pp": {
+      "images": 20,
+      "mIoU": 79.67282041756756,
+      "class_IoU": {
+        "Al": 94.21685027559526,
+        "Al3Ni": 75.80164931496698,
+        "Primary Si": 90.45041504421086,
+        "Eutectic Si": 59.82837641188385
+      },
+      "both_absent_one_mIoU": 80.19369257361161,
+      "both_absent_class_image_pairs": 1
+    },
+    "tta": {
+      "images": 20,
+      "mIoU": 80.03744686951026,
+      "class_IoU": {
+        "Al": 94.28680055783364,
+        "Al3Ni": 76.11350747270727,
+        "Primary Si": 90.9452676083886,
+        "Eutectic Si": 60.40089556260171
+      },
+      "both_absent_one_mIoU": 80.54980195527796,
+      "both_absent_class_image_pairs": 1
+    },
+    "tta_pp": {
+      "images": 20,
+      "mIoU": 80.04858334569033,
+      "class_IoU": {
+        "Al": 94.284099101344,
+        "Al3Ni": 76.10811024059237,
+        "Primary Si": 90.952085423859,
+        "Eutectic Si": 60.44706323122961
+      },
+      "both_absent_one_mIoU": 80.56093843145801,
+      "both_absent_class_image_pairs": 1
+    },
+    "stored_tta": {
+      "images": 20,
+      "mIoU": 80.03748688373925,
+      "class_IoU": {
+        "Al": 94.28714121406256,
+        "Al3Ni": 76.11403222478097,
+        "Primary Si": 90.94498473440771,
+        "Eutectic Si": 60.400367478715445
+      },
+      "both_absent_one_mIoU": 80.54981910381159,
+      "both_absent_class_image_pairs": 1
+    },
+    "stored_tta_pp": {
+      "images": 20,
+      "mIoU": 80.04866417193188,
+      "class_IoU": {
+        "Al": 94.28443977735326,
+        "Al3Ni": 76.10869287664697,
+        "Primary Si": 90.95187478755471,
+        "Eutectic Si": 60.44657186583967
+      },
+      "both_absent_one_mIoU": 80.56099639200423,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "checkpoint": "runs/review32_mit2_train70/models/mit2/base/last.pt",
+  "strict_cpu_reload": true,
+  "finite_checkpoint_tensors": true,
+  "same_initial_state_as_mit4": true,
+  "initial_state_sha256": "ea1bced04b050efa77c0d1a0a0caf9b6e564e1aa4db4ba1de1aed894283267b3",
+  "training_minutes": 206.42333333333332,
+  "probabilities": {
+    "A117_step4_sample2": "runs/review32_mit2_train70/valid_probs/mit2/base/A117_step4_sample2.npy",
+    "A11_step1_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A11_step1_sample4.npy",
+    "A11_step2_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A11_step2_sample4.npy",
+    "A125_step1_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A125_step1_sample4.npy",
+    "A153_step3_sample3": "runs/review32_mit2_train70/valid_probs/mit2/base/A153_step3_sample3.npy",
+    "A170_step4_sample3": "runs/review32_mit2_train70/valid_probs/mit2/base/A170_step4_sample3.npy",
+    "A181_step1_sample1": "runs/review32_mit2_train70/valid_probs/mit2/base/A181_step1_sample1.npy",
+    "A186_step2_sample2": "runs/review32_mit2_train70/valid_probs/mit2/base/A186_step2_sample2.npy",
+    "A191_step4_sample3": "runs/review32_mit2_train70/valid_probs/mit2/base/A191_step4_sample3.npy",
+    "A40_step3_sample3": "runs/review32_mit2_train70/valid_probs/mit2/base/A40_step3_sample3.npy",
+    "A42_step2_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A42_step2_sample4.npy",
+    "A44_step4_sample3": "runs/review32_mit2_train70/valid_probs/mit2/base/A44_step4_sample3.npy",
+    "A55_step2_sample1": "runs/review32_mit2_train70/valid_probs/mit2/base/A55_step2_sample1.npy",
+    "A59_step3_sample1": "runs/review32_mit2_train70/valid_probs/mit2/base/A59_step3_sample1.npy",
+    "A63_step1_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A63_step1_sample4.npy",
+    "A67_step1_sample1": "runs/review32_mit2_train70/valid_probs/mit2/base/A67_step1_sample1.npy",
+    "A71_step2_sample1": "runs/review32_mit2_train70/valid_probs/mit2/base/A71_step2_sample1.npy",
+    "A72_step4_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A72_step4_sample4.npy",
+    "A74_step3_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A74_step3_sample4.npy",
+    "A7_step1_sample4": "runs/review32_mit2_train70/valid_probs/mit2/base/A7_step1_sample4.npy"
+  },
+  "training_names": [
+    "A101_step3_sample3",
+    "A106_step4_sample1",
+    "A108_step2_sample2",
+    "A109_step1_sample3",
+    "A111_step1_sample2",
+    "A111_step3_sample4",
+    "A118_step2_sample1",
+    "A121_step2_sample2",
+    "A123_step1_sample1",
+    "A123_step4_sample2",
+    "A125_step2_sample1",
+    "A130_step1_sample1",
+    "A137_step4_sample2",
+    "A138_step4_sample3",
+    "A139_step3_sample4",
+    "A139_step4_sample3",
+    "A140_step4_sample2",
+    "A146_step2_sample1",
+    "A147_step4_sample4",
+    "A150_step4_sample1",
+    "A152_step2_sample1",
+    "A153_step1_sample4",
+    "A154_step2_sample3",
+    "A155_step3_sample2",
+    "A156_step4_sample1",
+    "A156_step4_sample2",
+    "A159_step4_sample4",
+    "A15_step1_sample1",
+    "A164_step1_sample2",
+    "A164_step4_sample1",
+    "A166_step4_sample3",
+    "A167_step3_sample4",
+    "A16_step4_sample4",
+    "A181_step4_sample4",
+    "A182_step4_sample3",
+    "A187_step2_sample1",
+    "A187_step4_sample4",
+    "A188_step4_sample1",
+    "A18_step2_sample1",
+    "A191_step3_sample1",
+    "A191_step4_sample1",
+    "A200_step4_sample3",
+    "A201_step3_sample1",
+    "A201_step3_sample4",
+    "A21_step2_sample4",
+    "A222_step2_sample2",
+    "A224_step1_sample2",
+    "A224_step4_sample2",
+    "A2_step4_sample1",
+    "A39_step2_sample3",
+    "A40_step3_sample4",
+    "A49_step2_sample2",
+    "A51_step4_sample4",
+    "A55_step3_sample4",
+    "A57_step1_sample3",
+    "A61_step2_sample2",
+    "A64_step2_sample3",
+    "A66_step3_sample2",
+    "A69_step4_sample4",
+    "A78_step4_sample1",
+    "A7_step1_sample2",
+    "A7_step4_sample3",
+    "A83_step1_sample2",
+    "A87_step2_sample2",
+    "A89_step1_sample2",
+    "A8_step2_sample3",
+    "A8_step3_sample3",
+    "A94_step4_sample2",
+    "A96_step1_sample1",
+    "A98_step2_sample4"
+  ],
+  "validation_names": [
+    "A117_step4_sample2",
+    "A11_step1_sample4",
+    "A11_step2_sample4",
+    "A125_step1_sample4",
+    "A153_step3_sample3",
+    "A170_step4_sample3",
+    "A181_step1_sample1",
+    "A186_step2_sample2",
+    "A191_step4_sample3",
+    "A40_step3_sample3",
+    "A42_step2_sample4",
+    "A44_step4_sample3",
+    "A55_step2_sample1",
+    "A59_step3_sample1",
+    "A63_step1_sample4",
+    "A67_step1_sample1",
+    "A71_step2_sample1",
+    "A72_step4_sample4",
+    "A74_step3_sample4",
+    "A7_step1_sample4"
+  ],
+  "actual_validation_scales": [
+    {
+      "name": "A117_step4_sample2",
+      "width": 1230,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A11_step1_sample4",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A11_step2_sample4",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A125_step1_sample4",
+      "width": 1230,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A153_step3_sample3",
+      "width": 1278,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A170_step4_sample3",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A181_step1_sample1",
+      "width": 1440,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A186_step2_sample2",
+      "width": 1278,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A191_step4_sample3",
+      "width": 1440,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A40_step3_sample3",
+      "width": 1278,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A42_step2_sample4",
+      "width": 1230,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A44_step4_sample3",
+      "width": 1278,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A55_step2_sample1",
+      "width": 1096,
+      "mit2": 2.0,
+      "mit4": 4.0
+    },
+    {
+      "name": "A59_step3_sample1",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A63_step1_sample4",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A67_step1_sample1",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A71_step2_sample1",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A72_step4_sample4",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A74_step3_sample4",
+      "width": 675,
+      "mit2": 4.0,
+      "mit4": 8.0
+    },
+    {
+      "name": "A7_step1_sample4",
+      "width": 1278,
+      "mit2": 2.0,
+      "mit4": 4.0
+    }
+  ],
+  "output_receipts": [
+    {
+      "path": "runs/review32_mit2_train70/models/mit2/base/args.json",
+      "sha256": "fe2159f541a3ff6e36a052d654baeb31f2acb9b5e27c0be00a2b0158f6d6462f"
+    },
+    {
+      "path": "runs/review32_mit2_train70/models/mit2/base/result.json",
+      "sha256": "5a1c9cd5459bba00a6545d43c90c63dab680d7a908b0c916773a2c86abe1ef46"
+    },
+    {
+      "path": "runs/review32_mit2_train70/models/mit2/base/log.jsonl",
+      "sha256": "f8808317fda70a6dc396022eed36f29f38b6aa9531579648065616fceeae9147"
+    },
+    {
+      "path": "runs/review32_mit2_train70/models/mit2/base/last.pt",
+      "sha256": "2739b79a9e052808d318b621fb2d1cb9ae31b43473f4266e73fb275cd199aee1"
+    },
+    {
+      "path": "runs/review32_mit2_train70/models/mit2/base/initialization_audit.json",
+      "sha256": "332c6814c7dcefb1ed413098df85feb65344456bcf51b8fb4198dede0c0a4c98"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A117_step4_sample2.npy",
+      "sha256": "e8d51c46e9ffb517fa9d11f71a2a3eb483180e6324dc5cf546ab27f2fbbf8a8b"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A11_step1_sample4.npy",
+      "sha256": "a66d9ed229f4dc3986d9da019b3f24536333b99ba466c4050bf8a6cae29e0d38"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A11_step2_sample4.npy",
+      "sha256": "63a6265c7f5f877f9298ee733f79e8744bef5ca904d5bd60abbb70d7aa06ad23"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A125_step1_sample4.npy",
+      "sha256": "9dba403c7bd5febb79abe6dc1b3a984e42590385b03b56e17ec5bc528e1a4d2c"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A153_step3_sample3.npy",
+      "sha256": "1657a6ee32ee074227beea82bfcd7d3ff8bba8e0ec5701ae7d874657f4766b74"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A170_step4_sample3.npy",
+      "sha256": "1fb94fb29c34fadec0035d1f07599887407609696814f384efb786e75882f283"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A181_step1_sample1.npy",
+      "sha256": "1d60102ff6d231222c42dfda2b9838f468d9552898412f67cc24d18a6c3a70f9"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A186_step2_sample2.npy",
+      "sha256": "95a0e65cd3bdc0bfe2ad12cbf60f017f03deb6ff0b8c912ceb0b8156c1559e97"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A191_step4_sample3.npy",
+      "sha256": "cc057c3b9e9ff58f426622d5407542f1977212a682e9845b11b885b9246415a8"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A40_step3_sample3.npy",
+      "sha256": "41bc1fc2ab4cefcff3e81447801499c484928b14bdcca2b65731b18834a4b34d"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A42_step2_sample4.npy",
+      "sha256": "b0a093328e68dc23317dbb4a4d27c041c3a1e99161813b6a01e546391dbe94fa"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A44_step4_sample3.npy",
+      "sha256": "08e2f458d292569b23a0ce92f907ebc7ddf1d1a6598180c9f5d7d6ccd7db20a3"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A55_step2_sample1.npy",
+      "sha256": "9fb54272cc0133420b81ead9e345c472b9f88ede3da7560dcae830d59314ddec"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A59_step3_sample1.npy",
+      "sha256": "d7e4579d5b1eb64002216a5de31b1a2a68f5b819d5ceced3691c63670aed6ead"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A63_step1_sample4.npy",
+      "sha256": "2cfbe70e57b28f4b98ee73d131959a8f1b1655ef332759a8fd4f2baacdd70eb6"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A67_step1_sample1.npy",
+      "sha256": "717d8352d4675cbaacaefffb258a71aaf2c1564fe99e3a1bb2755dcef6b35889"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A71_step2_sample1.npy",
+      "sha256": "6bfc5b2c0f320e51b63457241ad0c38d5b565373c1f88d9aff81078e71eb8b71"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A72_step4_sample4.npy",
+      "sha256": "3541567594e57674b25c02537629a5bffbd405df1e1af8d7400210e28a0d8a45"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A74_step3_sample4.npy",
+      "sha256": "8a2095ed7115e83b2ab587fc9892fe7ad62fdb4e53c8f1c6a130eb44dbd129b7"
+    },
+    {
+      "path": "runs/review32_mit2_train70/valid_probs/mit2/base/A7_step1_sample4.npy",
+      "sha256": "63444cfa483878000f18f517601f0466c4d5812d695c4074283b1d27d5475bf9"
+    }
+  ],
+  "float16_storage_effect": {
+    "tta": {
+      "mean_delta_pp": 4.0014228965823406e-05,
+      "max_absolute_image_delta_pp": 0.003289089973135262,
+      "per_image_delta_pp": {
+        "A117_step4_sample2": -8.898809501500793e-05,
+        "A11_step1_sample4": 0.0,
+        "A11_step2_sample4": -0.003289089973135262,
+        "A125_step1_sample4": -0.0018627726066311467,
+        "A153_step3_sample3": 0.0022047342252085045,
+        "A170_step4_sample3": 0.0009998928676480112,
+        "A181_step1_sample1": -0.0010454125257797209,
+        "A186_step2_sample2": 0.0010558619187861495,
+        "A191_step4_sample3": 0.00040184707197354896,
+        "A40_step3_sample3": 0.00030630513201401754,
+        "A42_step2_sample4": 0.0002569641491811936,
+        "A44_step4_sample3": 0.0006004522904889953,
+        "A55_step2_sample1": -1.6387523560368322e-06,
+        "A59_step3_sample1": 0.0020880539871148684,
+        "A63_step1_sample4": 0.0,
+        "A67_step1_sample1": -0.0004009075619593183,
+        "A71_step2_sample1": 0.001829255627494586,
+        "A72_step4_sample4": 0.00040579446081157045,
+        "A74_step3_sample4": -0.0007632190922368665,
+        "A7_step1_sample4": -0.0018968485442916183
+      }
+    },
+    "tta_pp": {
+      "mean_delta_pp": 8.08262415508132e-05,
+      "max_absolute_image_delta_pp": 0.002660350583538751,
+      "per_image_delta_pp": {
+        "A117_step4_sample2": -8.799539485959684e-05,
+        "A11_step1_sample4": 0.0,
+        "A11_step2_sample4": -0.002660350583538751,
+        "A125_step1_sample4": -0.0018625557112184055,
+        "A153_step3_sample3": 0.002218063551895355,
+        "A170_step4_sample3": 0.0010026560038789434,
+        "A181_step1_sample1": -0.0010515782383979655,
+        "A186_step2_sample2": 0.0007535360481258913,
+        "A191_step4_sample3": 0.0004018760773938368,
+        "A40_step3_sample3": 0.0003053921006967997,
+        "A42_step2_sample4": 0.0002575263469806188,
+        "A44_step4_sample3": 0.0006001617104733903,
+        "A55_step2_sample1": 0.00047550836878018643,
+        "A59_step3_sample1": 0.002088021617774327,
+        "A63_step1_sample4": 0.0,
+        "A67_step1_sample1": -0.00040080965444388994,
+        "A71_step2_sample1": 0.001829255627494586,
+        "A72_step4_sample4": 0.0004057295639348091,
+        "A74_step3_sample4": -0.0007631305023347856,
+        "A7_step1_sample4": -0.0018947821016190858
+      }
+    }
+  },
+  "no_tta_scores_source": "Final trainer rows cross-checked against epoch60 log",
+  "tta_scores_source": "Final trainer float32 rows and independently recomputed stored float16 probabilities",
+  "checkpoint_selection": "fixed epoch60 last.pt",
+  "historical_project_checkpoint_used": false,
+  "test_images_or_labels_used": false,
+  "previously_viewed_validation": true,
+  "independent_validation": false,
+  "automatic_model_selection": false,
+  "automatic_submission_change": false
+}

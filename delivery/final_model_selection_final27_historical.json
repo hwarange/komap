@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "selected_at": "2026-10-10T20:25:25.675093+09:00",
+  "selection_authority": "User requested highest observed same-full90 OOF mIoU; four-GPU remaining-fold validation authorized",
+  "status": "complete_selected_and_all_deliverables_verified",
+  "selected_recipe": "interface_cap6",
+  "model_name": "MiT4 crop1536 with width675 cap6 plus UNet++3 after120+6 separate-stage epochs",
+  "experiments": [
+    {
+      "family": "mit4",
+      "architecture": "Unet",
+      "encoder": "mit_b2",
+      "epochs": 60,
+      "crop": 1536,
+      "tile": 1536,
+      "width": 2560,
+      "scale_multiplier": 2.0,
+      "weight": 0.5,
+      "inference_policy": "original width675 only extra_scale0.75; otherwise original"
+    },
+    {
+      "family": "unet3",
+      "architecture": "UnetPlusPlus",
+      "encoder": "resnet34",
+      "initial_training_epochs": 120,
+      "continuation_epochs": 6,
+      "optimizer_state_resumed": false,
+      "seed": 0,
+      "focus_probability": 0.35,
+      "crop": 1536,
+      "tile": 1536,
+      "width": 3840,
+      "scale_multiplier": 1.0,
+      "weight": 0.5
+    }
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "checkpoint": "last.pt",
+  "selected_checkpoints": [
+    {
+      "id": "mit4_fold0",
+      "family": "mit4",
+      "fold": 0,
+      "checkpoint": {
+        "path": "runs/cv/x4_mit_c1536_bw_r90/fold0/last.pt",
+        "size_bytes": 110014715,
+        "sha256": "20b06319d664200e9ae33b136e92ee251258645bb7f25379f9dd79c44b91dc52"
+      },
+      "checkpoint_epoch": 60,
+      "initial_training_epochs": 0
+    },
+    {
+      "id": "mit4_fold1",
+      "family": "mit4",
+      "fold": 1,
+      "checkpoint": {
+        "path": "runs/cv/x4_mit_c1536_bw_r90/fold1/last.pt",
+        "size_bytes": 110014715,
+        "sha256": "6187591cab01848d18d4be59bcebb94cd0c9429990ba39235da12c9064dd5c18"
+      },
+      "checkpoint_epoch": 60,
+      "initial_training_epochs": 0
+    },
+    {
+      "id": "mit4_fold2",
+      "family": "mit4",
+      "fold": 2,
+      "checkpoint": {
+        "path": "runs/cv/x4_mit_c1536_bw_r90/fold2/last.pt",
+        "size_bytes": 110014715,
+        "sha256": "44f04e512d631478a81faeb24f72c3057508156de755126bfafdb33a438b79c8"
+      },
+      "checkpoint_epoch": 60,
+      "initial_training_epochs": 0
+    },
+    {
+      "id": "mit4_fold3",
+      "family": "mit4",
+      "fold": 3,
+      "checkpoint": {
+        "path": "runs/cv/x4_mit_c1536_bw_r90/fold3/last.pt",
+        "size_bytes": 110014715,
+        "sha256": "5d153ea92a7594010984686e3a6d051c7637c3afc7512b01ff90b314b3cb4df7"
+      },
+      "checkpoint_epoch": 60,
+      "initial_training_epochs": 0
+    },
+    {
+      "id": "mit4_fold4",
+      "family": "mit4",
+      "fold": 4,
+      "checkpoint": {
+        "path": "runs/cv/x4_mit_c1536_bw_r90/fold4/last.pt",
+        "size_bytes": 110014715,
+        "sha256": "1a20df8ae7e0147ae113cbdbdcb74a6a09a95d00e4869bd71419b00f5d791e05"
+      },
+      "checkpoint_epoch": 60,
+      "initial_training_epochs": 0
+    },
+    {
+      "id": "unet3_fold0",
+      "family": "unet3",
+      "fold": 0,
+      "checkpoint": {
+        "path": "runs/review26_final_strengthening/finetune_plan/interface/last.pt",
+        "size_bytes": 104482199,
+        "sha256": "7fd4de6f04026b2e4f6bcefdcd608a5daf7fafb7c45d7d03ceff8b04957daebd"
+      },
+      "checkpoint_epoch": 6,
+      "initial_training_epochs": 120
+    },
+    {
+      "id": "unet3_fold1",
+      "family": "unet3",
+      "fold": 1,
+      "checkpoint": {
+        "path": "runs/review27_finetune_full/interface/fold1/last.pt",
+        "size_bytes": 104482135,
+        "sha256": "0be30af79df8d1eed7271f8b273b6225ed14bbf32f1836dc689f27d52b3ac396"
+      },
+      "checkpoint_epoch": 6,
+      "initial_training_epochs": 120
+    },
+    {
+      "id": "unet3_fold2",
+      "family": "unet3",
+      "fold": 2,
+      "checkpoint": {
+        "path": "runs/review27_finetune_full/interface/fold2/last.pt",
+        "size_bytes": 104482135,
+        "sha256": "9ec6622597c6406f7b79b255bdcc899cd59218e967016134368c3948e736aaef"
+      },
+      "checkpoint_epoch": 6,
+      "initial_training_epochs": 120
+    },
+    {
+      "id": "unet3_fold3",
+      "family": "unet3",
+      "fold": 3,
+      "checkpoint": {
+        "path": "runs/review27_finetune_full/interface/fold3/last.pt",
+        "size_bytes": 104482135,
+        "sha256": "cd0759ff1ddc76c06e20b199960b45d488e5e9e02333c980892ac26653f8d0bb"
+      },
+      "checkpoint_epoch": 6,
+      "initial_training_epochs": 120
+    },
+    {
+      "id": "unet3_fold4",
+      "family": "unet3",
+      "fold": 4,
+      "checkpoint": {
+        "path": "runs/review27_finetune_full/interface/fold4/last.pt",
+        "size_bytes": 104482135,
+        "sha256": "1bd6e9dda85b5ccf170de81c668c776fbfff21b547315789d7cdc1c698eb030a"
+      },
+      "checkpoint_epoch": 6,
+      "initial_training_epochs": 120
+    }
+  ],
+  "ensemble": "Five-fold probability mean within eachfamily, then50:50 soft voting",
+  "tta": "8 dihedral transforms",
+  "postprocessing": "unchanged src/infer.py postprocess defaults",
+  "validation": {
+    "scope": "90 reused out-of-fold images; not independenttest",
+    "source": "runs/review27_finetune_full/results.json",
+    "source_sha256": "6ebff39397087d8f3c5cc6e470361a48a06b348b83262f2d1a0a98e31c1f59bd",
+    "mIoU": 81.01167156392448,
+    "scores": {
+      "interface_cap6": 81.01167156392448,
+      "baseline_cap6": 80.95664213120858,
+      "interface_original": 80.95148746234301,
+      "baseline_original": 80.900653378248
+    },
+    "delta_vs_original_pp": 0.11101818567646894,
+    "group_bootstrap_ci95_pp": [
+      -0.07838910243233572,
+      0.36577869511483657
+    ],
+    "confidence_interval_is_adoption_gate": false,
+    "remaining72_delta_pp": 0.11799780872733409,
+    "class_iou_percent": {
+      "Al": 93.72509054595925,
+      "Al3Ni": 80.06955448215841,
+      "Primary Si": 89.77038671292257,
+      "Eutectic Si": 61.03575603115915
+    },
+    "per_fold": {
+      "0": 80.34187240708856,
+      "1": 83.14823369028278,
+      "2": 81.1654324167268,
+      "3": 79.50728114183022,
+      "4": 80.89553816369397
+    },
+    "improved_images": 53,
+    "worsened_images": 37
+  },
+  "submission_directory": "submissions/final27_selected",
+  "reproduction_directory": "delivery/final27_repro",
+  "manifest_sha256": "dd497b49a765e790e90deac8c60371507df369cb85558e6961ecc6ad0e334da0",
+  "previous_artifacts_preserved": [
+    "submissions/sub6",
+    "submissions/final_pair_mit4_unet3",
+    "delivery/final_strengthened_code_bundle.zip"
+  ],
+  "previous_selection_snapshot": "runs/review27_finetune_full/previous_selection.json",
+  "official_submission_performed": false,
+  "further_training_scheduled": false,
+  "new_training_completed": true,
+  "training": {
+    "new_folds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "reused_fold0": true,
+    "epochs_per_fold": 6,
+    "gpu_count": 4,
+    "started_at": "2026-10-10T20:06:55+09:00",
+    "evaluation_completed_at": "2026-10-10T20:18:15+09:00"
+  },
+  "test_inference_started": {
+    "pid": 831880,
+    "started_utc": "2026-10-10T11:19:05.987672+00:00",
+    "command": [
+      "/home/j-j15a106/komap/.venv/bin/python",
+      "delivery/final27_repro/run_submission.py",
+      "--run",
+      "--gpus",
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "manifest_sha256": "dd497b49a765e790e90deac8c60371507df369cb85558e6961ecc6ad0e334da0"
+  },
+  "test_inference_finished_utc": "2026-10-10T11:23:30.163996+00:00",
+  "mask_zip": "submissions/final27_selected/final27_masks.zip",
+  "mask_zip_sha256": "646601cbc242aa5583f889a30c47a65d7b1ca82775bb7fcb7c398ecdfd2b4b86",
+  "mask_count": 10,
+  "local_validation": "delivery/final27_repro/local_validation.json",
+  "final_review": "runs/review27_finetune_full/final_review.json",
+  "phase_application": "reports/phase_application_final27/phase_area_summary.json",
+  "report_status": "verified",
+  "code_bundle_status": "verified",
+  "code_bundle": "delivery/final27_code_bundle.zip",
+  "code_bundle_sha256": "cfc9d84a9add385081a73ad8aa6c000c1ae895bf845c8ad9b5968898885a2f3b",
+  "report": "reports/모델링결과서_김형수없는김형수_최종검증.docx",
+  "report_sha256": "5203a6e239314cb71ecad5303ca0ac19b201425cb402eed532e47854327564e8",
+  "report_pages": 8,
+  "report_visually_verified": true,
+  "completed_at": "2026-10-10T20:31:13.393929+09:00"
+}

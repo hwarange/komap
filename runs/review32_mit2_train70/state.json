@@ -1,30 +1,62 @@
 {
-  "time": "2026-10-11T04:56:08+09:00",
+  "time": "2026-10-11T05:36:39+09:00",
   "controller_pid": 850191,
   "gpu_index": 0,
   "gpu_uuid": "GPU-76da22e2-40da-ebc0-098a-fa92ba030976",
   "job": "mit2",
-  "stage": "training",
-  "pid": 850194,
+  "stage": "complete_and_stop",
+  "pid": null,
   "command": [
     "/home/j-j15a106/komap/.venv/bin/python",
-    "src/train_scale32.py",
-    "--job",
-    "mit2"
+    "scripts/review_scale32.py",
+    "--compare"
   ],
-  "stage_started": "2026-10-11T02:05:22+09:00",
-  "completed_epochs": 48,
+  "stage_started": "2026-10-11T05:36:24+09:00",
+  "completed_epochs": 60,
   "total_epochs": 60,
   "latest_epoch": {
-    "epoch": 48,
-    "loss": 0.3913,
-    "lr": 2.9593254310355478e-05,
-    "train_sec": 205.9,
+    "epoch": 60,
+    "loss": 0.3879,
+    "lr": 0.0,
+    "train_sec": 205.8,
     "gpu_mem_gb": 45.38,
     "microbatches": 280,
     "optimizer_updates": 140,
     "accum_steps": 2,
-    "effective_batch": 4
+    "effective_batch": 4,
+    "val": {
+      "mIoU": 79.65,
+      "Al": 94.22,
+      "Al3Ni": 75.81,
+      "Primary Si": 90.4,
+      "Eutectic Si": 59.75,
+      "low_contrast": 83.68,
+      "high_contrast": 78.3,
+      "step1": 79.26,
+      "step2": 74.38,
+      "step3": 78.43,
+      "step4": 86.35
+    },
+    "val_pp": {
+      "mIoU": 79.67,
+      "Al": 94.22,
+      "Al3Ni": 75.8,
+      "Primary Si": 90.45,
+      "Eutectic Si": 59.83,
+      "low_contrast": 83.72,
+      "high_contrast": 78.32,
+      "step1": 79.31,
+      "step2": 74.37,
+      "step3": 78.47,
+      "step4": 86.37
+    },
+    "val_sec": 12.1
   },
-  "elapsed_minutes": 170.76660766030352
+  "elapsed_minutes": 211.2819989255319,
+  "training_receipt": {
+    "completed": "2026-10-11T05:36:08+09:00",
+    "epochs": 60,
+    "checkpoint_sha256": "2739b79a9e052808d318b621fb2d1cb9ae31b43473f4266e73fb275cd199aee1"
+  },
+  "automatic_adoption": false
 }

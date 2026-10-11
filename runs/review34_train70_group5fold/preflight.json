@@ -1,0 +1,50 @@
+{
+  "time": "2026-10-11T05:53:01+09:00",
+  "passed": true,
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f",
+  "checked_families": [
+    "mit2",
+    "mit4",
+    "unet3",
+    "context4"
+  ],
+  "checks": [
+    {
+      "family": "mit2",
+      "passed": true,
+      "training_images": 56,
+      "validation_images": 14,
+      "initial_sha256": "ea1bced04b050efa77c0d1a0a0caf9b6e564e1aa4db4ba1de1aed894283267b3",
+      "audit_sha256": "c5f9fd03e10790a17a34792f3745351caedabd246ebf3100282e3b9bf9aea980"
+    },
+    {
+      "family": "mit4",
+      "passed": true,
+      "training_images": 56,
+      "validation_images": 14,
+      "initial_sha256": "ea1bced04b050efa77c0d1a0a0caf9b6e564e1aa4db4ba1de1aed894283267b3",
+      "audit_sha256": "4f2e16337af3a8c840caf60f3df03678791fdc49a19ce41f7c84b1947ce6c0c6"
+    },
+    {
+      "family": "unet3",
+      "passed": true,
+      "training_images": 56,
+      "validation_images": 14,
+      "initial_sha256": "3b9fbb7ae792242dc3f8ee269f837162b43ac7786398643098fdf25679644597",
+      "audit_sha256": "5984d126208215eaf20c5d36f688bbdbfefeeacd5b16077b2b72fd01de6d05a1"
+    },
+    {
+      "family": "context4",
+      "passed": true,
+      "training_images": 56,
+      "validation_images": 14,
+      "initial_sha256": "b5578d8e6b9b8161bd1ec3c74992bad5e2dc00cf2d5f762cd1c4e5ca2e292ba6",
+      "audit_sha256": "b0c58b93bb88bb0086bdbc5adfa6df03bb4887db367d87c57ae2055ce30f0d3c"
+    }
+  ],
+  "all20_job_protocol_and_group_splits_checked": true,
+  "cpu_only": true,
+  "training_outputs_created": false,
+  "code_compile": true,
+  "independent_protocol_review_passed": true
+}

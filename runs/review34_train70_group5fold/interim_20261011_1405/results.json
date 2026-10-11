@@ -1,0 +1,172 @@
+{
+  "completed": "2026-10-11T14:01:54+09:00",
+  "plan_sha256": "a6bccdbeae5d55da275f47e182d36cfef773420d7b0d5df5b65afcdd9c71c4fe",
+  "partial": true,
+  "fold2_images": 14,
+  "fold2_scores": {
+    "mit2": {
+      "images": 14,
+      "mIoU": 79.12762965893897,
+      "class_IoU": {
+        "Al": 92.41348940159114,
+        "Al3Ni": 83.51107204208714,
+        "Primary Si": 83.22814112520777,
+        "Eutectic Si": 57.357816066869894
+      },
+      "both_absent_one_mIoU": 79.12762965893897,
+      "both_absent_class_image_pairs": 0
+    },
+    "unet3": {
+      "images": 14,
+      "mIoU": 77.44769183943787,
+      "class_IoU": {
+        "Al": 92.2626368508327,
+        "Al3Ni": 81.66539605752376,
+        "Primary Si": 81.19882245986796,
+        "Eutectic Si": 54.66391198952707
+      },
+      "both_absent_one_mIoU": 77.44769183943788,
+      "both_absent_class_image_pairs": 0
+    },
+    "mit4": {
+      "images": 14,
+      "mIoU": 79.03904254258397,
+      "class_IoU": {
+        "Al": 93.020180327791,
+        "Al3Ni": 84.62806829560502,
+        "Primary Si": 81.87514035806697,
+        "Eutectic Si": 56.63278118887284
+      },
+      "both_absent_one_mIoU": 79.03904254258396,
+      "both_absent_class_image_pairs": 0
+    },
+    "mit2_plus_unet3": {
+      "images": 14,
+      "mIoU": 79.32838138626553,
+      "class_IoU": {
+        "Al": 92.5299985760029,
+        "Al3Ni": 83.28999124241679,
+        "Primary Si": 83.52883757736602,
+        "Eutectic Si": 57.96469814927644
+      },
+      "both_absent_one_mIoU": 79.32838138626553,
+      "both_absent_class_image_pairs": 0
+    },
+    "mit4_plus_unet3": {
+      "images": 14,
+      "mIoU": 79.0671123373799,
+      "class_IoU": {
+        "Al": 92.92656073353261,
+        "Al3Ni": 84.15127656680338,
+        "Primary Si": 82.25169081303552,
+        "Eutectic Si": 56.93892123614811
+      },
+      "both_absent_one_mIoU": 79.0671123373799,
+      "both_absent_class_image_pairs": 0
+    }
+  },
+  "combined_images": 42,
+  "combined_scores": {
+    "mit2_plus_unet3": {
+      "images": 42,
+      "mIoU": 79.64190964098786,
+      "class_IoU": {
+        "Al": 93.00708030014917,
+        "Al3Ni": 79.0478705370596,
+        "Primary Si": 87.33398363704902,
+        "Eutectic Si": 59.53614196110075
+      },
+      "both_absent_one_mIoU": 79.80666206338101,
+      "both_absent_class_image_pairs": 1
+    },
+    "mit4_plus_unet3": {
+      "images": 42,
+      "mIoU": 79.42073728357238,
+      "class_IoU": {
+        "Al": 93.12807442364355,
+        "Al3Ni": 79.1136290320833,
+        "Primary Si": 86.98317940080015,
+        "Eutectic Si": 58.87172364587142
+      },
+      "both_absent_one_mIoU": 79.60163270059485,
+      "both_absent_class_image_pairs": 1
+    }
+  },
+  "matched42_comparison": {
+    "scope": "Matched42 held-out images fromfolds0/1/2",
+    "direction": "MiT2 pair minus MiT4 pair",
+    "mean_delta_pp": 0.22117235741547595,
+    "improved": 25,
+    "worsened": 17,
+    "unchanged": 0,
+    "per_image_delta_pp": {
+      "A101_step3_sample3": -0.08969971377553732,
+      "A108_step2_sample2": -0.025261497074979822,
+      "A111_step1_sample2": -0.22260456174837406,
+      "A111_step3_sample4": -0.8677383658644122,
+      "A130_step1_sample1": 0.06939291274590254,
+      "A138_step4_sample3": 0.5893757647837838,
+      "A146_step2_sample1": 0.5886140759211345,
+      "A150_step4_sample1": 2.0861713161725803,
+      "A152_step2_sample1": -0.17183747102791358,
+      "A153_step1_sample4": 0.3468733712225447,
+      "A154_step2_sample3": -0.03830128213060391,
+      "A156_step4_sample1": 0.19668390386405887,
+      "A156_step4_sample2": -0.03644925905260665,
+      "A159_step4_sample4": -0.2358798180340571,
+      "A15_step1_sample1": 0.12035297429694447,
+      "A164_step1_sample2": -0.9559582679724454,
+      "A164_step4_sample1": -0.07561182835797986,
+      "A16_step4_sample4": 0.0661837146755162,
+      "A182_step4_sample3": 2.385044944711623,
+      "A18_step2_sample1": 1.00206289892395,
+      "A191_step3_sample1": 0.24298374642423015,
+      "A191_step4_sample1": -0.19186753157879322,
+      "A200_step4_sample3": 0.15913897393864396,
+      "A21_step2_sample4": 0.2723500921194999,
+      "A224_step1_sample2": 1.485775714992399,
+      "A224_step4_sample2": 0.5217540576622492,
+      "A2_step4_sample1": -0.7097100263725231,
+      "A40_step3_sample4": 0.09144615122764765,
+      "A49_step2_sample2": -0.45309170833424117,
+      "A55_step3_sample4": 0.06610186760508396,
+      "A57_step1_sample3": 2.712023097725258,
+      "A61_step2_sample2": 0.08174613092041261,
+      "A64_step2_sample3": 0.5013833562245829,
+      "A66_step3_sample2": 0.022770048011411248,
+      "A78_step4_sample1": -1.2095641648809274,
+      "A7_step1_sample2": -1.3002342043023973,
+      "A7_step4_sample3": 1.4199042191166633,
+      "A89_step1_sample2": 0.20560456137274086,
+      "A8_step2_sample3": 0.8450051852599505,
+      "A8_step3_sample3": 1.4685091474740952,
+      "A96_step1_sample1": -1.3671596136792585,
+      "A98_step2_sample4": -0.3070439017558657
+    },
+    "class_delta_pp": {
+      "Al": -0.1209941234943841,
+      "Al3Ni": -0.0657584950237009,
+      "Primary Si": 0.35080423624886237,
+      "Eutectic Si": 0.6644183152293337
+    }
+  },
+  "context4_fold2": "pending_not_evaluated",
+  "pending_folds": [
+    3,
+    4
+  ],
+  "remaining_context_fold2": true,
+  "source_singles_exactly_reproduced": true,
+  "cpu_only": true,
+  "new_training": false,
+  "new_inference": false,
+  "official_validation_images_used": false,
+  "test_images_or_labels_used": false,
+  "automatic_model_selection": false,
+  "automatic_submission_change": false,
+  "notes": [
+    "Only completedfold2 jobs are added; each pair uses its own held-out-fold models.",
+    "42-image scores must not be ranked against the other28-image partial results.",
+    "This is partial grouped CV within train70, not the final70OOF result or an independent test."
+  ]
+}

@@ -1,0 +1,3 @@
+# Exact frozen server bytes for historical SHA verification.
+*.py -text whitespace=cr-at-eol
+.gitattributes text eol=lf

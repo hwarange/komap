@@ -1,0 +1,7 @@
+{
+  "time": "2026-10-11T08:12:22+09:00",
+  "job": "unet3_fold0",
+  "plan_sha256": "1503273d9bbfdb9fc9125b190344d293f0b239a261d23cc96e8ca038f9092d7f",
+  "results_sha256": "771f62e98671ead0c38aaada3201f984f629f31ae4c1f118e395f4e26b1044a0",
+  "rows_sha256": "1bcefa4e7a89cf8396f63cfb3b1f28e345ecb1d0211fabe503d60592115a21e5"
+}

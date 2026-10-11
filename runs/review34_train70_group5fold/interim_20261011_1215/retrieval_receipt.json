@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "name": "plan.json",
+      "sha256": "88379a6ff016b4ab1470888d2eb47ed68dcb5154c3ff65dd83b5ce29c25efb23",
+      "bytes": 51119
+    },
+    {
+      "name": "results.json",
+      "sha256": "382fd74304bfa3b4b675c563a48184e1b9cc005749499cb49d3800a444fa8ac6",
+      "bytes": 23949
+    },
+    {
+      "name": "per_image_rows.json",
+      "sha256": "c68423003e6dae99748015eca020876cc9c75ec61270b4a25918a1921e6f2568",
+      "bytes": 48615
+    },
+    {
+      "name": "all.done",
+      "sha256": "ad82fd59b31ccb03942f35e08b58eb5a5e8052c3bfc1e3b94c3dc08c2b629cd3",
+      "bytes": 416
+    }
+  ],
+  "total_bytes": 124099,
+  "all_sha256_verified": true,
+  "partial": true,
+  "completed_folds": [
+    0,
+    1
+  ],
+  "images": 28
+}

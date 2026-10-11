@@ -1,0 +1,28 @@
+{
+  "checked_python_sources": 39,
+  "exact_match_count": 37,
+  "differences": [
+    {
+      "source_path": "src/si_classifier.py",
+      "snapshot_path": "runs/review34_train70_group5fold/server_source_snapshot/src/si_classifier.py",
+      "server_sha256": "1e3f9fc65ac1d3301ff511a3d29f76d9fde99e08c4860b75f0a6c6a5f3c24a6b",
+      "git_sha256": "5fade110cbd80de8476e5574a231b4b7c3be395ed9a31f115440d8b435d22dc3",
+      "equal_after_lf_normalization": true
+    },
+    {
+      "source_path": "src/review_resolution16_seed0_final.py",
+      "snapshot_path": "runs/review34_train70_group5fold/server_source_snapshot/src/review_resolution16_seed0_final.py",
+      "server_sha256": "44efc7fe3da3749f6ba1d76ed86d61f42ae12c5a16c75f94ac4049b9242d8cfe",
+      "git_sha256": "73a17455b3efbd6d84aa3d34d48764d21bd67ee7119501fcc5faad6850e60f11",
+      "equal_after_lf_normalization": false
+    }
+  ],
+  "notes": [
+    "Both source paths were unchanged in this commit; server files match the frozen run plan.",
+    "Snapshots preserve exact server bytes. Running training sources and plans were not modified.",
+    "si_classifier.py differs only by CRLF versus LF line endings.",
+    "review_resolution16_seed0_final.py differs in one historical report sentence describing checkpoint epochs; training logic is identical. The newer Git report sentence is retained at its original path.",
+    "server_source_snapshot is archival evidence, not a replacement for active source files.",
+    "Neither differing legacy helper is imported or executed by group34; both are pinned only because prepare fingerprints all src/*.py files."
+  ]
+}
