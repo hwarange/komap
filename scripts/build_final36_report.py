@@ -88,8 +88,9 @@ class Form:
             for x in pp.findall('w:' + name, NS):
                 pp.remove(x)
         before = 140 if role == 'heading' else (100 if role == 'sub' else 0)
-        pp.append(node('spacing', before=before, after=AFTER if role != 'caption' else 40,
-                       line=300 if self.cover_mode else LINE, lineRule='auto'))
+        after = {'caption': 40, 'ref': 30}.get(role, AFTER)
+        pp.append(node('spacing', before=before, after=after,
+                       line=300 if self.cover_mode else (240 if role == 'ref' else LINE), lineRule='auto'))
         if not self.cover_mode:
             pp.append(node('snapToGrid', val=0))
         pp.append(node('keepNext', val=1 if (keep or role in ['heading', 'sub']) else 0))
@@ -99,7 +100,7 @@ class Form:
         if bold if bold is not None else role in ['heading', 'sub']:
             pr.append(node('b'))
         pr.append(node('color', val='000000'))
-        pr.append(node('sz', val=size or (24 if role == 'heading' else (20 if role == 'caption' else 22))))
+        pr.append(node('sz', val=size or {'heading': 24, 'caption': 20, 'ref': 18}.get(role, 22)))
         r.append(pr); t = node('t'); t.text = text
         t.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
         r.append(t); p.append(r)

@@ -1,6 +1,6 @@
 {
   "output": "C:\\Users\\SSAFY\\Desktop\\Komap\\reports\\모델링결과서_김형수없는김형수_최종제출v2.docx",
-  "sha256": "9bc659bcaac61807a759eca35ca794bf50e94104215f22d78b86ad8f7d33c0c0",
+  "sha256": "dbf6745ef61a9ffc18f923a2223a5e45972c03f77d7ab9a74073b877dee1ecf8",
   "reference_sha256": "a9f66f14f8546b37d6a3a4c2c7406c328d95bb6f7b56b501abce9e4bfba0b534",
   "preserve_only_parts_match": true,
   "preserve_only_parts": [
@@ -48,6 +48,5 @@
   ],
   "tables": 7,
   "visual_qa_complete": true,
-  "page_count": 9,
-  "layout_qa": "reports/final36_document_work/layout_qa.json"
+  "page_count": 9
 }

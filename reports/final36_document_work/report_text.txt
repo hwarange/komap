@@ -12,7 +12,7 @@
 
 주조 알루미늄 합금의 탄성률은 열처리로 거의 바뀌지 않고 Si, Al3Ni 같은 단단한 상의 부피 분율로 결정된다. Al–Si 합금에 Ni를 더해 강화상을 늘린 고탄성 합금이 개발되고 있으며[4], 이런 합금의 설계에서는 조성·공정 조건이 미세조직에 미치는 영향을 빠르게 확인하는 것이 중요하다. 광학현미경 사진에서 상 분율을 사람이 재는 점계수법(ASTM E562)은 시간이 많이 들고, ISO 9042:2024는 검증된 컴퓨터 알고리즘으로 점계수를 대체할 수 있다고 명시한다[5]. 자동 분할은 이 측정을 대체하는 도구다.
 
-네 상은 생성 과정과 모양이 다르다. α-Al 기지는 가장 밝고 넓다. Al3Ni는 공정 반응으로 생긴 막대·판 모양이다. 초정 Si는 액체에서 가장 먼저 정출해 크고 각진 다면체를 이루고, 공정 Si는 응고 마지막에 수 µm 이하 두께의 얇은 판으로 생긴다. 두 Si 상은 같은 결정이라 밝기로 구분되지 않고 크기·형태·주변 조직으로만 구분된다. 공정 Si와 Al3Ni는 같은 공정 반응에서 서로 얽혀 자라므로 2차원 단면에서 두 상의 경계는 본질적으로 애매하다. 이 두 가지가 과제의 핵심 난제다.
+네 상은 생성 과정과 모양이 다르다. α-Al 기지는 가장 밝고 넓다. Al3Ni는 공정 반응으로 생긴 막대·판 모양이다. 초정 Si는 액체에서 가장 먼저 정출해 크고 각진 다면체를 이루고, 공정 Si는 응고 마지막에 수 µm 이하 두께의 얇은 판으로 생긴다. 두 Si 상은 같은 결정이라 밝기로 구분되지 않고 크기·형태·주변 조직으로만 구분된다. 공정 Si와 Al3Ni는 같은 공정 반응에서 함께 자라 불규칙한 판으로 얽히고[7], 3차원에서는 하나로 맞물린 망을 이루므로[8] 2차원 단면에서 두 상의 경계는 본질적으로 애매하다. 이 두 가지가 과제의 핵심 난제다.
 
 1-3. 분석 방법 및 분석 내용
 
@@ -202,7 +202,7 @@ MiT 2배 조합은 단독 모델(MiT2 80.33%, MiT4 80.24%, Hybrid 80.14%, UNet++
 
 오류의 위치. 전체 오분류 픽셀은 6.0%이고 그중 75.4%가 정답 경계 1px 이내에 있다. 경계 1px 띠를 빼고 채점하면 mIoU는 80.6%에서 88.3%로, 공정 Si는 61.9%에서 70.9%로 오른다. 남은 오차의 대부분은 어느 상인지가 아니라 경계를 어디에 긋는지의 문제다. 폭 w px인 판의 경계가 양쪽으로 1px씩 어긋나면 IoU는 w/(w+2)가 되어, 두께 2~4px인 공정 Si는 0.50~0.67에 그친다. 공정 Si 판의 두께가 광학현미경 분해능(약 0.6 µm)의 몇 배에 불과해 경계 1px의 흐림은 촬영 원리상 피할 수 없고, 공정 Si IoU 60%대는 라벨 자체의 경계 불확실성에 가까운 수준이다.
 
-공정 Si의 상대. 공정 Si 오류 픽셀의 58%는 Al3Ni와, 24%는 Al과, 17%는 초정 Si와 바뀐 것이다. Al과의 오류는 96%가 경계 띠 위에 있어 순수한 두께 문제이고, Al3Ni와의 오류는 73%가 경계 띠에 있지만 나머지는 가는 조각 단위의 혼동이다. 두 상이 같은 공정 반응에서 얽혀 자라고 둘 다 Al보다 어두워, 1~2px 두께의 어두운 Si 판이 주변 밝은 Al과 섞여 Al3Ni와 비슷한 회색으로 찍히기 때문이다. 해상도를 높인 입력이 효과적인 이유이기도 하다. 초정 Si와의 오류는 경계 밖 비중이 커 조각 단위 판단의 문제이며 후속 과제로 남긴다.
+공정 Si의 상대. 공정 Si 오류 픽셀의 58%는 Al3Ni와, 24%는 Al과, 17%는 초정 Si와 바뀐 것이다. Al과의 오류는 96%가 경계 띠 위에 있어 순수한 두께 문제이고, Al3Ni와의 오류는 73%가 경계 띠에 있지만 나머지는 가는 조각 단위의 혼동이다. 두 상이 같은 공정 반응에서 얽혀 자라고[7,8] 둘 다 Al보다 어두워, 1~2px 두께의 어두운 Si 판이 주변 밝은 Al과 섞여 Al3Ni와 비슷한 회색으로 찍히기 때문이다. 해상도를 높인 입력이 효과적인 이유이기도 하다. 같은 합금계의 단층촬영 분할 연구도 Si와 금속간화합물의 경계 픽셀에 가중한 손실로 정확도를 올려[9], 이 경계가 핵심 난제라는 점은 선행 연구와 일치한다. 초정 Si와의 오류는 경계 밖 비중이 커 조각 단위 판단의 문제이며 후속 과제로 남긴다.
 
 촬영 조건별 성능. 675px 사진 9장은 평균 78.7%, 그 외 11장은 82.2%로 원본 해상도의 영향이 가장 크다. 저대비 사진 5장은 84.3%로 나머지 15장(79.4%)보다 높아, 사진별 밝기 정규화가 저대비 스타일을 충분히 흡수했음을 보여준다.
 
@@ -239,3 +239,9 @@ validation 20장은 모델·설정 선택에 사용한 자료이므로 완전히
 [5] ISO 9042:2024. Steels — Manual point counting method for statistically estimating the volume fraction of a constituent with a point grid. ASTM E562, Standard Test Method for Determining Volume Fraction by Systematic Manual Point Count.
 
 [6] Hashin Z, Shtrikman S. A variational approach to the theory of the elastic behaviour of multiphase materials. J. Mech. Phys. Solids 11 (1963) 127–140.
+
+[7] Böyük U 외. Microstructural characterization of unidirectional solidified eutectic Al–Si–Ni alloy. Materials Characterization 62 (2011) 844–851.
+
+[8] Asghar Z, Requena G, Boller E. Three-dimensional rigid multiphase networks providing high-temperature strength to cast AlSi10Cu5Ni1-2 piston alloys. Acta Materialia 59 (2011).
+
+[9] Strohmann T 외. Semantic segmentation of synchrotron tomography of multiphase Al–Si alloys using a convolutional neural network with a pixel-wise weighted loss function. Scientific Reports 9 (2019).
