@@ -1,0 +1,16 @@
+== train70_oof ==
+pair                80.778
+pair_al3ni_x1.1     80.721  vs pair -0.057  [-0.111, -0.013]  up 24 / down 46
+pair_al3ni_x1.15    80.688  vs pair -0.090  [-0.164, -0.028]  up 21 / down 49
+pair_al3ni_x1.3     80.583  vs pair -0.196  [-0.318, -0.088]  up 19 / down 51
+triple_ctx          80.902  vs pair +0.124  [-0.027, +0.283]  up 46 / down 24
+triple_mit4         80.864  vs pair +0.085  [-0.004, +0.182]  up 37 / down 33
+quad                80.851  vs pair +0.073  [-0.119, +0.261]  up 39 / down 31
+== validation20 ==
+pair                80.621
+pair_al3ni_x1.1     80.735  vs pair +0.115  [-0.039, +0.321]  up 12 / down 8
+pair_al3ni_x1.15    80.749  vs pair +0.128  [-0.070, +0.380]  up 12 / down 8
+pair_al3ni_x1.3     80.717  vs pair +0.096  [-0.194, +0.415]  up 10 / down 10
+triple_ctx          80.662  vs pair +0.041  [-0.292, +0.441]  up 12 / down 8
+triple_mit4         80.470  vs pair -0.150  [-0.746, +0.375]  up 12 / down 8
+quad                80.636  vs pair +0.015  [-0.553, +0.769]  up 12 / down 8
