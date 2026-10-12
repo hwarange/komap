@@ -58,3 +58,6 @@ reports/final35_document_work/render*.ps1
 
 # v2 보고서 렌더 검수 PNG는 로컬에만 둔다
 reports/final36_document_work/render_final/
+
+# 서버 백업 사본 (확률·가중치, 로컬 전용)
+runs/server_backup/
