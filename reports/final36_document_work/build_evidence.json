@@ -1,0 +1,53 @@
+{
+  "output": "C:\\Users\\SSAFY\\Desktop\\Komap\\reports\\모델링결과서_김형수없는김형수_최종제출v2.docx",
+  "sha256": "9bc659bcaac61807a759eca35ca794bf50e94104215f22d78b86ad8f7d33c0c0",
+  "reference_sha256": "a9f66f14f8546b37d6a3a4c2c7406c328d95bb6f7b56b501abce9e4bfba0b534",
+  "preserve_only_parts_match": true,
+  "preserve_only_parts": [
+    "_rels/.rels",
+    "word/footnotes.xml",
+    "word/endnotes.xml",
+    "word/header1.xml",
+    "word/theme/theme1.xml",
+    "word/numbering.xml",
+    "word/styles.xml",
+    "word/webSettings.xml",
+    "word/fontTable.xml",
+    "docProps/core.xml",
+    "docProps/app.xml"
+  ],
+  "section_unchanged": true,
+  "official_validation20_mIoU": 80.62075310543737,
+  "train70_internal_oof_mIoU": 80.77829756479382,
+  "images": [
+    {
+      "path": "reports/final36_evidence/report36_eda.png",
+      "sha256": "14ae4507102a0a0bd51daa230fe7b2ee63bf0d0f695ce1f8d18eb9c679359f31",
+      "caption": "train 70장 EDA. A 상별 면적과 경계 인접 비율, B 가는 상의 두께(폭별 중앙값), C 사진별 밝기 범위, D 정답 마스크를 축소했다 되돌렸을 때의 성능 상한"
+    },
+    {
+      "path": "reports/final36_evidence/report36_pipeline.png",
+      "sha256": "1b96d33fa48d745d83e41103be34b204f99cf6e12aae2b204998677f38064fa6",
+      "caption": "전체 처리 흐름. 두 모델은 같은 정규화 입력을 서로 다른 배율로 받아 타일 예측하고, 원본 크기 확률을 50:50으로 평균한 뒤 초정 Si 후처리를 거친다"
+    },
+    {
+      "path": "reports/final35_evidence/report_validation_cases.png",
+      "sha256": "17b709a91627a40399b5ae56d1b29cab93764df4df3e9fe5c2522c92a8f3d403",
+      "caption": "validation 20장 중 최저점(1위)과 중앙 부근(10위) 사례. 왼쪽부터 원본, 정답, 최종 예측, 오분류 픽셀(빨강)"
+    },
+    {
+      "path": "reports/final36_evidence/report36_errors.png",
+      "sha256": "8b8bcc6019bd638be2ecfa2749f88d07f44a2d8e7a636f1f2b78d0dcb8315791",
+      "caption": "최종 모델의 validation 20장 분석. A 정답 기준 행 정규화 혼동 행렬, B 사진별 상 분율의 정답 대 예측"
+    },
+    {
+      "path": "reports/final36_evidence/report36_test_fractions.png",
+      "sha256": "7ba7a65241bfef264f5d5cfa0fb4f385ee4c2a703c078a8b1185a1bad89c8088",
+      "caption": "제출한 test 10장 마스크에서 산출한 상별 예측 면적 분율과 Hashin–Shtrikman 중간값 탄성률 추정"
+    }
+  ],
+  "tables": 7,
+  "visual_qa_complete": true,
+  "page_count": 9,
+  "layout_qa": "reports/final36_document_work/layout_qa.json"
+}

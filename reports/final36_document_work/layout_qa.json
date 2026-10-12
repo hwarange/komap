@@ -1,0 +1,81 @@
+{
+  "completed_at": "2026-10-12T09:38:03.341886+09:00",
+  "document": {
+    "path": "reports/모델링결과서_김형수없는김형수_최종제출v2.docx",
+    "size_bytes": 2084828,
+    "sha256": "9bc659bcaac61807a759eca35ca794bf50e94104215f22d78b86ad8f7d33c0c0"
+  },
+  "pages": 9,
+  "renderer": "native Word COM PDF export (Visible=False) + pypdfium2 raster, every page viewed",
+  "checks": [
+    "official form cover and required headings ①1-1/1-2/1-3 ②2-1/2-2 ③3-1/3-2/3-3 retained",
+    "no 90-image CV numbers anywhere in the text (grep verified)",
+    "all numbers trace to reports/final35_evidence/*.json and reports/final36_evidence/analysis36.json",
+    "official validation20 (80.62) and internal train70 5-fold OOF (80.78) kept separate",
+    "5 figures and 7 numbered tables, no clipped or overlapping elements",
+    "within the ten-page limit (9 pages including cover)"
+  ],
+  "figures": [
+    "report36_eda.png",
+    "report36_pipeline.png",
+    "report_validation_cases.png (final35_evidence)",
+    "report36_errors.png",
+    "report36_test_fractions.png"
+  ],
+  "rendered_pages": [
+    {
+      "path": "reports/final36_document_work/render_final/page_01.png",
+      "size_bytes": 203046,
+      "sha256": "bd66698a881ccf4557228d45682a340fd18b55235860c2f99640c01f1a0169b4"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_02.png",
+      "size_bytes": 318926,
+      "sha256": "de4d50c5f8d96b291b0b3bee9361b760076a6b25c8c4c328a3598b4536728880"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_03.png",
+      "size_bytes": 287415,
+      "sha256": "2163754de3d8302b6bc61d31875b9c116cb770a98c79a4a80dfba0692892a34c"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_04.png",
+      "size_bytes": 340728,
+      "sha256": "955cee5cbe9f7797eb8797cf2316f7d498b536ca75044d9f5419332dcf31ca3c"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_05.png",
+      "size_bytes": 281869,
+      "sha256": "ff7496da9b39cd3c0f49b7ac47e48627c25a17e5db6d87b539c72ab401b1d4bb"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_06.png",
+      "size_bytes": 270334,
+      "sha256": "a1796fa55a02d98c9c7843333253c27d44baaf283b9bb05e7ee32c9c942a9599"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_07.png",
+      "size_bytes": 541261,
+      "sha256": "92901d7ef52c4b82d122d03e4919b3d15e303a81fbfd92a81235f336a9fc33b6"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_08.png",
+      "size_bytes": 361127,
+      "sha256": "598fb39929d9568d3d29a3cdd569b66f657e1506090de44cbcb42e2fcfbffecb"
+    },
+    {
+      "path": "reports/final36_document_work/render_final/page_09.png",
+      "size_bytes": 321295,
+      "sha256": "3c8334ea29a6cdcade58a5226a46f3e6498e4a25a8cb6e691110fa9186621545"
+    }
+  ],
+  "pdf": {
+    "path": "reports/final36_document_work/final36_v2.pdf",
+    "size_bytes": 1035122,
+    "sha256": "ea3b6a75884e672db77f9171bc7ba180d8f707d22e42f875802ada271413da2e"
+  },
+  "official_validation20_mIoU": 80.62075310543737,
+  "train70_internal_oof_mIoU": 80.77829756479382,
+  "external_submission_performed": false,
+  "new_training_performed": false
+}

@@ -55,3 +55,6 @@ reports/final35_document_work/diag_render/
 reports/final35_document_work/~$*.docx
 reports/final35_document_work/prepare_native.py
 reports/final35_document_work/render*.ps1
+
+# v2 보고서 렌더 검수 PNG는 로컬에만 둔다
+reports/final36_document_work/render_final/
