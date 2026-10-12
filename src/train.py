@@ -95,8 +95,11 @@ def subsample_by_alloy(items, frac, seed=0):
 def build_from_args(a, weights=None):
     """체크포인트에 저장된 학습 설정으로 같은 구조의 모델을 만든다 (예측·분석·제출 스크립트용)."""
     two = a.get('binary_class', -1) >= 0 or bool(a.get('pair_classes'))
+    n = 2 if two else len(CLASSES)
+    if a.get('sdf_weight', 0.0) > 0:
+        n += len(CLASSES)   # 36단계 거리장 모델: 상 확률 4 + 부호 거리장 4
     return build_model(a['arch'], a['encoder'], weights=weights, attention=a.get('attention'), hires=a.get('hires', False),
-                       n_classes=2 if two else len(CLASSES), feats=a.get('feats', False))
+                       n_classes=n, feats=a.get('feats', False))
 
 
 def autocast(enabled):
@@ -153,7 +156,13 @@ def evaluate(model, items, width, tile, overlap, device, tta=False, amp=False, s
         Path(save_dir).mkdir(parents=True, exist_ok=True)
     for it in items:
         with autocast(amp):
-            prob = predict_probs(model, it['gray'], width, tile, overlap, tta, device, scale_multiplier=scale_multiplier)
+            prob = predict_probs(model, it['gray'], width, tile, overlap, tta, device, scale_multiplier=scale_multiplier, with_sdf=True)
+        if prob.shape[0] == 2 * len(CLASSES):
+            # 36단계 거리장 모델: 거리장은 따로 저장하고(앙상블·경계 실험용), 채점은 상 확률로만 한다
+            if save_dir:
+                Path(str(save_dir) + '_sdf').mkdir(parents=True, exist_ok=True)
+                np.save(Path(str(save_dir) + '_sdf') / f"{it['name']}.npy", prob[len(CLASSES):].astype(np.float16))
+            prob = prob[:len(CLASSES)]
         if save_dir:
             np.save(Path(save_dir) / f"{it['name']}.npy", prob.astype(np.float16))
         if pair:
@@ -266,6 +275,10 @@ def main():
     p.add_argument('--hard-maps', default='runs/hardmaps', help='사진별 오답 지도 폴더 (src/make_hardmaps.py)')
     p.add_argument('--soft-edge', type=float, default=0.0,
                    help='경계 1px 띠의 정답을 주변 3×3 상 비율과 섞는 정도 ε (0이면 끔, cutout과 같이 쓰지 않음)')
+    # 36단계 옵션: 거리장 회귀 보조 출력
+    p.add_argument('--sdf-weight', type=float, default=0.0,
+                   help='상별 부호 거리장 L1 손실 가중치 (0이면 끔). 켜면 출력이 8채널(확률 4 + 거리장 4)이 된다')
+    p.add_argument('--sdf-tau', type=float, default=6.0, help='거리장을 자르는 거리 (학습 배율 기준 px)')
     args = p.parse_args()
     if args.accum_steps < 1:
         p.error('--accum-steps는 1 이상이어야 한다')
@@ -300,14 +313,17 @@ def main():
                      rot=args.rot, policy=args.aug_policy, hm=args.hm,
                      lowres=args.lowres, no_int=args.no_int, copypaste=args.copypaste, skel=args.skel > 0,
                      int_drop=[v for v in args.int_drop.split(',') if v], elastic=args.elastic, cutout=args.cutout,
-                     hard=args.hard_crop, hard_maps=args.hard_maps, feats=args.feats, scale_multiplier=args.scale_multiplier)
+                     hard=args.hard_crop, hard_maps=args.hard_maps, feats=args.feats, scale_multiplier=args.scale_multiplier,
+                     sdf_tau=args.sdf_tau if args.sdf_weight > 0 else 0.0)
     dl = DataLoader(ds, batch_size=args.bs, shuffle=True, num_workers=args.workers, drop_last=True,
                     worker_init_fn=worker_init_fn, persistent_workers=args.workers > 0, pin_memory=True)
 
     binary, pair = args.binary_class >= 0, args.pair_classes
     assert not (binary and pair), '--binary-class와 --pair-classes는 같이 쓰지 않는다'
+    sdf = args.sdf_weight > 0
+    assert not (sdf and (binary or pair or args.hires)), '--sdf-weight는 4상 기본 모델에서만 쓴다'
     model = build_model(args.arch, args.encoder, attention=args.attention, hires=args.hires,
-                        n_classes=2 if (binary or pair) else len(CLASSES), feats=args.feats).to(device)
+                        n_classes=(2 if (binary or pair) else len(CLASSES)) + (len(CLASSES) if sdf else 0), feats=args.feats).to(device)
     if args.init:
         # 외부 데이터로 먼저 학습한 가중치에서 시작 (9단계). 모양이 같은 층만 불러오고, --init-skip-head면 출력층은 새로
         sd = torch.load(args.init, map_location='cpu', weights_only=False)['model']
@@ -351,7 +367,8 @@ def main():
             elif pair:
                 # 두 상 전용 모델: pair[0] = 0, pair[1] = 1, 나머지 상은 무시 (두 상 사이의 판단만 배운다)
                 y = torch.where(y == pair[0], 0, torch.where(y == pair[1], 1, IGNORE))
-            tube =batch[2].to(device, non_blocking=True) if len(batch) > 2 else None
+            tube = batch[2].to(device, non_blocking=True) if ds.skel else None
+            sdf_target = batch[-1].to(device, non_blocking=True) if sdf else None
             lam, perm = 1.0, None
             if args.mixup and np.random.rand() < args.mixup:
                 # mixup: 두 crop을 겹치고 손실도 같은 비율로 섞는다
@@ -368,10 +385,14 @@ def main():
                 y[:, y0:y0 + h, x0:x0 + w] = y[perm, y0:y0 + h, x0:x0 + w]
                 perm = None   # 정답을 이미 붙였으므로 손실은 한 번만
             with autocast(args.amp):
-                out_logits = model(x)
+                out_all = model(x)
+                out_logits = out_all[:, :len(CLASSES)] if sdf else out_all
                 loss = criterion(out_logits, y, tube)
                 if perm is not None:
                     loss = lam * loss + (1 - lam) * criterion(out_logits, y[perm], tube[perm] if tube is not None else None)
+                if sdf:
+                    # 36단계: 뒤 4채널은 tanh로 [-1, 1]의 부호 거리장을 회귀. 경계에서 먼 곳은 ±1로 포화돼 손실이 경계 주변에 집중된다
+                    loss = loss + args.sdf_weight * F.l1_loss(torch.tanh(out_all[:, len(CLASSES):].float()), sdf_target)
             updated = accumulation_step(loss, opt, sched, n, iters, args.accum_steps)
             step += int(updated)
             if ema is not None and updated:

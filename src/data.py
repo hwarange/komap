@@ -215,12 +215,13 @@ class CropDataset(Dataset):
 
     def __init__(self, items, crop=512, samples_per_image=8, target_width=1280, scale_jitter=0.15, aug=True,
                  rot='any', policy='default', hm=0.0, lowres=0.0, no_int=False, copypaste=0.0, skel=False, int_drop=(),
-                 elastic=0.0, cutout=0.0, hard=0.0, hard_maps='', feats=False, scale_multiplier=1.0):
+                 elastic=0.0, cutout=0.0, hard=0.0, hard_maps='', feats=False, scale_multiplier=1.0, sdf_tau=0.0):
         self.data = [(normalize(it['gray']), it['lab'], scale_for(it['gray'].shape[1], target_width, scale_multiplier)) for it in items]
         self.crop, self.spi, self.jitter, self.aug = crop, samples_per_image, scale_jitter, aug
         self.rot, self.policy, self.hm, self.lowres = rot, policy, hm, lowres
         self.no_int, self.copypaste, self.skel, self.int_drop = no_int, copypaste, skel, tuple(int_drop)
         self.elastic, self.cutout, self.hard, self.feats = elastic, cutout, hard, feats
+        self.sdf_tau = sdf_tau   # 36단계: 0보다 크면 상별 부호 거리장(경계까지의 픽셀 거리, ±tau에서 자름)을 함께 반환
         if hard:
             # 오답 위치 (원본 좌표 y, x). 경계 띠 밖에서 앙상블이 틀린 픽셀 (9단계, make_hardmaps)
             self.hard_xy = [np.argwhere(np.array(Image.open(Path(hard_maps) / f"{it['name']}.png")) > 0) for it in items]
@@ -300,7 +301,28 @@ class CropDataset(Dataset):
             from skimage.morphology import skeletonize
             tube = cv2.dilate(skeletonize(y == 3).astype(np.uint8), np.ones((3, 3), np.uint8))
             out.append(torch.from_numpy(tube.astype(np.float32)))
+        if self.sdf_tau > 0:
+            out.append(torch.from_numpy(signed_distance(y, self.sdf_tau)))
         return tuple(out)
+
+
+def signed_distance(lab, tau, n_classes=len(CLASSES)):
+    """상별 부호 거리장 [n_classes, H, W] (36단계 거리장 회귀 목표).
+    그 상 안쪽은 +경계까지 거리, 바깥은 −경계까지 거리. ±tau에서 잘라 tau로 나누므로 값은 [-1, 1].
+    경계에 붙은 안쪽 픽셀은 +1/tau, 바깥쪽 픽셀은 −1/tau라 0은 두 픽셀 사이에 놓인다."""
+    out = np.empty((n_classes, *lab.shape), np.float32)
+    for c in range(n_classes):
+        m = (lab == c).astype(np.uint8)
+        if not m.any():
+            out[c] = -1.0
+            continue
+        if m.all():
+            out[c] = 1.0
+            continue
+        inside = cv2.distanceTransform(m, cv2.DIST_L2, cv2.DIST_MASK_PRECISE)
+        outside = cv2.distanceTransform(1 - m, cv2.DIST_L2, cv2.DIST_MASK_PRECISE)
+        out[c] = np.clip(inside - outside, -tau, tau) / tau
+    return out
 
 
 def worker_init_fn(worker_id):

@@ -63,7 +63,13 @@ def _sliding(model, img, tile, overlap, tta, device, batch=4):
         t = torch.stack([xin[:, y:y + tile, x0:x0 + tile] for y, x0 in cs])
         prob = 0
         for k in ks:
-            prob = prob + _undihedral(torch.softmax(model(_dihedral(t, k)), 1), k)
+            o = model(_dihedral(t, k))
+            if o.shape[1] == 2 * N_CLASSES:
+                # 36단계 거리장 모델: 앞 4채널은 상 확률, 뒤 4채널은 부호 거리장(tanh). 둘 다 같은 창으로 평균한다
+                o = torch.cat([torch.softmax(o[:, :N_CLASSES], 1), torch.tanh(o[:, N_CLASSES:])], 1)
+            else:
+                o = torch.softmax(o, 1)
+            prob = prob + _undihedral(o, k)
         prob = prob / len(ks)
         if acc is None:
             acc = torch.zeros(prob.shape[1], Hp, Wp, device=device)
@@ -74,9 +80,11 @@ def _sliding(model, img, tile, overlap, tta, device, batch=4):
 
 
 @torch.no_grad()
-def predict_probs(model, gray, target_width=1280, tile=512, overlap=128, tta=False, device='cuda', extra_scale=1.0, scale_multiplier=1.0):
+def predict_probs(model, gray, target_width=1280, tile=512, overlap=128, tta=False, device='cuda', extra_scale=1.0, scale_multiplier=1.0,
+                  with_sdf=False):
     """원본 해상도의 상별 확률 [4, H, W]를 돌려준다.
-    extra_scale: 학습 배율에 더해 사진을 더 키워 예측 (6단계 크기 키운 TTA, 예: 1.25)."""
+    extra_scale: 학습 배율에 더해 사진을 더 키워 예측 (6단계 크기 키운 TTA, 예: 1.25).
+    with_sdf: 거리장 모델(출력 8채널)이면 [8, H, W] (확률 4 + 거리장 4)를 그대로 돌려준다. 아니면 확률 4채널만."""
     img = normalize(gray)
     H, W = img.shape
     s = scale_for(W, target_width, scale_multiplier) * extra_scale
@@ -90,6 +98,8 @@ def predict_probs(model, gray, target_width=1280, tile=512, overlap=128, tta=Fal
             prob = torch.nn.functional.interpolate(prob[None], size=(H, W), mode='area')[0]
         else:
             prob = torch.nn.functional.interpolate(prob[None], size=(H, W), mode='bilinear', align_corners=False)[0]
+    if prob.shape[0] == 2 * N_CLASSES and not with_sdf:
+        prob = prob[:N_CLASSES]
     return prob.cpu().numpy()
 
 
