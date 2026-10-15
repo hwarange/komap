@@ -28,8 +28,8 @@ W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
 REL = 'http://schemas.openxmlformats.org/package/2006/relationships'
 NS = {'w': W, 'r': R}
-LINE = 264      # 1.1 line spacing (240 = single)
-AFTER = 60      # paragraph spacing after, twips/20
+LINE = 250      # 약 1.04배 (240 = 한 줄)
+AFTER = 40      # 문단 뒤 간격
 
 
 def node(tag, **attrs):

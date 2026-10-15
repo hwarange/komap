@@ -1,9 +1,9 @@
 {
-  "completed_at": "2026-10-12T10:26:55.587628+09:00",
+  "completed_at": "2026-10-15T19:17:12.643159+09:00",
   "document": {
     "path": "reports/모델링결과서_김형수없는김형수_최종제출v2.docx",
-    "size_bytes": 2085340,
-    "sha256": "dbf6745ef61a9ffc18f923a2223a5e45972c03f77d7ab9a74073b877dee1ecf8"
+    "size_bytes": 2085374,
+    "sha256": "45d13e67e87ad08a8b965f10d8bfd6f70be0bca8cdb845a657d2cdde5099dbb4"
   },
   "pages": 9,
   "renderer": "native Word COM PDF export (Visible=False) + pypdfium2 raster, every page viewed",
@@ -13,7 +13,8 @@
     "all numbers trace to reports/final35_evidence/*.json and reports/final36_evidence/analysis36.json",
     "official validation20 (80.62) and internal train70 5-fold OOF (80.78) kept separate",
     "within the ten-page limit (9 pages including cover)",
-    "5 figures, 7 numbered tables, 9 references; no clipped or overlapping elements"
+    "5 figures, 7 numbered tables, 9 references; no clipped or overlapping elements",
+    "all sentence endings converted to polite -습니다 style (128 endings, 0 plain left); 9 pages incl. cover"
   ],
   "figures": [
     "report36_eda.png",
@@ -25,54 +26,54 @@
   "rendered_pages": [
     {
       "path": "reports/final36_document_work/render_final/page_01.png",
-      "size_bytes": 203046,
-      "sha256": "bd66698a881ccf4557228d45682a340fd18b55235860c2f99640c01f1a0169b4"
+      "size_bytes": 216115,
+      "sha256": "b0f518c4a8bbdf4b1cbe0091abc85d3353a351988ea3de1dedea844dc2b4a92f"
     },
     {
       "path": "reports/final36_document_work/render_final/page_02.png",
-      "size_bytes": 327588,
-      "sha256": "1a7f8ee29a572779f4fab6ef824915cc0ae7f4ad808946ccf0c1b1e80059cdf5"
+      "size_bytes": 324318,
+      "sha256": "b84f2335a0470b1dd64519113a1ddcc0f0972359a3658a316d54689713c94067"
     },
     {
       "path": "reports/final36_document_work/render_final/page_03.png",
-      "size_bytes": 287415,
-      "sha256": "2163754de3d8302b6bc61d31875b9c116cb770a98c79a4a80dfba0692892a34c"
+      "size_bytes": 291298,
+      "sha256": "6309cd9bb3c647636d19ca5b5c09c11a97ea7ec29acba229950006577219a445"
     },
     {
       "path": "reports/final36_document_work/render_final/page_04.png",
-      "size_bytes": 340728,
-      "sha256": "955cee5cbe9f7797eb8797cf2316f7d498b536ca75044d9f5419332dcf31ca3c"
+      "size_bytes": 350025,
+      "sha256": "2a148f09430b457898604683774b6684fbfb01e1645b877e84498b332d15642e"
     },
     {
       "path": "reports/final36_document_work/render_final/page_05.png",
-      "size_bytes": 281869,
-      "sha256": "ff7496da9b39cd3c0f49b7ac47e48627c25a17e5db6d87b539c72ab401b1d4bb"
+      "size_bytes": 293534,
+      "sha256": "e1a29e156d08ed58c770a9e06d3da40f62a59b0753de6db36717646930e2f410"
     },
     {
       "path": "reports/final36_document_work/render_final/page_06.png",
-      "size_bytes": 270334,
-      "sha256": "a1796fa55a02d98c9c7843333253c27d44baaf283b9bb05e7ee32c9c942a9599"
+      "size_bytes": 286607,
+      "sha256": "ef1c6a79596dd0121ea7b14fa1072711f0f56bc958da75df256a315dc067653f"
     },
     {
       "path": "reports/final36_document_work/render_final/page_07.png",
-      "size_bytes": 525856,
-      "sha256": "2bd84012ffbd44f3bac6a1c35faa63528fa2e6866d5b4a971059c6615a9a648b"
+      "size_bytes": 538490,
+      "sha256": "4e6d03d6ab9b5d966efd07006cc8df7306f96b15b1c0c2362efbfaada7a57ad6"
     },
     {
       "path": "reports/final36_document_work/render_final/page_08.png",
-      "size_bytes": 369254,
-      "sha256": "f6eb118115b3e232de00f0a6a35d8b31ef1611230fbf0e2ab4240dd59eaf9f81"
+      "size_bytes": 387735,
+      "sha256": "83c83c42ffe77121d92f6882d7d3e42d4774c80ea89be746bc027d530d145189"
     },
     {
       "path": "reports/final36_document_work/render_final/page_09.png",
-      "size_bytes": 338644,
-      "sha256": "ac14c170866a12e3bd744f60fd6540d495b9aa1e95f8dc0af407c96d4c15b429"
+      "size_bytes": 302726,
+      "sha256": "394c6d0a18ca74c96b87f1b4f95468cfcfe9631c75dee2cc3ac45548171e99db"
     }
   ],
   "pdf": {
     "path": "reports/final36_document_work/final36_v2.pdf",
-    "size_bytes": 1026352,
-    "sha256": "bb618098a94160f55e988deb8dd1cdb386bef2441f5bbbb75c713f4b6820904f"
+    "size_bytes": 1029277,
+    "sha256": "e112adcfd164849ed36b09e87687233fe1ead3c7b05e8406bbda92e5b498ae3e"
   },
   "official_validation20_mIoU": 80.62075310543737,
   "train70_internal_oof_mIoU": 80.77829756479382,

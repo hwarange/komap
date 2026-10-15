@@ -1,6 +1,6 @@
 {
   "output": "C:\\Users\\SSAFY\\Desktop\\Komap\\reports\\모델링결과서_김형수없는김형수_최종제출v2.docx",
-  "sha256": "dbf6745ef61a9ffc18f923a2223a5e45972c03f77d7ab9a74073b877dee1ecf8",
+  "sha256": "45d13e67e87ad08a8b965f10d8bfd6f70be0bca8cdb845a657d2cdde5099dbb4",
   "reference_sha256": "a9f66f14f8546b37d6a3a4c2c7406c328d95bb6f7b56b501abce9e4bfba0b534",
   "preserve_only_parts_match": true,
   "preserve_only_parts": [
@@ -28,7 +28,7 @@
     {
       "path": "reports/final36_evidence/report36_pipeline.png",
       "sha256": "1b96d33fa48d745d83e41103be34b204f99cf6e12aae2b204998677f38064fa6",
-      "caption": "전체 처리 흐름. 두 모델은 같은 정규화 입력을 서로 다른 배율로 받아 타일 예측하고, 원본 크기 확률을 50:50으로 평균한 뒤 초정 Si 후처리를 거친다"
+      "caption": "전체 처리 흐름. 두 모델은 같은 정규화 입력을 서로 다른 배율로 받아 타일 예측하고, 원본 크기 확률을 50:50으로 평균한 뒤 초정 Si 후처리를 거칩니다"
     },
     {
       "path": "reports/final35_evidence/report_validation_cases.png",
