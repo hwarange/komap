@@ -1,0 +1,10 @@
+{
+  "time": "2026-10-11T05:40:49+09:00",
+  "outcome": "two_fixed_mit2_unet_pairs_complete",
+  "plan_sha256": "9e947e5e70edfc4daacc8e911be9dbae2a265f8eff4ad1885e9c0fefc375214c",
+  "results_sha256": "1367a8cb04573e4880b4857a8c5dd4ee24417faedeb51967027bde6d5ebb0de0",
+  "rows_sha256": "2950865a48784918d4892b9f53f5bd23ee09b9eda12a15745116a30440e437bc",
+  "cpu_only": true,
+  "automatic_model_selection": false,
+  "automatic_submission_change": false
+}

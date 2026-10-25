@@ -1,0 +1,19 @@
+{
+  "verified_utc": "2026-10-11T12:02:19.096509+00:00",
+  "ok": true,
+  "manifest_sha256": "1f5fa391b80f9b5acaf283b0978aa6a860a95c3a526b63f1d5891f7e1a9a4386",
+  "run_receipt_sha256": "f1af4343faba976c5a411e0b27add3b8ed8eaa42e473f28857d4df3ce13c4952",
+  "server_completion_verification_sha256": "76c9f49f6c61eab5b7e76cb3d61a0c21d69b2b807c68b8c5bff0153cff97f10f",
+  "local_source_and_provenance_files_verified": 24,
+  "local_checkpoint_files_verified": 2,
+  "local_mask_files_verified": 10,
+  "mask_zip_verified": true,
+  "mask_area_fractions_recomputed": true,
+  "probability_arrays": "Retained on server only; all20 independently recombined there with exact mask equality.",
+  "local_test_inputs_present": 0,
+  "mask_zip": {
+    "path": "final35_masks.zip",
+    "size_bytes": 1143301,
+    "sha256": "dfa5b800457e73f9aba23c98347db69687ef5f90fe9b4dbeab3eaf2109ec803a"
+  }
+}

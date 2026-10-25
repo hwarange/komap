@@ -1,0 +1,62 @@
+{
+  "completed_utc": "2026-10-11T11:59:50.992558+00:00",
+  "manifest_sha256": "1f5fa391b80f9b5acaf283b0978aa6a860a95c3a526b63f1d5891f7e1a9a4386",
+  "run_receipt_sha256": "f1af4343faba976c5a411e0b27add3b8ed8eaa42e473f28857d4df3ce13c4952",
+  "mask_zip": {
+    "path": "final35_masks.zip",
+    "size_bytes": 1143301,
+    "sha256": "dfa5b800457e73f9aba23c98347db69687ef5f90fe9b4dbeab3eaf2109ec803a"
+  },
+  "masks": [
+    {
+      "path": "masks/A107_step1_sample3_mask.png",
+      "size_bytes": 116760,
+      "sha256": "fcae476fa32b23ff208c48da63d0ef5b8ab5952761d500f270d7842a069cc9dc"
+    },
+    {
+      "path": "masks/A122_step4_sample1_mask.png",
+      "size_bytes": 143373,
+      "sha256": "caf63a993ff885095af039f2d8d5152b52003745444ba14a01f2d7e7029dd51c"
+    },
+    {
+      "path": "masks/A124_step4_sample3_mask.png",
+      "size_bytes": 155688,
+      "sha256": "b2ab3e84dc9c7f885d999f09c985c70c1d5a55f279f78880a90f13b68c310aa7"
+    },
+    {
+      "path": "masks/A127_step3_sample2_mask.png",
+      "size_bytes": 152818,
+      "sha256": "4a60ab6c28e2760689a20da8da1bd13a3f50de687c0f3738e0845556cc8d0101"
+    },
+    {
+      "path": "masks/A133_step4_sample1_mask.png",
+      "size_bytes": 127983,
+      "sha256": "8fcef5754cba54d47830f168ac82d733f73e4a7f22b768903d99098b92ffdc00"
+    },
+    {
+      "path": "masks/A167_step3_sample3_mask.png",
+      "size_bytes": 154278,
+      "sha256": "7cfa46a9bf3d16d31dbe551db0188f580f857b96c34bb4a3dc7fee52ed5b7016"
+    },
+    {
+      "path": "masks/A38_step2_sample2_mask.png",
+      "size_bytes": 61711,
+      "sha256": "cd7124e608397af032ead457a1d408e550b6739ed1117e6c024ddbd37dbe38e4"
+    },
+    {
+      "path": "masks/A51_step3_sample3_mask.png",
+      "size_bytes": 116663,
+      "sha256": "f8f74a1f1a29352ff8b93910cdf6634f6a5fb4787df368af5de99ba080f11f05"
+    },
+    {
+      "path": "masks/A63_step2_sample3_mask.png",
+      "size_bytes": 55421,
+      "sha256": "764872a97603ca91cea2dd6aebc265cd5a671b3d896f0df43de638265472327d"
+    },
+    {
+      "path": "masks/A87_step1_sample4_mask.png",
+      "size_bytes": 56917,
+      "sha256": "dc325a78d4d8fc15568ed6eb901dc689a3d8d5184bd53a7fbe311ec1a69c3bad"
+    }
+  ]
+}

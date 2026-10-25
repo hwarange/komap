@@ -1,0 +1,74 @@
+{
+  "family": "unet3",
+  "manifest_sha256": "1f5fa391b80f9b5acaf283b0978aa6a860a95c3a526b63f1d5891f7e1a9a4386",
+  "outputs": [
+    {
+      "path": "parts/unet3/A107_step1_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "fb1dfbebce8d48e2282bcff95525ef386a4d24bff14b48783088c3766934d5af",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A122_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "e3d3b3e8abdd58789da14073c6c51915a259e2a29742d1aa52d4ac940650ac25",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A124_step4_sample3.npy",
+      "size_bytes": 8610128,
+      "sha256": "26458697256f79af8a556a3a9e9cf60424fbbb123638e4923cc7c5ea1f2fb9ef",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A127_step3_sample2.npy",
+      "size_bytes": 11796608,
+      "sha256": "1b928d8d92861e17e2f38c186f7839a1902f0cda0a7288aba465f3523fa47381",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A133_step4_sample1.npy",
+      "size_bytes": 8610128,
+      "sha256": "7daf443528c8032bee42876c767cad6c036043ba1cfb8e7dd574fdbcbd14ae84",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A167_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "51de69fb0fbeb4313ae0eceb0bdd11f7d2a190a6f4a1ec10d6ff5eb1891b18c0",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A38_step2_sample2.npy",
+      "size_bytes": 2592128,
+      "sha256": "4b2b5feed5e5018f698a5093e8b0117bc422644736fc669346d7ec38dcd5c2e5",
+      "actual_scale": 6.0
+    },
+    {
+      "path": "parts/unet3/A51_step3_sample3.npy",
+      "size_bytes": 9293744,
+      "sha256": "3869f46b95a8f07866d8ac62a46b4f4cfd723ae02b0ec67197232964bcda011d",
+      "actual_scale": 3.0
+    },
+    {
+      "path": "parts/unet3/A63_step2_sample3.npy",
+      "size_bytes": 2592128,
+      "sha256": "3abea3d4cd6f66046244967dd4c7a716ce40fe569c64c744e3b389e4436b32d7",
+      "actual_scale": 6.0
+    },
+    {
+      "path": "parts/unet3/A87_step1_sample4.npy",
+      "size_bytes": 2592128,
+      "sha256": "b8e9f0529c6a51dffff6a945efe59394399f1e3cdcb06b7ee8725dcb097fdbcb",
+      "actual_scale": 6.0
+    }
+  ],
+  "strict_checkpoint_load": true,
+  "checkpoint": {
+    "path": "runs/submission31_train70/models/unet3/base/last.pt",
+    "size_bytes": 104482135,
+    "sha256": "1668b0ef0e25e9be093ed531d60a2425e45f9cda694f421e023d3d09e9e253a8"
+  },
+  "elapsed_seconds": 29.978067204356194,
+  "completed_utc": "2026-10-11T11:59:26.412680+00:00"
+}
